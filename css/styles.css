@@ -1,0 +1,31 @@
+/* styles.css */
+@font-face {
+    font-family: 'HyperoRegular';
+    src: url('../fonts/HyperoRegular.otf') format('opentype'),
+         url('../fonts/HyperoRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'HyperoRegular', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.custom-font {
+    font-family: 'HyperoRegular', sans-serif;
+}
