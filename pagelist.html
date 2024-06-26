@@ -1,35 +1,249 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page List</title>
-    <link rel="stylesheet" href="./css/styles.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>한화손해보험_AIcard</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$(".panel .panelbox:not(:first)").hide();
+			$(".tab li a").bind("click focusin",
+				function () {
+					$(".panel .panelbox").hide();
+					$($(this).attr("href")).show();
+					$(".tab li a").removeClass("selected");
+					$(this).addClass("selected");
+					return false;
+				});
+		});
+		$(function () {
+			$("#inputSearch").on("keyup", function () {
+				var value = $(this).val().toLowerCase();
+				$("#pubList tr").filter(function () {
+					$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+				});
+			})
+		});
+	</script>
+	<style>
+		ul,li {list-style: none;}
+		.tab {display: flex; background: #ccc;}
+		.tab li {width: 20%; padding: 10px 20px; margin: 0 1px; background: #313131;}
+		.tab li > a {display: block; color: #ccc; font-size: 14px; white-space: nowrap; text-decoration: none !important;}
+		.well {margin-bottom: 0;}
+		h1.text-center {padding: 30px 0; font-size: 20px;}
+	</style>
 </head>
+
 <body>
-    <header>
-        <h1>HTML Files List</h1>
-    </header>
-    <main>
-        <table>
-            <thead>
-                <tr>
-                    <th>Page Name</th>
-                    <th>Link</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Index Page</td>
-                    <td><a href="./html/index.html">index.html</a></td>
-                </tr>
-                <!-- 다른 HTML 파일들에 대해서도 동일하게 추가 -->
-                <tr>
-                    <td>Another Page</td>
-                    <td><a href="./html/another.html">another.html</a></td>
-                </tr>
-            </tbody>
-        </table>
-    </main>
+	<div class="all-container">
+		<div class="well clearfix"> 
+			<div class="col-md-8 col-md-push-2">
+				<form action="">
+					<div class="input-group">
+						<input type="text" class="form-control" id="inputSearch">
+						<div class="input-group-btn">
+							<button class="btn btn-default">검색</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<ul class="tab">
+			<li><a href="#tab1" class="selected">pages 1</a></li>
+			<li><a href="#tab2" class="selected">pages 2</a></li>
+		</ul>
+		<div class="panel">
+			<div id="tab1" class="panelbox">
+				<div class="container">
+					<h1 class="text-center">공통</h1>
+					<table class="table table-default table-hover table-bordered">
+						<colgroup>
+							<col width="10%">
+							<col width="40%">
+							<col width="20%">
+							<col>
+						</colgroup>
+						<thead>
+							<th class="text-center">카테고리</th>
+							<th class="text-center">제목</th>
+							<th class="text-center">파일명</th>
+							<th class="text-center">비고</th>
+						</thead>
+						<tbody id="pubList">
+							<tr>
+								<td>변경사항</td>
+								<td colspan="3">
+									01. ---<br>
+
+								</td>
+							</tr>
+							<!-- <tr>
+								<td>시안</td>
+								<td>A안</td>
+								<td><a href="html/design/design_tyA.html" target="_blank">design typeA.html</a></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>시안</td>
+								<td>B안</td>
+								<td><a href="html/design/design_tyB.html" target="_blank">design typeB.html</a></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>시안</td>
+								<td>B안</td>
+								<td><a href="html/design/design_tyC.html" target="_blank">design typeC.html</a></td>
+								<td></td>
+							</tr> -->
+							<tr>
+								<td>공통</td>
+								<td>스플래쉬</td>
+								<td><a href="html/splash.html" target="_blank">splash.html</a></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>공통</td>
+								<td>POPUP - 중앙노출 </td>
+								<td><a href="html/popup_tyMid.html" target="_blank">popup_tyMid.html</a></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>공통</td>
+								<td>POPUP - 하단노출 </td>
+								<td><a href="html/popup_tyBtm.html" target="_blank">popup_tyBtm.html</a></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>공통</td>
+								<td>POPUP - fullPop </td>
+								<td><a href="html/popup_tyFull.html" target="_blank">popup_tyFull.html</a></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>공통</td>
+								<td>토스트POPUP - toastPop </td>
+								<td><a href="html/popup_tyToast.html" target="_blank">popup_tyToast.html</a></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>메인</td>
+								<td>메인 - 스와이프</td>
+								<td><a href="html/main.html" target="_blank">main.html</a></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>메인</td>
+								<td>메인 - 스와이프 테스트</td>
+								<td><a href="html/main_swipetest.html" target="_blank">main_swipetest.html</a></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>메인</td>
+								<td>메인 - 리스트</td>
+								<td><a href="html/main_list.html" target="_blank">main_list.html</a></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>템플릿 만들기</td>
+								<td>템플릿 만들기</td>
+								<td><a href="html/maketemplate.html" target="_blank">maketemplate.html</a></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>카드꾸미기</td>
+								<td>카드꾸미기</td>
+								<td><a href="html/imagecard.html" target="_blank">imagecard.html</a></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>영상카드</td>
+								<td>영상카드</td>
+								<td><a href="html/videocard.html" target="_blank">videocard.html</a></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>영상카드</td>
+								<td>POPUP - 배경음악선택</td>
+								<td><a href="html/popup_bgmlist.html" target="_blank">popup_bgmlist.html</a></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>영상카드</td>
+								<td>POPUP - 샘플메세지</td>
+								<td><a href="html/popup_message.html" target="_blank">popup_message.html</a></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>만들기 완료</td>
+								<td>만들기 완료 - 메세지첨부</td>
+								<td><a href="html/complete.html" target="_blank">complete.html</a></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>보내기</td>
+								<td>POPUP - 보내기</td>
+								<td><a href="html/popup_sending.html" target="_blank">popup_sending.html</a></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>간편생성</td>
+								<td>간편생성 - 템플릿선택</td>
+								<td><a href="html/sm_template.html" target="_blank">sm_template.html</a></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>간편생성</td>
+								<td>간편생성 - 이미지카드</td>
+								<td><a href="html/sm_imagecard.html" target="_blank">sm_imagecard.html</a></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>간편생성</td>
+								<td>간편생성 - 메세지선택</td>
+								<td><a href="html/popup_sm_message.html" target="_blank">popup_sm_message.html</a></td>
+								<td>텍스트 메세지 & 음성메세지 공통</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!--//  id="tab1"  -->
+			<div id="tab2" class="panelbox">
+				<div class="container">
+					<h1 class="text-center">pages</h1>
+					<table class="table table-default table-hover table-bordered">
+						<colgroup>
+							<col width="10%">
+							<col width="40%">
+							<col width="20%">
+							<col>
+						</colgroup>
+						<thead>
+							<th class="text-center">카테고리</th>
+							<th class="text-center">제목</th>
+							<th class="text-center">파일명</th>
+							<th class="text-center">비고</th>
+						</thead>
+						<tbody id="pubList">
+							<tr>
+								<td>---</td>
+								<td>---</td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!--//  id="tab2"  -->
+		</div>
+	</div>
 </body>
+
 </html>
