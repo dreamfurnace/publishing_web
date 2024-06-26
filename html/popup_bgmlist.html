@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=medium-dpi">
+	<title>한화손해보험_AIcard</title>
+	<link rel="stylesheet" href="../css/hairang_style.css">
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body>
+<button type="button" class="btn_popTest" id="test_callpop">call POPUP - bgm list</button><!-- ref.event -->
+<!--  POPUP  AREA -->
+     <div class="popup_full">
+          <div class="popHeader">
+               <h2>배경음악</h2>
+               <button class="btn_i_popclose" type="button" id="btn_popClose">닫기</button>
+          </div>
+          <div class="popContainer">
+               <section class="bgmList">
+                    <h3>배경음악리스트</h3>
+                    <div class="musicGroup">
+                         <div class="musicItem" id="sec_musicItem01">
+                              <div class="titwrap">
+                                   <div class="tit">
+                                        <button class="btn_i_play" type="button" id="btn_play01">미리듣기/멈춤</button>
+                                        <p><span>Love wins all</span>
+                                           <em>즐거운</em>
+                                        </p>
+                                   </div>
+                                   <div class="tit">
+                                        <span>0:30</span>
+                                        <div class="checkbox_chk">
+                                             <label for="item01">
+                                                  <input type="radio" id="item01" name="selected">
+                                                  <span class="checkmark"></span>
+                                             </label>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="playbar">
+                                   <span><em style="width:10rem;"></em></span>
+                              </div>
+                         </div><!--end: class="musicItem" -->
+                         <div class="musicItem">
+                              <div class="titwrap">
+                                   <div class="tit">
+                                        <button class="btn_i_play" type="button">미리듣기/멈춤</button>
+                                        <p><span>Save Your Tears</span>
+                                           <em>편안한</em>
+                                        </p>
+                                   </div>
+                                   <div class="tit">
+                                        <span>0:30</span>
+                                        <div class="checkbox_chk">
+                                             <label for="item02">
+                                                  <input type="radio" id="item02" name="selected">
+                                                  <span class="checkmark"></span>
+                                             </label>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="playbar">
+                                   <span><em style="width:10rem;"></em></span>
+                              </div>
+                         </div><!--end: class="musicItem" -->
+                    </div>
+               </section>
+          </div>
+     </div<><!-- end: class="popup_full"  -->
+<!-- //  POPUP  AREA -->
+
+<script>
+// popupEvent_closeBtn
+$('#btn_popClose').click(function(){
+     $('.popup_full').fadeOut(100);
+});
+   
+// popEvent_testBtn
+$('#test_callpop').click(function(){
+     $('.popup_full').fadeIn(100);
+});
+
+
+// btn play toggle 
+$('.btn_i_play').click(function(){
+     $(this).toggleClass('stop');
+});
+
+$('#btn_play01').click(function(){
+     $('#sec_musicItem01').toggleClass('preListen');
+});
+
+//  remove radio check
+var beforeChecked = -1;  
+$(function(){
+     $(document).on("click", "input[type=radio]", function(e) {
+          var index = $(this).parent().index("label");
+          if(beforeChecked == index) {
+          beforeChecked = -1;
+          $(this).prop("checked", false);} 
+          else{beforeChecked = index;}
+     });
+});
+
+</script>
+</body>
+</html>

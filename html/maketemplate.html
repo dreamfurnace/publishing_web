@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=medium-dpi">
+	<title>한화손해보험_AIcard</title>
+	<link rel="stylesheet" href="../css/hairang_style.css">
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body>
+     <header>
+          <div class="btn_group_l">
+               <button type="button" class="btn_i_back" onclick = "window.location.href='main.html';">뒤로가기</button>
+               <div class="btnwrap_rate">
+                    <button type="button" class="on" id="rate34">3:4</button>
+                    <button type="button" id="rate11">1:1</button>
+                    <button type="button" id="rate43">4:3</button>
+               </div>
+          </div>
+
+          <div class="btn_group_r"> <!-- 프롬프트 적용 후 'disabled' 해제 or 'skip' 해제 -->
+               <button type="button" class="btn_t_b">다시생성</button>
+               <button type="button"class="btn_i_next" onclick = "window.location.href='imagecard.html';">다음</button>
+          </div>
+     </header>
+     <main class="makeTemplate">
+          <section class="stage rate34"><!--  빈프레임 emtyRate34(3:4) emtyRate11(1:1) emtyRate43(4:3) / 이미지 적용 rate34(3:4) rate11(1:1) rate43(4:3)  -->
+               <h2>템플릿생성영역</h2>
+               <div class="bgCard">
+                    <img src="../images/@pic04.jpg">  
+               </div>
+          </section>
+     </main>
+
+     <div class="promptArea">
+          <section class="appliedValue">
+               <h2>적용된 프롬프트 값</h2>
+               <div class="valueWrap">
+                    <div class="valuegroup">
+                         <label class="checkbox_t">
+                              <input type="checkbox" disabled>
+                              <span class="checkbox_txt">맑은하늘</span>
+                         </label>
+                         <label class="checkbox_t">
+                              <input type="checkbox" disabled>
+                              <span class="checkbox_txt">드레스</span>
+                         </label>
+                         <label class="checkbox_t">
+                              <input type="checkbox" disabled>
+                              <span class="checkbox_txt">양갈래머리</span>
+                         </label>
+                         <label class="checkbox_t">
+                              <input type="checkbox" disabled>
+                              <span class="checkbox_txt">다크브라운</span>
+                         </label>
+                         <label class="checkbox_t">
+                              <input type="checkbox" disabled>
+                              <span class="checkbox_txt">두손앞으로</span>
+                         </label>
+                    </div>
+                    <div class="btngroup">
+                         <button type="submit" class="btn_t_orn">적용</button>
+                         <button type="button" class="btn_t_del" id="promptDel_before">삭제</button>
+                    </div>
+               </div>
+          </section>
+          <section class="prompt">
+               <h2>프롬프트 설정</h2>
+               <div class="promptTab">
+                    <button class="item01" type="button" data-toggle-target="#promptTab1">배경</button>
+                    <button class="item02" type="button" data-toggle-target="#promptTab2">의상</button>
+                    <button class="item03" type="button" data-toggle-target="#promptTab3">헤어스타일</button>
+                    <button class="item04" type="button" data-toggle-target="#promptTab4">헤어컬러</button>
+                    <button class="item05" type="button" data-toggle-target="#promptTab5">자세</button>
+               </div>
+               <div class="promptPanel">
+                    <div id="promptTab1" class="promptItems">
+                         <button class="promptItem_bg01" type="button">사무실</button>
+                         <button class="promptItem_bg02" type="button">도심</button>
+                         <button class="promptItem_bg03" type="button">궁</button>
+                         <button class="promptItem_bg04" type="button">숲</button>
+                         <button class="promptItem_bg05" type="button">맑은하늘</button>
+                         <button class="promptItem_bg06" type="button">카페</button>
+                         <button class="promptItem_bg07" type="button">거실</button>
+                         <button class="promptItem_bg08" type="button">정원</button>
+                    </div>
+                    <div id="promptTab2" class="promptItems">
+                         <button type="button">정장</button>
+                         <button type="button">일상</button>
+                         <button type="button">한복</button>
+                         <button type="button">휴가</button>
+                         <button type="button">드레스</button><!-- for male : 턱시도 -->
+                         <button type="button">판타지</button>
+                    </div>
+                    <div id="promptTab3" class="promptItems">
+                         <button type="button">단발머리</button>
+                         <button type="button">긴머리</button>
+                         <button type="button">파마머리</button>
+                         <button type="button">묶은머리</button>
+                         <button type="button">땋은머리</button>
+                         <button type="button">양갈래머리</button>
+                    </div>
+                    <div id="promptTab4" class="promptItems">
+                         <button class="promptItem_hcolor01" type="button">변화없음</button>
+                         <button class="promptItem_hcolor02" type="button">블랙</button>
+                         <button class="promptItem_hcolor03" type="button">브라운</button>
+                         <button class="promptItem_hcolor04" type="button">다크브라운</button>
+                         <button class="promptItem_hcolor05" type="button">로즈브라운</button>
+                         <button class="promptItem_hcolor06" type="button">블론즈</button>
+                    </div>
+                    <div id="promptTab5" class="promptItems">
+                         <button type="button">정면기립</button>
+                         <button type="button">앉아있는</button>
+                         <button type="button">두손앞으로</button>
+                         <button type="button">인사</button>
+                         <button type="button">큰절</button>
+                         <button type="button">손인사</button>
+                    </div>
+               </div>
+          </section>
+     </div>
+
+<script>
+//  make template: btn rate
+$(".btnwrap_rate > button").on("click", function () {
+    $(".btnwrap_rate > button").removeClass("on");
+    $(this).addClass("on");
+});
+
+//  make template: stage Rate
+$("#rate34").on("click", function () {
+    $(".makeTemplate > .stage").attr('class','stage rate34');
+});
+$("#rate11").on("click", function () {
+    $(".makeTemplate > .stage").attr('class','stage rate11');
+});
+$("#rate43").on("click", function () {
+    $(".makeTemplate > .stage").attr('class','stage rate43');
+});
+
+//  make template: prompt slide
+$(".promptTab > button").click(function () {
+    $(".promptArea").animate({bottom: '0'});
+});
+$(".makeTemplate").click(function () {
+    $(".promptArea").animate({bottom: '-10.6rem'});
+});
+$(".appliedValue").click(function () {
+    $(".promptArea").animate({bottom: '-10.6rem'});
+});
+
+//  make template: prompt delete btn ->  after delete, get back to original state
+$("#promptDel_before").on("click", function () {
+    $("#promptDel_before").attr('id','promptDel_after');
+    $(".valueWrap .btn_t_del").addClass('active');
+    $(".valuegroup .checkbox_t input[type='checkbox']").prop('disabled', false);
+});
+
+
+// make template: category Item Tab
+$('.promptTab > button').on('click', function(evt) {
+    evt.preventDefault();
+    $(".promptTab > button").removeClass("on");
+    $(this).addClass('on');
+    var sel = this.getAttribute('data-toggle-target');
+    $('.promptItems').removeClass('active').filter(sel).addClass('active');
+});
+
+//  make template: category Tab
+$("#promptTab1 > button").on("click", function () {
+    $("#promptTab1 > button").removeClass("on");
+    $(this).addClass("on");
+});
+$("#promptTab2 > button").on("click", function () {
+    $("#promptTab2 > button").removeClass("on");
+    $(this).addClass("on");
+});
+$("#promptTab3 > button").on("click", function () {
+    $("#promptTab3 > button").removeClass("on");
+    $(this).addClass("on");
+});
+$("#promptTab4 > button").on("click", function () {
+    $("#promptTab4 > button").removeClass("on");
+    $(this).addClass("on");
+});
+$("#promptTab5 > button").on("click", function () {
+    $("#promptTab5 > button").removeClass("on");
+    $(this).addClass("on");
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=medium-dpi">
+	<title>한화손해보험_AIcard</title>
+	<link rel="stylesheet" href="../css/hairang_style.css">
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body>
+     <header>
+          <div class="btn_group_l">
+               <button type="button" class="btn_i_back" onclick = "window.location.href='maketemplate.html';">뒤로가기</button>
+          </div>
+          <div class="btn_group_r">
+               <button type="button" class="btn_t_b">저장</button>
+               <button type="button" class="btn_t_orn" onclick = "window.location.href='';">보내기</button>
+               <button type="button" class="btn_i_reset">초기화</button>
+          </div>
+     </header>
+     <main class="imageDecoration"> 
+          <section class="stage rate34"><!-- rate34(3:4) / rate11(1:1) / rate43(4:3)  -->
+               <h2>이미지꾸미기영역</h2>
+               <div class="btnArea">
+                    <button class="btn_i_reswap" type="button">얼굴재스왑
+                         <span class="tooltip">얼굴이 여러 버전으로 적용됩니다.</span>
+                    </button><!-- 꾸미기 시작 전에만 노출 'skip' 추가 및 삭제 -->
+                    <button class="btn_t_name skip" type="button">고객이름
+                         <span class="tooltip">고객이름 대신 넣어주세요.<br>
+                              받으시는 모든 분의 이름이 각각 들어갑니다.</span>
+                    </button><!-- 텍스트 단계에서만 노출 'skip'  추가 및 삭제 -->
+               </div>
+               <div class="bgCard">
+                    <div class="decoItem_text place_ex01">
+                         <button class="decoBtn_delete" type="button">삭제</button>
+                         <button class="decoBtn_write" type="button">쓰기</button>
+                         안녕하세요, <em>{고객이름}</em>님,<br>
+                         잘 지내시죠?<br>
+                         언제나 감사드립니다.
+                    </div>
+                    <div class="decoItem_sticker place_ex02">
+                         <button class="decoBtn_delete" type="button">삭제</button>
+                         <button class="decoBtn_scale" type="button">크기조절</button>
+                         <img src="../images/@sticker01.png">
+                    </div>
+                    <div class="decoItem_hanwha place_ex03">
+                         <button class="decoBtn_delete" type="button">삭제</button>
+                         <button class="decoBtn_scale" type="button">크기조절</button>
+                         <img src="../images/@hanwha01.png">
+                    </div>
+                    <img src="../images/@pic04.jpg">                   
+               </div>
+          </section>
+          <div class="btnwrap">
+               <a href="videocard.html" class="btn_t_b">영상으로 만들기</a>
+          </div>
+     </main>
+
+     <div class="decorationArea">
+          <section class="groupwrap textGroup" id="sec_textGroup">
+               <h2>텍스트 추가</h2>
+               <div class="row">
+                    <div class="item_font">
+                         <button class="fontfamily01 on" type="button">나눔바른고딕</button>
+                         <button class="fontfamily02" type="button">나눔명조체</button>
+                         <button class="fontfamily03" type="button">나눔스퀘어</button>
+                         <button class="fontfamily04" type="button">나눔펜글씨</button>
+                         <button class="fontfamily05" type="button">나눔하나손글씨</button>
+                    </div>
+               </div>
+               <div class="row">
+                    <div class="item_fontSize">
+                         <button class="fontsize14 on" type="button">가</button>
+                         <button class="fontsize18" type="button">가</button>
+                         <button class="fontsize22" type="button">가</button>
+                         <button class="fontsize24" type="button">가</button>
+                         <button class="fontsize30" type="button">가</button>
+                    </div>
+               </div>
+               <div class="row">
+                    <div class="item_fontColor">
+                         <button class="fontColor01 on" type="button">검정</button>
+                         <button class="fontColor02" type="button">회색</button>
+                         <button class="fontColor03" type="button">밝은회색</button>
+                         <button class="fontColor04" type="button">흰색</button>
+                         <button class="fontColor05" type="button">빨간색</button>
+                         <button class="fontColor06" type="button">주황색</button>
+                         <button class="fontColor07" type="button">연주황색</button>
+                         <button class="fontColor08" type="button">밝은연두색</button>
+                         <button class="fontColor09" type="button">노랑색</button>
+                         <button class="fontColor10" type="button">초록색</button>
+                         <button class="fontColor11" type="button">연초록색</button>
+                         <button class="fontColor12" type="button">밝은초록색</button>
+                         <button class="fontColor13" type="button">군청색</button>
+                         <button class="fontColor14" type="button">파란색</button>
+                         <button class="fontColor15" type="button">하늘색</button>
+                         <button class="fontColor16" type="button">보라색</button>
+                         <button class="fontColor17" type="button">자주색</button>
+                         <button class="fontColor18" type="button">연보라색</button>
+                    </div>
+               </div>
+               <div class="footGroup">
+                    <button class="btn_i_close" type="button" id="btn_closeTxt">닫기</button>
+                    <h3>텍스트</h3>
+                    <button class="btn_i_apply" type="button">적용</button>
+               </div>
+          </section>
+          <section class="groupwrap stickerGroup" id="sec_stickerGroup">
+               <h2>스티커 추가</h2>
+               <div class="stickerTab">
+                    <button class="item01 on" type="button" data-toggle-target="#stickerTab1">스티커종류1</button>
+                    <button class="item02" type="button" data-toggle-target="#stickerTab2">스티커종류2</button>
+                    <button class="item03" type="button" data-toggle-target="#stickerTab3">스티커종류3</button>
+                    <button class="item04" type="button" data-toggle-target="#stickerTab4">스티커종류4</button>
+                    <button class="item05" type="button" data-toggle-target="#stickerTab5">스티커종류5</button>
+               </div>
+               <div class="stickerPanel">
+                    <div id="stickerTab1" class="stickerItems active">
+                         <button type="button">1</button>
+                         <button type="button">1</button>
+                         <button type="button">1</button>
+                         <button type="button">1</button>
+                         <button type="button">1</button>
+                         <button type="button">1</button>
+                         <button type="button">1</button>
+                         <button type="button">1</button>
+                         <button type="button">1</button>
+                         <button type="button">1</button>
+                         <button type="button">1</button>
+                         <button type="button">1</button>
+                    </div>
+                    <div id="stickerTab2" class="stickerItems">
+                         <button type="button">2</button>
+                         <button type="button">2</button>
+                         <button type="button">2</button>
+                         <button type="button">2</button>
+                         <button type="button">2</button>
+                         <button type="button">2</button>
+                    </div>
+                    <div id="stickerTab3" class="stickerItems">
+                         <button type="button">3</button>
+                         <button type="button">3</button>
+                         <button type="button">3</button>
+                         <button type="button">3</button>
+                         <button type="button">3</button>
+                         <button type="button">3</button>
+                    </div>
+                    <div id="stickerTab4" class="stickerItems">
+                         <button type="button">4</button>
+                         <button type="button">4</button>
+                         <button type="button">4</button>
+                         <button type="button">4</button>
+                         <button type="button">4</button>
+                         <button type="button">4</button>
+                    </div>
+                    <div id="stickerTab5" class="stickerItems">
+                         <button type="button">5</button>
+                         <button type="button">5</button>
+                         <button type="button">5</button>
+                         <button type="button">5</button>
+                         <button type="button">5</button>
+                         <button type="button">5</button>
+                    </div>
+               </div>
+               <div class="footGroup">
+                    <button class="btn_i_close" type="button" id="btn_closeSticker">닫기</button>
+                    <h3>스티커</h3>
+                    <button class="btn_i_apply" type="button">적용</button>
+               </div>
+          </section> 
+          <section class="groupwrap hanwhaGroup" id="sec_hanwhaGroup">
+               <h2>한화로고 추가</h2>
+               <div class="hanwhalogo">
+                    <button class="item01" type="button">한화로고_가로</button>
+                    <button class="item02" type="button">한화로고_영문가로</button>
+                    <button class="item03" type="button">한화로고_세로</button>
+                    <button class="item04" type="button">한화로고_영문세로</button>
+               </div>
+               <div class="footGroup">
+                    <button class="btn_i_close" type="button" id="btn_closeHanwha">닫기</button>
+                    <h3>스티커</h3>
+                    <button class="btn_i_apply" type="button">적용</button>
+               </div>
+          </section>
+          <div class="decoCategory">
+               <button class="item01" type="button" id="btn_openTxt">텍스트</button>
+               <button class="item02" type="button" id="btn_openSticker">스티커</button>
+               <button class="item03" type="button"  id="btn_openHanwha">한화로고</button>
+          </div>
+     </div>
+
+<script>
+// open textArea
+$("#btn_openTxt").on("click", function () {
+    $("#sec_textGroup").addClass("active");
+    $("header").addClass("skip");
+    $(".bgCard").addClass("onWork");
+});
+
+// close textArea
+$("#btn_closeTxt").on("click", function () {
+    $("#sec_textGroup").removeClass("active");
+    $("header").removeClass("skip");
+    $(".bgCard").removeClass("onWork");
+});
+
+// open stickerArea
+$("#btn_openSticker").on("click", function () {
+    $("#sec_stickerGroup").addClass("active");
+    $("header").addClass("skip");
+    $(".bgCard").addClass("onWork");
+});
+
+// close stickerArea
+$("#btn_closeSticker").on("click", function () {
+    $("#sec_stickerGroup").removeClass("active");
+    $("header").removeClass("skip");
+    $(".bgCard").removeClass("onWork");
+});
+
+// open stickerArea
+$("#btn_openHanwha").on("click", function () {
+    $("#sec_hanwhaGroup").addClass("active");
+    $("header").addClass("skip");
+    $(".bgCard").addClass("onWork");
+});
+
+// close stickerArea
+$("#btn_closeHanwha").on("click", function () {
+    $("#sec_hanwhaGroup").removeClass("active");
+    $("header").removeClass("skip");
+    $(".bgCard").removeClass("onWork");
+});
+
+// image decoration: reswap toggle
+$(".btn_i_reswap").on("click", function () {
+    $(".btn_i_reswap").addClass("on");
+    setTimeout(function () {
+        $(".btn_i_reswap").removeClass("on");     
+        }, 1000);
+});
+
+// image decoration: tooltip
+setTimeout(function () {
+    $(".tooltip").fadeOut();     
+}, 4000);
+
+//  image decoration: font btn
+$(".item_font > button").on("click", function () {
+    $(".item_font > button").removeClass("on");
+    $(this).addClass("on");
+});
+
+//  image decoration: font size btn
+$(".item_fontSize > button").on("click", function () {
+    $(".item_fontSize > button").removeClass("on");
+    $(this).addClass("on");
+});
+
+//  image decoration: font color btn
+$(".item_fontColor > button").on("click", function () {
+    $(".item_fontColor > button").removeClass("on");
+    $(this).addClass("on");
+});
+
+// image decoration: sticker Tab
+$('.stickerTab > button').on('click', function(evt) {
+    evt.preventDefault();
+    $(".stickerTab > button").removeClass("on");
+    $(this).addClass('on');
+    var sel = this.getAttribute('data-toggle-target');
+    $('.stickerItems').removeClass('active').filter(sel).addClass('active');
+});
+
+//  image decoration: hanhwa logo btn
+$(".hanwhalogo > button").on("click", function () {
+    $(".hanwhalogo > button").removeClass("on");
+    $(this).addClass("on");
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-weight: 200;
+	font-style: normal;
+	src: url('../fonts/NotoSansKR-Thin.woff2') format('woff2'),
+		url('../fonts/NotoSansKR-Thin.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-weight: 300;
+	font-style: normal;
+	src: url('../fonts/NotoSansKR-Light.woff2') format('woff2'),
+		url('../fonts/NotoSansKR-Light.woff') format('woff');
+}
+
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-weight: 400;
+	font-style: normal;
+	src: url('../fonts/NotoSansKR-Regular.woff2') format('woff2'),
+		url('../fonts/NotoSansKR-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-weight: 500;
+	font-style: normal;
+	src: url('../fonts/NotoSansKR-Medium.woff2') format('woff2'),
+		url('../fonts/NotoSansKR-Medium.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-weight: 600;
+	font-style: normal;
+	src: url('../fonts/NotoSansKR-SemiBold.woff2') format('woff2'),
+		url('../fonts/NotoSansKR-SemiBold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-weight: 700;
+	font-style: normal;
+	src: url('../fonts/NotoSansKR-Bold.woff2') format('woff2'),
+		url('../fonts/NotoSansKR-Bold.woff') format('woff');
+}
+
+/*  decoration Text font   */
+
+
+@font-face {
+	font-family: 'NanumBarunGothic';
+	font-weight: 400;
+	font-style: normal;
+	src: url('../fonts/NanumBarunGothic.woff2') format('woff2'),
+		url('../fonts/NanumBarunGothic.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'NanumSquare';
+	font-weight: 400;
+	font-style: normal;
+	src: url('../fonts/NanumSquare.woff2') format('woff2'),
+		url('../fonts/NanumSquare.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'NanumMyeongjo';
+	font-weight: 400;
+	font-style: normal;
+	src: url('../fonts/NanumMyeongjo.woff2') format('woff2'),
+		url('../fonts/NanumMyeongjo.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'NanumPen';
+	font-weight: 400;
+	font-style: normal;
+	src: url('../fonts/NanumPen.woff2') format('woff2'),
+		url('../fonts/NanumPen.woff') format('woff');
+}
+
+
+
+@font-face {
+	font-family: 'NanumHaNaSon';
+	font-weight: 400;
+	font-style: normal;
+	src: url('../fonts/NanumHaNaSon.woff2') format('woff2'),
+		url('../fonts/NanumHaNaSon.woff') format('woff');
+}
