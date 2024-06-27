@@ -16,31 +16,35 @@
 
 <!--  POPUP  AREA -->
      <div class="dimmedLayer"></div><!-- end: class="dimmedLayer" -->
-     <div class="popup_mid">
-          <div class="popupWrap">
-               <div class="popMessage">
-                    작업된 내용이 사라집니다.<br>
-                    저장하시겠습니까?
-               </div>
-          </div>
-          <div class="popup_btnGroup col">
-               <button type="button" class="btn_t_l">아니오</button>
-               <button type="button" class="btn_t_r">네</button>
-          </div>
-     </div<><!-- end: class="popup_mid"  -->
 
+     <div class="popupContainer">
+          <div class="popup_midWrap">
+               <div class="popup_mid">
+                    <div class="popupWrap">
+                         <div class="popMessage">
+                              작업된 내용이 사라집니다.<br>
+                              저장하시겠습니까?
+                         </div>
+                    </div>
+                    <div class="popup_btnGroup col">
+                         <button type="button" class="btn_t_l">아니오</button>
+                         <button type="button" class="btn_t_r">네</button>
+                    </div>
+               </div<><!-- end: class="popup_mid"  -->
+          </div>
+     </div>
 <!-- //  POPUP  AREA -->
 
 <script>
 // popupEvent_closeBtn
 $('.popup_btnGroup > button').click(function(){
-     $('.popup_mid').fadeOut(300);
+     $('.popupContainer').fadeOut(300);
      $('.dimmedLayer').fadeOut(200);
 });
    
 // popEvent_testBtn
 $('#test_callpop').click(function(){
-     $('.popup_mid').fadeIn(300);
+     $('.popupContainer').fadeIn(300);
      $('.dimmedLayer').fadeIn(200);
 });
 </script>
