@@ -15,7 +15,7 @@ button:hover {opacity:0.9;}
 a {display:inline-block;}
 textarea::placeholder, input::placeholder {color:#777;}
 
-div::-webkit-scrollbar {background-color:transparent; width:0; height:0;}
+div::-webkit-scrollbar, main::-webkit-scrollbar, section::-webkit-scrollbar {background-color:transparent; width:0; height:0;}
 
 /* buttons */
 [class^="btn_i_"] {display:inline-block; width:4rem; height:4rem; text-indent:-9999em; overflow:hidden; 
@@ -129,14 +129,14 @@ a.btn_t_b:visited {color:#fff;}
 	text-indent:0 !important; white-space:wrap !important; text-align:left !important;
 	border:solid 1px #ff6600;
 	background:#fff; box-shadow:0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.1);}
-.tooltip::before {content:''; position:absolute; top:-2.1rem; left:-0.1rem;
+.tooltip::before {content:''; position:absolute; top:-2rem; left:-0.1rem;
 	display:block; width:2rem; height:2rem;
-	border:1px solid #ff6600; background:#ff6600;
-	clip-path:polygon(1rem 2rem, 0 1.4rem, 0 2rem);}
-.tooltip::after {content:''; position:absolute; top:-2rem; left:-0.1rem;
+	 background:#ff6600;
+	clip-path:polygon(1.4rem 2.4rem, 0 1rem, 0 2.1rem);}
+.tooltip::after {content:''; position:absolute; top:-1.8rem; left:0rem;
 	display:block; width:2rem; height:2rem;
-	border:1px solid #ff6600; background:#fff;
-	clip-path:polygon(1rem 2rem, 0 1.4rem, 0 2rem);}
+	 background:#fff;
+	clip-path:polygon(1.4rem 2.4rem, 0 1rem, 0 2rem);}
 
 section > h2, section > h3 {display:none;}
 
@@ -594,7 +594,7 @@ header > .btn_group_r button {height:3rem; line-height:3rem;}
 .simplemake {margin:0;}
 .simplemake .templateList {display:none;}
 .simplemake .templateList.active {display:grid;}
-.simplemake > .tabPanel {padding:2rem 0 8rem;
+.simplemake > .tabPanel {padding:1rem 0 8rem;
 	position:fixed; top:10rem; left:0; right:0; bottom:0; overflow:hidden; overflow-y:auto;}
 
 .cateTab {padding:1rem 2rem; display:flex; gap:0.8rem; overflow:hidden; overflow-x:auto;}
@@ -686,7 +686,8 @@ header > .btn_group_r button {height:3rem; line-height:3rem;}
 .popupTab > button > em {display:none; font-weight:400; color:#FBB584;}
 .popupTab > .on {color:#fff; font-weight:500; background:#1E1D36;}
 .popupTab > .on > em {display:block;}
-.popupPanel {padding:2rem;}
+.popupPanel {position:fixed; top:10rem; left:0; right:0; bottom:0; padding:2rem 2rem 8rem; 
+	overflow:hidden; overflow-y:auto;}
 
 
 /* popup - bgm list */
