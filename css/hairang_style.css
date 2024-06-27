@@ -68,8 +68,8 @@ div::-webkit-scrollbar, main::-webkit-scrollbar, section::-webkit-scrollbar {bac
 .btn_i_timePoint::after {content:''; position:absolute; top:50%; left:50%; margin:-0.5rem 0 0 -0.5rem;
 	display:block; width:1rem; height:1rem; border-radius:50%; background:#3958A8;}
 
-.btn_i_sound {border-radius:50%; background:#1E1D36 url(../images/ic_sound_off.svg) no-repeat center; background-size:1.6rem;}
-.btn_i_sound.on {background:#1E1D36 url(../images/ic_sound_on.svg) no-repeat center;}
+.btn_i_sound {border-radius:50%; background:#1E1D36 url(../images/ic_sound_off.svg) no-repeat center; background-size:2rem;}
+.btn_i_sound.on {background:#1E1D36 url(../images/ic_sound_on.svg) no-repeat center; background-size:2rem;}
 
 
 
