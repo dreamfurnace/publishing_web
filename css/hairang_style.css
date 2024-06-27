@@ -528,7 +528,7 @@ header > .btn_group_r button {height:3rem; line-height:3rem;}
 .voiceCategory > button:active,
 .simple_btnGroup > button:active {color:#FF6600;}
 
-.btn_voiceRec, .btn_voiceMake, .btn_simpleBgm {width:9rem; margin:1.2rem 0 0;
+.btn_voiceRec, .btn_voiceMake, .btn_simpleBgm {width:9rem; margin:1.2rem 0 0; font-size:1.2rem;
 	display:flex; gap:0.4rem; flex-direction:column; justify-content:center; align-items:center;}
 
 .btn_voiceRec::before {content:''; width:2.4rem; height:2.4rem; background-size:2.4rem; 
