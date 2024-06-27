@@ -132,11 +132,11 @@ a.btn_t_b:visited {color:#fff;}
 .tooltip::before {content:''; position:absolute; top:-2.1rem; left:-0.1rem;
 	display:block; width:2rem; height:2rem;
 	border:1px solid #ff6600; background:#ff6600;
-	clip-path:polygon(1rem 2rem, 0 1.4rem, 0 2rem);}
+	clip-path:polygon(1.1rem 2.1rem, 0 1.5rem, 0 2.1rem);}
 .tooltip::after {content:''; position:absolute; top:-2rem; left:-0.1rem;
 	display:block; width:2rem; height:2rem;
 	border:1px solid #ff6600; background:#fff;
-	clip-path:polygon(1rem 2rem, 0 1.4rem, 0 2rem);}
+	clip-path:polygon(1.1rem 2.1rem, 0 1.5rem, 0 2.1rem);}
 
 section > h2, section > h3 {display:none;}
 
