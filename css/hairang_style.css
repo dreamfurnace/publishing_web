@@ -15,7 +15,7 @@ button:hover {opacity:0.9;}
 a {display:inline-block;}
 textarea::placeholder, input::placeholder {color:#777;}
 
-div::-webkit-scrollbar {background-color:transparent; width:0; height:0;}
+div::-webkit-scrollbar, main::-webkit-scrollbar, section::-webkit-scrollbar {background-color:transparent; width:0; height:0;}
 
 /* buttons */
 [class^="btn_i_"] {display:inline-block; width:4rem; height:4rem; text-indent:-9999em; overflow:hidden; 
@@ -594,7 +594,7 @@ header > .btn_group_r button {height:3rem; line-height:3rem;}
 .simplemake {margin:0;}
 .simplemake .templateList {display:none;}
 .simplemake .templateList.active {display:grid;}
-.simplemake > .tabPanel {padding:2rem 0 8rem;
+.simplemake > .tabPanel {padding:1rem 0 8rem;
 	position:fixed; top:10rem; left:0; right:0; bottom:0; overflow:hidden; overflow-y:auto;}
 
 .cateTab {padding:1rem 2rem; display:flex; gap:0.8rem; overflow:hidden; overflow-x:auto;}
