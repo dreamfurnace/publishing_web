@@ -4,7 +4,7 @@
 @import url('font.css');
 
 
-html, body {height:100%; font-size:10px;}
+html, body {font-size:10px;}
 body {font-size:1.4rem; line-height:1.2; color:#000; 
 	font-weight:400; font-family:'Noto Sans KR', sans-serif; overflow:hidden; background-color:#F2F2F2;}
 input[type="checkbox"], input[type="radio"] {height:auto; vertical-align:middle; cursor:pointer;}
@@ -14,6 +14,8 @@ button {letter-spacing:-0.05rem; font-size:1.4rem; font-weight:400; line-height:
 button:hover {opacity:0.9;}
 a {display:inline-block;}
 textarea::placeholder, input::placeholder {color:#777;}
+
+div::-webkit-scrollbar {background-color:transparent; width:0; height:0;}
 
 /* buttons */
 [class^="btn_i_"] {display:inline-block; width:4rem; height:4rem; text-indent:-9999em; overflow:hidden; 
@@ -114,7 +116,7 @@ a.btn_t_b:visited {color:#fff;}
 
 
 /* common */
-.logo_hanhwa {width:11.2rem; height:2.8rem;
+.logo_hanhwa {width:12rem; height:3rem;
 	text-indent:-9999em; overflow:hidden; white-space:nowrap;
 	background:url(../images/logo_hanhwa.png) no-repeat; background-size:100%;}
 .logo_appname {width:14rem; height:7.8rem; 
@@ -504,13 +506,15 @@ header > .btn_group_r button {height:3rem; line-height:3rem;}
 	width:6rem; height:6rem; font-weight:400; font-size:1.2rem; color:#fff; border-radius:50%; 
 	box-shadow:0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.25);
 	background-color:#1e1d36;}
-.btn_bgm:active {background-color:#3958A8;}
+.btn_bgm:active {background-color:#3958A8; color:#fff !important;}
 .btn_bgm::before {content:''; width:2.4rem; height:2.4rem; 
 	background:url(../images/ic_bgm_wh.svg) no-repeat center; background-size:2.4rem;}
 
-.voiceCategory {display:flex; justify-content:space-around; align-items:center;}	
-.btn_voiceRec, .btn_voiceMake, .btn_simpleBgm
- {width:9rem; margin:1.2rem 0 0;
+.voiceCategory {display:flex; justify-content:space-around; align-items:center;}
+.voiceCategory > button:active,
+.simple_btnGroup > button:active {color:#FF6600;}
+
+.btn_voiceRec, .btn_voiceMake, .btn_simpleBgm {width:9rem; margin:1.2rem 0 0;
 	display:flex; gap:0.4rem; flex-direction:column; justify-content:center; align-items:center;}
 
 .btn_voiceRec::before {content:''; width:2.4rem; height:2.4rem; background-size:2.4rem; 
@@ -519,6 +523,13 @@ header > .btn_group_r button {height:3rem; line-height:3rem;}
 	background:url(../images/ic_makevoice.svg) no-repeat center;}
 .btn_simpleBgm::before {content:''; width:2.4rem; height:2.4rem; background-size:2.4rem;
 	background:url(../images/ic_bgm_bk.svg) no-repeat center;}
+
+.btn_voiceRec:active:before {content:''; width:2.4rem; height:2.4rem; background-size:2.4rem; 
+	background:url(../images/ic_recordvoice_orn.svg) no-repeat center;}
+.btn_voiceMake:active::before {content:''; width:2.4rem; height:2.4rem; background-size:2.4rem;
+	background:url(../images/ic_makevoice_orn.svg) no-repeat center;}
+.btn_simpleBgm:active::before {content:''; width:2.4rem; height:2.4rem; background-size:2.4rem;
+	background:url(../images/ic_bgm_orn.svg) no-repeat center;}
 
 
 .voiceRecording {display:none; padding:2rem; height:12rem;}
