@@ -68,10 +68,9 @@ div::-webkit-scrollbar, main::-webkit-scrollbar, section::-webkit-scrollbar {bac
 .btn_i_timePoint::after {content:''; position:absolute; top:50%; left:50%; margin:-0.5rem 0 0 -0.5rem;
 	display:block; width:1rem; height:1rem; border-radius:50%; background:#3958A8;}
 
-.btn_i_sound {border-radius:50%; background:#1E1D36 url(../images/ic_sound_off.svg) no-repeat center; background-size:2rem;}
-.btn_i_sound.on {background:#1E1D36 url(../images/ic_sound_on.svg) no-repeat center; background-size:2rem;}
-
-
+.btn_i_sound {border-radius:50%; background:#1E1D36 url(../images/ic_sound_off.svg) no-repeat center; background-size:1.8rem;}
+.btn_i_sound.on {background:#1E1D36 url(../images/ic_sound_on.svg) no-repeat center; background-size:1.8rem;}
+.btn_i_sound:active {background-color:#4B4A5E;}
 
 [class^="btn_t_"] {font-weight:500; height:4rem; line-height:4rem; 
 	font-size:1.4rem; text-align:center; border-radius:2.5rem;}
@@ -108,8 +107,9 @@ a.btn_t_b:visited {color:#fff;}
 
 
 .btn_messagePop {display:flex; align-items:center; gap:0.8rem; height:3rem;
-	font-weight:500; color:#333;}
+	font-weight:500; color:#000; opacity:0.8;}
 .btn_messagePop::before {content:''; width:1.6rem; height:1.6rem; background:url(../images/ic_message.svg) no-repeat center; background-size:contain;}
+.btn_messagePop:active {opacity:1;}
 
 .btn_kakao,.btn_sms {width:50%; height:6rem; display:flex; gap:1rem; justify-content:center; align-items:center;
 	font-weight:500; color:#333; font-size:1.2rem;
@@ -118,7 +118,7 @@ a.btn_t_b:visited {color:#fff;}
 	background:url(../images/ic_kakao.svg) no-repeat center; background-size:3.4rem;}
 .btn_sms::before {content:''; width:3.4rem; height:3.4rem; 
 	background:url(../images/ic_sms.svg) no-repeat center; background-size:3.4rem; }
-
+.btn_kakao:active,.btn_sms:active {border-color:#333;}
 
 /* common */
 .logo_hanhwa {width:12rem; height:4rem;
