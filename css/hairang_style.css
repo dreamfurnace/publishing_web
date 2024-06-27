@@ -409,10 +409,8 @@ header > .btn_group_r button {height:3rem; line-height:3rem;}
 .decoBtn_delete {width:2rem; height:2rem; top:-1rem; left:-1rem; background:#fff url(../images/ic_x_1.svg) no-repeat center; background-size:1rem;}
 .decoBtn_write {bottom:-1rem; right:-1rem; background:#3958A8 url(../images/ic_write.svg) no-repeat center; background-size:1rem;}
 .decoBtn_scale {bottom:-1rem; right:-1rem; background:#3958A8 url(../images/ic_scale.svg) no-repeat center; background-size:1.2rem;}
-.decoBtn_move {bottom:-1rem; right:-1rem; background:#3958A8 url(../images/ic_scale.svg) no-repeat center; background-size:1.6rem;}
-.decoBtn_move::before {content:''; display:block;  width:2.2rem; height:2.2rem;
-	 position:absolute; top:0; left:0; right:0; bottom:0; transform: rotate(90deg); 
-	 background:url(../images/ic_scale.svg) no-repeat center;  background-size:1.6rem;}
+.decoBtn_move {top:-1rem; right:-1rem; background:#3958A8 url(../images/ic_move.svg) no-repeat center; background-size:1.6rem;}
+
 
 .groupwrap {position:absolute; bottom:0; left:0; right:0; z-index:10; border-radius:2rem 2rem 0 0; 
 	background:#fff; box-shadow:0 0.4rem 2rem 0 rgba(0, 0, 0, 0.1);}
