@@ -28,6 +28,7 @@ div::-webkit-scrollbar, main::-webkit-scrollbar, section::-webkit-scrollbar {bac
 .btn_i_next {width:4rem;
 	border-radius:2.5rem; background:#ff6600 url(../images/arrow_r_wh.svg) no-repeat center;}
 .btn_i_next:disabled {background:url(../images/arrow_r_gry.svg) no-repeat center;}
+.btn_i_next:active {background-color:#CC5200;}
 
 .btn_i_reset {width:3rem; height:3rem; 
 	background:url(../images/ic_reset.svg) no-repeat center; background-size:2.6rem;}
@@ -83,8 +84,10 @@ div::-webkit-scrollbar, main::-webkit-scrollbar, section::-webkit-scrollbar {bac
 
 .btn_t_b {padding:0 1.2rem; height:3rem; line-height:3rem; color:#fff; background:#1E1D36;}
 a.btn_t_b:visited {color:#fff;}
+.btn_t_b:active {background:#4B4A5E;}
 
 .btn_t_orn {padding:0 1.2rem; color:#fff; background:#ff6600;}
+.btn_t_orn:active {background-color:#CC5200;}
 .btn_t_name {padding:0 0.8rem; height:2.4rem; line-height:2.4rem; color:#777; 
 	border-radius:2.5rem; background:#fff;}
 .btn_t_del {color:#fff; background:rgba(242, 242, 242, 0.1);}
@@ -341,7 +344,7 @@ header > .btn_group_r button {height:3rem; line-height:3rem;}
 	border-radius:2rem; background:rgba(242, 242, 242, 0.2);}
 .valueWrap > .btngroup {display:flex; flex-direction:column; gap:1rem;}
 .valueWrap > .btngroup > button {width:6rem; height:3.2rem; line-height:3rem;}
-
+.valueWrap > .btngroup .btn_t_orn:disabled {opacity:0.4; color:#1e1d36;}
 
 /*  checkbox style -text   */
 .valuegroup > .checkbox_t {height:2.8rem; margin:0 0 0.6rem;}
@@ -649,7 +652,9 @@ header > .btn_group_r button {height:3rem; line-height:3rem;}
 .popup_btnGroup > button {width:50%; height:5rem; font-size:1.5rem; color:#fff; border-radius:1rem;}
 .popup_btnGroup.col {display:flex; gap:1rem;}
 .popup_btnGroup .btn_t_l {background:#666;}
+.popup_btnGroup .btn_t_l:active {background-color:#525252;}
 .popup_btnGroup .btn_t_r {background:#ff6600;}
+.popup_btnGroup .btn_t_r:active {background:#CC5200;}
 
 .popupWrap {margin:3.2rem 2rem;}
 .popMessage {text-align:center; line-height:1.4;}

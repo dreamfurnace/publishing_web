@@ -63,7 +63,7 @@
                          </label>
                     </div>
                     <div class="btngroup">
-                         <button type="submit" class="btn_t_orn">적용</button>
+                         <button type="submit" class="btn_t_orn" id="promptApply">적용</button>
                          <button type="button" class="btn_t_del" id="promptDel_before">삭제</button>
                     </div>
                </div>
@@ -158,7 +158,10 @@ $("#promptDel_before").on("click", function () {
     $("#promptDel_before").attr('id','promptDel_after');
     $(".valueWrap .btn_t_del").addClass('active');
     $(".valuegroup .checkbox_t input[type='checkbox']").prop('disabled', false);
+    $("#promptApply").prop('disabled', true);
 });
+
+
 
 
 // make template: category Item Tab
