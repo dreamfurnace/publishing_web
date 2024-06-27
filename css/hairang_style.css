@@ -217,19 +217,19 @@ header > .btn_group_r button {height:3rem; line-height:3rem;}
 /* swiwtch */
 .swichbox {margin:0 0 2rem; padding:1rem 2rem; display:flex; justify-content:right;}
 .swichbox .btnbox {display:flex; justify-content:center; gap:0;}
-.swichbox .btnbox > span {display:block; width:3rem; height:2.2rem; text-indent:-9999em; overflow:hidden;}
+.swichbox .btnbox > span {display:block; width:3.4rem; height:2.2rem; text-indent:-9999em; overflow:hidden;}
 .swichbox .ic_swipe {background:url(../images/switch_swipe.svg) no-repeat center; background-size:1.6rem;}
 .swichbox .ic_list {background:url(../images/switch_list.svg) no-repeat center; background-size:1.6rem;}
 
 .switch {position:relative; display:inline-block; width:7rem; height:2.2rem; vertical-align:middle;}
 .switch input {display:none;}
 .switch .slider {position:absolute; top:0; left:0; right:0; bottom:0; border-radius:2.5rem;
-	background-color:#e6e6e6; transition:.4s;}
+	background-color:#fff; transition:.4s;}
 .switch .slider:before {content:""; position:absolute; left:0.2rem; top:50%; margin-top:-1.7rem;
 	height:3.4rem; width:3.4rem; transition:.4s; border-radius:50%;
 	background:#1E1D36 url(../images/switch_swipe_on.svg) no-repeat center; background-size:1.6rem; 
 	box-shadow:0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.25);}
-.switch input:checked + .slider {background:#e6e6e6;}
+.switch input:checked + .slider {background:#fff;}
 .switch input:focus + .slider {box-shadow:0 0 0.3rem #ebebeb;}
 .switch input:checked + .slider:before {transform:translateX(3.4rem); 
 	background:#1E1D36 url(../images/switch_list_on.svg) no-repeat center; background-size:1.6rem;}
@@ -256,7 +256,7 @@ header > .btn_group_r button {height:3rem; line-height:3rem;}
 .emtyRate43 .bgCard > img {display:none;}
 
 .videoElements {position:absolute; left:2rem; right:2rem; bottom:1rem;}
-.videoElements > .btn_i_sound {position:absolute; bottom:4rem; right:0;}
+.videoElements > .btn_i_sound {position:absolute; bottom:4.6rem; right:0;}
 
 .makeTemplate .bgCard::before {content:"생성된 템플릿이 없습니다."; 
 	font-size:1.3rem; text-align:center;
