@@ -1,0 +1,6 @@
+{
+	"editor.formatOnSave": false,
+	"eslint.autoFixOnSave": false,
+	"prettier.disableLanguages": ["css"],
+	"stylelint.enable": false
+}
