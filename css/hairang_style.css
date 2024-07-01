@@ -73,6 +73,13 @@ div::-webkit-scrollbar, main::-webkit-scrollbar, section::-webkit-scrollbar {bac
 .btn_i_sound.on {background:#1E1D36 url(../images/ic_sound_on.svg) no-repeat center; background-size:1.8rem;}
 .btn_i_sound:active, .btn_i_sound:hover  {background-color:#4B4A5E;}
 
+.btn_i_menuClose {background:url(../images/ic_mypage_x.svg) no-repeat center;}
+.btn_i_home {background:url(../images/ic_mypage_home.svg) no-repeat center;}
+.btn_i_myVoice {width:6rem; height:6rem; border-radius:50%; 
+	background:#1e1d36 url(../images/ic_mypage_voice01.svg) no-repeat center; background-size:3.6rem;}
+.btn_i_myVoice.done {background:#ff6600 url(../images/ic_mypage_voice02.svg) no-repeat center; background-size:3.6rem;}
+
+
 [class^="btn_t_"] {font-weight:500; height:4rem; line-height:4rem; 
 	font-size:1.4rem; text-align:center; border-radius:2.5rem;}
 [class^="btn_t_"]:disabled {color:#aaa; background-color:#e1e1e1;}
@@ -240,7 +247,7 @@ header > .btn_group_r button {height:3rem; line-height:3rem;}
 
 /***   MAKE TEMPLATE  ***/
 .btnwrap_rate {display:flex; gap:0.2rem;}
-.btnwrap_rate > button {padding:0.4rem 1rem; height:2.4rem;
+.btnwrap_rate > button {padding:0.4rem 1rem; height:2.4rem; color:#000;
 	display:flex; align-items:center; gap:0.4rem; 
 	font-size:1.2rem; border-radius:2.5rem;}
 .btnwrap_rate > .on {background:#fff;}
@@ -347,7 +354,7 @@ header > .btn_group_r button {height:3rem; line-height:3rem;}
 	border-radius:2rem; background:rgba(242, 242, 242, 0.2);}
 .valueWrap > .btngroup {display:flex; flex-direction:column; gap:1rem;}
 .valueWrap > .btngroup > button {width:6rem; height:3.2rem; line-height:3rem;}
-.valueWrap > .btngroup .btn_t_orn:disabled {opacity:0.4; color:#1e1d36;}
+.valueWrap > .btngroup .btn_t_orn:disabled {color:rgba(255,255,255, 0.3); background:rgba(242, 242, 242, 0.1);}
 
 /*  checkbox style -text   */
 .valuegroup > .checkbox_t {height:2.8rem; margin:0 0 0.6rem;}
@@ -638,6 +645,43 @@ header > .btn_group_r button {height:3rem; line-height:3rem;}
 
 
 
+/***  my page   ***/
+.mypage {position:fixed; top:0; left:0; right:0; bottom:0; z-index:30; 
+	background:#fff;}
+.mypage > .head {padding:0 1rem; height:5rem; display:flex; justify-content:right; align-items:center;}
+.mypic {position:relative; padding:3rem 0 0; display:flex;}
+.mypic::before {content:''; position:absolute; top:0; left:-2rem;
+	display:block; width:21.4rem; height:26rem; 
+	border-radius:1rem; background:#f2f2f2; transform:rotate(-353.54deg); }
+
+.mypic > .pic {position:relative; z-index:2;
+	width:20rem; height:20rem; overflow:hidden;
+	margin-left:3rem; border-radius:1rem;
+	box-shadow: 0 1.6rem 4rem 0 rgba(112, 144, 176, 0.2);
+	border:1px solid rgba(221, 221, 221, 0.87);
+	background: #fff url(../images/bg_pic.svg) no-repeat center; background-size:7.2rem;}
+.mypic > .pic > img {width:100%; object-fit:cover;}
+.mypic > .user {margin:5rem 0 0 2rem; font-weight:500;
+	display:flex; flex-direction:column; gap:0.4rem; color:#333; font-size:1.6rem;}
+.mypic > .user > span {font-size:1.8rem;}
+.mypic > .btn_i_myVoice {position:absolute; left:21rem; bottom:-2rem; z-index:4;}
+
+.mymenu {position:absolute; left:0; bottom:2rem; right:0; padding:2rem;}
+.mymenu ul {display:flex; flex-direction:column;}
+.mymenu li {height:5rem; border-bottom:1px solid #eee;}
+.mymenu li > a {line-height:5rem; display:flex; gap:1.6rem; align-items:center; color:#333; font-weight:500;
+	background:url(../images/ic_mypage_arrow.svg) no-repeat right; background-size:2.4rem;}
+.mymenu li > a::before {content:''; width:2.4rem; height:2.4rem; background-size:2.4rem !important;}
+
+.mymenu li:nth-child(1) > a::before {background:url(../images/ic_mypage_menu01.svg) no-repeat center;}
+.mymenu li:nth-child(2) > a::before {background:url(../images/ic_mypage_menu02.svg) no-repeat center;}
+.mymenu li:nth-child(3) > a::before {background:url(../images/ic_mypage_menu03.svg) no-repeat center;}
+.mymenu li:nth-child(4) > a::before {background:url(../images/ic_mypage_menu04.svg) no-repeat center;}
+.mymenu li:nth-child(5) > a::before {background:url(../images/ic_mypage_menu05.svg) no-repeat center;}
+
+
+
+
 /***  splash  ***/
 .splash {padding:12vh 0 0;}
 .splash .logo_appname {margin:0 auto 3rem;}
@@ -742,7 +786,8 @@ header > .btn_group_r button {height:3rem; line-height:3rem;}
 .messageGroup {display:none; gap:2rem; flex-direction:column;}
 .messageGroup.active {display:flex;}
 
-.messageGroup .checkbox_chk .checktxt {position:relative;
+.messageGroup .checkbox_chk > label {display:block;}
+.messageGroup .checkbox_chk .checktxt {position:relative; 
 	display:block; padding:1.6rem; padding-right:4.5rem;
 	border-radius:1.4rem; background:#fafafa;}
 .messageGroup .checkbox_chk input[type="radio"] {opacity:0; display:none;}
@@ -755,7 +800,7 @@ header > .btn_group_r button {height:3rem; line-height:3rem;}
 		background:url('../images/check_i_on.svg') no-repeat center; background-size:1.4rem;}
 .messageGroup .checkbox_chk input:checked ~ .checktxt {box-shadow: 0 0 2rem 0 rgba(112, 144, 176, 0.25);
 	background-color: #fff;}
-
+	
 
 /* popup - simplemake > message list */
 .messageList {padding:1rem 2rem 8rem;}
