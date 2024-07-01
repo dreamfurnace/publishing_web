@@ -597,15 +597,12 @@ header > .btn_group_r button {height:3rem; line-height:3rem;}
 .voiceMaking.active {display:block;}
 
 
-
 /*** complete card  ***/
 .messageArea {position:fixed; left:0; right:0; bottom:0; z-index:10;
 	border-radius:2rem 2rem 0 0; align-items:center;
 	box-shadow:0 0.4rem 2rem 0 rgba(0, 0, 0, 0.1); background-color:#fff;}
 .messagewrap {position:relative; padding:3.6rem 2rem 2rem; display:flex; flex-direction:column;}
 .messagewrap > .btn_messagePop {position:absolute; top:1rem; right:2rem;}
-
-
 
 
 /* check box - check */
@@ -637,15 +634,14 @@ header > .btn_group_r button {height:3rem; line-height:3rem;}
 
 .btn_makeVideo {position:absolute; top:-3rem; left:50%; margin-left:-4.4rem;
 	display:flex; flex-direction:column; gap:0.8rem; justify-content:center; align-items:center;
-	font-size:1.2rem; color:#333;
-	}
+	font-size:1.2rem; color:#333;}
 .btn_makeVideo::before {content:''; width:6rem; height:6rem; font-weight:400; border-radius:50%; 
 	box-shadow:0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.25);
 	background:#1e1d36 url(../images/ic_makevideo.svg) no-repeat center; background-size:3rem;}
 .btn_makeVideo:active::before, .btn_makeVideo:hover::before {background-color:#3958A8;}
 
 .simple_btnwrap {padding:2rem; display:flex; justify-content:right;}
-.simple_btnGroup {display:flex; justify-content:space-around; align-items:center; }
+.simple_btnGroup {display:flex; justify-content:space-around; align-items:center;}
 
 
 
@@ -685,6 +681,7 @@ header > .btn_group_r button {height:3rem; line-height:3rem;}
 .mymenu li:nth-child(5) > a::before {background:url(../images/ic_mypage_menu05.svg) no-repeat center;}
 
 
+
 /***  splash  ***/
 .splash {padding:12vh 0 0;}
 .splash .logo_appname {margin:0 auto 3rem;}
@@ -695,6 +692,7 @@ header > .btn_group_r button {height:3rem; line-height:3rem;}
 .splash .loadingbar > span > em {display:block; height:0.3rem; background:#000;}
 
 
+
 /***   POP UP    ***/
 .btn_i_popclose {width:4rem; height:4rem; 
 	background:url(../images/btn_i_close01.svg) no-repeat center; background-size:2.2rem;}
@@ -702,12 +700,14 @@ header > .btn_group_r button {height:3rem; line-height:3rem;}
 	background:rgba(0,0,0,0.5); overflow:hidden; overflow-y:auto;}
 
 .popup_btnGroup {margin:0 2rem 2.4rem;}
-.popup_btnGroup > button {width:50%; height:5rem; font-size:1.5rem; color:#fff; border-radius:1rem;}
+.popup_btnGroup > button {width:100%; height:5rem; font-size:1.5rem; color:#fff; border-radius:1rem;}
+.popup_btnGroup.col > button {width:50%;}
 .popup_btnGroup.col {display:flex; gap:1rem;}
 .popup_btnGroup .btn_t_l {background:#666;}
 .popup_btnGroup .btn_t_l:active, .popup_btnGroup .btn_t_l:hover {background-color:#525252;}
 .popup_btnGroup .btn_t_r {background:#ff6600;}
 .popup_btnGroup .btn_t_r:active, .popup_btnGroup .btn_t_r:hover {background:#CC5200;}
+
 
 .popupWrap {margin:3.2rem 2rem;}
 .popMessage {text-align:center; line-height:1.4;}
