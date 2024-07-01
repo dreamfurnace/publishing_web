@@ -646,7 +646,7 @@ header > .btn_group_r button {height:3rem; line-height:3rem;}
 
 
 /***  my page   ***/
-.mypage {position:fixed; top:0; left:0; right:0; bottom:0; z-index:30; 
+.mypage {position:fixed; top:0; right:-100%; width:100%; bottom:0; z-index:50; 
 	background:#fff;}
 .mypage > .head {padding:0 1rem; height:5rem; display:flex; justify-content:right; align-items:center;}
 .mypic {position:relative; padding:3rem 0 0; display:flex;}
@@ -678,8 +678,6 @@ header > .btn_group_r button {height:3rem; line-height:3rem;}
 .mymenu li:nth-child(3) > a::before {background:url(../images/ic_mypage_menu03.svg) no-repeat center;}
 .mymenu li:nth-child(4) > a::before {background:url(../images/ic_mypage_menu04.svg) no-repeat center;}
 .mymenu li:nth-child(5) > a::before {background:url(../images/ic_mypage_menu05.svg) no-repeat center;}
-
-
 
 
 /***  splash  ***/
@@ -764,8 +762,6 @@ header > .btn_group_r button {height:3rem; line-height:3rem;}
 .bgmList .btn_i_play::before {content:''; margin:0 auto;
 	display:block; width:1rem; height:1rem; background:#000;
 	clip-path:polygon(0.7rem 0, 0.9rem 0.9rem, 0 0.7rem); transform:rotate(-45deg);}
-
-
 
 .musicGroup {display:flex; flex-direction:column; gap:3rem;}
 .musicItem .titwrap {display:flex; justify-content:space-between;}
