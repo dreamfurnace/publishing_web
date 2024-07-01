@@ -21,6 +21,10 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+body {-webkit-user-select:none; 
+	-webkit-touch-callout:none; 
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {display:block;}
@@ -39,10 +43,10 @@ table {
 }
 
 table caption {display:none;}
-button {border:0; outline:0; cursor:pointer; background:none; }
-a, a:visited {text-decoration:none; color:inherit; cursor:pointer; -webkit-tap-highlight-color: transparent;}
-input, select, textarea {outline:none;  height:28px; -webkit-box-sizing:border-box; box-sizing:border-box; vertical-align:middle;}
+button {border:0; outline:0; cursor:pointer; background:none; color:inherit;}
+a, a:visited {text-decoration:none; color:inherit; cursor:pointer; -webkit-tap-highlight-color:transparent;}
+input, select, textarea {outline:none; height:28px; -webkit-box-sizing:border-box; box-sizing:border-box; vertical-align:middle;}
 textarea {resize:none;}
 
-input, button, select, textarea {-webkit-border-radius:0; -webkit-appearance:none; -webkit-tap-highlight-color: transparent;}
-label {-webkit-tap-highlight-color: transparent;}
+input, button, select, textarea {-webkit-border-radius:0; -webkit-appearance:none; -webkit-tap-highlight-color:transparent;}
+label {-webkit-tap-highlight-color:transparent;}
