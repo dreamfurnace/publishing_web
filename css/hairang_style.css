@@ -36,13 +36,15 @@ div::-webkit-scrollbar, main::-webkit-scrollbar, section::-webkit-scrollbar {bac
 .btn_i_reswap {width:4rem; height:4rem; border-radius:50%; 
 	background:rgba(255, 255, 255, 0.5) url(../images/ic_reswap01.svg) no-repeat center; background-size:2.8rem;
 	box-shadow:0 0.1rem 0.4rem 0 rgba(0, 0, 0, 0.2)}
-.btn_i_reswap::after {content:''; position:absolute; top:0; left:0; right:0; bottom:0;
+.btn_i_reswap::after {content:''; width:3rem; height:3rem; 
+	position:absolute; top:50%; left:50%; margin:-1.5rem 0 0 -1.5rem;
 	 background:url(../images/ic_reswap02.svg) no-repeat center; background-size:3rem;}
 .btn_i_reswap.on {width:4rem; height:4rem; border-radius:50%; 
 	background:rgba(255, 255, 255, 0.5) url(../images/ic_reswap01_on.svg) no-repeat center; background-size:2.8rem;}
-.btn_i_reswap.on::after {content:''; position:absolute; top:0; left:0; right:0; bottom:0;
-		background:url(../images/ic_reswap02_on.svg) no-repeat center; background-size:3rem;
-		transform:rotate(180deg); transition:0.3s;}
+.btn_i_reswap.on::after {content:''; width:3rem; height:3rem; 
+	position:absolute; top:50%; left:50%; margin:-1.5rem 0 0 -1.5rem;
+	background:url(../images/ic_reswap02_on.svg) no-repeat center; background-size:3rem;
+	transform:rotate(180deg); transition:0.3s;}
 .btn_i_close {width:6rem; height:4rem; background:url(../images/btn_i_close01.svg) no-repeat center; background-size:2rem;}
 .btn_i_apply {width:6rem; height:4rem; background:url(../images/btn_i_apply01.svg) no-repeat center; background-size:2.2rem;}
 
@@ -414,11 +416,11 @@ header > .btn_group_r button {height:3rem; line-height:3rem;}
 [class^="decoItem_"].place_ex03 {bottom:2rem; left:2rem;}
 [class^="decoItem_"].place_ex04 {bottom:2rem; left:2rem; font-size:2rem;}
 
-[class^="decoBtn_"] {position:absolute; width:2.2rem; height:2.2rem; 
+[class^="decoBtn_"] {position:absolute; width:2.2rem; height:2.2rem !important; 
 	border-radius:50%; text-indent:-9999em; overflow:hidden; white-space:nowrap;
 	box-shadow:0 0 0.4rem 0 rgba(0, 0, 0, 0.15);}
 
-.decoBtn_delete {width:2rem; height:2rem; top:-1rem; left:-1rem; background:#fff url(../images/ic_x_1.svg) no-repeat center; background-size:1rem;}
+.decoBtn_delete {top:-1rem; left:-1rem; background:#fff url(../images/ic_x_1.svg) no-repeat center; background-size:1rem;}
 .decoBtn_write {bottom:-1rem; right:-1rem; background:#3958A8 url(../images/ic_write.svg) no-repeat center; background-size:1rem;}
 .decoBtn_scale {bottom:-1rem; right:-1rem; background:#3958A8 url(../images/ic_scale.svg) no-repeat center; background-size:1.2rem;}
 .decoBtn_move {top:-1rem; right:-1rem; background:#3958A8 url(../images/ic_move.svg) no-repeat center; background-size:1.6rem;}
