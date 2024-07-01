@@ -405,16 +405,16 @@ header > .btn_group_r button {height:3rem; line-height:3rem;}
 
 
 /*   deco Items   */
-[class^="decoItem_"] {position:absolute; z-index:2; width:6em;
+[class^="decoItem_"] { width:6em;
 	border:1px solid #fff; padding:1rem; word-break:keep-all;}
 
 .decoItem_sticker > img,
 .decoItem_hanwha > img {width:100%; object-fit:contain;}
 
-[class^="decoItem_"].place_ex01 {top:9rem; left:2rem; font:400 2.4rem/1 'NanumHaNaSon';}
-[class^="decoItem_"].place_ex02 {top:10rem; right:2rem;}
-[class^="decoItem_"].place_ex03 {bottom:2rem; left:2rem;}
-[class^="decoItem_"].place_ex04 {bottom:2rem; left:2rem; font-size:2rem;}
+.place_ex01 {position:absolute; z-index:2; top:9rem; left:2rem; font:400 2.4rem/1 'NanumHaNaSon';}
+.place_ex02 {position:absolute; z-index:2; top:10rem; right:2rem;}
+.place_ex03 {position:absolute; z-index:2; bottom:2rem; left:2rem;}
+.place_ex04 {position:absolute; z-index:2; bottom:2rem; left:2rem; font-size:2rem;}
 
 [class^="decoBtn_"] {position:absolute; width:2.2rem; height:2.2rem !important; 
 	border-radius:50%; text-indent:-9999em; overflow:hidden; white-space:nowrap;
@@ -876,5 +876,6 @@ header > .btn_group_r button {height:3rem; line-height:3rem;}
 @supports (-webkit-overflow-scrolling: touch) {
 	/* CSS specific to iOS devices */
 	
-	
+	.btn_i_reswap.on::after {transition:none;}
+
  }
