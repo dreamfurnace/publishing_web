@@ -132,7 +132,7 @@ a.btn_t_b:visited {color:#fff;}
 /* common */
 .logo_hanhwa {width:12.2rem; height:4rem;
 	text-indent:-9999em; overflow:hidden; white-space:nowrap;
-	background:url(../images/logo_hanhwa.png) no-repeat 0 center; background-size:auto 3rem;}
+	background:url(../images/logo_hanhwa.svg) no-repeat 0 center; background-size:auto 3rem;}
 .logo_appname {width:14rem; height:7.8rem; 
 	text-indent:-9999em; overflow:hidden; white-space:nowrap;
 	background:url(../images/logo_hairang.svg) no-repeat; background-size:100%;}
