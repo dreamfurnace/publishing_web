@@ -49,16 +49,17 @@ div::-webkit-scrollbar, main::-webkit-scrollbar, section::-webkit-scrollbar {bac
 .btn_i_apply {width:6rem; height:4rem; background:url(../images/btn_i_apply01.svg) no-repeat center; background-size:2.2rem;}
 
 .btn_i_play {display:flex; align-items:center;
-	width:3.8rem; height:3.8rem; border-radius:50%; border:1px solid #ddd; background:#fff;}
-.btn_i_play::before {content:''; margin-left:0.5rem;
+	width:3.8rem; height:3.8rem; border-radius:50%; border:1px solid #ddd; 
+	background:#fff url(../images/arrow_play_blue.svg) no-repeat center; background-size:1.6rem;}
+/* .btn_i_play::before {content:''; margin-left:0.5rem;
 	display:block; width:1.4rem; height:1.4rem; background:#3958A8;
-	clip-path:polygon(0.9rem 0, 1.1rem 1.1rem, 0 0.9rem); transform:rotate(-45deg);}
+	clip-path:polygon(0.9rem 0, 1.1rem 1.1rem, 0 0.9rem); transform:rotate(-45deg);} */
 
-.btn_i_play.stop {background:#3958A8; border-color:#3958A8;}
-.btn_i_play.stop::before {content:''; display:none !important;}
-.btn_i_play.stop::after {content:''; margin:0 auto;
+.btn_i_play.stop {border-color:#3958A8; background:#3958A8 url(../images/play_pause_wh.svg) no-repeat center; background-size:1.6rem;}
+/* .btn_i_play.stop::before {content:''; display:none !important;} */
+/* .btn_i_play.stop::after {content:''; margin:0 auto;
 	display:block; width:0.4rem; height:1rem; 
-	border-left:0.2rem solid #fff; border-right:0.2rem solid #fff;}
+	border-left:0.2rem solid #fff; border-right:0.2rem solid #fff;} */
 
 .btn_i_record, .btn_i_voicemake  {width:5rem; height:5rem; border-radius:50%; 
 	background:#FF6600 url(../images/ic_voice_wh.svg) no-repeat center; background-size:2.4rem; 
@@ -760,10 +761,11 @@ header > .btn_group_r button {height:3rem; line-height:3rem;}
 
 /* popup - bgm list */
 .bgmList {margin:1rem 0 5rem; padding:0 2rem;}
-.bgmList .btn_i_play {width:3rem; height:3rem;}
-.bgmList .btn_i_play::before {content:''; margin:0 auto;
+.bgmList .btn_i_play {width:3rem; height:3rem; background:url(../images/arrow_play_bk.svg) no-repeat center; background-size:0.8rem;}
+.bgmList .btn_i_play.stop {background:#3958A8 url(../images/play_pause_wh.svg) no-repeat center; background-size:1.2rem;}
+/* .bgmList .btn_i_play::before {content:''; margin:0 auto;
 	display:block; width:1rem; height:1rem; background:#000;
-	clip-path:polygon(0.7rem 0, 0.9rem 0.9rem, 0 0.7rem); transform:rotate(-45deg);}
+	clip-path:polygon(0.7rem 0, 0.9rem 0.9rem, 0 0.7rem); transform:rotate(-45deg);} */
 
 .musicGroup {display:flex; flex-direction:column; gap:3rem;}
 .musicItem .titwrap {display:flex; justify-content:space-between;}
