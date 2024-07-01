@@ -71,7 +71,6 @@ div::-webkit-scrollbar, main::-webkit-scrollbar, section::-webkit-scrollbar {bac
 
 .btn_i_sound {border-radius:50%; background:#1E1D36 url(../images/ic_sound_off.svg) no-repeat center; background-size:1.8rem;}
 .btn_i_sound.on {background:#1E1D36 url(../images/ic_sound_on.svg) no-repeat center; background-size:1.8rem;}
-.btn_i_sound:active, .btn_i_sound:hover  {background-color:#4B4A5E;}
 
 .btn_i_menuClose {background:url(../images/ic_mypage_x.svg) no-repeat center;}
 .btn_i_home {background:url(../images/ic_mypage_home.svg) no-repeat center;}
@@ -649,7 +648,8 @@ header > .btn_group_r button {height:3rem; line-height:3rem;}
 .mypage {position:fixed; top:0; right:-100%; width:100%; bottom:0; z-index:50; 
 	background:#fff;}
 .mypage > .head {padding:0 1rem; height:5rem; display:flex; justify-content:right; align-items:center;}
-.mypic {position:relative; padding:3rem 0 0; display:flex;}
+.mypic {position:relative; padding:3rem 0 0; margin:1.2rem 0 0;
+	display:flex;}
 .mypic::before {content:''; position:absolute; top:0; left:-2rem;
 	display:block; width:21.4rem; height:26rem; 
 	border-radius:1rem; background:#f2f2f2; transform:rotate(-353.54deg); }
