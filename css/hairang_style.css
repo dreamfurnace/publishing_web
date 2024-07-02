@@ -81,6 +81,9 @@ div::-webkit-scrollbar, main::-webkit-scrollbar, section::-webkit-scrollbar {bac
 	background:#1e1d36 url(../images/ic_mypage_voice01.svg) no-repeat center; background-size:3.6rem;}
 .btn_i_myVoice.done {background:#ff6600 url(../images/ic_mypage_voice02.svg) no-repeat center; background-size:3.6rem;}
 
+.btn_i_del {width:3rem; height:3rem; background:url(../images/ic_x_2.svg) no-repeat center; background-size:2rem;}
+
+
 
 [class^="btn_t_"] {font-weight:500; height:4rem; line-height:4rem; 
 	font-size:1.4rem; text-align:center; border-radius:2.5rem;}
@@ -132,6 +135,15 @@ a.btn_t_b:visited {color:#fff;}
 .btn_sms:active, .btn_sms:hover {border-color:#333;}
 
 
+.btn_viewCard {margin:1rem 2rem 2rem; display:flex; justify-content: center; gap:0.8rem; align-items:center;
+	font-size:1.6rem; color:#333; font-weight:500;
+	width:calc(100% - 4rem); height:6rem; border:0.1rem solid #999;}
+.btn_viewCard::before {content:''; width:2.4rem; height:2.4rem; background:url(../images/ic_finalcard.svg) no-repeat center;}
+.btn_viewCard:active, .btn_viewCard:hover {border:0.2rem solid #333;}
+
+.btn_addCustomer {padding:1rem; display:flex; justify-content:center; gap:0.4rem; color:#333;}
+.btn_addCustomer::before {content:''; width:1.6rem; height:1.6rem; background:url(../images/ic_addcustomer.svg) no-repeat center;}
+
 /* common */
 .logo_hanhwa {width:12.2rem; height:4rem;
 	text-indent:-9999em; overflow:hidden; white-space:nowrap;
@@ -157,6 +169,8 @@ a.btn_t_b:visited {color:#fff;}
 
 section > h2, section > h3 {display:none;}
 
+.scrollContainer {position:fixed; left:0; right:0; bottom:0; padding:0 0 10rem; 
+	overflow:hidden; overflow-y:auto;}
 
 /*  layout  */
 header {padding:0 1.6rem 0 1rem; height:5rem;
@@ -417,14 +431,22 @@ header > .btn_group_r button {height:3rem; line-height:3rem;}
 .place_ex03 {position:absolute; z-index:2; bottom:2rem; left:2rem;}
 .place_ex04 {position:absolute; z-index:2; bottom:2rem; left:2rem; font-size:2rem;}
 
-[class^="decoBtn_"] {position:absolute; width:2.2rem; height:2.2rem !important; 
-	border-radius:50%; text-indent:-9999em; overflow:hidden; white-space:nowrap;
+[class^="decoBtn_"] {
+	position:absolute; width:3rem; height:3rem; 
+	text-indent:-9999em; overflow:hidden; white-space:nowrap;}
+[class^="decoBtn_"]::before {content:''; 
+	position:absolute; top:50%; left:50%; margin:-1.1rem 0 0 -1.1rem;
+	display:block; width:2.2rem; height:2.2rem; border-radius:50%;
 	box-shadow:0 0 0.4rem 0 rgba(0, 0, 0, 0.15);}
 
-.decoBtn_delete {top:-1rem; left:-1rem; background:#fff url(../images/ic_x_1.svg) no-repeat center; background-size:1rem;}
-.decoBtn_write {bottom:-1rem; right:-1rem; background:#3958A8 url(../images/ic_write.svg) no-repeat center; background-size:1rem;}
-.decoBtn_scale {bottom:-1rem; right:-1rem; background:#3958A8 url(../images/ic_scale.svg) no-repeat center; background-size:1.2rem;}
-.decoBtn_move {top:-1rem; right:-1rem; background:#3958A8 url(../images/ic_move.svg) no-repeat center; background-size:1.6rem;}
+.decoBtn_delete {top:-1.5rem; left:-1.5rem;}
+.decoBtn_write {bottom:-1.5rem; right:-1.5rem; }
+.decoBtn_scale {bottom:-1rem; right:-1rem;}
+.decoBtn_move {top:-1.5rem; right:-1.5rem; }
+.decoBtn_delete::before {background:#fff url(../images/ic_x_1.svg) no-repeat center; background-size:1rem;}
+.decoBtn_write::before {background:#3958A8 url(../images/ic_write.svg) no-repeat center; background-size:1rem;}
+.decoBtn_scale::before {background:#3958A8 url(../images/ic_scale.svg) no-repeat center; background-size:1.2rem;}
+.decoBtn_move::before {background:#3958A8 url(../images/ic_move.svg) no-repeat center; background-size:1.6rem;}
 
 
 .groupwrap {position:absolute; bottom:0; left:0; right:0; z-index:10; border-radius:2rem 2rem 0 0; 
@@ -682,6 +704,28 @@ header > .btn_group_r button {height:3rem; line-height:3rem;}
 
 
 
+/***   sending   ***/
+.scrollContainer {position:fixed; top:18rem; left:0; right:0; bottom:0; padding:0 0 10rem; 
+	overflow:hidden; overflow-y:auto;}
+.sending > .btnwrap {display:flex; justify-content:space-between; align-items:center;}
+.sending > .btnwrap > span {display:flex; align-items:center; gap:0.6rem; font-size:1.2rem; color:#777;}
+.sending > .btnwrap > span::before {content:'';
+	width:0.4rem; height:0.4rem; border-radius:50%; background:#FF6600;}
+
+.customerList {
+	padding:0 2rem; display:flex; flex-direction:column; gap:1rem;
+	overflow: hidden; overflow-y:auto;}
+.customerList > .item {display:flex; justify-content:space-between; align-items:center;
+	height:5rem; border-bottom:1px solid #ddd;}
+.customerInfo {display:flex; justify-content:left; gap:1rem; align-items:center;}
+.customerInfo .name {font-size:1.5rem; font-weight:500;}
+.customerInfo .male {width:3.2rem; height:2.2rem; text-align:center; line-height:2.2rem;
+	border-radius:3rem; color:#333; background:#DCE6FF;}
+.customerInfo .female {width:3.2rem; height:2.2rem; text-align:center; line-height:2.2rem;
+	border-radius:3rem; color:#333; background:#FFDFCB;}
+.customerInfo .age {color:#777;}
+
+
 /***  splash  ***/
 .splash {padding:12vh 0 0;}
 .splash .logo_appname {margin:0 auto 3rem;}
@@ -812,6 +856,7 @@ header > .btn_group_r button {height:3rem; line-height:3rem;}
 
 /*  popup - sending type */
 .sending  {position:relative; margin:2rem;}
+.sending > .scrollContainer {top:18rem;}
 .sending > .btn_i_popclose {position:absolute; top:-1rem; right:-1rem;}
 .sending > h2 {font-size:1.8rem;}
 .sendingType {margin:4rem 0 3rem; display:flex; gap:1rem;}
