@@ -14,8 +14,8 @@ button {letter-spacing:-0.05rem; font-size:1.4rem; font-weight:400; line-height:
 a {display:inline-block;}
 textarea::placeholder, input::placeholder {color:#777;}
 
-div::-webkit-scrollbar, main::-webkit-scrollbar, section::-webkit-scrollbar {background-color:#f1f1f1; width:0.4rem;}
-div::-webkit-scrollbar-thumb, main::-webkit-scrollbar-thumb, section::-webkit-scrollbar-thumb {background-color:#bbb;}
+div::-webkit-scrollbar, main::-webkit-scrollbar, section::-webkit-scrollbar {background-color:#f1f1f1; width:0.6rem;}
+div::-webkit-scrollbar-thumb, main::-webkit-scrollbar-thumb, section::-webkit-scrollbar-thumb {background-color:#aaa;}
 
 /* buttons */
 [class^="btn_i_"] {display:inline-block; width:4rem; height:4rem; text-indent:-9999em; overflow:hidden; 
