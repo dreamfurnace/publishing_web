@@ -590,7 +590,7 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 .voiceRecording {display:none; padding:2rem; height:12rem;}
 .voiceRecording .btn_i_play {width:4rem; height:4rem; 
 	box-shadow: 0 0 2rem 0 rgba(112, 144, 176, 0.25); border-color:#fff;}
-.voiceRecording .btn_i_play::before {content:''; width:1.2rem; height:1.2rem; clip-path:polygon(0.9rem 0, 1.2rem 1.2rem, 0 0.9rem); background:#3958A8; }
+/* .voiceRecording .btn_i_play::before {content:''; width:1.2rem; height:1.2rem; clip-path:polygon(0.9rem 0, 1.2rem 1.2rem, 0 0.9rem); background:#3958A8; } */
 
 .voicePlay {display:flex; gap:1.4rem;}
 .voicePlay .timelineWrap {margin-top:2rem; display:flex; flex-direction:column; width:calc(100% - 5rem); gap:1rem;}
