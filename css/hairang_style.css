@@ -145,6 +145,14 @@ a.btn_t_b:visited {color:#fff;}
 .btn_addCustomer {padding:1rem; display:flex; justify-content:center; gap:0.4rem; color:#333; font-weight:500;}
 .btn_addCustomer::before {content:''; width:1.6rem; height:1.6rem; background:url(../images/ic_addcustomer.svg) no-repeat center;}
 
+.btn_makeGroup {display:flex; justify-content:center; align-items:center; gap:0.8rem;
+	margin:1rem 2rem; width:calc(100% - 4rem);
+	color:#333; font-weight:500; height:4rem; border:1px solid #999;}
+.btn_makeGroup::before {content:''; width:1.4rem; height:1.4rem; transform:rotate(45deg);
+	background:url(../images/btn_i_close01.svg) no-repeat center; background-size:100%;}
+.btn_makeGroup:active, .btn_makeGroup:hover {border-color:#333;}
+
+
 /* common */
 .logo_hanhwa {width:12.2rem; height:4rem;
 	text-indent:-9999em; overflow:hidden; white-space:nowrap;
@@ -586,7 +594,6 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 .btn_simpleBgm:active::before, .btn_simpleBgm:hover::before {content:''; width:2.4rem; height:2.4rem; background-size:2.4rem;
 	background:url(../images/ic_bgm_orn.svg) no-repeat center;}
 
-
 .voiceRecording {display:none; padding:2rem; height:12rem;}
 .voiceRecording .btn_i_play {width:4rem; height:4rem; 
 	box-shadow: 0 0 2rem 0 rgba(112, 144, 176, 0.25); border-color:#fff;}
@@ -705,7 +712,7 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 
 
 
-/***   sending   ***/
+/***   Sending   ***/
 .scrollContainer {position:fixed; top:18rem; left:0; right:0; bottom:0; padding:0 0 10rem; 
 	overflow:hidden; overflow-y:auto;}
 .sending > .btnwrap {display:flex; justify-content:space-between; align-items:center;}
@@ -728,6 +735,11 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 
 .final_txtArea {padding:3rem 2rem; color:#333; word-break:keep-all; line-height:1.4 ;}
 
+
+/***   Customer  ***/
+.btnGroup_edit {padding:0 1rem;
+	display:flex; justify-content:space-between;}
+.btnGroup_edit button {padding:0 1rem; height:3rem; color:#0150AD; font-weight:500; font-size:1.6rem;}
 
 
 /***  splash  ***/

@@ -23,15 +23,17 @@
           </div>
      </header>
 
-     <button class="btn_viewCard" type="button">만든 카드보기</button>
+     <div class="btnGroup_edit">
+          <div class="btn_group_l"></div>
+          <div class="btn_group_r">
+               <button type="button">편집</button>
+          </div>
+     </div>
 
-	<main class="sending">
-		<div class="btnwrap">
-			<span>최대 30명까지 보낼 수 있습니다.</span>
-			<button class="btn_addCustomer" type="button">고객 추가</button>
-		</div>
+	<main class="customer">
+		<button class="btn_makeGroup" type="button">새 그룹 만들기</button>
 		<div class="scrollContainer">
-			<section class="customerList">
+			<section class="groupList">
 				<h2>고객리스트</h2>
 				
 			</section>
@@ -39,7 +41,7 @@
 	</main>
 
 <script>
-$(document.body).css("background", "#fff");
+$(document.body).css("background","#fff");
 
 
 
