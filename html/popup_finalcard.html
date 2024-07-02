@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=medium-dpi">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+     <meta name="apple-mobile-web-app-capable" content="yes">
+     <meta name="mobile-web-app-capable" content="yes">
+     <title>한화손해보험_AIcard</title>
+	<link rel="stylesheet" href="../css/hairang_style.css">
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body>
+<button type="button" class="btn_popTest" id="test_callpop">call POPUP</button><!-- ref.event -->
+
+<!--  POPUP  AREA -->
+     <div class="popup_full">
+          <div class="popHeader">
+               <h2></h2>
+               <button class="btn_i_popclose" type="button" id="btn_popClose">닫기</button>
+          </div>
+          <div class="popContainer">
+               <section class="stage rate34"><!-- rate34(3:4) / rate11(1:1) / rate43(4:3)  -->
+                    <h2>카드영역</h2>
+                    <div class="bgCard">
+                         <div class="videoElements"><!--  영상 카드일 경우 노출 'skip' 추가 및 제거  -->
+                              <button class="btn_i_sound on" type="button">사운드 켜기/끄기</button>
+                              <div class="voicePlay">
+                                   <button class="btn_i_play" type="button" id="btn_playRecord">재생/멈춤</button>
+                                   <div class="timelineWrap">
+                                        <div class="timeline">
+                                             <span></span>
+                                             <button class="btn_i_timePoint" type="button">movePoint</button>
+                                        </div>
+                                        <div class="timeTxt">
+                                             <span>0:<em>18</em></span>
+                                             <span>0:<em>30</em></span>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <img src="../images/@pic01.jpg">                   
+                    </div>
+               </section>
+               <section class="final_txtArea">
+                    이때까지 밤하늘이 그렇게도 유난히 깊고, 별들이 그렇게도 찬란하게 보인 적은 없었습니다. <br>
+                    프로방스의 피에르의 뒤를 쫓아가서 칠년 만에 한번씩 결혼을 하는 예쁜 마글론 말입니다.  <br>
+                    어머나, 저렇게 많아. 참 기막히게 아름답구나. 저렇게 많은 별은 생전 처음이야.  <br>
+                    병아리장은 남들보다 일찍 서둘러서 맨 먼저 떠나 윗길로 접어들었다. <br>
+                    나요. 그리고, 그 돌멩이 하나가 그대로 내 심장 위에 덜컥덜컥 떨어져 내리는 것 같았습니다.  <br>
+                    꼬마는 앓아 누워 있고, 노라드 아주머니는 휴가를 얻어 자기 아이들을 보러 갔다는 것이었습니다. <br>
+                    그리고, 그 돌멩이 하나가 그대로 내 심장 위에 덜컥덜컥 떨어져 내리는 것 같았습니다. <br>
+                    아가씨도 나를 따라 성호를 긋고는 잠시 고개를 들고 하늘을 쳐다보며 깊은 명상에 잠겼습니다.  <br>
+                    역시 남쪽으로 좀더 아래로 내려가서, 별들의 횃불인 장 드 밀랑이 반짝이고 있습니다.
+               </section>
+          </div>
+     </div<><!-- end: class="popup_full"  -->
+<!-- // POPUP  AREA -->
+
+<script>
+// popupEvent_closeBtn
+$('#btn_popClose').click(function(){
+     $('.popup_full').fadeOut(100);
+});
+   
+// popEvent_testBtn
+$('#test_callpop').click(function(){
+     $('.popup_full').fadeIn(100);
+});
+</script>
+</body>
+</html>
