@@ -14,7 +14,8 @@ button {letter-spacing:-0.05rem; font-size:1.4rem; font-weight:400; line-height:
 a {display:inline-block;}
 textarea::placeholder, input::placeholder {color:#777;}
 
-div::-webkit-scrollbar, main::-webkit-scrollbar, section::-webkit-scrollbar {background-color:transparent; width:0; height:0;}
+div::-webkit-scrollbar, main::-webkit-scrollbar, section::-webkit-scrollbar {background-color:#f1f1f1; width:0.4rem;}
+div::-webkit-scrollbar-thumb, main::-webkit-scrollbar-thumb, section::-webkit-scrollbar-thumb {background-color:#bbb;}
 
 /* buttons */
 [class^="btn_i_"] {display:inline-block; width:4rem; height:4rem; text-indent:-9999em; overflow:hidden; 
@@ -141,7 +142,7 @@ a.btn_t_b:visited {color:#fff;}
 .btn_viewCard::before {content:''; width:2.4rem; height:2.4rem; background:url(../images/ic_finalcard.svg) no-repeat center;}
 .btn_viewCard:active, .btn_viewCard:hover {border:0.2rem solid #333;}
 
-.btn_addCustomer {padding:1rem; display:flex; justify-content:center; gap:0.4rem; color:#333;}
+.btn_addCustomer {padding:1rem; display:flex; justify-content:center; gap:0.4rem; color:#333; font-weight:500;}
 .btn_addCustomer::before {content:''; width:1.6rem; height:1.6rem; background:url(../images/ic_addcustomer.svg) no-repeat center;}
 
 /* common */
@@ -741,7 +742,7 @@ header > .btn_group_r button {height:3rem; line-height:3rem;}
 .btn_i_popclose {width:4rem; height:4rem; 
 	background:url(../images/btn_i_close01.svg) no-repeat center; background-size:2.2rem;}
 .dimmedLayer {display:none; position:fixed; top:0; left:0; right:0; bottom:0; z-index:30; 
-	background:rgba(0,0,0,0.5); overflow:hidden; overflow-y:auto;}
+	background:rgba(0,0,0,0.8); overflow:hidden; overflow-y:auto;}
 
 .popup_btnGroup {margin:0 2rem 2.4rem;}
 .popup_btnGroup > button {width:100%; height:5rem; font-size:1.5rem; color:#fff; border-radius:1rem;}
