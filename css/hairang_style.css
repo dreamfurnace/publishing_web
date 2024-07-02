@@ -14,7 +14,7 @@ button {letter-spacing:-0.05rem; font-size:1.4rem; font-weight:400; line-height:
 a {display:inline-block;}
 textarea::placeholder, input::placeholder {color:#777;}
 
-div::-webkit-scrollbar, main::-webkit-scrollbar, section::-webkit-scrollbar {background-color:#f1f1f1; width:0;}
+div::-webkit-scrollbar, main::-webkit-scrollbar, section::-webkit-scrollbar {background-color:#f1f1f1; width:0; height:0;}
 div::-webkit-scrollbar-thumb, main::-webkit-scrollbar-thumb, section::-webkit-scrollbar-thumb {background-color:#333;}
 
 /* buttons */
@@ -182,7 +182,7 @@ header > .asideMenu {display:flex; gap:0; margin-right:-0.6rem;}
 header > .btn_group_l,
 header > .btn_group_r {display:flex; gap:0.6rem; align-items:center;}
 header > .btn_group_r button {height:3rem; line-height:3rem;}
-
+header > .btn_group_l > h1 {font-size:1.8rem;}  
 
 
 /*** MAIN swiper & list ***/
@@ -713,18 +713,18 @@ header > .btn_group_r button {height:3rem; line-height:3rem;}
 .sending > .btnwrap > span::before {content:'';
 	width:0.6rem; height:0.6rem; border-radius:50%; background:#FF6600;}
 
-.customerList {
+.c_list {
 	padding:0 2rem; display:flex; flex-direction:column; gap:1rem;
 	overflow: hidden; overflow-y:auto;}
-.customerList > .item {display:flex; justify-content:space-between; align-items:center;
+.c_list > .item {display:flex; justify-content:space-between; align-items:center;
 	height:5rem; border-bottom:1px solid #ddd;}
-.customerInfo {display:flex; justify-content:left; gap:1rem; align-items:center;}
-.customerInfo .name {font-size:1.5rem; font-weight:500;}
-.customerInfo .male {width:3.2rem; height:2.2rem; text-align:center; line-height:2.2rem;
+.c_info {display:flex; justify-content:left; gap:1rem; align-items:center;}
+.c_info .name {font-size:1.5rem; font-weight:500;}
+.c_info .male {width:3.2rem; height:2.2rem; text-align:center; line-height:2.2rem;
 	border-radius:3rem; color:#333; background:#DCE6FF;}
-.customerInfo .female {width:3.2rem; height:2.2rem; text-align:center; line-height:2.2rem;
+.c_info .female {width:3.2rem; height:2.2rem; text-align:center; line-height:2.2rem;
 	border-radius:3rem; color:#333; background:#FFDFCB;}
-.customerInfo .age {color:#777;}
+.c_info .age, .c_info .address {color:#777;}
 
 .final_txtArea {padding:3rem 2rem; color:#333; word-break:keep-all; line-height:1.4 ;}
 
@@ -777,10 +777,8 @@ header > .btn_group_r button {height:3rem; line-height:3rem;}
 .popup_mid .btn_t_l {color:#666; border-right:1px solid #eee;}
 .popup_mid .btn_t_r {color:#ff6600;}
 
-.popup_toast,
-.popup_toastUp {display:none; position:fixed; left:0; right:0; z-index:31; bottom:2.4rem;}
-.popup_toast > .popMessage,
-.popup_toastUp > .popMessage {padding:0 1.2rem; margin:0 auto;
+.popup_toast {display:none; position:fixed; left:0; right:0; z-index:31; bottom:2.4rem;}
+.popup_toast > .popMessage {padding:0 1.2rem; margin:0 auto;
 	display:flex; align-items:center; justify-content:center;
 	width:28rem; height:6.8rem; line-height:1.4; 
 	color:#fff; text-align:center;
@@ -925,6 +923,7 @@ header > .btn_group_r button {height:3rem; line-height:3rem;}
 
 
 } /* for Duo  */
+
 
 
 @supports (-webkit-overflow-scrolling: touch) {
