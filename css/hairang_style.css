@@ -135,7 +135,7 @@ a.btn_t_b:visited {color:#fff;}
 .btn_sms:active, .btn_sms:hover {border-color:#333;}
 
 
-.btn_viewCard {margin:0 2rem 2rem; display:flex; justify-content: center; gap:0.8rem; align-items:center;
+.btn_viewCard {margin:0.6rem 2rem 2rem; display:flex; justify-content: center; gap:0.8rem; align-items:center;
 	font-size:1.6rem; color:#333; font-weight:500;
 	width:calc(100% - 4rem); height:6rem; border:0.1rem solid #999;}
 .btn_viewCard::before {content:''; width:2.4rem; height:2.4rem; background:url(../images/ic_finalcard.svg) no-repeat center;}
