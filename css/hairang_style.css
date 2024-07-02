@@ -758,7 +758,7 @@ header > .btn_group_r button {height:3rem; line-height:3rem;}
 
 
 .popupWrap {margin:3.2rem 2rem;}
-.popMessage {text-align:center; line-height:1.4;}
+.popMessage {text-align:center; line-height:1.4; font-weight:500; color:#333;}
 .popMessage > p {margin-bottom:2rem;}
 
 .popup_btm {display:none; 
