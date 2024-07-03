@@ -26,29 +26,76 @@
      <div class="btnGroup_edit">
           <div class="btn_group_l"></div>
           <div class="btn_group_r">
-               <button type="button">편집</button>
+               <button type="button" id="btnEdit">편집</button>
+			<button type="button" id="btnEdit_cancel" class="skip">취소</button>
           </div>
      </div>
 
-	<main class="customer">
+	<main class="customer"> <!-- 편집시 'edit' 추가 -->
 		<button class="btn_makeGroup" type="button">새 그룹 만들기</button>
 		<div class="scrollContainer">
-			<section class="groupList">
-				<h2>고객리스트</h2>
-				<div class="messageGroup"> 
-					<div class="checkbox_chk"> 
-						<label for="item01">
-							<input type="radio" id="item01" name="selected">
-							<span class="checkmark"></span>
-							<span class="checktxt">
-								가을의 정취 속에서 가족과 함께하는 이 특별한 날, 
-								모두에게 행복과 안락함이 함께하기를 기원합니다.
-								건강과 행복이 늘 함께하길 바라며, 추석의 은은한 정을
-								만끽하시길 바랍니다. 
-							</span>   
-						</label>
-					</div><!-- end:class="checkbox_chk"  -->                         
-				</div>
+			<section class="list">
+				<h2>고객리스트_보기</h2>
+				<a class="item" href="#a">
+					<div class="btnGroup">
+						<button class="btn_i_modify" type="button">수정</button>
+						<button class="btn_i_del" type="button">삭제</button>
+					</div>
+					<div class="groupInfo">
+						<span class="groupTit">
+							알럽가족<em>5</em>
+						</span>
+						<span class="groupExp">사랑하는 가족</span>						   
+					</div>
+				</a><!-- end:class="item"  -->
+				<a class="item" href="#a">
+					<div class="btnGroup">
+						<button class="btn_i_modify" type="button">수정</button>
+						<button class="btn_i_del" type="button">삭제</button>
+					</div>
+					<div class="groupInfo">
+						<span class="groupTit">
+							예쁜친구s<em>5</em>
+						</span>
+						<span class="groupExp">사랑하는 가족</span>						   
+					</div>
+				</a><!-- end:class="item"  --> 
+				<a class="item" href="#a">
+					<div class="btnGroup">
+						<button class="btn_i_modify" type="button">수정</button>
+						<button class="btn_i_del" type="button">삭제</button>
+					</div>
+					<div class="groupInfo">
+						<span class="groupTit">
+							완소 VIP<em>105</em>
+						</span>
+						<span class="groupExp"></span>						   
+					</div>
+				</a><!-- end:class="item"  --> 
+				<a class="item" href="#a">
+					<div class="btnGroup">
+						<button class="btn_i_modify" type="button">수정</button>
+						<button class="btn_i_del" type="button">삭제</button>
+					</div>
+					<div class="groupInfo">
+						<span class="groupTit">
+							애틋한 고객<em>105</em>
+						</span>
+						<span class="groupExp"></span>						   
+					</div>
+				</a><!-- end:class="item"  --> 
+				<a class="item" href="#a">
+					<div class="btnGroup">
+						<button class="btn_i_modify" type="button">수정</button>
+						<button class="btn_i_del" type="button">삭제</button>
+					</div>
+					<div class="groupInfo">
+						<span class="groupTit">
+							감사한 고객<em>105</em>
+						</span>
+						<span class="groupExp"></span>						   
+					</div>
+				</a><!-- end:class="item"  -->           
 			</section>
 		</div>
 	</main>
@@ -67,6 +114,20 @@ $(function(){
           else{beforeChecked = index;}
      });
 });
+
+//  for edit mode
+$("#btnEdit").on("click", function () {
+	$("#btnEdit").addClass('skip');
+	$("#btnEdit_cancel").removeClass('skip');
+	$(".customer").addClass('edit');
+});
+
+$("#btnEdit_cancel").on("click", function () {
+	$("#btnEdit").removeClass('skip');
+	$("#btnEdit_cancel").addClass('skip');
+	$(".customer").removeClass('edit');
+});
+
 </script>
 
 </body>
