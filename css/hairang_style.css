@@ -19,6 +19,12 @@ textarea::placeholder, input::placeholder {color:#777;}
 div::-webkit-scrollbar, main::-webkit-scrollbar, section::-webkit-scrollbar {background-color:#f1f1f1; width:0; height:0;}
 div::-webkit-scrollbar-thumb, main::-webkit-scrollbar-thumb, section::-webkit-scrollbar-thumb {background-color:#333;}
 
+/* forms */
+input[type="text"] {height:4rem; border:none; outline:none; 
+	font-weight:500; color:#333;	border-bottom:1px solid #ddd;}
+input[type="text"]::placeholder {color:#777;}
+
+
 /* buttons */
 [class^="btn_i_"] {display:inline-block; width:4rem; height:4rem; text-indent:-9999em; overflow:hidden; 
 	vertical-align:middle; white-space:nowrap; box-sizing:border-box;}
@@ -848,6 +854,10 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 
 .popContainer {padding:5rem 0;}
 .popContainer > .stage > .bgCard {margin-top:0;}
+.popup_full > .popup_btnGroup {position:fixed; left:0; right:0; bottom:0; 
+	padding:2rem 2rem 2.4rem; margin:0;}
+
+
 
 /* popup tab  */
 .popupTab {padding:1rem 2rem; display:flex; gap:0.8rem; overflow:hidden; overflow-x:auto;}
@@ -912,10 +922,11 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 .groupList .groupExp {color:#777; font-size:1.2rem;}
 
 
-
-
-
-
+/* popup - Group Edit */
+.popContainer .inputList {padding:1rem 2rem;}
+.inputList {display:flex; flex-direction:column; gap:4rem;}
+.inputList > .item {display:flex; flex-direction:column;}
+.inputList > .item > span {color:#777;}
 
 
 /* /////////////////      Side work    /////////////////////  */
