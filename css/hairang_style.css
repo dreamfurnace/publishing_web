@@ -321,7 +321,6 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 .rate34 .bgCard::after, .rate11 .bgCard::after,  .rate43 .bgCard::after {content:''; display:none;}
 
 
-
 .btnwrap_step {display:flex; gap:1rem;}
 .promptArea {position:absolute; left:0; right:0; bottom:-10.6rem; z-index:10; height:13.4rem;}
 .prompt {position:relative; height:100%; background:#fff; box-sizing:border-box;}
@@ -670,21 +669,26 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 .checkbox_tbox input:checked + label {background:#ff6600;}
 .checkbox_tbox input:checked ~ .checkmark {background:#3958A8 url('../images/check_i_on.svg') no-repeat center; background-size:1.4rem;}
 .checkbox_tbox input:checked ~ .checktxt {box-shadow: 0 0 2rem 0 rgba(112, 144, 176, 0.25); background-color: #fff;}
-			
 
-
-/***  simple make  ***/
-.simplemake {margin:0;}
-.simplemake .templateList {display:none;}
-.simplemake .templateList.active {display:grid;}
-.simplemake > .tabPanel {padding:1rem 0 8rem;
-	position:fixed; top:10rem; left:0; right:0; bottom:0; overflow:hidden; overflow-y:auto;}
-
+/*  tab   */
 .cateTab {padding:1rem 2rem; display:flex; gap:0.8rem; overflow:hidden; overflow-x:auto;}
 .cateTab > button {padding:0 1.4rem; height:3rem; line-height:2.8rem;
 	display:flex; gap:0.6rem; color:#777;
 	border-radius:2.5rem; border:1px solid #ddd; background:#fff;}
-.cateTab > .on {color:#fff; background:#1E1D36;}
+.cateTab > .on {color:#fff; background:#1E1D36; border-color:#1E1D36;}
+.cateTab > button > em {display:none; font-weight:500; color:#FBB584;}
+.cateTab > button.on > em {display:block;}
+
+
+.tabPanel > div {display:none;}
+.tabPanel > div.active {display:block;}
+
+
+/***  simple make  ***/
+.simplemake {margin:0;}
+.simplemake .templateList.active {display:grid;}
+.simplemake > .tabPanel {padding:1rem 0 8rem;
+	position:fixed; top:10rem; left:0; right:0; bottom:0; overflow:hidden; overflow-y:auto;}
 
 .btn_makeVideo {position:absolute; top:-3rem; left:50%; margin-left:-4.4rem;
 	display:flex; flex-direction:column; gap:0.8rem; justify-content:center; align-items:center;
@@ -871,6 +875,8 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 .popupPanel {position:fixed; top:10rem; left:0; right:0; bottom:0; padding:2rem 2rem 8rem; 
 	overflow:hidden; overflow-y:auto;}
 
+.popupPanel > div {display:none;}	
+.popupPanel > .active {display:block;}
 
 /* popup - bgm list */
 .bgmList {margin:1rem 0 5rem; padding:0 2rem;}
@@ -897,7 +903,7 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 
 
 /* popup - message list */
-.messageGroup {display:none; gap:2rem; flex-direction:column;}
+.messageGroup {gap:2rem; flex-direction:column;}
 .messageGroup.active {display:flex;}
 
 
