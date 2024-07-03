@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=medium-dpi">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=medium-dpi, viewport-fit=cover, shrink-to-fit=no">
 	<meta name="format-detection" content="telephone=no, address=no, email=no">
      <meta name="apple-mobile-web-app-capable" content="yes">
      <meta name="mobile-web-app-capable" content="yes">
@@ -35,7 +35,20 @@
 		<div class="scrollContainer">
 			<section class="groupList">
 				<h2>고객리스트</h2>
-				
+				<div class="messageGroup"> 
+					<div class="checkbox_chk"> 
+						<label for="item01">
+							<input type="radio" id="item01" name="selected">
+							<span class="checkmark"></span>
+							<span class="checktxt">
+								가을의 정취 속에서 가족과 함께하는 이 특별한 날, 
+								모두에게 행복과 안락함이 함께하기를 기원합니다.
+								건강과 행복이 늘 함께하길 바라며, 추석의 은은한 정을
+								만끽하시길 바랍니다. 
+							</span>   
+						</label>
+					</div><!-- end:class="checkbox_chk"  -->                         
+				</div>
 			</section>
 		</div>
 	</main>
@@ -43,8 +56,17 @@
 <script>
 $(document.body).css("background","#fff");
 
-
-
+//  remove radio check
+var beforeChecked = -1;  
+$(function(){
+     $(document).on("click", "input[type=radio]", function(e) {
+          var index = $(this).parent().index("label");
+          if(beforeChecked == index) {
+          beforeChecked = -1;
+          $(this).prop("checked", false);} 
+          else{beforeChecked = index;}
+     });
+});
 </script>
 
 </body>

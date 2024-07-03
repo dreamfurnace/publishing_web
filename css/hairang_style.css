@@ -4,7 +4,9 @@
 @import url('font.css');
 
 
-html, body {font-size:10px;}
+html, body {font-size:10px;   
+	padding:env(safe-area-inset-top) env(safe-area-inset-bottom);
+}
 body {font-size:1.4rem; line-height:1.2; color:#000; 
 	font-weight:400; font-family:'Noto Sans KR', sans-serif; overflow:hidden; background-color:#F2F2F2;}
 input[type="checkbox"], input[type="radio"] {height:auto; vertical-align:middle; cursor:pointer;}
