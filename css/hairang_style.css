@@ -22,7 +22,7 @@ div::-webkit-scrollbar-thumb, main::-webkit-scrollbar-thumb, section::-webkit-sc
 /* forms */
 input[type="text"] {height:4rem; border:none; outline:none; font-size:1.4rem;
 	font-weight:500; color:#333;	border-bottom:1px solid #ddd;}
-input[type="text"]::placeholder {color:#777;}
+input[type="text"]::placeholder {color:#777; font-weight:400;}
 
 
 /* buttons */
