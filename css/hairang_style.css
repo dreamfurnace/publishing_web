@@ -753,7 +753,7 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 	overflow:hidden; overflow-y:auto;}
 .sending .c_list > .item {display:flex; justify-content:space-between; align-items:center;
 	height:5rem; border-bottom:1px solid #ddd;}
-.c_info {display:flex; justify-content:left; gap:1rem; align-items:center;}
+.c_info {display:flex; justify-content:left; gap:0.8rem; align-items:center;}
 .c_info .name {font-size:1.5rem; font-weight:500;}
 .c_info .gender {width:3.2rem; height:2.2rem; text-align:center; line-height:2.2rem;
 	border-radius:3rem; color:#333;}
@@ -811,7 +811,7 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 
 .c_name {display:flex; gap:1rem; align-items:center;
 	font-size:1.6rem; font-weight:500;}
-.c_name > .group {font-size:1.4rem; color:#333;}
+.c_name > .group {font-size:1.4rem; color:#333; font-weight:400;}
 .customerList .c_info > span {color:#333;}
 
 .customerList.edit .btn_i_del {display:block;}
