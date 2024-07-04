@@ -92,8 +92,10 @@ input[type="text"]:focus::placeholder {color:transparent;}
 .btn_i_myVoice.done {background:#ff6600 url(../images/ic_mypage_voice02.svg) no-repeat center; background-size:3.6rem;}
 
 .btn_i_del {width:3rem; height:3rem; background:url(../images/ic_x_2.svg) no-repeat center; background-size:2rem;}
-
 .btn_i_modify {width:3rem; height:3rem; background:url(../images/ic_modify.svg) no-repeat center; background-size:2rem;}
+
+.btn_i_seh {width:4rem; height:4rem; background:url(../images/ic_seh.svg) no-repeat center; background-size:2.4rem;}
+
 
 
 [class^="btn_t_"] {font-weight:500; height:4rem; line-height:4rem; 
@@ -155,12 +157,12 @@ a.btn_t_b:visited {color:#fff;}
 .btn_addCustomer {padding:1rem; display:flex; justify-content:center; gap:0.4rem; color:#333; font-weight:500;}
 .btn_addCustomer::before {content:''; width:1.6rem; height:1.6rem; background:url(../images/ic_addcustomer.svg) no-repeat center;}
 
-.btn_makeGroup {display:flex; justify-content:center; align-items:center; gap:0.8rem;
+.btn_addItem {display:flex; justify-content:center; align-items:center; gap:0.8rem;
 	margin:1rem 2rem; width:calc(100% - 4rem);
 	color:#333; font-weight:500; height:4rem; border:1px solid #999;}
-.btn_makeGroup::before {content:''; width:1.4rem; height:1.4rem; transform:rotate(45deg);
+.btn_addItem::before {content:''; width:1.4rem; height:1.4rem; transform:rotate(45deg);
 	background:url(../images/btn_i_close01.svg) no-repeat center; background-size:100%;}
-.btn_makeGroup:active, .btn_makeGroup:hover {border-color:#333;}
+.btn_addItem:active, .btn_makeGroup:hover {border-color:#333;}
 
 
 /* common */
@@ -571,7 +573,6 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 .soundSticker > .ic_voice.done {background:rgba(255, 255, 255, 0.4) url(../images/ic_voice_blu.svg) no-repeat center; background-size:1.6rem;}
 .soundSticker > .ic_bgm.done {background:rgba(255, 255, 255, 0.4) url(../images/ic_bgm_blu.svg) no-repeat center; background-size:1.6rem;}
 
-
 .soundArea .footGroup {bottom:1.8rem;}
 
 .btn_bgm {position:absolute; top:-3rem; left:50%; margin-left:-3rem;
@@ -680,8 +681,8 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 .cateTab > button.on > em {display:block;}
 
 
-.tabPanel > div {display:none;}
-.tabPanel > div.active {display:block;}
+.tabPanel > section {display:none;}
+.tabPanel > section.active {display:block;}
 
 
 /***  simple make  ***/
@@ -770,8 +771,6 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 	display:flex; justify-content:space-between;}
 .btnGroup_edit button {padding:0 1rem; height:3rem; color:#0150AD; font-weight:500; font-size:1.6rem;}
 
-
-
 .customer .list {padding:1rem 2rem; display:flex; flex-direction:column; gap:1.4rem;}
 .customer .list > .item {padding:1.4rem 1.6rem; position: relative;
 	border-radius:1.4rem; background:#fafafa;}
@@ -793,7 +792,12 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 .customer.edit .list > .item:active,
 .customer.edit .list > .item:hover {box-shadow:none; background-color: #fafafa;}
 
-
+.tabPanel.customerList {}
+.customer_seh {margin:0 2rem;}
+.customer_seh > .inputwrap {display:flex; border-bottom:1px solid #f1f1f1;}
+.customer_seh > .inputwrap > input {padding:0 1rem 0 1.6rem; font-size:1.8rem;
+	width:calc(100% - 5rem); border:none;}
+.customer_seh > .inputwrap > input::placeholder {font-size:1.8rem;}
 
 /***  splash  ***/
 .splash {padding:12vh 0 0;}

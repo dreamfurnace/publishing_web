@@ -18,7 +18,7 @@
 <body>
 	<header>
           <div class="btn_group_l">
-               <button type="button" class="btn_i_back" onclick="window.location.href='';">뒤로가기</button>
+               <button type="button" class="btn_i_back" onclick="window.location.href='customer_group.html';">뒤로가기</button>
                <h1>고객 리스트</h1>
           </div>
      </header>
@@ -30,22 +30,42 @@
           <button type="button" data-toggle-target="#groupTab04">애틋한 고객<em>15</em></button>
           <button type="button" data-toggle-target="#groupTab05">감사한 고객<em>15</em></button>
      </div>
-     <div class="tabPanel">
-          <div id="groupTab01" class="active">
-               111
-          </div><!--  end: id="groupTab01"   -->
-          <div id="groupTab02" class="">
+     <div class="tabPanel customerList">
+          <section id="groupTab01" class="active">
+               <h2>그룹별 리스트1</h2>
+               <div class="customer_seh">
+                    <div class="inputwrap">
+                         <input type="text" placeholder="고객명이나 성을 검색하세요.">
+                         <button class="btn_i_seh" type="button">검색</button>
+                    </div>
+               </div>
+               <div class="btnGroup">
+                    <button type="button" class="btn_addItem">고객추가</button>
+                    <div class="btnGroup_edit">
+                         <div class="btn_group_l"></div>
+                         <div class="btn_group_r">
+                              <button type="button">삭제</button>
+                         </div>
+                    </div>
+               </div>
+               
+          </section><!--  end: id="groupTab01"   -->
+          <section id="groupTab02">
+               <h2>그룹별 리스트2</h2>
                222
-          </div><!--  end: id="groupTab02"   -->
-          <div id="groupTab03" class="">
+          </section><!--  end: id="groupTab02"   -->
+          <section id="groupTab03">
+               <h2>그룹별 리스트3</h2>
                333
-          </div><!--  end: id="groupTab03"   -->
-          <div id="groupTab04" class="">
+          </section><!--  end: id="groupTab03"   -->
+          <section id="groupTab04">
+               <h2>그룹별 리스트4</h2>
                444
-          </div><!--  end: id="groupTab04"   -->
-          <div id="groupTab05" class="">
+          </section><!--  end: id="groupTab04"   -->
+          <section id="groupTab05">
+               <h2>그룹별 리스트5</h2>
                555
-          </div><!--  end: id="groupTab05"   -->
+          </section><!--  end: id="groupTab05"   -->
      </div>
 
     
@@ -60,7 +80,7 @@ $('.cateTab > button').on('click', function(evt) {
     $(".cateTab > button").removeClass("on");
     $(this).addClass('on');
     var sel = this.getAttribute('data-toggle-target');
-    $('.tabPanel > div ').removeClass('active').filter(sel).addClass('active');
+    $('.tabPanel > section ').removeClass('active').filter(sel).addClass('active');
 });
 
 

@@ -32,7 +32,7 @@
      </div>
 
 	<main class="customer"> <!-- 편집시 'edit' 추가 -->
-		<button class="btn_makeGroup" type="button" onclick = "window.location.href='popup_group_edit.html';">새 그룹 만들기</button>
+		<button class="btn_addItem" type="button" onclick = "window.location.href='popup_group_edit.html';">새 그룹 만들기</button>
 		<div class="scrollContainer">
 			<section class="list">
 				<h2>고객리스트_보기</h2>
@@ -102,18 +102,6 @@
 
 <script>
 $(document.body).css("background","#fff");
-
-//  remove radio check
-var beforeChecked = -1;  
-$(function(){
-     $(document).on("click", "input[type=radio]", function(e) {
-          var index = $(this).parent().index("label");
-          if(beforeChecked == index) {
-          beforeChecked = -1;
-          $(this).prop("checked", false);} 
-          else{beforeChecked = index;}
-     });
-});
 
 //  for edit mode
 $("#btnEdit").on("click", function () {
