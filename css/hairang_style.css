@@ -807,13 +807,17 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 	position:absolute; top:1.4rem; right:1.2rem;
 	display:inline-block; height:2rem; border-radius:2.5rem; line-height:2rem; padding:0 1rem;
 	font-size:1.2rem; color:#333; background:#E8E8E8;}
-.customerList .item > .btn_i_del {display:none; position:absolute; top:0.6rem; right:0.8rem;}
+.customerList .item > .btn_i_del {display:none; position:absolute; top:0.8rem; right:0.8rem;}
 
 .c_name {display:flex; gap:1rem; align-items:center;
 	font-size:1.6rem; font-weight:500;}
 .c_name > .group {font-size:1.4rem; color:#333;}
+.customerList .c_info > span {color:#333;}
 
 .customerList.edit .btn_i_del {display:block;}
+.customerList.edit .item.noAgree::before {right:4.6rem;}
+
+
 
 
 /***  splash  ***/
