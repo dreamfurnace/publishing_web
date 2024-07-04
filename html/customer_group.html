@@ -107,12 +107,14 @@ $(document.body).css("background","#fff");
 $("#btnEdit").on("click", function () {
 	$("#btnEdit").addClass('skip');
 	$("#btnEdit_cancel").removeClass('skip');
+	$(".btn_addItem").addClass('skip');
 	$(".customer").addClass('edit');
 });
 
 $("#btnEdit_cancel").on("click", function () {
 	$("#btnEdit").removeClass('skip');
 	$("#btnEdit_cancel").addClass('skip');
+	$(".btn_addItem").removeClass('skip');
 	$(".customer").removeClass('edit');
 });
 

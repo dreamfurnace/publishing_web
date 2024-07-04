@@ -44,11 +44,46 @@
                     <div class="btnGroup_edit">
                          <div class="btn_group_l"></div>
                          <div class="btn_group_r">
-                              <button type="button">삭제</button>
+                              <button type="button" id="btnDelete">삭제</button>
+                              <button type="button" class="skip"  id="btnCancel">취소</button>
                          </div>
                     </div>
                </div>
-               
+               <div class="scrollContainer">
+                    <div class="item">
+                         <button type="button" class="btn_i_del">삭제</button>
+                         <div class="c_name">
+                              김고객<em class="group">알럽가족</em>
+                         </div>
+                         <div class="c_info">
+                              <span class="age">61세</span>
+                              <span class="gender female">여</span>
+						<span class="address">서울 여등포구</span>
+					</div>
+                    </div><!-- end: class="item"  -->
+                    <div class="item noAgree"><!-- 마케팅 미동의인 경우 'noAgree'-->
+                         <button type="button" class="btn_i_del">삭제</button>
+                         <div class="c_name">
+                              김고객<em class="group">알럽가족</em>
+                         </div>
+                         <div class="c_info">
+                              <span class="age">61세</span>
+                              <span class="gender male">남</span>
+						<span class="address">서울 여등포구</span>
+					</div>
+                    </div><!-- end: class="item"  -->
+                    <div class="item">
+                         <button type="button" class="btn_i_del">삭제</button>
+                         <div class="c_name">
+                              김고객<em class="group">알럽가족</em>
+                         </div>
+                         <div class="c_info">
+                              <span class="age">61세</span>
+                              <span class="gender female">여</span>
+						<span class="address">서울 여등포구</span>
+					</div>
+                    </div><!-- end: class="item"  -->
+               </div>
           </section><!--  end: id="groupTab01"   -->
           <section id="groupTab02">
                <h2>그룹별 리스트2</h2>
@@ -83,6 +118,18 @@ $('.cateTab > button').on('click', function(evt) {
     $('.tabPanel > section ').removeClass('active').filter(sel).addClass('active');
 });
 
+//  for edit mode
+$("#btnDelete").on("click", function () {
+	$("#btnDelete").addClass('skip');
+	$("#btnCancel").removeClass('skip');
+	$(".customerList").addClass('edit');
+});
+
+$("#btnCancel").on("click", function () {
+	$("#btnDelete").removeClass('skip');
+	$("#btnCancel").addClass('skip');
+	$(".customerList").removeClass('edit');
+});
 
 </script>
 
