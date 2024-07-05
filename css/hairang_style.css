@@ -975,7 +975,7 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 .addCustomer > .btnGroup {display:flex; gap:0.8rem; margin:1rem 2rem 2.4rem;  justify-content:right;}
 .addCustomer > .customer_seh {margin-bottom:2.4rem;}
 .addCustomer > .scrollContainer {top:17rem; bottom:9.4rem;}
-.addCustomer > .list {padding:0 2rem;
+.addCustomer > .list {padding:0 2rem 10rem;
 	display:flex; flex-direction:column; gap:1rem;}
 .addCustomer .checkbox_tbox > label {height:5.2rem; border-bottom:1px solid #E2E2E2; }
 .addCustomer .checkbox_tbox .checktxt {padding:0; background:#fff; border-radius:0; }
