@@ -448,7 +448,7 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 .decorationArea .footGroup,
 .soundArea .footGroup {position:absolute; left:0; right:0; bottom:0.6rem;
 	display:flex; justify-content:space-between; align-items:center;}
-.decorationArea .footGroup > h3 {color:#777; line-height:4rem;}
+.decorationArea .footGroup > h3 {color:#777; line-height:4rem; font-size:1.4rem;}
 
 
 /*   deco Items   */
@@ -640,7 +640,7 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 .messageBox textarea:focus   {border-color:#000;}
 .messageBox .charNum {display:flex; justify-content:space-between; font-size:1.2rem;}
 .messageBox .charNum > .noti > span {display:none; color:#DB0909;}
-.messageBox .charNum > .num {text-align:right; color:#777;}
+.messageBox .charNum > .num {text-align:right; color:#777; font-size:1.2rem;}
 
 .messageBox.error .noti > span {display:block;}
 .messageBox.error textarea  {border-color:#DB0909;}
@@ -671,7 +671,7 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 /* chek box - textbox   */
 .checkbox_tbox > label {display:block; position:relative;}
 .checkbox_tbox .checktxt {position:relative; 
-	display:block; padding:1.4rem 1.6rem; padding-right:4.5rem;
+	display:block; padding:1.4rem 1.6rem; padding-right:4.5rem; font-size:1.4rem;
 	border-radius:1.4rem; background:#fafafa;}
 .checkbox_tbox input[type="radio"], .checkbox_tbox input[type="checkbox"] {opacity:0; display:none;}
 .checkbox_tbox .checkmark {position:absolute; top:1.2rem; right:1rem; z-index:2;
@@ -739,7 +739,7 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 .mymenu {position:absolute; left:0; bottom:2rem; right:0; padding:2rem;}
 .mymenu ul {display:flex; flex-direction:column;}
 .mymenu li {height:5rem; border-bottom:1px solid #eee;}
-.mymenu li > a {line-height:5rem; display:flex; gap:1.6rem; align-items:center; color:#333; font-weight:500;
+.mymenu li > a {line-height:5rem; display:flex; gap:1.6rem; align-items:center; color:#333; font-weight:500; font-size:1.4rem;
 	background:url(../images/ic_mypage_arrow.svg) no-repeat right; background-size:2.4rem;}
 .mymenu li > a::before {content:''; width:2.4rem; height:2.4rem; background-size:2.4rem !important;}
 
@@ -763,7 +763,7 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 	overflow:hidden; overflow-y:auto;}
 .sending .c_list > .item {display:flex; justify-content:space-between; align-items:center;
 	height:5rem; border-bottom:1px solid #ddd;}
-.c_info {display:flex; justify-content:left; gap:0.8rem; align-items:center;}
+.c_info {display:flex; justify-content:left; gap:0.8rem; align-items:center; font-size:1.4rem;}
 .c_info .name {font-size:1.5rem; font-weight:500;}
 .c_info .gender {width:3.2rem; height:2.2rem; text-align:center; line-height:2.2rem;
 	border-radius:3rem; color:#333;}
@@ -771,7 +771,7 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 .c_info .gender.female {background:#FFDFCB;}
 .c_info .age, .c_info .address {color:#777;}
 
-.final_txtArea {padding:3rem 2rem; color:#333; word-break:keep-all; line-height:1.4 ;}
+.final_txtArea {padding:3rem 2rem; color:#333; word-break:keep-all; line-height:1.4; font-size:1.4rem;}
 
 
 /***   Customer  ***/
@@ -862,7 +862,7 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 .popup_btnGroup .btn_t_r:disabled {color:#aaa; background:#E1E1E1;}
 
 .popupWrap {margin:3.2rem 2rem;}
-.popMessage {text-align:center; line-height:1.4; font-weight:500; color:#333;}
+.popMessage {text-align:center; line-height:1.4; font-weight:500; color:#333; font-size:1.4rem;}
 .popMessage > p {margin-bottom:2rem;}
 
 .popup_btm {display:none; 
@@ -929,7 +929,7 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 .musicGroup {display:flex; flex-direction:column; gap:3rem;}
 .musicItem .titwrap {display:flex; justify-content:space-between;}
 .musicItem .tit {display:flex; gap:1.4rem; align-items:center;}
-.musicItem .tit > p {display:flex; flex-direction:column; gap:0.2rem;}
+.musicItem .tit > p {display:flex; flex-direction:column; gap:0.2rem; font-size:1.4rem;}
 .musicItem .tit > p > em {color:#777;}
 .musicItem .tit > span {font-size:1.2rem; color:#777;}
 
@@ -963,7 +963,7 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 /* popup - Customer list */
 .groupList {padding:1rem 2rem; display:flex; flex-direction:column; gap:1.4rem;}
 .groupList .checktxt {display:flex; flex-direction:column; gap:0.4rem;}
-.groupList .groupTit {display:flex; gap:0.8rem; font-size:1.6rem; font-weight:500;}
+.groupList .groupTit {display:flex; gap:0.8rem; align-items:center;  font-size:1.6rem; font-weight:500;}
 .groupList .groupTit > em {font-size:1.4rem; color:#FF6600;}
 .groupList .groupExp {color:#777; font-size:1.2rem;}
 
@@ -972,11 +972,11 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 .popContainer .inputList {padding:1rem 2rem;}
 .inputList {display:flex; flex-direction:column; gap:4rem;}
 .inputList > .item {display:flex; flex-direction:column;}
-.inputList > .item > span {color:#777;}
+.inputList > .item > span {color:#777; font-size:1.4rem;}
 
 
 /*  popup - add customer   */
-.addCustomer > .btnGroup {display:flex; gap:0.8rem; margin:1rem 2rem 2.4rem;  justify-content:right;}
+.addCustomer > .btnGroup {display:flex; gap:0.8rem; margin:1rem 2rem 2.4rem; justify-content:right;}
 .addCustomer > .customer_seh {margin-bottom:2.4rem;}
 .addCustomer > .scrollContainer {top:17rem; bottom:9.4rem;}
 .addCustomer > .list {padding:0 2rem 10rem;
@@ -986,7 +986,7 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 .addCustomer .checkbox_tbox input:checked ~ .checktxt {box-shadow:none; background-color:#fff;}
 .addCustomer .checkbox_tbox .checkmark {right:0; background-color:#f6f6f6;}
 
-.addCustomer > .list .c_info {display:flex; gap:1.2rem; height:5.2rem;}
+.addCustomer > .list .c_info {display:flex; gap:1.2rem; height:5.2rem; font-size:1.4rem;}
 
 .addCustomer.nolist > .customer_seh {margin-top:0.8rem;}
 .addCustomer.nolist > .scrollContainer {top:11.4rem;}
@@ -1060,6 +1060,7 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 	.btnwrap_rate > button:nth-child(3)::before {display:none;}
 	.valuegroup > .checkbox_t .checkbox_txt {font-size:1.33rem;}
 	.btnwrap_rate > button {padding:0.4rem 1.2rem;}
+	.customer_seh > .inputwrap > input::placeholder {font-size:1.6rem;}
 }
 
 
