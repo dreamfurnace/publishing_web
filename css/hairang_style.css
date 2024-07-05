@@ -673,7 +673,7 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 .checkbox_tbox .checktxt {position:relative; 
 	display:block; padding:1.4rem 1.6rem; padding-right:4.5rem;
 	border-radius:1.4rem; background:#fafafa;}
-.checkbox_tbox input[type="radio"] {opacity:0; display:none;}
+.checkbox_tbox input[type="radio"], .checkbox_tbox input[type="checkbox"] {opacity:0; display:none;}
 .checkbox_tbox .checkmark {position:absolute; top:1.2rem; right:1rem; z-index:2;
 	display:block; width:2.6rem; height:2.6rem; border-radius:50%;
 	background:#fff url('../images/check_i_off.svg') no-repeat center; background-size:1.4rem;}
@@ -907,14 +907,15 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 .popupTab {padding:1rem 2rem; display:flex; gap:0.8rem; overflow:hidden; overflow-x:auto;}
 .popupTab > button {padding:0 1.4rem; height:3rem; line-height:2.8rem;
 	display:flex; gap:0.6rem; color:#777;
-	border-radius:2.5rem; border:1px solid #ddd; background:#f4f4f4;}
+	border-radius:2.5rem; border:1px solid #e2e2e2; background:#f4f4f4;}
 .popupTab > button > em {display:none; font-weight:400; color:#FBB584;}
 .popupTab > .on {color:#fff; font-weight:500; background:#1E1D36;}
 .popupTab > .on > em {display:block;}
 .popupPanel {position:fixed; top:10rem; left:0; right:0; bottom:0; padding:2rem 2rem 8rem; 
 	overflow:hidden; overflow-y:auto;}
 
-.popupPanel > div {display:none;}	
+.popupPanel > div,
+.popupPanel > section {display:none;}	
 .popupPanel > .active {display:block;}
 
 /* popup - bgm list */
@@ -980,12 +981,12 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 .addCustomer > .scrollContainer {top:17rem; bottom:9.4rem;}
 .addCustomer > .list {padding:0 2rem 10rem;
 	display:flex; flex-direction:column; gap:1rem;}
-.addCustomer .checkbox_tbox > label {height:5.2rem; border-bottom:1px solid #E2E2E2; }
+.addCustomer .checkbox_tbox > label {border-bottom:1px solid #E2E2E2; }
 .addCustomer .checkbox_tbox .checktxt {padding:0; background:#fff; border-radius:0; }
-.addCustomer .checkbox_tbox input:checked ~ .checktxt {box-shadow:none; background-color: #fff;}
-.addCustomer .checkbox_tbox .checkmark {top:50%; margin-top:-1.3rem; right:0; background-color:#f6f6f6;}
+.addCustomer .checkbox_tbox input:checked ~ .checktxt {box-shadow:none; background-color:#fff;}
+.addCustomer .checkbox_tbox .checkmark {right:0; background-color:#f6f6f6;}
 
-.addCustomer > .list .c_info {display:flex; gap:1.2rem;}
+.addCustomer > .list .c_info {display:flex; gap:1.2rem; height:5.2rem;}
 
 .addCustomer.nolist > .customer_seh {margin-top:0.8rem;}
 .addCustomer.nolist > .scrollContainer {top:11.4rem;}
@@ -993,7 +994,14 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 	display:flex; align-items:center; justify-content:center; }
 .addCustomer.nolist .notice > p {text-align:center; font-size:1.8rem; font-weight:500;}
 .addCustomer.nolist .notice > p::before {content:''; display:block; margin:0 auto 2.4rem;
-	width:7.2rem; height:7.2rem; background:url(../images/img_nolist.svg) no-repeat center; }
+	width:7.2rem; height:7.2rem; background:url(../images/img_nolist.svg) no-repeat center;}
+
+
+
+.popupPanel.customerList {padding:0;}
+.popupPanel .groupList {display:flex; flex-direction:column; gap:1.4rem; padding:0 2rem 10rem;}
+.popupPanel.customerList .scrollContainer {top:16rem;}
+.popupPanel .groupList .checktxt {align-items:normal;}
 
 
 /* /////////////////      Side work    /////////////////////  */

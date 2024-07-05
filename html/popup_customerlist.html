@@ -20,73 +20,140 @@
 <!--  POPUP  AREA -->
      <div class="popup_full">
           <div class="popHeader">
-               <h2>TITLE</h2>
+               <h2>고객선택</h2>
                <button class="btn_i_popclose" type="button" id="btn_popClose">닫기</button>
           </div>
           <div class="popContainer">
-               <section class="groupList">
-				<h2>고객리스트_보기</h2>
-				<div class="checkbox_tbox">
-					<label for="group01">
-						<input type="radio" id="group01" name="selected">
-						<span class="checkmark"></span>
-						<span class="checktxt">
-							<span class="groupTit">
-								알럽가족<em>5</em>
-							</span>
-							<span class="groupExp">사랑하는 가족</span>
-						</span>   
-					</label>
-				</div><!-- end:class="checkbox_tbox"  -->  
-				<div class="checkbox_tbox">
-					<label for="group02">
-						<input type="radio" id="group02" name="selected">
-						<span class="checkmark"></span>
-						<span class="checktxt">
-							<span class="groupTit">
-								예쁜친구s<em>10</em>
-							</span>
-							<span class="groupExp">예쁜칭구들</span>
-						</span>   
-					</label>
-				</div><!-- end:class="checkbox_tbox"  -->
-				<div class="checkbox_tbox">
-					<label for="group03">
-						<input type="radio" id="group03" name="selected">
-						<span class="checkmark"></span>
-						<span class="checktxt">
-							<span class="groupTit">
-								완소VIP<em>100</em>
-							</span>
-							<span class="groupExp"></span>
-						</span>   
-					</label>
-				</div><!-- end:class="checkbox_tbox"  -->        
-				<div class="checkbox_tbox">
-					<label for="group04">
-						<input type="radio" id="group04" name="selected">
-						<span class="checkmark"></span>
-						<span class="checktxt">
-							<span class="groupTit">
-								애틋한 고객<em>100</em>
-							</span>
-							<span class="groupExp"></span>
-						</span>   
-					</label>
-				</div><!-- end:class="checkbox_tbox"  -->
-				<div class="checkbox_tbox">
-					<label for="group05">
-						<input type="radio" id="group05" name="selected">
-						<span class="checkmark"></span>
-						<span class="checktxt">
-							<span class="groupTit">
-								감사한 고객<em>100</em>
-							</span>
-							<span class="groupExp"></span>
-						</span>   
-					</label>
-				</div><!-- end:class="checkbox_tbox"  -->                       
-			</section>
+			<div class="popupTab">
+				<button class="on" type="button" data-toggle-target="#groupTab01">그룹<em>5</em></button>
+				<button type="button" data-toggle-target="#groupTab02">알럽가족<em>5</em></button>
+				<button type="button" data-toggle-target="#groupTab02">예쁜친구s<em>15</em></button>
+				<button type="button" data-toggle-target="#groupTab03">완소VIP<em>155</em> </button>
+				<button type="button" data-toggle-target="#groupTab04">애틋한 고객<em>151</em></button>
+				<button type="button" data-toggle-target="#groupTab05">감사한 고객<em>115</em></button>
+			</div>
+			<div class="popupPanel customerList">
+				<section class="active" id="groupTab01">
+					<h2>그룹선택</h2><!-- 그룹은 단수 선택   -->
+					<div class="customer_seh">
+						<div class="inputwrap">
+							<input type="text" placeholder="고객명(or 성)을 검색하세요.">
+							<div class="btnGroup">
+								<button class="btn_i_sehDel" type="button">입력삭제</button><!-- 검색어 입력시 노출 'skip'-->
+								<button class="btn_i_seh" type="button">검색</button>
+							</div>
+						</div>
+					</div><!-- end: class="customer_seh"  -->
+					<div class="scrollContainer groupList">
+						<div class="checkbox_tbox">
+							<label for="group01">
+								<input type="radio" id="group01" name="selected">
+								<span class="checkmark"></span>
+								<span class="checktxt">
+									<span class="groupTit">
+										알럽가족<em>5</em>
+									</span>
+									<span class="groupExp">사랑하는 가족</span>
+								</span>   
+							</label>
+						</div><!-- end:class="checkbox_tbox"  -->  
+						<div class="checkbox_tbox">
+							<label for="group02">
+								<input type="radio" id="group02" name="selected">
+								<span class="checkmark"></span>
+								<span class="checktxt">
+									<span class="groupTit">
+										예쁜친구s<em>10</em>
+									</span>
+									<span class="groupExp">예쁜칭구들</span>
+								</span>   
+							</label>
+						</div><!-- end:class="checkbox_tbox"  -->
+						<div class="checkbox_tbox">
+							<label for="group03">
+								<input type="radio" id="group03" name="selected">
+								<span class="checkmark"></span>
+								<span class="checktxt">
+									<span class="groupTit">
+										완소VIP<em>100</em>
+									</span>
+									<span class="groupExp"></span>
+								</span>   
+							</label>
+						</div><!-- end:class="checkbox_tbox"  -->        
+						<div class="checkbox_tbox">
+							<label for="group04">
+								<input type="radio" id="group04" name="selected">
+								<span class="checkmark"></span>
+								<span class="checktxt">
+									<span class="groupTit">
+										애틋한 고객<em>100</em>
+									</span>
+									<span class="groupExp"></span>
+								</span>   
+							</label>
+						</div><!-- end:class="checkbox_tbox"  -->
+						<div class="checkbox_tbox">
+							<label for="group05">
+								<input type="radio" id="group05" name="selected">
+								<span class="checkmark"></span>
+								<span class="checktxt">
+									<span class="groupTit">
+										감사한 고객<em>100</em>
+									</span>
+									<span class="groupExp"></span>
+								</span>   
+							</label>
+						</div><!-- end:class="checkbox_tbox"  -->
+					</div>          
+				</section>
+				<section id="groupTab02">
+					<h2>고객리스트 선택</h2>
+					<div class="customer_seh">
+						<div class="inputwrap">
+							<input type="text" placeholder="고객명(or 성)을 검색하세요.">
+							<div class="btnGroup">
+								<button class="btn_i_sehDel" type="button">입력삭제</button><!-- 검색어 입력시 노출 'skip'-->
+								<button class="btn_i_seh" type="button">검색</button>
+							</div>
+						</div>
+					</div><!-- end: class="customer_seh"  -->
+					<div class="scrollContainer groupList">
+						<div class="checkbox_tbox">
+							<label for="person01">
+								<input type="checkbox" id="person01" name="selected">
+								<span class="checkmark"></span>
+								<span class="checktxt c_info">
+									<span class="c_name">
+										김고객<em class="group">알럽가족</em>
+									</span>
+									<span class="c_info">
+										<span class="age">61세</span>
+										<span class="gender female">여</span>
+										<span class="address">서울 여등포구</span>
+									</span>
+								</span>   
+							</label>
+						</div><!-- end:class="checkbox_tbox"  -->
+						<div class="checkbox_tbox">
+							<label for="person02">
+								<input type="checkbox" id="person02" name="selected">
+								<span class="checkmark"></span>
+								<span class="checktxt c_info">
+									<span class="c_name">
+										김고객<em class="group">알럽가족</em>
+									</span>
+									<span class="c_info">
+										<span class="age">61세</span>
+										<span class="gender male">여</span>
+										<span class="address">서울 여등포구</span>
+									</span>
+								</span>   
+							</label>
+						</div><!-- end:class="checkbox_tbox"  -->  
+					</div>                
+				</section>
+			</div>
           </div>
      </div<><!-- end: class="popup_full"  -->
 <!-- // POPUP  AREA -->
@@ -101,6 +168,31 @@ $('#btn_popClose').click(function(){
 $('#test_callpop').click(function(){
      $('.popup_full').fadeIn(100);
 });
+
+
+// header Tab
+$('.popupTab > button').on('click', function(evt) {
+    evt.preventDefault();
+    $(".popupTab > button").removeClass("on");
+    $(this).addClass('on');
+    var sel = this.getAttribute('data-toggle-target');
+    $('.popupPanel > section').removeClass('active').filter(sel).addClass('active');
+});
+
+//  remove radio check
+var beforeChecked = -1;  
+$(function(){
+     $(document).on("click", "input[type=radio]", function(e) {
+          var index = $(this).parent().index("label");
+          if(beforeChecked == index) {
+          beforeChecked = -1;
+          $(this).prop("checked", false);} 
+          else{beforeChecked = index;}
+     });
+});
+
+
+
 </script>
 </body>
 </html>
