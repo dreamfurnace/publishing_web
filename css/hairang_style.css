@@ -858,6 +858,9 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 .popup_btnGroup .btn_t_r {background:#ff6600;}
 .popup_btnGroup .btn_t_r:active, .popup_btnGroup .btn_t_r:hover {background:#CC5200;}
 
+.popup_btnGroup .btn_t_l:disabled, 
+.popup_btnGroup .btn_t_r:disabled {color:#aaa; background:#E1E1E1;}
+
 .popupWrap {margin:3.2rem 2rem;}
 .popMessage {text-align:center; line-height:1.4; font-weight:500; color:#333;}
 .popMessage > p {margin-bottom:2rem;}
@@ -982,7 +985,15 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 .addCustomer .checkbox_tbox input:checked ~ .checktxt {box-shadow:none; background-color: #fff;}
 .addCustomer .checkbox_tbox .checkmark {top:50%; margin-top:-1.3rem; right:0; background-color:#f6f6f6;}
 
-.addCustomer > .list .c_info {display:flex; gap:1rem;}
+.addCustomer > .list .c_info {display:flex; gap:1.2rem;}
+
+.addCustomer.nolist > .customer_seh {margin-top:0.8rem;}
+.addCustomer.nolist > .scrollContainer {top:11.4rem;}
+.addCustomer.nolist .notice {position:absolute; top:0; left:0; right:0; bottom:0;
+	display:flex; align-items:center; justify-content:center; }
+.addCustomer.nolist .notice > p {text-align:center; font-size:1.8rem; font-weight:500;}
+.addCustomer.nolist .notice > p::before {content:''; display:block; margin:0 auto 2.4rem;
+	width:7.2rem; height:7.2rem; background:url(../images/img_nolist.svg) no-repeat center; }
 
 
 /* /////////////////      Side work    /////////////////////  */
