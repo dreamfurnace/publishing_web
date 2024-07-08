@@ -102,6 +102,13 @@ input[type="text"]:focus::placeholder {color:transparent;}
 .btn_i_sehDel::after {content:''; position:absolute; top:50%; left:50%; z-index:2; width:1.4rem; height:1.4rem;
 	margin:-0.7rem 0 0 -0.7rem; background:url(../images/ic_x_2.svg) no-repeat center; background-size:1.2rem;}
 
+.btn_i_albumModify, .btn_i_albumDownload, .btn_i_albumSending {width:3rem; height:3rem; border-radius:50%;}
+.btn_i_albumModify {background:#000 url(../images/myalbum_i_modify.svg) no-repeat center; background-size:1.6rem;}
+.btn_i_albumDownload {background:#000 url(../images/myalbum_i_download.svg) no-repeat center; background-size:1.6rem;}
+.btn_i_albumSending {background:#000 url(../images/myalbum_i_sending.svg) no-repeat center; background-size:1.6rem;}
+
+
+
 [class^="btn_t_"] {font-weight:500; height:4rem; line-height:4rem; 
 	font-size:1.4rem; text-align:center; border-radius:2.5rem;}
 [class^="btn_t_"]:disabled {color:#aaa; background-color:#e1e1e1;}
@@ -227,10 +234,13 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 
 .templateList {padding:0 2rem 8rem;
 	display:grid; gap:1.6rem; grid-template-columns:1fr 1fr 1fr;}
-.templateList > a {position:relative; display:flex; justify-content:center;
+.templateList > a,
+.templateList > .item {position:relative; display:flex; justify-content:center;
 	height:auto; aspect-ratio:3/4; border-radius:0.6rem; overflow:hidden;}
 .templateList > a img,
-.templateList > a video {width:100%; height:auto; object-fit:cover;} 
+.templateList > a video,
+.templateList > .item img,
+.templateList > .item video {width:100%; height:100%; object-fit:cover;} 
 .templateList .itemVideo > em {position:absolute; right:0.5rem; bottom:0.5rem;
 	display:block; padding:0 0.5rem; height:1.8rem; line-height:1.8rem; font-size:1.2rem; color:#fff;
 	border-radius:0.3rem; background:rgba(0,0,0,0.6);}
@@ -687,6 +697,21 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 .checkbox_tbox input:checked ~ .checkmark {background:#3958A8 url('../images/check_i_on.svg') no-repeat center; background-size:1.4rem;}
 .checkbox_tbox input:checked ~ .checktxt {box-shadow: 0 0 2rem 0 rgba(112, 144, 176, 0.25); background-color: #fff;}
 
+/* check box - img */
+.checkbox_img {position:relative;}
+.checkbox_img label {position:relative; display:flex; justify-content:center;
+	height:auto; aspect-ratio:3/4; border-radius:0.6rem; overflow:hidden;}
+.checkbox_img input[type="checkbox"],
+.checkbox_img input[type="radio"] {opacity:0; display:none;}
+.checkbox_img input[type="checkbox"] + label, 
+.checkbox_img input[type="radio"] + label {position:relative;}
+.checkbox_img .checkmark {position:absolute; top:1rem; right:1rem;
+	display:block; width:2.6rem; height:2.6rem; border-radius:50%;
+	background:rgba(0, 0, 0, 0.2) url('../images/check_i_on.svg') no-repeat center; background-size:1.4rem;}
+.checkbox_img input:checked ~ .checkmark {background:#3958A8 url('../images/check_i_on.svg') no-repeat center; background-size:1.4rem;}
+.checkbox_img .checkimg > img
+.checkbox_img .checkimg > video {width:100%; height:100%; object-fit:cover;}
+
 
 /*  tab   */
 .cateTab {padding:1rem 2rem; display:flex; gap:0.8rem; overflow:hidden; overflow-x:auto;}
@@ -706,7 +731,7 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 
 /***  simple make  ***/
 .simplemake {margin:0;}
-.simplemake .templateList.active {display:grid;}
+.templateList.active {display:grid !important;}
 .simplemake > .tabPanel {padding:1rem 0 8rem;
 	position:fixed; top:10rem; left:0; right:0; bottom:0; overflow:hidden; overflow-y:auto;}
 
@@ -785,9 +810,10 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 
 /***   Customer  ***/
 .customer > .scrollContainer {top:14rem;}
-.btnGroup_edit {padding:0 1rem;
-	display:flex; justify-content:space-between;}
+.btnGroup_edit {padding:0 1rem 0 2rem;
+	display:flex; justify-content:space-between; align-items:center;}
 .btnGroup_edit button {padding:0 1rem; height:3rem; color:#0150AD; font-weight:500; font-size:1.6rem;}
+.btnGroup_edit .checkbox_chk > label {display:flex; flex-direction:row; gap:0.8rem; align-items:center;}
 
 .customer .list {padding:1rem 2rem; display:flex; flex-direction:column; gap:1.4rem;}
 .customer .list > .item {padding:1.4rem 1.6rem; position: relative;
@@ -839,16 +865,21 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 .customerList.edit .item.noAgree::before {right:4.6rem;}
 
 /***   my album   ***/
-.albumList {padding:0 2rem 8rem;
-	display:grid; gap:1.6rem; grid-template-columns:1fr 1fr 1fr;}
-
-.albumList > a {position:relative; display:flex; justify-content:center;
-	height:auto; aspect-ratio:3/4; border-radius:0.6rem; overflow:hidden;}
-.albumList > a img,
-.albumList > a video {width:100%; height:auto; object-fit:cover;} 
-.albumList .itemVideo > em {position:absolute; right:0.5rem; bottom:0.5rem;
-	display:block; padding:0 0.5rem; height:1.8rem; line-height:1.8rem; font-size:1.2rem; color:#fff;
-	border-radius:0.3rem; background:rgba(0,0,0,0.6);}
+.myalbum .btnGroup_edit {margin:0.4rem 0 0;}
+.myalbum > .tabPanel {padding:1rem 0 8rem;
+	position:fixed; top:13.6rem; left:0; right:0; bottom:0; overflow:hidden; overflow-y:auto;}
+.myalbum .templateList {padding:0 2rem 8rem; gap:1.6rem; grid-template-columns:1fr 1fr;}
+.myalbum .templateList > .item {border-radius:1.6rem;}
+.myalbum .templateList > .item::before {content:''; position:absolute; left:0; right:0; bottom:0; z-index:1;
+height:4.6rem; background:rgba(0,0,0,0.6);}
+.myalbum .templateList > .item > a {position:relative;}
+.myalbum .templateList .btnGroup {padding:0 1rem;
+	display:flex; gap:1.8rem; justify-content:space-between; align-items:center;
+	position:absolute; left:0; right:0; bottom:0; z-index:3; height:4.6rem;}
+.myalbum .templateList .btnGroup > button:hover,
+.myalbum .templateList .btnGroup > button:active {background-color:#333;}
+.myalbum .templateList .btnGroup > button:disabled {background-color:#000 !important; opacity:0.5;}
+.myalbum .templateList .itemVideo > em {bottom:5.1rem;}
 
 
 
