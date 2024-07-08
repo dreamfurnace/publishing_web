@@ -77,6 +77,5 @@ document.addEventListener("touchend", dragStop);
 // sheetOverlay.addEventListener("click", hideBottomSheet);
 // showModalBtn.addEventListener("click", showBottomSheet);
 
-
 });
 

@@ -224,6 +224,7 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 
 .templateWrap {position:fixed; top:11rem; left:0; right:0; bottom:9.1rem;
 	 overflow:hidden; overflow-y:auto;} 
+
 .templateList {padding:0 2rem 8rem;
 	display:grid; gap:1.6rem; grid-template-columns:1fr 1fr 1fr;}
 .templateList > a {position:relative; display:flex; justify-content:center;
@@ -650,7 +651,7 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 
 
 /*** complete card  ***/
-.messageArea {border-radius:2rem 2rem 0 0; align-items:center;
+.messageArea {position:fixed; left:0; right:0; bottom:0; border-radius:2rem 2rem 0 0; align-items:center;
 	box-shadow:0 0.4rem 2rem 0 rgba(0, 0, 0, 0.1); background-color:#fff;}
 .messagewrap {position:relative; z-index:2; padding:1rem 2rem; 
 	display:flex; flex-direction:column;}
@@ -692,9 +693,12 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 .cateTab > button {padding:0 1.4rem; height:3rem; line-height:2.8rem;
 	display:flex; gap:0.6rem; color:#333;
 	border-radius:2.5rem; border:1px solid #e2e2e2; background:#fff;}
-.cateTab > .on, .btn_t_g.on {color:#fff; background:#1E1D36; border-color:#1E1D36;}
+.cateTab > .on, .btn_t_g.on,
+.cateTab.ty02 > .on  {color:#fff; background:#1E1D36; border-color:#1E1D36;}
 .cateTab > button > em {display:none; font-weight:500; color:#FBB584;}
 .cateTab > button.on > em {display:block;}
+
+.cateTab.ty02 > button {background:#fbfbfb;}
 
 .tabPanel > section {display:none;}
 .tabPanel > section.active {display:block;}
@@ -834,6 +838,18 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 .customerList.edit .btn_i_del {display:block;}
 .customerList.edit .item.noAgree::before {right:4.6rem;}
 
+/***   my album   ***/
+.albumList {padding:0 2rem 8rem;
+	display:grid; gap:1.6rem; grid-template-columns:1fr 1fr 1fr;}
+
+.albumList > a {position:relative; display:flex; justify-content:center;
+	height:auto; aspect-ratio:3/4; border-radius:0.6rem; overflow:hidden;}
+.albumList > a img,
+.albumList > a video {width:100%; height:auto; object-fit:cover;} 
+.albumList .itemVideo > em {position:absolute; right:0.5rem; bottom:0.5rem;
+	display:block; padding:0 0.5rem; height:1.8rem; line-height:1.8rem; font-size:1.2rem; color:#fff;
+	border-radius:0.3rem; background:rgba(0,0,0,0.6);}
+
 
 
 
@@ -946,7 +962,6 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 .musicItem.preListen .tit > span {color:#3958A8;}
 
 
-
 /* popup - message list */
 .messageGroup {gap:1.4rem; flex-direction:column;}
 .messageGroup.active {display:flex;}
@@ -1000,7 +1015,6 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 .addCustomer.nolist .notice > p {text-align:center; font-size:1.8rem; font-weight:500;}
 .addCustomer.nolist .notice > p::before {content:''; display:block; margin:0 auto 2.4rem;
 	width:7.2rem; height:7.2rem; background:url(../images/img_nolist.svg) no-repeat center;}
-
 
 
 .popupPanel.customerList {padding:0;}
