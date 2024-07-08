@@ -13,9 +13,9 @@ $("#btn_closeMenu").on("click", function () {
 
 // bottom sheet
 // Select DOM elements
-const showModalBtn = document.querySelector(".show-modal");
+// const showModalBtn = document.querySelector(".show-modal");
 const bottomSheet = document.querySelector(".bottom-sheet");
-const sheetOverlay = bottomSheet.querySelector(".sheet-overlay");
+// const sheetOverlay = bottomSheet.querySelector(".sheet-overlay");
 const sheetContent = bottomSheet.querySelector(".content");
 const dragIcon = bottomSheet.querySelector(".drag-icon");
 
@@ -23,11 +23,11 @@ const dragIcon = bottomSheet.querySelector(".drag-icon");
 let isDragging = false, startY, startHeight;
 
 // Show the bottom sheet, hide body vertical scrollbar, and call updateSheetHeight
-const showBottomSheet = () => {
-    bottomSheet.classList.add("show");
-    document.body.style.overflowY = "hidden";
-    updateSheetHeight(50);
-}
+// const showBottomSheet = () => {
+//     bottomSheet.classList.add("show");
+//     document.body.style.overflowY = "hidden";
+//     updateSheetHeight(50);
+// }
 
 const updateSheetHeight = (height) => {
     sheetContent.style.height = `${height}vh`; //updates the height of the sheet content
@@ -36,10 +36,10 @@ const updateSheetHeight = (height) => {
 }
 
 // Hide the bottom sheet and show body vertical scrollbar
-const hideBottomSheet = () => {
-    bottomSheet.classList.remove("");
-    document.body.style.overflowY = "auto";
-}
+// const hideBottomSheet = () => {
+//     bottomSheet.classList.remove("");
+//     document.body.style.overflowY = "auto";
+// }
 
 // Sets initial drag position, sheetContent height and add dragging class to the bottom sheet
 const dragStart = (e) => {
@@ -66,16 +66,16 @@ const dragStop = () => {
     sheetHeight < 25 ? hideBottomSheet() : sheetHeight > 75 ? updateSheetHeight(100) : updateSheetHeight(50);
 }
 
-dragIcon.addEventListener("mousedown", dragStart);
-document.addEventListener("mousemove", dragging);
-document.addEventListener("mouseup", dragStop);
+// dragIcon.addEventListener("mousedown", dragStart);
+// document.addEventListener("mousemove", dragging);
+// document.addEventListener("mouseup", dragStop);
 
 dragIcon.addEventListener("touchstart", dragStart);
 document.addEventListener("touchmove", dragging);
 document.addEventListener("touchend", dragStop);
 
-sheetOverlay.addEventListener("click", hideBottomSheet);
-showModalBtn.addEventListener("click", showBottomSheet);
+// sheetOverlay.addEventListener("click", hideBottomSheet);
+// showModalBtn.addEventListener("click", showBottomSheet);
 
 
 });
