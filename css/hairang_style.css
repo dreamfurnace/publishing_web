@@ -657,9 +657,9 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 .messagewrap > .btn_messagePop {position:absolute; top:1rem; right:2rem; z-index:2;}
 
 .bottom-sheet .messagewrap {position:absolute; top:3.2rem; left:0; right:0; bottom:2rem;}
-.bottom-sheet .messageBox {position:absolute; top:4.4rem; left:2rem; right:2rem; bottom:2rem;}
+.bottom-sheet .messageBox {position:absolute; top:3.4rem; left:2rem; right:2rem; bottom:2rem;}
 .bottom-sheet .messagewrap > .btn_messagePop {top:0; right:2rem;}
-.bottom-sheet .messageBox > textarea {margin:0 0 1rem; height:100%;}
+.bottom-sheet .messageBox > textarea {margin:0 0 1rem; padding:0; height:100%;}
 
 
 /* check box - check */
