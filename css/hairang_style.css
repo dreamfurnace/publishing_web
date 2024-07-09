@@ -385,13 +385,13 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 	padding:0 2rem 1.4rem;}
 .promptItems {display:none; flex-direction:row; gap:1rem; flex-wrap:nowrap;}
 .promptItems > button {width:6rem; height:7rem; border-radius:0.4rem; padding:0;
-	display:flex; flex-direction:column; align-items:center; gap:0.6rem; font-size:1.2rem;
+	display:flex; flex-direction:column; align-items:center; gap:0.2rem; font-size:1.2rem;
 	border:1px solid #f6f6f6; background:#f6f6f6; overflow:hidden;}
 .promptItems > button::before {background-size:100% !important;}
-.promptItems > button.on {border-color:#ff6600; background:#fff; box-shadow:0 0.4rem 1.1rem 0 rgba(0, 0, 0, 0.15);}
+.promptItems > button.on {border-color:#3744A7; background:#fff; box-shadow:0 0.4rem 1.1rem 0 rgba(0, 0, 0, 0.15);}
 .promptItems.active {display:inline-flex;}
 
-[class^="promptItem_bg0"]::before {content:''; width:100%; height:4rem;}
+[class^="promptItem_bg0"]::before {content:''; width:100%; height:4.8rem;}
 .promptItem_bg01::before {background:url(../images/prompt_bg01.png) no-repeat;}
 .promptItem_bg02::before {background:url(../images/prompt_bg02.png) no-repeat;}
 .promptItem_bg03::before {background:url(../images/prompt_bg03.png) no-repeat;}
@@ -401,13 +401,53 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 .promptItem_bg07::before {background:url(../images/prompt_bg07.png) no-repeat;}
 .promptItem_bg08::before {background:url(../images/prompt_bg08.png) no-repeat;}
 
-[class^="promptItem_hcolor0"]::before {content:''; margin:0.6rem 0 0; width:3.4rem; height:3.4rem;}
-.promptItem_hcolor01::before {background:url(../images/prompt_hcolor01.svg) no-repeat;}
-.promptItem_hcolor02::before {background:url(../images/prompt_hcolor02.svg) no-repeat;}
-.promptItem_hcolor03::before {background:url(../images/prompt_hcolor03.svg) no-repeat;}
-.promptItem_hcolor04::before {background:url(../images/prompt_hcolor04.svg) no-repeat;}
-.promptItem_hcolor05::before {background:url(../images/prompt_hcolor05.svg) no-repeat;}
-.promptItem_hcolor06::before {background:url(../images/prompt_hcolor06.svg) no-repeat;}
+[class^="promptItem_hcolor0"]::before {content:''; width:4.2rem; height:4.8rem; background-size:4.2rem !important;}
+.promptItem_hcolor01::before {background:url(../images/prompt_hcolor01.svg) no-repeat center;}
+.promptItem_hcolor02::before {background:url(../images/prompt_hcolor02.svg) no-repeat center;}
+.promptItem_hcolor03::before {background:url(../images/prompt_hcolor03.svg) no-repeat center;}
+.promptItem_hcolor04::before {background:url(../images/prompt_hcolor04.svg) no-repeat center;}
+.promptItem_hcolor05::before {background:url(../images/prompt_hcolor05.svg) no-repeat center;}
+.promptItem_hcolor06::before {background:url(../images/prompt_hcolor06.svg) no-repeat center;}
+
+[class^="promptItem_f_wear0"]::before,
+[class^="promptItem_m_wear0"]::before {content:''; width:4.2rem; height:4.8rem; background-size:4.2rem !important;}
+.promptItem_f_wear01::before {background:url(../images/prompt_f_wear01.svg) no-repeat center;}
+.promptItem_f_wear02::before {background:url(../images/prompt_f_wear02.svg) no-repeat center;}
+.promptItem_f_wear03::before {background:url(../images/prompt_f_wear03.svg) no-repeat center;}
+.promptItem_f_wear04::before {background:url(../images/prompt_f_wear04.svg) no-repeat center;}
+.promptItem_f_wear05::before {background:url(../images/prompt_f_wear05.svg) no-repeat center;}
+.promptItem_f_wear06::before {background:url(../images/prompt_f_wear06.svg) no-repeat center;}
+
+.promptItem_m_wear01::before {background:url(../images/prompt_m_wear01.svg) no-repeat center;}
+.promptItem_m_wear02::before {background:url(../images/prompt_m_wear02.svg) no-repeat center;}
+.promptItem_m_wear03::before {background:url(../images/prompt_m_wear03.svg) no-repeat center;}
+.promptItem_m_wear04::before {background:url(../images/prompt_m_wear04.svg) no-repeat center;}
+.promptItem_m_wear05::before {background:url(../images/prompt_m_wear05.svg) no-repeat center;}
+.promptItem_m_wear06::before {background:url(../images/prompt_m_wear06.svg) no-repeat center;}
+
+[class^="promptItem_f_hair0"]::before,
+[class^="promptItem_m_hair0"]::before {content:''; width:4.2rem; height:4.8rem; background-size:4.2rem !important;}
+.promptItem_f_hair01::before {background:url(../images/prompt_f_hair01.svg) no-repeat center;}
+.promptItem_f_hair02::before {background:url(../images/prompt_f_hair02.svg) no-repeat center;}
+.promptItem_f_hair03::before {background:url(../images/prompt_f_hair03.svg) no-repeat center;}
+.promptItem_f_hair04::before {background:url(../images/prompt_f_hair04.svg) no-repeat center;}
+.promptItem_f_hair05::before {background:url(../images/prompt_f_hair05.svg) no-repeat center;}
+.promptItem_f_hair06::before {background:url(../images/prompt_f_hair06.svg) no-repeat center;}
+
+.promptItem_m_hair01::before {background:url(../images/prompt_m_hair01.svg) no-repeat center;}
+.promptItem_m_hair02::before {background:url(../images/prompt_m_hair02.svg) no-repeat center;}
+.promptItem_m_hair03::before {background:url(../images/prompt_m_hair03.svg) no-repeat center;}
+.promptItem_m_hair04::before {background:url(../images/prompt_m_hair04.svg) no-repeat center;}
+
+[class^="promptItem_posture0"]::before {content:''; width:4.2rem; height:4.8rem; background-size:4.2rem !important;}
+
+.promptItem_posture01::before {background:url(../images/prompt_posture01.svg) no-repeat center;}
+.promptItem_posture02::before {background:url(../images/prompt_posture02.svg) no-repeat center;}
+.promptItem_posture03::before {background:url(../images/prompt_posture03.svg) no-repeat center;}
+.promptItem_posture03m::before {background:url(../images/prompt_posture03m.svg) no-repeat center;}
+.promptItem_posture04::before {background:url(../images/prompt_posture04.svg) no-repeat center;}
+
+
 
 
 .appliedValue {position:absolute; height:17.4rem; left:0; right:0; bottom:10.4rem; border-radius:4.4rem 4.4rem 0 0; 
@@ -1185,6 +1225,8 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 	.btnwrap_rate > button:nth-child(1)::before,
 	.btnwrap_rate > button:nth-child(2)::before,
 	.btnwrap_rate > button:nth-child(3)::before {display:none;}
+
+	.valuegroup {gap:0.6rem;}
 	
 }
 
