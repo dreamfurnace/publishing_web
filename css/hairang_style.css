@@ -1057,6 +1057,7 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 .groupList .groupTit > em {font-size:1.4rem; color:#FF6600;}
 .groupList .groupExp {color:#777; font-size:1.2rem;}
 
+.popContainer.sending {padding:5.4rem 0 0;}
 
 /* popup - Group Edit */
 .popContainer .inputList {padding:1rem 2rem;}
