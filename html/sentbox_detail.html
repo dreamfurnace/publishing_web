@@ -15,15 +15,27 @@
 </head>
 
 <body>
-<button type="button" class="btn_popTest" id="test_callpop">call POPUP</button><!-- ref.event -->
-
-<!--  POPUP  AREA -->
-     <div class="popup_full">
-          <div class="popHeader">
-               <h2></h2>
-               <button class="btn_i_popclose" type="button" id="btn_popClose">닫기</button>
+     <header>
+          <div class="btn_group_l">
+               <button type="button" class="btn_i_back" onclick = "window.location.href='videocard.html';">뒤로가기</button>
           </div>
-          <div class="popContainer">
+          <div class="btn_group_r">
+               <button type="button" class="btn_t_b">삭제</button>
+               <button type="button" class="btn_t_orn">재사용</button>
+          </div>
+     </header>
+     <main class="sentboxDetail">
+          <div class="scrollContainer">
+               <div class="headwrap">
+                    <strong><em>김한화</em>님 외 <em>20</em>명께 보내신 카드입니다.</strong>
+                    <div class="creation">
+                         <span class="date"><em>2024</em>.<em>12</em>.<em>12</em> </span>
+                         <span class="time"><em>14</em>:<em>30</em></span>
+                    </div>
+                    <div class="btnGroup">
+                         <button type="button" class="btn_sentList">보낸 고객리스트</button>
+                    </div>
+               </div>
                <section class="stage rate34"><!-- rate34(3:4) / rate11(1:1) / rate43(4:3)  -->
                     <h2>카드영역</h2>
                     <div class="bgCard">
@@ -59,19 +71,10 @@
                     역시 남쪽으로 좀더 아래로 내려가서, 별들의 횃불인 장 드 밀랑이 반짝이고 있습니다.
                </section>
           </div>
-     </div<><!-- end: class="popup_full"  -->
-<!-- // POPUP  AREA -->
+     </main>
 
 <script>
-// popupEvent_closeBtn
-$('#btn_popClose').click(function(){
-     $('.popup_full').fadeOut(100);
-});
-   
-// popEvent_testBtn
-$('#test_callpop').click(function(){
-     $('.popup_full').fadeIn(100);
-});
+$(document.body).css("background","#fff");
 
 // btn play toggle 
 $('.btn_i_play').click(function(){
@@ -82,7 +85,6 @@ $('.btn_i_play').click(function(){
 $('.btn_i_sound').click(function(){
      $(this).toggleClass('on');
 });
-
 </script>
 </body>
 </html>

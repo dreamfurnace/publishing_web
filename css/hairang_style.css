@@ -183,6 +183,10 @@ a.btn_t_b:visited {color:#fff;}
 	background:url(../images/btn_i_close01.svg) no-repeat center; background-size:100%;}
 .btn_addItem:active, .btn_makeGroup:hover {border-color:#333;}
 
+.btn_sentList {padding:1rem; display:flex; justify-content:center; gap:0.4rem; color:#333; font-weight:500;}
+.btn_sentList::before {content:''; width:1.6rem; height:1.6rem; background:url(../images/ic_sentlist.svg) no-repeat center;}
+
+
 
 /* common */
 .logo_hanhwa {width:12.2rem; height:4rem;
@@ -791,7 +795,7 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 
 /***   Sending   ***/
 .sending > .scrollContainer {top:18rem;}
-.sending > .btnwrap {padding:0 2rem;
+.sending > .btnwrap {padding:0 2rem; padding-right:1rem;
 	display:flex; justify-content:space-between; align-items:center;}
 .sending > .btnwrap > span {display:flex; align-items:center; gap:0.6rem; font-size:1.4rem; color:#777;}
 .sending > .btnwrap > span::before {content:'';
@@ -868,6 +872,7 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 .customerList.edit .btn_i_del {display:block;}
 .customerList.edit .item.noAgree::before {right:4.6rem;}
 
+
 /***   my album   ***/
 .myalbum .btnGroup_edit {margin:0.4rem 0 0;}
 .myalbum > .tabPanel {padding:1rem 0 8rem;
@@ -908,7 +913,14 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 .sentbox .sentInfo > .date {font-size:1.2rem; color:#777;}
 .sentbox .checkimg { aspect-ratio:1/1;}
 
+.sentboxDetail .headwrap {margin:1rem 2rem 0.4rem; margin-right:1rem;
+	display:flex; flex-direction:column; gap:0.4rem; } 
+.sentboxDetail .headwrap > strong {font-size:1.8rem; font-weight:500; color:#333;}
+.sentboxDetail .headwrap > .creation {color:#777; font-size:1.2rem;}
+.sentboxDetail .headwrap > .creation::before {content:''; display:none;}
+.sentboxDetail .headwrap > .btnGroup {display:flex; justify-content:right;}
 
+.sentboxDetail .scrollContainer {top:5rem;}
 
 /***  splash  ***/
 .splash {padding:12vh 0 0;}
