@@ -685,7 +685,7 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 .checkbox_chk .checkmark {display:block; width:2.5rem; height:2.5rem; border-radius:50%;
 	background:#f6f6f6 url('../images/check_i_off.svg') no-repeat center; background-size:1.4rem;}
 .checkbox_chk input:checked ~ .checkmark {background:#3958A8 url('../images/check_i_on.svg') no-repeat center; background-size:1.4rem;}
-
+.checkbox_chk .checktxt {font-size:1.4rem;}
 
 /* chek box - textbox   */
 .checkbox_tbox > label {display:block; position:relative;}
@@ -702,8 +702,9 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 
 /* check box - img */
 .checkbox_img {position:relative;}
-.checkbox_img label {position:relative; display:flex; justify-content:center;
-	height:auto; aspect-ratio:3/4; border-radius:0.6rem; overflow:hidden;}
+.checkbox_img label {position:relative;}
+.checkbox_img .checkimg {display:flex; justify-content:center;
+	height:auto; aspect-ratio:3/4; border-radius:1.6rem; overflow:hidden;}
 .checkbox_img input[type="checkbox"],
 .checkbox_img input[type="radio"] {opacity:0; display:none;}
 .checkbox_img input[type="checkbox"] + label, 
@@ -870,7 +871,7 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 /***   my album   ***/
 .myalbum .btnGroup_edit {margin:0.4rem 0 0;}
 .myalbum > .tabPanel {padding:1rem 0 8rem;
-	position:fixed; top:13.6rem; left:0; right:0; bottom:0; overflow:hidden; overflow-y:auto;}
+	position:fixed; top:13.8rem; left:0; right:0; bottom:0; overflow:hidden; overflow-y:auto;}
 .myalbum .templateList {padding:0 2rem 8rem; gap:1.6rem; grid-template-columns:1fr 1fr;}
 .myalbum .templateList > .item {border-radius:1.6rem;}
 .myalbum .templateList > .item::before {content:''; position:absolute; left:0; right:0; bottom:0; z-index:1;
@@ -892,6 +893,22 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 .creation::before {content:''; width:2rem; height:2rem; border-radius:50%; border:1px solid #3958A8;
 	background:url(../images/ic_time.svg) no-repeat center; background-size:2rem;}
 .myalbum > .headwrap > .btnGroup {display:flex; gap:1rem;}
+
+
+/*** sent box   ***/
+.sentbox .templateList {display:grid; grid-template-columns:1fr 1fr;}
+.sentbox .templateList > .item {display:flex; flex-direction:column; gap:0.8rem;}
+
+.sentbox .templateList > .item > a {position:relative;
+	display:flex; justify-content:center; height:auto; aspect-ratio:3/4;
+	border-radius:1.4rem; overflow:hidden; aspect-ratio:1/1;}
+.sentbox .scrollContainer {top:8.6rem;}
+.sentbox .sentInfo {display:flex; flex-direction:column; gap:0.4rem;}
+.sentbox .sentInfo > .name {font-size:1.4rem;}
+.sentbox .sentInfo > .date {font-size:1.2rem; color:#777;}
+.sentbox .checkimg { aspect-ratio:1/1;}
+
+
 
 /***  splash  ***/
 .splash {padding:12vh 0 0;}
@@ -978,6 +995,7 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 .popupPanel > div,
 .popupPanel > section {display:none;}	
 .popupPanel > .active {display:block;}
+
 
 /* popup - bgm list */
 .bgmList {margin:1rem 0 5rem; padding:0 2rem;}
