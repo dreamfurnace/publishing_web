@@ -980,14 +980,14 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 
 /***   setting   ***/
 .setting {padding:4rem 0 0 2rem;}
-.setting > h2 {margin:0 auto 4rem;
+.setting > h2 {margin:0 auto 4.6rem;
 	width:15rem; height:8.4rem; background:url(../images/logo_hairang.svg) no-repeat center; background-size:100%;}
 .setting .btnwrap {position:fixed; left:2rem; right:2rem; bottom:3rem;}
 
 .setting .verInfo {margin:0 2rem 3rem 0; display:flex; justify-content:space-between; align-items:center;}
 .setting .verInfo .ver {display:flex; gap:0.8rem; color:#333; font-size:1.6rem; font-weight:500;}
 .setting .verInfo .ver > span {font-size:1.4rem; font-weight:400; color:#FF6600;}
-.setting .options {display:flex; flex-direction:column; gap:2rem;}
+.setting .options {display:flex; flex-direction:column; gap:2.2rem;}
 .setting .optHead, .setting .opt_item {display:flex; justify-content:space-between; align-items:center;}
 .setting .optHead {font-size:1.6rem; color:#333; font-weight:500;}
 .setting .opt_item {position:relative; padding-left:3rem; color:#333; font-size:1.4rem;}
