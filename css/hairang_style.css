@@ -189,6 +189,12 @@ a.btn_t_b:visited {color:#fff;}
 .btn_undoDel { color:#FF6600; font-size:1.3rem; display:flex; align-items:center; }
 .btn_undoDel::before {content:''; display:inline-block; width:1.6rem; height:1.6rem; background:url(../images/ic_undo.svg) no-repeat center; }
 
+.btn_logout {width:100%; color:#fff; font-size:1.6rem; color:#fff; height:6rem; border-radius:1rem; background:#FF6600;}
+.btn_logout:hover,.setting .btn_logout:active { background-color:#CC5200;}
+.btn_appUpdate {padding:0 1.6rem; height:4rem; display:flex; gap:0.8rem;
+	font-weight:500; font-size:1.4rem; color:#333; border:1px solid #999; align-items:center;}
+.btn_appUpdate::before {content:''; width:1.6rem; height:1.6rem; background:url(../images/ic_update.svg) no-repeat center;}
+
 
 /* common */
 .logo_hanhwa {width:12.2rem; height:4rem;
@@ -446,7 +452,6 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 .promptItem_m_hair04::before {background:url(../images/prompt_m_hair04.svg) no-repeat center;}
 
 [class^="promptItem_posture0"]::before {content:''; width:4.2rem; height:4.8rem; background-size:4.2rem !important;}
-
 .promptItem_posture01::before {background:url(../images/prompt_posture01.svg) no-repeat center;}
 .promptItem_posture02::before {background:url(../images/prompt_posture02.svg) no-repeat center;}
 .promptItem_posture03::before {background:url(../images/prompt_posture03.svg) no-repeat center;}
@@ -971,6 +976,45 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 .sentboxDetail .headwrap > .btnGroup {display:flex; justify-content:right;}
 
 .sentboxDetail .scrollContainer {top:5rem;}
+
+
+/***   setting   ***/
+.setting {padding:4rem 0 0 2rem;}
+.setting > h2 {margin:0 auto 4rem;
+	width:15rem; height:8.4rem; background:url(../images/logo_hairang.svg) no-repeat center; background-size:100%;}
+.setting .btnwrap {position:fixed; left:2rem; right:2rem; bottom:3rem;}
+
+.setting .verInfo {margin:0 2rem 3rem 0; display:flex; justify-content:space-between; align-items:center;}
+.setting .verInfo .ver {display:flex; gap:0.8rem; color:#333; font-size:1.6rem; font-weight:500;}
+.setting .verInfo .ver > span {font-size:1.4rem; font-weight:400; color:#FF6600;}
+.setting .options {display:flex; flex-direction:column; gap:2rem;}
+.setting .optHead, .setting .opt_item {display:flex; justify-content:space-between; align-items:center;}
+.setting .optHead {font-size:1.6rem; color:#333; font-weight:500;}
+.setting .opt_item {position:relative; padding-left:3rem; color:#333; font-size:1.4rem;}
+.setting .opt_item::before {content:''; position:absolute; top:50%; left:0; margin-top:-1.2rem;
+	display:block; width:2.4rem; height:2.4rem;}
+
+.setting .opt_item.sound::before {background:url(../images/ic_set_sound.svg) no-repeat center;}
+.setting .opt_item.vibr::before  {background:url(../images/ic_set_vibr.svg) no-repeat center;}
+
+
+.setting .swichbox {margin:0; padding:1rem 2rem; display:flex; justify-content:right;}
+.setting .switch {position:relative; display:inline-block; width:4.4rem; height:1rem; vertical-align:middle;}
+.setting .switch input {display:none;}
+.setting .switch .slider {position:absolute; top:0; left:0; right:0; bottom:0; border-radius:2.5rem;
+	background-color:#a1a1a1; transition:.4s;}
+.setting .switch .slider:before {content:""; position:absolute; left:0; top:50%; margin-top:-1.2rem;
+	height:2.2rem; width:2.2rem; transition:.4s; border-radius:50%;
+	background:#fff; border:1px solid #999; box-shadow:none;}
+.setting .switch .slider > span {display:none;}
+.setting .switch input:checked + .slider {background:#FF6600;}
+.setting .switch input:focus + .slider {box-shadow:0 0 0.3rem #ebebeb;}
+.setting .switch input:checked + .slider:before {transform:translateX(2.1rem); 
+	background:#fff; border:1px solid #999;}
+
+
+
+
 
 /***  splash  ***/
 .splash {padding:12vh 0 0;}
