@@ -1016,13 +1016,13 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 .popup_mid .btn_t_r {color:#ff6600;}
 
 .popup_toast {display:none; position:fixed; left:0; right:0; z-index:31; bottom:2.4rem;}
-.popup_toast > .popMessage {padding:0 1.2rem; margin:0 auto;
+.popup_toast > .popMessage {padding:1.2rem 1rem; margin:0 auto;
 	display:flex; align-items:center; justify-content:center;
-	width:28rem; height:4.4rem; line-height:1.4; 
+	width:28rem; line-height:1.4;
 	color:#fff; text-align:center;
 	border-radius:0.8rem; box-shadow:0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2); background:#000;}
 
-.popup_toast > .popMessage.withBtn {padding:0 1rem 0 1.4rem;
+.popup_toast > .popMessage.withBtn {padding:1.4rem 1rem 1.4rem 1.4rem; 
 	display:flex; justify-content:space-between; } 
 
 
