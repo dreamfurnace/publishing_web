@@ -771,7 +771,10 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 .cateTab > button > em {display:none; font-weight:500; color:#FBB584;}
 .cateTab > button.on > em {display:block;}
 
-.cateTab.ty02 > button {background:#fbfbfb;}
+.cateTab.ty02 > button {position:relative; background:#fbfbfb;}
+.cateTab.ty02 > .new::after {content:''; position:absolute; top:0; right:0.1rem;
+	display:block; width:0.5rem; height:0.5rem; 
+	border:1px solid #fff; border-radius:50%; background:#FF6600;}
 
 .tabPanel > section {display:none;}
 .tabPanel > section.active {display:block;}
