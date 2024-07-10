@@ -189,6 +189,7 @@ a.btn_t_b:visited {color:#fff;}
 .btn_undoDel { color:#FF6600; font-size:1.3rem; display:flex; align-items:center; }
 .btn_undoDel::before {content:''; display:inline-block; width:1.6rem; height:1.6rem; background:url(../images/ic_undo.svg) no-repeat center; }
 
+
 /* common */
 .logo_hanhwa {width:12.2rem; height:4rem;
 	text-indent:-9999em; overflow:hidden; white-space:nowrap;
