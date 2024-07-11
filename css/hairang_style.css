@@ -1049,6 +1049,11 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 	background:url(../images/bg_nonotice.svg) no-repeat center;} */
 
 
+
+
+.cateTab::-webkit-scrollbar,.promptItems::-webkit-scrollbar, .popupTab::-webkit-scrollbar {height:0;} 
+
+
 /***   error    ***/
 .error {display:flex; flex-direction:column; gap:2.4rem; text-align:center;}
 .error > strong {font-size:2.2rem; color:#333; font-weight:500; line-height:2;}
