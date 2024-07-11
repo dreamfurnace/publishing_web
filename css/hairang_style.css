@@ -16,8 +16,8 @@ button {letter-spacing:-0.05rem; font-size:1.4rem; font-weight:400; line-height:
 a {display:inline-block;}
 textarea::placeholder, input::placeholder {color:#777;}
 
-div::-webkit-scrollbar, main::-webkit-scrollbar, section::-webkit-scrollbar {background-color:#f1f1f1; width:0; height:0;}
-div::-webkit-scrollbar-thumb, main::-webkit-scrollbar-thumb, section::-webkit-scrollbar-thumb {background-color:#333;}
+div::-webkit-scrollbar, main::-webkit-scrollbar, section::-webkit-scrollbar {width:0.2rem; height:0;}
+div::-webkit-scrollbar-thumb, main::-webkit-scrollbar-thumb, section::-webkit-scrollbar-thumb {}
 
 /* forms */
 input[type="text"] {height:4rem; border:none; outline:none; font-size:1.6rem;
@@ -1049,8 +1049,9 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 	background:url(../images/bg_nonotice.svg) no-repeat center;} */
 
 
-
-
+/***   error    ***/
+.error {display:flex; flex-direction:column; gap:2.4rem; text-align:center;}
+.error > strong {font-size:2.2rem; color:#333; font-weight:500; line-height:2;}
 	
 /***  splash  ***/
 .splash {padding:12vh 0 0;}
