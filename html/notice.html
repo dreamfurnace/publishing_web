@@ -26,7 +26,7 @@
      <main class="notice">
           <div class="scrollContainer">          
                <div class="noticeList">
-                    <div class="item open">
+                    <div class="item">
                          <div class="tit">
                               <span><em>24</em>.<em>06</em>.<em>06</em></span>
                               <strong>앱 버전 업그레이드 안내</strong>
@@ -70,7 +70,7 @@ $(document.body).css("background","#fff");
 $(".noticeList .item").on("click", function () {
     $(".noticeList .item").removeClass("open");
     $(this).addClass("open");
-    $(".noticeList .item.open > .cont").slideDown();
+    $(".noticeList .item.open > .cont").slideToggle();
 });
 </script>
 
