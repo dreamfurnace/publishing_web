@@ -6,7 +6,7 @@ html, body {font-size:10px;
 	padding:env(safe-area-inset-top) env(safe-area-inset-bottom);
 }
 body {font-size:1.4rem; line-height:1.2; color:#000; 
-	font-weight:400; font-family:'Noto Sans KR', sans-serif; background-color:#F2F2F2;}
+	font-weight:400; font-family:'Noto Sans KR', sans-serif; overflow:hidden; background-color:#F2F2F2;}
 input[type="checkbox"], input[type="radio"] {height:auto; vertical-align:middle; cursor:pointer;}
 label {vertical-align:middle; cursor:pointer; display:inline-block;}
 textarea {width:100%; letter-spacing:-0.05rem; font-weight:400; font-family:'Noto Sans KR', sans-serif;}
