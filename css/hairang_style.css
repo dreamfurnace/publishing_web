@@ -771,6 +771,7 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 .checkbox_img label {position:relative;}
 .checkbox_img .checkimg {display:flex; justify-content:center;
 	height:auto; aspect-ratio:3/4; border-radius:1.6rem; overflow:hidden;}
+
 .checkbox_img input[type="checkbox"],
 .checkbox_img input[type="radio"] {opacity:0; display:none;}
 .checkbox_img input[type="checkbox"] + label, 
@@ -779,7 +780,7 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 	display:block; width:2.6rem; height:2.6rem; border-radius:50%;
 	background:rgba(0, 0, 0, 0.2) url('../images/check_i_on.svg') no-repeat center; background-size:1.4rem;}
 .checkbox_img input:checked ~ .checkmark {background:#3958A8 url('../images/check_i_on.svg') no-repeat center; background-size:1.4rem;}
-.checkbox_img .checkimg > img
+.checkbox_img .checkimg > img,
 .checkbox_img .checkimg > video {width:100%; height:100%; object-fit:cover;}
 
 
@@ -990,11 +991,11 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 
 /*** my pic & voice   ***/
 .picNvoice {padding:1rem 2rem 0;}
-.picNvoice .tit {margin:0 0 1rem; display:flex; flex-direction:column; gap:0.2rem;}
+.picNvoice .tit {margin:3rem 0 1rem; display:flex; flex-direction:column; gap:0.2rem;}
 .picNvoice .tit > strong {font-size:1.6rem; font-weight:500; color:#333;}
 .picNvoice .tit > span {font-size:1.4rem; color:#777;}
 .picNvoice .myPic {}
-.mainPic {position:relative; margin:0 0 3rem;
+.mainPic {position:relative; 
 	display:flex; align-items:center;
 	width:20rem; height:20rem; overflow:hidden;
 	border-radius:1.4rem; border:1px solid rgba(221, 221, 221, 0.87);
@@ -1005,14 +1006,24 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 .mainPic > img {width:100%; object-fit:cover; z-index:2;}
 
 .picNvoice .picList {display:grid; gap:1.6rem; grid-template-columns:1fr 1fr 1fr;}
-.picNvoice .picList > button {border-radius:1rem; background:#F3F4F5;}
-.picNvoice .picList > .item {aspect-ratio:1/1; overflow:hidden; 
-	border-radius:1rem;	border:1px dashed #e1e1e1; background:#fcfcfc; }
-.picNvoice .picList > .item > img {width:100%; object-fit:cover;}
-
+.btn_picUpload {border-radius:1rem; background:#F3F4F5 url(../images/ic_upload.svg) no-repeat center; background-size:3.4rem;}
+.btn_picUpload > span {display:none;}
+.picNvoice .picList > .item {
+	display:flex; align-items:center; aspect-ratio:1/1; overflow:hidden; border-radius:1rem;}
+.picNvoice .picList > .item > button {position:relative; padding:0; aspect-ratio:1/1; overflow:hidden; border-radius:1rem;}
+.picNvoice .picList button::after {content:''; position:absolute; top:0.8rem; right:0.8rem;
+	display:block; width:1.8rem; height:1.8rem; border-radius:50%; background:#fff url(../images/ic_x_1.svg) no-repeat center; background-size:0.8rem;}
+.picNvoice .picList > .item img,
+.picNvoice .picList button img {width:100%; object-fit:cover; aspect-ratio:1/1;}
+.picNvoice .picList > .item.blank {border:1px dashed #e1e1e1; background:#fcfcfc;}
 .picNvoice .myVoice > .tit {position:absolute; left:0; right:0; bottom:10.8rem; text-align:center;}
 .picNvoice .btn_i_record {position:absolute; left:50%; margin:-3rem 0 0 -3rem;
 	width:6rem; height:6rem; background-size:3.6rem;}
+
+.picList .checkimg {border-radius:1rem; align-items:center;}
+.picList .checkmark {top:2.4rem; right:0.8rem; width:1.8rem; height:1.8rem; background-size:1rem !important;}
+
+.picNvoice .btnGroup_edit {margin:0 -1rem 1rem; padding:0; display:flex; justify-content:right;}
 
 
 /***   setting   ***/

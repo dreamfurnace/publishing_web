@@ -27,19 +27,80 @@
           <section class="myPic">
                <h2>내사진</h2>
                <div class="mainPic"><img class="skip" src="../images/@pic05.jpg"></div>
-               <div class="tit">
+               <div class="tit skip">
                     <strong>자신의 얼굴 사진을 등록하세요.</strong>
                     <span>이목구비가 분명한 사진일수록 적용률이 높습니다.</span>
                </div>
-               <div class="picList">
+               <div class="btnGroup_edit">
+                    <button type="button">사진삭제</button>
+               </div>
+               <div class="picList changePic"> <!-- 메인사진 교체 -->
                     <button class="btn_picUpload" type="button"><span>사진등록</span></button>
                     <div class="item">
-                         <img src="../images/@pic07.jpg">
+                         <div class="checkbox_img"> 
+                              <label for="item01">
+                                   <input type="radio" id="item01" name="selected">
+                                   <span class="checkmark"></span>
+                                   <span class="checkimg">
+                                        <img src="../images/@pic03.jpg">
+                                   </span>   
+                              </label>
+                         </div>
                     </div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
+                    <div class="item">
+                         <div class="checkbox_img"> 
+                              <label for="item02">
+                                   <input type="radio" id="item02" name="selected">
+                                   <span class="checkmark"></span>
+                                   <span class="checkimg">
+                                        <img src="../images/@pic02.jpg">
+                                   </span>   
+                              </label>
+                         </div>
+                    </div>
+                    <div class="item">
+                         <div class="checkbox_img"> 
+                              <label for="item03">
+                                   <input type="radio" id="item03" name="selected">
+                                   <span class="checkmark"></span>
+                                   <span class="checkimg">
+                                        <img src="../images/@pic01.jpg">
+                                   </span>   
+                              </label>
+                         </div>
+                    </div>
+                    <div class="item">
+                         <div class="checkbox_img"> 
+                              <label for="item04">
+                                   <input type="radio" id="item04" name="selected">
+                                   <span class="checkmark"></span>
+                                   <span class="checkimg">
+                                        <img src="../images/@pic06.jpg">
+                                   </span>   
+                              </label>
+                         </div>
+                    </div>
+                    <div class="item blank"></div>
+               </div>
+               <div class="picList dletePic skip"> <!-- 사진 삭제 -->
+                    <button class="btn_picUpload" type="button"><span>사진등록</span></button>
+                    <div class="item">
+                        <button type="button">
+                              <img src="../images/@pic01.jpg">
+                        </button>
+                    </div>
+                    <div class="item">
+                         <button type="button">
+                              <img src="../images/@pic02.jpg">
+                        </button>
+                    </div>
+                    <div class="item">
+                         <button type="button">
+                              <img src="../images/@pic03.jpg">
+                        </button>
+                    </div>
+                    <div class="item blank"></div>
+                    <div class="item blank"></div>
                </div>
           </section>
           <section class="myVoice">
