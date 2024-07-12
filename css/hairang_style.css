@@ -1,8 +1,6 @@
 @charset "utf-8";
 @import url('reset.css');
-@import url('swiper.min.css');
 @import url('font.css');
-
 
 html, body {font-size:10px;
 	padding:env(safe-area-inset-top) env(safe-area-inset-bottom);
@@ -160,15 +158,22 @@ a.btn_t_b:visited {color:#fff;}
 .btn_messagePop::before {content:''; width:1.6rem; height:1.6rem; background:url(../images/ic_message.svg) no-repeat center; background-size:contain;}
 .btn_messagePop:active, .btn_messagePop:hover {opacity:1;}
 
-.btn_kakao,.btn_sms {width:50%; height:6rem; display:flex; gap:1rem; justify-content:center; align-items:center;
+.btn_kakao,.btn_sms, .btn_camera, .btn_gallery {width:50%; height:6rem; display:flex; gap:1rem; justify-content:center; align-items:center;
 	font-weight:500; color:#333; font-size:1.2rem;
 	border-radius:0.4rem; border: solid 1px rgba(221, 221, 221, 0.87);}
 .btn_kakao::before {content:''; width:3.4rem; height:3.4rem; 
 	background:url(../images/ic_kakao.svg) no-repeat center; background-size:3.4rem;}
 .btn_sms::before {content:''; width:3.4rem; height:3.4rem; 
 	background:url(../images/ic_sms.svg) no-repeat center; background-size:3.4rem; }
+.btn_camera::before {content:''; width:3.4rem; height:3.4rem; 
+	background:url(../images/ic_camera.svg) no-repeat center; background-size:3.4rem;}
+.btn_gallery::before {content:''; width:3.4rem; height:3.4rem; 
+		background:url(../images/ic_gallery.svg) no-repeat center; background-size:3.4rem;}	
 .btn_kakao:active, .btn_kakao:hover,
-.btn_sms:active, .btn_sms:hover {border-color:#333;}
+.btn_sms:active, .btn_sms:hover,
+.btn_camera:active, .btn_camera:hover,
+.btn_gallery:active, .btn_gallery:hover {border-color:#333;}
+
 
 
 .btn_viewCard {margin:0.6rem 2rem 2rem; display:flex; justify-content: center; gap:0.8rem; align-items:center;
@@ -498,7 +503,8 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 	display:flex; justify-content:center;}
 .imageDecoration > .btnwrap .btn_t_b {height:4rem; width:15.2rem; line-height:4rem;}
 
-.decorationArea, .soundArea, .simple_btnArea {position:fixed; left:0; right:0; bottom:0; z-index:10;
+.decorationArea, .soundArea, .simple_btnArea,
+.picNvoice .myVoice {position:fixed; left:0; right:0; bottom:0; z-index:10;
 	height:6.8rem; border-radius:2rem 2rem 0 0; align-items:center;
 	box-shadow:0 0.4rem 2rem 0 rgba(0, 0, 0, 0.1); background-color:#fff;}
 
@@ -819,23 +825,23 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 	background:#fff;}
 .mypage > .head {padding:0 1rem; height:5rem; display:flex; justify-content:right; align-items:center;}
 .mypage > .head .btn_i_notice.new::after {border-color:#fff;}
-.mypic {position:relative; padding:3rem 0 0; margin:1.2rem 0 0;
+.mypage .mypic {position:relative; padding:3rem 0 0; margin:1.2rem 0 0;
 	display:flex;}
-.mypic::before {content:''; position:absolute; top:0; left:-2rem;
+.mypage .mypic::before {content:''; position:absolute; top:0; left:-2rem;
 	display:block; width:21.4rem; height:26rem; 
 	border-radius:1rem; background:#f2f2f2; transform:rotate(-353.54deg); }
 
-.mypic > .pic {position:relative; z-index:2;
+.mypage .mypic > .pic {position:relative; z-index:2;
 	width:20rem; height:20rem; overflow:hidden;
 	margin-left:3rem; border-radius:1rem;
 	box-shadow: 0 1.6rem 4rem 0 rgba(112, 144, 176, 0.2);
 	border:1px solid rgba(221, 221, 221, 0.87);
 	background: #fff url(../images/bg_pic.svg) no-repeat center; background-size:7.2rem;}
-.mypic > .pic > img {width:100%; object-fit:cover;}
-.mypic > .user {margin:5rem 0 0 2rem; font-weight:500;
+.mypage .mypic > .pic > img {width:100%; object-fit:cover;}
+.mypage .mypic > .user {margin:5rem 0 0 2rem; font-weight:500;
 	display:flex; flex-direction:column; gap:0.4rem; color:#333; font-size:1.6rem;}
-.mypic > .user > span {font-size:1.8rem;}
-.mypic > .btn_i_myVoice {position:absolute; left:21rem; bottom:-2rem; z-index:4;}
+.mypage .mypic > .user > span {font-size:1.8rem;}
+.mypage .mypic > .btn_i_myVoice {position:absolute; left:21rem; bottom:-2rem; z-index:4;}
 
 .mymenu {position:absolute; left:0; bottom:2rem; right:0; padding:2rem;}
 .mymenu ul {display:flex; flex-direction:column;}
@@ -911,7 +917,6 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 .customer_seh > .inputwrap > input {padding-left:1.6rem; font-size:1.8rem;
 	width:calc(100% - 8rem); border:none;}
 .customer_seh > .inputwrap > input::placeholder {font-size:1.8rem;}
-
 .customer_seh > .btnGroup {display:flex; flex-direction:row;}
 
 .customerList .item {position:relative; margin:0 2rem;  padding:1.4rem 1.6rem;
@@ -972,7 +977,7 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 .sentbox .sentInfo {display:flex; flex-direction:column; gap:0.4rem;}
 .sentbox .sentInfo > .name {font-size:1.4rem;}
 .sentbox .sentInfo > .date {font-size:1.2rem; color:#777;}
-.sentbox .checkimg { aspect-ratio:1/1;}
+.sentbox .checkimg {aspect-ratio:1/1;}
 
 .sentboxDetail .headwrap {margin:1rem 2rem 0.4rem; margin-right:1rem;
 	display:flex; flex-direction:column; gap:0.4rem; } 
@@ -982,6 +987,32 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 .sentboxDetail .headwrap > .btnGroup {display:flex; justify-content:right;}
 
 .sentboxDetail .scrollContainer {top:5rem;}
+
+/*** my pic & voice   ***/
+.picNvoice {padding:1rem 2rem 0;}
+.picNvoice .tit {margin:0 0 1rem; display:flex; flex-direction:column; gap:0.2rem;}
+.picNvoice .tit > strong {font-size:1.6rem; font-weight:500; color:#333;}
+.picNvoice .tit > span {font-size:1.4rem; color:#777;}
+.picNvoice .myPic {}
+.mainPic {position:relative; margin:0 0 3rem;
+	display:flex; align-items:center;
+	width:20rem; height:20rem; overflow:hidden;
+	border-radius:1.4rem; border:1px solid rgba(221, 221, 221, 0.87);
+	background: #fff url(../images/bg_pic.svg) no-repeat center 5.4rem; background-size:7.2rem;
+	box-shadow: 0 1.6rem 4rem 0 rgba(112, 144, 176, 0.2);}
+.mainPic::before {content:"주 사용 사진"; position:absolute; left:0; right:0; bottom:4.4rem; z-index:1;
+	text-align:center; color:#333; font-size:1.4rem;}
+.mainPic > img {width:100%; object-fit:cover; z-index:2;}
+
+.picNvoice .picList {display:grid; gap:1.6rem; grid-template-columns:1fr 1fr 1fr;}
+.picNvoice .picList > button {border-radius:1rem; background:#F3F4F5;}
+.picNvoice .picList > .item {aspect-ratio:1/1; overflow:hidden; 
+	border-radius:1rem;	border:1px dashed #e1e1e1; background:#fcfcfc; }
+.picNvoice .picList > .item > img {width:100%; object-fit:cover;}
+
+.picNvoice .myVoice > .tit {position:absolute; left:0; right:0; bottom:10rem; text-align:center;}
+.picNvoice .btn_i_record {position:absolute; left:50%; margin:-3rem 0 0 -3rem;
+	width:6rem; height:6rem; background-size:3.6rem;}
 
 
 /***   setting   ***/
@@ -1049,8 +1080,6 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 	font-size:1.8rem; font-weight:500; white-space:nowrap; }
 .noNotice > p::before {content:''; width:7.2rem; height:7.2rem; margin:auto;
 	background:url(../images/bg_nonotice.svg) no-repeat center;} */
-
-
 
 
 .cateTab::-webkit-scrollbar,.promptItems::-webkit-scrollbar, .popupTab::-webkit-scrollbar {height:0;} 
@@ -1191,7 +1220,7 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 .sendingType  {position:relative; margin:2rem;}
 .sendingType > .btn_i_popclose {position:absolute; top:-1rem; right:-1rem;}
 .sendingType > h2 {font-size:1.8rem;}
-.sendingType > .btnGroup {margin:4rem 0 3rem; display:flex; gap:1rem;}
+.sendingType > .btnGroup {margin:3rem 0 2rem; display:flex; gap:1rem;}
 .sendingType > .head {display:flex; justify-content:space-between; align-items:center;}
 
 
@@ -1203,6 +1232,7 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 .groupList .groupExp {color:#777; font-size:1.2rem;}
 
 .popContainer.sending {padding:5.4rem 0 10rem;}
+
 
 /* popup - Group Edit */
 .popContainer .inputList {padding:1rem 2rem;}
@@ -1241,7 +1271,6 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 .popupPanel.customerList .scrollContainer {top:16rem;}
 .popupPanel .groupList .checktxt {align-items:normal;}
 .popupPanel.customerList .item {margin:0;}
-
 
 
 /** bottom  sheet  **/
