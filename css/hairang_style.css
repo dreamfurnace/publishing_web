@@ -6,7 +6,7 @@ html, body {font-size:10px;
 	padding:env(safe-area-inset-top) env(safe-area-inset-bottom);
 }
 body {font-size:1.4rem; line-height:1.2; color:#000; 
-	font-weight:400; font-family:'Noto Sans KR', sans-serif; overflow:hidden; background-color:#F2F2F2;}
+	font-weight:400; font-family:'Noto Sans KR', sans-serif; background-color:#F2F2F2;}
 input[type="checkbox"], input[type="radio"] {height:auto; vertical-align:middle; cursor:pointer;}
 label {vertical-align:middle; cursor:pointer; display:inline-block;}
 textarea {width:100%; letter-spacing:-0.05rem; font-weight:400; font-family:'Noto Sans KR', sans-serif;}
@@ -1010,7 +1010,7 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 	border-radius:1rem;	border:1px dashed #e1e1e1; background:#fcfcfc; }
 .picNvoice .picList > .item > img {width:100%; object-fit:cover;}
 
-.picNvoice .myVoice > .tit {position:absolute; left:0; right:0; bottom:10rem; text-align:center;}
+.picNvoice .myVoice > .tit {position:absolute; left:0; right:0; bottom:10.8rem; text-align:center;}
 .picNvoice .btn_i_record {position:absolute; left:50%; margin:-3rem 0 0 -3rem;
 	width:6rem; height:6rem; background-size:3.6rem;}
 
