@@ -715,10 +715,9 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .btn_simpleBgm:active::before, .btn_simpleBgm:hover::before {content:''; width:2.4rem; height:2.4rem; background-size:2.4rem;
 	background:url(../images/ic_bgm_orn.svg) no-repeat center;}
 
-.voiceRecording {display:none; padding:2rem; height:12rem;}
+.voiceRecording, .appliedVoice {display:none; padding:2rem; height:12rem;}
 .voiceRecording .btn_i_play {width:4rem; height:4rem; 
 	box-shadow: 0 0 2rem 0 rgba(112, 144, 176, 0.25); border-color:#fff;}
-/* .voiceRecording .btn_i_play::before {content:''; width:1.2rem; height:1.2rem; clip-path:polygon(0.9rem 0, 1.2rem 1.2rem, 0 0.9rem); background:#3958A8; } */
 
 .voicePlay {display:flex; gap:1.4rem;}
 .voicePlay .timelineWrap {margin-top:2rem; display:flex; flex-direction:column; width:calc(100% - 5rem); gap:1rem;}
@@ -745,8 +744,12 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .messageBox.error textarea  {border-color:#DB0909;}
 
 .voiceRecording.active, 
-.voiceMaking.active {display:block;}
+.voiceMaking.active,
+.appliedVoice.active {display:block;}
 
+.appliedVoice .footGroup {justify-content:center;}
+.appliedVoice .footGroup .btn_t_b {width:15.2rem; height:4rem;}
+.appliedVoice .footGroup .btn_i_close {position:absolute; top:0; left:0}
 
 /*** complete card  ***/
 .messageArea {position:fixed; left:0; right:0; bottom:0; border-radius:2rem 2rem 0 0; align-items:center;
@@ -1120,7 +1123,7 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 	display:block; width:2.4rem; height:2.4rem; background:url(../images/arrow_notice.svg) no-repeat center;  transition:0.1s;}
 .noticeList .item > .tit > span {font-size:1.4rem; color:#777;}
 .noticeList .item > .tit > strong {position:relative; font-size:1.6rem; font-weight:500; color:#333;}
-.noticeList .item > .cont {display:none; font-size:1.4rem; color:#777;}
+.noticeList .item > .cont {display:none; font-size:1.4rem; color:#777; line-height:2.1rem;}
 .noticeList .item.open > .tit::after {transform:rotate(180deg); transition:0.1s;}
 .noticeList .item.open > .cont {display:block;}
 .noticeList .item.new > .tit > strong::after {content:''; margin-left:0.4rem; vertical-align:1.1rem;
