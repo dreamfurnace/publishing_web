@@ -26,18 +26,22 @@
      <main class="picNvoice">
           <section class="myPic">
                <h2>내사진</h2>
-               <div class="mainPic"><img class="skip" src="../images/@pic05.jpg"></div>
-               <div class="tit skip">
+               <div class="mainPic">
+                    <button class="btn_i_change" type="button">주사용사진교체</button>
+                    <img class="" src="../images/@pic05.jpg">
+               </div>
+               <div class="tit skip"><!-- only before upload pic -->
                     <strong>자신의 얼굴 사진을 등록하세요.</strong>
                     <span>이목구비가 분명한 사진일수록 적용률이 높습니다.</span>
                </div>
                <div class="btnGroup_edit">
                     <button type="button">사진삭제</button>
+                    <button class="skip" type="button">확인</button>
                </div>
                <div class="picList changePic skip"> <!-- 메인사진 교체 -->
-                    <button class="btn_picUpload" type="button"><span>사진등록</span></button>
+                    <button class="btn_picUpload" type="button" disabled><span>사진등록</span></button>
                     <div class="item">
-                         <div class="checkbox_img"> 
+                         <div class="checkbox_img">
                               <label for="item01">
                                    <input type="radio" id="item01" name="selected">
                                    <span class="checkmark"></span>
@@ -82,8 +86,8 @@
                     </div>
                     <div class="item blank"></div>
                </div>
-               <div class="picList dletePic"> <!-- 사진 삭제 -->
-                    <button class="btn_picUpload" type="button"><span>사진등록</span></button>
+               <div class="picList"> <!-- 사진 삭제 'deletePic' -->
+                    <button class="btn_picUpload" type="button"><span>사진등록</span></button><!-- when filled 5pics, 'skip' -->
                     <div class="item">
                         <button type="button">
                               <img src="../images/@pic01.jpg">
@@ -104,7 +108,7 @@
                </div>
           </section>
           <section class="myVoice">
-               <div class="tit">
+               <div class="tit"> <!-- only before upload voice -->
                     <strong>목소리를 등록하세요.</strong>
                     <span>음성메세지를 말하는 영상 카드에 적용됩니다.</span>
                </div>
@@ -114,6 +118,11 @@
 
 <script>
 $(document.body).css("background","#fff");
+
+// change main pic toggle
+$(".btn_i_change").on("click", function () {
+    $(".btn_i_change").addClass("on");
+});
 
 
 </script>
