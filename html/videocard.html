@@ -61,7 +61,7 @@
           <section class="groupwrap appliedVoice active" id="sec_appliedVoice">
                <h2>음성듣기</h2> <!-- 음성만들기 동일-->
                <div class="voicePlay">
-                    <button class="btn_i_play" type="button" id="btn_playRecord">재생/멈춤</button>
+                    <button class="btn_i_play" type="button" id="btn_playVoice">재생/멈춤</button>
                     <div class="timelineWrap">
                          <div class="timeline">
                               <span></span>
@@ -124,6 +124,11 @@ $("#btn_closeRecord").on("click", function () {
 
 // btn play toggle 
 $('#btn_playRecord').click(function(){
+     $(this).toggleClass('stop');
+});
+
+// btn play toggle 
+$('#btn_playVoice').click(function(){
      $(this).toggleClass('stop');
 });
 

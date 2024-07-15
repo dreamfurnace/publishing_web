@@ -64,15 +64,11 @@ input[type="text"]:focus::placeholder {color:transparent;}
 .btn_i_play {display:flex; align-items:center;
 	width:3.8rem; height:3.8rem; border-radius:50%; border:1px solid #ddd; 
 	background:#fff url(../images/arrow_play_blue.svg) no-repeat center; background-size:1.6rem;}
-/* .btn_i_play::before {content:''; margin-left:0.5rem;
-	display:block; width:1.4rem; height:1.4rem; background:#3958A8;
-	clip-path:polygon(0.9rem 0, 1.1rem 1.1rem, 0 0.9rem); transform:rotate(-45deg);} */
 
-.btn_i_play.stop {border-color:#3958A8; background:#3958A8 url(../images/play_pause_wh.svg) no-repeat center; background-size:1.6rem;}
-/* .btn_i_play.stop::before {content:''; display:none !important;} */
-/* .btn_i_play.stop::after {content:''; margin:0 auto;
-	display:block; width:0.4rem; height:1rem; 
-	border-left:0.2rem solid #fff; border-right:0.2rem solid #fff;} */
+
+.btn_i_play.stop {border-color:#3958A8; background:#3958A8 url(../images/play_pause_wh.svg) no-repeat center; background-size:1.6rem;
+	box-shadow: 0 0 2rem 0 rgba(112, 144, 176, 0.25); border-color:#fff;}
+
 
 .btn_i_record, .btn_i_voicemake  {width:5rem; height:5rem; border-radius:50%; 
 	background:#FF6600 url(../images/ic_voice_wh.svg) no-repeat center; background-size:2.4rem; 
@@ -716,7 +712,8 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 	background:url(../images/ic_bgm_orn.svg) no-repeat center;}
 
 .voiceRecording, .appliedVoice {display:none; padding:2rem; height:12rem;}
-.voiceRecording .btn_i_play {width:4rem; height:4rem; 
+.voiceRecording .btn_i_play,
+.appliedVoice .btn_i_play {width:4rem; height:4rem; 
 	box-shadow: 0 0 2rem 0 rgba(112, 144, 176, 0.25); border-color:#fff;}
 
 .voicePlay {display:flex; gap:1.4rem;}
