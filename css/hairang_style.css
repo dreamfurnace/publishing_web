@@ -1211,7 +1211,7 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 	display:flex; flex-direction:column; gap:1rem; text-align:left;}
 .popup_notice > .popMessage > h3 {font-weight:500; font-size:1.4rem;}
 .popup_notice > .popMessage > .cont {margin:0 0 2rem; font-size:1.2rem; color:#777; font-weight:400;}
-.popup_notice > .popup_btnGroup {margin:0 1.4rem 1.2rem 2rem;
+.popup_notice > .popup_btnGroup {margin:0 1.6rem 1.4rem 2rem;
 	display:flex; justify-content:space-between; align-items:center;}
 .popup_notice > .popup_btnGroup > button {width:3rem; height:3rem;}
 .popup_notice .checkbox_chk label {display:flex; gap:0.8rem; align-items:center;}
