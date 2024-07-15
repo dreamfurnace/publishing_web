@@ -733,7 +733,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .voiceMaking > .btngroup {margin:0 0 1.2rem; padding:2rem 0 0; display:flex; gap:1rem;}
 .voiceMaking > .btngroup > .on {color:#FF6600;}
 
-.messageBox textarea {margin:0 0 1rem; padding:1rem 0; font-size:1.4rem;
+.messageBox textarea {margin:0 0 1rem; padding:1rem 0; font-size:1.4rem; font-weight:500;
 	height:10rem; border:none; border-bottom: solid 1px rgba(221, 221, 221, 0.87);
 	background-color:transparent;}
 .messageBox textarea:focus   {border-color:#000;}
@@ -898,7 +898,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .c_info .gender.female {background:#FFDFCB;}
 .c_info .age, .c_info .address {color:#777;}
 
-.final_txtArea {padding:3rem 2rem; color:#333; word-break:keep-all; line-height:1.4; font-size:1.4rem;}
+.final_txtArea {padding:3rem 2rem; color:#333; word-break:keep-all; line-height:1.4; font-size:1.4rem; font-weight:500;}
 
 
 /***   Customer  ***/
@@ -996,7 +996,7 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 .sentbox .scrollContainer {top:8.6rem;}
 .sentbox .sentInfo {display:flex; flex-direction:column; gap:0.4rem;}
 .sentbox .sentInfo > .name {font-size:1.4rem;}
-.sentbox .sentInfo > .date {font-size:1.2rem; color:#777;}
+.sentbox .sentInfo > .date {display:flex; gap:1rem; font-size:1.2rem; color:#777;}
 .sentbox .checkimg {aspect-ratio:1/1;}
 
 .sentboxDetail .headwrap {margin:1rem 2rem 0.4rem; margin-right:1rem;
