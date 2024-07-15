@@ -34,15 +34,31 @@
                     건강과 행복이 늘 함께하길 바라며, 추석의 은은한 정을 만끽하시길 바랍니다.
                </strong>
           </section>
+          <section class="voicePlay">
+               <h2>미리듣기</h2>
+               <button class="btn_i_play" type="button" id="btn_playRecord">재생/멈춤</button>
+               <div class="timelineWrap">
+                    <div class="timeline">
+                         <span></span>
+                         <button class="btn_i_timePoint" type="button">movePoint</button>
+                    </div>
+                    <div class="timeTxt">
+                         <span>0:<em>18</em></span>
+                         <span>0:<em>30</em></span>
+                    </div>
+               </div>
+          </section>
           <section class="recordTime">
+               <h2>녹음중</h2>
                <div class="soundarea">
                     <img src="../images/@soundwave.png"><!-- wave sample-->
                </div>
                <div class="time"><em>0</em>:<em>00</em></div>
           </section>
           <section class="btnGroup">
+               <h2>녹음버튼 그룹</h2>
                <button class="btn_i_close">취소</button>
-               <button class="btn_i_record">녹음</button>
+               <button class="btn_i_record" id="btn_record">녹음</button>
                <button class="btn_i_apply">등록</button>
           </section>
 	</main>
@@ -51,8 +67,18 @@
 $(document.body).css("background","#1E1D36");
 
 // change main pic toggle
-$(".btn_i_change").on("click", function () {
+$(".btn_i_change").on("click", function(){
     $(".btn_i_change").addClass("on");
+});
+
+// btn record toggle 
+$('#btn_record').click(function(){
+     $(this).toggleClass('stop');
+});
+
+// btn play toggle 
+$('#btn_playRecord').click(function(){
+     $(this).toggleClass('stop');
 });
 
 </script>
