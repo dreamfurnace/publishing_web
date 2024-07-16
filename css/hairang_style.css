@@ -37,10 +37,10 @@ input[type="text"]:focus::placeholder {color:transparent;}
 .btn_i_nav {background:url(../images/ic_nav.svg) no-repeat center; background-size:2.2rem;}
 .btn_i_back {width:4rem; height:4rem; 
 	background:url(../images/ic_back.svg) no-repeat center; background-size:2.2rem;}
-.btn_i_next {width:4rem;
-	border-radius:2.5rem; background:#ff6600 url(../images/arrow_r_wh.svg) no-repeat center;}
+.btn_i_next {width:3.6rem;
+	border-radius:2.5rem; background:#1E1D36 url(../images/arrow_r_wh.svg) no-repeat center;}
 .btn_i_next:disabled {background:url(../images/arrow_r_gry.svg) no-repeat center;}
-.btn_i_next:active, .btn_i_next:hover  {background-color:#CC5200;}
+.btn_i_next:active, .btn_i_next:hover  {background-color:#4B4A5E;}
 
 .btn_i_reset {width:3rem; height:3rem; 
 	background:url(../images/ic_reset.svg) no-repeat center right; background-size:2.6rem;}
