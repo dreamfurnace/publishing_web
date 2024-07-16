@@ -1480,6 +1480,6 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 @supports (-webkit-overflow-scrolling: touch) {
 	/* CSS specific to iOS devices */
 	
-	.btn_i_reswap.on::after {transition:none;}
+	/* .btn_i_reswap.on::after {transition:none;} */
 
  }
