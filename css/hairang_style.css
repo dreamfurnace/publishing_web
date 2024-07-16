@@ -14,9 +14,6 @@ button {letter-spacing:-0.05rem; font-size:1.4rem; font-weight:400; line-height:
 a {display:inline-block;}
 textarea::placeholder, input::placeholder {color:#777;}
 
-/* div::-webkit-scrollbar, main::-webkit-scrollbar, section::-webkit-scrollbar {width:0.2rem; height:0;}
-div::-webkit-scrollbar-thumb, main::-webkit-scrollbar-thumb, section::-webkit-scrollbar-thumb {} */
-
 /* forms */
 input[type="text"] {height:4rem; border:none; outline:none; font-size:1.6rem;
 	font-weight:500; color:#333;	border-bottom:1px solid #ddd;}
@@ -32,7 +29,7 @@ input[type="text"]:focus::placeholder {color:transparent;}
 .btn_i_notice {position:relative; background:url(../images/ic_notice.svg) no-repeat center; background-size:2.2rem;}
 .btn_i_notice.new::after {content:''; position:absolute; top:0.7rem; right:0.8rem;
 	display:block; width:0.6rem; height:0.6rem; 
-	border-radius:50%; border:2px solid #f2f2f2; background:#FF6600;}
+	border-radius:50%; border:0.2rem solid #f2f2f2; background:#FF6600;}
 
 .btn_i_nav {background:url(../images/ic_nav.svg) no-repeat center; background-size:2.2rem;}
 .btn_i_back {width:4rem; height:4rem; 
@@ -218,6 +215,7 @@ a.btn_t_b:visited {color:#fff;}
 .btn_picUpload > span {display:none;}
 .btn_picUpload:disabled {opacity:0.2; background-color:#ccc;}
 
+
 /* common */
 .logo_hanhwa {width:12.2rem; height:4rem;
 	text-indent:-9999em; overflow:hidden; white-space:nowrap;
@@ -274,7 +272,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 	 overflow:hidden; overflow-y:auto;} 
 
 .templateList {padding:0 2rem 8rem;
-	display:grid; gap:1.6rem; grid-template-columns:1fr 1fr 1fr;}
+	display:grid; gap:1.6rem; grid-template-columns:repeat(3, 1fr);}
 .templateList > a,
 .templateList > .item {position:relative; display:flex; justify-content:center;
 	height:auto; aspect-ratio:3/4; border-radius:0.6rem; overflow:hidden;}
@@ -486,8 +484,6 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .promptItem_posture05::before {background:url(../images/prompt_posture05.svg) no-repeat center;}
 
 
-
-
 .appliedValue {position:absolute; height:17.4rem; left:0; right:0; bottom:10.4rem; border-radius:4.4rem 4.4rem 0 0; 
 	background:#1e1d36; box-shadow:0 0.4rem 2rem 0 rgba(112, 144, 176, 0.2);}
 .valueWrap {position:relative; z-index:2; margin:1.2rem 2rem;
@@ -655,7 +651,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .stickerItems > button:hover  {border-color:#1e1d36; box-shadow:0 0.4rem 1.1rem 0 rgba(0, 0, 0, 0.15);}
 
 .hanwhaGroup {padding:2rem; height:17.8rem;}
-.hanwhalogo {display:grid; grid-template-columns:1fr 1fr; gap:2rem; margin:0 0 1rem;}
+.hanwhalogo {display:grid; grid-template-columns:repeat(2, 1fr); gap:2rem; margin:0 0 1rem;}
 .hanwhalogo > button {height:6rem; border-radius:0.4rem;
 	text-indent:-9999em; overflow:hidden; white-space:nowrap; background-size:16rem !important;}
 .hanwhalogo > .on {border:solid 1px #ff6600; box-shadow:0 0.4rem 1.1rem 0 rgba(0, 0, 0, 0.15);}
@@ -965,7 +961,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .myalbum .btnGroup_edit {margin:0.4rem 0 0;}
 .myalbum > .tabPanel {padding:1rem 0 8rem;
 	position:fixed; top:13.8rem; left:0; right:0; bottom:0; overflow:hidden; overflow-y:auto;}
-.myalbum .templateList {padding:0 2rem 8rem; gap:1.6rem; grid-template-columns:1fr 1fr;}
+.myalbum .templateList {padding:0 2rem 8rem; gap:1.6rem; grid-template-columns:repeat(2, 1fr);}
 .myalbum .templateList > .item {border-radius:1.6rem;}
 .myalbum .templateList > .item::before {content:''; position:absolute; left:0; right:0; bottom:0; z-index:1;
 height:4.6rem; background:rgba(0,0,0,0.6);}
@@ -989,7 +985,7 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 
 
 /*** sent box   ***/
-.sentbox .templateList {display:grid; grid-template-columns:1fr 1fr;}
+.sentbox .templateList {display:grid; grid-template-columns:repeat(2, 1fr);}
 .sentbox .templateList > .item {display:flex; flex-direction:column; gap:0.8rem;}
 
 .sentbox .templateList > .item > a {position:relative;
@@ -1027,7 +1023,7 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 	text-align:center; color:#333; font-size:1.4rem;}
 .mainPic > img {width:100%; object-fit:cover; z-index:2;}
 
-.picNvoice .picList {display:grid; gap:1.6rem; grid-template-columns:1fr 1fr 1fr;}
+.picNvoice .picList {display:grid; gap:1.6rem; grid-template-columns:repeat(3, 1fr);}
 .picNvoice .picList > .item {display:flex; align-items:center; aspect-ratio:1/1; 
 	overflow:hidden; border-radius:1rem;}
 .picNvoice .picList > .item > button {position:relative; padding:0; aspect-ratio:1/1; overflow:hidden; border-radius:1rem;}
@@ -1047,7 +1043,7 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 
 .myVoice .voicePlay {padding:0 2rem;
 	position:fixed; left:0; right:0; bottom:11rem; }
-.myVoice .btn_i_play {border:none; box-shadow: 0 0 20px 0 rgba(112, 144, 176, 0.25);}
+.myVoice .btn_i_play {border:none; box-shadow: 0 0 2rem 0 rgba(112, 144, 176, 0.25);}
 
 
 /* recordVoice */
@@ -1128,19 +1124,6 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 .noticeList .item.new > .tit > strong::after {content:''; margin-left:0.4rem; vertical-align:1.1rem;
 	display:inline-block; width:0.6rem; height:0.6rem;
 	border-radius:50%; background:#FF6600;}
-
-
-/* .notice .noNotice {display:none;}
-.notice.noResult .noNotice {display:flex;}
-
-
-.noNotice {position:absolute; top:0; left:0; right:0; bottom:0;
-	display:flex; align-items:center; justify-content:center;}
-.noNotice > p {display:flex; flex-direction:column; gap:2.4rem;
-	font-size:1.8rem; font-weight:500; white-space:nowrap; }
-.noNotice > p::before {content:''; width:7.2rem; height:7.2rem; margin:auto;
-	background:url(../images/bg_nonotice.svg) no-repeat center;} */
-
 
 .cateTab::-webkit-scrollbar,.promptItems::-webkit-scrollbar, .popupTab::-webkit-scrollbar {height:0;} 
 
@@ -1265,10 +1248,7 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 /* popup - bgm list */
 .bgmList {margin:1rem 0 5rem; padding:0 2rem;}
 .bgmList .btn_i_play {width:3rem; height:3rem; background:url(../images/arrow_play_bk.svg) no-repeat center; background-size:1.4rem;}
-.bgmList .btn_i_play.stop {border-color:#3958A8; background:#3958A8 url(../images/play_pause_wh.svg) no-repeat center; background-size:1.2rem;}
-/* .bgmList .btn_i_play::before {content:''; margin:0 auto;
-	display:block; width:1rem; height:1rem; background:#000;
-	clip-path:polygon(0.7rem 0, 0.9rem 0.9rem, 0 0.7rem); transform:rotate(-45deg);} */
+.bgmList .btn_i_play.stop {border-color:#3958A8 !important; background:#3958A8 url(../images/play_pause_wh.svg) no-repeat center; background-size:1.2rem;}
 
 .musicGroup {display:flex; flex-direction:column; gap:3rem;}
 .musicItem .titwrap {display:flex; justify-content:space-between;}
@@ -1352,19 +1332,6 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 
 
 /** bottom  sheet  **/
-/* .show-modal {
-	outline: none;
-	border: none;
-	cursor: pointer;
-	color: #fff;
-	border-radius: 6px;
-	font-size: 1.2rem;
-	padding: 15px 22px;
-	background: #4A98F7;
-	transition: 0.3s ease;
-	box-shadow: 0 10px 18px rgba(52,87,220,0.18);
-   }
-.show-modal:hover {background: #2382f6;} */
 .bottom-sheet {
 	position:fixed; left:0; bottom:0;
 	width:100%;
@@ -1386,7 +1353,6 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 }
 .bottom-sheet.show .content {transform:translateY(0%);}
 .bottom-sheet.dragging .content {transition:none;}
-/* .bottom-sheet.fullscreen .content {border-radius: 0; overflow-y: hidden;} */
 .bottom-sheet .header {display:flex; justify-content:center;}
 .header .drag-icon {cursor:grab; user-select:none; padding:1rem; width:80%; margin-top:-2rem;}
 .header .drag-icon span {margin:0 auto; height: 0.4rem; width:4rem;
@@ -1471,7 +1437,9 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 
 @media only screen and (min-width:540px) {
 	.stage {max-width:360px; margin:0 auto;}
-
+	.valueWrap {flex-direction:column;}
+	.valueWrap > .btngroup {flex-direction:row; justify-content: right;}
+	.templateList {grid-template-columns:repeat(4, 1fr);}
 
 } /* for Duo  */
 
