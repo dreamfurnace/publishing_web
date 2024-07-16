@@ -83,8 +83,8 @@ input[type="text"]:focus::placeholder {color:transparent;}
 .btn_i_timePoint::after {content:''; position:absolute; top:50%; left:50%; margin:-0.5rem 0 0 -0.5rem;
 	display:block; width:1rem; height:1rem; border-radius:50%; background:#3958A8;}
 
-.btn_i_sound {border-radius:50%; background:#1E1D36 url(../images/ic_sound_off.svg) no-repeat center; background-size:1.8rem;}
-.btn_i_sound.on {background:#1E1D36 url(../images/ic_sound_on.svg) no-repeat center; background-size:1.8rem;}
+.btn_i_sound {border-radius:50%; background:#1E1D36 url(../images/ic_sound_off.svg) no-repeat center; background-size:1.6rem;}
+.btn_i_sound.on {background:#1E1D36 url(../images/ic_sound_on.svg) no-repeat center; background-size:1.6rem;}
 
 .btn_i_menuClose {background:url(../images/ic_mypage_x.svg) no-repeat center;}
 .btn_i_home {background:url(../images/ic_mypage_home.svg) no-repeat center;}
@@ -366,7 +366,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .emtyRate43 .bgCard > img {display:none;}
 
 .videoElements {position:absolute; left:2rem; right:2rem; bottom:1rem;}
-.videoElements > .btn_i_sound {position:absolute; bottom:4.6rem; right:0;}
+.videoElements > .btn_i_sound {position:absolute; bottom:4rem; right:0; width:3rem; height:3rem;}
 
 .makeTemplate .bgCard::before {content:"생성된 템플릿이 없습니다."; 
 	font-size:1.3rem; text-align:center;
