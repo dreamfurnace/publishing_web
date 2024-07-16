@@ -1175,7 +1175,7 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 
 .popupContainer {display:none; position:relative; z-index:32;}
 .popup_midWrap {position:fixed; top:0; left:0; right:0; bottom:0; 
-	display:flex; align-items:center;}	
+	display:flex; align-items:center; justify-content:center;}	
 .popup_mid {margin:0 4rem; width:100%; border-radius:2rem; overflow:hidden;
 	background:#fff; box-shadow:0 1.6rem 4rem 0 rgba(112, 144, 176, 0.2);}
 .popup_mid .popup_btnGroup {margin:0; border-top:1px solid #eee;}
@@ -1440,6 +1440,11 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 	.valueWrap {flex-direction:column;}
 	.valueWrap > .btngroup {flex-direction:row; justify-content: right;}
 	.templateList {grid-template-columns:repeat(4, 1fr);}
+	.myalbum .templateList {grid-template-columns:repeat(3, 1fr);}
+	.sentbox .templateList {grid-template-columns:repeat(3, 1fr);}
+	.picNvoice .picList {grid-template-columns:repeat(4, 1fr);}
+
+	.popup_notice, .popup_mid {max-width:360px;}
 
 } /* for Duo  */
 
