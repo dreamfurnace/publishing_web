@@ -66,7 +66,7 @@ input[type="text"]:focus::placeholder {color:transparent;}
 	background:#fff url(../images/arrow_play_blue.svg) no-repeat center; background-size:1.6rem;}
 
 
-.btn_i_play.stop {border-color:#3958A8; background:#3958A8 url(../images/play_pause_wh.svg) no-repeat center; background-size:1.6rem;
+.btn_i_play.stop {border-color:#3958A8 !important; background:#3958A8 url(../images/play_pause_wh.svg) no-repeat center; background-size:1.6rem;
 	box-shadow: 0 0 2rem 0 rgba(112, 144, 176, 0.25);}
 
 
