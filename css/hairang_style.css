@@ -67,7 +67,7 @@ input[type="text"]:focus::placeholder {color:transparent;}
 
 
 .btn_i_play.stop {border-color:#3958A8; background:#3958A8 url(../images/play_pause_wh.svg) no-repeat center; background-size:1.6rem;
-	box-shadow: 0 0 2rem 0 rgba(112, 144, 176, 0.25); border-color:#fff;}
+	box-shadow: 0 0 2rem 0 rgba(112, 144, 176, 0.25);}
 
 
 .btn_i_record, .btn_i_voicemake  {width:5rem; height:5rem; border-radius:50%; 
@@ -261,6 +261,8 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 
 header.tyB h1 {color:#fff;} 
 header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center;}
+
+
 
 /*** MAIN swiper & list ***/
 .mainbtnGroup {padding:0 2rem;
@@ -1263,7 +1265,7 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 /* popup - bgm list */
 .bgmList {margin:1rem 0 5rem; padding:0 2rem;}
 .bgmList .btn_i_play {width:3rem; height:3rem; background:url(../images/arrow_play_bk.svg) no-repeat center; background-size:1.4rem;}
-.bgmList .btn_i_play.stop {background:#3958A8 url(../images/play_pause_wh.svg) no-repeat center; background-size:1.2rem;}
+.bgmList .btn_i_play.stop {border-color:#3958A8; background:#3958A8 url(../images/play_pause_wh.svg) no-repeat center; background-size:1.2rem;}
 /* .bgmList .btn_i_play::before {content:''; margin:0 auto;
 	display:block; width:1rem; height:1rem; background:#000;
 	clip-path:polygon(0.7rem 0, 0.9rem 0.9rem, 0 0.7rem); transform:rotate(-45deg);} */
