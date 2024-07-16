@@ -147,8 +147,8 @@ a.btn_t_b:visited {color:#fff;}
 
 .btn_t_name {padding:0 0.8rem; height:2.4rem; line-height:2.4rem; color:#777; 
 	border-radius:2.5rem; background:#fff;}
-.btn_t_del {color:#fff; background:rgba(242, 242, 242, 0.1);}
-.btn_t_del.active {color:#1E1D36; background:#f2f2f2;}
+.btn_t_del {color:#1E1D36; background:#fff;}
+.btn_t_del:active, .btn_t_del:hover {color:#1E1D36; background:#B8CCFF;}
 
 
 .btn_myvoice, .btn_tts {display:flex; flex-direction:column;  gap:0.2rem; justify-content:center; align-items:center;
