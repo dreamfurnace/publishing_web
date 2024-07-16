@@ -224,6 +224,7 @@ a.btn_t_b:visited {color:#fff;}
 	text-indent:-9999em; overflow:hidden; white-space:nowrap;
 	background:url(../images/logo_hairang.svg) no-repeat; background-size:100%;}
 .skip {display:none !important;}
+.show {display:block !important;}
 
 .tooltip {position:relative; padding:1.2rem 1rem; min-width:14rem;
 	color:#777; font-size:1.3rem; line-height:1.2;
