@@ -504,9 +504,9 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .valuegroup > .checkbox_t {height:2.8rem; margin:0 0 0.6rem;}
 .valuegroup > .checkbox_t > input[type="checkbox"] {display:none;}
 .valuegroup > .checkbox_t .checkbox_txt {display:block; padding:0 1rem; height:3rem; line-height:3rem;
-	border:1px solid rgba(255,255,255,0.4); color:#fff; border-radius:2.5rem; font-size:1.4rem; white-space:nowrap;
-	background:rgba(242, 242, 242, 0.1); user-select:none;}
-.valuegroup > .checkbox_t > input[type="checkbox"]:checked ~ .checkbox_txt {color:#1E1D36; background:#fff; border:1px solid #fff;}
+	border:1px solid rgba(255,255,255,0); color:#fff; border-radius:2.5rem; font-size:1.4rem; white-space:nowrap;
+	background:#48475B; user-select:none;}
+.valuegroup > .checkbox_t > input[type="checkbox"]:checked ~ .checkbox_txt {border:1px solid #fff; color:#fff;}
 .valuegroup > .checkbox_t > input[type="checkbox"]:disabled ~ .checkbox_txt {border:1px solid rgba(242, 242, 242, 0);}
 
 
