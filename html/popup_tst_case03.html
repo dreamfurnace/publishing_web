@@ -15,28 +15,13 @@
 </head>
 
 <body>
-<button type="button" class="btn_popTest" id="test_callpop">call POPUP</button><!-- ref.event -->
-
 <!--  POPUP  AREA -->
-     <div class="popup_toast">
-          <div class="popMessage withBtn">
-               <span>템플릿을 삭제했습니다.</span>
-               <button  class="btn_undoDel" type="button">삭제취소</button>
+     <div class="popup_toast show">
+          <div class="popMessage">
+               <span>그룹에 고객이 추가되었습니다.</span>
           </div>
      </div<><!-- end: class="popup_toast"  -->
 <!-- // POPUP  AREA -->
 
-<script>
-// popEvent_testBtn
-$('#test_callpop').click(function(){
-     $('.popup_toast').slideDown(300);
-});
-
-setTimeout(function () {
-    $(".popup_toast").slideUp();
-}, 4000);
-
-
-</script>
 </body>
 </html>

@@ -15,28 +15,20 @@
 </head>
 
 <body>
-<button type="button" class="btn_popTest" id="test_callpop">call POPUP</button><!-- ref.event -->
-
 <!--  POPUP  AREA -->
-     <div class="popup_toast">
-          <div class="popMessage withBtn">
-               <span>템플릿을 삭제했습니다.</span>
-               <button  class="btn_undoDel" type="button">삭제취소</button>
+     <div class="dimmedLayer show"></div><!-- end: class="dimmedLayer" -->
+     <div class="popup_btm show">
+          <div class="popupWrap">
+               <div class="popMessage">
+                    보낸 내역이 삭제되었습니다.<br>
+                    해당 템플릿은 [마이앨범]에서 확인할 수 있습니다.
+               </div>
           </div>
-     </div<><!-- end: class="popup_toast"  -->
-<!-- // POPUP  AREA -->
+          <div class="popup_btnGroup">
+               <button type="button" class="btn_t_r">확인</button>
+          </div>
+     </div><!-- end: class="popup_btm"  -->
+<!--//  POPUP  AREA -->
 
-<script>
-// popEvent_testBtn
-$('#test_callpop').click(function(){
-     $('.popup_toast').slideDown(300);
-});
-
-setTimeout(function () {
-    $(".popup_toast").slideUp();
-}, 4000);
-
-
-</script>
 </body>
 </html>
