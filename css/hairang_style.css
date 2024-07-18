@@ -358,9 +358,9 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .btnwrap_rate > button:nth-child(3)::before {width:1.4rem; height:1rem;}
 
 .bgCard {position:relative; overflow:hidden; border-radius:4rem; 
-	background:#FFF url(../images/bg_emtycard.svg) no-repeat center 40%; background-size:7.6rem;
+	background:#FFF url(../images/bg_pic.svg) no-repeat center 40%; background-size:7.6rem;
 	box-shadow:0 1.6rem 2rem 0 rgba(112, 144, 176, 0.2);}
-.bgCard > img {width:100%; object-fit:cover;}
+.bgCard > img {position:relative; z-index:2; width:100%; object-fit:cover;}
 .bgCard.onWork {margin-top:0 !important;} 
 .emtyRate34 .bgCard > img,
 .emtyRate11 .bgCard > img,
@@ -369,12 +369,14 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .videoElements {position:absolute; left:2rem; right:2rem; bottom:1rem;}
 .videoElements > .btn_i_sound {position:absolute; bottom:4rem; right:0; width:3rem; height:3rem;}
 
-.makeTemplate .bgCard::before {content:"생성된 템플릿이 없습니다."; 
-	font-size:1.3rem; text-align:center;
-	white-space:nowrap; display:block; margin:68% 0 0;}
-.makeTemplate .bgCard::after {content:"아래에서 원하는 프롬프트 값으로 변경 후, 적용을 눌러주세요"; 
-	font-size:1.3rem; text-align:center;
-	white-space:nowrap; display:block; margin:0;}	 
+.makeTemplate .stage {position:relative;}
+.makeTemplate .stage .bgCard::before {content:"생성된 템플릿이 없습니다."; 
+	font-size:1.8rem; text-align:center; display:block;
+	white-space:nowrap; position:absolute; top:53%; left:0; right:0;}
+.makeTemplate .stage .bgCard::after {content:"아래에서 원하는 프롬프트 값으로 변경 후, 적용을 눌러주세요";
+	position:absolute; top:60%; left:0; right:0; 
+	font-size:1.4rem; text-align:center; padding:0 6rem; color:#333;
+	word-break:keep-all; display:block; margin:0;}	 
 
 .rate34 .bgCard, .emtyRate34 .bgCard {margin:0; aspect-ratio:3/4;}
 .rate11 .bgCard, .emtyRate11 .bgCard {margin:6rem 0 0; aspect-ratio:1;}
