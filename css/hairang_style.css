@@ -277,6 +277,8 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .templateList > a,
 .templateList > .item {position:relative; display:flex; justify-content:center;
 	height:auto; aspect-ratio:3/4; border-radius:0.6rem; overflow:hidden;}
+.templateList > a:hover, 
+.templateList > a:active {border:1px solid #3958A8; box-shadow: 0 0.4rem 0.9rem 0.5rem rgba(0, 0, 0, 0.18);}
 .templateList > a img,
 .templateList > a video,
 .templateList > .item img,
