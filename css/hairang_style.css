@@ -558,7 +558,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 	height:6.8rem; border-radius:2rem 2rem 0 0; align-items:center;
 	box-shadow:0 0.4rem 2rem 0 rgba(0, 0, 0, 0.1); background-color:#fff;}
 
-.decorationArea {position:absolute; left:0; right:0; bottom:0; z-index:10; 
+.decorationArea {position:fixed; left:0; right:0; bottom:0; z-index:10; 
 	border-radius:2rem 2rem 0 0; align-items:center;
 	box-shadow:0 0.4rem 2rem 0 rgba(0, 0, 0, 0.1); background-color:#fff;}
 .decorationArea .btn_i_slideClose {width:100%; padding:0.4rem; margin:0 0 0.6rem; height:auto; display:flex; justify-content:center; align-items:center;}
