@@ -559,11 +559,10 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 	height:6.8rem; border-radius:2rem 2rem 0 0; align-items:center;
 	box-shadow:0 0.4rem 2rem 0 rgba(0, 0, 0, 0.1); background-color:#fff;}
 
-
 .decorationArea {position:absolute; left:0; right:0; bottom:0; z-index:10; 
 	border-radius:2rem 2rem 0 0; align-items:center;
 	box-shadow:0 0.4rem 2rem 0 rgba(0, 0, 0, 0.1); background-color:#fff;}
-.decorationArea .groupwrap {box-shadow:none; bottom:5.4rem;}
+.decorationArea .groupwrap {box-shadow:none; bottom:5.4rem; padding:3rem 0 0;}
 
 .decoCategory {margin:1.4rem 0 0; padding:0 4.2rem;
 	display:flex; gap:1rem; justify-content:space-between; align-items:center;}
@@ -589,7 +588,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 
 /*   deco Items   */
-[class^="decoItem_"] { width:6em;
+[class^="decoItem_"] {width:6em;
 	border:1px solid #fff; padding:1rem; word-break:keep-all;}
 
 .decoItem_sticker > img,
@@ -620,9 +619,9 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 .groupwrap {position:absolute; bottom:6rem; left:0; right:0; z-index:10; border-radius:2rem 2rem 0 0; 
 	background:#fff; box-shadow:0 0.4rem 2rem 0 rgba(0, 0, 0, 0.1);}
-.textGroup {padding:1rem 2rem 3rem; flex-direction:column; gap:0.6rem;}
-.textGroup::after {content:''; display:block; height:1px; width:100%; background:#E4E4E4;}
-.textGroup .row {overflow:hidden; overflow-x:auto; padding:1rem 0 0.4rem;}
+.textGroup {padding:1rem 0; flex-direction:column; gap:0.6rem;}
+.textGroup::after {content:''; display:block; margin:1rem 0; height:1px; width:100%; background:#E4E4E4;}
+.textGroup .row {overflow:hidden; overflow-x:auto; padding:1rem 0 0.4rem; margin:0 2rem;}
 .item_font {display:flex; gap:1rem; flex-wrap:nowrap; padding:0 0 0.6rem;}
 .item_font > button {padding:0 0.8rem; height:3.2rem; line-height:3.2rem; letter-spacing:0;
 	 border-radius:0.4rem; border:1px solid #f6f6f6; background:#f6f6f6;}
