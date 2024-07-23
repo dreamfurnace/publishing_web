@@ -16,27 +16,30 @@
 
 <body>
      <header>
-          <div class="btn_group_l">
-               <button type="button" class="btn_i_back" onclick = "window.location.href='main.html';">뒤로가기</button>
-               <div class="btnwrap_rate">
-                    <button type="button" class="on" id="rate34">3:4</button>
-                    <button type="button" id="rate11">1:1</button>
-                    <button type="button" id="rate43">4:3</button>
-               </div>
-          </div>
-
-          <div class="btn_group_r"> <!-- 프롬프트 적용 후 'disabled' 해제 or 'skip' 해제 -->
-               <button type="button" class="btn_t_orn">다시생성</button>
-               <button type="button"class="btn_i_next" onclick = "window.location.href='imagecard.html';">다음</button>
-          </div>
+          <button type="button" class="btn_i_back" onclick = "window.location.href='main.html';">뒤로가기</button>
      </header>
      <main class="makeTemplate">
+          <section class="btnwrap_rate">
+               <button type="button" class="on" id="rate34">3:4</button>
+               <button type="button" id="rate11">1:1</button>
+               <button type="button" id="rate43">4:3</button>
+          </section>
           <section class="stage rate34"><!--  빈프레임 emtyRate34(3:4) emtyRate11(1:1) emtyRate43(4:3) / 이미지 적용 rate34(3:4) rate11(1:1) rate43(4:3)  -->
                <h2>템플릿생성영역</h2>
                <div class="bgCard">
-                    <img src="../images/@pic04.jpg">  
+                    <div class="intro">
+                         <ul>
+                              <li>1. 상단에서 [비율]을 선택하세요.</li>
+                              <li>2. 아래에서 원하는 조건으로 변경 후 [적용]을 누르세요.</li>
+                         </ul>
+                    </div>
+                    <!-- <img src="../images/@pic04.jpg">   -->
                </div>
           </section>
+          <div class="btnGroup_mf">
+               <button type="button" class="btn_remake">다시생성</button>
+               <button type="button"class="btn_next" onclick = "window.location.href='imagecard.html';">다음</button>
+          </div>
      </main>
 
      <div class="promptArea">
@@ -66,8 +69,8 @@
                          </label>
                     </div>
                     <div class="btngroup">
+                         <button type="submit" class="btn_t_orn" id="promptApply">생성</button>
                          <button type="button" class="btn_t_del" id="promptDel_before">삭제</button><!-- 취소  -->
-                         <button type="submit" class="btn_t_orn" id="promptApply">적용</button>
                     </div>
                </div>
           </section>
@@ -188,6 +191,9 @@ $(".appliedValue").click(function () {
 $("#promptDel_before").on("click", function () {
     $("#promptDel_before").attr('id','promptDel_after');
     $(".valuegroup .checkbox_t input[type='checkbox']").prop('disabled', false);
+    $("#promptApply").addClass("off");
+    $(this).addClass('on');
+    $(this).text("확인");
 });
 
 // make template: category Item Tab
