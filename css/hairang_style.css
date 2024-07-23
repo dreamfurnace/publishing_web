@@ -383,7 +383,6 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .btnwrap_rate > .on::before {border-color:#231F84;}
 
 
-
 .bgCard {position:relative; overflow:hidden; border-radius:4rem; 
 	background:#FFF url(../images/bg_hirang01.svg) no-repeat center 15%; background-size:15rem;
 	box-shadow:0 1.6rem 2rem 0 rgba(112, 144, 176, 0.2);}
@@ -562,7 +561,10 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .decorationArea {position:absolute; left:0; right:0; bottom:0; z-index:10; 
 	border-radius:2rem 2rem 0 0; align-items:center;
 	box-shadow:0 0.4rem 2rem 0 rgba(0, 0, 0, 0.1); background-color:#fff;}
-.decorationArea .groupwrap {box-shadow:none; bottom:5.4rem; padding:3rem 0 0;}
+.decorationArea .btn_i_slideClose {width:100%; padding:0.4rem; margin:0 0 0.6rem; height:auto; display:flex; justify-content:center; align-items:center;}
+.decorationArea .btn_i_slideClose::after {content:''; display:block; height:0.4rem; border-radius:1rem; width:6rem; background:#E9E9E9;}
+
+.decorationArea .groupwrap {box-shadow:none; bottom:5.4rem;}
 
 .decoCategory {margin:1.4rem 0 0; padding:0 4.2rem;
 	display:flex; gap:1rem; justify-content:space-between; align-items:center;}
@@ -619,9 +621,9 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 .groupwrap {position:absolute; bottom:6rem; left:0; right:0; z-index:10; border-radius:2rem 2rem 0 0; 
 	background:#fff; box-shadow:0 0.4rem 2rem 0 rgba(0, 0, 0, 0.1);}
-.textGroup {padding:1rem 0; flex-direction:column; gap:0.6rem;}
-.textGroup::after {content:''; display:block; margin:1rem 0; height:1px; width:100%; background:#E4E4E4;}
-.textGroup .row {overflow:hidden; overflow-x:auto; padding:1rem 0 0.4rem; margin:0 2rem;}
+.textGroup {flex-direction:column; gap:0.6rem;}
+.textGroup::after {content:''; display:block; margin:-0.6rem 0 1rem; height:1px; width:100%; background:#E4E4E4;}
+.textGroup .row {overflow:hidden; overflow-x:auto; padding:0 0 1rem; margin:0 2rem;}
 .item_font {display:flex; gap:1rem; flex-wrap:nowrap; padding:0 0 0.6rem;}
 .item_font > button {padding:0 0.8rem; height:3.2rem; line-height:3.2rem; letter-spacing:0;
 	 border-radius:0.4rem; border:1px solid #f6f6f6; background:#f6f6f6;}
@@ -637,6 +639,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 	background:#fff url(../images/ic_addtext.svg) 2rem center no-repeat; background-size:2rem;
 	box-shadow:0 0.4rem 1.1rem 0 rgba(0, 0, 0, 0.15);}
 
+.btn_addText:active, .btn_addText:hover {box-shadow:none;}
 
 .item_font > .on,
 .item_fontSize > .on {border-color:#1e1d36; background:#fff;
