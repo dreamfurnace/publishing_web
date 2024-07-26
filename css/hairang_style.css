@@ -339,13 +339,13 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .cate_06::before {background:url(../images/f_ic_06.svg) no-repeat center;}
 .cate_07::before {background:url(../images/f_ic_07.svg) no-repeat center;}
 
-.cate_01.on::before {background:#292752 url(../images/f_ic_01on.svg) no-repeat center;}
-.cate_02.on::before {background:#292752 url(../images/f_ic_02on.svg) no-repeat center;}
-.cate_03.on::before {background:#292752 url(../images/f_ic_03on.svg) no-repeat center;}
-.cate_04.on::before {background:#292752 url(../images/f_ic_04on.svg) no-repeat center;}
-.cate_05.on::before {background:#292752 url(../images/f_ic_05on.svg) no-repeat center;}
-.cate_06.on::before {background:#292752 url(../images/f_ic_06on.svg) no-repeat center;}
-.cate_07.on::before {background:#292752 url(../images/f_ic_07on.svg) no-repeat center;}
+.cate_01.on::before {background:#FF6600 url(../images/f_ic_01on.svg) no-repeat center;}
+.cate_02.on::before {background:#FF6600 url(../images/f_ic_02on.svg) no-repeat center;}
+.cate_03.on::before {background:#FF6600 url(../images/f_ic_03on.svg) no-repeat center;}
+.cate_04.on::before {background:#FF6600 url(../images/f_ic_04on.svg) no-repeat center;}
+.cate_05.on::before {background:#FF6600 url(../images/f_ic_05on.svg) no-repeat center;}
+.cate_06.on::before {background:#FF6600 url(../images/f_ic_06on.svg) no-repeat center;}
+.cate_07.on::before {background:#FF6600 url(../images/f_ic_07on.svg) no-repeat center;}
 
 
 /* swiwtch */
@@ -361,7 +361,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 	background-color:#fff; transition:.4s;}
 .switch .slider:before {content:""; position:absolute; left:0.2rem; top:50%; margin-top:-1.7rem;
 	height:3.4rem; width:3.4rem; transition:.4s; border-radius:50%;
-	background:#FF6600 url(../images/switch_swipe_on.svg) no-repeat center; background-size:1.6rem; 
+	background:#292752  url(../images/switch_swipe_on.svg) no-repeat center; background-size:1.6rem; 
 	box-shadow:0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.25);}
 .switch input:checked + .slider {background:#fff;}
 .switch input:focus + .slider {box-shadow:0 0 0.3rem #ebebeb;}
