@@ -325,8 +325,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .category {display:inline-flex; flex-direction:row; gap:1rem; align-items:baseline;
 	padding:0 2rem;}
 .category > a {display:flex; flex-direction:column; gap:0.4rem; justify-content:center; align-items:center;
-	width:5.8rem; 
-	font-size:1.3rem; text-align:center; white-space:nowrap;}
+	width:5.8rem; font-size:1.4rem; text-align:center; white-space:nowrap;}
 .category > a::before {content:''; width:2.4rem; height:2.4rem; background-size:contain;}
 .category > a.on::before {content:''; width:5.6rem; height:5.6rem; border-radius:50%; 
 	box-shadow:0 0.4rem 0.5rem 0 rgba(0, 0, 0, 0.15); background-size:2.4rem;}
