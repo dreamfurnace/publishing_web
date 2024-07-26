@@ -339,17 +339,17 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .cate_06::before {background:url(../images/f_ic_06.svg) no-repeat center;}
 .cate_07::before {background:url(../images/f_ic_07.svg) no-repeat center;}
 
-.cate_01.on::before {background:#FF6600 url(../images/f_ic_01on.svg) no-repeat center;}
-.cate_02.on::before {background:#FF6600 url(../images/f_ic_02on.svg) no-repeat center;}
-.cate_03.on::before {background:#FF6600 url(../images/f_ic_03on.svg) no-repeat center;}
-.cate_04.on::before {background:#FF6600 url(../images/f_ic_04on.svg) no-repeat center;}
-.cate_05.on::before {background:#FF6600 url(../images/f_ic_05on.svg) no-repeat center;}
-.cate_06.on::before {background:#FF6600 url(../images/f_ic_06on.svg) no-repeat center;}
-.cate_07.on::before {background:#FF6600 url(../images/f_ic_07on.svg) no-repeat center;}
+.cate_01.on::before {background:#292752 url(../images/f_ic_01on.svg) no-repeat center;}
+.cate_02.on::before {background:#292752 url(../images/f_ic_02on.svg) no-repeat center;}
+.cate_03.on::before {background:#292752 url(../images/f_ic_03on.svg) no-repeat center;}
+.cate_04.on::before {background:#292752 url(../images/f_ic_04on.svg) no-repeat center;}
+.cate_05.on::before {background:#292752 url(../images/f_ic_05on.svg) no-repeat center;}
+.cate_06.on::before {background:#292752 url(../images/f_ic_06on.svg) no-repeat center;}
+.cate_07.on::before {background:#292752 url(../images/f_ic_07on.svg) no-repeat center;}
 
 
 /* swiwtch */
-.swichbox {margin:0 0 2rem; padding:1rem 2rem; display:flex; justify-content:right;}
+.swichbox {margin:0 0 2rem; padding:1rem 2rem; display:flex; justify-content:center;}
 .swichbox .btnbox {display:flex; justify-content:center; gap:0;}
 .swichbox .btnbox > span {display:block; width:3.4rem; height:2.2rem; text-indent:-9999em; overflow:hidden;}
 .swichbox .ic_swipe {background:url(../images/switch_swipe.svg) no-repeat center; background-size:1.6rem;}
@@ -361,7 +361,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 	background-color:#fff; transition:.4s;}
 .switch .slider:before {content:""; position:absolute; left:0.2rem; top:50%; margin-top:-1.7rem;
 	height:3.4rem; width:3.4rem; transition:.4s; border-radius:50%;
-	background:#1E1D36 url(../images/switch_swipe_on.svg) no-repeat center; background-size:1.6rem; 
+	background:#FF6600 url(../images/switch_swipe_on.svg) no-repeat center; background-size:1.6rem; 
 	box-shadow:0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.25);}
 .switch input:checked + .slider {background:#fff;}
 .switch input:focus + .slider {box-shadow:0 0 0.3rem #ebebeb;}
@@ -376,12 +376,11 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 	font-size:1.3rem; border-radius:1rem; border:1px solid #fff;
 	box-shadow:0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.1); background:#fff;}
 .btnwrap_rate > button::before {content:''; display:block; border:1px solid #64646F; border-radius:0.2rem;}
+.btnwrap_rate > button:nth-child(2)::before {width:1rem; height:1rem;}
 .btnwrap_rate > button:nth-child(1)::before {width:0.8rem; height:1.2rem;}
-.btnwrap_rate > button:nth-child(2)::before {width:0.8rem; height:0.8rem;}
-.btnwrap_rate > button:nth-child(3)::before {width:1.2rem; height:0.8rem;}
+.btnwrap_rate > button:nth-child(3)::before {width:1.3rem; height:0.8rem;}
 .btnwrap_rate > .on {border-color:#231F84; color:#231F84; font-weight:500;}
 .btnwrap_rate > .on::before {border-color:#231F84;}
-
 
 .bgCard {position:relative; overflow:hidden; border-radius:4rem; 
 	background:#FFF url(../images/bg_hirang01.svg) no-repeat center 15%; background-size:15rem;
@@ -416,7 +415,6 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 .rate34 .bgCard::before, .rate11 .bgCard::before, .rate43 .bgCard::before, 
 .rate34 .bgCard::after, .rate11 .bgCard::after,  .rate43 .bgCard::after {content:''; display:none;}
-
 
 .btnwrap_step {display:flex; gap:1rem;}
 .promptArea {position:absolute; left:0; right:0; bottom:-10.6rem; z-index:10; height:13.4rem;}
@@ -856,9 +854,9 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 /*  tab   */
 .cateTab {padding:1rem 2rem; display:flex; gap:0.8rem; overflow:hidden; overflow-x:auto;}
-.cateTab > button {padding:0 1.4rem; height:3rem; line-height:2.8rem;
-	display:flex; gap:0.6rem; color:#333;
-	border-radius:2.5rem; border:1px solid #e2e2e2; background:#fff;}
+.cateTab > button {padding:0 2rem; height:3.6rem; line-height:3.6rem;
+	display:flex; gap:0.6rem; color:#333; border-radius:2.5rem; 
+	border:1px solid #e2e2e2; background:#fff;}
 .cateTab > .on, .btn_t_g.on,
 .cateTab.ty02 > .on  {color:#fff; background:#1E1D36; border-color:#1E1D36;}
 .cateTab > button > em {display:none; font-weight:500; color:#FBB584;}
