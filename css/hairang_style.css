@@ -212,10 +212,11 @@ a.btn_t_b:visited {color:#fff;}
 	background:#fff; box-shadow:0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.1);}
 .btn_remake::before {content:''; display:block; width:2rem; height:2rem; background:url(../images/ic_remake.svg) no-repeat center; }
 
-.btn_next {padding:0 1.6rem; display:flex; gap:1rem; align-items:center; justify-content:center;
-	width:12rem; height:4rem; border-radius:2.5rem; color:#fff; font-weight:500;
+.btn_next {padding:0 1rem 0 2rem; display:flex; gap:2rem; align-items:center; justify-content:center;
+	width:13rem; height:4rem; border-radius:2.5rem; color:#fff; font-weight:500;
 	background:#FF6600; border:1px solid #E26009; box-shadow:0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.1);}
 .btn_next::after {content:''; width:2.4rem; height:2.4rem;  background:url(../images/arrow_r_wh.svg) no-repeat center;}
+
 .btn_next:active, .btn_next:hover {background-color:#CC5200;}
 
 
@@ -553,11 +554,11 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .imageDecoration .btnArea {position:absolute; top:2rem; left:2rem; z-index:5;}
 .imageDecoration .btn_i_reswap > .tooltip {position:absolute; top:5.4rem; left:1.8rem;}
 .imageDecoration .btn_t_name > .tooltip {position:absolute; top:3.6rem; right:-0.5rem; z-index:4;}
-.imageDecoration > .btnwrap {position:fixed; left:0; right:0; bottom:9rem;
+.imageDecoration > .btnwrap {position:fixed; left:0; right:0; bottom:8rem;
 	display:flex; justify-content:center;}
 .imageDecoration > .btnwrap .btn_t_b {height:4.6rem; width:15.2rem; line-height:4.6rem;}
 
-.imageDecoration .tooltipWrap {position:absolute; top:2rem; left:2rem; z-index:4;}
+.imageDecoration .tooltipWrap {position:absolute; top:1.4rem; left:1.4rem; z-index:4;}
 .imageDecoration .tooltip {margin:1.2rem 0 0 1.8rem;}
 
 .decorationArea, .soundArea, .simple_btnArea,
@@ -614,16 +615,16 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 [class^="decoBtn_"]::before {content:''; 
 	position:absolute; top:50%; left:50%; margin:-1.1rem 0 0 -1.1rem;
 	display:block; width:2.2rem; height:2.2rem; border-radius:50%;
-	box-shadow:0 0 0.4rem 0 rgba(0, 0, 0, 0.15);}
+	box-shadow:0 0 0.4rem 0 rgba(0, 0, 0, 0.2);}
 
 .decoBtn_delete {top:-1.5rem; left:-1.5rem;}
 .decoBtn_write {bottom:-1.5rem; right:-1.5rem; }
 .decoBtn_scale {bottom:-1rem; right:-1rem;}
 .decoBtn_move {top:-1.5rem; right:-1.5rem; }
-.decoBtn_delete::before {background:#fff url(../images/ic_x_1.svg) no-repeat center; background-size:1rem;}
-.decoBtn_write::before {background:#3958A8 url(../images/ic_write.svg) no-repeat center; background-size:1rem;}
-.decoBtn_scale::before {background:#3958A8 url(../images/ic_scale.svg) no-repeat center; background-size:1.2rem;}
-.decoBtn_move::before {background:#3958A8 url(../images/ic_move.svg) no-repeat center; background-size:1.6rem;}
+.decoBtn_delete::before {background:#000 url(../images/ic_x_wh.svg) no-repeat center; background-size:1.6rem;}
+.decoBtn_scale::before {background:#fff url(../images/ic_scale.svg) no-repeat center; background-size:1.6rem;}
+/* .decoBtn_move::before {background:#fff url(../images/ic_move.svg) no-repeat center; background-size:1.6rem;}
+.decoBtn_write::before {background:#fff url(../images/ic_write.svg) no-repeat center; background-size:1rem;} */
 
 
 .groupwrap {position:absolute; bottom:6rem; left:0; right:0; z-index:10; border-radius:2rem 2rem 0 0; 
