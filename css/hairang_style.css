@@ -853,11 +853,11 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 /*  tab   */
 .cateTab {padding:1rem 2rem; display:flex; gap:0.8rem; overflow:hidden; overflow-x:auto;}
-.cateTab > button {padding:0 2rem; height:3.6rem; line-height:3.6rem;
+.cateTab > button {padding:0 2rem; height:3.6rem; line-height:3.4rem;
 	display:flex; gap:0.6rem; color:#333; border-radius:2.5rem; 
 	border:1px solid #e2e2e2; background:#fff;}
 .cateTab > .on, .btn_t_g.on,
-.cateTab.ty02 > .on  {color:#fff; background:#1E1D36; border-color:#1E1D36;}
+.cateTab.ty02 > .on  {color:#fff; background:#FF6600; border-color:#FF6600;}
 .cateTab > button > em {display:none; font-weight:500; color:#FBB584;}
 .cateTab > button.on > em {display:block;}
 
@@ -865,6 +865,28 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .cateTab.ty02 > .new::after {content:''; position:absolute; top:0; right:0.1rem;
 	display:block; width:0.5rem; height:0.5rem; 
 	border:1px solid #fff; border-radius:50%; background:#FF6600;}
+
+[class^="smCategory0"] {display:flex; gap:0.6rem; align-items:center; justify-content:center; box-shadow: 0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.2);}
+[class^="smCategory0"]::before {content:''; width:2rem; height:2rem; background-size:100% !important;}
+
+.smCategory01::before {background:url(../images/f_ic_02.svg) no-repeat center;}
+.smCategory02::before {background:url(../images/f_ic_03.svg) no-repeat center;}
+.smCategory03::before {background:url(../images/f_ic_04.svg) no-repeat center;}
+.smCategory04::before {background:url(../images/f_ic_05.svg) no-repeat center;}
+.smCategory05::before {background:url(../images/f_ic_06.svg) no-repeat center;}
+.smCategory06::before {background:url(../images/f_ic_07.svg) no-repeat center;}
+
+
+.smCategory01.on::before {background:#FF6600 url(../images/f_ic_02on.svg) no-repeat center;}
+.smCategory02.on::before {background:#FF6600 url(../images/f_ic_03on.svg) no-repeat center;}
+.smCategory03.on::before {background:#FF6600 url(../images/f_ic_04on.svg) no-repeat center;}
+.smCategory04.on::before {background:#FF6600 url(../images/f_ic_05on.svg) no-repeat center;}
+.smCategory05.on::before {background:#FF6600 url(../images/f_ic_06on.svg) no-repeat center;}
+.smCategory06.on::before {background:#FF6600 url(../images/f_ic_07on.svg) no-repeat center;}
+
+
+
+
 
 .tabPanel > section {display:none;}
 .tabPanel > section.active {display:block;}
