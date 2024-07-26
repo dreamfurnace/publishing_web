@@ -866,7 +866,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 	display:block; width:0.5rem; height:0.5rem; 
 	border:1px solid #fff; border-radius:50%; background:#FF6600;}
 
-[class^="smCategory0"] {display:flex; gap:0.6rem; align-items:center; justify-content:center; box-shadow: 0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.2);}
+[class^="smCategory0"] {display:flex; gap:0.6rem; align-items:center; justify-content:center; box-shadow: 0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.1);}
 [class^="smCategory0"]::before {content:''; width:2rem; height:2rem; background-size:100% !important;}
 
 .smCategory01::before {background:url(../images/f_ic_02.svg) no-repeat center;}
