@@ -295,7 +295,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .templateWrap {position:fixed; top:11rem; left:0; right:0; bottom:9.1rem;
 	 overflow:hidden; overflow-y:auto;} 
 
-.templateList {padding:0 2rem 8rem;
+.templateList {padding:0 2rem 8rem; margin:-1rem 0 0;
 	display:grid; gap:1.6rem; grid-template-columns:repeat(3, 1fr);}
 .templateList > a,
 .templateList > .item {position:relative; display:flex; justify-content:center;
@@ -857,7 +857,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 	display:flex; gap:0.6rem; color:#333; border-radius:2.5rem; 
 	border:1px solid #e2e2e2; background:#fff;}
 .cateTab > .on, .btn_t_g.on,
-.cateTab.ty02 > .on  {color:#fff; background:#FF6600; border-color:#FF6600;}
+.cateTab.ty02 > .on  {color:#fff; background:#FF6600; border-color:#FF6600; font-weight:500;}
 .cateTab > button > em {display:none; font-weight:500; color:#FBB584;}
 .cateTab > button.on > em {display:block;}
 
@@ -885,9 +885,6 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .smCategory06.on::before {background:#FF6600 url(../images/f_ic_07on.svg) no-repeat center;}
 
 
-
-
-
 .tabPanel > section {display:none;}
 .tabPanel > section.active {display:block;}
 
@@ -896,7 +893,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .simplemake {margin:0;}
 .templateList.active {display:grid !important;}
 .simplemake > .tabPanel {padding:1rem 0 8rem;
-	position:fixed; top:10rem; left:0; right:0; bottom:0; overflow:hidden; overflow-y:auto;}
+	position:fixed; top:11rem; left:0; right:0; bottom:0; overflow:hidden; overflow-y:auto;}
 
 .btn_makeVideo {position:absolute; top:-3rem; left:50%; margin-left:-4.4rem;
 	display:flex; flex-direction:column; gap:0.8rem; justify-content:center; align-items:center;
