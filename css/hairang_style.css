@@ -329,7 +329,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 	font-size:1.3rem; text-align:center; white-space:nowrap;}
 .category > a::before {content:''; width:2.4rem; height:2.4rem; background-size:contain;}
 .category > a.on::before {content:''; width:5.6rem; height:5.6rem; border-radius:50%; 
-	box-shadow:0 0.4rem 0.5rem 0.2rem rgba(0, 0, 0, 0.13); background-size:2.4rem;}
+	box-shadow:0 0.4rem 0.5rem 0 rgba(0, 0, 0, 0.15); background-size:2.4rem;}
 
 .cate_01::before {background:url(../images/f_ic_01.svg) no-repeat center;}
 .cate_02::before {background:url(../images/f_ic_02.svg) no-repeat center;}
