@@ -239,7 +239,8 @@ a.btn_t_b:visited {color:#fff;}
 .btn_create:disabled, 
 .btn_reCreate:disabled {background-color:#fff; opacity:0.2 !important;}
 
-
+.btn_makeVideo {width:18rem; height:4rem; padding-left:4rem; border-radius:2rem; text-align:left;
+	color:#fff; background:#ff6600 url(../images/ic_makevideo.svg) no-repeat 12rem center; background-size:2.8rem;}
 
 
 /* common */
@@ -562,10 +563,11 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .imageDecoration .tooltipWrap {position:absolute; top:1.4rem; left:1.4rem; z-index:4;}
 .imageDecoration .tooltip {margin:1.2rem 0 0 1.8rem;}
 
-.decorationArea, .soundArea, .simple_btnArea,
+.decorationArea, .simple_btnArea,
 .picNvoice .myVoice {position:fixed; left:0; right:0; bottom:0; z-index:10;
 	height:6.8rem; border-radius:2rem 2rem 0 0; align-items:center;
 	box-shadow:0 0.4rem 2rem 0 rgba(0, 0, 0, 0.1); background-color:#fff;}
+
 
 .decorationArea {position:fixed; left:0; right:0; bottom:0; z-index:10; 
 	border-radius:2rem 2rem 0 0; align-items:center;
@@ -619,13 +621,9 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 	box-shadow:0 0 0.4rem 0 rgba(0, 0, 0, 0.2);}
 
 .decoBtn_delete {top:-1.5rem; left:-1.5rem;}
-.decoBtn_write {bottom:-1.5rem; right:-1.5rem; }
 .decoBtn_scale {bottom:-1rem; right:-1rem;}
-.decoBtn_move {top:-1.5rem; right:-1.5rem; }
 .decoBtn_delete::before {background:#000 url(../images/ic_x_wh.svg) no-repeat center; background-size:1.6rem;}
 .decoBtn_scale::before {background:#fff url(../images/ic_scale.svg) no-repeat center; background-size:1.6rem;}
-/* .decoBtn_move::before {background:#fff url(../images/ic_move.svg) no-repeat center; background-size:1.6rem;}
-.decoBtn_write::before {background:#fff url(../images/ic_write.svg) no-repeat center; background-size:1rem;} */
 
 
 .groupwrap {position:absolute; bottom:6rem; left:0; right:0; z-index:10; border-radius:2rem 2rem 0 0; 
@@ -734,44 +732,51 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 
 /***  video card   ***/
-.soundSticker {position:absolute; top:2rem; right:2rem; z-index:2;
+.soundSticker {position:absolute; top:1rem; right:2rem; z-index:2;
 	display:flex; flex-direction:column; gap:1rem;}
-.soundSticker > span {display:block; width:3rem; height:3rem;
+.soundSticker > span {display:block; width:4.6rem; height:4.6rem;
 	text-indent:-9999em; overflow:hidden; white-space:nowrap;
 	border-radius:50%; background-color:rgba(255, 255, 255, 0.2);}
-.soundSticker > .ic_voice {background:rgba(255, 255, 255, 0.2) url(../images/ic_voice_wh.svg) no-repeat center; background-size:1.6rem;}
-.soundSticker > .ic_bgm {background:rgba(255, 255, 255, 0.2) url(../images/ic_bgm_wh.svg) no-repeat center; background-size:1.6rem;}
-.soundSticker > .ic_voice.done {background:rgba(255, 255, 255, 0.4) url(../images/ic_voice_blu.svg) no-repeat center; background-size:1.6rem;}
-.soundSticker > .ic_bgm.done {background:rgba(255, 255, 255, 0.4) url(../images/ic_bgm_blu.svg) no-repeat center; background-size:1.6rem;}
+.soundSticker > .ic_voice {background:rgba(255, 255, 255, 0.2) url(../images/ic_voice_wh.svg) no-repeat center; background-size:2.4rem;}
+.soundSticker > .ic_bgm {background:rgba(255, 255, 255, 0.2) url(../images/ic_bgm_wh.svg) no-repeat center; background-size:2.6rem;}
+.soundSticker > .ic_voice.done {background:rgba(255, 255, 255, 0.4) url(../images/ic_voice_blu.svg) no-repeat center; background-size:2.4rem;}
+.soundSticker > .ic_bgm.done {background:rgba(255, 255, 255, 0.4) url(../images/ic_bgm_blu.svg) no-repeat center; background-size:2.6rem;}
 
+.soundArea {position:fixed; left:0; right:0; bottom:0; z-index:10;
+	height:8rem; border-radius:2rem 2rem 0 0; align-items:center;
+	box-shadow:0 0.4rem 2rem 0 rgba(0, 0, 0, 0.1); background-color:#fff;}
 .soundArea .footGroup {bottom:1.8rem;}
 
-.btn_bgm {position:absolute; top:-3rem; left:50%; margin-left:-3rem;
-	display:flex; flex-direction:column; gap:0.2rem; justify-content:center; align-items:center;
-	width:6rem; height:6rem; font-weight:400; font-size:1.3rem; color:#fff; border-radius:50%; 
-	box-shadow:0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.25);
-	background-color:#1e1d36;}
+.btn_bgm {display:flex; flex-direction:column; gap:0.4rem; justify-content:center; align-items:center;
+	width:6.8rem; height:6.8rem; font-weight:400; font-size:1.4rem; color:#fff; border-radius:1.8rem; 
+	background-color:#383494;}
 .btn_bgm:active, .btn_bgm:hover {background-color:#3958A8; color:#fff !important;}
-.btn_bgm::before {content:''; width:2.4rem; height:2.4rem; 
-	background:url(../images/ic_bgm_wh.svg) no-repeat center; background-size:2.4rem;}
+.btn_bgm::before {content:''; width:3rem; height:3rem; 
+	background:url(../images/ic_bgm_wh.svg) no-repeat center; background-size:3rem;}
 
-.voiceCategory {display:flex; justify-content:space-around; align-items:center;}
+.voiceCategory {padding:0.6rem; display:flex; justify-content:space-between; align-items:center; }
 .voiceCategory > button:active, .voiceCategory > button:hover
 .simple_btnGroup > button:active, .simple_btnGroup > button:hover {color:#FF6600;}
 
-.btn_voiceRec, .btn_voiceMake, .btn_simpleBgm {width:9rem; margin:1.2rem 0 0; font-size:1.3rem;
-	display:flex; gap:0.4rem; flex-direction:column; justify-content:center; align-items:center;}
+.voiceWrap {width:calc(100% - 7.8rem);
+	display:flex; justify-content: space-between; border-radius:2rem; border:1px solid #EFEFEF; }
+.voiceWrap button:first-child {width:50%; border-right:1px solid #efefef;}
+.voiceWrap button:last-child {width:50%; border-right:1px solid #efefef;}
+
+.btn_voiceRec, .btn_voiceMake, .btn_simpleBgm {height:6rem;
+	display:flex; gap:1rem; justify-content:center; align-items:center;
+	font-size:1.5rem; color:#231F84; font-weight:500;}
 
 .btn_voiceRec::before {content:''; width:2.4rem; height:2.4rem; background-size:2.4rem; 
-	background:url(../images/ic_recordvoice.svg) no-repeat center;}
-.btn_voiceMake::before {content:''; width:2.4rem; height:2.4rem; background-size:2.4rem;
-	background:url(../images/ic_makevoice.svg) no-repeat center;}
+	background:url(../images/ic_recordvoice_fill.svg) no-repeat center;}
+.btn_voiceMake::after {content:''; width:2.4rem; height:2.4rem; background-size:2.4rem;
+	background:url(../images/ic_makevoice_fill.svg) no-repeat center;}
 .btn_simpleBgm::before {content:''; width:2.4rem; height:2.4rem; background-size:2.4rem;
 	background:url(../images/ic_bgm_bk.svg) no-repeat center;}
 
 .btn_voiceRec:active:before, .btn_voiceRec:hover:before {content:''; width:2.4rem; height:2.4rem; background-size:2.4rem; 
 	background:url(../images/ic_recordvoice_orn.svg) no-repeat center;}
-.btn_voiceMake:active::before, .btn_voiceMake:hover::before {content:''; width:2.4rem; height:2.4rem; background-size:2.4rem;
+.btn_voiceMake:active::after, .btn_voiceMake:hover::after {content:''; width:2.4rem; height:2.4rem; background-size:2.4rem;
 	background:url(../images/ic_makevoice_orn.svg) no-repeat center;}
 .btn_simpleBgm:active::before, .btn_simpleBgm:hover::before {content:''; width:2.4rem; height:2.4rem; background-size:2.4rem;
 	background:url(../images/ic_bgm_orn.svg) no-repeat center;}
@@ -912,15 +917,6 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .templateList.active {display:grid !important;}
 .simplemake > .tabPanel {padding:1rem 0 8rem;
 	position:fixed; top:11rem; left:0; right:0; bottom:0; overflow:hidden; overflow-y:auto;}
-
-.btn_makeVideo {position:absolute; top:-3rem; left:50%; margin-left:-4.4rem;
-	display:flex; flex-direction:column; gap:0.8rem; justify-content:center; align-items:center;
-	font-size:1.3rem; color:#333;}
-.btn_makeVideo::before {content:''; width:6rem; height:6rem; font-weight:400; border-radius:50%; 
-	box-shadow:0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.25);
-	background:#1e1d36 url(../images/ic_makevideo.svg) no-repeat center; background-size:3rem;}
-.btn_makeVideo:active::before, .btn_makeVideo:hover::before {background-color:#3958A8;}
-
 .simple_btnwrap {padding:2rem; display:flex; justify-content:right;}
 .simple_btnGroup {display:flex; justify-content:space-around; align-items:center;}
 
@@ -1133,7 +1129,7 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 .myVoice .btn_i_play {border:none; box-shadow: 0 0 2rem 0 rgba(112, 144, 176, 0.25);}
 
 
-/* recordVoice */
+/* recordVoice
 .recordVoice {margin:1rem 0 0; padding:0 2rem; height:calc(100vh - 6rem); border-radius:2rem 2rem 0 0; background:rgba(0,0,0,0.9);}
 
 .voiceScript {padding:2rem; border-radius:2rem; background:#fff;}
@@ -1156,7 +1152,7 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 .recordTime > .time {text-align:center; font-size:2.2rem; font-weight:500; color:#fff;}
 
 .recordVoice > .voicePlay {position:fixed; left:2rem; right:2rem; bottom:26rem;}
-.recordVoice .timeTxt > span {color:#fff;}
+.recordVoice .timeTxt > span {color:#fff;} */
 
 /***   setting   ***/
 .setting {padding:4rem 0 0 2rem;}
