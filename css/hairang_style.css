@@ -213,18 +213,18 @@ a.btn_t_b:visited {color:#fff;}
 .btn_remake::before {content:''; display:block; width:2rem; height:2rem; background:url(../images/ic_remake.svg) no-repeat center; }
 
 .btn_next {padding:0 1.6rem; display:flex; gap:1rem; align-items:center; justify-content:center;
-	width:12rem; height:3.6rem; border-radius:2.5rem; color:#fff; font-weight:500;
+	width:12rem; height:4rem; border-radius:2.5rem; color:#fff; font-weight:500;
 	background:#FF6600; border:1px solid #E26009; box-shadow:0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.1);}
 .btn_next::after {content:''; width:2.4rem; height:2.4rem;  background:url(../images/arrow_r_wh.svg) no-repeat center;}
 .btn_next:active, .btn_next:hover {background-color:#CC5200;}
 
 
 .btn_refresh {padding:0 1.6rem; display:flex; gap:1rem; align-items:center; justify-content:center;
-	width:10rem; height:3.6rem; font-weight:500;  color:#110B89; border-radius:2.5rem;
+	width:10rem; height:4rem; font-weight:500;  color:#110B89; border-radius:2.5rem;
 	background:#fff; box-shadow:0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.1);}
 .btn_refresh::before {content:''; display:block; width:2rem; height:2rem; background:url(../images/ic_refresh.svg) no-repeat center; }
 .btn_t_wh02 {padding:0 1.6rem; display:flex; gap:1rem; align-items:center; justify-content:center;
-	width:10rem; height:3.6rem; font-weight:500;  color:#110B89; border-radius:2.5rem;
+	width:10rem; height:4rem; font-weight:500;  color:#110B89; border-radius:2.5rem;
 	background:#fff; box-shadow:0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.1);}
 .btn_t_wh02:active, .btn_t_wh02:hover, 
 .btn_remake:active, .btn_remake:hover,
@@ -235,6 +235,8 @@ a.btn_t_b:visited {color:#fff;}
 .btn_reCreate {width:8rem; padding-left:1rem; border-radius:2rem; text-align:left;
 	color:#fff; background:#712EFF url(../images/ic_recreate.svg) no-repeat 5.2rem center;}
 	
+.btn_create:disabled, 
+.btn_reCreate:disabled {background-color:#fff; opacity:0.2 !important;}
 
 
 
@@ -551,9 +553,9 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .imageDecoration .btnArea {position:absolute; top:2rem; left:2rem; z-index:5;}
 .imageDecoration .btn_i_reswap > .tooltip {position:absolute; top:5.4rem; left:1.8rem;}
 .imageDecoration .btn_t_name > .tooltip {position:absolute; top:3.6rem; right:-0.5rem; z-index:4;}
-.imageDecoration > .btnwrap {position:fixed; left:0; right:0; bottom:8rem;
+.imageDecoration > .btnwrap {position:fixed; left:0; right:0; bottom:9rem;
 	display:flex; justify-content:center;}
-.imageDecoration > .btnwrap .btn_t_b {height:4rem; width:15.2rem; line-height:4rem;}
+.imageDecoration > .btnwrap .btn_t_b {height:4.6rem; width:15.2rem; line-height:4.6rem;}
 
 .imageDecoration .tooltipWrap {position:absolute; top:2rem; left:2rem; z-index:4;}
 .imageDecoration .tooltip {margin:1.2rem 0 0 1.8rem;}
@@ -573,7 +575,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 .decoCategory {margin:1.4rem 0 0; padding:0 4.2rem;
 	display:flex; gap:1rem; justify-content:space-between; align-items:center;}
-.decoCategory > button {display:flex; flex-direction:column; gap:0.4rem; justify-content:center; align-items:center; font-size:1.3rem;}
+.decoCategory > button {display:flex; flex-direction:column; gap:0.4rem; justify-content:center; align-items:center; font-size:1.4rem;}
 .decoCategory > button::before {content:''; display:block; width:2.4rem; height:2.4rem; background-size:2.4rem !important;}
 .decoCategory > button:active, .decoCategory > button:hover {color:#FF6600;}
 
@@ -630,7 +632,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .textGroup::after {content:''; display:block; margin:-0.6rem 0 1rem; height:1px; width:100%; background:#E4E4E4;}
 .textGroup .row {overflow:hidden; overflow-x:auto; padding:0 0 1rem; margin:0 2rem;}
 .item_font {display:flex; gap:1rem; flex-wrap:nowrap; padding:0 0 0.6rem;}
-.item_font > button {padding:0 0.8rem; height:3.2rem; line-height:3.2rem; letter-spacing:0;
+.item_font > button {padding:0 0.8rem; height:4rem; line-height:4rem; letter-spacing:0;
 	 border-radius:0.4rem; border:1px solid #f6f6f6; background:#f6f6f6;}
 
 .fontfamily01 {font:400 1.4rem/1 'NanumBarunGothic';}
@@ -1482,13 +1484,15 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 
 @media only screen and (max-width:320px) {
 	html, body {font-size:9.5px;}
-
-	
+	.valuegroup {gap:0.2rem;}
+	.valuegroup > .checkbox_t .checkbox_txt {padding:0 0.3rem; font-size:1.45rem;}
 }
 
 
 @media only screen and (max-width:344px) {
-	.valuegroup {gap:0.2rem; }
+	
+	.valuegroup {gap:0.4rem;}
+	.valuegroup > .checkbox_t .checkbox_txt {padding:0 0.6rem;}
 
 }
 

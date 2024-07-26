@@ -49,7 +49,7 @@
                </div>
           </section>
 
-          <div class="btnGroup_mf skip">
+          <div class="btnGroup_mf">
                <div class="btn_group">
                     <button type="button" class="btn_refresh">초기화</button>
                     <button type="button" class="btn_t_wh02">저장</button>
@@ -179,41 +179,37 @@
 // open textArea
 $("#btn_openTxt").on("click", function () {
     $("#sec_textGroup").addClass("active");
+    $("#sec_stickerGroup").removeClass("active");
+    $("#sec_hanwhaGroup").removeClass("active");
     $("header").addClass("skip");
     $(".bgCard").addClass("onWork");
 });
 
-// close textArea
-$("#btn_closeTxt").on("click", function () {
-    $("#sec_textGroup").removeClass("active");
-    $("header").removeClass("skip");
-    $(".bgCard").removeClass("onWork");
-});
 
 // open stickerArea
 $("#btn_openSticker").on("click", function () {
     $("#sec_stickerGroup").addClass("active");
+    $("#sec_textGroup").removeClass("active");
+    $("#sec_hanwhaGroup").removeClass("active");
     $("header").addClass("skip");
     $(".bgCard").addClass("onWork");
 });
 
-// close stickerArea
-$("#btn_closeSticker").on("click", function () {
-    $("#sec_stickerGroup").removeClass("active");
-    $("header").removeClass("skip");
-    $(".bgCard").removeClass("onWork");
-});
 
 // open stickerArea
 $("#btn_openHanwha").on("click", function () {
     $("#sec_hanwhaGroup").addClass("active");
+    $("#sec_textGroup").removeClass("active");
+    $("#sec_stickerGroup").removeClass("active");
     $("header").addClass("skip");
     $(".bgCard").addClass("onWork");
 });
 
 // close stickerArea
-$("#btn_closeHanwha").on("click", function () {
+$(".stage").on("click", function () {
     $("#sec_hanwhaGroup").removeClass("active");
+    $("#sec_textGroup").removeClass("active");
+    $("#sec_stickerGroup").removeClass("active");
     $("header").removeClass("skip");
     $(".bgCard").removeClass("onWork");
 });
