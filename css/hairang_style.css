@@ -214,7 +214,7 @@ a.btn_t_b:visited {color:#fff;}
 
 .btn_next {padding:0 1rem 0 2rem; display:flex; gap:2rem; align-items:center; justify-content:center;
 	width:13rem; height:4rem; border-radius:2.5rem; color:#fff; font-weight:500;
-	background:#FF6600; box-shadow:0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.1);}
+	background:#FF6600; box-shadow:0 0.4rem 1.2rem 0 rgba(122, 144, 176, 0.25);}
 .btn_next::after {content:''; width:2.4rem; height:2.4rem;  background:url(../images/arrow_r_wh.svg) no-repeat center;}
 
 .btn_next:active, .btn_next:hover {background-color:#CC5200;}
@@ -239,8 +239,9 @@ a.btn_t_b:visited {color:#fff;}
 .btn_create:disabled, 
 .btn_reCreate:disabled {background-color:#fff; opacity:0.2 !important;}
 
-.btn_makeVideo {width:18rem; height:4rem; padding-left:4rem; border-radius:2rem; text-align:left;
-	color:#fff; background:#ff6600 url(../images/ic_makevideo.svg) no-repeat 12rem center; background-size:2.8rem;}
+.btn_makeVideo {width:18rem; height:4.6rem; padding-left:4rem; border-radius:2rem; text-align:left;
+	color:#fff; box-shadow:0 0.4rem 1.2rem 0 rgba(122, 144, 176, 0.25);
+	background:#ff6600 url(../images/ic_makevideo.svg) no-repeat 12rem center; background-size:2.8rem;}
 
 
 /* common */
@@ -758,10 +759,12 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .voiceCategory > button:active, .voiceCategory > button:hover
 .simple_btnGroup > button:active, .simple_btnGroup > button:hover {color:#FF6600;}
 
-.voiceWrap {width:calc(100% - 7.8rem);
+.voiceWrap {width:calc(100% - 7.8rem); overflow:hidden;
 	display:flex; justify-content: space-between; border-radius:2rem; border:1px solid #EFEFEF; }
 .voiceWrap button:first-child {width:50%; border-right:1px solid #efefef;}
-.voiceWrap button:last-child {width:50%; border-right:1px solid #efefef;}
+.voiceWrap button:last-child {width:50%;}
+.voiceWrap button:active, .voiceWrap button:hover {background-color:#f8f8f8;}
+
 
 .btn_voiceRec, .btn_voiceMake, .btn_simpleBgm {height:6rem;
 	display:flex; gap:1rem; justify-content:center; align-items:center;
@@ -774,10 +777,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .btn_simpleBgm::before {content:''; width:2.4rem; height:2.4rem; background-size:2.4rem;
 	background:url(../images/ic_bgm_bk.svg) no-repeat center;}
 
-.btn_voiceRec:active:before, .btn_voiceRec:hover:before {content:''; width:2.4rem; height:2.4rem; background-size:2.4rem; 
-	background:url(../images/ic_recordvoice_orn.svg) no-repeat center;}
-.btn_voiceMake:active::after, .btn_voiceMake:hover::after {content:''; width:2.4rem; height:2.4rem; background-size:2.4rem;
-	background:url(../images/ic_makevoice_orn.svg) no-repeat center;}
+
 .btn_simpleBgm:active::before, .btn_simpleBgm:hover::before {content:''; width:2.4rem; height:2.4rem; background-size:2.4rem;
 	background:url(../images/ic_bgm_orn.svg) no-repeat center;}
 
