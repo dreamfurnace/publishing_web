@@ -282,6 +282,7 @@ section > h2, section > h3 {display:none;}
 .btnGroup_mf > .btn_group > button:first-child {border-radius:2.5rem 0 0 2.5rem; border-right:1px solid #ececec;}
 .btnGroup_mf > .btn_group > button:last-child {border-radius:0 2.5rem 2.5rem 0;}
 
+
 /*  layout  */
 header {padding:0 2rem 0 1rem; height:5rem;
 	display:flex; justify-content:space-between; align-items:center; }
@@ -572,7 +573,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .decorationArea .btn_i_slideClose {width:100%; padding:0.4rem; margin:0 0 0.6rem; height:auto; display:flex; justify-content:center; align-items:center;}
 .decorationArea .btn_i_slideClose::after {content:''; display:block; height:0.4rem; border-radius:1rem; width:6rem; background:#E9E9E9;}
 
-.decorationArea .groupwrap {box-shadow:none; bottom:5.4rem;}
+.decorationArea .groupwrap {box-shadow:0 -1.4rem 2rem -1rem rgba(0,0,0,0.2); bottom:5.4rem;}
 
 .decoCategory {margin:1.4rem 0 0; padding:0 4.2rem;
 	display:flex; gap:1rem; justify-content:space-between; align-items:center;}
