@@ -1120,10 +1120,10 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 .picNvoice .picList {position: relative; z-index:2;
 	display:grid; gap:1.6rem; grid-template-columns:repeat(3, 1fr);}
 .picNvoice .picList > .item {position:relative; display:flex; align-items:center; aspect-ratio:1/1; 
-	overflow:hidden; border-radius:1.2rem; border:2px solid #FF6600;}
+	overflow:hidden; border-radius:1.2rem;}
 .picNvoice .picList > .item > button {position:relative; padding:0; aspect-ratio:1/1; overflow:hidden; border-radius:1rem;}
-.picNvoice .picList.deletePic > .item > button::after {content:''; position:absolute; top:0.8rem; right:0.8rem;
-	display:block; width:1.8rem; height:1.8rem; border-radius:50%; background:#fff url(../images/ic_x_1.svg) no-repeat center; background-size:0.8rem;}
+.picNvoice .picList.deletePic > .item > button::after {content:''; position:absolute; top:0.2rem; right:0.2rem;
+	display:block; width:2.4rem; height:2.4rem; border-radius:50%; background:#292752 url(../images/ic_x_wh.svg) no-repeat center; background-size:1.1rem;}
 .picNvoice .picList > .item img,
 .picNvoice .picList button img {width:100%; object-fit:cover; aspect-ratio:1/1;}
 .picNvoice .picList > .item.blank {border:1px dashed #e1e1e1; background:#fcfcfc;}
@@ -1133,7 +1133,7 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 
 .picList .checkimg {align-items:center;}
 .picList .checkmark {top:0.2rem; right:0.2rem; width:2.4rem; height:2.4rem;}
- .picList input:checked ~ .checkmark {background-color:#ff6600;}
+.picList input:checked ~ .checkmark {background-color:#ff6600;}
 
 .picNvoice .btnGroup_edit {position:relative; z-index:3;
 	margin:-1rem -1rem 1rem; padding:0; display:flex; justify-content:right;}
