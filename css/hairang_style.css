@@ -73,7 +73,7 @@ input[type="text"]:focus::placeholder {color:transparent;}
 .btn_i_timePoint::after {content:''; position:absolute; top:50%; left:50%; margin:-0.5rem 0 0 -0.5rem;
 	display:block; width:1rem; height:1rem; border-radius:50%; background:#231F84;}
 
-.btn_i_sound {border-radius:50%; background:#231F84 url(../images/ic_sound_off.svg) no-repeat center; background-size:2rem;}
+.btn_i_sound {border-radius:50%; background:#666 url(../images/ic_sound_off.svg) no-repeat center; background-size:2rem;}
 .btn_i_sound.on {background:#231F84 url(../images/ic_sound_on.svg) no-repeat center; background-size:2rem;}
 
 .btn_i_menuClose {background:url(../images/ic_mypage_x.svg) no-repeat center;}
@@ -250,6 +250,10 @@ a.btn_t_b:visited {color:#fff;}
 	color:#fff; box-shadow:0 0.4rem 1.2rem 0 rgba(122, 144, 176, 0.25);
 	background:#ff6600 url(../images/ic_makevideo.svg) no-repeat 12rem center; background-size:2.8rem;}
 
+.btn_complete {display:flex; gap:1rem; justify-content:center; align-items:center;}	
+.btn_complete::after {content:''; display:block; 
+	width:1.8rem; height:1.8rem; background:url(../images/ic_complete.svg) no-repeat center; background-size:1.6rem;}
+
 
 /* common */
 .logo_hanhwa {width:12.2rem; height:4rem;
@@ -299,9 +303,13 @@ section > h2, section > h3 {display:none;}
 .btnGroup_f {padding:1rem 2rem 2rem;
 	position:fixed; left:0; right:0; bottom:0; z-index:21;
 	display:flex; gap:1.4rem; background:#fff;} 
-.btnGroup_f > button {width:50%; height:4.6rem; border-radius:2.5rem; font-size:1.5rem; font-weight:500; box-shadow:0 0.4rem 1.2rem 0 rgba(122, 144, 176, 0.25);}
-.btnGroup_f > button:first-child {color:#555; border:1px solid #dcdcdc;}
-.btnGroup_f > button:last-child {color:#fff; border:1px solid #FF6600; background:#FF6600;}
+.btnGroup_f > button {width:50%; height:4.6rem; border-radius:2.5rem; font-size:1.5rem; font-weight:500;}
+.btnGroup_f > button:first-child {color:#555; border:1px solid #dcdcdc;  box-shadow:0 0.4rem 1.2rem 0 rgba(122, 144, 176, 0.1);}
+.btnGroup_f > button:last-child {color:#fff; border:1px solid #FF6600; background:#FF6600;  box-shadow:0 0.4rem 1.2rem 0 rgba(122, 144, 176, 0.25);}
+.btnGroup_f > button:first-child:hover,
+.btnGroup_f > button:first-child:active {box-shadow:none; background-color:#f9f9f9;}
+.btnGroup_f > button:last-child:hover,
+.btnGroup_f > button:last-child:active {box-shadow:none; background-color:#CC5200; border-color:#CC5200;}
 
 
 /*  layout  */
@@ -848,7 +856,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 /*** complete card  ***/
 header.complete > button {background-color:#f2f2f2; border-radius:2.5rem;}
-.sm_intro {margin:2rem auto -4rem; padding:0 0 1rem; text-align:center; font-size:1.5rem; color:#333;}
+.sm_intro {margin:3rem auto -5rem; padding:0 0 1rem; text-align:center; font-size:1.5rem; color:#333;}
 
 .messageArea {margin-top:-3rem; padding:5rem 0 10rem; background-color:#fff;}
 .messagewrap {position:relative; z-index:2; padding:1rem 2rem; 
@@ -1562,6 +1570,8 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 	.picNvoice .picList {grid-template-columns:repeat(4, 1fr);}
 
 	.popup_notice, .popup_mid {max-width:360px;}
+
+	.messageArea {border-radius:2.5rem 2.5rem 0 0;}
 
 } /* for Duo  */
 
