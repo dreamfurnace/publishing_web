@@ -1256,7 +1256,7 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 .btn_i_popclose {width:4rem; height:4rem; 
 	background:url(../images/btn_i_close01.svg) no-repeat center; background-size:2rem;}
 .dimmedLayer {display:none; position:fixed; top:0; left:0; right:0; bottom:0; z-index:30; 
-	background:rgba(0,0,0,0.4); overflow:hidden; overflow-y:auto;}
+	background:rgba(0,0,0,0.7); overflow:hidden; overflow-y:auto;}
 
 .popup_btnGroup {margin:0 2rem 2.4rem;}
 .popup_btnGroup > button {width:100%; height:5rem; font-size:1.5rem; color:#fff; border-radius:1rem;}
