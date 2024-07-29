@@ -73,8 +73,8 @@ input[type="text"]:focus::placeholder {color:transparent;}
 .btn_i_timePoint::after {content:''; position:absolute; top:50%; left:50%; margin:-0.5rem 0 0 -0.5rem;
 	display:block; width:1rem; height:1rem; border-radius:50%; background:#231F84;}
 
-.btn_i_sound {border-radius:50%; background:#1E1D36 url(../images/ic_sound_off.svg) no-repeat center; background-size:1.6rem;}
-.btn_i_sound.on {background:#1E1D36 url(../images/ic_sound_on.svg) no-repeat center; background-size:1.6rem;}
+.btn_i_sound {border-radius:50%; background:#231F84 url(../images/ic_sound_off.svg) no-repeat center; background-size:2rem;}
+.btn_i_sound.on {background:#231F84 url(../images/ic_sound_on.svg) no-repeat center; background-size:2rem;}
 
 .btn_i_menuClose {background:url(../images/ic_mypage_x.svg) no-repeat center;}
 .btn_i_home {background:url(../images/ic_mypage_home.svg) no-repeat center;}
@@ -428,8 +428,11 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .emtyRate11 .bgCard > img,
 .emtyRate43 .bgCard > img {display:none;}
 
-.videoElements {position:absolute; left:2rem; right:2rem; bottom:1rem; z-index:2;}
-.videoElements > .btn_i_sound {position:absolute; bottom:4rem; right:0; width:3rem; height:3rem;}
+.videoElements {display:flex; gap:1rem; height:4.2rem; align-items:center;
+	position:absolute; left:1.6rem; right:1.6rem; bottom:1rem; z-index:2;
+	border-radius:2.5rem; border:1px solid #fff;
+	background:rgba(255,255,255,0.7);}
+.videoElements > .btn_i_sound {width:4rem; height:4rem;}
 
 .makeTemplate {margin:-3.8rem 0 0;}
 .makeTemplate .stage {position:relative;}
@@ -809,9 +812,9 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .appliedVoice .btn_i_play {width:4rem; height:4rem; 
 	box-shadow: 0 0 2rem 0 rgba(112, 144, 176, 0.25); border-color:#fff;}
 
-.voicePlay {display:flex; gap:1.4rem;}
-.voicePlay .timelineWrap {margin-top:2rem; display:flex; flex-direction:column; width:calc(100% - 5rem); gap:0.8rem;}
-.voicePlay .timeline {position:relative; height:0.2rem; background:#efefef; }
+.voicePlay {display:flex; gap:1.4rem; width:calc(100% - 4.8rem); align-items:center;}
+.voicePlay .timelineWrap {margin-top:2rem; display:flex; flex-direction:column; width:calc(100% - 5rem); gap:0.4rem;}
+.voicePlay .timeline {position:relative; width:100%; height:0.2rem; background:#efefef;}
 .voicePlay .timeline > button {position:absolute; top:-1.4rem; left:1rem;}
 .voicePlay .timeline > span {position:absolute; top:0; left:0; display:block; width:2rem; height:0.2rem; background-color:#231F84;}
 .voicePlay .timeTxt {display:flex; justify-content:space-between;}
