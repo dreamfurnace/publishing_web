@@ -847,9 +847,8 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .appliedVoice .footGroup .btn_i_close {position:absolute; top:0; left:0}
 
 /*** complete card  ***/
-header.complete {background:#f2f2f2;}
-header.complete > .sm_intro {margin:0 auto; text-align:center; font-size:1.4rem; color:#333;}
-
+header.complete > button {background-color:#f2f2f2; border-radius:2.5rem;}
+.sm_intro {margin:2rem auto -4rem; padding:0 0 1rem; text-align:center; font-size:1.5rem; color:#333;}
 
 .messageArea {margin-top:-3rem; padding:5rem 0 10rem; background-color:#fff;}
 .messagewrap {position:relative; z-index:2; padding:1rem 2rem; 
