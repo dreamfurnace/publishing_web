@@ -1130,8 +1130,7 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 .picNvoice .picList button img {width:100%; object-fit:cover; aspect-ratio:1/1;}
 .picNvoice .picList > .item.blank {border:1px dashed #e1e1e1; background:#fcfcfc;}
 .picNvoice .myVoice > .tit {position:absolute; left:0; right:0; bottom:9.4rem; text-align:center;}
-.picNvoice .btn_i_record {position:absolute; left:50%; margin:-3rem 0 0 -3rem;
-	width:6rem; height:6rem; background-size:3.6rem;}
+.picNvoice .btn_i_record {width:6rem; height:6rem; background-size:3.6rem;}
 
 .picList .checkimg {align-items:center;}
 .picList .checkmark {top:0.2rem; right:0.2rem; width:2.4rem; height:2.4rem;}
@@ -1145,7 +1144,8 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 .myVoice .voicePlay {padding:0 2rem;
 	position:fixed; left:0; right:0; bottom:11rem; }
 .myVoice .btn_i_play {box-shadow: 0 0 2rem 0 rgba(112, 144, 176, 0.25);}
-
+.myVoice .btnwrap {position:absolute; left:50%; margin:-3rem 0 0 -3rem;
+	display:flex; flex-direction:column; gap:0.5rem;align-items:center; font-size:1.4rem;}
 
 /* recordVoice
 .recordVoice {margin:1rem 0 0; padding:0 2rem; height:calc(100vh - 6rem); border-radius:2rem 2rem 0 0; background:rgba(0,0,0,0.9);}
