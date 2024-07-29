@@ -55,7 +55,7 @@ input[type="text"]:focus::placeholder {color:transparent;}
 .btn_i_apply {width:6rem; height:4rem; background:url(../images/btn_i_apply01.svg) no-repeat center; background-size:2.2rem;}
 
 .btn_i_play {display:flex; align-items:center;
-	width:4rem; height:4rem; border-radius:50%; border:1px solid #ddd; 
+	width:4rem; height:4rem; border-radius:50%; border:1px solid #E2E2E2; 
 	background:#fff url(../images/arrow_play_blue.svg) no-repeat center; background-size:1.6rem;}
 .btn_i_play.stop {border-color:#231F84 !important; background:#231F84 url(../images/play_pause_wh.svg) no-repeat center; background-size:1.6rem;
 	box-shadow: 0 0 2rem 0 rgba(112, 144, 176, 0.25);}
@@ -207,6 +207,8 @@ a.btn_t_b:visited {color:#fff;}
 	box-shadow:0 0.4rem 0.4rem 0 rgba(178, 178, 178, 0.25);}
 .btn_picUpload > span {display:none;}
 .btn_picUpload:disabled {background:#fff url(../images/ic_upload_gry.svg) no-repeat center;}
+.btn_picUpload:active, .btn_picUpload:hover {box-shadow:none;}
+
 
 .btn_remake {padding:0 1.6rem; display:flex; gap:1rem; align-items:center; justify-content:center;
 	width:12rem; height:3.6rem; font-weight:500;  color:#110B89; border-radius:2.5rem;
@@ -1142,7 +1144,7 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 
 .myVoice .voicePlay {padding:0 2rem;
 	position:fixed; left:0; right:0; bottom:11rem; }
-.myVoice .btn_i_play {border:none; box-shadow: 0 0 2rem 0 rgba(112, 144, 176, 0.25);}
+.myVoice .btn_i_play {box-shadow: 0 0 2rem 0 rgba(112, 144, 176, 0.25);}
 
 
 /* recordVoice
