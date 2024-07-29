@@ -5,7 +5,7 @@
 html, body {font-size:10px;
 	padding:env(safe-area-inset-top) env(safe-area-inset-bottom);
 }
-body {font-size:1.4rem; line-height:1.2; color:#000; 
+body {font-size:1.4rem; line-height:1.2; color:#000;
 	font-weight:400; font-family:'Noto Sans KR', sans-serif; overflow:hidden; background-color:#F2F2F2;}
 input[type="checkbox"], input[type="radio"] {height:auto; vertical-align:middle; cursor:pointer;}
 label {vertical-align:middle; cursor:pointer; display:inline-block;}
@@ -32,7 +32,7 @@ input[type="text"]:focus::placeholder {color:transparent;}
 	border-radius:50%; border:0.2rem solid #f2f2f2; background:#FF6600;}
 
 .btn_i_nav {background:url(../images/ic_nav.svg) no-repeat center; background-size:2.2rem;}
-.btn_i_back {width:4rem; height:4rem; 
+.btn_i_back {position:relative; z-index:30; width:4rem; height:4rem; 
 	background:url(../images/ic_back.svg) no-repeat center; background-size:2.2rem;}
 
 .btn_i_reset {width:3rem; height:3rem; 
@@ -755,7 +755,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 
 /***  video card   ***/
-.videoArea {position:fixed; top:0; left:0; right:0; bottom:0; z-index:3; overflow: hidden; overflow-y:auto;}
+.videoArea {position:fixed; top:0; left:0; right:0; bottom:0;  overflow: hidden; overflow-y:auto;}
 .videoArea .rate34 .bgCard,
 .videoArea .rate11 .bgCard,
 .videoArea .rate43 .bgCard {margin:5rem 0 0;}
@@ -847,10 +847,15 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .appliedVoice .footGroup .btn_i_close {position:absolute; top:0; left:0}
 
 /*** complete card  ***/
+header.complete {background:#f2f2f2;}
+header.complete > .sm_intro {margin:0 auto; text-align:center; font-size:1.4rem; color:#333;}
+
+
 .messageArea {margin-top:-3rem; padding:5rem 0 10rem; background-color:#fff;}
 .messagewrap {position:relative; z-index:2; padding:1rem 2rem; 
 	display:flex; flex-direction:column;}
 .messagewrap > .btn_messagePop {position:absolute; top:1rem; right:2rem; z-index:2;}
+
 
 /* .bottom-sheet .messagewrap {position:absolute; top:3.2rem; left:0; right:0; bottom:2rem;}
 .bottom-sheet .messageBox {position:absolute; top:0; left:2rem; right:2rem; bottom:8rem;}
@@ -944,7 +949,6 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 	position:fixed; top:11rem; left:0; right:0; bottom:0; overflow:hidden; overflow-y:auto;}
 .simple_btnwrap {padding:2rem; display:flex; justify-content:right;}
 .simple_btnGroup {display:flex; justify-content:space-around; align-items:center;}
-
 
 /***  my page   ***/
 .mypage {position:fixed; top:0; right:0; width:100%; bottom:0; z-index:50; 

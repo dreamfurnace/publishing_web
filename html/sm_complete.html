@@ -15,8 +15,12 @@
 </head>
 
 <body>
-     <header>
-          <button type="button" class="btn_i_back" onclick = "window.location.href='sm_videocard.html';">뒤로가기</button>
+     <header class="complete">
+          <button type="button" class="btn_i_back" onclick = "window.location.href='videocard.html';">뒤로가기</button>
+          <div class="sm_intro">
+               영상카드가 완료되었습니다.<br>
+               메세지를 작성하고 [완료]를 누르세요
+          </div>
      </header>
      <main class="videoArea"> 
           <section class="stage rate34"><!-- rate34(3:4) / rate11(1:1) / rate43(4:3)  -->
@@ -41,21 +45,25 @@
                     <img src="../images/@pic01.jpg">                   
                </div>
           </section>
+          <div class="messageArea">
+               <section class="messagewrap">
+                    <h2>메세지첨부</h2>
+                    <div class="messageBox error"><!-- 글자 초과시 'error' 추가 -->
+                         <textarea placeholder="내용을 입력하세요."></textarea>
+                         <div class="charNum">
+                              <p class="noti"><span>1000자를 초과하였습니다.</span</p>
+                              <p class="num"><em>00</em> / 1000</p>
+                         </div>
+                    </div>
+               </section>
+          </div>
+     
      </main>
 
-     <div class="messageArea">
-        <section class="messagewrap">
-          <h2>메세지첨부</h2>
-          <div class="messageBox"><!-- 글자 초과시 'error' 추가 -->
-               <textarea placeholder="내용을 입력하세요."></textarea>
-               <div class="charNum">
-                    <p class="noti"><span>1000자를 초과하였습니다.</span</p>
-                    <p class="num"><em>00</em> / 1000</p>
-               </div>
-          </div>
-        </section>
+     <div class="btnGroup_f">
+          <button type="button">취소</button>
+          <button type="button" class="btn_complete">완료</button>
      </div>
-     
 <script>
 // btn play toggle 
 $('.btn_i_play').click(function(){
@@ -66,6 +74,7 @@ $('.btn_i_play').click(function(){
 $('.btn_i_sound').click(function(){
      $(this).toggleClass('on');
 });
+
 </script>
 </body>
 </html>
