@@ -103,14 +103,14 @@ input[type="text"]:focus::placeholder {color:transparent;}
 .btn_i_download {background:url(../images/ic_download_bk.svg) no-repeat center; background-size:2.4rem;}
 .btn_i_trash {background:url(../images/ic_trash.svg) no-repeat center; background-size:2.4rem;}
 
-.btn_i_change {position:relative; width:3rem; height:3rem; border-radius:50%; 
-	background:#414055 url(../images/ic_change01.svg) no-repeat center; background-size:2.4rem;
+.btn_i_change {position:relative; width:3.8rem; height:3.8rem; border-radius:50%; 
+	background:#FF9B5C url(../images/ic_change01.svg) no-repeat center; background-size:3rem;
 	box-shadow:0 0.1rem 0.4rem 0 rgba(0, 0, 0, 0.2); }
 .btn_i_change::after {content:''; width:3rem; height:3rem; 
 	position:absolute; top:50%; left:50%; margin:-1.5rem 0 0 -1.5rem;
-	 background:url(../images/ic_change02.svg) no-repeat center; background-size:1.6em;}
-.btn_i_change.on {width:3rem; height:3rem; border-radius:50%; 
-	background:#3958A8 url(../images/ic_change01.svg) no-repeat center; background-size:2.4rem;}
+	 background:url(../images/ic_change02.svg) no-repeat center; background-size:2.2em;}
+.btn_i_change.on {width:3.8rem; height:3.8rem; border-radius:50%; 
+	background:#FF6600 url(../images/ic_change01.svg) no-repeat center; background-size:3rem;}
 .btn_i_change.on::after {content:''; 
 	transform:rotate(180deg); transition:0.3s;}
 
@@ -202,7 +202,9 @@ a.btn_t_b:visited {color:#fff;}
 	font-weight:500; font-size:1.4rem; color:#333; border:1px solid #999; align-items:center;}
 .btn_appUpdate::before {content:''; width:1.6rem; height:1.6rem; background:url(../images/ic_update.svg) no-repeat center;}
 
-.btn_picUpload {border-radius:1rem; background:#F3F4F5 url(../images/ic_upload.svg) no-repeat center; background-size:3.4rem;}
+.btn_picUpload {border-radius:1rem; border:1px solid #E8E8E8; 
+	background:#fff url(../images/ic_upload.svg) no-repeat center; background-size:3.4rem;
+	box-shadow:0 0.4rem 0.4rem 0 rgba(178, 178, 178, 0.25);}
 .btn_picUpload > span {display:none;}
 .btn_picUpload:disabled {opacity:0.2; background-color:#ccc;}
 
@@ -285,7 +287,7 @@ section > h2, section > h3 {display:none;}
 
 
 /*  layout  */
-header {padding:0 2rem 0 1rem; height:5rem;
+header {position:relative; padding:0 2rem 0 1rem; height:5rem; z-index:2;
 	display:flex; justify-content:space-between; align-items:center; }
 header > h1 {margin-left:1rem;}
 header > .asideMenu {display:flex; gap:0; margin-right:-0.6rem;}
@@ -568,7 +570,6 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 	height:6.8rem; border-radius:2rem 2rem 0 0; align-items:center;
 	box-shadow:0 0.4rem 2rem 0 rgba(0, 0, 0, 0.1); background-color:#fff;}
 
-
 .decorationArea {position:fixed; left:0; right:0; bottom:0; z-index:10; 
 	border-radius:2rem 2rem 0 0; align-items:center;
 	box-shadow:0 0.4rem 2rem 0 rgba(0, 0, 0, 0.1); background-color:#fff;}
@@ -714,7 +715,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 .stickerItems.active.notice {display:block; padding:4rem; text-align:center; font-size:1.6rem;}
 
-.hanwhaGroup {}
+
 .hanwhalogo {padding:1rem 2rem;
 	display:grid; grid-template-columns:repeat(2, 1fr); gap:1rem; margin:0 0 1rem;}
 .hanwhalogo > button {height:6rem; border-radius:0.4rem; border:1px solid #EDEDED; border-radius:0.4rem;
@@ -985,7 +986,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .customer > .scrollContainer {top:14rem;}
 .btnGroup_edit {padding:0 1rem 0 2rem;
 	display:flex; justify-content:space-between; align-items:center;}
-.btnGroup_edit button {padding:0 1rem; height:3rem; color:#0150AD; font-weight:500; font-size:1.6rem;}
+.btnGroup_edit button {padding:0 1rem; height:3rem; color:#383494; font-weight:500; font-size:1.6rem;}
 .btnGroup_edit .checkbox_chk > label {display:flex; flex-direction:row; gap:0.8rem; align-items:center;}
 
 .customer .list {padding:1rem 2rem; display:flex; flex-direction:column; gap:1.4rem;}
@@ -1089,21 +1090,25 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 .sentboxDetail .scrollContainer {top:5rem;}
 
 /*** my pic & voice   ***/
-.picNvoice {padding:1rem 2rem 0;}
+.picNvoice {position:relative; padding:1rem 2rem 0;}
+.picNvoice::before {content:''; position:absolute; top:-7rem; left:0; right:0; height:30rem; 
+	background:url(../images/bg_mypic.svg) no-repeat center bottom; background-size:cover;}
 .picNvoice .tit {margin:3rem 0 1rem; display:flex; flex-direction:column; gap:0.2rem;}
 .picNvoice .tit > strong {font-size:1.6rem; font-weight:500; color:#333;}
 .picNvoice .tit > span {font-size:1.4rem; color:#777;}
-.picNvoice .mainPic > .btn_i_change {position:absolute; top:1rem; right:1rem; z-index:3;}
+.picNvoice .picwrap {position:relative;}
+.picNvoice .picwrap > .btn_i_change {position:absolute; bottom:2rem; left:50%; margin-left:6rem; z-index:3;}
 
-.mainPic {position:relative; 
+.mainPic {position:relative; margin:0 auto;
 	display:flex; align-items:center;
-	width:20rem; height:20rem; overflow:hidden;
-	border-radius:1.4rem; border:1px solid rgba(221, 221, 221, 0.87);
+	width:20rem; height:20rem; overflow:hidden; border-radius:50%;
+	border:1px solid rgba(221, 221, 221, 0.87);
 	background: #fff url(../images/bg_pic.svg) no-repeat center 5.4rem; background-size:7.2rem;
 	box-shadow: 0 1.6rem 4rem 0 rgba(112, 144, 176, 0.2);}
 .mainPic::before {content:"주 사용 사진"; position:absolute; left:0; right:0; bottom:4.4rem; z-index:1;
 	text-align:center; color:#333; font-size:1.4rem;}
 .mainPic > img {width:100%; object-fit:cover; z-index:2;}
+
 
 .picNvoice .picList {display:grid; gap:1.6rem; grid-template-columns:repeat(3, 1fr);}
 .picNvoice .picList > .item {display:flex; align-items:center; aspect-ratio:1/1; 
@@ -1121,7 +1126,8 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 .picList .checkimg {border-radius:1rem; align-items:center;}
 .picList .checkmark {top:2.4rem; right:0.8rem; width:1.8rem; height:1.8rem; background-size:1rem !important;}
 
-.picNvoice .btnGroup_edit {margin:-1rem -1rem 1rem; padding:0; display:flex; justify-content:right;}
+.picNvoice .btnGroup_edit {position:relative; z-index:3;
+	margin:-1rem -1rem 1rem; padding:0; display:flex; justify-content:right;}
 
 .myVoice .voicePlay {padding:0 2rem;
 	position:fixed; left:0; right:0; bottom:11rem; }
