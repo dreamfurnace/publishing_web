@@ -26,21 +26,29 @@
      <main class="picNvoice">
           <section class="myPic">
                <h2>내사진</h2>
-               <div class="tit"><!-- only before upload pic -->
+               <div class="tit skip"><!-- only before upload pic -->
                     <strong>얼굴 사진을 등록하세요.</strong>
                     <span>이목구비가 분명한 사진일수록 적용률이 높습니다.</span>
                </div>
-               <div class="picwrap skip">
-                    <button class="btn_i_change" type="button">주사용사진교체</button>
+               <div class="picwrap">
+                    <div class="btnwrap">
+                         <button class="btn_i_change" type="button">주사용사진교체</button>
+                         <div class="tooltip tyR skip">
+                              <span>주사용 사진입니다.<br>
+                                   이 버튼을 누르면 교체 할 수 있습니다.</span>
+                              <button type="button">그만보기</button>
+                         </div>
+                    </div>
                     <div class="mainPic">
                          <img class="" src="../images/@pic05.jpg">
                     </div>
+
                </div>
-               <div class="btnGroup_edit skip">
-                    <button type="button">사진삭제</button>
-                    <button class="skip" type="button">확인</button>
+               <div class="btnGroup_edit">
+                    <button type="button" class="skip">사진삭제</button>
+                    <button class="tyOrn" type="button">확인</button> <!-- case : change main pic -->
                </div>
-               <div class="picList changePic skip"> <!-- 메인사진 교체 -->
+               <div class="picList changePic"> <!-- 메인사진 교체 -->
                     <button class="btn_picUpload" type="button" disabled><span>사진등록</span></button>
                     <div class="item">
                          <div class="checkbox_img">
@@ -88,7 +96,7 @@
                     </div>
                     <div class="item blank"></div>
                </div>
-               <div class="picList"> <!-- 사진 삭제 'deletePic' -->
+               <div class="picList skip"> <!-- 사진 삭제 'deletePic' -->
                     <button class="btn_picUpload" type="button"><span>사진등록</span></button><!-- when filled 5pics, 'skip' -->
                     <div class="item blank">
                         <button type="button">
