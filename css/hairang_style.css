@@ -57,7 +57,7 @@ input[type="text"]:focus::placeholder {color:transparent;}
 .btn_i_play {display:flex; align-items:center;
 	width:4rem; height:4rem; border-radius:50%; border:1px solid #ddd; 
 	background:#fff url(../images/arrow_play_blue.svg) no-repeat center; background-size:1.6rem;}
-.btn_i_play.stop {border-color:#3958A8 !important; background:#3958A8 url(../images/play_pause_wh.svg) no-repeat center; background-size:1.6rem;
+.btn_i_play.stop {border-color:#231F84 !important; background:#231F84 url(../images/play_pause_wh.svg) no-repeat center; background-size:1.6rem;
 	box-shadow: 0 0 2rem 0 rgba(112, 144, 176, 0.25);}
 
 .btn_i_record, .btn_i_voicemake  {width:5rem; height:5rem; border-radius:50%; 
@@ -797,7 +797,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .voicePlay .timeline > button {position:absolute; top:-1.4rem; left:1rem;}
 .voicePlay .timeline > span {position:absolute; top:0; left:0; display:block; width:2rem; height:0.2rem; background-color:#231F84;}
 .voicePlay .timeTxt {display:flex; justify-content:space-between;}
-.voicePlay .timeTxt > span {font-size:1.3rem; color:#777;}
+.voicePlay .timeTxt > span {font-size:1.4rem; color:#777;}
 
 .voiceMaking {display:none; padding:1rem 2rem; height:28rem;}
 .voiceMaking > .btn_messagePop {position:absolute; top:2rem; right:2rem;}
@@ -1120,14 +1120,14 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 .picNvoice .picList {position: relative; z-index:2;
 	display:grid; gap:1.6rem; grid-template-columns:repeat(3, 1fr);}
 .picNvoice .picList > .item {position:relative; display:flex; align-items:center; aspect-ratio:1/1; 
-	overflow:hidden; border-radius:1.2rem;}
+	overflow:hidden; border-radius:1.4rem;}
 .picNvoice .picList > .item > button {position:relative; padding:0; aspect-ratio:1/1; overflow:hidden; border-radius:1rem;}
 .picNvoice .picList.deletePic > .item > button::after {content:''; position:absolute; top:0.2rem; right:0.2rem;
 	display:block; width:2.4rem; height:2.4rem; border-radius:50%; background:#292752 url(../images/ic_x_wh.svg) no-repeat center; background-size:1.1rem;}
 .picNvoice .picList > .item img,
 .picNvoice .picList button img {width:100%; object-fit:cover; aspect-ratio:1/1;}
 .picNvoice .picList > .item.blank {border:1px dashed #e1e1e1; background:#fcfcfc;}
-.picNvoice .myVoice > .tit {position:absolute; left:0; right:0; bottom:10.8rem; text-align:center;}
+.picNvoice .myVoice > .tit {position:absolute; left:0; right:0; bottom:9.4rem; text-align:center;}
 .picNvoice .btn_i_record {position:absolute; left:50%; margin:-3rem 0 0 -3rem;
 	width:6rem; height:6rem; background-size:3.6rem;}
 
