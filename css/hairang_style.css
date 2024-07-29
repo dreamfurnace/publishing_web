@@ -84,6 +84,8 @@ input[type="text"]:focus::placeholder {color:transparent;}
 .btn_i_myVoice.done {background:#ff6600 url(../images/ic_mypage_voice02.svg) no-repeat center; background-size:3.6rem;}
 
 .btn_i_del {width:3rem; height:3rem; background:url(../images/ic_x_nav.svg) no-repeat center; background-size:2rem;}
+.btn_i_del:active, .btn_i_del:hover {background-color:#e1e1e1; border-radius:50%;}
+
 .btn_i_modify {width:3rem; height:3rem; background:url(../images/ic_modify.svg) no-repeat center; background-size:2rem;}
 
 .btn_i_seh {width:4rem; height:4rem; background:url(../images/ic_seh.svg) no-repeat center; background-size:2.4rem;}
@@ -1015,7 +1017,7 @@ header.complete > button {background-color:#f2f2f2; border-radius:2.5rem;}
 
 .sending .c_list {padding:0 2rem; display:flex; flex-direction:column; gap:1rem;
 	overflow:hidden; overflow-y:auto;}
-.sending .c_list > .item {padding:0 1rem;
+.sending .c_list > .item {padding-left:1rem;
 	display:flex; justify-content:space-between; align-items:center;
 	height:5rem; border-bottom:1px solid #ddd;}
 .c_info {display:flex; justify-content:left; gap:0.8rem; align-items:center; font-size:1.4rem;}
@@ -1024,7 +1026,12 @@ header.complete > button {background-color:#f2f2f2; border-radius:2.5rem;}
 .c_info .age, .c_info .address, .c_info .gender {padding-right:0.6rem; color:#777;}
 .c_info .age,  .c_info .gender { border-right:1px solid #c9c9c9;}
 
-.final_txtArea {padding:3rem 2rem; color:#333; word-break:keep-all; line-height:1.4; font-size:1.4rem; font-weight:500;}
+.final_txtArea {margin:-2rem 2rem 4rem; padding:4rem 2rem 4rem;
+	color:#333; word-break:keep-all; line-height:1.8; font-size:1.6rem; font-weight:500;
+	border-radius:0 0 3rem 3rem;
+	background:#F6F4EF;
+}
+.final_txtArea > .text {background:url(../images/bg_line.png) repeat-y; background-size:100%;;}
 
 
 /***   Customer  ***/
@@ -1364,7 +1371,7 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 .popHeader > h2 {font-size:1.8rem;}
 
 .popContainer {padding:5rem 0;}
-.popContainer > .stage > .bgCard {margin-top:0;}
+.popContainer > .stage > .bgCard {margin-top:0; box-shadow:none;}
 .popup_full > .popup_btnGroup {position:fixed; left:0; right:0; bottom:0; 
 	padding:2rem 2rem 2.4rem; margin:0;}
 
@@ -1581,6 +1588,7 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 	.popup_notice, .popup_mid {max-width:360px;}
 
 	.messageArea {border-radius:2.5rem 2.5rem 0 0;}
+	.final_txtArea {border-radius:3rem;}
 
 } /* for Duo  */
 
