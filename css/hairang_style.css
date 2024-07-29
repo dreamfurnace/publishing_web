@@ -923,13 +923,10 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 /***  my page   ***/
 .mypage {position:fixed; top:0; right:0; width:100%; bottom:0; z-index:50; 
 	background:#fff;}
-.mypage::after {content:''; position:absolute; top:-25rem; left:-34rem; width:60rem; height:60rem;
-	border-radius:40rem; background:rgba(253,218,193, 0.2);
- transform:rotate(140deg);}
- .mypage::before {content:''; position:absolute; top:-45rem; right:-44rem; width:70rem; height:70rem;
-	border-radius:40rem; background:rgba(255,243,241, 0.6); transform:rotate(140deg);}
+ .mypage::before {content:''; position:absolute; top:0; left:0; right:0; height:33rem; background:url(../images/bg_mypage.svg) no-repeat center bottom; background-size:cover;}
 
-.mypage > .head {position:relative; z-index:4; padding:0 1rem; height:5rem; display:flex; justify-content:right; align-items:center;}
+.mypage > .head {position:relative; z-index:4; padding:0 1rem; height:5rem; 
+	display:flex; justify-content:space-between; align-items:center;}
 .mypage > .head .btn_i_notice.new::after {border-color:#fff;}
 .mypage .mypic {position:relative; display:flex; flex-direction:column; gap:2rem;}
 .mypage .mypic .picwrap {position:relative; margin:4rem 0 0; height:23rem;}
