@@ -179,7 +179,6 @@ a.btn_t_b:visited {color:#fff;}
 .btn_camera:active, .btn_camera:hover,
 .btn_gallery:active, .btn_gallery:hover {box-shadow:none; background-color:#f9f9f9;}
 
-
 .btn_viewCard {margin:0.6rem 2rem 2rem; display:flex; justify-content: center; gap:0.8rem; align-items:center;
 	font-size:1.6rem; color:#333; font-weight:500;
 	width:calc(100% - 4rem); height:6rem; border:0.1rem solid #999;}
@@ -225,7 +224,6 @@ a.btn_t_b:visited {color:#fff;}
 	width:13rem; height:4rem; border-radius:2.5rem; color:#fff; font-weight:500;
 	background:#FF6600; box-shadow:0 0.4rem 1.2rem 0 rgba(122, 144, 176, 0.25);}
 .btn_next::after {content:''; width:2.4rem; height:2.4rem;  background:url(../images/arrow_r_wh.svg) no-repeat center;}
-
 .btn_next:active, .btn_next:hover {background-color:#CC5200;}
 
 
@@ -298,6 +296,13 @@ section > h2, section > h3 {display:none;}
 .btnGroup_mf > .btn_group > button:first-child {border-radius:2.5rem 0 0 2.5rem; border-right:1px solid #ececec;}
 .btnGroup_mf > .btn_group > button:last-child {border-radius:0 2.5rem 2.5rem 0;}
 
+.btnGroup_f {padding:0 2rem;
+	position:fixed; left:0; right:0; bottom:0; height:6.6rem;
+	display:flex; gap:1.4rem; background:#fff;} 
+.btnGroup_f > button {width:50%; height:4.6rem; border-radius:2.5rem; font-size:1.5rem; font-weight:500;}
+.btnGroup_f > button:first-child {color:#555; border:1px solid #dcdcdc;}
+.btnGroup_f > button:last-child {color:#fff; border:1px solid #FF6600; background:#FF6600; box-shadow:0 0.4rem 1.2rem 0 rgba(122, 144, 176, 0.25);}
+
 
 /*  layout  */
 header {position:relative; padding:0 2rem 0 1rem; height:5rem; z-index:2;
@@ -312,6 +317,7 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 
 header.tyB h1 {color:#fff;} 
 header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center;}
+
 
 
 /*** MAIN swiper & list ***/
@@ -422,7 +428,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .emtyRate11 .bgCard > img,
 .emtyRate43 .bgCard > img {display:none;}
 
-.videoElements {position:absolute; left:2rem; right:2rem; bottom:1rem;}
+.videoElements {position:absolute; left:2rem; right:2rem; bottom:1rem; z-index:2;}
 .videoElements > .btn_i_sound {position:absolute; bottom:4rem; right:0; width:3rem; height:3rem;}
 
 .makeTemplate {margin:-3.8rem 0 0;}
