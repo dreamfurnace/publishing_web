@@ -26,18 +26,17 @@
      <main class="picNvoice">
           <section class="myPic">
                <h2>내사진</h2>
-               <div class="picwrap">
+               <div class="tit"><!-- only before upload pic -->
+                    <strong>얼굴 사진을 등록하세요.</strong>
+                    <span>이목구비가 분명한 사진일수록 적용률이 높습니다.</span>
+               </div>
+               <div class="picwrap skip">
                     <button class="btn_i_change" type="button">주사용사진교체</button>
                     <div class="mainPic">
                          <img class="" src="../images/@pic05.jpg">
                     </div>
                </div>
-             
-               <div class="tit skip"><!-- only before upload pic -->
-                    <strong>자신의 얼굴 사진을 등록하세요.</strong>
-                    <span>이목구비가 분명한 사진일수록 적용률이 높습니다.</span>
-               </div>
-               <div class="btnGroup_edit">
+               <div class="btnGroup_edit skip">
                     <button type="button">사진삭제</button>
                     <button class="skip" type="button">확인</button>
                </div>
@@ -91,19 +90,19 @@
                </div>
                <div class="picList"> <!-- 사진 삭제 'deletePic' -->
                     <button class="btn_picUpload" type="button"><span>사진등록</span></button><!-- when filled 5pics, 'skip' -->
-                    <div class="item">
+                    <div class="item blank">
                         <button type="button">
-                              <img src="../images/@pic01.jpg">
+                              <img src="../images/@pic01.jpg" class="skip">
                         </button>
                     </div>
-                    <div class="item">
+                    <div class="item blank">
                          <button type="button">
-                              <img src="../images/@pic02.jpg">
+                              <img src="../images/@pic02.jpg" class="skip">
                         </button>
                     </div>
-                    <div class="item">
+                    <div class="item blank">
                          <button type="button">
-                              <img src="../images/@pic03.jpg">
+                              <img src="../images/@pic03.jpg" class="skip">
                         </button>
                     </div>
                     <div class="item blank"></div>
@@ -111,11 +110,11 @@
                </div>
           </section>
           <section class="myVoice">
-               <div class="tit skip"> <!-- only before upload voice -->
+               <div class="tit"> <!-- only before upload voice -->
                     <strong>목소리를 등록하세요.</strong>
                     <span>음성메세지를 말하는 영상 카드에 적용됩니다.</span>
                </div>
-               <div class="voicePlay">
+               <div class="voicePlay skip">
                     <button class="btn_i_play" type="button" id="btn_playRecord">재생/멈춤</button>
                     <div class="timelineWrap">
                          <div class="timeline">
