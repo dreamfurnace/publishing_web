@@ -151,7 +151,6 @@ a.btn_t_b:visited {color:#fff;}
 .btn_myvoice.on::before {content:''; background:url(../images/makevoice_record_on.svg) no-repeat center; background-size:contain;}
 .btn_tts.on::before {content:'';background:url(../images/makevoice_tts_on.svg) no-repeat center; background-size:contain;}
 
-
 .btn_messagePop {display:flex; align-items:center; gap:0.8rem; height:3rem;
 	font-weight:500; color:#000; opacity:0.8;}
 .btn_messagePop::before {content:''; width:1.6rem; height:1.6rem; background:url(../images/ic_message.svg) no-repeat center; background-size:contain;}
@@ -162,17 +161,19 @@ a.btn_t_b:visited {color:#fff;}
 	font-weight:500; color:#333; font-size:1.8rem;
 	border-radius:2rem; box-shadow:0 0rem 1.2rem 0 rgba(0, 0, 0, 0.25);}
 
-.btn_kakao::before {content:''; width:3.4rem; height:3.4rem; 
-	background:url(../images/ic_kakao.svg) no-repeat center; background-size:3.4rem;}
-.btn_sms::before {content:''; width:3.4rem; height:3.4rem; 
-	background:url(../images/ic_sms.svg) no-repeat center; background-size:3.4rem;}
+.btn_kakao {border:1px solid #391C1E; color:#391C1E;}
+.btn_kakao::before {content:''; width:5rem; height:6rem; 
+	background:url(../images/ic_kakao.svg) no-repeat center; background-size:5rem;}
+.btn_sms {border:1px solid #0959A3; color:#054C8D;}
+.btn_sms::before {content:''; width:5rem; height:6rem; 
+	background:url(../images/ic_sms.svg) no-repeat center; background-size:4.6rem;}
 
 .btn_camera {color:#134288; border:1px solid #2156A5;}
 .btn_camera::before {content:''; width:6rem; height:6rem; 
 	background:url(../images/ic_camera.png) no-repeat center; background-size:6rem;}
 .btn_gallery {color:#D10053; border:1px solid #D10053;}
 .btn_gallery::before {content:''; width:7rem; height:6rem; 
-		background:url(../images/ic_gallery_ios.png) no-repeat center; background-size:6.6rem;}
+		background:url(../images/ic_gallery_ios.png) no-repeat center; background-size:7rem;}
 .btn_kakao:active, .btn_kakao:hover,
 .btn_sms:active, .btn_sms:hover,
 .btn_camera:active, .btn_camera:hover,
@@ -1385,7 +1386,7 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 .sendingType  {position:relative; margin:2rem;}
 .sendingType > .btn_i_popclose {position:absolute; top:-1rem; right:-1rem;}
 .sendingType > h2 {font-size:1.5rem; color:#333;}
-.sendingType > .btnGroup {margin:4rem 0 3rem; display:flex; gap:1rem;}
+.sendingType > .btnGroup {margin:4rem 0 3rem; display:flex; gap:1.4rem;}
 .sendingType > .head {display:flex; justify-content:space-between; align-items:center;}
 
 

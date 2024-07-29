@@ -18,8 +18,8 @@
 <button type="button" class="btn_popTest" id="test_callpop">call POPUP - sending</button><!-- ref.event -->
 
 <!--  POPUP  AREA -->
-     <div class="dimmedLayer"></div><!-- end: class="dimmedLayer" -->
-     <div class="popup_btm">
+     <div class="dimmedLayer" style="display:block;"></div><!-- end: class="dimmedLayer" -->
+     <div class="popup_btm" style="display:block;">
           <div class="popupWrap sendingType">
                <button class="btn_i_popclose" type="button">닫기</button>
                <h2>발송 방법을 선택하세요.</h2>
@@ -34,16 +34,16 @@
 
 <script>
 // popupEvent_closeBtn
-$('.btn_i_popclose').click(function(){
-     $('.popup_btm').slideUp(300);
-     $('.dimmedLayer').fadeOut(200);
-});
+// $('.btn_i_popclose').click(function(){
+//      $('.popup_btm').slideUp(300);
+//      $('.dimmedLayer').fadeOut(200);
+// });
    
-// popEvent_testBtn
-$('#test_callpop').click(function(){
-     $('.popup_btm').slideDown(300);
-     $('.dimmedLayer').fadeIn(200);
-});
+// // popEvent_testBtn
+// $('#test_callpop').click(function(){
+//      $('.popup_btm').slideDown(300);
+//      $('.dimmedLayer').fadeIn(200);
+// });
 </script>
 </body>
 </html>
