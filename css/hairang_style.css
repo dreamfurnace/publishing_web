@@ -60,7 +60,6 @@ input[type="text"]:focus::placeholder {color:transparent;}
 .btn_i_play.stop {border-color:#3958A8 !important; background:#3958A8 url(../images/play_pause_wh.svg) no-repeat center; background-size:1.6rem;
 	box-shadow: 0 0 2rem 0 rgba(112, 144, 176, 0.25);}
 
-
 .btn_i_record, .btn_i_voicemake  {width:5rem; height:5rem; border-radius:50%; 
 	background:#FF6600 url(../images/ic_voice_wh.svg) no-repeat center; background-size:2.4rem; 
 	box-shadow: 0 0 2rem 0 rgba(112, 144, 176, 0.25);}
@@ -79,8 +78,9 @@ input[type="text"]:focus::placeholder {color:transparent;}
 
 .btn_i_menuClose {background:url(../images/ic_mypage_x.svg) no-repeat center;}
 .btn_i_home {background:url(../images/ic_mypage_home.svg) no-repeat center;}
-.btn_i_myVoice {width:6rem; height:6rem; border-radius:50%; 
-	background:#1e1d36 url(../images/ic_mypage_voice01.svg) no-repeat center; background-size:3.6rem;}
+.btn_i_myVoice {width:6rem; height:6rem; border-radius:50%; border:1px solid #e4e4e4;
+	background:#fff url(../images/ic_mypage_voice01.svg) no-repeat center; background-size:3.6rem;
+	box-shadow: 0 1.6rem 4rem 0 rgba(112, 144, 176, 0.2);}
 .btn_i_myVoice.done {background:#ff6600 url(../images/ic_mypage_voice02.svg) no-repeat center; background-size:3.6rem;}
 
 .btn_i_del {width:3rem; height:3rem; background:url(../images/ic_x_2.svg) no-repeat center; background-size:2rem;}
@@ -113,7 +113,6 @@ input[type="text"]:focus::placeholder {color:transparent;}
 	background:#3958A8 url(../images/ic_change01.svg) no-repeat center; background-size:2.4rem;}
 .btn_i_change.on::after {content:''; 
 	transform:rotate(180deg); transition:0.3s;}
-
 
 
 [class^="btn_t_"] {font-weight:500; height:4rem; line-height:4rem; 
@@ -877,9 +876,9 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .cateTab {padding:1rem 2rem; display:flex; gap:0.8rem; overflow:hidden; overflow-x:auto;}
 .cateTab > button {padding:0 2rem; height:3.6rem; line-height:3.4rem;
 	display:flex; gap:0.6rem; color:#333; border-radius:2.5rem; 
-	border:1px solid #e2e2e2; background:#fff;}
+	border:1px solid #ddd; background:#fff; box-shadow:0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.1);}
 .cateTab > .on, .btn_t_g.on,
-.cateTab.ty02 > .on  {color:#fff; background:#FF6600; border-color:#FF6600; font-weight:500;}
+.cateTab.ty02 > .on  {color:#fff; background:#1E1D36 ; border-color:#1E1D36; font-weight:500;}
 .cateTab > button > em {display:none; font-weight:500; color:#FBB584;}
 .cateTab > button.on > em {display:block;}
 
@@ -888,9 +887,9 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 	display:block; width:0.5rem; height:0.5rem; 
 	border:1px solid #fff; border-radius:50%; background:#FF6600;}
 
-[class^="smCategory0"] {display:flex; gap:0.6rem; align-items:center; justify-content:center; box-shadow: 0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.1);}
+[class^="smCategory0"] {display:flex; gap:0.6rem; align-items:center; justify-content:center; box-shadow:0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.1);}
 [class^="smCategory0"]::before {content:''; width:2rem; height:2rem; background-size:100% !important;}
-[class^="smCategory0"].on {box-shadow: 0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.2);}
+[class^="smCategory0"].on {background-color:#FF6600; border-color:#FF6600; box-shadow: 0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.2);}
 
 .smCategory01::before {background:url(../images/f_ic_02.svg) no-repeat center;}
 .smCategory02::before {background:url(../images/f_ic_03.svg) no-repeat center;}
@@ -922,40 +921,43 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 
 /***  my page   ***/
-.mypage {position:fixed; top:0; right:-100%; width:100%; bottom:0; z-index:50; 
+.mypage {position:fixed; top:0; right:0; width:100%; bottom:0; z-index:50; 
 	background:#fff;}
-.mypage > .head {padding:0 1rem; height:5rem; display:flex; justify-content:right; align-items:center;}
-.mypage > .head .btn_i_notice.new::after {border-color:#fff;}
-.mypage .mypic {position:relative; padding:3rem 0 0; margin:1.2rem 0 0;
-	display:flex;}
-.mypage .mypic::before {content:''; position:absolute; top:0; left:-2rem;
-	display:block; width:21.4rem; height:26rem; 
-	border-radius:1rem; background:#f2f2f2; transform:rotate(-353.54deg); }
+.mypage::after {content:''; position:absolute; top:-25rem; left:-34rem; width:60rem; height:60rem;
+	border-radius:40rem; background:rgba(253,218,193, 0.2);
+ transform:rotate(140deg);}
+ .mypage::before {content:''; position:absolute; top:-45rem; right:-44rem; width:70rem; height:70rem;
+	border-radius:40rem; background:rgba(255,243,241, 0.6); transform:rotate(140deg);}
 
-.mypage .mypic > .pic {position:relative; z-index:2;
-	width:20rem; height:20rem; overflow:hidden;
-	margin-left:3rem; border-radius:1rem;
+.mypage > .head {position:relative; z-index:4; padding:0 1rem; height:5rem; display:flex; justify-content:right; align-items:center;}
+.mypage > .head .btn_i_notice.new::after {border-color:#fff;}
+.mypage .mypic {position:relative; display:flex; flex-direction:column; gap:2rem;}
+.mypage .mypic .picwrap {position:relative; margin:4rem 0 0; height:23rem;}
+.mypage .mypic .pic {margin:0 auto; position:absolute; z-index:2; top:0; left:50%; margin-left:-11rem;
+	width:22rem; height:22rem;
+	overflow:hidden; border-radius:50%;
 	box-shadow: 0 1.6rem 4rem 0 rgba(112, 144, 176, 0.2);
 	border:1px solid rgba(221, 221, 221, 0.87);
-	background: #fff url(../images/bg_pic.svg) no-repeat center; background-size:7.2rem;}
-.mypage .mypic > .pic > img {width:100%; object-fit:cover;}
-.mypage .mypic > .user {margin:5rem 0 0 2rem; font-weight:500;
-	display:flex; flex-direction:column; gap:0.4rem; color:#333; font-size:1.6rem;}
-.mypage .mypic > .user > span {font-size:1.8rem;}
-.mypage .mypic > .btn_i_myVoice {position:absolute; left:21rem; bottom:-2rem; z-index:4;}
+	background: #fff url(../images/bg_pic.svg) no-repeat center 6rem; background-size:7.2rem;}
+.mypage .mypic .pic > img {position:relative; z-index:3; width:100%; object-fit:cover;}
+.mypage .mypic .pic::before {content:"사진등록"; position:absolute; left:0; right:0; bottom:6rem; text-align:center;
+	 color:#D78043; font-size:1.5rem; }
+
+.mypage .mypic .user {display:flex; gap:0.4rem; color:#333; font-size:1.8rem; font-weight:500; justify-content:center;}
+.mypage .mypic .btn_i_myVoice {position:absolute; left:50%; margin-left:4rem; bottom:0; z-index:4;}
 
 .mymenu {position:absolute; left:0; bottom:2rem; right:0; padding:2rem;}
-.mymenu ul {display:flex; flex-direction:column;}
-.mymenu li {height:5rem; border-bottom:1px solid #eee;}
-.mymenu li > a {line-height:5rem; display:flex; gap:1.6rem; align-items:center; color:#333; font-weight:500; font-size:1.4rem;
-	background:url(../images/ic_mypage_arrow.svg) no-repeat right; background-size:2.4rem;}
-.mymenu li > a::before {content:''; width:2.4rem; height:2.4rem; background-size:2.4rem !important;}
+.mymenu ul {display:flex; flex-direction:column; gap:1.2rem}
+.mymenu li {height:5rem; border-radius:2.5rem; border:1px solid #e4e4e4;}
+.mymenu li > a {line-height:5rem; display:flex; gap:1.2rem; align-items:center; color:#333; font-weight:500; font-size:1.5rem;}
+.mymenu li > a::before {content:''; margin-left:0.4rem; border-radius:50%; width:4.4rem; height:4.4rem; background-size:2.4rem !important;}
+.mymenu li:active, .mymenu li:hover {background-color:#f9f9f9;}
 
-.mymenu li:nth-child(1) > a::before {background:url(../images/ic_mypage_menu01.svg) no-repeat center;}
-.mymenu li:nth-child(2) > a::before {background:url(../images/ic_mypage_menu02.svg) no-repeat center;}
-.mymenu li:nth-child(3) > a::before {background:url(../images/ic_mypage_menu03.svg) no-repeat center;}
-.mymenu li:nth-child(4) > a::before {background:url(../images/ic_mypage_menu04.svg) no-repeat center;}
-.mymenu li:nth-child(5) > a::before {background:url(../images/ic_mypage_menu05.svg) no-repeat center;}
+.mymenu li:nth-child(1) > a::before {background:#FBB584 url(../images/ic_mypage_menu01.svg) no-repeat center;}
+.mymenu li:nth-child(2) > a::before {background:#FBB584 url(../images/ic_mypage_menu02.svg) no-repeat center;}
+.mymenu li:nth-child(3) > a::before {background:#FBB584 url(../images/ic_mypage_menu03.svg) no-repeat center;}
+.mymenu li:nth-child(4) > a::before {background:#FBB584 url(../images/ic_mypage_menu04.svg) no-repeat center;}
+.mymenu li:nth-child(5) > a::before {background:#FBB584 url(../images/ic_mypage_menu05.svg) no-repeat center;}
 
 
 
