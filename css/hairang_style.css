@@ -377,7 +377,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 	display:grid; gap:1.6rem; grid-template-columns:repeat(3, 1fr);}
 .templateList > a,
 .templateList > .item {position:relative; display:flex; justify-content:center;
-	height:auto; aspect-ratio:3/4; border-radius:0.6rem;}
+	height:auto; border-radius:0.6rem;}
 .templateList > a:hover, 
 .templateList > a:active {border:1px solid #ff6600; box-shadow: 0 0.4rem 0.9rem 0.5rem rgba(0, 0, 0, 0.18);}
 .templateList > a img,
@@ -962,7 +962,6 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 
 /* check box - img */
 .checkbox_img label {display:block;}
-.checkbox_img .checkimg {}
 .checkbox_img input[type="checkbox"],
 .checkbox_img input[type="radio"] {opacity:0; display:none;}
 .checkbox_img input[type="checkbox"] + label, 
@@ -971,9 +970,6 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 	display:block; width:2.6rem; height:2.6rem; border-radius:50%;
 	background:rgba(0, 0, 0, 0.2) url('../images/check_i_on.svg') no-repeat center; background-size:1.6rem;}
 .checkbox_img input:checked ~ .checkmark {background:#3958A8 url('../images/check_i_on.svg') no-repeat center; background-size:1.6rem;}
-/* .checkbox_img .checkimg > img,
-.checkbox_img .checkimg > video {width:100%; height:100%; object-fit:cover;}
- */
 
 /*  tab   */
 .cateTab {padding:1rem 2rem; display:flex; gap:0.8rem; overflow:hidden; overflow-x:auto;}
@@ -1166,7 +1162,7 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 .myalbum > .tabPanel {padding:1rem 0 8rem;
 	position:fixed; top:15.6rem; left:0; right:0; bottom:0; overflow:hidden; overflow-y:auto;}
 .myalbum .templateList {padding:0 2rem 8rem; gap:1.6rem; grid-template-columns:repeat(2, 1fr);}
-.myalbum .templateList > .item {position:relative;}
+.myalbum .templateList > .item {position:relative;  aspect-ratio:3/4;}
 .myalbum .templateList > .item::before {content:''; position:absolute; left:0; right:0; bottom:0; z-index:1;
 height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .myalbum .templateList > .item > a {position:relative; border-radius:1.6rem; overflow:hidden;}
@@ -1199,17 +1195,20 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 
 /*** sent box   ***/
 .sentbox .templateList {display:flex; gap:1.2rem; flex-direction:column; margin:0;}
-.sentbox .templateList > .item {position:relative; padding:0.4rem; height:14rem; 
-	display:block; border-radius:1.6rem; border:1px solid #EBEBEB;}
-.sentbox .templateList > .item > a {display:flex; gap:2.5rem; overflow:hidden;  border-radius:1.2rem;}
+.sentbox .templateList > .item {position:relative; display:block;}
+.sentbox .templateList > .item > a {
+	display:flex; gap:2.5rem; overflow:hidden;  border-radius:1.2rem;
+	padding:0.4rem; height:14rem; border-radius:1.6rem; border:1px solid #EBEBEB; 
+	box-shadow:0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.1);}
 .sentbox .templateList > .item .pic {width:14rem; height:14rem; aspect-ratio:1/1;
 	border-radius:1.2rem; overflow:hidden;}
 .sentbox .templateList > .item > a:active,
 .sentbox .templateList > .item > a:hover {background-color:#f8f8f8;}
-.sentbox .checkimg {display:block;}
+.sentbox  .checkbox_img {}
 .sentbox .checkimg {display:flex; gap:2.5rem; overflow:hidden;
-	border-radius:1.2rem;} 
-
+	padding:0.4rem; height:14rem; border-radius:1.2rem; border:1px solid #EBEBEB;
+	box-shadow:0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.1);}
+.sentbox .checkbox_img input:checked ~ .checkimg {border-color:#767599;}
 
 .sentbox .scrollContainer {top:9rem;}
 .sentbox .sentInfo {position:relative;
