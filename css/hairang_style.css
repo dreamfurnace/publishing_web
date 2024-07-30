@@ -26,7 +26,7 @@ textarea::placeholder {color:#999;}
 /* buttons */
 [class^="btn_i_"] {display:inline-block; width:4rem; height:4rem; text-indent:-9999em; overflow:hidden; 
 	vertical-align:middle; white-space:nowrap; box-sizing:border-box;}
-[class^="btn_i_"]:disabled  {color:#aaa; background-color:#e1e1e1 !important;}
+[class^="btn_i_"]:disabled  {color:#aaa;}
 
 .btn_i_notice {position:relative; background:url(../images/ic_notice.svg) no-repeat center; background-size:2.2rem;}
 .btn_i_notice.new::after {content:''; position:absolute; top:0.7rem; right:0.8rem;
@@ -98,10 +98,10 @@ textarea::placeholder {color:#999;}
 .btn_i_sehDel::after {content:''; position:absolute; top:50%; left:50%; z-index:2; width:2.2rem; height:2.2rem;
 	margin:-1.1rem 0 0 -1.1rem; background:url(../images/ic_x_2.svg) no-repeat center; background-size:1.4rem;}
 
-.btn_i_albumModify, .btn_i_albumDownload, .btn_i_albumSending {width:3rem; height:3rem; border-radius:50%;}
-.btn_i_albumModify {background:#000 url(../images/myalbum_i_modify.svg) no-repeat center; background-size:1.6rem;}
-.btn_i_albumDownload {background:#000 url(../images/myalbum_i_download.svg) no-repeat center; background-size:1.6rem;}
-.btn_i_albumSending {background:#000 url(../images/myalbum_i_sending.svg) no-repeat center; background-size:1.6rem;}
+.btn_i_albumModify, .btn_i_albumDownload, .btn_i_albumSending {width:3.6rem; height:3.6rem;}
+.btn_i_albumModify {background:url(../images/myalbum_i_modify.svg) no-repeat center; background-size:3rem;}
+.btn_i_albumDownload {background:url(../images/myalbum_i_download.svg) no-repeat center; background-size:3rem;}
+.btn_i_albumSending {background:url(../images/myalbum_i_sending.svg) no-repeat center; background-size:3rem;}
 
 .btn_i_download, .btn_i_trash { width:3.4rem; height:2.4rem;} 
 .btn_i_download {background:url(../images/ic_download_bk.svg) no-repeat center; background-size:2.4rem;}
@@ -368,7 +368,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 	display:grid; gap:1.6rem; grid-template-columns:repeat(3, 1fr);}
 .templateList > a,
 .templateList > .item {position:relative; display:flex; justify-content:center;
-	height:auto; aspect-ratio:3/4; border-radius:0.6rem; overflow:hidden;}
+	height:auto; aspect-ratio:3/4; border-radius:0.6rem;}
 .templateList > a:hover, 
 .templateList > a:active {border:1px solid #ff6600; box-shadow: 0 0.4rem 0.9rem 0.5rem rgba(0, 0, 0, 0.18);}
 .templateList > a img,
@@ -957,12 +957,11 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 /* check box - img */
 .checkbox_img .checkimg {display:flex; justify-content:center;
 	height:auto; aspect-ratio:3/4; border-radius:1.6rem; overflow:hidden;}
-
 .checkbox_img input[type="checkbox"],
 .checkbox_img input[type="radio"] {opacity:0; display:none;}
 .checkbox_img input[type="checkbox"] + label, 
 .checkbox_img input[type="radio"] + label {position:relative;}
-.checkbox_img .checkmark {position:absolute; top:1rem; right:1rem;
+.checkbox_img .checkmark {position:absolute; top:0.4rem; right:0.4rem;
 	display:block; width:2.6rem; height:2.6rem; border-radius:50%;
 	background:rgba(0, 0, 0, 0.2) url('../images/check_i_on.svg') no-repeat center; background-size:1.6rem;}
 .checkbox_img input:checked ~ .checkmark {background:#3958A8 url('../images/check_i_on.svg') no-repeat center; background-size:1.6rem;}
@@ -972,7 +971,7 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 
 /*  tab   */
 .cateTab {padding:1rem 2rem; display:flex; gap:0.8rem; overflow:hidden; overflow-x:auto;}
-.cateTab > button {padding:0 2rem; height:3.2rem; line-height:3rem;
+.cateTab > button {padding:0 2rem; height:3.6rem; line-height:3.4rem;
 	display:flex; gap:0.6rem; color:#333; border-radius:2.5rem; 
 	border:1px solid #ddd; background:#fff; box-shadow:0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.1);}
 .cateTab > .on, .btn_t_g.on,
@@ -982,8 +981,8 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 
 .cateTab.ty02 > button {position:relative; background:#fbfbfb;}
 .cateTab.ty02 > .new::after {content:''; position:absolute; top:0; right:0.1rem;
-	display:block; width:0.5rem; height:0.5rem; 
-	border:1px solid #fff; border-radius:50%; background:#FF6600;}
+	display:block; width:0.7rem; height:0.7rem; 
+	border:0.12rem solid #fff; border-radius:50%; background:#FF6600;}
 
 [class^="smCategory0"] {display:flex; gap:0.6rem; align-items:center; justify-content:center;
 	height:3.6rem !important;
@@ -1159,18 +1158,25 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 /***   my album   ***/
 .myalbum .btnGroup_edit {margin:0.4rem 0 0;}
 .myalbum > .tabPanel {padding:1rem 0 8rem;
-	position:fixed; top:13.8rem; left:0; right:0; bottom:0; overflow:hidden; overflow-y:auto;}
+	position:fixed; top:15rem; left:0; right:0; bottom:0; overflow:hidden; overflow-y:auto;}
 .myalbum .templateList {padding:0 2rem 8rem; gap:1.6rem; grid-template-columns:repeat(2, 1fr);}
-.myalbum .templateList > .item {border-radius:1.6rem;}
+.myalbum .templateList > .item {position:relative;}
 .myalbum .templateList > .item::before {content:''; position:absolute; left:0; right:0; bottom:0; z-index:1;
-height:4.6rem; background:rgba(0,0,0,0.6);}
-.myalbum .templateList > .item > a {position:relative;}
+height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
+.myalbum .templateList > .item > a {position:relative; border-radius:1.6rem; overflow:hidden;}
+.myalbum .templateList > .item.new::after {content:"N"; line-height:2.2rem;
+	position:absolute; top:0; left:0;
+	display:block; width:2.2rem; height:2.2rem;
+	color:#fff; font-size:1.2rem; font-weight:600; text-align:center;
+	border-radius:0 2rem 2rem 2rem; background-color:#FF6600; box-shadow:0 0 0.3rem 0 rgba(0, 0, 0, 0.25);}
+
+
 .myalbum .templateList .btnGroup {padding:0 1rem;
-	display:flex; gap:1.8rem; justify-content:space-between; align-items:center;
+	display:flex; gap:0.4rem; justify-content:space-between; align-items:center;
 	position:absolute; left:0; right:0; bottom:0; z-index:3; height:4.6rem;}
 .myalbum .templateList .btnGroup > button:hover,
-.myalbum .templateList .btnGroup > button:active {background-color:#333;}
-.myalbum .templateList .btnGroup > button:disabled {background-color:#000 !important; opacity:0.5;}
+.myalbum .templateList .btnGroup > button:active {background-color:#666; border-radius:50%;}
+.myalbum .templateList .btnGroup > button:disabled {opacity:0.3;}
 .myalbum .templateList .itemVideo > em {bottom:5.1rem;}
 
 .myalbum .bgCard {margin:1.4rem 0 0 !important;}
