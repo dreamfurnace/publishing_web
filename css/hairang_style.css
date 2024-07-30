@@ -103,9 +103,6 @@ textarea::placeholder {color:#999;}
 .btn_i_albumDownload {background:url(../images/myalbum_i_download.svg) no-repeat center; background-size:3rem;}
 .btn_i_albumSending {background:url(../images/myalbum_i_sending.svg) no-repeat center; background-size:3rem;}
 
-.btn_i_download {width:3.4rem; height:2.4rem;} 
-.btn_i_download {background:url(../images/ic_download_bk.svg) no-repeat center; background-size:2.4rem;}
-
 .btn_i_change {position:relative; width:3.8rem; height:3.8rem; border-radius:50%; 
 	background:#FF9B5C url(../images/ic_change01.svg) no-repeat center; background-size:3rem;
 	box-shadow:0 0.1rem 0.4rem 0 rgba(0, 0, 0, 0.2); }
@@ -154,12 +151,21 @@ a.btn_t_b:visited {color:#fff;}
 .btn_myvoice.on::before {content:''; background:url(../images/makevoice_record_on.svg) no-repeat center; background-size:contain;}
 .btn_tts.on::before {content:'';background:url(../images/makevoice_tts_on.svg) no-repeat center; background-size:contain;}
 
-.btn_messagePop {padding:0 2rem; height:4rem;
+.btn_messagePop  {padding:0 2rem; height:4rem;
 	display:flex; align-items:center; gap:0.4rem; 
 	font-weight:500; color:#292752; border-radius:2.5rem; background:#fff;
 	box-shadow:0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.1);}
 .btn_messagePop::before {content:''; width:1.6rem; height:1.6rem; background:url(../images/ic_message.svg) no-repeat center; background-size:contain;}
-.btn_messagePop:active, .btn_messagePop:hover {background-color:#f9f9f9;}
+.btn_messagePop:active, .btn_messagePop:hover,
+.btn_download:active, .btn_download:hover {background-color:#f9f9f9;}
+
+
+.btn_download  {padding:0 2rem; height:4rem;
+	display:flex; align-items:center; gap:0.8rem; 
+	font-weight:500; color:#292752; border-radius:2.5rem; border:1px solid #f2f2f2; background:#fff;
+	box-shadow:0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.1);}
+.btn_download::after {content:''; width:1.6rem; height:1.6rem; background:url(../images/ic_download_bk.svg) no-repeat center; background-size:contain;}
+
 
 .btn_kakao,.btn_sms, .btn_camera, .btn_gallery {width:50%; height:12rem; 
 	display:flex; gap:0.4rem; flex-direction:column; justify-content:center; align-items:center;
@@ -275,6 +281,9 @@ a.btn_t_b:visited {color:#fff;}
 .btn_sending::after  {content:''; display:block; transform:rotate(-42deg); margin-top:-0.5rem;
 	width:1.8rem; height:1.8rem; background:url(../images/ic_sending.svg) no-repeat center; background-size:1.8rem;}	
 
+
+
+
 /* common */
 .logo_hanhwa {width:12.2rem; height:4rem;
 	text-indent:-9999em; overflow:hidden; white-space:nowrap;
@@ -312,7 +321,7 @@ a.btn_t_b:visited {color:#fff;}
 
 section > h2, section > h3 {display:none;}
 
-.scrollContainer {position:fixed; left:0; right:0; bottom:0; padding:0 0 10rem; 
+.scrollContainer {position:fixed; left:0; right:0; bottom:0; padding:0 0 14rem; 
 	overflow:hidden; overflow-y:auto;}
 
 .btnGroup_mf {margin:3rem 0 2rem; display:flex; justify-content:center; gap:1.2rem;}
@@ -320,7 +329,7 @@ section > h2, section > h3 {display:none;}
 .btnGroup_mf > .btn_group > button:first-child {border-radius:2.5rem 0 0 2.5rem; border-right:1px solid #ececec;}
 .btnGroup_mf > .btn_group > button:last-child {border-radius:0 2.5rem 2.5rem 0;}
 
-.btnGroup_f {padding:1rem 2rem 2rem;
+.btnGroup_f {padding:2rem;
 	position:fixed; left:0; right:0; bottom:0; z-index:21;
 	display:flex; gap:1.4rem; background:#fff;} 
 .btnGroup_f > button {width:50%; height:4.6rem; border-radius:2.5rem; font-size:1.5rem; font-weight:500;}
@@ -335,6 +344,7 @@ section > h2, section > h3 {display:none;}
 	display:flex; justify-content:center;}
 .btnwrap_f > button, .btnwrap_f > a {padding:0; width:18rem; height:4.6rem; line-height:4.6rem;}
 
+.btnwrap_m {margin:2rem; display:flex; justify-content:right;}
 
 
 
@@ -1064,7 +1074,7 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 
 /***   Sending   ***/
 .tyGry {background:#F8F8F8;}
-.sending > .scrollContainer {top:18rem;}
+.sending > .scrollContainer {top:16.5rem;}
 .sending > .btnGroup {padding:1rem 2rem;
 	display:flex; gap:2rem; flex-direction:column; 
 	background:#F8F8F8; border-bottom:1px solid #e1e1e1;}
@@ -1073,7 +1083,7 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 .sending .btnwrap > span::before {content:'';
 	width:0.2rem; height:0.2rem; border-radius:50%; background:#333;}
 
-.sending .c_list {padding:0 2rem; display:flex; flex-direction:column; gap:1rem;
+.sending .c_list {margin:1rem 0 0; padding:0 2rem; display:flex; flex-direction:column; gap:1rem;
 	overflow:hidden; overflow-y:auto;}
 .sending .c_list > .item {padding-left:1rem;
 	display:flex; justify-content:space-between; align-items:center;
@@ -1082,12 +1092,11 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 .c_info .name {width:6rem; font-size:1.6rem; font-weight:500;}
 
 .c_info .age, .c_info .address, .c_info .gender {padding-right:0.6rem; color:#777;}
-.c_info .age,  .c_info .gender { border-right:1px solid #c9c9c9;}
+.c_info .age,  .c_info .gender {border-right:1px solid #c9c9c9;}
 
 .final_txtArea {margin:-2rem 2rem 4rem; padding:4rem 2rem 4rem;
 	border-radius:0 0 3rem 3rem;
-	background:#F6F4EF;
-}
+	background:#F6F4EF;}
 .final_txtArea > .text {color:#333; word-break:keep-all; line-height:1.95; font-size:1.6rem; font-weight:500;
 	background:url(../images/bg_line.png) repeat-y; background-size:100%;;}
 
@@ -1183,7 +1192,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	display:flex; justify-content:space-between; align-items:center;}
 .myalbum > .headwrap > .btnGroup_edit {padding:0; margin:0;}
 .creation {display:flex; gap:0.8rem; align-content:center; 
-	font-size:1.6rem; color:#333;}
+	font-size:1.8rem; color:#333;}
 .creation::before {content:''; width:2rem; height:2rem; border-radius:50%; border:1px solid #333;
 	background:url(../images/ic_time.svg) no-repeat center; background-size:2rem;}
 .myalbum > .headwrap > .btnGroup {display:flex; gap:1rem;}
