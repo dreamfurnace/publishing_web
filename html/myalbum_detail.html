@@ -16,12 +16,7 @@
 
 <body>
      <header>
-          <div class="btn_group_l">
-               <button type="button" class="btn_i_back" onclick = "window.location.href='videocard.html';">뒤로가기</button>
-          </div>
-          <div class="btn_group_r">
-               <button type="button" class="btn_t_orn">수정</button>
-          </div>
+          <button type="button" class="btn_i_back" onclick = "window.location.href='videocard.html';">뒤로가기</button>
      </header>
      <main class="myalbum">
           <div class="headwrap">
@@ -30,7 +25,6 @@
                     <span class="time"><em>14</em>:<em>30</em></span>
                </div>
                <div class="btnGroup">
-                    <button type="button" class="btn_i_download">다운로드</button>
                     <button type="button" class="btn_i_trash">삭제</button>
                </div>
           </div>
@@ -38,7 +32,6 @@
                <h2>카드영역</h2>
                <div class="bgCard">
                     <div class="videoElements"><!--  영상 카드일 경우 노출 'skip' 추가 및 제거  -->
-                         <button class="btn_i_sound on" type="button">사운드 켜기/끄기</button>
                          <div class="voicePlay">
                               <button class="btn_i_play" type="button" id="btn_playRecord">재생/멈춤</button>
                               <div class="timelineWrap">
@@ -52,12 +45,19 @@
                                    </div>
                               </div>
                          </div>
+                         <button class="btn_i_sound" type="button">사운드 켜기/끄기</button>
                     </div>
                     <img src="../images/@pic01.jpg">                   
                </div>
           </section>
+          <div class="btnwrap_m">
+               <button type="button" class="btn_i_download">다운로드</button>
+          </div>
      </main>
-
+     <div class="btnGroup_f">
+		<button type="button">수정</button>
+		<button type="button" class="btn_sending" onclick="window.location.href='';">보내기</button>
+	</div>
 <script>
 $(document.body).css("background","#fff");
 
