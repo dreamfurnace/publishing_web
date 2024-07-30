@@ -475,7 +475,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .emtyRate43 .bgCard > img {display:none;}
 
 .videoElements {display:flex; gap:1.4rem; height:4.2rem; align-items:center;
-	position:absolute; left:1.6rem; right:1.6rem; bottom:1rem; z-index:2;
+	position:absolute; left:1.4rem; right:1.4rem; bottom:1.4rem; z-index:2;
 	border-radius:2.5rem; border:1px solid #fff;
 	background:rgba(255,255,255,0.7);}
 .videoElements > .btn_i_sound {width:4rem; height:4rem;}
@@ -1196,7 +1196,6 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	background:url(../images/ic_time.svg) no-repeat center; background-size:2rem;}
 .myalbum > .headwrap > .btnGroup {display:flex; gap:1rem;}
 
-.myalbum .btnwrap_m {position:relative; z-index:22;}
 
 /*** sent box   ***/
 .sentbox .templateList {display:grid; grid-template-columns:repeat(2, 1fr);}
