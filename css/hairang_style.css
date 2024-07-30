@@ -960,12 +960,9 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 .checkbox_tLine input:checked ~ .checktxt .c_info > span {color: #3958A8 !important;}
 
 
-
-
-
 /* check box - img */
-.checkbox_img .checkimg {display:flex; justify-content:center;
-	height:auto; aspect-ratio:3/4; border-radius:1.6rem; overflow:hidden;}
+.checkbox_img label {display:block;}
+.checkbox_img .checkimg {}
 .checkbox_img input[type="checkbox"],
 .checkbox_img input[type="radio"] {opacity:0; display:none;}
 .checkbox_img input[type="checkbox"] + label, 
@@ -974,9 +971,9 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 	display:block; width:2.6rem; height:2.6rem; border-radius:50%;
 	background:rgba(0, 0, 0, 0.2) url('../images/check_i_on.svg') no-repeat center; background-size:1.6rem;}
 .checkbox_img input:checked ~ .checkmark {background:#3958A8 url('../images/check_i_on.svg') no-repeat center; background-size:1.6rem;}
-.checkbox_img .checkimg > img,
+/* .checkbox_img .checkimg > img,
 .checkbox_img .checkimg > video {width:100%; height:100%; object-fit:cover;}
-
+ */
 
 /*  tab   */
 .cateTab {padding:1rem 2rem; display:flex; gap:0.8rem; overflow:hidden; overflow-x:auto;}
@@ -1196,6 +1193,9 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	background:url(../images/ic_time.svg) no-repeat center; background-size:2rem;}
 .myalbum > .headwrap > .btnGroup {display:flex; gap:1rem;}
 
+.myalbum .checkimg {aspect-ratio:3/4; display:flex; justify-content:center;
+	height:auto; border-radius:1.6rem; overflow:hidden;}
+
 
 /*** sent box   ***/
 .sentbox .templateList {display:flex; gap:1.2rem; flex-direction:column; margin:0;}
@@ -1203,9 +1203,12 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	display:block; border-radius:1.6rem; border:1px solid #EBEBEB;}
 .sentbox .templateList > .item > a {display:flex; gap:2.5rem; overflow:hidden;  border-radius:1.2rem;}
 .sentbox .templateList > .item .pic {width:14rem; height:14rem; aspect-ratio:1/1;
-	border-radius:1.4rem; border-radius:1.2rem; overflow:hidden;}
+	border-radius:1.2rem; overflow:hidden;}
 .sentbox .templateList > .item > a:active,
 .sentbox .templateList > .item > a:hover {background-color:#f8f8f8;}
+.sentbox .checkimg {display:block;}
+.sentbox .checkimg {display:flex; gap:2.5rem; overflow:hidden;
+	border-radius:1.2rem;} 
 
 
 .sentbox .scrollContainer {top:9rem;}
@@ -1217,7 +1220,6 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .sentbox .sentInfo.kakao > .name {display:none;}
 .sentbox .sentInfo > .name {font-size:1.6rem;}
 .sentbox .sentInfo > .date {display:flex; gap:1rem; font-size:1.6rem; color:#333;}
-.sentbox .checkimg {aspect-ratio:1/1;}
 
 
 
