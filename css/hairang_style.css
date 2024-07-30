@@ -153,15 +153,17 @@ a.btn_t_b:visited {color:#fff;}
 .btn_myvoice.on::before {content:''; background:url(../images/makevoice_record_on.svg) no-repeat center; background-size:contain;}
 .btn_tts.on::before {content:'';background:url(../images/makevoice_tts_on.svg) no-repeat center; background-size:contain;}
 
-.btn_messagePop {display:flex; align-items:center; gap:0.8rem; height:3rem;
-	font-weight:500; color:#000; opacity:0.8;}
+.btn_messagePop {padding:0 1.8rem; height:4rem;
+	display:flex; align-items:center; gap:0.4rem; 
+	font-weight:400; color:#292752; border-radius:2.5rem; background:#fff;
+	box-shadow:0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.1);}
 .btn_messagePop::before {content:''; width:1.6rem; height:1.6rem; background:url(../images/ic_message.svg) no-repeat center; background-size:contain;}
-.btn_messagePop:active, .btn_messagePop:hover {opacity:1;}
+.btn_messagePop:active, .btn_messagePop:hover {background-color:#f9f9f9;}
 
 .btn_kakao,.btn_sms, .btn_camera, .btn_gallery {width:50%; height:12rem; 
 	display:flex; gap:0.4rem; flex-direction:column; justify-content:center; align-items:center;
 	font-weight:500; color:#333; font-size:1.8rem;
-	border-radius:2rem; box-shadow:0 0rem 1.2rem 0 rgba(0, 0, 0, 0.15);}
+	border-radius:2rem; box-shadow:0 0 1.2rem 0 rgba(0, 0, 0, 0.15);}
 
 .btn_kakao {border:1px solid #391C1E; color:#391C1E;}
 .btn_kakao::before {content:''; width:5rem; height:6rem; 
@@ -256,6 +258,7 @@ a.btn_t_b:visited {color:#fff;}
 .btn_makeVideo {width:18rem; height:4.6rem; padding-left:4rem; border-radius:2rem; text-align:left;
 	color:#fff; box-shadow:0 0.4rem 1.2rem 0 rgba(122, 144, 176, 0.25);
 	background:#ff6600 url(../images/ic_makevideo.svg) no-repeat 12rem center; background-size:2.8rem;}
+.btn_makeVideo:active, .btn_makeVideo:hover {background-color:#CC5200;}
 
 .btn_complete, .btn_sending {display:flex; gap:1rem; justify-content:center; align-items:center;}	
 .btn_complete::after {content:''; display:block; 
@@ -320,7 +323,9 @@ section > h2, section > h3 {display:none;}
 .btnGroup_f > button:last-child:hover,
 .btnGroup_f > button:last-child:active {box-shadow:none; background-color:#CC5200; border-color:#CC5200;}
 
-.btnwrap_f > button, .btnwrap_f > a {height:4.6rem; width:15.2rem; line-height:4.6rem;}
+.btnwrap_f {position:fixed; left:0; right:0; bottom:4rem;
+	display:flex; justify-content:center;}
+.btnwrap_f > button, .btnwrap_f > a {padding:0; width:18rem; height:4.6rem; line-height:4.6rem;}
 
 
 /*  layout  */
@@ -600,8 +605,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .imageDecoration .btnArea {position:absolute; top:2rem; left:2rem; z-index:5;}
 .imageDecoration .btn_i_reswap > .tooltip {position:absolute; top:5.4rem; left:1.8rem;}
 .imageDecoration .btn_t_name > .tooltip {position:absolute; top:3.6rem; right:-0.5rem; z-index:4;}
-.imageDecoration > .btnwrap_f {position:fixed; left:0; right:0; bottom:8rem;
-	display:flex; justify-content:center;}
+.imageDecoration > .btnwrap_f {position:fixed; left:0; right:0; bottom:8rem;}
 
 .imageDecoration .tooltipWrap {position:absolute; top:1.4rem; left:1.4rem; z-index:4;}
 .imageDecoration .tooltip {margin:1.2rem 0 0 1.8rem;}
