@@ -323,7 +323,7 @@ section > h2, section > h3 {display:none;}
 .btnGroup_f > button:last-child:hover,
 .btnGroup_f > button:last-child:active {box-shadow:none; background-color:#CC5200; border-color:#CC5200;}
 
-.btnwrap_f {position:fixed; left:0; right:0; bottom:4rem;
+.btnwrap_f {position:fixed; left:0; right:0; bottom:2rem;
 	display:flex; justify-content:center;}
 .btnwrap_f > button, .btnwrap_f > a {padding:0; width:18rem; height:4.6rem; line-height:4.6rem;}
 
