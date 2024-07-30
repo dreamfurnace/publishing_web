@@ -207,8 +207,9 @@ a.btn_t_b:visited {color:#fff;}
 .btn_sentList {padding:1rem; display:flex; justify-content:center; gap:0.4rem; color:#333; font-weight:500;}
 .btn_sentList::before {content:''; width:1.6rem; height:1.6rem; background:url(../images/ic_sentlist.svg) no-repeat center;}
 
-.btn_undoDel { color:#FF6600; font-size:1.3rem; display:flex; align-items:center; }
-.btn_undoDel::before {content:''; display:inline-block; width:1.6rem; height:1.6rem; background:url(../images/ic_undo.svg) no-repeat center; }
+.btn_undoDel { color:#FF954E; font-size:1.5rem; display:flex; align-items:center; }
+.btn_undoDel::before {content:''; display:inline-block; width:2rem; height:2rem; background:url(../images/ic_undo.svg) no-repeat center; background-size:2rem;}
+.btn_undoDel:active, .btn_undoDel:hover {color:#ff6600;}
 
 .btn_logout {width:100%; color:#fff; font-size:1.6rem; color:#fff; height:6rem; border-radius:1rem; background:#FF6600;}
 .btn_logout:hover,.setting .btn_logout:active { background-color:#CC5200;}
