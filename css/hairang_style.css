@@ -440,6 +440,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .btnwrap_rate > .on {border-color:#231F84; color:#231F84; font-weight:500;}
 .btnwrap_rate > .on::before {border-color:#231F84;}
 
+.stage {position:relative;}
 .bgCard {position:relative; overflow:hidden; border-radius:4rem; 
 	background:#FFF url(../images/bg_hirang01.svg) no-repeat center 15%; background-size:15rem;
 	box-shadow:0 1.6rem 2rem 0 rgba(112, 144, 176, 0.2);}
@@ -476,6 +477,12 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 .rate34 .bgCard::before, .rate11 .bgCard::before, .rate43 .bgCard::before, 
 .rate34 .bgCard::after, .rate11 .bgCard::after,  .rate43 .bgCard::after {content:''; display:none;}
+
+.makeTemplate .rate34 .bgCard, 
+.makeTemplate .emtyRate34 .bgCard,
+.imageDecoration .rate34 .bgCard, 
+.imageDecoration .emtyRate34 .bgCard {margin:0 1rem;}
+
 
 .btnwrap_step {display:flex; gap:1rem;}
 .promptArea {position:absolute; left:0; right:0; bottom:-10.6rem; z-index:10; height:13.4rem;}
@@ -600,8 +607,6 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 
 /***  Image Card   ***/
-.imageDecoration > .stage, 
-.videoArea > .stage  {position:relative;}
 .imageDecoration .btnArea {position:absolute; top:2rem; left:2rem; z-index:5;}
 .imageDecoration .btn_i_reswap > .tooltip {position:absolute; top:5.4rem; left:1.8rem;}
 .imageDecoration .btn_t_name > .tooltip {position:absolute; top:3.6rem; right:-0.5rem; z-index:4;}
