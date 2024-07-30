@@ -255,6 +255,12 @@ a.btn_t_b:visited {color:#fff;}
 .btn_create:disabled, 
 .btn_reCreate:disabled {background-color:#fff; opacity:0.2 !important;}
 
+.btn_faceApply {width:20rem; height:4.6rem; padding-left:1.4rem; 
+	display:flex; gap:0.6rem; align-items:center; justify-content:center;
+	border-radius:2rem; text-align:center;
+	color:#fff; background:#ff6600;}
+.btn_faceApply::after {content:''; width:2rem; height:2rem; background:url(../images/ic_create.svg) no-repeat center;;}
+
 .btn_makeVideo {width:18rem; height:4.6rem; padding-left:4rem; border-radius:2rem; text-align:left;
 	color:#fff; box-shadow:0 0.4rem 1.2rem 0 rgba(122, 144, 176, 0.25);
 	background:#ff6600 url(../images/ic_makevideo.svg) no-repeat 12rem center; background-size:2.8rem;}
@@ -326,6 +332,8 @@ section > h2, section > h3 {display:none;}
 .btnwrap_f {position:fixed; left:0; right:0; bottom:2rem;
 	display:flex; justify-content:center;}
 .btnwrap_f > button, .btnwrap_f > a {padding:0; width:18rem; height:4.6rem; line-height:4.6rem;}
+
+
 
 
 /*  layout  */
