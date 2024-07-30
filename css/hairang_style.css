@@ -931,6 +931,25 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 .checkbox_tbox input:checked ~ .checkmark {background:#3958A8 url('../images/check_i_on.svg') no-repeat center; background-size:1.4rem;}
 .checkbox_tbox input:checked ~ .checktxt {box-shadow: 0 0 2rem 0 rgba(112, 144, 176, 0.25); background-color: #fff;}
 
+
+/* chek box - linebox   */
+.checkbox_tLine {position:relative;}
+.checkbox_tLine > label {display:block; position:relative;}
+.checkbox_tLine .checktxt {position:relative; 
+	display:block; padding:0 1.6rem 1.4rem; padding-right:4.5rem; font-size:1.4rem;
+	border-bottom:1px solid #EBEBEB; background:#fff;}
+.checkbox_tLine input[type="radio"], .checkbox_tbox input[type="checkbox"] {opacity:0; display:none;}
+.checkbox_tLine .checkmark {position:absolute; top:50%; right:1rem; z-index:2; margin-top:-1.3rem;
+	display:block; width:2.6rem; height:2.6rem; border-radius:50%;
+	background:#F6F6F6 url('../images/check_i_off.svg') no-repeat center; background-size:1.4rem;}
+.checkbox_tLine input:checked + label {}
+.checkbox_tLine input:checked ~ .checkmark {background:#3958A8 url('../images/check_i_on.svg') no-repeat center; background-size:1.4rem;}
+.checkbox_tLine input:checked ~ .checktxt {}
+
+
+
+
+
 /* check box - img */
 .checkbox_img .checkimg {display:flex; justify-content:center;
 	height:auto; aspect-ratio:3/4; border-radius:1.6rem; overflow:hidden;}
@@ -1113,11 +1132,13 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 
 .customerList .item {position:relative; margin:0 2rem;  padding:1.4rem 1.6rem;
 	display:flex; flex-direction:column; gap:0.6rem;
-	border-radius:1.4rem; background:#fafafa;}
-.customerList .item.noAgree::before {content:"마케팅 미동의";
-	position:absolute; top:1.4rem; right:1.2rem;
-	display:inline-block; height:2rem; border-radius:2.5rem; line-height:2rem; padding:0 1rem;
-	font-size:1.3rem; color:#333; background:#E8E8E8;}
+	border-bottom:1px solid #ebebeb;}
+
+.customerList .item.noAgree, .customerList .item.noAgree span {color:#999;}
+.customerList .item.noAgree::before {content:"미동의";
+	position:absolute; top:50%; right:1.2rem; margin-top:-1rem;
+	display:inline-block; height:2rem; border-radius:0.4rem; line-height:2rem; padding:0 0.6rem;
+	font-size:1.3rem; color:#999; background:#E8E8E8;}
 .customerList .item > .btn_i_del {display:none; position:absolute; top:0.8rem; right:0.8rem;}
 
 .c_name {width:calc(100% - 3.6rem); overflow:hidden;
@@ -1516,9 +1537,9 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 .popupPanel.customerList .scrollContainer {top:15.8rem;}
 .popupPanel.customerList .item {margin:0;}
 
-.popupPanel .groupList {display:flex; flex-direction:column; gap:1.4rem; padding:2rem 2rem 10rem;}
-.popupPanel .groupList .checktxt {align-items:normal;}
-
+.popupPanel .customerItem {display:flex; flex-direction:column; gap:0;  padding:0 2rem 10rem;}
+.popupPanel .customerItem .checktxt {align-items:normal;}
+.customerItem .checkbox_tLine .checktxt {display:flex; flex-direction:column; gap:0.6rem;}
 
 
 /*  popup: sending - customer */
