@@ -1424,8 +1424,9 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 .popupTab > button > em {display:none; font-weight:400; color:#FBB584;}
 .popupTab > .on {color:#fff; font-weight:500; border-color:#1E1D36; background:#1E1D36;}
 .popupTab > .on > em {display:block;}
-.popupPanel {position:fixed; top:10rem; left:0; right:0; bottom:0; padding:2rem 2rem 8rem; 
-	overflow:hidden; overflow-y:auto;}
+.popupPanel {}
+/* .popupPanel {position:fixed; top:10rem; left:0; right:0; bottom:0; padding:2rem 2rem 8rem; 
+	overflow:hidden; overflow-y:auto;} */
 
 .popupPanel > div,
 .popupPanel > section {display:none;}	
@@ -1511,11 +1512,13 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 .addCustomer.nolist .notice > p::before {content:''; display:block; margin:0 auto 2.4rem;
 	width:7.2rem; height:7.2rem; background:url(../images/img_nolist.svg) no-repeat center;}
 
-.popupPanel.customerList {padding:0; top:10.3rem}
-.popupPanel .groupList {display:flex; flex-direction:column; gap:1.4rem; padding:2rem 2rem 10rem;}
-.popupPanel.customerList .scrollContainer {top:15.4rem;}
-.popupPanel .groupList .checktxt {align-items:normal;}
+.popupPanel.customerList {padding:0;}
+.popupPanel.customerList .scrollContainer {top:15.8rem;}
 .popupPanel.customerList .item {margin:0;}
+
+.popupPanel .groupList {display:flex; flex-direction:column; gap:1.4rem; padding:2rem 2rem 10rem;}
+.popupPanel .groupList .checktxt {align-items:normal;}
+
 
 
 /*  popup: sending - customer */
