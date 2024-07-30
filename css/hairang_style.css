@@ -488,9 +488,12 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 .makeTemplate .btnGroup_mf {position:fixed; left:0; right:0; bottom:17.4rem;}
 
-.rate34 .bgCard, .emtyRate34 .bgCard {aspect-ratio:3/4;}
-.rate11 .bgCard, .emtyRate11 .bgCard {margin:6rem 0 0; aspect-ratio:1;}
-.rate43 .bgCard, .emtyRate43 .bgCard {margin:10rem 0 0; aspect-ratio:4/3;}
+.rate34 .bgCard, 
+.emtyRate34 .bgCard {aspect-ratio:3/4;}
+.rate11 .bgCard, 
+.emtyRate11 .bgCard {aspect-ratio:1;}
+.rate43 .bgCard, 
+.emtyRate43 .bgCard {aspect-ratio:4/3;}
 
 .emtyRate11 .bgCard::before {margin:55% 0 0;}
 .emtyRate43 .bgCard::before {margin:44% 0 0;}
@@ -499,9 +502,26 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .rate34 .bgCard::after, .rate11 .bgCard::after,  .rate43 .bgCard::after {content:''; display:none;}
 
 .makeTemplate .rate34 .bgCard, 
+.makeTemplate .emtyRate34 .bgCard {}
+
+.makeTemplate .rate11 .bgCard, 
+.makeTemplate .emtyRate11 .bgCard,
+.imageDecoration .rate11 .bgCard,
+.imageDecoration .emtyRate11 .bgCard,
+.videoArea .rate11 .bgCard,
+.videoArea .emtyRate11 .bgCard  {margin:6rem 0 0;}
+
+.makeTemplate .rate43 .bgCard, 
+.makeTemplate .emtyRate43 .bgCard,
+.imageDecoration .rate43 .bgCard, 
+.imageDecoration .emtyRate43 .bgCard,
+.videoArea .rate43 .bgCard, 
+.videoArea .emtyRate43 .bgCard {margin:10rem 0 0;}
+
+/* .makeTemplate .rate34 .bgCard, 
 .makeTemplate .emtyRate34 .bgCard,
 .imageDecoration .rate34 .bgCard, 
-.imageDecoration .emtyRate34 .bgCard {margin:0 1rem;}
+.imageDecoration .emtyRate34 .bgCard {margin:0 1rem;} */
 
 
 .btnwrap_step {display:flex; gap:1rem;}
@@ -630,7 +650,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .imageDecoration .btnArea {position:absolute; top:2rem; left:2rem; z-index:5;}
 .imageDecoration .btn_i_reswap > .tooltip {position:absolute; top:5.4rem; left:1.8rem;}
 .imageDecoration .btn_t_name > .tooltip {position:absolute; top:3.6rem; right:-0.5rem; z-index:4;}
-.imageDecoration > .btnwrap_f {position:fixed; left:0; right:0; bottom:8rem;}
+.imageDecoration > .btnwrap_f {position:fixed; left:0; right:0; bottom:8.6rem;}
 
 .imageDecoration .tooltipWrap {position:absolute; top:1.4rem; left:1.4rem; z-index:4;}
 .imageDecoration .tooltip {margin:1.2rem 0 0 1.8rem;}
@@ -803,10 +823,12 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 
 /***  video card   ***/
-.videoArea {position:fixed; top:0; left:0; right:0; bottom:0;  overflow: hidden; overflow-y:auto;}
-.videoArea .rate34 .bgCard,
+.videoArea {position:fixed; top:5rem; left:0; right:0; bottom:0;  overflow: hidden; overflow-y:auto;}
+/* .videoArea .rate34 .bgCard,
 .videoArea .rate11 .bgCard,
-.videoArea .rate43 .bgCard {margin:5rem 0 0;}
+.videoArea .rate43 .bgCard {margin:5rem 0 0;} */
+
+.videoArea > .btnGroup_mf {position:fixed; left:0; right:0; bottom:8rem;}
 
 .soundSticker {position:absolute; top:1rem; right:1rem; z-index:2;
 	display:flex; flex-direction:column; gap:1rem;}
@@ -1078,14 +1100,15 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 
 .sending .c_list {margin:1rem 0 0; padding:0 2rem; display:flex; flex-direction:column; gap:1rem;
 	overflow:hidden; overflow-y:auto;}
-.sending .c_list > .item {padding-left:1rem;
-	display:flex; justify-content:space-between; align-items:center;
+.sending .c_list > .item {display:flex; justify-content:space-between; align-items:center;
 	height:5rem; border-bottom:1px solid #ddd;}
 .c_info {display:flex; justify-content:left; gap:0.8rem; align-items:center; font-size:1.4rem;}
 .c_info .name {width:6rem; font-size:1.6rem; font-weight:500;}
 
 .c_info .age, .c_info .address, .c_info .gender {padding-right:0.6rem; color:#777;}
 .c_info .age,  .c_info .gender {border-right:1px solid #c9c9c9;}
+.c_info .callNum {font-size:1.6rem; color:#9C9C9C;}
+
 
 .final_txtArea {margin:-2rem 2rem 4rem; padding:4rem 2rem 4rem;
 	border-radius:0 0 3rem 3rem;
@@ -1529,7 +1552,11 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .groupList .groupExp {color:#777; font-size:1.4rem;}
 
 .popContainer.sending {padding:5.4rem 0 10rem;}
-
+.popContainer.sending .c_list {counter-reset: colorcircle 0;}
+.popContainer.sending .c_list .c_info::before {counter-increment:colorcircle 1; content: counter(colorcircle);
+	font-size:1.4rem; color:#333;
+	width:3rem; height:3rem; border:1px solid #eee; text-align:center; line-height:2.8rem;
+	border-radius:50%; background:#fff; box-shadow:0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.1);}
 
 /* popup - Group Edit */
 .popContainer .inputList {padding:1rem 2rem;}
