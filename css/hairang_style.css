@@ -1090,7 +1090,7 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 .final_txtArea {margin:-2rem 2rem 4rem; padding:4rem 2rem 4rem;
 	border-radius:0 0 3rem 3rem;
 	background:#F6F4EF;}
-.final_txtArea > .text {color:#333; word-break:keep-all; line-height:1.95; font-size:1.6rem; font-weight:500;
+.final_txtArea > .text {margin-top:2rem; color:#333; word-break:keep-all; line-height:1.95; font-size:1.6rem; font-weight:500;
 	background:url(../images/bg_line.png) repeat-y; background-size:100%;;}
 
 
