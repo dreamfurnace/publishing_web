@@ -153,9 +153,9 @@ a.btn_t_b:visited {color:#fff;}
 .btn_myvoice.on::before {content:''; background:url(../images/makevoice_record_on.svg) no-repeat center; background-size:contain;}
 .btn_tts.on::before {content:'';background:url(../images/makevoice_tts_on.svg) no-repeat center; background-size:contain;}
 
-.btn_messagePop {padding:0 1.8rem; height:4rem;
+.btn_messagePop {padding:0 2rem; height:4rem;
 	display:flex; align-items:center; gap:0.4rem; 
-	font-weight:400; color:#292752; border-radius:2.5rem; background:#fff;
+	font-weight:500; color:#292752; border-radius:2.5rem; background:#fff;
 	box-shadow:0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.1);}
 .btn_messagePop::before {content:''; width:1.6rem; height:1.6rem; background:url(../images/ic_message.svg) no-repeat center; background-size:contain;}
 .btn_messagePop:active, .btn_messagePop:hover {background-color:#f9f9f9;}
@@ -467,7 +467,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 .makeTemplate .btnGroup_mf {position:fixed; left:0; right:0; bottom:17.4rem;}
 
-.rate34 .bgCard, .emtyRate34 .bgCard {margin:0 1rem; aspect-ratio:3/4;}
+.rate34 .bgCard, .emtyRate34 .bgCard {aspect-ratio:3/4;}
 .rate11 .bgCard, .emtyRate11 .bgCard {margin:6rem 0 0; aspect-ratio:1;}
 .rate43 .bgCard, .emtyRate43 .bgCard {margin:10rem 0 0; aspect-ratio:4/3;}
 
@@ -668,7 +668,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 .decoBtn_delete {top:-1.5rem; left:-1.5rem;}
 .decoBtn_scale {bottom:-1rem; right:-1rem;}
-.decoBtn_delete::before {background:#000 url(../images/ic_x_wh.svg) no-repeat center; background-size:1.6rem;}
+.decoBtn_delete::before {background:#000 url(../images/ic_x_wh.svg) no-repeat center; background-size:1.1rem;}
 .decoBtn_scale::before {background:#fff url(../images/ic_scale.svg) no-repeat center; background-size:1.6rem;}
 
 
