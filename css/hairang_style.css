@@ -1221,7 +1221,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .sentbox .sentInfo > .date {display:flex; gap:1rem; font-size:1.6rem; color:#333;}
 
 
-.sentboxDetail .headwrap {margin:1rem 2rem 0.4rem;
+.sentboxDetail .headwrap {margin:0 2rem 0.4rem;
 	display:flex; flex-direction:column; gap:0.4rem; } 
 .sentboxDetail .headwrap > strong {font-size:1.8rem; font-weight:400; color:#333;}
 .sentboxDetail .headwrap > strong > em {font-weight:600;}
