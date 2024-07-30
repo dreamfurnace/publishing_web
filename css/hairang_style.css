@@ -1479,7 +1479,7 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 /* popup - message list */
 .messageGroup .popupPanel {position:fixed; top:11rem; left:0; right:0; bottom:0;
 	overflow:hidden; overflow-y:auto; padding-top:1rem; }
-.messageGroup .item {display:flex; gap:1.4rem; flex-direction:column;}
+.messageGroup .item {display:none; gap:1.4rem; flex-direction:column;}
 .messageGroup .item.active {display:flex;}
 
 
