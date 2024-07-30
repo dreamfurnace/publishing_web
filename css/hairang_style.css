@@ -1367,7 +1367,7 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 .popup_btnGroup.col > button {width:50%;}
 .popup_btnGroup.col {display:flex; gap:1rem;}
 .popup_btnGroup .btn_t_l {color:#878787; border:1px solid #d6d6d6; background:#fff;}
-.popup_btnGroup .btn_t_l:active, .popup_btnGroup .btn_t_l:hover {background-color:#525252;}
+.popup_btnGroup .btn_t_l:active, .popup_btnGroup .btn_t_l:hover {background-color:#f8f8f8;}
 .popup_btnGroup .btn_t_r {color:#fff; background:#ff6600;}
 .popup_btnGroup .btn_t_r:active, .popup_btnGroup .btn_t_r:hover {background:#CC5200;}
 
@@ -1375,7 +1375,7 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 .popup_btnGroup .btn_t_r:disabled {color:#aaa; background:#E1E1E1;}
 
 .popupWrap {margin:3em 2rem;}
-.popMessage {text-align:center; line-height:1.4; color:#333; font-size:1.6rem; word-break:keep-all;}
+.popMessage {text-align:center; line-height:1.4; color:#333; font-size:1.8rem; word-break:keep-all;}
 .popMessage > p {margin-bottom:2rem;}
 
 .popup_btm {display:none; 
