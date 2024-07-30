@@ -1198,17 +1198,28 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 
 
 /*** sent box   ***/
-.sentbox .templateList {display:grid; grid-template-columns:repeat(2, 1fr);}
-.sentbox .templateList > .item {display:flex; flex-direction:column; gap:0.8rem;}
+.sentbox .templateList {display:flex; gap:1.2rem; flex-direction:column; margin:0;}
+.sentbox .templateList > .item {position:relative; padding:0.4rem; height:14rem; 
+	display:block; border-radius:1.6rem; border:1px solid #EBEBEB;}
+.sentbox .templateList > .item > a {display:flex; gap:2.5rem; overflow:hidden;  border-radius:1.2rem;}
+.sentbox .templateList > .item .pic {width:14rem; height:14rem; aspect-ratio:1/1;
+	border-radius:1.4rem; border-radius:1.2rem; overflow:hidden;}
+.sentbox .templateList > .item > a:active,
+.sentbox .templateList > .item > a:hover {background-color:#f8f8f8;}
 
-.sentbox .templateList > .item > a {position:relative;
-	display:flex; justify-content:center; height:auto; aspect-ratio:3/4;
-	border-radius:1.4rem; overflow:hidden; aspect-ratio:1/1;}
-.sentbox .scrollContainer {top:8.6rem;}
-.sentbox .sentInfo {display:flex; flex-direction:column; gap:0.4rem;}
-.sentbox .sentInfo > .name {font-size:1.4rem;}
-.sentbox .sentInfo > .date {display:flex; gap:1rem; font-size:1.4rem; color:#777;}
+
+.sentbox .scrollContainer {top:9rem;}
+.sentbox .sentInfo {position:relative;
+	display:flex; flex-direction:column; gap:0.4rem; justify-content:center;}
+.sentbox .sentInfo::before {content:''; position:absolute; top:50%; left:-4.2rem; margin-top:-1.6rem;
+	display:block; width:3.2rem; height:3.2rem; border-radius:50%; background:#0959A3 url(../images/ic_sms_wh.svg) no-repeat center; background-size:1.6rem;}
+.sentbox .sentInfo.kakao::before {background:#391C1E url(../images/ic_kakao_wh.svg) no-repeat center; background-size:1.6rem;}
+.sentbox .sentInfo.kakao > .name {display:none;}
+.sentbox .sentInfo > .name {font-size:1.6rem;}
+.sentbox .sentInfo > .date {display:flex; gap:1rem; font-size:1.6rem; color:#333;}
 .sentbox .checkimg {aspect-ratio:1/1;}
+
+
 
 .sentboxDetail .headwrap {margin:1rem 2rem 0.4rem; margin-right:1rem;
 	display:flex; flex-direction:column; gap:0.4rem; } 
