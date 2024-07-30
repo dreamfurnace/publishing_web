@@ -823,10 +823,10 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 
 /***  video card   ***/
-.videoArea {position:fixed; top:5rem; left:0; right:0; bottom:0;  overflow: hidden; overflow-y:auto;}
-/* .videoArea .rate34 .bgCard,
+.videoArea {position:fixed; top:0; left:0; right:0; bottom:0;  overflow: hidden; overflow-y:auto;}
+.videoArea .rate34 .bgCard,
 .videoArea .rate11 .bgCard,
-.videoArea .rate43 .bgCard {margin:5rem 0 0;} */
+.videoArea .rate43 .bgCard {margin:5rem 0 0;}
 
 .videoArea > .btnGroup_mf {position:fixed; left:0; right:0; bottom:8rem;}
 
