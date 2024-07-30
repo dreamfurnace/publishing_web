@@ -1374,7 +1374,7 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 .popup_btnGroup .btn_t_l:disabled, 
 .popup_btnGroup .btn_t_r:disabled {color:#aaa; background:#E1E1E1;}
 
-.popupWrap {margin:4em 2rem 3rem;}
+.popupWrap {margin:3em 2rem;}
 .popMessage {text-align:center; line-height:1.4; color:#333; font-size:1.6rem; word-break:keep-all;}
 .popMessage > p {margin-bottom:2rem;}
 
