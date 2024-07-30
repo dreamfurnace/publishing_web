@@ -1199,7 +1199,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .sentbox .templateList > .item > a {
 	display:flex; gap:2.5rem; overflow:hidden;  border-radius:1.2rem;
 	padding:0.4rem; height:14rem; border-radius:1.6rem; border:1px solid #EBEBEB; 
-	box-shadow:0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.1);}
+	box-shadow:0 0.4rem 1.2rem 0 rgba(122, 144, 176, 0.25);}
 .sentbox .templateList > .item .pic {width:14rem; height:14rem; aspect-ratio:1/1;
 	border-radius:1.2rem; overflow:hidden;}
 .sentbox .templateList > .item > a:active,
@@ -1207,7 +1207,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .sentbox  .checkbox_img {}
 .sentbox .checkimg {display:flex; gap:2.5rem; overflow:hidden;
 	padding:0.4rem; height:14rem; border-radius:1.6rem; border:1px solid #EBEBEB;
-	box-shadow:0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.1);}
+	box-shadow:0 0.4rem 1.2rem 0 rgba(122, 144, 176, 0.25);}
 .sentbox .checkbox_img input:checked ~ .checkimg {border-color:#767599;}
 
 .sentbox .scrollContainer {top:9.6rem;}
@@ -1220,14 +1220,13 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .sentbox .sentInfo > .name {font-size:1.6rem;}
 .sentbox .sentInfo > .date {display:flex; gap:1rem; font-size:1.6rem; color:#333;}
 
-
 .sentboxDetail .headwrap {margin:0 2rem 0.4rem;
-	display:flex; flex-direction:column; gap:0.4rem; } 
+	display:flex; flex-direction:column; gap:0.2rem; } 
 .sentboxDetail .headwrap > strong {font-size:1.8rem; font-weight:400; color:#333;}
 .sentboxDetail .headwrap > strong > em {font-weight:600;}
-.sentboxDetail .headwrap > .creation {color:#666; font-size:1.5rem;}
+.sentboxDetail .headwrap > .creation {color:#666; font-size:1.6rem;}
 .sentboxDetail .headwrap > .creation::before {content:''; display:none;}
-.sentboxDetail .headwrap > .btnGroup {display:flex; justify-content:right; margin:-1rem 0 1rem;}
+.sentboxDetail .headwrap > .btnGroup {display:flex; justify-content:right; margin:-1.4rem 0 1rem;}
 
 .sentboxDetail .scrollContainer {top:5rem;}
 
