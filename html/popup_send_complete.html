@@ -18,8 +18,8 @@
 <button type="button" class="btn_popTest" id="test_callpop">call POPUP</button><!-- ref.event -->
 
 <!--  POPUP  AREA -->
-     <div class="dimmedLayer"></div><!-- end: class="dimmedLayer" -->
-     <div class="popup_btm">
+     <div class="dimmedLayer" style="display:block;"></div><!-- end: class="dimmedLayer" -->
+     <div class="popup_btm" style="display:block;">
           <div class="popupWrap">
                <div class="popMessage">
                    <p><em>김고객</em>님 외 <em>20</em>명께 발송되었습니다.</p>
@@ -36,17 +36,17 @@
 
 
 <script>
-// popupEvent_closeBtn
-$('.popup_btnGroup > button').click(function(){
-     $('.popup_btm').slideUp(300);
-     $('.dimmedLayer').fadeOut(200);
-});
+// // popupEvent_closeBtn
+// $('.popup_btnGroup > button').click(function(){
+//      $('.popup_btm').slideUp(300);
+//      $('.dimmedLayer').fadeOut(200);
+// });
    
-// popEvent_testBtn
-$('#test_callpop').click(function(){
-     $('.popup_btm').slideDown(300);
-     $('.dimmedLayer').fadeIn(200);
-});
+// // popEvent_testBtn
+// $('#test_callpop').click(function(){
+//      $('.popup_btm').slideDown(300);
+//      $('.dimmedLayer').fadeIn(200);
+// });
 </script>
 </body>
 </html>
