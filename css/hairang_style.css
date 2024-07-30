@@ -811,8 +811,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 	background:url(../images/ic_bgm_wh.svg) no-repeat center; background-size:3rem;}
 
 .voiceCategory {padding:0.6rem; display:flex; justify-content:space-between; align-items:center; }
-.voiceCategory > button:active, .voiceCategory > button:hover
-.simple_btnGroup > button:active, .simple_btnGroup > button:hover {color:#FF6600;}
+.voiceCategory > button:active, .voiceCategory > button:hover {color:#FF6600;}
 
 .voiceWrap {width:calc(100% - 7.8rem); overflow:hidden;
 	display:flex; justify-content: space-between; border-radius:2rem; border:1px solid #EFEFEF; }
@@ -820,21 +819,30 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .voiceWrap button:last-child {width:50%;}
 .voiceWrap button:active, .voiceWrap button:hover {background-color:#f8f8f8;}
 
-
-.btn_voiceRec, .btn_voiceMake, .btn_simpleBgm {height:6rem;
+.btn_voiceRec, .btn_voiceMake {height:5.4rem;
 	display:flex; gap:1rem; justify-content:center; align-items:center;
 	font-size:1.5rem; color:#231F84; font-weight:500;}
-
 .btn_voiceRec::before {content:''; width:2.4rem; height:2.4rem; background-size:2.4rem; 
 	background:url(../images/ic_recordvoice_fill.svg) no-repeat center;}
-.btn_voiceMake::after {content:''; width:2.4rem; height:2.4rem; background-size:2.4rem;
-	background:url(../images/ic_makevoice_fill.svg) no-repeat center;}
-.btn_simpleBgm::before {content:''; width:2.4rem; height:2.4rem; background-size:2.4rem;
-	background:url(../images/ic_bgm_bk.svg) no-repeat center;}
 
 
-.btn_simpleBgm:active::before, .btn_simpleBgm:hover::before {content:''; width:2.4rem; height:2.4rem; background-size:2.4rem;
-	background:url(../images/ic_bgm_orn.svg) no-repeat center;}
+
+.btn_simpleBgm, .btn_simpleVoice {position:relative;
+	height:5.4rem; text-align:center;
+	font-size:1.5rem; color:#231F84; font-weight:500; justify-content:center;}
+.btn_simpleBgm {padding-left: 5rem;}
+.btn_simpleVoice {padding-right:5rem;}
+.btn_simpleBgm::before {content:''; position:absolute; top:50%; left:0.4rem; margin-top:-2.2rem;
+		width:4.4rem; height:4.4rem; border-radius:50%;
+		background:#ebebeb url(../images/ic_bgm_bk.svg) no-repeat center; background-size:1.8rem;}
+	
+.btn_simpleVoice::after {content:''; position:absolute; top:50%; right:0.4rem; margin-top:-2.2rem;
+	width:4.4rem; height:4.4rem; border-radius:50%;
+	background:#ebebeb url(../images/ic_makevoice_fill.svg) no-repeat center;  background-size:1.9rem;}
+
+.btn_simpleBgm:active, .btn_simpleBgm:hover
+.btn_simpleVoice:active, .btn_simpleVoice:hover {background-color:#f9f9f9;}
+
 
 .voiceRecording, .appliedVoice {display:none; padding:2rem; height:12rem;}
 .voiceRecording .btn_i_play,
@@ -884,12 +892,6 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 	display:flex; flex-direction:column;}
 .messagewrap > .btn_messagePop {position:absolute; top:1rem; right:2rem; z-index:2;}
 
-
-/* .bottom-sheet .messagewrap {position:absolute; top:3.2rem; left:0; right:0; bottom:2rem;}
-.bottom-sheet .messageBox {position:absolute; top:0; left:2rem; right:2rem; bottom:8rem;}
-.bottom-sheet .messagewrap > .btn_messagePop {top:0; right:2rem;}
-.bottom-sheet .messageBox > textarea {margin:0 0 0.6rem; padding:0; height:100%;}
- */
 
 /* check box - check */
 .checkbox_chk {position:relative;}
@@ -981,12 +983,16 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 .picNvoice .myVoice {position:fixed; left:0; right:0; bottom:0; z-index:10;
 	height:6.8rem; border-radius:2rem 2rem 0 0; align-items:center;
 	box-shadow:0 0.4rem 2rem 0 rgba(0, 0, 0, 0.1); background-color:#fff;}
-.simple_btnGroup {display:flex; justify-content:space-around; align-items:center;}
+.simple_btnGroup {margin:0.5rem; border:1px solid #e1e1e1; border-radius:1.8rem;
+	display:flex; justify-content:space-around; align-items:center;}
+.simple_btnGroup > button {width:50%;}
+.simple_btnGroup > button:first-child {border-right:1px solid #e1e1e1;}
 
 /***  my page   ***/
 .mypage {position:fixed; top:0; right:0; width:100%; bottom:0; z-index:50; 
 	background:#fff;}
- .mypage::before {content:''; position:absolute; top:0; left:0; right:0; height:33rem; background:url(../images/bg_mypage.svg) no-repeat center bottom; background-size:cover;}
+ .mypage::before {content:''; position:absolute; top:0; left:0; right:0; height:33rem; 
+	background:url(../images/bg_mypage.svg) no-repeat center bottom; background-size:cover;}
 
 .mypage > .head {position:relative; z-index:4; padding:0 1rem; height:5rem; 
 	display:flex; justify-content:space-between; align-items:center;}
