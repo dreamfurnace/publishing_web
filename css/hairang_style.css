@@ -1415,7 +1415,7 @@ height:4.6rem; background:rgba(0,0,0,0.6);}
 
 /* popup tab  */
 .popupTab {padding:1rem 2rem; display:flex; gap:0.8rem; overflow:hidden; overflow-x:auto;}
-.popupTab > button {padding:0 2rem; height:3.2rem; line-height:3rem;
+.popupTab > button {padding:0 2rem; height:3.6rem; line-height:3.4rem;
 	display:flex; gap:0.6rem; color:#1E1D36; font-size:1.5rem;
 	border-radius:2.5rem; border:1px solid #ddd; background:#fff;
 	box-shadow:0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.1);}
