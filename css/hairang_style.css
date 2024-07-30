@@ -794,7 +794,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 	text-indent:-9999em; overflow:hidden; white-space:nowrap;
 	border-radius:50%; background-color:rgba(255, 255, 255, 0.2);}
 .soundSticker > .ic_voice {background:rgba(255, 255, 255, 0.2) url(../images/ic_voice_wh.svg) no-repeat center; background-size:2.2rem;}
-.soundSticker > .ic_bgm {background:rgba(255, 255, 255, 0.2) url(../images/ic_bgm_wh.svg) no-repeat center; background-size:2.2rem;}
+.soundSticker > .ic_bgm {background:rgba(255, 255, 255, 0.2) url(../images/ic_bgm_wh.svg) no-repeat center; background-size:2rem;}
 .soundSticker > .ic_voice.done {background:rgba(255, 255, 255, 0.4) url(../images/ic_voice_blu.svg) no-repeat center; background-size:2.2rem;}
 .soundSticker > .ic_bgm.done {background:rgba(255, 255, 255, 0.4) url(../images/ic_bgm_blu.svg) no-repeat center; background-size:2.2rem;}
 
@@ -832,16 +832,19 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 	font-size:1.5rem; color:#231F84; font-weight:500; justify-content:center;}
 .btn_simpleBgm {padding-left: 5rem;}
 .btn_simpleVoice {padding-right:5rem;}
-.btn_simpleBgm::before {content:''; position:absolute; top:50%; left:0.4rem; margin-top:-2.2rem;
+
+.btn_simpleBgm::after {content:''; position:absolute; top:50%; left:0.4rem; margin-top:-2.2rem;
 		width:4.4rem; height:4.4rem; border-radius:50%;
 		background:#ebebeb url(../images/ic_bgm_bk.svg) no-repeat center; background-size:1.8rem;}
-	
+.btn_simpleBgm.done::after {background:#383494 url(../images/ic_bgm_wh.svg) no-repeat center;}
 .btn_simpleVoice::after {content:''; position:absolute; top:50%; right:0.4rem; margin-top:-2.2rem;
 	width:4.4rem; height:4.4rem; border-radius:50%;
 	background:#ebebeb url(../images/ic_makevoice_fill.svg) no-repeat center;  background-size:1.9rem;}
+.btn_simpleVoice.done::after {background:#383494 url(../images/ic_makevoice_wh02.svg) no-repeat center;}
 
 .btn_simpleBgm:active, .btn_simpleBgm:hover
 .btn_simpleVoice:active, .btn_simpleVoice:hover {background-color:#f9f9f9;}
+
 
 
 .voiceRecording, .appliedVoice {display:none; padding:2rem; height:12rem;}
