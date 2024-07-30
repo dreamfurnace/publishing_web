@@ -17,9 +17,9 @@
 <body>
 <button type="button" class="btn_popTest" id="test_callpop">call POPUP - sample message</button><!-- ref.event -->
 <!--  POPUP  AREA -->
-     <div class="popup_full">
+     <div class="popup_full messageGroup" style="display:block;">
           <div class="popHeader">
-               <h2>샘플 메세지</h2>
+               <h2>예시 메세지</h2>
                <button class="btn_i_popclose" type="button" id="btn_popClose">닫기</button>
           </div>
           <div class="popContainer">
@@ -33,7 +33,7 @@
                          <button type="button" data-toggle-target="#messageTab05">크리스마스</button>
                     </div>
                     <div class="popupPanel">
-                         <div id="messageTab01" class="messageGroup active"> 
+                         <div id="messageTab01" class="item active"> 
                               <div class="checkbox_tbox"> 
                                    <label for="item01">
                                         <input type="radio" id="item01" name="selected">
@@ -103,10 +103,10 @@
                                    </label>
                               </div><!-- end:class="checkbox_chk"  -->                              
                          </div>
-                         <div id="messageTab02" class="messageGroup">2222</div>
-                         <div id="messageTab03" class="messageGroup">3333</div>
-                         <div id="messageTab04" class="messageGroup">4444</div>
-                         <div id="messageTab05" class="messageGroup">555</div>
+                         <div id="messageTab02" class="item">2222</div>
+                         <div id="messageTab03" class="item">3333</div>
+                         <div id="messageTab04" class="item">4444</div>
+                         <div id="messageTab05" class="item">555</div>
                     </div>
                </section>
           </div>
@@ -115,14 +115,14 @@
 
 <script>
 // popupEvent_closeBtn
-$('#btn_popClose').click(function(){
-     $('.popup_full').fadeOut(100);
-});
+// $('#btn_popClose').click(function(){
+//      $('.popup_full').fadeOut(100);
+// });
    
-// popEvent_testBtn
-$('#test_callpop').click(function(){
-     $('.popup_full').fadeIn(100);
-});
+// // popEvent_testBtn
+// $('#test_callpop').click(function(){
+//      $('.popup_full').fadeIn(100);
+// });
 
 // header Tab
 $('.popupTab > button').on('click', function(evt) {
@@ -130,7 +130,7 @@ $('.popupTab > button').on('click', function(evt) {
     $(".popupTab > button").removeClass("on");
     $(this).addClass('on');
     var sel = this.getAttribute('data-toggle-target');
-    $('.messageGroup').removeClass('active').filter(sel).addClass('active');
+    $('.item').removeClass('active').filter(sel).addClass('active');
 });
 
 //  remove radio check
