@@ -1468,8 +1468,8 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	border-radius:2rem 2rem 0 0; overflow:hidden;
 	background:#fff; box-shadow:0 0.4rem 2rem 0 rgba(112, 144, 176, 0.2);}
 
-.groupEdit .popup_btm_header {height:6rem; font-size:1.6rem; line-height:6rem; text-align:center; background:#f4f4f4;}
-.groupEdit .popContainer {padding:2rem 0;}
+.groupEdit .popup_btm_header {height:5rem; font-size:1.6rem; line-height:5rem; text-align:center; background:#f4f4f4;}
+.groupEdit .popContainer {padding:1rem 0 2rem;}
 
 .popupContainer {display:none; position:relative; z-index:32;}
 .popup_midWrap {position:fixed; top:0; left:0; right:0; bottom:0; 
@@ -1601,7 +1601,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .popContainer .inputList {padding:1rem 2rem;}
 .inputList {display:flex; flex-direction:column; gap:4rem;}
 .inputList > .item {display:flex; flex-direction:column;}
-.inputList > .item > span {color:#777; font-size:1.4rem;}
+.inputList > .item > span {color:#777; font-size:1.5rem;}
 
 
 /*  popup - add customer   */
