@@ -1292,8 +1292,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 /*** my pic & voice   ***/
 .picNvoice {position:relative; padding:1rem 2rem 0;}
 .picNvoice::before {content:''; position:absolute; top:-7rem; left:0; right:0;
-	height:30rem; 
-	background:url(../images/bg_mypic.svg) no-repeat center bottom; background-size:cover;}
+	height:28rem; background:url(../images/bg_mypic.svg) no-repeat center bottom; background-size:cover;}
 .picNvoice .tit {position:relative; z-index:2; text-align:center;
 	margin:4rem 0 2rem; display:flex; flex-direction:column; gap:0.2rem;}
 .picNvoice .tit > strong {font-size:1.6rem; font-weight:500; color:#333;}
@@ -1450,7 +1449,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .popup_btnGroup {margin:0 2rem 2.4rem;}
 .popup_btnGroup > button {width:100%; height:4.6rem; font-size:1.5rem;  border-radius:1rem;}
 .popup_btnGroup.col > button {width:50%;}
-.popup_btnGroup.col {display:flex; gap:1rem;}
+.popup_btnGroup.col {display:flex; gap:1.4rem;}
 .popup_btnGroup .btn_t_l {color:#878787; border:1px solid #d6d6d6; background:#fff;}
 .popup_btnGroup .btn_t_l:active, .popup_btnGroup .btn_t_l:hover {background-color:#f8f8f8;}
 .popup_btnGroup .btn_t_r {color:#fff; background:#ff6600;}
@@ -1465,8 +1464,11 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 
 .popup_btm {display:none; 
 	position:fixed; left:0; right:0; z-index:31; bottom:0;
-	border-radius:2rem 2rem 0 0; 
+	border-radius:2rem 2rem 0 0; overflow:hidden;
 	background:#fff; box-shadow:0 0.4rem 2rem 0 rgba(112, 144, 176, 0.2);}
+
+.groupEdit .popup_btm_header {height:6rem; font-size:1.6rem; line-height:6rem; text-align:center; background:#f4f4f4;}
+.groupEdit .popContainer {padding:2rem 0;}
 
 .popupContainer {display:none; position:relative; z-index:32;}
 .popup_midWrap {position:fixed; top:0; left:0; right:0; bottom:0; 

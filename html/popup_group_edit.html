@@ -15,43 +15,29 @@
 </head>
 
 <body>
-<button type="button" class="btn_popTest" id="test_callpop">call POPUP</button><!-- ref.event -->
-
 <!--  POPUP  AREA -->
-     <div class="popup_full">
-          <div class="popHeader">
-               <h2>그룹수정</h2> <!-- 그룹 만들기 경우 '새그룹 만들기' -->
-               <button class="btn_i_popclose" type="button" id="btn_popClose">닫기</button>
-          </div>
-          <div class="popContainer">
-               <div class="inputList">
-                    <div class="item">
-                         <span>그룹명</span>
-                         <input type="text" placeholder="그룹명을 입력하세요.">
-                    </div>
-                    <div class="item">
-                         <span>상세설명</span>
-                         <input type="text" placeholder="상세설명을 입력하세요.">
-                    </div>
+<div class="dimmedLayer show"></div><!-- end: class="dimmedLayer" -->
+<div class="popup_btm groupEdit" style="display:block;">
+     <div class="popup_btm_header">
+          <h2>그룹수정</h2> <!-- 그룹 만들기 경우 '새그룹 만들기' -->
+     </div>
+     <div class="popContainer">
+          <div class="inputList">
+               <div class="item">
+                    <span>그룹명</span>
+                    <input type="text" placeholder="그룹명을 입력하세요." value="알럽가족">
+               </div>
+               <div class="item">
+                    <span>상세설명</span>
+                    <input type="text" placeholder="상세설명을 입력하세요.">
                </div>
           </div>
-          <div class="popup_btnGroup col"> <!--  double btn-->
-               <button type="button" class="btn_t_l">취소</button>
-               <button type="button" class="btn_t_r">저장</button>
-          </div>
-     </div<><!-- end: class="popup_full"  -->
-<!-- // POPUP  AREA -->
-
-<script>
-// popupEvent_closeBtn
-$('#btn_popClose').click(function(){
-     $('.popup_full').fadeOut(100);
-});
-   
-// popEvent_testBtn
-$('#test_callpop').click(function(){
-     $('.popup_full').fadeIn(100);
-});
-</script>
+     </div>
+     <div class="popup_btnGroup col">
+          <button type="button" class="btn_t_l">취소</button>
+          <button type="button" class="btn_t_r">저장</button>
+     </div>
+</div><!-- end: class="popup_btm"  -->
+<!--//  POPUP  AREA -->
 </body>
 </html>
