@@ -321,7 +321,8 @@ a.btn_t_b:visited {color:#fff;}
 
 section > h2, section > h3 {display:none;}
 
-.scrollContainer {position:fixed; left:0; right:0; bottom:0; padding:0 0 14rem; 
+.scrollContainer {position:fixed; left:0; right:0; bottom:0;
+	padding:0 0 14rem; 
 	overflow:hidden; overflow-y:auto;}
 
 .btnGroup_mf {margin:3rem 0 2rem; display:flex; justify-content:center; gap:1.2rem;}
@@ -355,7 +356,7 @@ header > h1 {margin-left:1rem;}
 header > .asideMenu {display:flex; gap:0; margin-right:-0.6rem;}
 
 header > .btn_group_l,
-header > .btn_group_r {display:flex; gap:0.8rem; align-items:center;}
+header > .btn_group_r {position:relative; z-index:2; display:flex; gap:0.8rem; align-items:center;}
 header > .btn_group_r button {height:3rem; line-height:3rem;}
 header > .btn_group_l > h1 {font-size:1.8rem;}  
 
@@ -1117,7 +1118,7 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 
 /***   Customer  ***/
 .customer > .scrollContainer {top:14rem;}
-.btnGroup_edit {padding:0 1rem 0 2rem;
+.btnGroup_edit {position:relative; z-index:2; padding:0 1rem 0 2rem;
 	display:flex; justify-content:space-between; align-items:center;}
 .btnGroup_edit button {padding:0 1rem; height:3rem; color:#383494; font-weight:500; font-size:1.6rem;}
 .btnGroup_edit button:active, .btnGroup_edit button:hover {background-color:#f8f8f8; border-radius:2.5rem;}
@@ -1215,7 +1216,10 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 
 
 /*** sent box   ***/
-.sentbox .templateList {display:flex; gap:1.2rem; flex-direction:column; margin:0;}
+.sentbox::before {content:''; position:fixed; top:0; left:0; right:0; height:32rem; z-index:0;
+	background:url(../images/bg_head_sent.svg) no-repeat center bottom; background-size:cover;}
+.sentbox .templateList {margin:0;
+	display:flex; gap:1.2rem; flex-direction:column;}
 .sentbox .templateList > .item {position:relative; display:block;}
 .sentbox .templateList > .item > a {
 	display:flex; gap:2.5rem; overflow:hidden;  border-radius:1.2rem; height:14rem; border-radius:1.6rem; border:1px solid #e1e1e1; 
@@ -1225,9 +1229,10 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .sentbox .templateList > .item > a:active,
 .sentbox .templateList > .item > a:hover {background-color:#f8f8f8;}
 .sentbox .checkimg {display:flex; gap:2.5rem; overflow:hidden; height:14rem; 
-	border-radius:1.6rem; border:1px solid #e1e1e1;
+	border-radius:1.6rem; border:1px solid #e1e1e1; background:#fff;
 	box-shadow:0 0 1.5rem 0 rgba(122, 144, 176, 0.25);}
 .sentbox .checkbox_img input:checked ~ .checkimg {border-color:#767599;}
+.sentbox .checkbox_chk .checkmark {background-color:#fff;}
 
 .sentbox .scrollContainer {top:8.4rem; padding-top:1.2rem;}
 .sentbox .sentInfo {position:relative;
