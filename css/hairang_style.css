@@ -92,6 +92,14 @@ textarea::placeholder {color:#999;}
 	display:block; width:2.2rem; height:2.2rem; border-radius:50%; background-color:#eee;}
 .btn_i_sehDel::after {content:''; position:absolute; top:50%; left:50%; z-index:2; width:2.2rem; height:2.2rem;
 	margin:-1.1rem 0 0 -1.1rem; background:url(../images/ic_x_2.svg) no-repeat center; background-size:1.4rem;}
+.btn_i_del {width: 3rem; height: 3rem;
+	background: url(../images/ic_x_2.svg) no-repeat center; background-size: 2rem;}
+
+.btn_i_seh:active, .btn_i_seh:hover,
+.btn_i_sehDel:active, .btn_i_sehDel:hover,
+.btn_i_del:active, .btn_i_del:hover {background-color:#f8f8f8; border-radius:50%;}
+
+
 
 .btn_i_albumModify, .btn_i_albumDownload, .btn_i_albumSending {width:3.6rem; height:3.6rem;}
 .btn_i_albumModify {background:url(../images/myalbum_i_modify.svg) no-repeat center; background-size:3rem;}
@@ -1009,7 +1017,7 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 	display:flex; gap:0.6rem; color:#333; border-radius:2.5rem; 
 	border:1px solid #ddd; background:#fff; box-shadow:0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.1);}
 .cateTab > .on, .btn_t_g.on,
-.cateTab.ty02 > .on  {color:#fff; background:#1E1D36 ; border-color:#1E1D36; font-weight:500;}
+.cateTab.ty02 > .on {color:#fff; background:#1E1D36 ; border-color:#1E1D36; font-weight:500;}
 .cateTab > button > em {display:none; font-weight:500; color:#FBB584;}
 .cateTab > button.on > em {display:block;}
 
@@ -1018,6 +1026,8 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 	display:block; width:0.7rem; height:0.7rem; 
 	border:0.12rem solid #fff; border-radius:50%; background:#FF6600;}
 
+.cateTab.tyGry {padding:2rem 2rem 1.2rem; border-bottom:1px solid #e1e1e1; background:#f8f8f8;}
+	
 [class^="smCategory0"] {display:flex; gap:0.6rem; align-items:center; justify-content:center;
 	height:3.6rem !important;
 	 box-shadow:0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.1);}
@@ -1173,19 +1183,19 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 .customer.edit .list > .item:hover {box-shadow:0 0 1.5rem 0 rgba(122, 144, 176, 0.25);}
 
 
-.customerList .scrollContainer {top:24.6rem; display:flex; flex-direction:column; gap:1.4rem;}
+.customerList .scrollContainer {top:23.6rem; display:flex; flex-direction:column; gap:0.4rem;}
 .customerList .customer_seh {margin-bottom:0.6rem;}
 .customerList .btnGroup {display:flex;}
 .customerList .btnGroup > .btn_addItem {margin-right:0;}
 .customer_seh {margin:1rem 0 1.4rem;}
-.customer_seh > .inputwrap {display:flex; justify-content:space-between;  padding-right:2rem;
+.customer_seh > .inputwrap {padding-right:2rem; display:flex; justify-content:space-between;
 	border-bottom:1px solid #f1f1f1;}
 .customer_seh > .inputwrap > input {padding-left:2rem; font-size:1.6rem;
 	width:calc(100% - 8rem); border:none;}
 .customer_seh > .inputwrap > input::placeholder {font-size:1.8rem;}
-.customer_seh .btnGroup {display:flex; flex-direction:row; align-items:center; }
+.customer_seh .btnGroup {display:flex; flex-direction:row; align-items:center; margin-top:-0.8rem; }
 
-.customerList .item {position:relative; margin:0 2rem;  padding:1.4rem 1.6rem;
+.customerList .item {position:relative; margin:0 2rem;  padding:1.4rem 1.2rem;
 	display:flex; flex-direction:column; gap:0.6rem;
 	border-bottom:1px solid #ebebeb;}
 
@@ -1203,7 +1213,7 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 
 .customerList .c_name {width:100%;}
 .customerList .c_info > span {color:#333;}
-.customerList.edit .btn_i_del {display:block;}
+.customerList.edit .btn_i_del {display:block; position:absolute; top:50%; right:0; margin-top:-1.5rem; }
 .customerList.edit .item.noAgree::before {right:4.6rem;}
 
 
