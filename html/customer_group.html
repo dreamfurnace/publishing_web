@@ -23,77 +23,79 @@
           </div>
      </header>
 
-     <div class="btnGroup_edit">
-          <div class="btn_group_l"></div>
-          <div class="btn_group_r">
-               <button type="button" id="btnEdit">편집</button>
-			<button type="button" id="btnEdit_cancel" class="skip">취소</button>
-          </div>
-     </div>
-
 	<main class="customer"> <!-- 편집시 'edit' 추가 -->
-		<button class="btn_addItem" type="button" onclick = "window.location.href='popup_group_edit.html';">새 그룹 만들기</button>
+		<div class="btnwrap_t">
+			<button class="btn_addItem" type="button" onclick = "window.location.href='popup_group_edit.html';">새 그룹 만들기</button>
+		</div>
+		
+		<div class="btnGroup_edit">
+			<div class="btn_group_l"></div>
+			<div class="btn_group_r">
+				<button type="button" id="btnEdit">편집</button>
+				<button type="button" id="btnEdit_cancel" class="skip">취소</button>
+			</div>
+		</div>
 		<div class="scrollContainer">
 			<section class="list">
 				<h2>고객리스트_보기</h2>
 				<a class="item" href="customer_list.html">
-					<div class="btnGroup">
-						<button class="btn_i_modify" type="button">수정</button>
-						<button class="btn_i_del" type="button">삭제</button>
-					</div>
 					<div class="groupInfo">
 						<span class="groupTit">
 							알럽가족<em>5</em>
 						</span>
 						<span class="groupExp">사랑하는 가족</span>						   
 					</div>
-				</a><!-- end:class="item"  -->
-				<a class="item" href="#a">
 					<div class="btnGroup">
 						<button class="btn_i_modify" type="button">수정</button>
 						<button class="btn_i_del" type="button">삭제</button>
 					</div>
+				</a><!-- end:class="item"  -->
+				<a class="item" href="#a">
 					<div class="groupInfo">
 						<span class="groupTit">
 							예쁜친구s<em>5</em>
 						</span>
 						<span class="groupExp">사랑하는 가족</span>						   
 					</div>
-				</a><!-- end:class="item"  --> 
-				<a class="item" href="#a">
 					<div class="btnGroup">
 						<button class="btn_i_modify" type="button">수정</button>
 						<button class="btn_i_del" type="button">삭제</button>
 					</div>
+				</a><!-- end:class="item"  --> 
+				<a class="item" href="#a">
 					<div class="groupInfo">
 						<span class="groupTit">
 							완소 VIP<em>105</em>
 						</span>
 						<span class="groupExp"></span>						   
 					</div>
-				</a><!-- end:class="item"  --> 
-				<a class="item" href="#a">
 					<div class="btnGroup">
 						<button class="btn_i_modify" type="button">수정</button>
 						<button class="btn_i_del" type="button">삭제</button>
 					</div>
+				</a><!-- end:class="item"  --> 
+				<a class="item" href="#a">
 					<div class="groupInfo">
 						<span class="groupTit">
 							애틋한 고객<em>105</em>
 						</span>
 						<span class="groupExp"></span>						   
 					</div>
-				</a><!-- end:class="item"  --> 
-				<a class="item" href="#a">
 					<div class="btnGroup">
 						<button class="btn_i_modify" type="button">수정</button>
 						<button class="btn_i_del" type="button">삭제</button>
 					</div>
+				</a><!-- end:class="item"  --> 
+				<a class="item" href="#a">
 					<div class="groupInfo">
 						<span class="groupTit">
 							감사한 고객<em>105</em>
 						</span>
 						<span class="groupExp"></span>						   
+					</div>
+					<div class="btnGroup">
+						<button class="btn_i_modify" type="button">수정</button>
+						<button class="btn_i_del" type="button">삭제</button>
 					</div>
 				</a><!-- end:class="item"  -->           
 			</section>
@@ -107,14 +109,12 @@ $(document.body).css("background","#fff");
 $("#btnEdit").on("click", function () {
 	$("#btnEdit").addClass('skip');
 	$("#btnEdit_cancel").removeClass('skip');
-	$(".btn_addItem").addClass('skip');
 	$(".customer").addClass('edit');
 });
 
 $("#btnEdit_cancel").on("click", function () {
 	$("#btnEdit").removeClass('skip');
 	$("#btnEdit_cancel").addClass('skip');
-	$(".btn_addItem").removeClass('skip');
 	$(".customer").removeClass('edit');
 });
 

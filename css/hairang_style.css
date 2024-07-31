@@ -204,11 +204,13 @@ a.btn_t_b:visited {color:#fff;}
 .btn_addCustomer:active, .btn_addCustomer:hover {box-shadow:none; background-color:#f9f9f9 ;}
 
 .btn_addItem {display:flex; justify-content:center; align-items:center; gap:0.8rem;
-	margin:1rem 2rem; width:calc(100% - 4rem);
-	color:#333; font-weight:500; height:4rem; border:1px solid #999;}
-.btn_addItem::before {content:''; width:1.4rem; height:1.4rem; transform:rotate(45deg);
-	background:url(../images/btn_i_close01.svg) no-repeat center; background-size:100%;}
+	margin:1rem 2rem; width:calc(100% - 4rem); color:#231F84; font-weight:500; height:4rem; 
+	border-radius:2.5rem; border:1px solid #231F84; background:#fff;
+	box-shadow:0 0 1.2rem 0 rgba(0, 0, 0, 0.1);}
+.btn_addItem::before {content:''; width:1.4rem; height:1.4rem;
+	background:url(../images/ic_additem.svg) no-repeat center; background-size:100%;}
 .btn_addItem:active, .btn_makeGroup:hover {border-color:#333;}
+
 
 .btn_sentList {padding:1rem 0.2rem 0.4rem; display:flex; justify-content:center; gap:0.4rem; 
 	color:#383494; font-weight:500; border-bottom:1px solid #383494;}
@@ -467,11 +469,11 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 	box-shadow:0 1.6rem 2rem 0 rgba(112, 144, 176, 0.2);}
 .bgCard > img {position:relative; width:100%; object-fit:cover;}
 .bgCard > .intro {position:absolute; left:2rem; right:2rem; top:64%; counter-reset: colorcircle 0;}
-.bgCard > .intro li {position:relative; padding-left:3.4rem; margin:0 0 1rem; font-size:1.6rem; font-weight:500; color:#292752; word-break:keep-all;}
+.bgCard > .intro li {position:relative; padding-left:3.4rem; margin:0 0 1rem; font-size:1.8rem; font-weight:500; color:#292752; word-break:keep-all;}
 .bgCard > .intro li::before {position:absolute; top:-0.2rem; left:0;
 	counter-increment:colorcircle 1; content: counter(colorcircle);
 	font-size:1.4rem; color:#fff; font-weight:600;
-	width:2.4rem; height:2.4rem; text-align:center; line-height:2.2rem;
+	width:2.2rem; height:2.2rem; text-align:center; line-height:2rem;
 	border-radius:50%; background:#D4D4DC; box-shadow:0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.1);}
 
 
@@ -491,10 +493,10 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .makeTemplate .stage {position:relative;}
 .makeTemplate .stage .bgCard::before {content:"생성된 템플릿이 없습니다."; font-weight:500;
 	font-size:1.8rem; text-align:center; display:block; color: rgba(54,52,104, 0.6);
-	white-space:nowrap; position:absolute; top:36%; left:0; right:0;}
+	white-space:nowrap; position:absolute; top:34%; left:0; right:0;}
 
-.makeTemplate .stage.rate11 .bgCard::before {top:42%;}
-.makeTemplate .stage.rate43 .bgCard::before {top:48%;}
+.makeTemplate .stage.rate11 .bgCard::before {top:40%;}
+.makeTemplate .stage.rate43 .bgCard::before {top:47%;}
 
 
 .makeTemplate .btnGroup_mf {position:fixed; left:0; right:0; bottom:17.4rem;}
@@ -642,10 +644,10 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .valuegroup > button {padding:0.4rem 1rem; color:#fff; font-weight:300; white-space:nowrap; height:3rem;
 	border-radius:2rem; background:rgba(242, 242, 242, 0.2);}
 .valueWrap > .btngroup {display:flex; flex-direction:column; gap:1rem;}
-.valueWrap > .btngroup > button {height:3.2rem; line-height:3rem;}
+.valueWrap > .btngroup > button {width:8rem; height:3.2rem; line-height:3rem;}
 .valueWrap > .btngroup > .off {color:rgba(255,255,255, 0.4); background:rgba(242, 242, 242, 0.2);}
 .valueWrap > .btngroup > .on {color:#1E1D36; background:#fff;}
-
+.btn_create.off, .btn_reCreate.off {text-align:center; padding:0;}
 
 /*  checkbox style -text   */
 .valuegroup > .checkbox_t {height:2.8rem; margin:0 0 0.6rem;}
@@ -932,6 +934,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 .messageBox.error .noti > span {display:block;}
 .messageBox.error textarea  {border-color:#DB0909;}
+.messageBox.error .num {color:#DB0909;}
 
 .voiceRecording.active, 
 .voiceMaking.active,
@@ -1128,17 +1131,24 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 
 
 /***   Customer  ***/
-.customer > .scrollContainer {top:14rem;}
+.customer:before {content:''; position:fixed; top:0; left:0; right:0; height:28rem; z-index:0;
+	background:url(../images/bg_head_customer.svg) no-repeat center bottom; background-size:cover;}
+
+.customer > .scrollContainer {top:16.2rem;}
 .btnGroup_edit {position:relative; z-index:2; padding:0 1rem 0 2rem;
 	display:flex; justify-content:space-between; align-items:center;}
 .btnGroup_edit button {padding:0 1rem; height:3rem; color:#383494; font-weight:500; font-size:1.6rem;}
 .btnGroup_edit button:active, .btnGroup_edit button:hover {background-color:#f8f8f8; border-radius:2.5rem;}
 .btnGroup_edit .checkbox_chk > label {display:flex; flex-direction:row; gap:0.8rem; align-items:center;}
 .btnGroup_edit .tyOrn {color:#ff6600;}
+.customer > .btnwrap_t {padding:0 0 1rem; margin:0 0 1rem; position:relative; z-index:2; border-bottom:1px solid #ECE2D7;}
 
-.customer .list {padding:1rem 2rem; display:flex; flex-direction:column; gap:1.4rem;}
-.customer .list > .item {padding:1.4rem 1.6rem; position: relative;
-	border-radius:1.4rem; background:#fafafa;}
+
+.customer .list {padding:2rem; display:flex; flex-direction:column; gap:1.4rem;}
+.customer .list > .item {padding:1.4rem 1.6rem; 
+	display:flex; align-items:center; justify-content: space-between;
+	border-radius:1.6rem; border:1px solid #e1e1e1; background:#fff;
+	box-shadow:0 0 1.5rem 0 rgba(122, 144, 176, 0.25);}
 .customer .list > .item:active,
 .customer .list > .item:hover {box-shadow: 0 0 2rem 0 rgba(112, 144, 176, 0.25);
 	background-color: #fff;}
@@ -1148,11 +1158,9 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 .groupInfo .groupExp {color:#777; font-size:1.4rem;}
 
 .customer.edit .btn_makeGroup {display:none;}
-.customer.edit > .scrollContainer {top:8.4rem}
 
 .customer .btnGroup {display:none;}
-.customer.edit .btnGroup {position:absolute; top:0.6rem; right:0.8rem; z-index:3;
-	display:flex; gap:0;}
+.customer.edit .btnGroup {display:flex; gap:0;}
 .customer.edit .btnGroup > button {width:3rem; height:3rem;}
 .customer.edit .list > .item:active,
 .customer.edit .list > .item:hover {box-shadow:none; background-color: #fafafa;}
