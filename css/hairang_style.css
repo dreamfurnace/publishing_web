@@ -1189,7 +1189,7 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 .customerList .btnGroup > .btn_addItem {margin-right:0;}
 .customer_seh {margin:1rem 0 1.4rem;}
 .customer_seh > .inputwrap {padding-right:2rem; display:flex; justify-content:space-between;
-	border-bottom:1px solid #f1f1f1;}
+	border-bottom:1px solid #e1e1e1;}
 .customer_seh > .inputwrap > input {padding-left:2rem; font-size:1.6rem;
 	width:calc(100% - 8rem); border:none;}
 .customer_seh > .inputwrap > input::placeholder {font-size:1.8rem;}
@@ -1612,7 +1612,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .inputList {display:flex; flex-direction:column; gap:4rem;}
 .inputList > .item {display:flex; flex-direction:column;}
 .inputList > .item > span {color:#777; font-size:1.5rem;}
-
+.inputList input[type="text"]::placeholder {font-size:1.6rem;}
 
 /*  popup - add customer   */
 .addCustomer > .btnGroup {display:flex; gap:0.8rem; margin:1rem 2rem 2.4rem; justify-content:right;}
