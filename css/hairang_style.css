@@ -466,9 +466,15 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 	background:#FFF url(../images/bg_hirang01.svg) no-repeat center 15%; background-size:15rem;
 	box-shadow:0 1.6rem 2rem 0 rgba(112, 144, 176, 0.2);}
 .bgCard > img {position:relative; width:100%; object-fit:cover;}
-.bgCard > .intro {position:absolute; left:6rem; right:4rem; top:54%;
-	font-size:1.6rem; font-weight:500; color:#292752; word-break:keep-all;}
-.bgCard > .intro li {margin:0 0 0.6rem; text-indent:-1.6rem;}
+.bgCard > .intro {position:absolute; left:2rem; right:2rem; top:64%; counter-reset: colorcircle 0;}
+.bgCard > .intro li {position:relative; padding-left:3.4rem; margin:0 0 1rem; font-size:1.6rem; font-weight:500; color:#292752; word-break:keep-all;}
+.bgCard > .intro li::before {position:absolute; top:-0.2rem; left:0;
+	counter-increment:colorcircle 1; content: counter(colorcircle);
+	font-size:1.4rem; color:#fff; font-weight:600;
+	width:2.4rem; height:2.4rem; text-align:center; line-height:2.2rem;
+	border-radius:50%; background:#D4D4DC; box-shadow:0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.1);}
+
+
 
 .bgCard.onWork {margin-top:0 !important;} 
 .emtyRate34 .bgCard > img,
@@ -485,7 +491,11 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .makeTemplate .stage {position:relative;}
 .makeTemplate .stage .bgCard::before {content:"생성된 템플릿이 없습니다."; font-weight:500;
 	font-size:1.8rem; text-align:center; display:block; color: rgba(54,52,104, 0.6);
-	white-space:nowrap; position:absolute; top:33%; left:0; right:0;}
+	white-space:nowrap; position:absolute; top:36%; left:0; right:0;}
+
+.makeTemplate .stage.rate11 .bgCard::before {top:42%;}
+.makeTemplate .stage.rate43 .bgCard::before {top:48%;}
+
 
 .makeTemplate .btnGroup_mf {position:fixed; left:0; right:0; bottom:17.4rem;}
 
@@ -898,7 +908,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 	box-shadow: 0 0 2rem 0 rgba(112, 144, 176, 0.25); border-color:#fff;}
 
 .voicePlay {margin-left:0.1rem;
-	display:flex; gap:1.4rem; width:calc(100% - 5.5rem); align-items:center;}
+	display:flex; gap:1.4rem; width:calc(100% - 5.6rem); align-items:center;}
 .voicePlay .timelineWrap {margin-top:1.4rem; width:calc(100% - 5.4rem);
 	display:flex; flex-direction:column; gap:0.4rem;}
 .voicePlay .timeline {position:relative; width:100%; height:0.2rem; background:#efefef;}
