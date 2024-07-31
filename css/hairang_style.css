@@ -870,7 +870,8 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .btn_bgm::before {content:''; width:3rem; height:3rem; 
 	background:url(../images/ic_bgm_wh.svg) no-repeat center; background-size:2.6rem;}
 
-.voiceCategory {padding:0.6rem; display:flex; justify-content:space-between; align-items:center; }
+.voiceCategory {padding:0.6rem; 
+	display:flex; justify-content:space-between; align-items:center; }
 .voiceCategory > button:active, .voiceCategory > button:hover {color:#FF6600;}
 
 .voiceBtn_wrap {width:calc(100% - 7.8rem); overflow:hidden;
@@ -887,10 +888,10 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 	background:#E9E9E9 url(../images/ic_x_1.svg) no-repeat 8.6rem 1.1rem; background-size:1.2rem; }
 	
 .voicePlay_wrap .voicePlay {position:relative; z-index:2;
-	padding:0.6rem; border-radius:2rem; border:1px solid #EFEFEF; width:calc(100% - 1.1em); background-color:#fff;}
+	padding:0.8rem; border-radius:2rem; border:1px solid #EFEFEF; width:calc(100% - 1.9rem); background-color:#fff;}
 .voicePlay_wrap .btn_i_play {width:4rem; height:4rem;}
 .voicePlay_wrap .timelineWrap {width:calc(100% - 6rem) !important;}
-.soundArea.afterUpload {height:10rem;}
+.soundArea.afterUpload {height:10.4rem;}
 .soundArea.afterUpload .voiceBtn_wrap {display:none;}
 .soundArea.afterUpload .voicePlay_wrap {display:block;}
 .soundArea.afterUpload .voiceCategory {align-items:end;}
