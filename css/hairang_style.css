@@ -1201,7 +1201,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	display:flex; gap:0.4rem; justify-content:space-between; align-items:center;
 	position:absolute; left:0; right:0; bottom:0; z-index:3; height:4.6rem;}
 .myalbum .templateList .btnGroup > button:hover,
-.myalbum .templateList .btnGroup > button:active {background-color:#666; border-radius:50%;}
+.myalbum .templateList .btnGroup > button:active {background-color:rgba(255, 255, 255, 0.2); border-radius:50%;}
 .myalbum .templateList .btnGroup > button:disabled {opacity:0.3;}
 .myalbum .templateList .itemVideo > em {bottom:5.1rem;}
 
