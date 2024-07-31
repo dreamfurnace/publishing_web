@@ -380,7 +380,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .templateList > .item {position:relative; display:flex; justify-content:center;
 	height:auto; border-radius:1rem; overflow: hidden;}
 .templateList > a:hover, 
-.templateList > a:active {border:1px solid #ff6600; box-shadow: 0 0.4rem 0.9rem 0.5rem rgba(0, 0, 0, 0.18);}
+.templateList > a:active {border:1px solid #ff6600; box-shadow:0 0 1.5rem 0 rgba(122, 144, 176, 0.30);}
 .templateList > a img,
 .templateList > a video,
 .templateList > .item img,
