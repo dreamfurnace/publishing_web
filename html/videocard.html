@@ -34,12 +34,30 @@
           </div>
      </main>
 
-     <div class="soundArea">
+     <div class="soundArea afterUpload"><!-- after upload Voice message 'afterUpload'-->
           <div class="voiceCategory">
                <button class="btn_bgm" type="button">배경음악</button>
-               <div class="voiceWrap">
+               <div class="voiceBtn_wrap">
                     <button class="btn_voiceRec" type="button" id="btn_openRecording">음성녹음</button>
                     <button class="btn_voiceMake" type="button" id="btn_openMaking">음성만들기</button>
+               </div>
+               <div class="voicePlay_wrap">
+                    <div class="voiceBox">
+                         <button type="button">음성삭제</button>
+                         <div class="voicePlay">
+                              <button class="btn_i_play" type="button" id="btn_playRecord">재생/멈춤</button>
+                              <div class="timelineWrap">
+                                   <div class="timeline">
+                                        <span></span>
+                                        <button class="btn_i_timePoint" type="button">movePoint</button>
+                                   </div>
+                                   <div class="timeTxt">
+                                        <span>0:<em>18</em></span>
+                                        <span>0:<em>30</em></span>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>   
                </div>
           </div>
      </div>

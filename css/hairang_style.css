@@ -846,7 +846,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .videoArea .rate11 .bgCard,
 .videoArea .rate43 .bgCard {margin:5rem 0 0;}
 
-.videoArea > .btnGroup_mf {position:fixed; left:0; right:0; bottom:8rem;}
+/* .videoArea > .btnGroup_mf {position:fixed; left:0; right:0; bottom:8rem;} */
 
 .soundSticker {position:absolute; top:1rem; right:1rem; z-index:2;
 	display:flex; flex-direction:column; gap:1rem;}
@@ -873,11 +873,31 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .voiceCategory {padding:0.6rem; display:flex; justify-content:space-between; align-items:center; }
 .voiceCategory > button:active, .voiceCategory > button:hover {color:#FF6600;}
 
-.voiceWrap {width:calc(100% - 7.8rem); overflow:hidden;
+.voiceBtn_wrap {width:calc(100% - 7.8rem); overflow:hidden;
 	display:flex; justify-content: space-between; border-radius:2rem; border:1px solid #EFEFEF; }
-.voiceWrap button:first-child {width:50%; border-right:1px solid #efefef;}
-.voiceWrap button:last-child {width:50%;}
-.voiceWrap button:active, .voiceWrap button:hover {background-color:#f8f8f8;}
+.voiceBtn_wrap button:first-child {width:50%; border-right:1px solid #efefef;}
+.voiceBtn_wrap button:last-child {width:50%;}
+.voiceBtn_wrap button:active, .voiceWrap button:hover {background-color:#f8f8f8;}
+
+.voicePlay_wrap {display:none; width:calc(100% - 7.8rem);}
+.voicePlay_wrap .voiceBox {text-align:right;}	
+.voicePlay_wrap .voiceBox > button {position:relative; z-index:1;
+	margin:0 0 -1.6rem; width:11rem;
+	padding:0.8rem 1rem 2rem; padding-right:2rem; border-radius:1.6rem 1.6rem 0 0; 
+	background:#E9E9E9 url(../images/ic_x_1.svg) no-repeat 8.6rem 1.1rem; background-size:1.2rem; }
+	
+.voicePlay_wrap .voicePlay {position:relative; z-index:2;
+	padding:0.6rem; border-radius:2rem; border:1px solid #EFEFEF; width:calc(100% - 1.1em); background-color:#fff;}
+.voicePlay_wrap .btn_i_play {width:4rem; height:4rem;}
+.voicePlay_wrap .timelineWrap {width:calc(100% - 6rem) !important;}
+.soundArea.afterUpload {height:10rem;}
+.soundArea.afterUpload .voiceBtn_wrap {display:none;}
+.soundArea.afterUpload .voicePlay_wrap {display:block;}
+.soundArea.afterUpload .voiceCategory {align-items:end;}
+
+
+
+
 
 .btn_voiceRec, .btn_voiceMake {height:5.4rem;
 	display:flex; gap:1rem; justify-content:center; align-items:center;
