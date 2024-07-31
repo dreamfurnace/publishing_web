@@ -1231,7 +1231,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .sentbox .templateList > .item > a:active,
 .sentbox .templateList > .item > a:hover {background-color:#f8f8f8;}
 .sentbox .checkimg {display:flex; gap:2.5rem; overflow:hidden; height:14rem;}
-.sentbox .checkbox_img input:checked ~ .checkimg {background-color:#FFF5EA;}
+.sentbox .checkbox_img input:checked ~ .checkimg {background-color:#E9F3FF;}
 .sentbox .checkbox_chk .checkmark,
 .myalbum .checkbox_chk .checkmark {background-color:#fff;}
 
