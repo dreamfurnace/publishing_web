@@ -1174,8 +1174,9 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 
 
 .customerList .scrollContainer {top:24.6rem; display:flex; flex-direction:column; gap:1.4rem;}
-
-.customerList > .btnGroup {display:flex; flex-direction:column;}
+.customerList .customer_seh {margin-bottom:0.6rem;}
+.customerList .btnGroup {display:flex;}
+.customerList .btnGroup > .btn_addItem {margin-right:0;}
 .customer_seh {margin:1rem 0 1.4rem;}
 .customer_seh > .inputwrap {display:flex; justify-content:space-between;  padding-right:2rem;
 	border-bottom:1px solid #f1f1f1;}
