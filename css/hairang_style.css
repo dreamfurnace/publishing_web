@@ -465,7 +465,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .bgCard > img {position:relative; width:100%; object-fit:cover;}
 .bgCard > .intro {position:absolute; left:2rem; right:2rem; top:64%; counter-reset: colorcircle 0;}
 .bgCard > .intro li {position:relative; padding-left:3rem; margin:0 0 1rem; font-size:1.8rem; font-weight:500; color:#292752; word-break:keep-all;}
-.bgCard > .intro li::before {position:absolute; top:; left:0;
+.bgCard > .intro li::before {position:absolute; top:0; left:0;
 	counter-increment:colorcircle 1; content: counter(colorcircle);
 	font-size:1.4rem; color:#fff; font-weight:600;
 	width:2.2rem; height:2.2rem; text-align:center; line-height:2rem;
