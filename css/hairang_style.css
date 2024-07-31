@@ -1468,7 +1468,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .popup_btnGroup .btn_t_r:active, .popup_btnGroup .btn_t_r:hover {background:#CC5200;}
 
 .popup_btnGroup .btn_t_l:disabled, 
-.popup_btnGroup .btn_t_r:disabled {color:#aaa; background:#E1E1E1;}
+.popup_btnGroup .btn_t_r:disabled {color:#ccc; background:#f1f1f1; border:none;}
 
 .popupWrap {margin:3em 2rem;}
 .popMessage {text-align:center; line-height:1.4; color:#333; font-size:1.7rem; word-break:keep-all;}
@@ -1532,7 +1532,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .popContainer {padding:5rem 0;}
 .popContainer > .stage > .bgCard {margin-top:0;}
 .popup_full > .popup_btnGroup {position:fixed; left:0; right:0; bottom:0; 
-	padding:2rem 2rem 2.4rem; margin:0;}
+	padding:2rem 2rem 2.4rem; margin:0; background:#fff;}
 
 
 
@@ -1623,7 +1623,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .addCustomer > .btnGroup > button:last-child {border-radius:0 2.5rem 2.5rem 0;}
 
 .addCustomer > .customer_seh {margin-bottom:2.4rem;}
-.addCustomer > .scrollContainer {top:16.3rem; bottom:9.4rem;}
+.addCustomer > .scrollContainer {top:16.3rem; bottom:9rem;}
 .addCustomer > .list {padding:1rem 2rem 10rem;
 	display:flex; flex-direction:column;}
 .addCustomer .checkbox_tbox > label {border-bottom:1px solid #E2E2E2; }
@@ -1645,7 +1645,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	width:7.2rem; height:7.2rem; background:url(../images/img_nolist.svg) no-repeat center;}
 
 .popupPanel.customerList {padding:0;}
-.popupPanel.customerList .scrollContainer {top:15.8rem;}
+.popupPanel.customerList .scrollContainer {top:15.8rem; bottom:9rem;}
 .popupPanel.customerList .item {margin:0;}
 
 .popupPanel .customerItem {display:flex; flex-direction:column; gap:0;  padding:0 2rem 10rem;}
