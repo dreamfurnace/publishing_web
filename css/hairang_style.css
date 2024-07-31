@@ -1411,7 +1411,6 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 
 
 /***  notice   ***/
-.notice {height:100%;}
 .notice > .scrollContainer {top:5rem;}
 
 .noticeList {display:flex; flex-direction:column; gap:0;}
@@ -1637,10 +1636,10 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .addCustomer > .list .c_others > span {font-size:1.4rem; color:#333;}
 
 .addCustomer.nolist > .customer_seh {margin-top:0.8rem;}
-.addCustomer.nolist > .scrollContainer {top:11.4rem;}
-.addCustomer.nolist .notice {position:absolute; top:0; left:0; right:0; bottom:0;
+.addCustomer.nolist > .scrollContainer {top:16.3rem;}
+.addCustomer.nolist .notice {position:absolute; top:2rem; left:0; right:0; bottom:0;
 	display:flex; align-items:center; justify-content:center; }
-.addCustomer.nolist .notice::before {content:''; position:absolute; top:7rem; left:2rem; right:2rem; 
+.addCustomer.nolist .notice::before {content:''; position:absolute; top:0; left:2rem; right:2rem; 
 	height:1px; background:#ededed;}
 .addCustomer.nolist .notice > p {text-align:center; font-size:1.6rem;}
 /* .addCustomer.nolist .notice > p::before {content:''; display:block; margin:0 auto 2.4rem;
