@@ -205,6 +205,8 @@ a.btn_t_b:visited {color:#fff;}
 .btn_addItem::before {content:''; width:1.4rem; height:1.4rem;
 	background:url(../images/ic_additem.svg) no-repeat center; background-size:100%;}
 .btn_addItem:active, .btn_makeGroup:hover {border-color:#333;}
+.btn_addItem:disabled {border-color:#C1B8AE; color:#A5A19A; box-shadow:none;}
+.btn_addItem:disabled::before {background:url(../images/ic_additem_gry.svg) no-repeat center;}
 
 
 .btn_sentList {padding:1rem 0.2rem 0.4rem; display:flex; justify-content:center; gap:0.4rem; 
