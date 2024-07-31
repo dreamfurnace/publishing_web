@@ -467,7 +467,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .bgCard > img {position:relative; width:100%; object-fit:cover;}
 .bgCard > .intro {position:absolute; left:2rem; right:2rem; top:64%; counter-reset: colorcircle 0;}
 .bgCard > .intro li {position:relative; padding-left:3rem; margin:0 0 1rem; font-size:1.8rem; font-weight:500; color:#292752; word-break:keep-all;}
-.bgCard > .intro li::before {position:absolute; top:0; left:0;
+.bgCard > .intro li::before {position:absolute; top:0.1rem; left:0;
 	counter-increment:colorcircle 1; content: counter(colorcircle);
 	font-size:1.4rem; color:#fff; font-weight:600;
 	width:2.2rem; height:2.2rem; text-align:center; line-height:2rem;
@@ -1141,7 +1141,6 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 .customer > .btnwrap_t {margin:2rem 0 1rem; padding:0 0 1rem; 
 	position:relative; z-index:2; border-bottom:1px solid #ECE2D7;}
 
-
 .customer .list {padding:1rem 2rem 2rem; display:flex; flex-direction:column; gap:1.4rem;}
 .customer .list > .item {position:relative; padding:1.4rem 2rem; padding-right:5rem;
 	display:flex; align-items:center; justify-content:space-between;
@@ -1156,7 +1155,7 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 .customer .list > .item > .btnGroup_edit {display:none; padding:0;}
 .customer .list > .item > .btnGroup_edit > button {font-weight:400; font-size:1.5rem;}
 
-.customer .personNum {font-weight:500; font-size:1.5rem; color:#F04E2A;}
+.customer .personNum {font-weight:500; font-size:1.6rem; color:#F04E2A;}
 .groupInfo {display:flex; flex-direction:column; gap:0; justify-content:center;}
 .groupInfo .groupTit {display:flex; gap:0.8rem; font-size:1.6rem; font-weight:500; align-items:center;}
 .groupInfo .groupTit > em {font-size:1.4rem; color:#FF6600;}
@@ -1170,6 +1169,9 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 .customer .btnGroup {display:none;}
 .customer.edit .btnGroup {display:flex; gap:0;}
 .customer.edit .btnGroup > button {width:3rem; height:3rem;}
+.customer.edit .list > .item:active,
+.customer.edit .list > .item:hover {box-shadow:0 0 1.5rem 0 rgba(122, 144, 176, 0.25);}
+
 
 .customerList .scrollContainer {top:24.6rem; display:flex; flex-direction:column; gap:1.4rem;}
 

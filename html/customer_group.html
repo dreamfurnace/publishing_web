@@ -25,7 +25,7 @@
 
 	<main class="customer"> <!-- 편집시 'edit' 추가 -->
 		<div class="btnwrap_t">
-			<button class="btn_addItem" type="button" onclick = "window.location.href='popup_group_edit.html';" disabled>새 그룹 만들기</button><!-- 삭제모드에서 disabled -->
+			<button class="btn_addItem" type="button" onclick = "window.location.href='popup_group_edit.html';" disabled>새 그룹 만들기</button><!-- 편집모드에서 disabled -->
 		</div>
 		
 		<div class="btnGroup_edit">
@@ -38,7 +38,7 @@
 		<div class="scrollContainer">
 			<section class="list">
 				<h2>고객리스트_보기</h2>
-				<a class="item" href="customer_list.html">
+				<a class="item" href="customer_list.html"><!-- 편집모드일 때 링크 없어야 함 -->
 					<div class="groupInfo">
 						<span class="groupTit">알럽가족</span>
 						<span class="groupExp">사랑하는 가족</span>						   
