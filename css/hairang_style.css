@@ -1142,7 +1142,7 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 	position:relative; z-index:2; border-bottom:1px solid #ECE2D7;}
 
 .customer .list {padding:1rem 2rem 2rem; display:flex; flex-direction:column; gap:1.4rem;}
-.customer .list > .item {position:relative; padding:1.4rem 2rem; padding-right:5rem;
+.customer .list > .item {position:relative; padding:1.6rem 2rem; padding-right:5rem;
 	display:flex; align-items:center; justify-content:space-between;
 	border-radius:1.6rem; border:1px solid #e1e1e1; background:#fff;
 	box-shadow:0 0 1.5rem 0 rgba(122, 144, 176, 0.25);}
@@ -1156,10 +1156,10 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 .customer .list > .item > .btnGroup_edit > button {font-weight:400; font-size:1.5rem;}
 
 .customer .personNum {font-weight:500; font-size:1.6rem; color:#F04E2A;}
-.groupInfo {display:flex; flex-direction:column; gap:0; justify-content:center;}
-.groupInfo .groupTit {display:flex; gap:0.8rem; font-size:1.6rem; font-weight:500; align-items:center;}
+.groupInfo {display:flex; flex-direction:column; justify-content:center;}
+.groupInfo .groupTit {display:flex; font-size:1.6rem; font-weight:500; align-items:center;}
 .groupInfo .groupTit > em {font-size:1.4rem; color:#FF6600;}
-.groupInfo .groupExp {color:#777; font-size:1.4rem; margin:0.4rem 0 0;}
+.groupInfo .groupExp {color:#777; font-size:1.5rem; margin-top:0.4rem;}
 
 
 .customer.edit .item > .btnGroup_edit  {display:block;}
