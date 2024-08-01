@@ -905,7 +905,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .voiceBtn_wrap button:active, .voiceWrap button:hover {background-color:#f8f8f8;}
 
 .voiceBtn_wrap > .btn_myvoice,
-.voiceBtn_wrap > .btn_tts {height:5rem;}
+.voiceBtn_wrap > .btn_tts {height:5rem; font-size:1.5rem;}
 
 
 .voicePlay_wrap {display:none; width:calc(100% - 7.8rem);}
