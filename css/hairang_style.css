@@ -1008,6 +1008,11 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .makeVoice.done .voicePlay {display:flex;}
 .makeVoice.done .charNum > .num {opacity:0.3;}
 
+.startMaking {display:flex; align-items:center;
+	position:fixed; top:0; left:0; right:0; bottom:0; z-index:10;
+	 background:rgba(0,0,0,0.7);;}
+.startMaking > .loadingbox {margin:0 auto;}
+
 /*** complete card  ***/
 
 header.complete > button {position:relative; z-index:3; background-color:#f2f2f2; border-radius:2.5rem;}
@@ -1770,7 +1775,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 
 /***   make Loading    ***/
 .loadingbox {position:relative; z-index:10; margin:30vh auto 0;
-	text-align:center; color:#fff; font-size:1.8rem; font-weight:500; white-space:nowrap; color:#FB6342;}
+	text-align:center; font-size:1.8rem; font-weight:500; white-space:nowrap; color:#FB6342;}
 
 
 
