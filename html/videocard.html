@@ -34,9 +34,9 @@
           </div>
      </main>
 
-     <div class="soundArea afterUpload"><!-- after upload Voice message 'afterUpload'-->
+     <div class="soundArea"><!-- after upload Voice message 'afterUpload'-->
           <div class="voiceCategory">
-               <button class="btn_bgm" type="button">배경음악</button>
+               <button class="btn_bgm" type="button" id="btnBgm">배경음악</button>
                <div class="voiceBtn_wrap">
                     <button class="btn_voiceRec" type="button" id="btn_openRecording">음성녹음</button>
                     <button class="btn_voiceMake" type="button" id="btn_openMaking">음성만들기</button>
@@ -69,8 +69,8 @@ $('#btn_playRecord').click(function(){
 });
 
 // btn play toggle 
-$('#btn_playVoice').click(function(){
-     $(this).toggleClass('stop');
+$('#btnBgm').click(function(){
+     $(this).toggleClass('on');
 });
 
 // my voice & tts btn on/off
