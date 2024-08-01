@@ -1740,7 +1740,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 
 
 /***   make Loading    ***/
-.loadingbox {position:relative; z-index:10; margin:20vh auto 0;
+.loadingbox {position:relative; z-index:10; margin:30vh auto 0;
 	text-align:center; color:#fff; font-size:1.8rem; font-weight:500; white-space:nowrap; color:#FB6342;}
 
 
@@ -1753,7 +1753,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .jump {animation:jump .6s ease infinite;}
 
 
-.aniwrap {position:relative; display:flex; justify-content:center; margin-bottom:6rem;}
+.aniwrap {position:relative; display:flex; justify-content:center; margin-bottom:4rem;}
 .aniwrap span {display:block; margin:0 0.5rem; width:0.8rem; height:0.8rem; border-radius:50%;}
 .loading .txt {display:block; letter-spacing:1px; text-align:center; color:#fff; font:400 1.4rem/1.4 'tahoma', sans-serif;}
 .aniwrap .pnt01 {background:#F04E2A; animation-delay:0;}
