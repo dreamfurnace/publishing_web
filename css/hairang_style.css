@@ -142,17 +142,23 @@ a.btn_t_b:visited {color:#fff;}
 	border-radius:2.5rem; background:#fff;}
 .btn_t_del {color:#fff; background:rgba(255,255,255,0.2); font-weight:400;}
 
-.btn_myvoice, .btn_tts {display:flex; flex-direction:column;  gap:0.2rem; justify-content:center; align-items:center;
-	width:6rem; height:5.4rem; border-radius:1.4rem; font-size:1.4rem; color:#777;
-	box-shadow: 0 1.6rem 4rem 0 rgba(112, 144, 176, 0.2);
-	border: 1px solid #fff;
-	background-color: rgba(255, 255, 255, 0.7);}
-.btn_myvoice::before {content:''; width:2.4rem; height:2.4rem; 
-	background:url(../images/makevoice_record.svg) no-repeat center; background-size:contain;}
-.btn_tts::before {content:''; width:2.4rem; height:2.4rem; 
-	background:url(../images/makevoice_tts.svg) no-repeat center; background-size:contain;}
-.btn_myvoice.on::before {content:''; background:url(../images/makevoice_record_on.svg) no-repeat center; background-size:contain;}
-.btn_tts.on::before {content:'';background:url(../images/makevoice_tts_on.svg) no-repeat center; background-size:contain;}
+.btn_myvoice, .btn_tts {position:relative; height:5rem; 
+	font-size:1.5rem; font-weight:500; color:#383494; padding-left:2.4rem;
+	border-radius:1.8rem; border: 1px solid #E2E2E2; 
+	background-color:#fff; box-shadow: 0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.15);}
+.btn_myvoice.on, .btn_tts.on {border-color:#383494; background-color:#383494; color:#fff;}
+
+.btn_myvoice::before {content:''; position:absolute; top:50%; left:2rem; margin-top:-1.2rem;
+	width:2.4rem; height:2.4rem; 
+	background:url(../images/ic_myvoice.svg) no-repeat center;}
+.btn_tts::before {content:''; position:absolute; top:50%; left:2rem; margin-top:-1.2rem;
+	width:2.4rem; height:2.4rem; 
+	background:url(../images/ic_tts.svg) no-repeat center;}
+
+.btn_myvoice.on::before {content:''; background:url(../images/ic_myvoice_on.svg) no-repeat center;}
+.btn_tts.on::before {content:'';background:url(../images/ic_tts_on.svg) no-repeat center;}
+
+
 
 .btn_messagePop  {padding:0 2rem; height:4rem;
 	display:flex; align-items:center; gap:0.4rem; 
@@ -372,6 +378,7 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 
 header.tyB h1 {color:#fff;} 
 header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center;}
+
 
 
 
@@ -901,7 +908,6 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .soundArea.afterUpload .voiceCategory {align-items:end;}
 
 
-
 .btn_voiceRec, .btn_voiceMake {height:5.4rem;
 	display:flex; gap:1rem; justify-content:center; align-items:center;
 	font-size:1.5rem; color:#231F84; font-weight:500;}
@@ -925,10 +931,8 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 	width:4.4rem; height:4.4rem; border-radius:50%;
 	background:#ebebeb url(../images/ic_makevoice_fill.svg) no-repeat center;  background-size:1.9rem;}
 .btn_simpleVoice.done::after {background:#383494 url(../images/ic_makevoice_wh02.svg) no-repeat center;}
-
 .btn_simpleBgm:active, .btn_simpleBgm:hover
 .btn_simpleVoice:active, .btn_simpleVoice:hover {background-color:#f9f9f9;}
-
 
 
 .voiceRecording, .appliedVoice {display:none; padding:2rem; height:12rem;}
@@ -970,6 +974,15 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .appliedVoice .footGroup {justify-content:center;}
 .appliedVoice .footGroup .btn_t_b {width:15.2rem; height:4rem;}
 .appliedVoice .footGroup .btn_i_close {position:absolute; top:0; left:0}
+
+
+/* make vioce */
+.makeVoice {position:fixed; top:6rem; left:0; right:0; bottom:0; z-index:2;
+	padding:1rem 0 0; border-radius:2rem 2rem 0 0; background:#fff;}
+.makeVoice > .btnGroup {display:flex; gap:0; margin:0 1rem 2.4rem;}
+.makeVoice > .btnGroup > button {width:50%;}
+.makeVoice > .btnGroup > button:first-child {border-radius:1.8rem 0 0 1.8rem;}
+.makeVoice > .btnGroup > button:last-child {border-radius:0 1.8rem 1.8rem 0;}
 
 /*** complete card  ***/
 
@@ -1066,14 +1079,12 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 .smCategory05::before {background:url(../images/f_ic_06.svg) no-repeat center;}
 .smCategory06::before {background:url(../images/f_ic_07.svg) no-repeat center;}
 
-
 .smCategory01.on::before {background:#FF6600 url(../images/f_ic_02on.svg) no-repeat center;}
 .smCategory02.on::before {background:#FF6600 url(../images/f_ic_03on.svg) no-repeat center;}
 .smCategory03.on::before {background:#FF6600 url(../images/f_ic_04on.svg) no-repeat center;}
 .smCategory04.on::before {background:#FF6600 url(../images/f_ic_05on.svg) no-repeat center;}
 .smCategory05.on::before {background:#FF6600 url(../images/f_ic_06on.svg) no-repeat center;}
 .smCategory06.on::before {background:#FF6600 url(../images/f_ic_07on.svg) no-repeat center;}
-
 
 .tabPanel > section {display:none;}
 .tabPanel > section.active {display:block;}
@@ -1647,12 +1658,6 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 }
 
 
-
-
-
-
-
-
 /* popup - message list */
 .messageGroup .popupPanel {position:fixed; top:11rem; left:0; right:0; bottom:0;
 	overflow:hidden; overflow-y:auto; padding-top:1rem; }
@@ -1695,7 +1700,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .inputList input[type="text"]::placeholder {font-size:1.6rem;}
 
 /*  popup - add customer   */
-.addCustomer > .btnGroup {display:flex; gap:0; margin:1rem 2rem 2.4rem; justify-content:right;}
+.addCustomer > .btnGroup {display:flex; gap:0; margin:1rem 2rem 2.4rem;}
 .addCustomer > .btnGroup > button {text-align:center; line-height:3.6rem; height:3.8rem; width:50%;
 	box-shadow:0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.1);}
 .addCustomer > .btnGroup > button:first-child {border-radius:2.5rem 0 0 2.5rem;}
@@ -1752,7 +1757,6 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
   }
 .jump {animation:jump .6s ease infinite;}
 
-
 .aniwrap {position:relative; display:flex; justify-content:center; margin-bottom:4rem;}
 .aniwrap span {display:block; margin:0 0.5rem; width:0.8rem; height:0.8rem; border-radius:50%;}
 .loading .txt {display:block; letter-spacing:1px; text-align:center; color:#fff; font:400 1.4rem/1.4 'tahoma', sans-serif;}
@@ -1783,8 +1787,6 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .test900 {font-weight:900; font-size:2rem;}
 
 .btn_popTest {padding:0 2rem; margin:2rem; height:4rem; border-radius:2.5rem; border:1px solid #d9d9d9;}
-
-
 
 
 
