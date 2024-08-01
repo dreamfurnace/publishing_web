@@ -902,8 +902,6 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 
 
-
-
 .btn_voiceRec, .btn_voiceMake {height:5.4rem;
 	display:flex; gap:1rem; justify-content:center; align-items:center;
 	font-size:1.5rem; color:#231F84; font-weight:500;}
@@ -911,7 +909,6 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 	background:url(../images/ic_recordvoice_fill.svg) no-repeat center;}
 .btn_voiceMake::after {content:''; width:2.4rem; height:2.4rem; background-size:2.4rem; 
 	background:url(../images/ic_makevoice_fill.svg) no-repeat center;}
-
 
 
 .btn_simpleBgm, .btn_simpleVoice {position:relative;
@@ -1742,6 +1739,32 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .sendCustomer .popupTab {border-bottom:1px solid #E9E9E9; background-color:#F8F8F8;}
 
 
+/***   make Loading    ***/
+.loadingbox {position:relative; z-index:10; margin:20vh auto 0;
+	text-align:center; color:#fff; font-size:1.8rem; font-weight:500; white-space:nowrap; color:#FB6342;}
+
+
+
+/* make Loading  - ani */
+@keyframes jump {
+	0%   {transform:translate3d(0,0,0);}
+	100% {transform:translate3d(0,90%,0);}
+  }
+.jump {animation:jump .6s ease infinite;}
+
+
+.aniwrap {position:relative; display:flex; justify-content:center; margin-bottom:6rem;}
+.aniwrap span {display:block; margin:0 0.5rem; width:0.8rem; height:0.8rem; border-radius:50%;}
+.loading .txt {display:block; letter-spacing:1px; text-align:center; color:#fff; font:400 1.4rem/1.4 'tahoma', sans-serif;}
+.aniwrap .pnt01 {background:#F04E2A; animation-delay:0;}
+.aniwrap .pnt02 {background:#F04E2A; animation-delay:0.15s;}
+.aniwrap .pnt03 {background:#F04E2A; animation-delay:0.3s;}
+
+
+
+
+
+
 /* /////////////////      Side work    /////////////////////  */
 
 /* swiper for design */
@@ -1763,24 +1786,11 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 
 
 
-/* loading - ani */
-@keyframes jump {
-	0%   {transform:translate3d(0,0,0);}
-	100% {transform:translate3d(0,90%,0);}
-  }
-	.jump {animation:jump .6s ease infinite;}
-
-	.loading {position:fixed; top:0; left:0; right:0; bottom:0; z-index:21;}
-	.loading::before {content:''; position:absolute; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.8);}
-	.aniwrap {position:relative; display:flex; justify-content:center; margin-bottom:1rem;}
-	.aniwrap span {display:block; margin:0 0.5rem; width:0.8rem; height:0.8rem; border-radius:50%;}
-	.loading .txt {display:block; letter-spacing:1px; text-align:center; color:#fff; font:400 1.4rem/1.4 'tahoma', sans-serif;}
-	.aniwrap .pnt01 {background:#EE6E38; animation-delay:0;}
-	.aniwrap .pnt02 {background:#EE6E38; animation-delay:0.15s;}
-	.aniwrap .pnt03 {background:#EE6E38; animation-delay:0.3s;}
-	.loadingbox {position:absolute; top:50%; left:50%; transform:translate(-50%, -50%);}
 
 
+
+
+/***  break point  ***/	
 
 @media only screen and (max-width:320px) {
 	html, body {font-size:9.5px;}
