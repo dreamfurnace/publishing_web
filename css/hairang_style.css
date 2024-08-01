@@ -1607,16 +1607,15 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 
 /* bgm playbar  */
 .playbar {position:relative; width:4.6rem; height:4.6rem;}
-.hold {position:absolute; width:100%; height:100%;
-	clip:rect(0, 4.6rem, 4.6rem, 2.3rem); border-radius: 100%; background:#f6f6f6;}
-.fill {position:absolute; width:100%; height:100%; border-radius: 100%;
+.hold {position:absolute; width:4.6rem; height:4.6rem;
+	clip:rect(0, 4.6rem, 4.6rem, 2.3rem); border-radius:100%; background:#f6f6f6;}
+.fill {position:absolute;width:4.6rem; height:4.6rem; border-radius:100%;
 	clip: rect(0, 2.3rem, 4.6rem, 0); background:#383494;}
 .fill::before {content:''; position:absolute; top:50%; left:50%; z-index:2;
 	margin:-2rem 0 0 -2rem;
 	width:4rem; height:4rem; border-radius:50%; background:#f6f6f6;}
 
-.left .fill {z-index:1;
-	-webkit-animation:left 3s linear;
+.left .fill {-webkit-animation:left 3s linear;
 	-moz-animation:left 3s linear;
 	animation:left 3s linear both;}
 
@@ -1629,15 +1628,11 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	100% {-webkit-transform:rotate(180deg);}
 }
 
-.right {
-	z-index: 3;
-	-webkit-transform:rotate(180deg);
+.right {-webkit-transform:rotate(180deg);
 	-moz-transform:rotate(180deg);
 	transform:rotate(180deg);
 }
-.right .fill {
-	z-index: 3;
-	-webkit-animation:right 3s linear;
+.right .fill {	-webkit-animation:right 3s linear;
 	-moz-animation:right 3s linear;
 	animation:right 3s linear both;
 	-webkit-animation-delay:3s;
