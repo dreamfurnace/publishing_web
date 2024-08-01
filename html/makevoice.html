@@ -23,27 +23,46 @@
           </div>
 	</header>
 
-     <main class="makeVoice">
+     <main class="makeVoice done"> <!-- 만들기 완료 'done', 버튼s & textarea disbled -->
           <div class="btnGroup">
-               <button type="button" class="btn_myvoice on">내 목소리</button>
-               <button type="button" class="btn_tts">TTS</button>
+               <button type="button" class="btn_myvoice on" disabled>내 목소리</button>
+               <button type="button" class="btn_tts" disabled>TTS</button>
           </div>
           <div class="messageBox_wrap">
                <div class="btnwrap">
-                    <button type="button" class="btn_messagePop">예시 메세지</button>
+                    <button type="button" class="btn_messagePop" disabled>예시 메세지</button>
                </div>
                <div class="messageBox"><!-- 글자 초과시 'error' 추가 -->
-                    <textarea placeholder="내용을 입력하세요."></textarea>
+                    <textarea placeholder="내용을 입력하세요." disabled>내용이 들어갑니다</textarea>
                     <div class="charNum">
                          <p class="noti"><span>110자를 초과하였습니다.
                          </span></p><p class="num"><em>00</em> / 110</p>
                     </div>
                </div>
           </div>
+          <div class="voicePlay">
+               <button class="btn_i_play" type="button" id="btn_playRecord">재생/멈춤</button>
+               <div class="timelineWrap">
+                    <div class="timeline">
+                         <span></span>
+                         <button class="btn_i_timePoint" type="button">movePoint</button>
+                    </div>
+                    <div class="timeTxt">
+                         <span>0:<em>18</em></span>
+                         <span>0:<em>20</em></span>
+                    </div>
+               </div>
+          </div>
+
+          <div class="btnwrap_f">
+               <button type="button" class="btn_makeVoice" >음성 만들기</button>
+          </div>
+          <div class="btnGroup_f">
+               <button type="button">취소</button>
+               <button type="button">음성등록</button>
+          </div>
+     
 	</main>
-     <div class="btnwrap_f">
-          <button type="button" class="btn_makeVoice" >음성 만들기</button>
-     </div>
 
 <script>
 $(document.body).css("background","#1E1D36");
@@ -52,6 +71,11 @@ $(document.body).css("background","#1E1D36");
 $(".makeVoice .btnGroup > button").on("click", function () {
     $(".makeVoice .btnGroup > button").removeClass("on");
     $(this).addClass("on");
+});
+
+// btn play toggle 
+$('.btn_i_play').click(function(){
+     $(this).toggleClass('stop');
 });
 
 </script>

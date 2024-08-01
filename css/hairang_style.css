@@ -10,6 +10,7 @@ body {font-size:1.4rem; line-height:1.2; color:#222;
 input[type="checkbox"], input[type="radio"] {height:auto; vertical-align:middle; cursor:pointer;}
 label {vertical-align:middle; cursor:pointer; display:inline-block;}
 textarea {width:100%; letter-spacing:-0.05rem; font-weight:400; font-family:'Noto Sans KR', sans-serif;}
+textarea:disabled {color:#ccc;}
 button {letter-spacing:-0.05rem; font-size:1.5rem; font-weight:400; line-height:1.2; white-space:nowrap; font-family:'Noto Sans KR', sans-serif;} 
 a {display:inline-block;}
 
@@ -40,7 +41,7 @@ textarea::placeholder {color:#999;}
 .btnGroup_f > button:last-child:hover,
 .btnGroup_f > button:last-child:active {box-shadow:none; background-color:#CC5200; border-color:#CC5200;}
 
-.btnwrap_f {position:fixed; left:0; right:0; bottom:3rem; z-index:4;
+.btnwrap_f {position:fixed; left:0; right:0; bottom:2rem; z-index:4;
 	display:flex; justify-content:center;}
 .btnwrap_f > button, .btnwrap_f > a {width:18rem; height:4.6rem; line-height:4.6rem;}
 
@@ -170,6 +171,9 @@ a.btn_t_b:visited {color:#fff;}
 	background-color:#fff; box-shadow: 0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.15);}
 .btn_myvoice.on, .btn_tts.on {border-color:#383494; background-color:#383494; color:#fff;}
 
+.btn_myvoice:disabled, .btn_tts:disabled {border-color:#F0F0F0; color:#999; background-color:#F0F0F0; box-shadow:none; }
+.btn_myvoice:disabled {border-right:1px solid #D7D7D7;}
+
 .btn_myvoice::before {content:''; position:absolute; top:50%; left:2rem; margin-top:-1.2rem;
 	width:2.4rem; height:2.4rem; 
 	background:url(../images/ic_myvoice.svg) no-repeat center;}
@@ -178,6 +182,9 @@ a.btn_t_b:visited {color:#fff;}
 	background:url(../images/ic_tts.svg) no-repeat center;}
 .btn_myvoice.on::before {content:''; background:url(../images/ic_myvoice_on.svg) no-repeat center;}
 .btn_tts.on::before {content:'';background:url(../images/ic_tts_on.svg) no-repeat center;}
+
+.btn_myvoice:disabled::before {content:''; background:url(../images/ic_myvoice_gry.svg) no-repeat center;}
+.btn_tts:disabled::before {content:'';background:url(../images/ic_tts_gry.svg) no-repeat center;}
 
 
 .btn_messagePop  {padding:0 2rem; height:4rem;
@@ -189,7 +196,7 @@ a.btn_t_b:visited {color:#fff;}
 .btn_messagePop.tyNoicon::before {display:none;}
 .btn_messagePop:active, .btn_messagePop:hover,
 .btn_download:active, .btn_download:hover {background-color:#f9f9f9;}
-
+.btn_messagePop:disabled {opacity:0.3;}
 
 .btn_download  {padding:0 2rem; height:4rem;
 	display:flex; align-items:center; gap:0.8rem; 
@@ -945,7 +952,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .voicePlay {margin-left:0.1rem;
 	display:flex; gap:1.4rem; width:calc(100% - 5.6rem); align-items:center;}
 .voicePlay .timelineWrap {margin-top:1.4rem; width:calc(100% - 5.4rem);
-	display:flex; flex-direction:column; gap:0.4rem;}
+	display:flex; flex-direction:column; gap:0.6rem;}
 .voicePlay .timeline {position:relative; width:100%; height:0.2rem; background:#efefef;}
 .voicePlay .timeline > button {position:absolute; top:-1.4rem; left:1rem;}
 .voicePlay .timeline > span {position:absolute; top:0; left:0; display:block; width:2rem; height:0.2rem; background-color:#231F84;}
@@ -990,7 +997,16 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .makeVoice > .messageBox_wrap > .messageBox {margin:0 2rem;}
 .makeVoice .btnwrap {display:flex; justify-content:right; margin:1.4rem;}
 .makeVoice .btn_messagePop {border:1px solid #EDEDED;}
+.makeVoice .voicePlay {position:fixed; left:2rem; right:2rem; bottom:12rem;}
+.makeVoice .btn_i_play {border-color:#ECECEC; box-shadow:0 0 1.6rem 0 rgba(122, 144, 176, 0.30);}
 
+.makeVoice.done .btnwrap_f,
+.makeVoice .btnGroup_f,
+.makeVoice .voicePlay {display:none;}
+
+.makeVoice.done .btnGroup_f,
+.makeVoice.done .voicePlay {display:flex;}
+.makeVoice.done .charNum > .num {opacity:0.3;}
 
 /*** complete card  ***/
 
