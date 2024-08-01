@@ -28,8 +28,22 @@
                <button type="button" class="btn_myvoice on">내 목소리</button>
                <button type="button" class="btn_tts">TTS</button>
           </div>
-
+          <div class="messageBox_wrap">
+               <div class="btnwrap">
+                    <button type="button" class="btn_messagePop">예시 메세지</button>
+               </div>
+               <div class="messageBox"><!-- 글자 초과시 'error' 추가 -->
+                    <textarea placeholder="내용을 입력하세요."></textarea>
+                    <div class="charNum">
+                         <p class="noti"><span>110자를 초과하였습니다.
+                         </span></p><p class="num"><em>00</em> / 110</p>
+                    </div>
+               </div>
+          </div>
 	</main>
+     <div class="btnwrap_f">
+          <button type="button" class="btn_makeVoice" >음성 만들기</button>
+     </div>
 
 <script>
 $(document.body).css("background","#1E1D36");

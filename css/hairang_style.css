@@ -24,6 +24,29 @@ textarea::placeholder {color:#999;}
 
 
 /* buttons */
+.btnGroup_mf {margin:3rem 0 2rem; display:flex; justify-content:center; gap:1.2rem;}
+.btnGroup_mf > .btn_group {display:flex; gap:0; align-content:center;}
+.btnGroup_mf > .btn_group > button:first-child {border-radius:2.5rem 0 0 2.5rem; border-right:1px solid #ececec;}
+.btnGroup_mf > .btn_group > button:last-child {border-radius:0 2.5rem 2.5rem 0;}
+
+.btnGroup_f {padding:2rem;
+	position:fixed; left:0; right:0; bottom:0; z-index:21;
+	display:flex; gap:1.4rem; background:#fff;} 
+.btnGroup_f > button {width:50%; height:4.6rem; border-radius:2.5rem; font-size:1.5rem; font-weight:500;}
+.btnGroup_f > button:first-child {color:#555; border:1px solid #dcdcdc;  box-shadow:0 0.4rem 1.2rem 0 rgba(122, 144, 176, 0.1);}
+.btnGroup_f > button:last-child {color:#fff; border:1px solid #FF6600; background:#FF6600;  box-shadow:0 0.4rem 1.2rem 0 rgba(122, 144, 176, 0.25);}
+.btnGroup_f > button:first-child:hover,
+.btnGroup_f > button:first-child:active {box-shadow:none; background-color:#f9f9f9;}
+.btnGroup_f > button:last-child:hover,
+.btnGroup_f > button:last-child:active {box-shadow:none; background-color:#CC5200; border-color:#CC5200;}
+
+.btnwrap_f {position:fixed; left:0; right:0; bottom:2rem; z-index:4;
+	display:flex; justify-content:center;}
+.btnwrap_f > button, .btnwrap_f > a {width:18rem; height:4.6rem; line-height:4.6rem;}
+
+.btnwrap_m {margin:2rem; display:flex; justify-content:right;}
+
+
 [class^="btn_i_"] {display:inline-block; width:4rem; height:4rem; text-indent:-9999em; overflow:hidden; 
 	vertical-align:middle; white-space:nowrap; box-sizing:border-box;}
 [class^="btn_i_"]:disabled {color:#aaa;}
@@ -100,7 +123,6 @@ textarea::placeholder {color:#999;}
 .btn_i_del:active, .btn_i_del:hover {background-color:#f8f8f8; border-radius:50%;}
 
 
-
 .btn_i_albumModify, .btn_i_albumDownload, .btn_i_albumSending {width:3.6rem; height:3.6rem;}
 .btn_i_albumModify {background:url(../images/myalbum_i_modify.svg) no-repeat center; background-size:3rem;}
 .btn_i_albumDownload {background:url(../images/myalbum_i_download.svg) no-repeat center; background-size:3rem;}
@@ -143,7 +165,7 @@ a.btn_t_b:visited {color:#fff;}
 .btn_t_del {color:#fff; background:rgba(255,255,255,0.2); font-weight:400;}
 
 .btn_myvoice, .btn_tts {position:relative; height:5rem; 
-	font-size:1.5rem; font-weight:500; color:#383494; padding-left:2.4rem;
+	font-size:1.6rem; font-weight:500; color:#383494; padding-left:2.4rem;
 	border-radius:1.8rem; border: 1px solid #E2E2E2; 
 	background-color:#fff; box-shadow: 0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.15);}
 .btn_myvoice.on, .btn_tts.on {border-color:#383494; background-color:#383494; color:#fff;}
@@ -154,10 +176,8 @@ a.btn_t_b:visited {color:#fff;}
 .btn_tts::before {content:''; position:absolute; top:50%; left:2rem; margin-top:-1.2rem;
 	width:2.4rem; height:2.4rem; 
 	background:url(../images/ic_tts.svg) no-repeat center;}
-
 .btn_myvoice.on::before {content:''; background:url(../images/ic_myvoice_on.svg) no-repeat center;}
 .btn_tts.on::before {content:'';background:url(../images/ic_tts_on.svg) no-repeat center;}
-
 
 
 .btn_messagePop  {padding:0 2rem; height:4rem;
@@ -169,7 +189,6 @@ a.btn_t_b:visited {color:#fff;}
 .btn_messagePop.tyNoicon::before {display:none;}
 .btn_messagePop:active, .btn_messagePop:hover,
 .btn_download:active, .btn_download:hover {background-color:#f9f9f9;}
-
 
 
 .btn_download  {padding:0 2rem; height:4rem;
@@ -290,6 +309,12 @@ a.btn_t_b:visited {color:#fff;}
 	background:#ff6600 url(../images/ic_makevideo.svg) no-repeat 12rem center; background-size:2.8rem;}
 .btn_makeVideo:active, .btn_makeVideo:hover {background-color:#CC5200;}
 
+.btn_makeVoice {width:18rem; height:4.6rem; padding-left:4rem; line-height:4.6rem; border-radius:2rem; text-align:left;
+	color:#fff; box-shadow:0 0.4rem 1.2rem 0 rgba(122, 144, 176, 0.25);
+	background:#ff6600 url(../images/ic_makevoice_wh.svg) no-repeat 12rem center; background-size:1.68rem;}
+.btn_makeVoice:active, .btn_makeVoice:hover {background-color:#CC5200;}
+
+
 .btn_complete, .btn_sending {display:flex; gap:1rem; justify-content:center; align-items:center;}	
 .btn_complete::after {content:''; display:block; 
 	width:1.8rem; height:1.8rem; background:url(../images/ic_complete.svg) no-repeat center; background-size:1.6rem;}
@@ -340,29 +365,6 @@ section > h2, section > h3 {display:none;}
 .scrollContainer {position:fixed; left:0; right:0; bottom:0;
 	padding:0 0 14rem; 
 	overflow:hidden; overflow-y:auto;}
-
-.btnGroup_mf {margin:3rem 0 2rem; display:flex; justify-content:center; gap:1.2rem;}
-.btnGroup_mf > .btn_group {display:flex; gap:0; align-content:center;}
-.btnGroup_mf > .btn_group > button:first-child {border-radius:2.5rem 0 0 2.5rem; border-right:1px solid #ececec;}
-.btnGroup_mf > .btn_group > button:last-child {border-radius:0 2.5rem 2.5rem 0;}
-
-.btnGroup_f {padding:2rem;
-	position:fixed; left:0; right:0; bottom:0; z-index:21;
-	display:flex; gap:1.4rem; background:#fff;} 
-.btnGroup_f > button {width:50%; height:4.6rem; border-radius:2.5rem; font-size:1.5rem; font-weight:500;}
-.btnGroup_f > button:first-child {color:#555; border:1px solid #dcdcdc;  box-shadow:0 0.4rem 1.2rem 0 rgba(122, 144, 176, 0.1);}
-.btnGroup_f > button:last-child {color:#fff; border:1px solid #FF6600; background:#FF6600;  box-shadow:0 0.4rem 1.2rem 0 rgba(122, 144, 176, 0.25);}
-.btnGroup_f > button:first-child:hover,
-.btnGroup_f > button:first-child:active {box-shadow:none; background-color:#f9f9f9;}
-.btnGroup_f > button:last-child:hover,
-.btnGroup_f > button:last-child:active {box-shadow:none; background-color:#CC5200; border-color:#CC5200;}
-
-.btnwrap_f {position:fixed; left:0; right:0; bottom:2rem;
-	display:flex; justify-content:center;}
-.btnwrap_f > button, .btnwrap_f > a {padding:0; width:18rem; height:4.6rem; line-height:4.6rem;}
-
-.btnwrap_m {margin:2rem; display:flex; justify-content:right;}
-
 
 
 /*  layout  */
@@ -978,11 +980,17 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 /* make vioce */
 .makeVoice {position:fixed; top:6rem; left:0; right:0; bottom:0; z-index:2;
-	padding:1rem 0 0; border-radius:2rem 2rem 0 0; background:#fff;}
-.makeVoice > .btnGroup {display:flex; gap:0; margin:0 1rem 2.4rem;}
+	border-radius:2rem 2rem 0 0; background:#fff;}
+.makeVoice > .btnGroup {display:flex; gap:0; margin:1.4rem;}
 .makeVoice > .btnGroup > button {width:50%;}
 .makeVoice > .btnGroup > button:first-child {border-radius:1.8rem 0 0 1.8rem;}
 .makeVoice > .btnGroup > button:last-child {border-radius:0 1.8rem 1.8rem 0;}
+
+.makeVoice > .messageBox_wrap {border-top:1px solid #e1e1e1;}
+.makeVoice > .messageBox_wrap > .messageBox {margin:0 2rem;}
+.makeVoice .btnwrap {display:flex; justify-content:right; margin:1.4rem;}
+.makeVoice .btn_messagePop {border:1px solid #EDEDED;}
+
 
 /*** complete card  ***/
 
@@ -1758,7 +1766,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .jump {animation:jump .6s ease infinite;}
 
 .aniwrap {position:relative; display:flex; justify-content:center; margin-bottom:4rem;}
-.aniwrap span {display:block; margin:0 0.5rem; width:0.8rem; height:0.8rem; border-radius:50%;}
+.aniwrap span {display:block; margin:0 0.5rem; width:1rem; height:1rem; border-radius:50%;}
 .loading .txt {display:block; letter-spacing:1px; text-align:center; color:#fff; font:400 1.4rem/1.4 'tahoma', sans-serif;}
 .aniwrap .pnt01 {background:#F04E2A; animation-delay:0;}
 .aniwrap .pnt02 {background:#F04E2A; animation-delay:0.15s;}
@@ -1787,9 +1795,6 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .test900 {font-weight:900; font-size:2rem;}
 
 .btn_popTest {padding:0 2rem; margin:2rem; height:4rem; border-radius:2.5rem; border:1px solid #d9d9d9;}
-
-
-
 
 
 /***  break point  ***/	
