@@ -41,20 +41,10 @@
                     <img src="../images/@pic01.jpg">                   
                </div>
           </section>
-          <div class="btnGroup_mf">
-               <button type="button" class="btn_faceApply" onclick="window.location.href='complete.html';">내 얼굴 적용하기</button>
-          </div>
      </main>
-     <div class="soundArea"><!-- after upload Voice message 'afterUpload'-->
-          <div class="voiceCategory">
-               <button class="btn_bgm" type="button" id="btnBgm">배경음악</button>
-               <div class="voiceBtn_wrap">
-                    <button type="button" class="btn_myvoice on">내 목소리</button>
-                    <button type="button" class="btn_tts">TTS</button>
-               </div>
-          </div>
+     <div class="btnwrap_f">
+          <button type="button" class="btn_faceApply" onclick="window.location.href='complete.html';">내 얼굴 적용하기</button>
      </div>
-    
 <script>
 // btn play toggle 
 $('.btn_i_play').click(function(){
@@ -65,14 +55,6 @@ $('.btn_i_play').click(function(){
 $('.btn_i_sound').click(function(){
      $(this).toggleClass('on');
 });
-
-//  btn add class
-$(".voiceBtn_wrap > button").on("click", function () {
-    $(".voiceBtn_wrap > button").removeClass("on");
-    $(this).addClass("on");
-});
-
-
 </script>
 </body>
 </html>
