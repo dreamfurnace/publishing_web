@@ -1592,6 +1592,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .musicItem .checktxt {padding:1rem;
 	display:flex; justify-content:space-between; align-items:center; border-radius:5rem;}
 .musicItem .checkmark {top:50%; right:1rem; margin-top:-2rem; width:4rem; height:4rem; border:1px solid #ebebeb;}
+.musicItem .checkbox_tbox input:checked ~ .checkmark {border-color:#383494;}
 
 .musicItem .tit {margin-left:2rem; display:flex; flex-direction:column; gap:0;}
 .musicItem .tit > span {font-size:1.6rem; font-weight:600;}
@@ -1601,7 +1602,6 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .musicItem .palyElements {display:flex; gap:1rem; align-items:center; padding-right:5rem;}
 .musicItem .palyElements > .playSec {display:none; color:#383494;}
 .musicItem.playOn .playSec {display:block;}
-
 
 
 
