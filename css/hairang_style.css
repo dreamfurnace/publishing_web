@@ -164,7 +164,7 @@ a.btn_t_b:visited {color:#fff;}
 	border-radius:2.5rem; background:#fff;}
 .btn_t_del {color:#fff; background:rgba(255,255,255,0.2); font-weight:400;}
 
-.btn_myvoice, .btn_tts {position:relative; height:5rem; 
+.btn_myvoice, .btn_tts {position:relative; height:4.2rem; line-height:4rem;
 	font-size:1.6rem; font-weight:500; color:#383494; padding-left:2.4rem;
 	border-radius:1.8rem; border: 1px solid #E2E2E2; 
 	background-color:#fff; box-shadow: 0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.15);}
