@@ -1203,9 +1203,9 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 .c_info .callNum {font-size:1.6rem; color:#9C9C9C;}
 
 
-.final_txtArea {margin:-2rem 2rem 4rem; padding:4rem 2rem 4rem;
+.final_txtArea {margin:-2rem 2rem 4rem; padding:7rem 2rem 4rem;
 	border-radius:0 0 3rem 3rem;
-	background:#FFF5EA;}
+	background:url(../images/bg_final.png) no-repeat center top; background-size:cover;}
 .final_txtArea > .text {margin-top:2rem; color:#333; word-break:keep-all; line-height:1.5; font-size:1.6rem; font-weight:500;}
 
 
