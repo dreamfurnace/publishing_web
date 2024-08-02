@@ -263,11 +263,12 @@ a.btn_t_b:visited {color:#fff;}
 .btn_undoDel::before {content:''; display:inline-block; width:2rem; height:2rem; background:url(../images/ic_undo.svg) no-repeat center; background-size:2rem;}
 .btn_undoDel:active, .btn_undoDel:hover {color:#ff6600;}
 
-.btn_logout {width:100%; color:#fff; font-size:1.6rem; color:#fff; height:6rem; border-radius:1rem; background:#FF6600;}
-.btn_logout:hover,.setting .btn_logout:active { background-color:#CC5200;}
-.btn_appUpdate {padding:0 1.6rem; height:4rem; display:flex; gap:0.8rem;
-	font-weight:500; font-size:1.4rem; color:#333; border:1px solid #999; align-items:center;}
-.btn_appUpdate::before {content:''; width:1.6rem; height:1.6rem; background:url(../images/ic_update.svg) no-repeat center;}
+.btn_logout {padding:1.5rem 6rem; color:#6A6A6A; font-size:1.5rem; }
+.btn_logout:active, .btn_logout:hover {border-radius:2.5rem; background-color:#f8f8f8;}
+
+.btn_appUpdate {padding:0 4rem; display:flex; gap:1rem; align-items:center; justify-content:center;
+	height:4rem; font-weight:500; color:#1E1D36; border-radius:2.5rem; border:1px solid #ddd;
+	background:#fff; box-shadow:0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.1);}
 
 .btn_picUpload {border-radius:1rem; border:1px solid #E8E8E8; 
 	background:#fff url(../images/ic_upload.svg) no-repeat center; background-size:3.4rem;
@@ -278,7 +279,7 @@ a.btn_t_b:visited {color:#fff;}
 
 
 .btn_remake {padding:0 1.6rem; display:flex; gap:1rem; align-items:center; justify-content:center;
-	width:12rem; height:3.6rem; font-weight:500;  color:#110B89; border-radius:2.5rem;
+	width:12rem; height:3.6rem; font-weight:500; color:#110B89; border-radius:2.5rem;
 	background:#fff; box-shadow:0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.1);}
 .btn_remake::before {content:''; display:block; width:2rem; height:2rem; background:url(../images/ic_remake.svg) no-repeat center; }
 
@@ -1358,6 +1359,13 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .sentboxDetail .headwrap > .creation {color:#666; font-size:1.6rem;}
 .sentboxDetail .headwrap > .creation::before {content:''; display:none;}
 .sentboxDetail .headwrap > .btnGroup {display:flex; justify-content:right; margin:-1.4rem 0 1rem;}
+.sentboxDetail .headwrap .addTxt {display:none;}
+
+.sentboxDetail .headwrap.byKakao > strong,
+.sentboxDetail .headwrap.byKakao > .btnGroup  {display:none;}
+
+.sentboxDetail .headwrap.byKakao > .creation {margin:0 0 1rem; justify-content:center; font-size:1.8rem; font-weight:400; color:#333;}
+.sentboxDetail .headwrap.byKakao .addTxt {display:inline-block;}
 
 .sentboxDetail .scrollContainer {top:5rem;}
 
@@ -1446,16 +1454,25 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .recordVoice .timeTxt > span {color:#fff;} */
 
 /***   setting   ***/
-.setting {padding:4rem 0 0 2rem;}
-.setting > h2 {margin:0 auto 4.6rem;
-	width:15rem; height:8.4rem; background:url(../images/logo_hairang.svg) no-repeat center; background-size:100%;}
+.setting {padding:6rem 2rem 0;}
+.setting > h2 {margin:0 auto 4.6rem; width:15rem; height:8.4rem; opacity:0.2;
+	background:url(../images/logo_hairang.svg) no-repeat center; background-size:100%;}
 .setting > h2 > span {display:none;}
-.setting .btnwrap {position:fixed; left:2rem; right:2rem; bottom:3rem;}
+.setting .btnwrap {position:fixed; left:2rem; right:2rem; bottom:3rem; text-align:center;}
+.setting .btn_appUpdate {display:none;}
 
-.setting .verInfo {margin:0 2rem 3rem 0; display:flex; justify-content:space-between; align-items:center;}
-.setting .verInfo .ver {display:flex; gap:0.8rem; color:#333; font-size:1.6rem; font-weight:500;}
-.setting .verInfo .ver > span {font-size:1.4rem; font-weight:400; color:#FF6600;}
-.setting .options {display:flex; flex-direction:column; gap:2.2rem;}
+.setting .verInfo {margin:0 2rem 4em; 
+	display:flex; gap:4rem; flex-direction:column; justify-content:space-between; align-items:center;}
+.setting .verInfo .ver {display:flex; gap:0; color:#595959; font-size:1.6rem; font-weight:500;}
+.setting .verInfo .ver span {margin-left:1rem;}
+.setting .verInfo .newInfo {display:none;}
+.setting .verInfo .newInfo::before {content:"/"; display:inline-block; margin:0 0.8rem; color:#D2D2D7;}
+.setting .verInfo .newInfo > span {font-weight:500; color:#FF6600;}
+
+.setting.newVersion .btn_appUpdate,
+.setting.newVersion .newInfo {display:block;}
+
+.setting .options {margin:0 3rem; padding:1.2rem 0 0; border-top:1px solid #EBEBEB;}
 .setting .optHead, .setting .opt_item {display:flex; justify-content:space-between; align-items:center;}
 .setting .optHead {font-size:1.6rem; color:#333; font-weight:500;}
 .setting .opt_item {position:relative; padding-left:3rem; color:#333; font-size:1.4rem;}
@@ -1465,18 +1482,18 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .setting .opt_item.sound::before {background:url(../images/ic_set_sound.svg) no-repeat center;}
 .setting .opt_item.vibr::before  {background:url(../images/ic_set_vibr.svg) no-repeat center;}
 
-.setting .swichbox {margin:0; padding:1rem 2rem; display:flex; justify-content:right;}
-.setting .switch {position:relative; display:inline-block; width:4.4rem; height:1rem; vertical-align:middle;}
+.setting .swichbox {margin:0; padding:1rem 0; display:flex; justify-content:right;}
+.setting .switch {position:relative; display:inline-block; width:4.4rem; height:2.4rem; vertical-align:middle;}
 .setting .switch input {display:none;}
 .setting .switch .slider {position:absolute; top:0; left:0; right:0; bottom:0; border-radius:2.5rem;
 	background-color:#a1a1a1; transition:.4s;}
-.setting .switch .slider:before {content:""; position:absolute; left:0; top:50%; margin-top:-1.2rem;
-	height:2.2rem; width:2.2rem; transition:.4s; border-radius:50%;
+.setting .switch .slider:before {content:""; position:absolute; left:0.1rem; top:50%; margin-top:-1.1rem;
+	height:2rem; width:2rem; transition:.4s; border-radius:50%;
 	background:#fff; border:1px solid #999; box-shadow:none;}
 .setting .switch .slider > span {display:none;}
 .setting .switch input:checked + .slider {background:#FF6600;}
 .setting .switch input:focus + .slider {box-shadow:0 0 0.3rem #ebebeb;}
-.setting .switch input:checked + .slider:before {transform:translateX(2.1rem); 
+.setting .switch input:checked + .slider:before {transform:translateX(2rem); 
 	background:#fff; border:1px solid #999;}
 
 
