@@ -1206,9 +1206,10 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 
 .final_txtArea {margin:-2rem 2rem 4rem; padding:7rem 2rem 4rem;
 	border-radius:0 0 3rem 3rem;
-	background:url(../images/bg_final.png) no-repeat center top; background-size:cover;}
-.final_txtArea > .text {margin-top:2rem; color:#211D19; word-break:keep-all; line-height:1.5; font-size:1.6rem; font-weight:500;}
-
+	background:url(../images/bg_final.png) no-repeat top center; background-size:cover;}
+.final_txtArea > .text {position:relative; margin-top:2rem; color:#211D19; word-break:keep-all; line-height:1.5; font-size:1.6rem; font-weight:500;}
+.final_txtArea > .text::before {content:''; position:absolute; top:-4.3rem; left:50%; margin-left:-7rem; opacity:0.7;
+	width:14rem; height:2rem; background:url(../images/bg_final_deco.png) no-repeat center; background-size:auto 100%;}
 
 /***   Customer  ***/
 .customer:before {content:''; position:fixed; top:0; left:0; right:0; height:21rem; z-index:0;
