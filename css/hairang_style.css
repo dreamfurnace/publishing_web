@@ -1324,7 +1324,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .myalbum > .headwrap > .btnGroup {display:flex; gap:1rem;}
 .myalbum .checkimg {aspect-ratio:3/4; display:flex; justify-content:center;
 	height:auto; border-radius:1.6rem; overflow:hidden;}
-.myalbum input:checked ~ .checkimg {border:1px solid #231F84;}
+.myalbum input:checked ~ .checkimg {border:0.14rem solid #231F84;}
 
 
 /*** sent box   ***/
