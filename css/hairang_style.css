@@ -1473,7 +1473,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .setting.newVersion .btn_appUpdate,
 .setting.newVersion .newInfo {display:block;}
 
-.setting .options {margin:0 3rem; padding:1.2rem 0 0; border-top:1px solid #EBEBEB;}
+.setting .options {margin:0 2rem; padding:1.2rem 0 0; border-top:1px solid #EBEBEB;}
 .setting .optHead, .setting .opt_item {display:flex; justify-content:space-between; align-items:center;}
 .setting .optHead {font-size:1.6rem; color:#333; font-weight:500;}
 .setting .opt_item {position:relative; padding-left:3rem; color:#333; font-size:1.4rem;}
@@ -1774,10 +1774,11 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 
 .addCustomer.nolist > .customer_seh {margin-top:0.8rem;}
 .addCustomer.nolist > .scrollContainer {top:16.3rem;}
-.addCustomer.nolist .notice {position:absolute; top:2rem; left:0; right:0; bottom:0;
-	display:flex; align-items:center; justify-content:center; }
-.addCustomer.nolist .notice::before {content:''; position:absolute; top:0; left:2rem; right:2rem; 
-	height:1px; background:#ededed;}
+.addCustomer.nolist .notice {position:absolute; top:2rem; left:2rem; right:2rem; bottom:0;
+	display:flex; align-items:center; justify-content:center; 
+	border-top:1px solid #ededed; border-bottom:1px solid #ededed; }
+/* .addCustomer.nolist .notice::before {content:''; position:absolute; top:0; left:2rem; right:2rem; 
+	height:1px; background:#ededed;} */
 .addCustomer.nolist .notice > p {text-align:center; font-size:1.6rem;}
 /* .addCustomer.nolist .notice > p::before {content:''; display:block; margin:0 auto 2.4rem;
 	width:7.2rem; height:7.2rem; background:url(../images/img_nolist.svg) no-repeat center;} */
