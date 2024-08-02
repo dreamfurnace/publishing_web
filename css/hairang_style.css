@@ -25,7 +25,7 @@ textarea::placeholder {color:#999;}
 
 
 /* buttons */
-.btnGroup_mf {margin:3rem 0 2rem; display:flex; justify-content:center; gap:1.2rem;}
+.btnGroup_mf {margin:3rem 2rem 2rem; display:flex; justify-content:center; gap:1.2rem;}
 .btnGroup_mf > .btn_group {display:flex; gap:0; align-content:center;}
 .btnGroup_mf > .btn_group > button:first-child {border-radius:2.5rem 0 0 2.5rem; border-right:1px solid #ececec;}
 .btnGroup_mf > .btn_group > button:last-child {border-radius:0 2.5rem 2.5rem 0;}
@@ -1208,7 +1208,7 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 	border-radius:0 0 3rem 3rem;
 	background:url(../images/bg_final.png) no-repeat top center; background-size:cover;}
 .final_txtArea > .text {position:relative; margin-top:2rem; color:#211D19; word-break:keep-all; line-height:1.5; font-size:1.6rem; font-weight:500;}
-.final_txtArea > .text::before {content:''; position:absolute; top:-4.3rem; left:50%; margin-left:-7rem; opacity:0.7;
+.final_txtArea > .text::before {content:''; position:absolute; top:-4.3rem; left:50%; margin-left:-7rem; opacity:0.9;
 	width:14rem; height:2rem; background:url(../images/bg_final_deco.png) no-repeat center; background-size:auto 100%;}
 
 /***   Customer  ***/
@@ -1893,12 +1893,25 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 
 } /* for Duo  */
 
+@media screen and (device-aspect-ratio:320/658) {
+	.imageDecoration .rate34 {margin:0 1rem;}
+}
+
+@media screen and (device-aspect-ratio:360/740) {
+	.imageDecoration .rate34 {margin:0 0.4rem;}
+}
+
+
+
 @media screen and (device-aspect-ratio:375/667),
-screen and (device-aspect-ratio:414/736) { 
+screen and (device-aspect-ratio:414/736),
+screen and (device-aspect-ratio:19/9) { 
 	.sm_imageCard .sm_intro, .sm_videoCard .sm_intro {margin-top:-3.2rem;}
 	.sm_imageCard .rate34, .sm_videoCard .rate34 {margin:0 2rem;}
-	.videoArea .rate34 {margin:0 2rem;}
+	.videoArea .rate34,
+	.imageDecoration .rate34 {margin:0 3rem;}
 	.messageArea {border-radius:2rem 2rem 0 0;}
+	.imageDecoration .btnGroup_mf {position:fixed; left:2rem; right:2rem; bottom:13rem;}
 
 	.makeTemplate .rate34 {margin:0 3rem;}
 	.makeTemplate .rate11 .bgCard, .makeTemplate .emtyRate11 .bgCard, 
@@ -1908,9 +1921,7 @@ screen and (device-aspect-ratio:414/736) {
 
 	.makeTemplate .rate43 .bgCard, 
 	.makeTemplate .emtyRate43 .bgCard, 
-	.imageDecoration .rate43 .bgCard, 
-	.imageDecoration .emtyRate43 .bgCard, 
-	.videoArea .rate43 .bgCard, .videoArea .emtyRate43 .bgCard {margin:6rem 0 0;}
+	.imageDecoration .rate43 .bgCard  {margin:2rem 0 0;}
 }
 
 
