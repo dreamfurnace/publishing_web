@@ -880,7 +880,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .soundSticker > .ic_voice {background:rgba(255, 255, 255, 0.2) url(../images/ic_voice_wh.svg) no-repeat center; background-size:2.2rem;}
 .soundSticker > .ic_bgm {background:rgba(255, 255, 255, 0.2) url(../images/ic_bgm_wh.svg) no-repeat center; background-size:2rem;}
 .soundSticker > .ic_voice.done {background:rgba(255, 255, 255, 0.4) url(../images/ic_voice_blu.svg) no-repeat center; background-size:2.2rem;}
-.soundSticker > .ic_bgm.done {background:rgba(255, 255, 255, 0.4) url(../images/ic_bgm_blu.svg) no-repeat center; background-size:2.2rem;}
+.soundSticker > .ic_bgm.done {background:rgba(255, 255, 255, 0.4) url(../images/ic_bgm_bk.svg) no-repeat center; background-size:2.2rem;}
 
 .soundArea {position:fixed; left:0; right:0; bottom:0; z-index:10;
 	height:8rem; border-radius:2rem 2rem 0 0; align-items:center;
@@ -1878,38 +1878,70 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 
 
 @media only screen and (min-width:540px) {
-	.stage {max-width:360px; margin:0 auto;}
+	.stage {margin:0 auto;}
+	.makeTemplate .rate34,
+	.makeTemplate .emtyRate34,
+	.myalbumDetail .rate34 {width:31rem;}
+	.makeTemplate .rate11,
+	.makeTemplate .emtyRate22 {width:41rem;}
+	.makeTemplate .rate11 .bgCard, 
+	.makeTemplate .emtyRate11 .bgCard,
+	.makeTemplate .rate43 .bgCard, 
+	.makeTemplate .emtyRate43 .bgCard {margin:0;}
+
 	.valueWrap {flex-direction:column;}
 	.valueWrap > .btngroup {flex-direction:row; justify-content: right;}
+
+	.imageDecoration .rate34 {width:34rem;}
+	.imageDecoration .rate11 {width:45rem;}
+	.imageDecoration .rate11 .bgCard,
+	.imageDecoration .rate43 .bgCard {margin-top:0;}
+
+	.videoArea .rate34 {width:36rem;}
+	.videoArea .rate11 {width:48rem;}
+
+	.videoArea .rate43 .bgCard,
+	.videoArea .rate11 .bgCard {margin:5rem 0 0;}
+
 	.templateList {grid-template-columns:repeat(4, 1fr);}
 	.myalbum .templateList {grid-template-columns:repeat(3, 1fr);}
 	.sentbox .templateList {grid-template-columns:repeat(3, 1fr);}
-	.picNvoice .picList {grid-template-columns:repeat(4, 1fr);}
+	.picNvoice .picList {max-width:36rem; margin:0 auto;}
 
-	.popup_notice, .popup_mid {max-width:360px;}
+	.popup_notice, .popup_mid {max-width:36rem;}
 
 	.messageArea {border-radius:2.5rem 2.5rem 0 0;}
 	.final_txtArea {border-radius:3rem;}
 
+	.mypage .mypic .picwrap {margin:2rem 0 0;}
+
+	.myalbumDetail .btnwrap_m {justify-content:center;}
+	.sentboxDetail .stage {max-width:36rem;}
+	.sentboxDetail .final_txtArea > .text {margin:2rem auto; padding:0 2rem;}
+
 } /* for Duo  */
 
-@media screen and (device-aspect-ratio:320/658) {
+
+
+@media screen and (device-aspect-ratio:160/329) {
 	.imageDecoration .rate34 {margin:0 1rem;}
-}
+}/* 320/658  */
 
-@media screen and (device-aspect-ratio:360/740) {
+
+@media screen and (device-aspect-ratio:18/37) {
 	.imageDecoration .rate34 {margin:0 0.4rem;}
-}
+	.makeTemplate .rate34 {margin:0 1rem;}
+} /* 360/740  */
 
 
-
-@media screen and (device-aspect-ratio:375/667),
-screen and (device-aspect-ratio:414/736),
-screen and (device-aspect-ratio:19/9) { 
-	.sm_imageCard .sm_intro, .sm_videoCard .sm_intro {margin-top:-3.2rem;}
-	.sm_imageCard .rate34, .sm_videoCard .rate34 {margin:0 2rem;}
-	.videoArea .rate34,
-	.imageDecoration .rate34 {margin:0 3rem;}
+@media screen and (aspect-ratio:9/16),
+	screen and (aspect-ratio:375/667) { 
+	.sm_imageCard .sm_intro, 
+	.sm_videoCard .sm_intro {margin-top:-3.2rem;}
+	.sm_imageCard .rate34,
+	.sm_videoCard .rate34,
+	.videoArea .rate34 {margin:0 2rem;}
+	.imageDecoration .rate34 {margin:0 2.7rem;}
 	.messageArea {border-radius:2rem 2rem 0 0;}
 	.imageDecoration .btnGroup_mf {position:fixed; left:2rem; right:2rem; bottom:13rem;}
 
