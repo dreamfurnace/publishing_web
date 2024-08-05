@@ -326,6 +326,8 @@ a.btn_t_b:visited {color:#fff;}
 	color:#fff; box-shadow:0 0.4rem 1.2rem 0 rgba(122, 144, 176, 0.25);
 	background:#ff6600 url(../images/ic_makevideo.svg) no-repeat 12rem center; background-size:2.8rem;}
 .btn_makeVideo:active, .btn_makeVideo:hover {background-color:#CC5200;}
+.btn_makeVideo:disabled {background:#e1e1e1 url(../images/ic_makevideo_gry.svg) no-repeat 12rem center; color:#aaa; box-shadow:none;}
+
 
 .btn_makeVoice {width:18rem; height:4.6rem; padding-left:4rem; line-height:4.6rem; border-radius:2rem; text-align:left;
 	color:#fff; box-shadow:0 0.4rem 1.2rem 0 rgba(122, 144, 176, 0.25);
@@ -361,13 +363,17 @@ a.btn_t_b:visited {color:#fff;}
 	border:solid 1px #ff6600;
 	background:#fff; box-shadow:0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.1);}
 .tooltip::before {content:''; position:absolute; top:-2rem; left:-0.1rem;
+	display:block; width:2rem; height:2rem; transform: scale(1, -1);
+	background:url(../images/bg_tooltip.svg) no-repeat 0 0; background-size:1rem;}
+/* 
+.tooltip::before {content:''; position:absolute; top:-2rem; left:-0.1rem;
 	display:block; width:2rem; height:2rem;
 	background:#ff6600;
 	clip-path:polygon(1.4rem 2.4rem, 0 1rem, 0 2.1rem);}
 .tooltip::after {content:''; position:absolute; top:-1.8rem; left:0;
 	display:block; width:2rem; height:2rem;
 	background:#fff;
-	clip-path:polygon(1.4rem 2.4rem, 0 1rem, 0 2rem);}
+	clip-path:polygon(1.4rem 2.4rem, 0 1rem, 0 2rem);} */
 
 .tooltip.tyR::before {content:''; left:auto; right:-0.1rem;
 	transform: scaleX(-1);}
@@ -683,6 +689,11 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .valueWrap > .btngroup > .off {color:rgba(255,255,255, 0.4); background:rgba(242, 242, 242, 0.2);}
 .valueWrap > .btngroup > .on {color:#1E1D36; background:#fff;}
 .btn_create.off, .btn_reCreate.off {text-align:center; padding:0;}
+
+.appliedValue > .tooltip {position:absolute; top:-5.4rem; left:3rem;}
+.appliedValue > .tooltip:before {position:absolute; top:auto; bottom:-2rem;  transform: scale(1, 1);}
+.appliedValue > .tooltip > span {display:block; padding:0 8rem 1rem 0;}
+.appliedValue > .tooltip > button {position:absolute; right:1rem; bottom:0; }
 
 /*  checkbox style -text   */
 .valuegroup > .checkbox_t {height:2.8rem; margin:0 0 0.6rem;}
