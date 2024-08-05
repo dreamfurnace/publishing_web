@@ -1152,7 +1152,7 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 	display:flex; justify-content:space-between; align-items:center;}
 .mypage > .head .btn_i_notice.new::after {border-color:#fff;}
 .mypage .mypic {position:relative; display:flex; flex-direction:column; gap:2rem;}
-.mypage .mypic .picwrap {position:relative; margin:4rem 0 0; height:23rem;}
+.mypage .mypic .picwrap {position:relative; margin:4rem 0 2rem; height:23rem;}
 .mypage .mypic .pic {margin:0 auto; position:absolute; z-index:2; top:0; left:50%; margin-left:-11rem;
 	width:22rem; height:22rem;
 	overflow:hidden; border-radius:50%;
@@ -1163,7 +1163,8 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 .mypage .mypic .pic::before {content:"사진등록"; position:absolute; left:0; right:0; bottom:6rem; text-align:center;
 	 color:#D78043; font-size:1.5rem; }
 
-.mypage .mypic .user {display:flex; gap:0.4rem; color:#333; font-size:1.8rem; font-weight:500; justify-content:center;}
+.mypage .mypic .user {position:relative; z-index:3;
+	display:flex; gap:0.4rem; color:#333; font-size:1.8rem; font-weight:500; justify-content:center;}
 .mypage .mypic .btn_i_myVoice {position:absolute; left:50%; margin-left:4rem; bottom:0; z-index:4;}
 
 .mymenu {position:absolute; left:0; bottom:2rem; right:0; padding:2rem;}
@@ -1876,7 +1877,6 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 
 
 
-
 @media only screen and (max-width:320px) {
 	html, body {font-size:9.5px;}
 	.valuegroup {gap:0.2rem;}
@@ -1897,11 +1897,6 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 @media (min-width:345px) and (max-width:360px) {
 	.valuegroup {gap:0.2rem;}
 
-}
-
-
-@media only screen and (min-width:400px) {
-	
 }
 
 
@@ -1930,7 +1925,6 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 
 	.makeTemplate .btnGroup_mf,
 	.imageDecoration .btnGroup_mf {margin-top:2rem;}
-
 
 	.videoArea .rate34 {width:36rem; margin:0 auto;}
 	.videoArea .rate11 {width:48rem; margin:0 auto;}
@@ -1975,16 +1969,15 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	.makeTemplate .stage .bgCard::before {top:37%}
 }
 
-@media screen and (aspect-ratio:375/667),
-	screen and (aspect-ratio:414/736) {
+@media screen and (aspect-ratio:375/667) {
 	.makeTemplate .rate34 {margin:0 4rem;}
 	.btnGroup_mf {margin-top:1rem;}
 }
 
-@media screen and (aspect-ratio:414/736) {
+/* @media screen and (aspect-ratio:414/736) {
 	.makeTemplate .rate34 {margin:0 4rem;}
 	.btnGroup_mf {margin-top:2rem;}
-}
+} */
 
 @supports (-webkit-overflow-scrolling: touch) {
 	/* CSS specific to iOS devices */
