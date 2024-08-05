@@ -40,13 +40,20 @@
 			<h2>템플릿 리스트</h2>
 				<a>
 					<div class="btnGroup">
-						<button type="button">수정</button>
-						<button type="button">보내기</button>
-					</div>
+                              <button type="button" class="btn_i_albumModify">수정</button>
+                              <button type="button" class="btn_i_albumSending">보내기</button>
+                         </div>
 					<img src="../images/@pic01.jpg">
 				</a>
 				<a><img src="../images/@pic02.jpg"></a>
-				<a class="itemVideo"><em>0:20</em><video src="../images/@video01.mp4" muted autoplay playsinline loop></video></a>
+				<a class="itemVideo">
+					<div class="btnGroup">
+                              <button type="button" class="btn_i_albumModify" disabled>수정</button>
+                              <button type="button" class="btn_i_albumSending">보내기</button>
+                         </div>
+					<em>0:20</em>
+					<video src="../images/@video01.mp4" muted autoplay playsinline loop></video>
+				</a>
 				<a ><img src="../images/@pic03.jpg"></a>
 				<a><img src="../images/@pic04.jpg"></a>
 				<a><img src="../images/@pic05.jpg"></a>

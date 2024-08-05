@@ -442,6 +442,14 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 	display:block; padding:0 0.5rem; height:1.8rem; line-height:1.8rem; font-size:1.4rem; color:#fff;
 	border-radius:0.3rem; background:rgba(0,0,0,0.6);}
 
+.templateList > a > .btnGroup {display:none; gap:1rem; justify-content:center;
+	position:absolute; z-index:3; left:0; right:0; bottom:0; height:4rem; background:rgba(0,0,0,0.7);}
+.templateList > a > .btnGroup > button:active,
+.templateList > a > .btnGroup > button:hover {background-color:rgba(255, 255, 255, 0.2); border-radius:50%;}
+.templateList > a > .btnGroup > button:disabled {opacity:0.3;}
+
+.templateList > a:hover >  .btnGroup {display:flex;}
+
 .mainFooter {position:fixed; left:0; right:0; bottom:0; height:10rem;}
 .mainFooter::before {content:''; position:absolute; bottom:0; left:0; 
 	width:3.6rem; height:10rem; 
