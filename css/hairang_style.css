@@ -22,7 +22,8 @@ input[type="text"]:focus {border-color:#333;}
 input[type="text"]::placeholder {color:#999; font-weight:400; font-size:1.5rem;}
 input[type="text"]:focus::placeholder {color:transparent;}
 textarea::placeholder {color:#999;}
-
+textarea:focus::placeholder,
+textarea:hover::placeholder {color:transparent !important;}
 
 /* buttons */
 .btnGroup_mf {margin:3rem 2rem 2rem; display:flex; justify-content:center; gap:1.2rem;}
