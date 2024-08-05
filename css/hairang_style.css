@@ -383,7 +383,7 @@ a.btn_t_b:visited {color:#fff;}
 	background:#fff; box-shadow:0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.1);}
 .tooltip::before {content:''; position:absolute; top:-2rem; left:-0.1rem;
 	display:block; width:2rem; height:2rem; transform: scale(1, -1);
-	background:url(../images/bg_tooltip.svg) no-repeat 0 0; background-size:1rem;}
+	background:url(../images/bg_tooltip.svg) no-repeat 0 0; background-size:1.1rem;}
 
 .tooltip.tyR::before {content:''; left:auto; right:-0.1rem;
 	transform: scaleX(-1);}
@@ -1562,7 +1562,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .notice > .scrollContainer {top:5rem;}
 
 .noticeList {display:flex; flex-direction:column; gap:0;}
-.noticeList .item {padding:2rem; display:flex; flex-direction:column; gap:2rem; border-bottom:1px solid #eee; background:#f6f6f6;}
+.noticeList .item {padding:2rem; display:flex; flex-direction:column; gap:2rem; border-bottom:1px solid #eee; background:#f9f9f9;}
 .noticeList .item.noRead {background:#fff;}
 .noticeList .item > .tit {position:relative; display:flex; flex-direction:column; gap:0.4rem;}
 .noticeList .item > .tit::after {content:''; position:absolute; top:50%; right:0; margin-top:-1.2rem; 
