@@ -34,7 +34,7 @@ textarea::placeholder {color:#999;}
 	position:fixed; left:0; right:0; bottom:0; z-index:21;
 	display:flex; gap:1.4rem; background:#fff;} 
 .btnGroup_f > button {width:50%; height:4.6rem; border-radius:2.5rem; font-size:1.5rem; font-weight:500;}
-.btnGroup_f > button:first-child {color:#555; border:1px solid #dcdcdc;  box-shadow:0 0.4rem 1.2rem 0 rgba(122, 144, 176, 0.1);}
+.btnGroup_f > button:first-child {color:#555; border:1px solid #dcdcdc; background:#fff; box-shadow:0 0.4rem 1.2rem 0 rgba(122, 144, 176, 0.1);}
 .btnGroup_f > button:last-child {color:#fff; border:1px solid #FF6600; background:#FF6600;  box-shadow:0 0.4rem 1.2rem 0 rgba(122, 144, 176, 0.25);}
 .btnGroup_f > button:first-child:hover,
 .btnGroup_f > button:first-child:active {box-shadow:none; background-color:#f9f9f9;}
@@ -879,6 +879,13 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 #sec_textGroup, #sec_stickerGroup, #sec_hanwhaGroup {display:none;}
 .textGroup.active, .stickerGroup.active {display:flex !important;}
 .hanwhaGroup.active {display:block !important;}
+
+.imagecard_textInput {position:fixed; top:0; left:0; right:0; bottom:0; z-index:20; background:rgba(0, 0, 0, 0.7);}
+.imagecard_textInput > .textbox {margin:10vh 3rem 0;}
+.imagecard_textInput textarea {height:70vh; font-size:1.6rem; color:#fff; background:transparent; border:none; }
+.imagecard_textInput textarea::placeholder {color:#fff;}
+.imagecard_textInput .btnGroup_f {padding:2rem; background:none;}
+
 
 
 /***  video card   ***/
@@ -1817,6 +1824,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 /*  popup: sending - customer */
 .sendCustomer .popHeader {background-color:#F8F8F8;}
 .sendCustomer .popupTab {border-bottom:1px solid #E9E9E9; background-color:#F8F8F8;}
+
 
 
 /***   make Loading    ***/
