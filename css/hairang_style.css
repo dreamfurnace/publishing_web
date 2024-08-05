@@ -1442,7 +1442,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 /*** my pic & voice   ***/
 .picNvoice {position:relative; padding:1rem 2rem 0;}
 .picNvoice::before {content:''; position:absolute; top:-7rem; left:0; right:0;
-	height:28rem; background:url(../images/bg_mypic.svg) no-repeat center bottom; background-size:cover;}
+	height:26rem; background:url(../images/bg_mypic.svg) no-repeat center bottom; background-size:cover;}
 .picNvoice .tit {position:relative; z-index:2; text-align:center;
 	margin:4rem 0 2rem; display:flex; flex-direction:column; gap:0.2rem;}
 .picNvoice .tit > strong {font-size:1.6rem; font-weight:500; color:#333;}
@@ -1909,8 +1909,6 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 /***  break point  ***/	
 
 @media only screen and (max-height:800px) { 
-	.sm_imageCard .sm_intro, 
-	.sm_videoCard .sm_intro {margin-top:-3.2rem;}
 	.sm_imageCard .rate34,
 	.sm_videoCard .rate34,
 	.videoArea .rate34 {margin:0 2rem;}
@@ -1932,6 +1930,8 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	.mypage .mypic .btn_i_myVoice {bottom:3rem;}
 	.mypage .mypic {gap:0;}
 	.mymenu {bottom:1rem;}
+
+	.mainPic {width:18rem; height:18rem;}
 }
 
 
@@ -2019,6 +2019,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 @media screen and (device-aspect-ratio:18/37) {
 	.imageDecoration .rate34 {margin:0 0.4rem;}
 	.makeTemplate .rate34 {margin:0 1rem;}
+	.sm_imageCard .rate34, .sm_videoCard .rate34, .videoArea .rate34 {margin:0;}
 } /* 360/740  */
 
 
@@ -2026,6 +2027,9 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	screen and (aspect-ratio:320/658) {
 	.makeTemplate .rate34 {margin:0 2rem;}
 	.makeTemplate .stage .bgCard::before {top:37%}
+	.sm_imageCard .rate34, .sm_videoCard .rate34, .videoArea .rate34 {margin:0;}
+
+	.mainPic {width:20rem; height:20rem;}
 }
 
 @media screen and (aspect-ratio:375/667) {
