@@ -295,12 +295,18 @@ a.btn_t_b:visited {color:#fff;}
 	width:10rem; height:4rem; font-weight:500;  color:#110B89; border-radius:2.5rem;
 	background:#fff; box-shadow:0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.1);}
 .btn_refresh::before {content:''; display:block; width:2rem; height:2rem; background:url(../images/ic_refresh.svg) no-repeat center; }
+.btn_refresh:disabled {border-right:1px solid #ccc !important; color:#aaa; background-color:#e1e1e1; box-shadow:none;}
+.btn_refresh:disabled::before {background:url(../images/ic_refresh_gry.svg) no-repeat center;}
+
+
 .btn_t_wh02 {padding:0 1.6rem; display:flex; gap:1rem; align-items:center; justify-content:center;
 	width:10rem; height:4rem; font-weight:500;  color:#110B89; border-radius:2.5rem;
 	background:#fff; box-shadow:0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.1);}
 .btn_t_wh02:active, .btn_t_wh02:hover, 
 .btn_remake:active, .btn_remake:hover,
 .btn_refresh:active, .btn_refresh:hover {background-color:#f9f9f9;}
+.btn_t_wh02:disabled {box-shadow:none;}
+
 
 .btn_create {width:8rem; padding-left:1.4rem; border-radius:2rem; text-align:left;
 	color:#fff; background:#ff6600 url(../images/ic_create.svg) no-repeat 5.2rem center;}
@@ -1160,7 +1166,7 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 	border:1px solid rgba(221, 221, 221, 0.87);
 	background: #fff url(../images/bg_pic.svg) no-repeat center 6rem; background-size:7.2rem;}
 .mypage .mypic .pic > img {position:relative; z-index:3; width:100%; object-fit:cover;}
-.mypage .mypic .pic::before {content:"사진등록"; position:absolute; left:0; right:0; bottom:6rem; text-align:center;
+.mypage .mypic .pic::before {content:"사진등록"; position:absolute; left:0; right:0; bottom:5rem; text-align:center;
 	 color:#D78043; font-size:1.5rem; }
 
 .mypage .mypic .user {position:relative; z-index:3;
