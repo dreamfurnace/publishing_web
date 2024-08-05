@@ -1849,6 +1849,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 /***  break point  ***/	
 
 @media screen and (aspect-ratio:9/16),
+	screen and (aspect-ratio:9/19),
 	screen and (aspect-ratio:9/20),
 	screen and (aspect-ratio:375/667) { 
 	.sm_imageCard .sm_intro, 
@@ -1858,7 +1859,6 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	.videoArea .rate34 {margin:0 2rem;}
 	.imageDecoration .rate34 {margin:0 3rem;}
 	.messageArea {border-radius:2rem 2rem 0 0;}
-	/* .imageDecoration .btnGroup_mf {position:fixed; left:2rem; right:2rem; bottom:13rem;} */
 
 	.makeTemplate .rate34 {margin:0 3rem;}
 	.makeTemplate .rate11 .bgCard, .makeTemplate .emtyRate11 .bgCard, 
@@ -1974,9 +1974,8 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 
 @media screen and (aspect-ratio:360/740),
 	screen and (aspect-ratio:320/658) {
-		.makeTemplate .rate34 {margin:0 2rem;}
-		.makeTemplate .stage .bgCard::before {top:37%}
-
+	.makeTemplate .rate34 {margin:0 2rem;}
+	.makeTemplate .stage .bgCard::before {top:37%}
 }
 
 @media screen and (aspect-ratio:375/667),
