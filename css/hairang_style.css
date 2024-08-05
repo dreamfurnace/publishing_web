@@ -141,6 +141,24 @@ textarea:hover::placeholder {color:transparent !important;}
 .btn_i_change.on::after {content:''; 
 	transform:rotate(180deg); transition:0.3s;}
 
+.btn_i_go {width:5.6rem; height:5.6rem; border-radius:50%; 
+	background:#383494 url(../images/ic_arrow_wh.svg) no-repeat center;
+	box-shadow:0 0 2.4rem 0 rgba(0, 0, 0, 0.3);}
+.btn_i_go:active, .btn_i_go:hover,
+.btn_i_editTemplate:active, .btn_i_editTemplate:hover {background-color:#3958A8;}
+ 
+.btn_i_editTemplate {width:5.6rem; height:5.6rem; border-radius:50%; 
+	background:#383494 url(../images/myalbum_i_modify.svg) no-repeat center; background-size:4rem;
+	box-shadow:0 0 2.4rem 0 rgba(0, 0, 0, 0.3);}
+    
+.btn_i_sending {display:flex; justify-content:center; align-items:center;
+	width:5.6rem; height:5.6rem; border-radius:50%; background:#ff6600; 
+	box-shadow:0 0 2.4rem 0 rgba(0, 0, 0, 0.3);}
+.btn_i_sending:before {content:''; width:3rem; height:3rem; margin:-0.6rem 0 0 0.4rem;
+	background:url(../images/ic_sending.svg) no-repeat center; background-size:2.8rem; 
+	transform:rotate(320deg);}
+.btn_i_sending:active, .btn_i_sending:hover {background-color:#CC5200;}
+	
 
 [class^="btn_t_"] {font-weight:500; height:4rem; line-height:4rem; 
 	font-size:1.5rem; text-align:center; border-radius:2.5rem;}
@@ -211,20 +229,20 @@ a.btn_t_b:visited {color:#fff;}
 
 .btn_kakao,.btn_sms, .btn_camera, .btn_gallery {width:50%; height:12rem; 
 	display:flex; gap:0.4rem; flex-direction:column; justify-content:center; align-items:center;
-	font-weight:500; color:#333; font-size:1.8rem;
-	border-radius:2rem; box-shadow:0 0 1.2rem 0 rgba(0, 0, 0, 0.15);}
+	font-weight:500; color:#333; font-size:1.8rem; border:1px solid #E7E8E9;
+	border-radius:2rem; box-shadow:0 0 2.4rem 0 rgba(112, 144, 176, 0.25);}
 
-.btn_kakao {border:1px solid #391C1E; color:#391C1E;}
+.btn_kakao {color:#391C1E;}
 .btn_kakao::before {content:''; width:5rem; height:6rem; 
 	background:url(../images/ic_kakao.png) no-repeat center; background-size:5rem;}
-.btn_sms {border:1px solid #0959A3; color:#054C8D;}
+.btn_sms {color:#054C8D;}
 .btn_sms::before {content:''; width:5rem; height:6rem; 
 	background:url(../images/ic_sms.png) no-repeat center; background-size:5rem;}
 
-.btn_camera {color:#134288; border:1px solid #2156A5;}
+.btn_camera {color:#134288;}
 .btn_camera::before {content:''; width:6rem; height:6rem; 
 	background:url(../images/ic_camera.png) no-repeat center; background-size:6rem;}
-.btn_gallery {color:#D10053; border:1px solid #D10053;}
+.btn_gallery {color:#D10053;}
 .btn_gallery::before {content:''; width:7rem; height:6rem; 
 		background:url(../images/ic_gallery_ios.png) no-repeat center; background-size:7rem;}
 .btn_kakao:active, .btn_kakao:hover,
@@ -366,15 +384,6 @@ a.btn_t_b:visited {color:#fff;}
 .tooltip::before {content:''; position:absolute; top:-2rem; left:-0.1rem;
 	display:block; width:2rem; height:2rem; transform: scale(1, -1);
 	background:url(../images/bg_tooltip.svg) no-repeat 0 0; background-size:1rem;}
-/* 
-.tooltip::before {content:''; position:absolute; top:-2rem; left:-0.1rem;
-	display:block; width:2rem; height:2rem;
-	background:#ff6600;
-	clip-path:polygon(1.4rem 2.4rem, 0 1rem, 0 2.1rem);}
-.tooltip::after {content:''; position:absolute; top:-1.8rem; left:0;
-	display:block; width:2rem; height:2rem;
-	background:#fff;
-	clip-path:polygon(1.4rem 2.4rem, 0 1rem, 0 2rem);} */
 
 .tooltip.tyR::before {content:''; left:auto; right:-0.1rem;
 	transform: scaleX(-1);}
@@ -491,6 +500,22 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 	background:#1E1D36 url(../images/switch_list_on.svg) no-repeat center; background-size:1.6rem;}
 
 
+.greetingCard {position:relative;
+	width:28rem; height:38rem; 
+	background:url(../images/greetingcard_female.png) no-repeat center; background-size:100%;}
+.greetingTxt01 {position:absolute; top:6rem; left:3rem;
+	font-size:1.5rem; color:#505050;}
+.greetingTxt01 em {font-size:2rem; color:#333; font-weight:500;}
+.greetingTxt01 span {font-weight:500; color:#ff6600;}
+.greetingTxt01 > p {margin-bottom:1.4rem;}
+.greetingTxt02 {position:absolute; bottom:9.4rem; right:2rem; font-weight:600;
+	font-size:1.8rem; color:#4D4B7B;}
+
+.greetingCard.male {position:relative;
+	width:28rem; height:38rem; 
+	background:url(../images/greetingcard_male.png) no-repeat center; background-size:100%;}
+
+
 /***   MAKE TEMPLATE  ***/
 .btnwrap_rate { margin:0 0 1.2rem; position: relative; z-index:2;
 	display:flex; gap:0.8rem; justify-content:center;}
@@ -540,8 +565,6 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .makeTemplate .stage.rate11 .bgCard::before {top:40%;}
 .makeTemplate .stage.rate43 .bgCard::before {top:47%;}
 
-
-.makeTemplate .btnGroup_mf {}
 
 .rate34 .bgCard, 
 .emtyRate34 .bgCard {aspect-ratio:3/4;}
@@ -1694,6 +1717,8 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .musicItem .palyElements > .playSec {display:none; color:#383494;}
 .musicItem.playOn .playSec {display:block;}
 
+.bgmList > .intro,
+.sm_messageList > .intro {margin:1rem auto 3rem; text-align:center; font-size:1.5rem;}
 
 
 /* bgm playbar  */
