@@ -244,7 +244,7 @@ a.btn_t_b:visited {color:#fff;}
 	background:url(../images/ic_camera.png) no-repeat center; background-size:6rem;}
 .btn_gallery {color:#D10053;}
 .btn_gallery::before {content:''; width:7rem; height:6rem; 
-		background:url(../images/ic_gallery_android.png) no-repeat center; background-size:5rem;}
+		background:url(../images/ic_gallery_android.png) no-repeat center; background-size:5.4rem;}
 .btn_kakao:active, .btn_kakao:hover,
 .btn_sms:active, .btn_sms:hover,
 .btn_camera:active, .btn_camera:hover,
