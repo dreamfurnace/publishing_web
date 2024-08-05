@@ -1850,8 +1850,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 
 @media screen and (aspect-ratio:9/16),
 	screen and (aspect-ratio:9/20),
-	screen and (aspect-ratio:375/667),
-	screen and (max-height:800px) { 
+	screen and (aspect-ratio:375/667) { 
 	.sm_imageCard .sm_intro, 
 	.sm_videoCard .sm_intro {margin-top:-3.2rem;}
 	.sm_imageCard .rate34,
@@ -1932,6 +1931,10 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	.imageDecoration .rate11 .bgCard,
 	.imageDecoration .rate43 .bgCard {margin-top:0; margin:0 auto;}
 
+	.makeTemplate .btnGroup_mf,
+	.imageDecoration .btnGroup_mf {margin-top:2rem;}
+
+
 	.videoArea .rate34 {width:36rem; margin:0 auto;}
 	.videoArea .rate11 {width:48rem; margin:0 auto;}
 
@@ -1972,14 +1975,20 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 @media screen and (aspect-ratio:360/740),
 	screen and (aspect-ratio:320/658) {
 		.makeTemplate .rate34 {margin:0 2rem;}
+		.makeTemplate .stage .bgCard::before {top:37%}
 
 }
 
-@media screen and (aspect-ratio:375/667) {
+@media screen and (aspect-ratio:375/667),
+	screen and (aspect-ratio:414/736) {
 	.makeTemplate .rate34 {margin:0 4rem;}
 	.btnGroup_mf {margin-top:1rem;}
 }
 
+@media screen and (aspect-ratio:414/736) {
+	.makeTemplate .rate34 {margin:0 4rem;}
+	.btnGroup_mf {margin-top:2rem;}
+}
 
 @supports (-webkit-overflow-scrolling: touch) {
 	/* CSS specific to iOS devices */
