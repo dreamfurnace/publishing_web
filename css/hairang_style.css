@@ -1201,12 +1201,12 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 /***  my page   ***/
 .mypage {position:fixed; top:0; right:0; width:100%; bottom:0; z-index:50; 
 	background:#fff;}
- .mypage::before {content:''; position:absolute; top:0; left:0; right:0; height:33rem; 
+.mypage::before {content:''; position:absolute; top:0; left:0; right:0; height:33rem; 
 	background:url(../images/bg_mypage.svg) no-repeat center bottom; background-size:cover;}
 
-.mypage > .head {position:relative; z-index:4; padding:0 1rem; height:5rem; 
+.mypage .head {position:relative; z-index:4; padding:0 1rem; height:5rem; 
 	display:flex; justify-content:space-between; align-items:center;}
-.mypage > .head .btn_i_notice.new::after {border-color:#fff;}
+.mypage .head .btn_i_notice.new::after {border-color:#fff;}
 .mypage .mypic {position:relative; display:flex; flex-direction:column; gap:2rem;}
 .mypage .mypic .picwrap {position:relative; margin:4rem 0 2rem; height:23rem;}
 .mypage .mypic .pic {margin:0 auto; position:absolute; z-index:2; top:0; left:50%; margin-left:-11rem;
@@ -1235,7 +1235,6 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 .mymenu li:nth-child(3) > a::before {background:#FBB584 url(../images/ic_mypage_menu03.svg) no-repeat center;}
 .mymenu li:nth-child(4) > a::before {background:#FBB584 url(../images/ic_mypage_menu04.svg) no-repeat center;}
 .mymenu li:nth-child(5) > a::before {background:#FBB584 url(../images/ic_mypage_menu05.svg) no-repeat center;}
-
 
 
 /***   Sending   ***/
