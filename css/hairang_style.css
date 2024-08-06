@@ -42,7 +42,7 @@ textarea:hover::placeholder {color:transparent !important;}
 .btnGroup_f > button:last-child:hover,
 .btnGroup_f > button:last-child:active {box-shadow:none; background-color:#CC5200; border-color:#CC5200;}
 
-.btnwrap_f {position:fixed; left:0; right:0; bottom:2rem; z-index:4;
+.btnwrap_f {position:fixed; left:0; right:0; bottom:3rem; z-index:4;
 	display:flex; justify-content:center;}
 .btnwrap_f > button, .btnwrap_f > a {width:18rem; height:4.6rem; line-height:4.6rem;}
 
@@ -1762,7 +1762,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 
 /* popup - message list */
 .messageGroup .popupPanel {position:fixed; top:11rem; left:0; right:0; bottom:0;
-	overflow:hidden; overflow-y:auto; padding-top:1rem; }
+	overflow:hidden; overflow-y:auto; padding:1rem 2rem 15rem; }
 .messageGroup .item {display:none; gap:1.4rem; flex-direction:column;}
 .messageGroup .item.active {display:flex;}
 
