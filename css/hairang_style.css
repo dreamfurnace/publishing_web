@@ -1549,14 +1549,15 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .notice > .scrollContainer {top:5rem;}
 
 .noticeList {display:flex; flex-direction:column; gap:0;}
-.noticeList .item {padding:2rem; display:flex; flex-direction:column; gap:2rem; border-bottom:1px solid #eee; background:#f9f9f9;}
-.noticeList .item.noRead {background:#fff;}
+.noticeList .item {padding:2rem; display:flex; flex-direction:column; gap:2rem; border-bottom:1px solid #eee; background:#fff;}
+/* .noticeList .item.noRead {background:#fff;} */
 .noticeList .item > .tit {position:relative; display:flex; flex-direction:column; gap:0.4rem;}
 .noticeList .item > .tit::after {content:''; position:absolute; top:50%; right:0; margin-top:-1.2rem; 
 	display:block; width:2.4rem; height:2.4rem; background:url(../images/arrow_notice.svg) no-repeat center;  transition:0.1s;}
 .noticeList .item > .tit > span {font-size:1.4rem; color:#777;}
-.noticeList .item > .tit > strong {position:relative; font-size:1.6rem; font-weight:500; color:#333;}
-.noticeList .item > .cont {display:none; font-size:1.4rem; color:#777; line-height:2.1rem;}
+.noticeList .item > .tit > strong {position:relative; font-size:1.8rem; font-weight:500; color:#333;}
+.noticeList .item > .cont {display:none; padding-top:2rem; 
+	font-size:1.7rem; color:#333; line-height:2.1rem; border-top:dashed 1px #e1e1e1;}
 .noticeList .item.open > .tit::after {transform:rotate(180deg); transition:0.1s;}
 .noticeList .item.open > .cont {display:block;}
 .noticeList .item.new > .tit > strong::after {content:''; margin-left:0.4rem; vertical-align:1.1rem;
@@ -1565,6 +1566,15 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 
 .cateTab::-webkit-scrollbar,.promptItems::-webkit-scrollbar, .popupTab::-webkit-scrollbar {height:0;} 
 
+.noticeList .cont > p {margin:1rem 0 0;}
+.noticeList .cont .link {margin:1rem 0; font-weight:500; color:#FF6600; border-bottom:1px solid #ff6600;}
+.noticeList .cont > p > .link {margin:0;}
+.noticeList .cont .mt10 {margin-top:1rem;}
+.noticeList .cont .noLine {border:none !important;}
+
+.noticeList .tyImage01 {display:flex; gap:2rem; align-items:center; }
+.noticeList .imgWrap > img {width:12rem}
+.noticeList .txtWrap {word-break:keep-all;}
 
 /***   error    ***/
 .errorPage {margin:13vh 0 0; display:flex; flex-direction:column; gap:2.6rem; text-align:center; align-items:center;}
