@@ -1548,7 +1548,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 /***  notice   ***/
 .notice > .scrollContainer {top:5rem;}
 
-.noticeList {display:flex; flex-direction:column; gap:0;}
+.noticeList {display:flex; flex-direction:column; gap:0; border-top:1px solid #eee;}
 .noticeList .item {padding:2rem; display:flex; flex-direction:column; gap:2rem; border-bottom:1px solid #eee; background:#fff;}
 /* .noticeList .item.noRead {background:#fff;} */
 .noticeList .item > .tit {position:relative; display:flex; flex-direction:column; gap:0.4rem;}
