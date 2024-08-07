@@ -100,7 +100,7 @@ textarea:hover::placeholder {color:transparent !important;}
 .btn_i_timePoint::after {content:''; position:absolute; top:50%; left:50%; margin:-0.5rem 0 0 -0.5rem;
 	display:block; width:1rem; height:1rem; border-radius:50%; background:#231F84;}
 
-.btn_i_sound {border-radius:50%; background:#fff url(../images/ic_sound_off.svg) no-repeat center; background-size:2rem;}
+.btn_i_sound {border-radius:50%; background:rgba(255, 255, 255, 0.3) url(../images/ic_sound_off.svg) no-repeat center; background-size:2rem;}
 .btn_i_sound.on {background:#231F84 url(../images/ic_sound_on.svg) no-repeat center; background-size:2rem;}
 
 .btn_i_menuClose {background:url(../images/ic_mypage_x.svg) no-repeat center;}
