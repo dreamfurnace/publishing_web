@@ -568,7 +568,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .emtyRate43 .bgCard > img {display:none;}
 
 .videoElements {display:flex; gap:1.4rem; height:4.2rem; align-items:center;
-	position:absolute; left:1.4rem; right:1.4rem; bottom:1.4rem; z-index:2;
+	position:absolute; left:1.4rem; right:1.4rem; bottom:1.2rem; z-index:2;
 	border-radius:2.5rem; border:1px solid #fff;
 	background:rgba(255,255,255,0.7);}
 .videoElements > .btn_i_sound {width:4rem; height:4rem;}
@@ -727,9 +727,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 	border-radius:2rem; background:rgba(242, 242, 242, 0.2);}
 .valueWrap > .btngroup {display:flex; flex-direction:column; gap:1rem;}
 .valueWrap > .btngroup > button {width:8rem; height:3.2rem; line-height:3rem;}
-.valueWrap > .btngroup > .off {color:rgba(255,255,255, 0.4); background:rgba(242, 242, 242, 0.2);}
-.valueWrap > .btngroup > .on {color:#1E1D36; background:#fff;}
-.btn_create.off, .btn_reCreate.off {text-align:center; padding:0;}
+
 
 .appliedValue > .tooltip {position:absolute; top:-5.4rem; left:3rem;}
 .appliedValue > .tooltip:before {position:absolute; top:auto; bottom:-2rem;  transform: scale(1, 1);}
@@ -1875,6 +1873,13 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .aniwrap .pnt03 {background:#F04E2A; animation-delay:0.3s;}
 
 
+
+/*** to customer card  ***/
+.container {position:fixed; top:0; left:0; right:0; bottom:0; overflow: hidden; overflow-y:auto;}
+.container > header {position:fixed; top:0; left:0; right:0; z-index:3; height:5rem; background:#f2f2f2;}
+.container > header > h1 {margin:0 auto;}
+.container > .cardWrap {max-width:50rem; margin:5rem auto;}
+.container .rate34 .bgCard {max-width:36rem; margin:0 auto;}
 
 
 
