@@ -414,9 +414,9 @@ section > h2, section > h3 {display:none;}
 
 /*  layout  */
 header {position:relative; padding:0 2rem 0 1rem; height:5rem;
-	display:flex; justify-content:space-between; align-items:center; }
+	display:flex; justify-content:space-between; align-items:center;}
 header > h1 {margin-left:1rem;}
-header > .asideMenu {display:flex; gap:0; margin-right:-0.6rem;}
+header > .asideMenu {position:relative; z-index:3; display:flex; gap:0; margin-right:-0.9rem;}
 
 header > .btn_group_l,
 header > .btn_group_r {position:relative; z-index:2; display:flex; gap:0.8rem; align-items:center;}
