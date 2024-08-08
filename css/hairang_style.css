@@ -1245,11 +1245,11 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 .mymenu ul {display:flex; flex-direction:column; gap:1.2rem}
 .mymenu li {height:5rem; border-radius:2.5rem; border:1px solid #e4e4e4;}
 .mymenu li > a {line-height:5rem; display:flex; gap:1.2rem; align-items:center; color:#333; font-weight:500; font-size:1.5rem;}
-.mymenu li > a::before {content:''; margin-left:0.4rem; border-radius:50%; width:4.4rem; height:4.4rem; background-size:2.4rem !important;}
+.mymenu li > a::before {content:''; margin-left:0.4rem; border-radius:50%; width:4.4rem; height:4.4rem;}
 .mymenu li:active, .mymenu li:hover {background-color:#f9f9f9;}
 
-.mymenu li:nth-child(1) > a::before {background:#FBB584 url(../images/ic_mypage_menu01.svg) no-repeat center;}
-.mymenu li:nth-child(2) > a::before {background:#FBB584 url(../images/ic_mypage_menu02.svg) no-repeat center;}
+.mymenu li:nth-child(1) > a::before {background:#FBB584 url(../images/ic_mypage_menu01.svg) no-repeat 1rem center; }
+.mymenu li:nth-child(2) > a::before {background:#FBB584 url(../images/ic_mypage_menu02.svg) no-repeat 1rem center;}
 .mymenu li:nth-child(3) > a::before {background:#FBB584 url(../images/ic_mypage_menu03.svg) no-repeat center;}
 .mymenu li:nth-child(4) > a::before {background:#FBB584 url(../images/ic_mypage_menu04.svg) no-repeat center;}
 .mymenu li:nth-child(5) > a::before {background:#FBB584 url(../images/ic_mypage_menu05.svg) no-repeat center;}
