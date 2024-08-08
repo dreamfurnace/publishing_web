@@ -1399,7 +1399,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	background:url(../images/bg_head_sent.svg) no-repeat center bottom; background-size:cover;}
 .sentbox .templateList {margin:0;
 	display:flex; gap:1.2rem; flex-direction:column;}
-.sentbox .templateList > .item {position:relative; display:block; box-shadow:0 0 1.5rem 0 rgba(122, 144, 176, 0.10);}
+.sentbox .templateList > .item {position:relative; display:block; aspect-ratio:auto; box-shadow:0 0 1.5rem 0 rgba(122, 144, 176, 0.10);}
 .sentbox .templateList > .item > a {display:flex; gap:2.5rem; overflow:hidden; border-radius:1.6rem; 
 	border:1px solid #e1e1e1; background:#fff;}
 .sentbox .templateList > .item .pic {width:14rem; height:14rem; aspect-ratio:1/1; border-radius:0 1.6rem 1.6rem 0; overflow:hidden;}
