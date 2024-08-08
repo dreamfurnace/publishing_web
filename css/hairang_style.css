@@ -757,8 +757,12 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .imageDecoration .btn_t_name > .tooltip {position:absolute; top:3.6rem; right:-0.5rem; z-index:4;}
 .imageDecoration > .btnwrap_f {position:fixed; left:0; right:0; bottom:8.6rem;}
 
-.imageDecoration .tooltipWrap {position:absolute; top:1.4rem; left:1.4rem; z-index:4;}
+.imageDecoration .tooltipWrap {position:absolute; top:1.2rem; left:1.2rem; z-index:4;}
 .imageDecoration .tooltip {margin:1.2rem 0 0 1.8rem;}
+
+.imageDecoration .btn_done {position:absolute; top:1.2rem; right:1.2rem; z-index:10;
+	padding:0.6rem 1.4rem; font-size:1.5rem;  font-weight:500; color:#1E1D36; 
+	border-radius:2.5rem; background-color:rgba(255,255,255,0.7); box-shadow:0 0 0.4rem 0 rgba(0, 0, 0, 0.2);}
 
 .decorationArea, .simple_btnArea,
 .picNvoice .myVoice {position:fixed; left:0; right:0; bottom:0; z-index:10;
@@ -1363,7 +1367,7 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 /***   my album   ***/
 .myalbum:before {content:''; position:fixed; top:0; left:0; right:0; height:28rem; z-index:0;
 	background:url(../images/bg_head_myalbum.svg) no-repeat center bottom; background-size:cover;}
-.myalbum .btnGroup_edit {margin:0.4rem 0 0;}
+.myalbum .btnGroup_edit {margin:0.4rem 0 0; padding-top:0.4rem;}
 .myalbum > .tabPanel {padding:1rem 0 8rem;
 	position:fixed; top:15.6rem; left:0; right:0; bottom:0; overflow:hidden; overflow-y:auto;}
 .myalbum .templateList {padding:0 2rem 8rem; gap:1.6rem; grid-template-columns:repeat(2, 1fr);}
