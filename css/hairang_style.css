@@ -1222,7 +1222,7 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 .mypage::before {content:''; position:absolute; top:0; left:0; right:0; height:33rem; 
 	background:url(../images/bg_mypage.svg) no-repeat center bottom; background-size:cover;}
 
-.mypage .head {position:relative; z-index:4; padding:0 1rem; height:5rem; 
+.mypage .head {position:relative; z-index:4; padding:0 1.1rem; height:5rem; 
 	display:flex; justify-content:space-between; align-items:center;}
 .mypage .head .btn_i_notice.new::after {border-color:#fff;}
 .mypage .mypic {position:relative; display:flex; flex-direction:column; gap:2rem;}
