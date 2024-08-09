@@ -763,6 +763,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .imageDecoration .btn_done {position:absolute; top:1.2rem; right:1.2rem; z-index:10;
 	padding:0.6rem 1.4rem; font-size:1.5rem;  font-weight:500; color:#1E1D36; 
 	border-radius:2.5rem; background-color:rgba(255,255,255,0.7); box-shadow:0 0 0.4rem 0 rgba(0, 0, 0, 0.2);}
+.btn_done:active, .btn_done:hover {opacity:0.7;}
 
 .decorationArea, .simple_btnArea,
 .picNvoice .myVoice {position:fixed; left:0; right:0; bottom:0; z-index:10;
@@ -1225,7 +1226,7 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 .mypage .head {position:relative; z-index:4; padding:0 1.1rem; height:5rem; 
 	display:flex; justify-content:space-between; align-items:center;}
 .mypage .head .btn_i_notice.new::after {border-color:#fff;}
-.mypage .mypic {position:relative; display:flex; flex-direction:column; gap:1rem;}
+.mypage .mypic {position:relative; display:flex; flex-direction:column; gap:2rem;}
 .mypage .mypic .picwrap {position:relative; margin:4rem 0 2rem; height:23rem;}
 .mypage .mypic .pic {margin:0 auto; position:absolute; z-index:2; top:0; left:50%; margin-left:-11rem;
 	width:22rem; height:22rem;
@@ -1234,7 +1235,7 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 	border:1px solid rgba(221, 221, 221, 0.87);
 	background: #fff url(../images/bg_pic.svg) no-repeat center 6rem; background-size:7.2rem;}
 .mypage .mypic .pic > img {position:relative; z-index:3; width:100%; object-fit:cover;}
-.mypage .mypic .pic::before {content:"사진등록"; position:absolute; left:0; right:0; bottom:5rem; text-align:center;
+.mypage .mypic .pic::before {content:"사진등록"; position:absolute; left:0; right:0; bottom:6rem; text-align:center;
 	 color:#D78043; font-size:1.5rem; }
 
 .mypage .mypic .user {position:relative; z-index:3;
@@ -1915,11 +1916,9 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	.makeTemplate .emtyRate43 .bgCard, 
 	.imageDecoration .rate43 .bgCard  {margin:2rem 0 0;}
 
-	.mypage .mypic .pic {width:20rem; height:20rem;}
-	.mypage .mypic .btn_i_myVoice {bottom:3rem;}
-	.mymenu {bottom:1rem;}
-
 	.mainPic {width:18rem; height:18rem;}
+
+
 }
 
 
@@ -1992,7 +1991,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	.messageArea {border-radius:2.5rem 2.5rem 0 0;}
 	.final_txtArea {border-radius:3rem;}
 
-	.mypage .mypic .picwrap {margin:2rem 0 0;}
+	.mypage .mypic .picwrap {margin:1rem 0 0;}
 
 	.myalbumDetail .btnwrap_m {justify-content:center;}
 	.sentboxDetail .stage {max-width:36rem;}
@@ -2001,10 +2000,6 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 } /* for Duo  */
 
 
-
-@media screen and (device-aspect-ratio:160/329) {
-	.imageDecoration .rate34 {margin:0 1rem;}
-}/* 320/658  */
 
 
 @media screen and (device-aspect-ratio:18/37) {
@@ -2020,19 +2015,36 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	.makeTemplate .stage .bgCard::before {top:37%}
 	.sm_imageCard .rate34, .sm_videoCard .rate34, .videoArea .rate34 {margin:0;}
 
+	.mypage .mypic .picwrap {margin-top:1rem;}
 	.mainPic {width:20rem; height:20rem;}
+	
+	
 
-	.mypage .mypic .picwrap {margin:1rem 0 0; height:22rem;}
-	.mypage .mypic {gap:1rem;}
 }
+
+@media screen and (device-aspect-ratio:160/329) {
+	.imageDecoration .rate34 {margin:0 1rem;}
+	
+	.mypage .mypic .pic {width:20rem; height:20rem;}
+	.mypage .mypic .pic::before {bottom:5rem;}
+	.mypage .mypic .btn_i_myVoice {bottom:3rem;}
+	.mymenu {bottom:1rem;}
+
+}/* 320/658  */
+
 
 @media screen and (aspect-ratio:375/667) {
 	.makeTemplate .rate34 {margin:0 4rem;}
 	.btnGroup_mf {margin-top:1rem;}
 	.myalbumDetail .rate34 .bgCard {margin:0 3rem;}
 
-	.mypage .mypic .picwrap {margin:1rem 0 0; height:22rem;}
+	.mypage .mypic .picwrap {margin:0; height:22rem;}
 	.mypage .mypic {gap:0;}
+
+	.mypage .mypic .pic {width:20rem; height:20rem;}
+	.mypage .mypic .pic::before {bottom:5rem;}
+	.mypage .mypic .btn_i_myVoice {bottom:3rem;}
+	.mymenu {bottom:1rem;}
 }
 
 @media screen and (aspect-ratio:414/736) {
@@ -2041,7 +2053,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	.myalbumDetail .rate34 .bgCard {margin:0 3rem;}
 
 	.mypage .mypic .picwrap {margin:1rem 0 0; }
-	.mypage .mypic {gap:1rem;}
+	.mypage .mypic {gap:3rem;}
 
 }
 
