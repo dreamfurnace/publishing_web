@@ -1225,7 +1225,7 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 .mypage .head {position:relative; z-index:4; padding:0 1.1rem; height:5rem; 
 	display:flex; justify-content:space-between; align-items:center;}
 .mypage .head .btn_i_notice.new::after {border-color:#fff;}
-.mypage .mypic {position:relative; display:flex; flex-direction:column; gap:2rem;}
+.mypage .mypic {position:relative; display:flex; flex-direction:column; gap:1rem;}
 .mypage .mypic .picwrap {position:relative; margin:4rem 0 2rem; height:23rem;}
 .mypage .mypic .pic {margin:0 auto; position:absolute; z-index:2; top:0; left:50%; margin-left:-11rem;
 	width:22rem; height:22rem;
