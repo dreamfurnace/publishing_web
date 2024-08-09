@@ -105,10 +105,10 @@ textarea:hover::placeholder {color:transparent !important;}
 
 .btn_i_menuClose {background:url(../images/ic_mypage_x.svg) no-repeat center;}
 .btn_i_home {background:url(../images/ic_mypage_home.svg) no-repeat center;}
-.btn_i_myVoice {width:6rem; height:6rem; border-radius:50%; border:1px solid #e4e4e4;
-	background:#fff url(../images/ic_mypage_voice01.svg) no-repeat center; background-size:3.6rem;
+.btn_i_myVoice {width:6rem; height:6rem; border-radius:50%; border:1px solid #E7ECF3;
+	background:#fff url(../images/ic_mypage_voice01.svg) no-repeat center; background-size:3rem;
 	box-shadow: 0 1.6rem 4rem 0 rgba(112, 144, 176, 0.2);}
-.btn_i_myVoice.done {background:#ff6600 url(../images/ic_mypage_voice02.svg) no-repeat center; background-size:3.6rem;}
+.btn_i_myVoice.done {background:#ff6600 url(../images/ic_mypage_voice02.svg) no-repeat center; background-size:3rem;}
 
 .btn_i_seh {width:4rem; height:4rem; background:url(../images/ic_seh.svg) no-repeat center; background-size:2.4rem;}
 .btn_i_sehDel {position:relative; width:4rem; height:4rem;}
@@ -1232,7 +1232,7 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 	width:22rem; height:22rem;
 	overflow:hidden; border-radius:50%;
 	box-shadow: 0 1.6rem 4rem 0 rgba(112, 144, 176, 0.2);
-	border:1px solid rgba(221, 221, 221, 0.87);
+	border:1px solid #fff;
 	background: #fff url(../images/bg_pic.svg) no-repeat center 6rem; background-size:7.2rem;}
 .mypage .mypic .pic > img {position:relative; z-index:3; width:100%; object-fit:cover;}
 .mypage .mypic .pic::before {content:"사진등록"; position:absolute; left:0; right:0; bottom:6rem; text-align:center;
@@ -1918,9 +1918,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 
 	.mainPic {width:18rem; height:18rem;}
 
-
 }
-
 
 
 @media only screen and (max-width:320px) {
@@ -2000,8 +1998,6 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 } /* for Duo  */
 
 
-
-
 @media screen and (device-aspect-ratio:18/37) {
 	.imageDecoration .rate34 {margin:0 0.4rem;}
 	.makeTemplate .rate34 {margin:0 1rem;}
@@ -2017,10 +2013,8 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 
 	.mypage .mypic .picwrap {margin-top:1rem;}
 	.mainPic {width:20rem; height:20rem;}
-	
-	
-
 }
+
 
 @media screen and (device-aspect-ratio:160/329) {
 	.imageDecoration .rate34 {margin:0 1rem;}
@@ -2047,6 +2041,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	.mymenu {bottom:1rem;}
 }
 
+
 @media screen and (aspect-ratio:414/736) {
 	.makeTemplate .rate34 {margin:0 4rem;}
 	.btnGroup_mf {margin-top:2rem;}
@@ -2054,7 +2049,6 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 
 	.mypage .mypic .picwrap {margin:1rem 0 0; }
 	.mypage .mypic {gap:3rem;}
-
 }
 
 @supports (-webkit-overflow-scrolling: touch) {
