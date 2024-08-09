@@ -278,9 +278,9 @@ a.btn_t_b:visited {color:#fff;}
 	color:#383494; font-weight:500; border-bottom:1px solid #383494;}
 .btn_sentList::before {content:''; width:1.6rem; height:1.6rem; background:url(../images/ic_sentlist.svg) no-repeat center;}
 
-.btn_undoDel { color:#FF954E; font-size:1.5rem; display:flex; align-items:center; }
+.btn_undoDel {padding:0.6rem 0.8rem; color:#FF954E; font-size:1.5rem; display:flex; align-items:center; }
 .btn_undoDel::before {content:''; display:inline-block; width:2rem; height:2rem; background:url(../images/ic_undo.svg) no-repeat center; background-size:2rem;}
-.btn_undoDel:active, .btn_undoDel:hover {color:#ff6600;}
+.btn_undoDel:active, .btn_undoDel:hover {border-radius:2.5rem; background-color:rgba(255,255,255,0.2);}
 
 .btn_logout {padding:1.5rem 6rem; color:#6A6A6A; font-size:1.5rem; }
 .btn_logout:active, .btn_logout:hover {border-radius:2.5rem; background-color:#f8f8f8;}
@@ -1671,7 +1671,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	line-height:1.4; color:#fff; text-align:center;
 	border-radius:0.8rem; box-shadow:0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2); background:#000;}
 
-.popup_toast > .popMessage.withBtn {padding:1.4rem 1.4rem 1.4rem 2rem; 
+.popup_toast > .popMessage.withBtn {padding:1.2rem 1.2rem 1.4rem 2rem; 
 	display:flex; justify-content:space-between; align-items:center;} 
 
 .popup_full {display:none;
