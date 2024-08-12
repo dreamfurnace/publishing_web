@@ -1587,6 +1587,8 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .noticeList .imgWrap > img {width:12rem}
 .noticeList .txtWrap {word-break:keep-all;}
 
+
+
 /***   error    ***/
 .errorPage {margin:20vh 0 0; display:flex; flex-direction:column; gap:2.6rem; text-align:center; align-items:center;}
 .errorPage::before {content:''; width:14rem; height:14rem; background:url(../images/bg_error.svg) no-repeat center; background-size:100%;}
@@ -1918,6 +1920,8 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	.imageDecoration .rate43 .bgCard  {margin:2rem 0 0;}
 
 	.mainPic {width:18rem; height:18rem;}
+
+	.myalbumDetail .rate34 {margin:0 1rem;}
 
 }
 
