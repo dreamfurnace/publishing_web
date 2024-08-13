@@ -31,7 +31,7 @@ textarea:hover::placeholder {color:transparent !important;}
 .btnGroup_mf > .btn_group > button:first-child {border-radius:2.5rem 0 0 2.5rem; border-right:1px solid #ececec;}
 .btnGroup_mf > .btn_group > button:last-child {border-radius:0 2.5rem 2.5rem 0;}
 
-.btnGroup_f {padding:1.4rem 2rem;
+.btnGroup_f {padding:2rem;
 	position:fixed; left:0; right:0; bottom:0; z-index:21;
 	display:flex; gap:1.4rem; background:#fff;} 
 .btnGroup_f > button {width:50%; height:4.6rem; border-radius:2.5rem; font-size:1.5rem; font-weight:500;}
