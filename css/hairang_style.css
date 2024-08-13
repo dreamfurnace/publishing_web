@@ -108,7 +108,12 @@ textarea:hover::placeholder {color:transparent !important;}
 .btn_i_myVoice {width:6rem; height:6rem; border-radius:50%; border:1px solid #E7ECF3;
 	background:#fff url(../images/ic_mypage_voice01.svg) no-repeat center; background-size:3rem;
 	box-shadow: 0 1.6rem 4rem 0 rgba(112, 144, 176, 0.2);}
-.btn_i_myVoice.done {background:#ff6600 url(../images/ic_mypage_voice02.svg) no-repeat center; background-size:3rem;}
+.btn_i_myVoice.done {background:#ff6600 url(../images/ic_mypage_play.svg) no-repeat 2.4rem center; background-size:1.2rem;}
+.btn_i_voiceStop {width:6rem; height:6rem; border-radius:50%; border:1px solid #E7ECF3;
+	background:#fff url(../images/ic_myvoice_stop.svg) no-repeat center; background-size:1.2rem;
+	box-shadow: 0 1.6rem 4rem 0 rgba(112, 144, 176, 0.2);}
+.btn_i_voiceStop.play {background:#fff url(../images/ic_myvoice_play.svg) no-repeat 2.4rem center; background-size:1.2rem;}
+
 
 .btn_i_seh {width:4rem; height:4rem; background:url(../images/ic_seh.svg) no-repeat center; background-size:2.4rem;}
 .btn_i_sehDel {position:relative; width:4rem; height:4rem;}
@@ -915,7 +920,6 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 .stickerItems.active.notice {display:block; padding:4rem; text-align:center; font-size:1.6rem;}
 
-
 .hanwhalogo {padding:1rem 2rem;
 	display:grid; grid-template-columns:repeat(2, 1fr); gap:1rem; margin:0 0 1rem;}
 .hanwhalogo > button {height:6rem; border-radius:0.4rem; border:1px solid #EDEDED; border-radius:0.4rem;
@@ -1240,7 +1244,9 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 
 .mypage .mypic .user {position:relative; z-index:3;
 	display:flex; gap:0.4rem; color:#333; font-size:1.8rem; font-weight:500; justify-content:center;}
-.mypage .mypic .btn_i_myVoice {position:absolute; left:50%; margin-left:4rem; bottom:0; z-index:4;}
+.mypage .mypic .btn_i_myVoice,
+.mypage .mypic .btn_i_voiceStop {position:absolute; left:50%; margin-left:4rem; bottom:0; z-index:4;}
+
 
 .mymenu {position:absolute; left:0; bottom:2rem; right:0; padding:2rem;}
 .mymenu ul {display:flex; flex-direction:column; gap:1.2rem}
