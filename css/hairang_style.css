@@ -3,7 +3,10 @@
 @import url('font.css');
 
 html, body {font-size:10px;
-	padding:env(safe-area-inset-top) env(safe-area-inset-bottom);
+	padding-top:env(safe-area-inset-top);
+	padding-bottom:env(safe-area-inset-bottom);
+	padding-top:constant(safe-area-inset-top);
+	padding-bottom:constant(safe-area-inset-bottom);
 }
 body {font-size:1.4rem; line-height:1.2; color:#222;
 	font-weight:400; font-family:'Noto Sans KR', sans-serif; overflow:hidden; background-color:#F2F2F2;}
@@ -567,7 +570,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 	box-shadow:0 1.6rem 2rem 0 rgba(112, 144, 176, 0.2);}
 .bgCard > img {position:relative; width:100%; object-fit:cover;}
 .bgCard > .intro {position:absolute; left:2rem; right:2rem; top:64%; counter-reset: colorcircle 0;}
-.bgCard > .intro li {position:relative; padding-left:3rem; margin:0 0 1rem; font-size:1.8rem; font-weight:500; color:#6A6886; word-break:keep-all;}
+.bgCard > .intro li {position:relative; padding-left:3rem; margin:0 0 1rem; font-size:1.8rem; color:#6A6886; word-break:keep-all;}
 .bgCard > .intro li::before {position:absolute; top:0.1rem; left:0;
 	counter-increment:colorcircle 1; content: counter(colorcircle);
 	font-size:1.4rem; color:#fff; font-weight:600;
@@ -593,7 +596,6 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 .makeTemplate .stage.rate11 .bgCard::before {top:40%;}
 .makeTemplate .stage.rate43 .bgCard::before {top:47%;}
-
 
 .rate34 .bgCard, 
 .emtyRate34 .bgCard {aspect-ratio:3/4;}
