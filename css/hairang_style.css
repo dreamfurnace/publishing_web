@@ -14,7 +14,7 @@ textarea {width:100%; letter-spacing:-0.05rem; font-weight:400; font-family:'Not
 textarea:disabled {color:#ccc;}
 button {letter-spacing:-0.05rem; font-size:1.5rem; font-weight:400; line-height:1.2; white-space:nowrap; font-family:'Noto Sans KR', sans-serif;} 
 a {display:inline-block;}
-button:disabled, a:disabled {cursor: not-allowed;}
+button:disabled, a:disabled {cursor:not-allowed !important;}
 
 /* forms */
 input[type="text"] {height:4rem; border:none; outline:none; font-size:1.6rem;
@@ -42,6 +42,7 @@ textarea:hover::placeholder {color:transparent !important;}
 .btnGroup_f > button:first-child:active {box-shadow:none; background-color:#f9f9f9;}
 .btnGroup_f > button:last-child:hover,
 .btnGroup_f > button:last-child:active {box-shadow:none; background-color:#CC5200; border-color:#CC5200;}
+.btnGroup_f > button:last-child:disabled {box-shadow:none; background-color:#ccc; border-color:#ccc;}
 
 .btnwrap_f {position:fixed; left:0; right:0; bottom:3rem; z-index:4;
 	display:flex; justify-content:center;}
@@ -178,6 +179,8 @@ textarea:hover::placeholder {color:transparent !important;}
 .btn_t_b {padding:0 1.6rem; height:3rem; line-height:3rem; color:#fff; background:#292752;}
 a.btn_t_b:visited {color:#fff;}
 .btn_t_b:active, .btn_t_b:hover  {background:#4B4A5E;}
+.btn_t_b:disabled,
+a.btn_t_b:disabled {background-color:#ccc; color:#fff;}
 
 .btn_t_orn {padding:0 1.6rem; color:#fff; background:#ff6600;}
 .btn_t_orn:active, .btn_t_orn:hover {background-color:#CC5200;}
@@ -268,6 +271,9 @@ a.btn_t_b:visited {color:#fff;}
 	box-shadow:0 0 0.8rem 0 rgba(0, 0, 0, 0.25);}
 .btn_addCustomer::before {content:''; width:3.4rem; height:2.6rem; background:url(../images/ic_addcustomer.svg) no-repeat center; background-size:2.2rem;}
 .btn_addCustomer:active, .btn_addCustomer:hover {box-shadow:none; background-color:#f9f9f9 ;}
+.btn_addCustomer:disabled {color:#ccc; border-color:#ccc; box-shadow:none;}
+.btn_addCustomer:disabled::before {background:url(../images/ic_addcustomer_gry.svg) no-repeat center; background-size:2.2rem;}
+
 
 .btn_addItem {display:flex; justify-content:center; align-items:center; gap:0.8rem;
 	margin:1rem 2rem; width:calc(100% - 4rem); color:#231F84; font-weight:500; height:4rem; 
@@ -314,7 +320,7 @@ a.btn_t_b:visited {color:#fff;}
 	background:#FF6600; box-shadow:0 0.4rem 1.2rem 0 rgba(122, 144, 176, 0.25);}
 .btn_next::after {content:''; width:2.4rem; height:2.4rem;  background:url(../images/arrow_r_wh.svg) no-repeat center;}
 .btn_next:active, .btn_next:hover {background-color:#CC5200;}
-
+.btn_next:disabled {background-color:#ccc; box-shadow:none;}
 
 .btn_refresh {padding:0 1.6rem; display:flex; gap:1rem; align-items:center; justify-content:center;
 	width:10rem; height:4rem; font-weight:500;  color:#110B89; border-radius:2.5rem;
@@ -362,7 +368,7 @@ a.btn_t_b:visited {color:#fff;}
 	color:#fff; box-shadow:0 0.4rem 1.2rem 0 rgba(122, 144, 176, 0.25);
 	background:#ff6600 url(../images/ic_makevideo.svg) no-repeat 12rem center; background-size:2.8rem;}
 .btn_makeVideo:active, .btn_makeVideo:hover {background-color:#CC5200;}
-.btn_makeVideo:disabled {background:#e1e1e1 url(../images/ic_makevideo_gry.svg) no-repeat 12rem center; color:#aaa; box-shadow:none;}
+.btn_makeVideo:disabled {background-color:#ccc; color:#fff; box-shadow:none;}
 
 
 .btn_makeVoice {width:18rem; height:4.6rem; padding-left:4rem; line-height:4.6rem; border-radius:2rem; text-align:left;
@@ -377,8 +383,6 @@ a.btn_t_b:visited {color:#fff;}
 
 .btn_sending::after  {content:''; display:block; transform:rotate(-42deg); margin-top:-0.5rem;
 	width:1.8rem; height:1.8rem; background:url(../images/ic_sending.svg) no-repeat center; background-size:1.8rem;}	
-
-
 
 
 /* common */
@@ -1265,6 +1269,8 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 /***   Sending   ***/
 .tyGry {background:#F8F8F8;}
 .sending > .scrollContainer {top:16.5rem;}
+.sending > .scrollContainer::before {content:"고객을 선택하세요."; display:block; text-align:center; padding-top:30vh;}
+	
 .sending > .btnGroup {padding:1rem 2rem;
 	display:flex; gap:2rem; flex-direction:column; 
 	background:#F8F8F8; border-bottom:1px solid #e1e1e1;}
@@ -1631,7 +1637,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .popup_btnGroup .btn_t_r:active, .popup_btnGroup .btn_t_r:hover {background:#CC5200;}
 
 .popup_btnGroup .btn_t_l:disabled, 
-.popup_btnGroup .btn_t_r:disabled {color:#ccc; background:#f1f1f1; border:none;}
+.popup_btnGroup .btn_t_r:disabled {color:#fff; background:#ccc; border:none;}
 
 .popupWrap {margin:3em 2rem;}
 .popMessage {text-align:center; line-height:1.4; color:#333; font-size:1.7rem; word-break:keep-all;}
