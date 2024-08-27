@@ -1918,7 +1918,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 
 /***  break point  ***/	
 
-@media only screen and (max-height:800px) { 
+@media only screen and (max-height:799px) { 
 	.sm_imageCard .rate34,
 	.sm_videoCard .rate34,
 	.videoArea .rate34 {margin:0 2rem;}
