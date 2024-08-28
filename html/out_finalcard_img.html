@@ -18,7 +18,8 @@ font-style: normal;
 src: url('../fonts/NotoSansKR-Medium.woff2') format('woff2'),
      url('../fonts/NotoSansKR-Medium.woff') format('woff');
 }
-     /*  reset  */
+
+/*  reset  */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -96,7 +97,6 @@ display:flex; justify-content:space-between; align-items:center;}
 .btn_i_timePoint::after {content:''; position:absolute; top:50%; left:50%; margin:-0.5rem 0 0 -0.5rem;
 	display:block; width:1rem; height:1rem; border-radius:50%; background:#231F84;}
 
-
 section > h2, section > h3 {display:none;}
 .skip {display:none !important;}
 .stage {position:relative;}
@@ -137,6 +137,7 @@ section > h2, section > h3 {display:none;}
 .final_txtArea > .text::before {content:''; position:absolute; top:-4.3rem; left:50%; margin-left:-7rem; opacity:0.9;
 	width:14rem; height:2rem; background:url(../images/bg_final_deco.png) no-repeat center; background-size:auto 100%;}
 </style>
+
 </head>
 
 <body>
@@ -146,22 +147,6 @@ section > h2, section > h3 {display:none;}
                <section class="stage rate34"><!-- rate34(3:4) / rate11(1:1) / rate43(4:3)  -->
                     <h2>카드영역</h2>
                     <div class="bgCard">
-                         <div class="videoElements"><!--  영상 카드일 경우 노출 'skip' 추가 및 제거  -->
-                              <div class="voicePlay">
-                                   <button class="btn_i_play" type="button" id="btn_playRecord">재생/멈춤</button>
-                                   <div class="timelineWrap">
-                                        <div class="timeline">
-                                             <span></span>
-                                             <button class="btn_i_timePoint" type="button">movePoint</button>
-                                        </div>
-                                        <div class="timeTxt">
-                                             <span>0:<em>18</em></span>
-                                             <span>0:<em>30</em></span>
-                                        </div>
-                                   </div>
-                              </div>
-                              <button class="btn_i_sound" type="button">사운드 켜기/끄기</button><!-- 'btn_i_sound on'-->
-                         </div>
                          <img src="../images/@pic01.jpg">      
                     </div>
                </section>
