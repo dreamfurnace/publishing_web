@@ -124,9 +124,58 @@ section > h2, section > h3 {display:none;}
 	display:flex; gap:1.4rem; width:calc(100% - 5.6rem); align-items:center;}
 .voicePlay .timelineWrap {margin-top:1.4rem; width:calc(100% - 5.4rem);
 	display:flex; flex-direction:column; gap:0.6rem;}
-.voicePlay .timeline {position:relative; width:100%; height:0.2rem; background:#efefef;}
-.voicePlay .timeline > button {position:absolute; top:-1.4rem; left:1rem;}
-.voicePlay .timeline > span {position:absolute; top:0; left:0; display:block; width:2rem; height:0.2rem; background-color:#231F84;}
+.voicePlay .timeline {position:relative;}
+
+.voicePlay .timeline input[type=range],
+.voicePlay .timeline progress { -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  outline: 0;
+  border: 0;}
+
+.voicePlay .timeline input[type=range] {z-index:2;
+   position:absolute; left:0; right:0; height:0.2rem;
+}
+
+progress {position:absolute; left:0; right:0; height:0.2rem; width:98.6%;  }
+progress::-webkit-progress-bar {background:#fff;}
+progress::-webkit-progress-value {background:#231F84;}
+
+progress::-moz-progress-bar {background:#fff;}
+progress::-moz-progress-value {background:#231F84;}
+
+.voicePlay .timeline input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  cursor: pointer;
+  height: 0.2rem;
+  transition: all .2s ease;
+}
+
+
+.voicePlay .timeline input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;  appearance: none;
+  margin:-0.6rem 0 0 -0.2rem;
+  border-radius: 50%;
+  height: 1rem;
+  width: 1rem;
+  background: #231F84;
+  cursor: pointer;
+  transition: all .2s ease
+}
+
+.voicePlay .timeline input[type=range]::-moz-range-thumb {
+  -moz-appearance: none; appearance: none;
+  margin:-0.6rem 0 0 -0.2rem;
+  border-radius: 50%;
+  height: 1rem;
+  width: 1rem;
+  background: #231F84;
+  cursor: pointer;
+  transition: all .2s ease
+}
+
+
 .voicePlay .timeTxt {display:flex; justify-content:space-between;}
 .voicePlay .timeTxt > span {font-size:1.4rem; color:#231F84;}
 
@@ -152,8 +201,8 @@ section > h2, section > h3 {display:none;}
                                    <button class="btn_i_play" type="button" id="btn_playRecord">재생/멈춤</button>
                                    <div class="timelineWrap">
                                         <div class="timeline">
-                                             <span></span>
-                                             <button class="btn_i_timePoint" type="button">movePoint</button>
+                                             <input type="range" value="50" min="0" max="100" step="0.1">
+                                             <progress value="50" max="100" step="1">
                                         </div>
                                         <div class="timeTxt">
                                              <span>0:<em>18</em></span>
