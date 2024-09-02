@@ -1925,10 +1925,11 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	.sm_imageCard .rate34,
 	.sm_videoCard .rate34,
 	.videoArea .rate34 {margin:0 2rem;}
-	.imageDecoration .rate34 {margin:0 3rem;}
+
+	.imageDecoration .rate34 {margin:0 2rem;}
 	.messageArea {border-radius:2rem 2rem 0 0;}
 
-	.makeTemplate .rate34 {margin:0 3rem;}
+	.makeTemplate .rate34 {margin:0 2rem;}
 	.makeTemplate .rate11 .bgCard, .makeTemplate .emtyRate11 .bgCard, 
 	.imageDecoration .rate11 .bgCard, 
 	.imageDecoration .emtyRate11 .bgCard, 
