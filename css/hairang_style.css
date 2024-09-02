@@ -44,6 +44,9 @@ textarea:hover::placeholder {color:transparent !important;}
 .btnGroup_f > button:last-child:active {box-shadow:none; background-color:#CC5200; border-color:#CC5200;}
 .btnGroup_f > button:last-child:disabled {box-shadow:none; background-color:#ccc; border-color:#ccc;}
 
+.btnGroup_f.single > button {width:100%;}
+
+
 .btnwrap_f {position:fixed; left:0; right:0; bottom:3rem; z-index:4;
 	display:flex; justify-content:center;}
 .btnwrap_f > button, .btnwrap_f > a {width:18rem; height:4.6rem; line-height:4.6rem;}
