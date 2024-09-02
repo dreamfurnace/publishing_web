@@ -1935,6 +1935,8 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	.imageDecoration .emtyRate11 .bgCard, 
 	.videoArea .rate11 .bgCard, .videoArea .emtyRate11 .bgCard {margin:2rem 0 0;}
 
+	.makeTemplate .btnGroup_mf {margin-top:2rem;}
+
 	.makeTemplate .rate43 .bgCard, 
 	.makeTemplate .emtyRate43 .bgCard, 
 	.imageDecoration .rate43 .bgCard  {margin:2rem 0 0;}
