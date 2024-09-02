@@ -1929,14 +1929,12 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 
 	.messageArea {border-radius:2rem 2rem 0 0;}
 
-	.makeTemplate .rate34 {margin:0 2.5rem;}
+	.makeTemplate .rate34 {margin:0 2.8rem;}
 	.makeTemplate .rate11 .bgCard, .makeTemplate .emtyRate11 .bgCard, 
 	.imageDecoration .rate11 .bgCard, 
 	.imageDecoration .emtyRate11 .bgCard, 
 	.videoArea .rate11 .bgCard, .videoArea .emtyRate11 .bgCard {margin:2rem 0 0;}
 
-	.makeTemplate .btnGroup_mf,
-	.sm_imageCard .btnGroup_mf {margin-top:2rem;}
 
 	.makeTemplate .rate43 .bgCard, 
 	.makeTemplate .emtyRate43 .bgCard, 
