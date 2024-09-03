@@ -309,7 +309,7 @@ a.btn_t_b:disabled {background-color:#ccc; color:#fff;}
 	background:#fff url(../images/ic_upload.svg) no-repeat center; background-size:3.4rem;
 	box-shadow:0 0.4rem 0.4rem 0 rgba(178, 178, 178, 0.25);}
 .btn_picUpload > span {display:none;}
-.btn_picUpload:disabled {background:#fff url(../images/ic_upload_gry.svg) no-repeat center;}
+.btn_picUpload:disabled {box-shadow:none; background:#fff url(../images/ic_upload_gry.svg) no-repeat center;}
 .btn_picUpload:active, .btn_picUpload:hover {box-shadow:none;}
 
 
