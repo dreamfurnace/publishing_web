@@ -922,9 +922,9 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .stickerTab > .item02 {background:url(../images/sticker_cate02.svg) no-repeat center;}
 .stickerTab > .item03 {background:url(../images/sticker_cate03.svg) no-repeat center;}
 .stickerTab > .item04 {background:url(../images/sticker_cate04.svg) no-repeat center;}
-.stickerTab > .item05 {background:url(../images/sticker_cate05.svg) no-repeat center;}
+.stickerTab > .item05 {background:url(../images/sticker_cate05.svg) no-repeat center; background-size:auto 3rem !important;}
 
-.stickerPanel {padding:1rem 2rem 2rem; }
+.stickerPanel {padding:1rem 2rem 2rem;}
 .stickerItems {display:none;}
 .stickerItems.active {display:grid; grid-template-columns:repeat(5, 1fr); gap:1rem;}
 .stickerItems > button {height:5.6rem; border-radius:0.4rem; border:1px solid #ededed;}
