@@ -619,8 +619,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .rate34 .bgCard::before, .rate11 .bgCard::before, .rate43 .bgCard::before, 
 .rate34 .bgCard::after, .rate11 .bgCard::after,  .rate43 .bgCard::after {content:''; display:none;}
 
-.makeTemplate .rate34 .bgCard, 
-.makeTemplate .emtyRate34 .bgCard {}
+
 
 .makeTemplate .rate11 .bgCard, 
 .makeTemplate .emtyRate11 .bgCard,
@@ -636,7 +635,10 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .videoArea .rate43 .bgCard, 
 .videoArea .emtyRate43 .bgCard {margin:10rem 0 0;}
 
-/* .makeTemplate .rate34 .bgCard, 
+/* 
+.makeTemplate .rate34 .bgCard, 
+.makeTemplate .emtyRate34 .bgCard {}
+.makeTemplate .rate34 .bgCard, 
 .makeTemplate .emtyRate34 .bgCard,
 .imageDecoration .rate34 .bgCard, 
 .imageDecoration .emtyRate34 .bgCard {margin:0 1rem;} */
@@ -1072,7 +1074,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .voicePlay input[type=range]::-webkit-slider-runnable-track {
 	width: 100%; cursor: pointer;
 	height: 0.2rem; transition: all .2s ease;
-   }
+}
    
 .voicePlay input[type=range]::-webkit-slider-thumb {
 	-webkit-appearance: none;  appearance: none;
@@ -1082,7 +1084,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 	background: #231F84;
 	cursor: pointer;
 	transition: all .2s ease
-   }
+}
    
 .voicePlay input[type=range]::-moz-range-thumb {
 	-moz-appearance: none; appearance: none;
@@ -1148,8 +1150,8 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 	 background:rgba(0,0,0,0.7);;}
 .startMaking > .loadingbox {margin:0 auto;}
 
-/*** complete card  ***/
 
+/*** complete card  ***/
 header.complete > button {position:relative; z-index:3; background-color:#f2f2f2; border-radius:2.5rem;}
 .sm_intro {margin:3rem auto -5rem; padding:0 0 1rem; text-align:center; font-size:1.5rem; color:#333;}
 
@@ -1539,7 +1541,6 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	text-align:center; color:#333; font-size:1.4rem;}
 .mainPic > img {width:100%; object-fit:cover; z-index:2;}
 
-
 .picNvoice .picList {position: relative; z-index:2;
 	display:grid; gap:1.6rem; grid-template-columns:repeat(3, 1fr);}
 .picNvoice .picList > .item {position: relative;}
@@ -1558,18 +1559,16 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .picList input:checked ~ .checkmark {background-color:#ff6600;}
 .picList input:checked ~ .checkimg {border:1px solid #ff6600;}
 
-
-
 .picNvoice .btnGroup_edit {position:relative; z-index:3;
 	margin:-1rem -1rem 1rem; padding:0; display:flex; justify-content:right;}
 .picNvoice .btnGroup_edit > button:active, 
 .picNvoice .btnGroup_edit > button:hover {background-color:#eee; border-radius:2.5rem;}
 
-.myVoice .voicePlay {padding:0 2rem;
+.myVoice .voicePlay {padding:0 2rem; 
 	position:fixed; left:0; right:0; bottom:11rem; }
 .myVoice .btn_i_play {box-shadow: 0 0 2rem 0 rgba(112, 144, 176, 0.25);}
 .myVoice .btnwrap {position:absolute; left:50%; margin:-3rem 0 0 -3rem;
-	display:flex; flex-direction:column; gap:0.5rem;align-items:center; font-size:1.4rem;}
+	display:flex; flex-direction:column; gap:0.5rem; align-items:center; font-size:1.4rem;}
 
 
 /***   setting   ***/
@@ -1665,6 +1664,15 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .splash .loadingbar > span {display:block; height:0.3rem; background:rgba(255,255,255,0.3);}
 .splash .loadingbar > span > em {display:block; height:0.3rem; background:#000;}
 
+.splash progress {-webkit-appearance: none;
+	-moz-appearance: none; appearance: none;
+	background: transparent;
+	outline: 0; border: 0;}
+.splash progress {position:absolute; left:0; right:0; height:0.3rem; width:100%;}
+.splash progress::-webkit-progress-bar {background:#fff;}
+.splash progress::-moz-progress-bar {background:#fff;}
+.splash progress::-webkit-progress-value {background:#000;}
+.splash progress::-moz-progress-value {background:#000;}
 
 
 /***   POP UP    ***/
