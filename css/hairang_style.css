@@ -916,7 +916,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 .stickerTab {padding:0 2rem; display:flex; justify-content:space-between;}
 .stickerTab > button {width:4rem; height:4rem; border-radius:0.4rem;
-	text-indent:-9999em; overflow:hidden; white-space:nowrap; background-size:2.8rem !important;}
+	text-indent:-9999em; overflow:hidden; white-space:nowrap; background-size:3rem !important;}
 .stickerTab > button.on {background-color:#F2F2F2;}
 .stickerTab > .item01 {background:url(../images/sticker_cate01.svg) no-repeat center;}
 .stickerTab > .item02 {background:url(../images/sticker_cate02.svg) no-repeat center;}
