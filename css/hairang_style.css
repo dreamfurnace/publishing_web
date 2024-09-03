@@ -2104,6 +2104,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 
 
 @media screen and (aspect-ratio:375/667) {
+	.imageDecoration .rate34 {margin:0 3rem;}
 	.makeTemplate .rate34 {margin:0 4rem;}
 	.btnGroup_mf {margin-top:1rem;}
 	.myalbumDetail .rate34 .bgCard {margin:0 3rem;}
