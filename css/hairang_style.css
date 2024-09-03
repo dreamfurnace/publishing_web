@@ -1053,10 +1053,47 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 	display:flex; gap:1.4rem; width:calc(100% - 5.6rem); align-items:center;}
 .voicePlay .timelineWrap {margin-top:1.4rem; width:calc(100% - 5.4rem);
 	display:flex; flex-direction:column; gap:0.6rem;}
-.voicePlay .timeline {position:relative; width:100%; height:0.2rem; background:#efefef;}
-.voicePlay .timeline > button {position:absolute; top:-1.4rem; left:1rem;}
-.voicePlay .timeline > span {position:absolute; top:0; left:0; display:block; width:2rem; height:0.2rem; background-color:#231F84;}
-.voicePlay .timeTxt {display:flex; justify-content:space-between;}
+.voicePlay .timeline {position:relative;}
+.voicePlay input[type=range],
+.voicePlay progress {-webkit-appearance: none;
+  -moz-appearance: none; appearance: none;
+  background: transparent;
+  outline: 0; border: 0;}
+
+.voicePlay progress {position:absolute; left:0; right:0; height:0.2rem; width:98.2%;}
+.voicePlay progress::-webkit-progress-bar {background:#fff;}
+.voicePlay progress::-moz-progress-bar {background:#fff;}
+.voicePlay progress::-webkit-progress-value {background:#231F84;}
+.voicePlay progress::-moz-progress-value {background:#231F84;}
+
+.voicePlay input[type=range] {z-index:2;
+	position:absolute; left:0; right:0; height:0.2rem;
+}
+.voicePlay input[type=range]::-webkit-slider-runnable-track {
+	width: 100%; cursor: pointer;
+	height: 0.2rem; transition: all .2s ease;
+   }
+   
+.voicePlay input[type=range]::-webkit-slider-thumb {
+	-webkit-appearance: none;  appearance: none;
+	margin:-0.6rem 0 0 -0.2rem;
+	border-radius: 50%;
+	height: 1rem; width: 1rem;
+	background: #231F84;
+	cursor: pointer;
+	transition: all .2s ease
+   }
+   
+.voicePlay input[type=range]::-moz-range-thumb {
+	-moz-appearance: none; appearance: none;
+	margin:-0.6rem 0 0 -0.2rem;
+	border-radius: 50%;
+	height: 1rem; width: 1rem;
+	background: #231F84; cursor: pointer;
+	transition: all .2s ease
+}
+
+.voicePlay .timeTxt {display:flex; justify-content:space-between; padding-right:0.4rem;}
 .voicePlay .timeTxt > span {font-size:1.4rem; color:#231F84;}
 
 .voiceMaking {display:none; padding:1rem 2rem; height:28rem;}
@@ -1488,6 +1525,9 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .picNvoice .picwrap {position:relative;}
 .picNvoice .picwrap .btnwrap {position:absolute; bottom:2rem; left:50%; margin-left:6rem; z-index:3;}
 .picNvoice .picwrap .tooltip {position:absolute; top:5rem; right:2rem; width:21rem;}
+
+.picNvoice .voicePlay progress::-webkit-progress-bar {background:#DBDBDB;}
+.picNvoice .voicePlay progress::-moz-progress-bar {background:#DBDBDB;}
 
 .mainPic {position:relative; margin:0 auto;
 	display:flex; align-items:center;
