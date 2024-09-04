@@ -934,7 +934,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 .stickerItems.active.notice {display:block; padding:4rem; text-align:center; font-size:1.6rem;}
 
-.stickerItems > button > img {width:98%; height:98%; object-fit:contain; }
+.stickerItems > button > img {width:96%; height:96%; object-fit:contain; }
 
 .hanwhalogo {padding:1rem 2rem;
 	display:grid; grid-template-columns:repeat(2, 1fr); gap:1rem; margin:0 0 1rem;}
