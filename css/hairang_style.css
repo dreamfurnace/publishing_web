@@ -927,13 +927,14 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .stickerPanel {padding:1rem 2rem 2rem;}
 .stickerItems {display:none;}
 .stickerItems.active {display:grid; grid-template-columns:repeat(5, 1fr); gap:1rem;}
-.stickerItems > button {display:flex; align-items:center; justify-content:center; height:5.6rem; border-radius:0.4rem; border:1px solid #ededed;}
+.stickerItems > button {display:flex; align-items:center; justify-content:center; height:5.6rem; overflow:hidden; 
+	border-radius:0.4rem; border:1px solid #ededed;}
 .stickerItems > button:active,
 .stickerItems > button:hover  {border-color:#1e1d36; box-shadow:0 0.4rem 1.1rem 0 rgba(0, 0, 0, 0.15);}
 
 .stickerItems.active.notice {display:block; padding:4rem; text-align:center; font-size:1.6rem;}
 
-.stickerItems > button > img {width:98%; object-fit:cover; }
+.stickerItems > button > img {width:98%; height:98%; object-fit:contain; }
 
 .hanwhalogo {padding:1rem 2rem;
 	display:grid; grid-template-columns:repeat(2, 1fr); gap:1rem; margin:0 0 1rem;}
