@@ -1924,13 +1924,15 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .addCustomer.nolist .notice > p {text-align:center; font-size:1.6rem;}
 
 .popupPanel.customerList {padding:0;}
-.popupPanel.customerList .scrollContainer {top:15.8rem; bottom:9rem;}
+.popupPanel.customerList .scrollContainer {top:21rem; bottom:9rem;}
 .popupPanel.customerList .item {margin:0;}
+.popupPanel.customerList .btnGroup_edit {padding:0.4rem 2rem 0 0; justify-content: right;}
+.popupPanel.customerList .checkbox_chk {padding:0.3rem; padding-right:1.4rem; border-radius:2.5rem; border:1px solid #ebebeb;}
 
 .popupPanel .customerItem {display:flex; flex-direction:column; gap:0;  padding:0 2rem 10rem;}
 .popupPanel .customerItem .checktxt {align-items:normal;}
 .customerItem .checkbox_tLine .checktxt {display:flex; flex-direction:column; gap:0.6rem;}
-
+.customerItem .checkbox_tLine:first-child {margin-top:-1.6rem;}
 
 /*  popup: sending - customer */
 .sendCustomer .popHeader {background-color:#F8F8F8;}
@@ -1957,6 +1959,21 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .aniwrap .pnt01 {background:#F04E2A; animation-delay:0;}
 .aniwrap .pnt02 {background:#F04E2A; animation-delay:0.15s;}
 .aniwrap .pnt03 {background:#F04E2A; animation-delay:0.3s;}
+
+
+
+/* common Loading  - ani */
+@keyframes turn {
+	0%   {transform:rotate(0);}
+	100% {transform:rotate(360deg);}
+  }
+.turn {animation:turn 1s ease infinite;}
+
+.loadingwrap {position:relative; display:flex; justify-content:center; margin-bottom:4rem;}
+.loadingwrap span {display:block; margin:0 0.5rem; width:1rem; height:1rem; border-radius:50%;}
+.loadingwrap .logo {}
+.loadingwrap .bar {}
+
 
 
 
