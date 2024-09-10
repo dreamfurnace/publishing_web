@@ -602,7 +602,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .makeTemplate .stage {position:relative;}
 .makeTemplate .stage .bgCard::before {content:"생성된 템플릿이 없습니다."; font-weight:500;
 	font-size:1.8rem; text-align:center; display:block; color: rgba(54,52,104, 0.6);
-	white-space:nowrap; position:absolute; top:34%; left:0; right:0;}
+	white-space:nowrap; position:absolute; top:37%; left:0; right:0;}
 
 .makeTemplate .stage.rate11 .bgCard::before {top:40%;}
 .makeTemplate .stage.rate43 .bgCard::before {top:47%;}
