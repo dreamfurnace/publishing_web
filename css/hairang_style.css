@@ -602,7 +602,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .makeTemplate .stage {position:relative;}
 .makeTemplate .stage .bgCard::before {content:"생성된 템플릿이 없습니다."; font-weight:500;
 	font-size:1.8rem; text-align:center; display:block; color: rgba(54,52,104, 0.6);
-	white-space:nowrap; position:absolute; top:35%; left:0; right:0;}
+	white-space:nowrap; position:absolute; top:33%; left:0; right:0;}
 
 .makeTemplate .stage.rate11 .bgCard::before {top:40%;}
 .makeTemplate .stage.rate43 .bgCard::before {top:46%;}
@@ -2037,6 +2037,10 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	.valuegroup {gap:0.4rem;}
 	.valuegroup > .checkbox_t .checkbox_txt {padding:0 0.6rem;}
 
+	.makeTemplate .stage.rate34 .bgCard::before {top:37%;}
+	.makeTemplate .stage.rate11 .bgCard::before {top:40%;}
+	.makeTemplate .stage.rate43 .bgCard::before {top:48%;}
+
 }
 
 
@@ -2054,16 +2058,17 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	.makeTemplate .emtyRate34,
 	.myalbumDetail .rate34 {width:31rem; margin:0 auto;}
 
-	.makeTemplate .rate11,
-	.makeTemplate .rate43 {width:41rem;}
+	.makeTemplate .rate11{width:41rem;}
+	.makeTemplate .rate43 {width:50rem;}
 
 	.makeTemplate .rate11 .bgCard, 
 	.makeTemplate .emtyRate11 .bgCard,
 	.makeTemplate .rate43 .bgCard, 
 	.makeTemplate .emtyRate43 .bgCard {margin:0 auto;}
 
+	.makeTemplate .stage.rate34 .bgCard::before,
 	.makeTemplate .stage.rate11 .bgCard::before {top:37%;}
-	.makeTemplate .stage.rate43 .bgCard::before {top:45%;}
+	.makeTemplate .stage.rate43 .bgCard::before {top:40%;}
 
 	.valueWrap {flex-direction:column;}
 	.valueWrap > .btngroup {flex-direction:row; justify-content: right;}
