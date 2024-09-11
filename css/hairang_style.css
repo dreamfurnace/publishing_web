@@ -602,10 +602,10 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .makeTemplate .stage {position:relative;}
 .makeTemplate .stage .bgCard::before {content:"생성된 템플릿이 없습니다."; font-weight:500;
 	font-size:1.8rem; text-align:center; display:block; color: rgba(54,52,104, 0.6);
-	white-space:nowrap; position:absolute; top:37%; left:0; right:0;}
+	white-space:nowrap; position:absolute; top:35%; left:0; right:0;}
 
 .makeTemplate .stage.rate11 .bgCard::before {top:40%;}
-.makeTemplate .stage.rate43 .bgCard::before {top:47%;}
+.makeTemplate .stage.rate43 .bgCard::before {top:46%;}
 
 .rate34 .bgCard, 
 .emtyRate34 .bgCard {aspect-ratio:3/4;}
@@ -2026,6 +2026,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	.btnwrap_rate > button {height:2.8rem; }
 
 	.makeTemplate .rate34 {margin:0 1rem;}
+	.makeTemplate .stage.rate34 .bgCard::before {top:37%;}
 
 	.mypage .mypic .picwrap {margin:1rem 0 0; height:22rem;}
 	.mypage .mypic {gap:1rem;}
@@ -2054,12 +2055,15 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	.myalbumDetail .rate34 {width:31rem; margin:0 auto;}
 
 	.makeTemplate .rate11,
-	.makeTemplate .emtyRate22 {width:41rem;}
+	.makeTemplate .rate43 {width:41rem;}
 
 	.makeTemplate .rate11 .bgCard, 
 	.makeTemplate .emtyRate11 .bgCard,
 	.makeTemplate .rate43 .bgCard, 
 	.makeTemplate .emtyRate43 .bgCard {margin:0 auto;}
+
+	.makeTemplate .stage.rate11 .bgCard::before {top:37%;}
+	.makeTemplate .stage.rate43 .bgCard::before {top:45%;}
 
 	.valueWrap {flex-direction:column;}
 	.valueWrap > .btngroup {flex-direction:row; justify-content: right;}
@@ -2101,13 +2105,15 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	.imageDecoration .rate34 {margin:0 0.4rem;}
 	.makeTemplate .rate34 {margin:0 1rem;}
 	.sm_imageCard .rate34, .sm_videoCard .rate34, .videoArea .rate34 {margin:0;}
+	.makeTemplate .stage.rate34 .bgCard::before {top:37%;}
+
 } /* 360/740 */
 
 
 @media screen and (aspect-ratio:360/740),
 	screen and (aspect-ratio:320/658) {
 	.makeTemplate .rate34 {margin:0 2rem;}
-	.makeTemplate .stage .bgCard::before {top:37%}
+	.makeTemplate .stage.rate43 .bgCard::before {top:49%;}
 	.sm_imageCard .rate34, .sm_videoCard .rate34, .videoArea .rate34 {margin:0;}
 
 	.mypage .mypic .picwrap {margin-top:1rem;}
@@ -2131,6 +2137,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	.makeTemplate .rate34 {margin:0 4rem;}
 	.btnGroup_mf {margin-top:1rem;}
 	.myalbumDetail .rate34 .bgCard {margin:0 3rem;}
+	.makeTemplate .stage.rate34 .bgCard::before {top:37%;}
 
 	.mypage .mypic .picwrap {margin:0; height:22rem;}
 	.mypage .mypic {gap:0;}
