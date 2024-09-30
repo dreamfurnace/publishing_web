@@ -614,6 +614,10 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .rate43 .bgCard, 
 .emtyRate43 .bgCard {aspect-ratio:4/3;}
 
+.rate11 .bgCard > img {margin-top:-15%;} /*  add 09.30  */
+
+
+
 .emtyRate11 .bgCard::before {margin:55% 0 0;}
 .emtyRate43 .bgCard::before {margin:44% 0 0;}
 
