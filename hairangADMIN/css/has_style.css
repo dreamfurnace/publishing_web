@@ -9,7 +9,7 @@ body {position:relative; font-size:14px; color:#333; letter-spacing:-0.5px; font
 input[type="checkbox"], input[type="radio"] {height:auto; vertical-align:middle; cursor:pointer;}
 label {vertical-align:middle; cursor:pointer; display:inline-block;}
 textarea {width:100%; letter-spacing:-0.5px; font-weight:400; font-family:'Noto Sans KR', sans-serif;}
-button { letter-spacing:-0.5px;} 
+button {letter-spacing:-0.5px;} 
 button:hover {opacity:0.9;}
 
 /* button style */
@@ -28,7 +28,13 @@ button:hover {opacity:0.9;}
   border-radius:6px; 
   border:1px solid #3958A8; font-weight:600; color:#3958A8; 
   background:#fff url(../images/ic_add01.svg) no-repeat 14px center; box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);}
-  .btn_addTemplate:hover {box-shadow:none;}
+.btn_addTemplate:hover {box-shadow:none;}
+
+.btn_td01, .btn_td02 {color:#111; border:1px solid #ccc; border-radius:6px; background:#fff;}
+.btn_td01 {width:180px; height:32px; border:1px solid #333;}
+.btn_td02 {padding:0 30px; height:32px;}
+.btn_td02:disabled {color:#ccc; border-color:#ddd !important;}
+
 
 /* input style */
 input[type="text"],input[type="password"] {padding:4px 6px; font-size:13px; border:1px solid #999; vertical-align:middle;}
@@ -111,6 +117,7 @@ table.ty_list th:last-child,table.ty_list td:last-child {border-right:none;}
 table.ty_list td {padding:2px; text-align:center; height:34px; vertical-align:middle;
   border:1px solid #D9D9D9; border-right:1px solid #D9D9D9;}
 table.ty_list tr:hover td {background-color:#FFF9F1;}
+table.ty_list tr.modify td {background-color:#FFEFEC;}
 
 table tr.total td, table tr.total:hover td {background-color:#EBEBEB; font-weight:700; color:#111;}
 table.ty_list td > img {margin-right:10px; vertical-align:middle; width:38px; height:48px; border-radius:4px; object-fit:contain;}
@@ -121,7 +128,10 @@ table.ty_list .inputWrap {display:flex; gap:6px; align-items:center; margin:0 3p
 table.ty_list .inputWrap > input[type="text"] {height:30px; width:calc(100% - 62px); background-color:#fff;}
 table.ty_list .inputWrap > button {height:30px; line-height:30px; padding:0 14px; font-weight:600;
   border-radius:6px; border:1px solid #ccc; color:#000; background:#fff;}
-  table.ty_list .inputWrap > button:hover {border-color:#666;}
+table.ty_list .inputWrap > button:hover {border-color:#666;}
+
+table.ty_list td input,
+table.ty_list td select {height:32px; width:100%;}
 
 .pagination {position:relative;  padding:6px 0; text-align:center; height:28px; border-bottom:1px solid #d9d9d9;}
 .pagination .total {position:absolute; top:14px; left:0;}
