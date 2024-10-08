@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>HAS-hirang admin system</title>
+    <link rel="stylesheet" href="../css/has_style.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/scrollbar.min.js"></script>
+    <script src="../js/common.js"></script>
+</head>
+
+<body>
+<div class="login">
+    <div class="loginwrap">
+        <div class="head">
+            <h1>한화손해보험</h1>
+            <span class="tit">HAS
+                <em>Hairang Administration System</em>
+            </span>
+        </div>
+        <div class="loginbox">
+            <div class="inputField">
+                <input type="text" placeholder="ID">
+                <input type="password" placeholder="PASSWORD">
+            </div>
+           <div class="certification">
+                <div class="sendNum">
+                    <div class="checkbox_tbox">
+                        <label for="item01">
+                            <input type="radio" id="item01" name="selected" checked>
+                            <span class="checkmark"></span>
+                            <span class="checktxt">SNS</span>   
+                       </label>
+                       <label for="item02">
+                            <input type="radio" id="item02" name="selected">
+                            <span class="checkmark"></span>
+                            <span class="checktxt">메신저</span>   
+                        </label>
+                    </div>
+                    <button type="button">인증번호 발송</button><!-- case: '인증번호 재발송'-->
+                </div>
+                <div class="confirmNum">
+                    <div class="inputwrap">
+                        <input type="text" placeholder="인증번호 입력">
+                        <button type="button">확인</button>
+                    </div>
+                    <div class="noticewrap">
+                        <span class="noti">인증되었습니다.</span> <!--  case error : <span class="noti error">인증번호를 확인 하세요.</span> -->
+                        <span class="remain">
+                            남은 시간
+                            <em>00</em>:<em>30</em>
+                        </span>
+                    </div>
+                </div>
+           </div>
+            <button type="submit" class="btn_t_l">LOGIN</button>
+        </div>
+    </div>
+    <footer>HANWHA GENERAL INSURANCE CO.,LTD. ALL RIGHTS RESERVED.</footer>
+</div>
+</body>
+
+</html>

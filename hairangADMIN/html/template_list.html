@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<title>HAS-hirang admin system</title>
+	<link rel="stylesheet" href="../css/has_style.css">
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/scrollbar.min.js"></script>
+	<script src="../js/common.js"></script>
+ </head>
+
+<body>
+	<header>
+		<div class="head">
+			<h1><a href="home.html">
+					<span class="logo">한화손해보험</span>
+					<span class="b_tit">HAS</span>
+				</a>
+			</h1>
+			<aside>
+				<div class="user">김한화(6014778) / 일반관리자</div>
+				<button class="btn_i_logout">로그아웃</button>
+			</aside>
+		</div>
+		<nav class="mainmenu_wrap">
+			<ul class="mainmenu">
+				<li class="on"><a href="#a" class="on">템플릿 관리</a></li>
+				<li><a href="#a">사용자 관리</a></li>
+				<li><a href="#a">알림</a></li>
+				<li><a href="#a">관리자 계정</a></li>
+				<li><a href="#a">APP버전 관리</a></li>
+			</ul>
+
+		</nav>
+	</header>
+	<!--//  header -->
+	<div class="container">
+		<div class="contentWrap">
+			<div class="tit">
+				<h2>템플릿 리스트</h2>
+			</div>
+			
+<!--  CONTENT   -->
+			<section class="content_box">
+				<div class="head"><!-- 결재자 비노출 <div class="head hide"> -->
+					<button type="button" class="btn_addTemplate">템플릿 등록</button>
+				</div>
+				<div class="tlbwrap">
+				<table class="ty_list">
+					<thead>
+						<tr>
+							<th style="width:24px">No</th>
+							<th>카테고리</th>
+							<th>모델</th>
+							<th>비율</th>
+							<th>유형</th>
+							<th>템플릿</th>
+							<th style="width:80px">등록자</th>
+							<th style="width:150px">등록일</th>
+							<th style="width:80px">결재자</th>
+							<th style="width:150px">결재일</th>
+							<th>사용</th>
+							<th>결재</th> <!-- 일반관리자 비노출  -->
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="selected">
+							<td>10</td>
+							<td>연말/연시</td>
+							<td>여</td>
+							<td>3:4</td>
+							<td>이미지</td>
+							<td class="txt_a_l">
+								<img src="../images/@pic01.jpg">
+								<a href="">크리스마스-선물-여자01</a>
+							</td>
+							<td>김한화</td>
+							<td>2024.12.12 13:15</td>
+							<td>-</td>
+							<td>-</td>
+							<td>							
+								<label class="switch">
+									<input type="checkbox">
+									<div class="slider"><span>켜기/끄기</span></div>
+								</label>
+							</td>
+							<td class="checkbox">
+								<label for="item02">
+									<input type="checkbox" id="item02">
+									<span class="checkmark"></span>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td>110</td>
+							<td>명절</td>
+							<td>여</td>
+							<td>3:4</td>
+							<td>영상</td>
+							<td class="txt_a_l">
+								<img src="../images/@pic01.jpg">
+								<a href="">추석-선물-여자01</a>
+							</td>
+							<td>김한화</td>
+							<td>2024.12.12 13:15</td>
+							<td>박보험</td>
+							<td>2024.12.13 13:15</td>
+							<td>							
+								<label class="switch">
+									<input type="checkbox">
+									<div class="slider"><span>켜기/끄기</span></div>
+								</label>
+							</td>
+							<td class="checkbox">
+								<label for="item01">
+									<input type="checkbox" id="item01" checked disabled>
+									<span class="checkmark"></span>
+								</label>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				</div>
+				<div class="pagination">
+					<div class="total">Total:<em>000</em> 건</div>
+					<div class="page">
+						<button type="button" class="btn_p_first">처음페이지</button>
+						<button type="button" class="btn_p_pre">이전페이지</button>
+						<div class="page_num">
+							<a href="#a" class="current">1</a>
+							<a href="#a">2</a>
+							<a href="#a">3</a>
+							<a href="#a">4</a>
+							<a href="#a">5</a>
+						</div>
+						<button type="button" class="btn_p_next">다음페이지</button>
+						<button type="button" class="btn_p_end">끝페이지</button>
+					</div>
+				</div>
+			</section>
+<!--//  CONTENT   -->
+		</div><!--//  class="contentWrap" -->
+		<footer>HANWHA GENERAL INSURANCE CO.,LTD. ALL RIGHTS RESERVED.</footer>
+	</div>
+	<!--//  class="container" -->
+</body>
+
+
+</html>

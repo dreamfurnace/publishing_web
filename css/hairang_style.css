@@ -616,15 +616,11 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 .rate11 .bgCard > img {margin-top:-13%;} /*  add 09.30  */
 
-
-
 .emtyRate11 .bgCard::before {margin:55% 0 0;}
 .emtyRate43 .bgCard::before {margin:44% 0 0;}
 
 .rate34 .bgCard::before, .rate11 .bgCard::before, .rate43 .bgCard::before, 
 .rate34 .bgCard::after, .rate11 .bgCard::after,  .rate43 .bgCard::after {content:''; display:none;}
-
-
 
 .makeTemplate .rate11 .bgCard, 
 .makeTemplate .emtyRate11 .bgCard,
