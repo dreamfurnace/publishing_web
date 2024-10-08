@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<title>HAS-hirang admin system</title>
+	<link rel="stylesheet" href="../css/has_style.css">
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/scrollbar.min.js"></script>
+	<script src="../js/common.js"></script>
+ </head>
+
+<body>
+	<header>
+		<div class="head">
+			<h1><a href="home.html">
+					<span class="logo">한화손해보험</span>
+					<span class="b_tit">HAS</span>
+				</a>
+			</h1>
+			<aside>
+				<div class="user">김한화(6014778) / 일반관리자</div>
+				<button class="btn_i_logout">로그아웃</button>
+			</aside>
+		</div>
+		<nav class="mainmenu_wrap">
+			<ul class="mainmenu">
+				<li><a href="#a">템플릿 관리</a></li>
+				<li><a href="#a">사용자 관리</a></li>
+				<li><a href="#a">알림</a></li>
+				<li><a href="#a">관리자 계정</a></li> <!-- 결재자, 일반관리자 비노출-->
+				<li class="on"><a href="#a">APP버전 관리</a></li>
+			</ul>
+
+		</nav>
+	</header>
+	<!--//  header -->
+	<div class="container">
+		<div class="contentWrap">
+			<div class="tit">
+				<h2>APP버전 관리</h2>
+			</div>
+			
+<!--  CONTENT   -->
+			<section class="content_box">
+				<div class="tlbwrap">
+                         <table class="ty_list">
+                              <thead>
+                                   <tr>
+                                        <th style="width:24px">No</th>
+                                        <th style="width:200px">운영체제</th>
+                                        <th style="width:200px">버전</th>
+                                        <th style="width:200px">등록일</th>
+                                        <th style="width:200px">등록자</th>
+                                        <th style="width:200px">시작일</th>
+                                        <th >강제 업데이트</th>
+                                        <th style="width:200px"></th>
+                                   </tr>
+                              </thead>
+                              <tbody>
+                                   <tr> <!-- 위에 고정 -->
+                                        <td></td>
+                                        <td>
+                                             <select>
+                                                  <option>Android</option>
+                                                  <option>IOS</option>
+                                             </select>
+                                        </td>
+                                        <td><input type="text"></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><input type="text"></td><!-- 달력-->
+                                        <td>
+                                             <label class="switch">
+                                                  <input type="checkbox">
+                                                  <div class="slider"><span>켜기/끄기</span></div>
+                                             </label>
+                                        </td>
+                                        <td>
+                                             <button type="button" class="btn_td01">등록</button><!-- 등록시 아래 컬럼 생성 -->
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                        <td>10</td>
+                                        <td>IOS</td>
+                                        <td>ver 00.00</td>
+                                        <td>2024.00.00 00:00</td> <!-- 등록시 자동 입력 -->
+                                        <td>6019110</td><!-- 등록시 등록자 사번 자동 입력 -->
+                                        <td>2024.00.00</td>
+                                        <td>Y</td>
+                                        <td></td>
+                                   </tr>
+                              </tbody>
+                         </table>
+				</div>
+                    <div class="pagination">
+					<div class="total">Total:<em>000</em> 건</div>
+					<div class="page">
+						<button type="button" class="btn_p_first">처음페이지</button>
+						<button type="button" class="btn_p_pre">이전페이지</button>
+						<div class="page_num">
+							<a href="#a" class="current">1</a>
+							<a href="#a">2</a>
+							<a href="#a">3</a>
+							<a href="#a">4</a>
+							<a href="#a">5</a>
+						</div>
+						<button type="button" class="btn_p_next">다음페이지</button>
+						<button type="button" class="btn_p_end">끝페이지</button>
+					</div>
+				</div>
+			</section>
+<!--//  CONTENT   -->
+		</div><!--//  class="contentWrap" -->
+		<footer>HANWHA GENERAL INSURANCE CO.,LTD. ALL RIGHTS RESERVED.</footer>
+	</div>
+	<!--//  class="container" -->
+</body>
+
+</html>
