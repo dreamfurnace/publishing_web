@@ -22,43 +22,54 @@
         </div>
         <div class="loginbox">
             <div class="inputField">
-                <input type="text" placeholder="ID">
-                <input type="password" placeholder="PASSWORD">
+                <input type="text" placeholder="사번">
+                <span class="noti hide">사번을 확인하세요.</span> <!-- case: error-->
+                <input type="password" placeholder="비밀번호">
+                <span class="noti hide">비밀번호를 확인하세요.</span><!-- case: error-->
             </div>
-           <div class="certification">
-                <div class="sendNum">
-                    <div class="checkbox_tbox">
-                        <label for="item01">
-                            <input type="radio" id="item01" name="selected" checked>
-                            <span class="checkmark"></span>
-                            <span class="checktxt">SNS</span>   
-                       </label>
-                       <label for="item02">
-                            <input type="radio" id="item02" name="selected">
-                            <span class="checkmark"></span>
-                            <span class="checktxt">메신저</span>   
-                        </label>
-                    </div>
-                    <button type="button">인증번호 발송</button><!-- case: '인증번호 재발송'-->
-                </div>
-                <div class="confirmNum">
-                    <div class="inputwrap">
-                        <input type="text" placeholder="인증번호 입력">
-                        <button type="button">확인</button>
-                    </div>
-                    <div class="noticewrap">
-                        <span class="noti">인증되었습니다.</span> <!--  case error : <span class="noti error">인증번호를 확인 하세요.</span> -->
-                        <span class="remain">
-                            남은 시간
-                            <em>00</em>:<em>30</em>
-                        </span>
-                    </div>
-                </div>
-           </div>
             <button type="submit" class="btn_t_l">LOGIN</button>
         </div>
     </div>
     <footer>HANWHA GENERAL INSURANCE CO.,LTD. ALL RIGHTS RESERVED.</footer>
+</div>
+<!--    POPUP: 인증번호     -->
+<div class="dimmedlayer"></div>
+<div class="certificationWrap">
+    <div class="certification">
+        <h2>본인인증</h2>
+        <div class="sendNum">
+            <div class="checkbox_tbox">
+                <label for="item01">
+                    <input type="radio" id="item01" name="selected" checked>
+                    <span class="checkmark"></span>
+                    <span class="checktxt">SNS</span>   
+               </label>
+               <label for="item02">
+                    <input type="radio" id="item02" name="selected">
+                    <span class="checkmark"></span>
+                    <span class="checktxt">메신저</span>   
+                </label>
+            </div>
+            <button type="button">인증번호 발송</button><!-- case: '인증번호 재발송'-->
+        </div>
+        <div class="confirmNum">
+            <div class="inputwrap">
+                <input type="text" placeholder="인증번호 입력">
+                <button type="button">확인</button>
+            </div>
+            <div class="noticewrap">
+                <span class="noti">인증되었습니다.</span> <!--  case error : <span class="noti error">인증번호를 확인 하세요.</span> -->
+                <span class="remain">
+                    남은 시간
+                    <em>00</em>:<em>30</em>
+                </span>
+            </div>
+        </div>
+        <div class="btnwrap">
+            <button type="button" class="btn_t_l">취소</button>
+            <button type="button" class="btn_t_f">확인</button>
+        </div>
+    </div>
 </div>
 </body>
 

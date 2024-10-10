@@ -35,6 +35,9 @@ button:hover {opacity:0.9;}
 .btn_td02 {padding:0 30px; height:32px;}
 .btn_td02:disabled {color:#ccc; border-color:#ddd !important;}
 
+.btn_t_f {color:#fff; border:1px solid #1E1D36; background:#1E1D36;}
+.btn_t_l {color:#1E1D36; border:1px solid #1E1D36; background:#fff;}
+
 
 /* input style */
 input[type="text"],input[type="password"] {padding:4px 6px; font-size:13px; border:1px solid #999; vertical-align:middle;}
@@ -184,48 +187,66 @@ table.ty_list td select {height:32px; width:100%;}
 /* main */
 
 /* login */
-.login { position:fixed; top:0; left:0; right:0; bottom:0; background-color:#f2f2f2;
+.login {position:fixed; top:0; left:0; right:0; bottom:0; background-color:#f2f2f2;
   display:flex; align-items:center; justify-content:center;}
 .login footer {position:absolute; left:0; right:0; bottom:0; text-align:center; color:#1E1D36; font-size:12px;}
 
-.loginwrap {position:relative; margin-top:-30px; padding:0 0 30px;
-  width:460px; border:1px solid #fff; border-radius:20px; background:#fff; box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);}
+.loginwrap {position:relative; margin-top:-30px; padding:0 0 30px; height:64vh;
+  width:460px; border:1px solid #fff; border-radius:20px; 
+  background:#fff; box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);}
 .loginwrap .head {padding:20px 0;}
 .loginwrap .head h1 {position:absolute; top:30px; right:50px;
   display:block; width:140px; height:30px; 
   background:url(../images/logo_hanhwa.svg) no-repeat right 0; background-size:auto 100%; text-indent:-999em; overflow:hidden;}
-.loginwrap .head .tit {display:block; margin-top:40px; padding-left:50px; color:#1E1D36; letter-spacing:-1px; 
+.loginwrap .head .tit {display:block; margin-top:60px; padding-left:50px; color:#1E1D36; letter-spacing:-1px; 
   font-weight:700; font-size:46px;}
 .loginwrap .head .tit > em {display:block; margin:-12px 0 0 4px; letter-spacing:0; font-size:16px; font-weight:400;}
 
 .loginbox {margin:30px auto 20px; width:360px;}
-.loginwrap input[type="text"],.loginwrap input[type="password"] {display:block; margin-bottom:10px; padding-left:20px; width:100%; height:40px; border:1px solid #E0E0E0; font-size:16px;}
+.loginwrap input[type="text"],.loginwrap input[type="password"] {display:block; margin-bottom:14px; padding-left:20px; width:100%; height:40px; border:1px solid #E0E0E0; font-size:16px;}
 .loginwrap button {width:100%; height:40px; line-height:40px;}
+.loginwrap input::placeholder {font-weight:600;}
 
 .loginwrap .btn_t_l {color:#fff; border:1px solid #FF6600; font-size:15px; height:42px; letter-spacing:0.5px;
   border-radius:0; background-color:#FF6600}
 .loginwrap .btn_t_l:hover {background-color:#CC5200;}
 
 .login .inputField {margin-bottom:20px;}
-.login .certification {margin-bottom:20px; padding:14px 0; border-top:1px solid #e6e6e6;
-  display:flex; flex-direction:column; gap:20px;}
-.login .sendNum {display:flex; align-items:center; justify-content:space-between;}
-.login .sendNum > .checkbox_tbox {display:flex;}
-.login .sendNum > .checkbox_tbox > label {display:flex; gap:10px; align-items:center; width:120px; font-size:16px;}
-.login .confirmNum > .inputwrap {display:flex; gap:20px; padding-bottom:14px;
-  border-bottom:1px solid #e6e6e6;}
-.login .confirmNum input {border:none; padding:0 10px; margin:14px 0 0; height:20px;}
-.login .confirmNum input::placeholder {color:#ccc; font-size:14px; font-weight:500;}
+.loginbox .noti {display:block; margin:-6px 0 10px; color:#F04E2A;}
 
-.certification button {width:auto; padding:0 14px; white-space: nowrap; height:34px; line-height:34px;
+
+.certificationWrap {
+  position:relative; z-index:20; padding:20vh 0 0;
+}
+.certification {margin:0 auto; padding:20px;
+  display:flex; flex-direction:column; gap:20px;
+  width:460px; border:1px solid #fff; border-radius:20px; 
+  background:#fff; box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.certification > h2 {padding:0 20px 12px; margin:-8px -20px 0; border-bottom:1px solid #efefef;}
+.certification .sendNum button,
+.certification .confirmNum button {width:auto; padding:0 14px; white-space: nowrap; height:34px; line-height:34px;
   border:1px solid #1E1D36; color:#1E1D36; border-radius:5px; font-size:14px;}
-.certification button:hover {color:#F04E2A; border-color:#F04E2A;}
+.certification .sendNum button:hover,
+.certification .confirmNum button:hover {color:#F04E2A; border-color:#F04E2A;}
 
-.login .noticewrap {margin-top:6px; padding:0 4px;
-  display:flex; justify-content:space-between;}
-.login .noti {color:#3958A8;}
-.login .noti.error {color:#F04E2A;}
-.login .remain > em {font-size:14px; font-weight:600;}
+.certification .sendNum {display:flex; align-items:center; justify-content:space-between;}
+.certification .sendNum > .checkbox_tbox {display:flex;}
+.certification .sendNum > .checkbox_tbox > label {display:flex; gap:10px; align-items:center; width:120px; font-size:16px;}
+.certification .confirmNum > .inputwrap {display:flex; gap:20px; padding-bottom:10px; justify-content:space-between;
+  border-bottom:1px solid #e6e6e6;}
+.certification .confirmNum input {border:none; padding:0 10px; margin:14px 0 0; height:20px; width:80%;}
+.certification .confirmNum input::placeholder {color:#ccc; font-size:14px; font-weight:500;}
+
+.certification .noticewrap {margin-top:6px; padding:0 4px; display:flex; justify-content:space-between;}
+.certification .noti {color:#3958A8;}
+.certification .noti.error {color:#F04E2A;}
+.certification .remain > em {font-size:14px; font-weight:600;}
+
+
+.certification .btnwrap {display:flex; gap:12px; margin:20px 0 0; padding:20px 0 0;}
+.certification .btnwrap > button {height:40px; width:50%;}
+
 
 /* chek box - textbox   */
 .checkbox_tbox > label {display:block; position:relative;}
@@ -270,7 +291,7 @@ table.ty_list td select {height:32px; width:100%;}
 .scrollbox > .scroll-element .scroll-bar {background-color:#333;}
 
 /* pop up */
-.dimmedlayer {position:fixed; top:0; left:0; right:0; bottom:0; z-index:10; background: rgba(0,0,0,0.5); overflow:hidden; overflow-y:auto;}
+.dimmedlayer {position:fixed; top:0; left:0; right:0; bottom:0; z-index:10; background: rgba(0,0,0,0.7); overflow:hidden;}
 .popupwrap {margin:10vh auto 0; min-width:340px; overflow:hidden;
 	border:1px solid #3C3C3C; border-radius:10px; box-shadow:1px 1px 5px rgba(0, 0, 0, 0.2);}
 .pophead {position:relative; padding:10px; color:#fff; background:#005F9D; border-radius:6px 6px 0 0;}
