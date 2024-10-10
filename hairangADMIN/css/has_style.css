@@ -32,10 +32,13 @@ button:disabled:hover {opacity:1;}
   background:#fff url(../images/ic_add01.svg) no-repeat 14px center; box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);}
 .btn_addTemplate:hover {box-shadow:none;}
 
-.btn_td01, .btn_td02 {color:#111; border:1px solid #ccc; border-radius:6px; background:#fff;}
-.btn_td01 {width:180px; height:32px; border:1px solid #333;}
+.btn_td01, .btn_td02, .btn_td03 {color:#333; border:1px solid #ccc; border-radius:6px; background:#fff;}
+.btn_td01 {color:#111; width:180px; height:32px; border:1px solid #333;}
 .btn_td02 {padding:0 30px; height:32px;}
 .btn_td02:disabled {color:#ccc; border-color:#ddd !important;}
+.btn_td03 {color:#111; padding:0 30px; height:32px; border-color:#333 !important;}
+.btn_td03:disabled {color:#ccc; border-color:#ddd !important;}
+
 
 .btn_t_f {color:#fff; border:1px solid #1E1D36; background:#1E1D36;}
 .btn_t_f:disabled {background:#ccc; border-color:#ccc;}
@@ -243,9 +246,9 @@ table.ty_list td select {height:32px; width:100%;}
 .certification .noti.error {color:#F04E2A;}
 .certification .remain > em {font-size:14px; font-weight:600;}
 
-
 .certification .btnwrap {display:flex; gap:12px; margin:20px 0 0; padding:20px 0 0;}
-.certification .btnwrap > button {height:40px; width:50%;}
+.certification .btnwrap > button {height:40px; width:50%; line-height:40px;}
+
 
 
 /* chek box - textbox   */
@@ -292,23 +295,21 @@ table.ty_list td select {height:32px; width:100%;}
 
 /* pop up */
 .dimmedlayer {position:fixed; top:0; left:0; right:0; bottom:0; z-index:10; background: rgba(0,0,0,0.7); overflow:hidden;}
-.popupwrap {margin:10vh auto 0; min-width:340px; overflow:hidden;
-	border:1px solid #3C3C3C; border-radius:10px; box-shadow:1px 1px 5px rgba(0, 0, 0, 0.2);}
-.pophead {position:relative; padding:10px; color:#fff; background:#005F9D; border-radius:6px 6px 0 0;}
-.pophead h2 {font-size:14px; padding-left:10px;}
-.pophead.ty02 {padding-bottom:6px;}
-.pophead .btn_i_popclose {position:absolute; top:8px; right:4px; width:24px; height:24px; background:url(../images/btn_i_closepop.svg) no-repeat center;}
-.popbody {padding:20px; background:#fff;} 
-.popbody .content_box {margin:0;}
-.popbody .txtbox {padding:14px 14px 10px; line-height:1.4; font-weight:700; margin-bottom:10px; text-align:center; background-color:#f1f1f1;}
-.popbody .noti {margin-top:20px; text-align:center; color:#EA5414;}
 
-.popbody .sehwrap {margin-bottom:20px; box-shadow:none; border-top:1px solid #ddd;}
-.popbody .sehwrap .btnwrap {right:0;}
+.popupContainer {position:relative; z-index:20; padding:30vh 0 0;}
+.popupWrap {margin:0 auto; padding:20px;
+  display:flex; flex-direction:column; gap:20px;
+  width:300px; border:1px solid #fff; border-radius:20px; 
+  background:#fff; box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);}
+.popbody {padding:20px; background:#fff;} 
+.popbody .content_box {text-align:center; font-size:16px;}
+
 .popbody .btnwrap_f {margin-top:20px; text-align:center;}
 .popbody .btnwrap_f .btn_t_l {border-radius:0; width:120px; height:30px; line-height:30px; color:#333; background-color:#fff; border:1px solid #333;}
 .popbody .btnwrap_f .btn_t_l:hover {background-color:#f9f9f9;}
 .popbody .btnwrap_f .btn_t_f {border-radius:0; width:120px; height:30px; line-height:30px; color:#fff; background-color:#fff; border:1px solid #333; background-color:#333;}
 .popbody .btnwrap_f .btn_t_f:hover {background-color:#444;}
 
+.popupWrap .btnwrap {display:flex; gap:12px; margin:0;}
+.popupWrap .btnwrap > button {height:40px; width:50%; line-height:40px;}
 
