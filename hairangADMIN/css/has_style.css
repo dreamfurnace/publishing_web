@@ -11,6 +11,8 @@ label {vertical-align:middle; cursor:pointer; display:inline-block;}
 textarea {width:100%; letter-spacing:-0.5px; font-weight:400; font-family:'Noto Sans KR', sans-serif;}
 button {letter-spacing:-0.5px;} 
 button:hover {opacity:0.9;}
+button:disabled {cursor:default;}
+button:disabled:hover {opacity:1;}
 
 /* button style */
 [class^='btn_i_'] {display:inline-block; text-indent:-9999em; overflow:hidden; vertical-align:middle; white-space:nowrap;}
@@ -36,6 +38,7 @@ button:hover {opacity:0.9;}
 .btn_td02:disabled {color:#ccc; border-color:#ddd !important;}
 
 .btn_t_f {color:#fff; border:1px solid #1E1D36; background:#1E1D36;}
+.btn_t_f:disabled {background:#ccc; border-color:#ccc;}
 .btn_t_l {color:#1E1D36; border:1px solid #1E1D36; background:#fff;}
 
 
@@ -51,7 +54,6 @@ textarea {padding:10px; width:100%; min-height:40px; border:1px solid #999;}
 .hide {display:none !important;}
 .txt_a_l {text-align:left !important;}
 .pl14 {padding-left:14px !important;}
-
 
 [class^='tag_'] {display:inline-block; padding:4px 12px;}
 .tag_wait {background:#F9E0CF; color:#432B1A;}
@@ -163,10 +165,7 @@ table.ty_list td select {height:32px; width:100%;}
 .content_box .seh select {appearance:none; border-radius:6px; width:90px; height:30px;
   padding:0 10px; border:1px solid #ccc; background:url(../images/ic_select.svg) no-repeat 64px center;}
 
-
 .templateDetail {display:flex; gap:20px; border-top:1px solid #ccc;}
-
-
 
 
 /* swiwtch style */
@@ -229,6 +228,7 @@ table.ty_list td select {height:32px; width:100%;}
   border:1px solid #1E1D36; color:#1E1D36; border-radius:5px; font-size:14px;}
 .certification .sendNum button:hover,
 .certification .confirmNum button:hover {color:#F04E2A; border-color:#F04E2A;}
+.certification .confirmNum button:disabled {border-color:#ccc; color:#ccc;}
 
 .certification .sendNum {display:flex; align-items:center; justify-content:space-between;}
 .certification .sendNum > .checkbox_tbox {display:flex;}
