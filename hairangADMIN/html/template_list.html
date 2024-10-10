@@ -61,8 +61,9 @@
 								<th style="width:130px">등록일</th>
 								<th style="width:80px">결재자</th>
 								<th style="width:130px">결재일</th>
-								<th>사용</th><!-- 결재자 비노출 -->
-								<th>결재</th> <!-- 일반관리자 비노출  -->
+								<th style="width:80px">사용</th><!-- 결재자 비노출 -->
+								<th style="width:80px">알림</th><!-- 결재자 비노출 -->
+								<th style="width:80px">결재</th> <!-- 일반관리자 비노출  -->
 							</tr>
 						</thead>
 						<tbody>
@@ -86,11 +87,14 @@
 										<div class="slider"><span>켜기/끄기</span></div>
 									</label>
 								</td>
+								<td>							
+									<button type="button" class="btn_td03">등록</button><!-- 해당 알림 등록 화면 이동 -->
+								</td>
 								<td class="checkbox">
-									<label for="item02">
-										<input type="checkbox" id="item02">
+									<label for="item02" onclick = "window.location.href='template_detail.html';">
+										<input type="checkbox" id="item02" disabled>
 										<span class="checkmark"></span>
-									</label>
+									</label> <!-- 결재 여부만 표시, 결재는 상세에서 가능. 상세 링크 -->
 								</td>
 							</tr>
 							<tr>
@@ -112,6 +116,9 @@
 										<input type="checkbox">
 										<div class="slider"><span>켜기/끄기</span></div>
 									</label>
+								</td>
+								<td>							
+									<button type="button" class="btn_td02">보기</button><!-- 해당 알림 상세 화면 이동 -->
 								</td>
 								<td class="checkbox">
 									<label for="item01">
