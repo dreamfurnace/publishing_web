@@ -9,7 +9,8 @@ body {position:relative; font-size:14px; color:#333; letter-spacing:-0.5px; font
 input[type="checkbox"], input[type="radio"] {height:auto; vertical-align:middle; cursor:pointer;}
 label {vertical-align:middle; cursor:pointer; display:inline-block;}
 textarea {width:100%; letter-spacing:-0.5px; font-weight:400; font-family:'Noto Sans KR', sans-serif;}
-button {letter-spacing:-0.5px;} 
+select, input {font-family:'Noto Sans KR', sans-serif;}
+button {letter-spacing:-0.5px; font-family:'Noto Sans KR', sans-serif;} 
 button:hover {opacity:0.9;}
 button:disabled {cursor:default;}
 button:disabled:hover {opacity:1;}
@@ -23,7 +24,7 @@ button:disabled:hover {opacity:1;}
 .btn_i_seh:hover {background-color:#efefef;}
 
 
-[class^='btn_'] {font-weight:700; vertical-align:middle;}
+[class^='btn_'] {font-weight:600; vertical-align:middle;}
 [class*='btn_t_'] {display:inline-block; padding:0 12px; height:28px; min-width:80px; line-height:28px; border-radius:6px;}
 
 .btn_addTemplate {width:180px; height:36px; line-height:33px; font-size:14px; padding-left:30px; letter-spacing:-1px;
@@ -194,7 +195,7 @@ table.ty_list td select {height:32px; width:100%;}
   display:inline-block; color:#ccc; width:10px; text-align:center;}
 .templateDetail .chk_useWrap {padding:0 16px; margin-bottom:16px; border-bottom:1px solid #ccc;}
 .chk_use {display:flex; align-items:center; justify-content:space-between; font-size:16px;}
-.templateDetail > .templateInfo .btn_t_l {width:100%; height:42px; line-height:42px;}
+.templateDetail > .templateInfo .btn_t_l {width:100%; height:42px; font-size:14px;}
 .templateDetail > .templateInfo .btn_t_l:hover {background-color:#f9f9f9;}
 .templateDetail .btn_fileWrap {margin-top:20px; position:relative;}
 .templateDetail .btn_fileWrap > input {position:absolute; top:0; left:0; z-index:2; height:42px; opacity:0; cursor:pointer;}
@@ -206,7 +207,7 @@ table.ty_list td select {height:32px; width:100%;}
   display:flex; justify-content:space-between; align-items:center;}
 .templateDetail .tit input {margin:0 0 4px; border:none; font-size:18px; width:80%; font-weight:600;}
 .templateDetail .tit input::placeholder {font-size:18px;}
-.templateDetail .tit .btnwrap button {height:32px; line-height:32px; margin-left:2px;}
+.templateDetail .tit .btnwrap button {height:32px; margin-left:2px;}
 .templateDetail .tit .btnwrap button:last-child {width:120px;}
 
 .templateDetail .fileArea {margin:20px; display:grid; grid-template-columns: repeat(5, 1fr); gap:16px;}
@@ -223,7 +224,7 @@ table.ty_list td select {height:32px; width:100%;}
 
 .templateDetail .btnwrap_f {margin:30px 0; padding:20px 0; border-top:1px solid #ccc;
   display:flex; justify-content:space-between;}
-.templateDetail .btnwrap_f button {height:32px; line-height:32px;}
+.templateDetail .btnwrap_f button {height:32px;}
 .templateDetail .btnwrap_f .btnwrap > button:last-child {width:120px; margin-left:2px;}
 
 /* swiwtch style */
