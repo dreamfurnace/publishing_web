@@ -201,7 +201,7 @@ table.ty_list td select {height:32px; width:100%;}
 
 .templateDetail > .templateCont {width:calc(100% - 290px);}
 .templateDetail .tit {height:50px; border-bottom:1px solid #ccc;}
-.templateDetail .tit > span {display:block; text-align:center; font-weight:600; line-height:50px; font-size:16px;}
+.templateDetail .tit span {display:block; text-align:center; font-weight:600; font-size:16px; margin:-6px 0 0; width:90%;}
 .templateDetail .tit > .inputBox {padding:12px 0 0;
   display:flex; justify-content:space-between; align-items:center;}
 .templateDetail .tit input {margin:0 0 4px; border:none; font-size:18px; width:80%; font-weight:600;}
