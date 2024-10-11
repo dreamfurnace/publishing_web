@@ -57,6 +57,7 @@ textarea {padding:10px; width:100%; min-height:40px; border:1px solid #999;}
 .hide {display:none !important;}
 .txt_a_l {text-align:left !important;}
 .pl14 {padding-left:14px !important;}
+.mb20 {margin-bottom:20px;}
 
 [class^='tag_'] {display:inline-block; padding:4px 12px;}
 .tag_wait {background:#F9E0CF; color:#432B1A;}
@@ -95,8 +96,10 @@ footer {text-align:center; font-size:12px; margin:30px 0; color:#666;}
 
 .container {position:fixed; top:102px; left:0; right:0; bottom:0; overflow:auto;}
 .contentWrap {margin:0 auto; min-width:1200px; width:1600px;}
-
 .contentWrap > .tit {position:relative; margin:20px 0 10px;}
+.contentWrap > .tit > .checkbox_approval {position:absolute; top:-12px; right:4px; 
+  width:160px; height:48px;}
+
 h2 {padding-left:12px; font-size:18px; color:#1E1D36; font-weight:500;}
 h2::before {content:''; position:absolute; top:50%; left:0; display:block; margin:-6px 8px 0 0;
   width:3px; height:16px; background:#1E1D36;}
@@ -163,13 +166,65 @@ table.ty_list td select {height:32px; width:100%;}
 /* content */
 .content_box .head {display:flex; justify-content:right; margin:-10px 0 10px;}
 .content_box .seh {display:flex; gap:4px;}
-.content_box .seh > .inputWrap { padding-left:4px; border-radius:6px; border:1px solid #ccc;}
+.content_box .seh > .inputWrap {padding-left:4px; border-radius:6px; border:1px solid #ccc;}
 .content_box .seh > .inputWrap > input {border:none; width:140px;}
 .content_box .seh select {appearance:none; border-radius:6px; width:90px; height:30px;
   padding:0 10px; border:1px solid #ccc; background:url(../images/ic_select.svg) no-repeat 64px center;}
 
-.templateDetail {display:flex; gap:20px; border-top:1px solid #ccc;}
+.templateDetail {padding:20px 100px 0; display:flex; gap:50px; border-top:1px solid #ccc;}
 
+.templateDetail > .templateInfo {width:240px;}
+.templateDetail .category {height:50px; line-height:50px; font-size:16px; text-align:center;
+  border-bottom:1px solid #ccc; font-weight:600;}
+.templateDetail .category > select {width:230px; height:46px; border:none; appearance:none; 
+  font-weight:600; font-size:16px; text-align:center; padding-right:60px;
+  background:url(../images/ic_select02.svg) no-repeat 200px center;}
+.templateDetail .info {padding:30px 20px; border-bottom:1px solid #ccc;}
+.templateDetail .info ul {display:flex; flex-direction:column; gap:14px;}
+.templateDetail .info li {display:flex; gap:20px; align-items:center;}
+.templateDetail .info li > span:first-child {font-size:16px; color:#999;}
+.templateDetail .info li > span:last-child {font-size:16px; color:#000;}
+.templateDetail .info li > select {width:154px;}  
+
+.templateDetail .writer {padding:20px 10px; border-bottom:1px solid #ccc;}
+.templateDetail .writer ul {display:flex; flex-direction:column; gap:14px;}
+.templateDetail .writer li {display:flex; gap:12px; white-space:nowrap; align-items:center;}
+.templateDetail .writer li em {color:#999;}
+.templateDetail .writer li em::before {content:"/"; margin-left:4px;
+  display:inline-block; color:#ccc; width:10px; text-align:center;}
+.templateDetail .chk_useWrap {padding:0 16px; margin-bottom:16px; border-bottom:1px solid #ccc;}
+.chk_use {display:flex; align-items:center; justify-content:space-between; font-size:16px;}
+.templateDetail > .templateInfo .btn_t_l {width:100%; height:42px; line-height:42px;}
+.templateDetail > .templateInfo .btn_t_l:hover {background-color:#f9f9f9;}
+.templateDetail .btn_fileWrap {margin-top:20px; position:relative;}
+.templateDetail .btn_fileWrap > input {position:absolute; top:0; left:0; z-index:2; height:42px; opacity:0; cursor:pointer;}
+
+.templateDetail > .templateCont {width:calc(100% - 290px);}
+.templateDetail .tit {height:50px; border-bottom:1px solid #ccc;}
+.templateDetail .tit > span {display:block; text-align:center; font-weight:600; line-height:50px; font-size:16px;}
+.templateDetail .tit > .inputBox {padding:12px 0 0;
+  display:flex; justify-content:space-between; align-items:center;}
+.templateDetail .tit input {margin:0 0 4px; border:none; font-size:18px; width:80%; font-weight:600;}
+.templateDetail .tit input::placeholder {font-size:18px;}
+.templateDetail .tit .btnwrap button {height:32px; line-height:32px; margin-left:2px;}
+.templateDetail .tit .btnwrap button:last-child {width:120px;}
+
+.templateDetail .fileArea {margin:20px; display:grid; grid-template-columns: repeat(5, 1fr); gap:16px;}
+.templateDetail .fileArea > .itemBox {display:flex; flex-direction:column; gap:6px;}
+.templateDetail .fileArea > .itemBox > span {text-align:center; font-size:16px;}
+.templateDetail .fileArea > .itemBox > .item {border-radius:10px; border:1px solid #efefef; aspect-ratio:3/4; overflow:hidden;}
+.templateDetail .fileArea > .itemBox > .item > img {width:100%; object-fit:cover;}
+
+.fileArea.ty11 > .itemBox > .item {aspect-ratio: 1/1;}
+.templateDetail .fileArea.write > .itemBox > .item {border:1px dashed #ccc;}
+.templateDetail .fileArea > .itemBox.error > .item {border-color:#ff0000; display:flex; align-items:center; justify-content:center;}
+.templateDetail .fileArea > .itemBox.error > .item::before {content:"파일 이름을 확인하세요."; color:#ff0000;}
+.templateDetail .fileArea > .itemBox.error > span {color:#ff0000;}
+
+.templateDetail .btnwrap_f {margin:30px 0; padding:20px 0; border-top:1px solid #ccc;
+  display:flex; justify-content:space-between;}
+.templateDetail .btnwrap_f button {height:32px; line-height:32px;}
+.templateDetail .btnwrap_f .btnwrap > button:last-child {width:120px; margin-left:2px;}
 
 /* swiwtch style */
 .swichbox {margin:0; padding:1rem 0; display:flex; justify-content:right;}
@@ -187,6 +242,9 @@ table.ty_list td select {height:32px; width:100%;}
 
 
 /* main */
+
+
+
 
 /* login */
 .login {position:fixed; top:0; left:0; right:0; bottom:0; background-color:#f2f2f2;
@@ -216,10 +274,7 @@ table.ty_list td select {height:32px; width:100%;}
 .login .inputField {margin-bottom:20px;}
 .loginbox .noti {display:block; margin:-6px 0 10px; color:#F04E2A;}
 
-
-.certificationWrap {
-  position:relative; z-index:20; padding:20vh 0 0;
-}
+.certificationWrap {position:relative; z-index:20; padding:20vh 0 0;}
 .certification {margin:0 auto; padding:20px;
   display:flex; flex-direction:column; gap:20px;
   width:460px; border:1px solid #fff; border-radius:20px; 
@@ -250,7 +305,6 @@ table.ty_list td select {height:32px; width:100%;}
 .certification .btnwrap > button {height:40px; width:50%; line-height:40px;}
 
 
-
 /* chek box - textbox   */
 .checkbox_tbox > label {display:block; position:relative;}
 .checkbox_tbox .checktxt {position:relative; display:block;}
@@ -271,6 +325,19 @@ table.ty_list td select {height:32px; width:100%;}
 .checkbox input:disabled ~ .checkmark {cursor:default;}
 
 
+/* chek box - approval   */
+.checkbox_approval .checktxt {display:flex; justify-content:space-between; align-items:center;
+  padding:0 20px; width:120px; height:40px; line-height:40px; font-size:15px; font-weight:500; color:#1E1D36;
+  border:1px solid #1E1D36;}
+.checkbox_approval input[type="radio"], 
+.checkbox_approval input[type="checkbox"] {opacity:0; display:none;}
+.checkbox_approval .checkmark {position:absolute; top:8px; right:10px;
+  display:block; width:26px; height:26px;
+	background:url('../images/ic_approval_off.svg') no-repeat center; background-size:20px;}
+.checkbox_approval input:checked ~ .checkmark {background:url('../images/ic_approval_on.svg') no-repeat center; background-size:20px;}
+.checkbox_approval input:checked ~ .checktxt {border-color:#FF6600; color:#fff; background:#FF6600;}
+
+
 
 /* loading - ani */
 @keyframes jump {
@@ -288,6 +355,7 @@ table.ty_list td select {height:32px; width:100%;}
   .aniwrap .pnt02 {background:#005F9D; animation-delay:0.15s;}
   .aniwrap .pnt03 {background:#005F9D; animation-delay:0.3s;}
   .loadingbox {position:absolute; top:50%; left:50%; transform: translate(-50%, -50%);}
+
 
 /* scrollbox style */
 .scrollbox > .scroll-element .scroll-element_outer, .scrollbox > .scroll-element .scroll-element_track, .scrollbox > .scroll-element .scroll-bar {border-radius:0;}

@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<title>HAS-hirang admin system</title>
+	<link rel="stylesheet" href="../css/has_style.css">
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/scrollbar.min.js"></script>
+	<script src="../js/common.js"></script>
+ </head>
+
+<body>
+	<header>
+		<div class="head">
+			<h1><a href="home.html">
+					<span class="logo">한화손해보험</span>
+					<span class="b_tit">HAS</span>
+				</a>
+			</h1>
+			<aside>
+				<div class="user">김한화(6014778) / 일반관리자</div>
+				<button class="btn_i_logout">로그아웃</button>
+			</aside>
+		</div>
+		<nav class="mainmenu_wrap">
+			<ul class="mainmenu">
+				<li class="on"><a href="#a">템플릿 관리</a></li>
+				<li><a href="#a">사용자 관리</a></li>
+				<li><a href="#a">알림</a></li>
+				<li><a href="#a">관리자 계정</a></li> <!-- 결재자, 일반관리자 비노출-->
+				<li><a href="#a">APP버전 관리</a></li>
+			</ul>
+
+		</nav>
+	</header>
+	<!--//  header -->
+	<div class="container">
+		<div class="contentWrap">
+			<div class="tit">
+				<h2>템플릿 상세</h2>
+			</div>
+<!--  CONTENT   -->
+			<div class="templateDetail">
+				<section class="templateInfo">
+					<div class="category">
+						<select>
+                                   <option>카테고리 선택</option>
+                                   <option>명함</option>
+                                   <option>업무</option>
+                                   <option>안부</option>
+                                   <option>생일</option>
+                                   <option>명절</option>
+                                   <option>연말/연시</option>
+                              </select>
+					</div>
+					<div class="info">
+						<ul>
+							<li>모델 
+                                       <select><option>여</option>
+                                             <option>남</option>
+                                        </select>
+                                   </li>
+                                   <li>비율 
+                                        <select><option>3:4</option>
+                                              <option>1:1</option>
+                                         </select>
+                                    </li>
+                                    <li>유형 
+                                        <select><option>이미지</option>
+                                              <option>영상</option>
+                                         </select>
+                                    </li>
+						</ul>
+					</div>
+                         <div class="btn_fileWrap">
+                              <input type="file">
+                              <button type="button" class="btn_t_l">템플릿 업로드</button>
+                         </div>
+				</section>
+				<section class="templateCont">
+					<div class="tit">
+                              <div class="inputBox">
+                                   <input type="text" placeholder="제목을 입력하세요.">
+                                   <div class="btnwrap">
+                                        <button type="button" class="btn_t_l">취소</button>
+                                        <button type="button" class="btn_t_f">저장</button>
+                                   </div>
+                              </div>
+					</div>
+					<div class="fileArea write"> <!-- case 1:1 class="fileArea ty11"  -->
+						<div class="itemBox">
+							<div class="item"><img src="../images/@pic01.jpg"></div>
+							<span>20대 마름</span>
+						</div>
+						<div class="itemBox error"><!-- case : no file or not available file name -->
+							<div class="item"></div>
+							<span>20대 날씬</span>
+						</div>
+						<div class="itemBox">
+							<div class="item"></div>
+							<span>20대 보통</span>
+						</div>
+						<div class="itemBox">
+							<div class="item"></div>
+							<span>20대 통통</span>
+						</div>
+						<div class="itemBox">
+							<div class="item"></div>
+							<span>20대 뚱뚱</span>
+						</div>
+						<!---// 20 대   -->
+						<div class="itemBox">
+							<div class="item"></div>
+							<span>30대 마름</span>
+						</div>
+						<div class="itemBox">
+							<div class="item"></div>
+							<span>30대 날씬</span>
+						</div>
+						<div class="itemBox">
+							<div class="item"></div>
+							<span>30대 보통</span>
+						</div>
+						<div class="itemBox">
+							<div class="item"></div>
+							<span>30대 통통</span>
+						</div>
+						<div class="itemBox">
+							<div class="item"></div>
+							<span>30대 뚱뚱</span>
+						</div>
+						<!---// 30 대   -->
+						<div class="itemBox">
+							<div class="item"></div>
+							<span>40대 마름</span>
+						</div>
+						<div class="itemBox">
+							<div class="item"></div>
+							<span>40대 날씬</span>
+						</div>
+						<div class="itemBox">
+							<div class="item"></div>
+							<span>40대 보통</span>
+						</div>
+						<div class="itemBox">
+							<div class="item"></div>
+							<span>40대 통통</span>
+						</div>
+						<div class="itemBox">
+							<div class="item"></div>
+							<span>40대 뚱뚱</span>
+						</div>
+						<!---// 40 대   -->
+						<div class="itemBox">
+							<div class="item"></div>
+							<span>50대 마름</span>
+						</div>
+						<div class="itemBox">
+							<div class="item"></div>
+							<span>50대 날씬</span>
+						</div>
+						<div class="itemBox">
+							<div class="item"></div>
+							<span>50대 보통</span>
+						</div>
+						<div class="itemBox">
+							<div class="item"></div>
+							<span>50대 통통</span>
+						</div>
+						<div class="itemBox">
+							<div class="item"></div>
+							<span>50대 뚱뚱</span>
+						</div>
+						<!---// 50 대   -->
+						<div class="itemBox">
+							<div class="item"></div>
+							<span>60대이상 마름</span>
+						</div>
+						<div class="itemBox">
+							<div class="item"></div>
+							<span>60대이상 날씬</span>
+						</div>
+						<div class="itemBox">
+							<div class="item"></div>
+							<span>60대이상 보통</span>
+						</div>
+						<div class="itemBox">
+							<div class="item"></div>
+							<span>60대이상 통통</span>
+						</div>
+						<div class="itemBox">
+							<div class="item"></div>
+							<span>60대이상 뚱뚱</span>
+						</div>
+						<!---// 60대이상 대   -->
+					</div>
+                         <div class="btnwrap_f">
+                              <button type="button" class="btn_t_l">리스트</button>
+                              <div class="btnwrap">
+                                   <button type="button" class="btn_t_l">취소</button>
+                                   <button type="button" class="btn_t_f">저장</button>
+                              </div>
+                         </div>
+				</section>
+			</div>
+<!--//  CONTENT   -->
+		</div><!--//  class="contentWrap" -->
+		<footer>HANWHA GENERAL INSURANCE CO.,LTD. ALL RIGHTS RESERVED.</footer>
+	</div>
+	<!--//  class="container" -->
+
+<!--  POPUP : 파일에러인데 저장 클릭시,  
+"파일이 등록되지 않았습니다."
+-->
+</body>
+
+
+</html>
