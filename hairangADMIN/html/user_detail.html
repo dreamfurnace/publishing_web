@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<title>HAS-hirang admin system</title>
+	<link rel="stylesheet" href="../css/has_style.css">
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/scrollbar.min.js"></script>
+	<script src="../js/common.js"></script>
+ </head>
+
+<body>
+	<header>
+		<div class="head">
+			<h1><a href="home.html">
+					<span class="logo">한화손해보험</span>
+					<span class="b_tit">HAS</span>
+				</a>
+			</h1>
+			<aside>
+				<div class="user">김한화(6014778) / 일반관리자</div>
+				<button class="btn_i_logout">로그아웃</button>
+			</aside>
+		</div>
+		<nav class="mainmenu_wrap">
+			<ul class="mainmenu">
+				<li><a href="#a">템플릿 관리</a></li>
+				<li class="on"><a href="#a">사용자 관리</a></li>
+				<li><a href="#a">알림</a></li>
+				<li><a href="#a">관리자 계정</a></li> <!-- 결재자, 일반관리자 비노출-->
+				<li><a href="#a">APP버전 관리</a></li>
+			</ul>
+
+		</nav>
+	</header>
+	<!--//  header -->
+	<div class="container">
+		<div class="contentWrap">
+			<div class="tit">
+				<h2>사용자 상세</h2>
+			</div>
+<!--  CONTENT   -->
+               <div class="userDetail">
+                    <section class="user">
+                         <div class="head">
+                              <div class="personal">
+                                   <span class="name">김손애</span>
+                                   <span class="side"><em>90.05.12</em> / <em>여성</em></span>
+                              </div>
+                              <div class="belong">
+                                   <span>천안000점</span> / <!-- 대리점 -->
+                                   <span>6015778</span><!-- 사번 -->
+                              </div>                            
+                         </div>
+                         <div class="spac">
+                              <ul>
+                                   <li>
+                                        <span>APP버전 :</span>
+                                        <span>v<em>11.03</em></span>
+                                   </li>
+                                   <li>
+                                        <span>푸시수신 :</span>
+                                        <span>Y</span>
+                                   </li>
+                                   <li>
+                                        <span>폰 모델 :</span>
+                                        <span>???</span>
+                                   </li>
+                                   <li>
+                                        <span>운영체제(버전) :</span>
+                                        <span>IOS(v <em>11.11</em>)</span>
+                                   </li>
+                              </ul>
+                         </div>
+                         <div class="delete"><!-- 결재자 비노출-->
+                              <div class="switchWrap">
+                                   삭제
+                                   <label class="switch">
+                                        <input type="checkbox">
+                                        <div class="slider"><span>켜기/끄기</span></div>
+                                   </label>
+                              </div>
+                              <div class="note">
+                                   <textarea placeholder="삭제이유"></textarea>
+                                   <button type="submit" class="btn_t_f">등록</button>
+                              </div>
+                         </div>
+                    </section>
+                    <section class="loginList">
+                         <h3>로그인 이력</h3>
+                         <div class="listWrap">
+                              <ul>
+                                   <li><span>로그인</span>
+                                        <span>2024.12.12 15:20</span>
+                                   </li>
+                                   <li><span>로그인</span>
+                                        <span>2024.12.12 15:20</span>
+                                   </li>
+                                   <li><span>로그인</span>
+                                        <span>2024.12.12 15:20</span>
+                                   </li>
+                                   <li><span>로그인</span>
+                                        <span>2024.12.12 15:20</span>
+                                   </li>
+                                   <li><span>로그인</span>
+                                        <span>2024.12.12 15:20</span>
+                                   </li>
+                                   <li><span>로그인</span>
+                                        <span>2024.12.12 15:20</span>
+                                   </li>
+                                   <li><span>로그인</span>
+                                        <span>2024.12.12 15:20</span>
+                                   </li>
+                                   <li><span>로그인</span>
+                                        <span>2024.12.12 15:20</span>
+                                   </li>
+                                   <li><span>로그인</span>
+                                        <span>2024.12.12 15:20</span>
+                                   </li>
+                                   <li><span>로그인</span>
+                                        <span>2024.12.12 15:20</span>
+                                   </li>
+                                   <li><span>로그인</span>
+                                        <span>2024.12.12 15:20</span>
+                                   </li>
+                                   <li><span>로그인</span>
+                                        <span>2024.12.12 15:20</span>
+                                   </li>
+                              </ul>
+                         </div>
+                         <div class="pagination">
+                              <div class="page">
+                                   <button type="button" class="btn_p_first">처음페이지</button>
+                                   <button type="button" class="btn_p_pre">이전페이지</button>
+                                   <div class="page_num">
+                                        <a href="#a" class="current">1</a>
+                                        <a href="#a">2</a>
+                                        <a href="#a">3</a>
+                                        <a href="#a">4</a>
+                                        <a href="#a">5</a>
+                                   </div>
+                                   <button type="button" class="btn_p_next">다음페이지</button>
+                                   <button type="button" class="btn_p_end">끝페이지</button>
+                              </div>
+                         </div>
+                    </section>
+               </div>
+<!--//  CONTENT   -->
+		</div><!--//  class="contentWrap" -->
+		<footer>HANWHA GENERAL INSURANCE CO.,LTD. ALL RIGHTS RESERVED.</footer>
+	</div>
+	<!--//  class="container" -->
+</body>
+
+</html>
