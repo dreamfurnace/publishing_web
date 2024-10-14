@@ -42,13 +42,13 @@
 				<h2>템플릿 상세</h2>
 				<div class="checkbox_approval">
 					<label for="item01">
-						<input type="checkbox" id="item01" name="selected">
+						<input type="checkbox" id="item01" name="" disabled>
 						<span class="checkmark"></span>
 						<span class="checktxt">
 							결재
 						</span>   
 					</label>
-				</div> <!-- 일반관리자 비노출-->
+				</div> <!-- 일반관리자 비노출, 확인 팝업 후 disabled-->
 			</div>
 <!--  CONTENT   -->
 			<div class="templateDetail">
@@ -215,6 +215,24 @@
 		<footer>HANWHA GENERAL INSURANCE CO.,LTD. ALL RIGHTS RESERVED.</footer>
 	</div>
 	<!--//  class="container" -->
+
+<!--    POPUP    -->
+<div class="dimmedlayer hide"></div>
+<!--    결제     -->
+	<div class="popupContainer hide">
+		<div class="popupWrap">
+			<div class="popbody">
+				<div class="content_box">
+					결재 하시겠습니까?
+				</div>
+			</div>
+			<div class="btnwrap">
+				<button type="button" class="btn_t_l">취소</button>
+				<button type="button" class="btn_t_f">확인</button>
+			 </div>
+		</div>
+	</div>
+
 </body>
 
 
