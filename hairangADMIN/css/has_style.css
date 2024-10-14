@@ -253,15 +253,14 @@ table.ty_list td select {height:32px; width:100%;}
 .noticeDetail {padding:20px 100px 0; display:flex; gap:50px; border-top:1px solid #ccc;}
 .noticeDetail .category {height:50px; line-height:50px; font-size:16px; text-align:center;
   border-bottom:1px solid #ccc; font-weight:600;}
-.noticeDetail > .noticeInfo {width:240px;}
+.noticeDetail > .noticeInfo {width:260px;}
 
-.noticeDetail > .noticeCont {width:calc(100% - 290px);}
+.noticeDetail > .noticeCont {width:calc(100% - 310px);}
 .noticeDetail .tit {height:50px; border-bottom:1px solid #ccc;}
 .noticeDetail .tit span {display:block; text-align:center; font-weight:600; 
   font-size:16px; line-height:50px;}
 .noticeDetail .tit > .inputBox {padding:12px 0 0;
   display:flex; justify-content:space-between; align-items:center;}
-
 
 .noticeDetail .btnwrap_f {margin:30px 0; padding:20px 0; border-top:1px solid #ccc;
   display:flex; justify-content:space-between;}
@@ -269,7 +268,37 @@ table.ty_list td select {height:32px; width:100%;}
 .noticeDetail .btnwrap_f .btnwrap > button:last-child {width:120px; margin-left:2px;}
 
 .noticeCont > .cont {padding:20px; vertical-align:top; height:340px;}
+.noticeCont > .cont > textarea {height:100%; border:none;}
 
+.noticeDetail .writer {padding:20px 10px; border-bottom:1px solid #ccc;}
+.noticeDetail .writer ul {display:flex; flex-direction:column; gap:14px;}
+.noticeDetail .writer li {display:flex; gap:12px; white-space:nowrap; align-items:center;}
+.noticeDetail .writer li:nth-child(2) > span:first-child {letter-spacing:-1px;}
+.noticeDetail .writer li em {color:#999;}
+.noticeDetail .writer li em::before {content:"/"; margin-left:4px;
+  display:inline-block; color:#ccc; width:10px; text-align:center;}
+.noticeDetail .chk_pushWrap {padding:0 16px; margin-bottom:16px;}
+.noticeDetail .chk_push {display:flex; align-items:center; justify-content:space-between; font-size:16px;}
+
+.noticeDetail .popupInfo {padding:20px 10px; border-bottom:1px solid #ccc;}
+.noticeDetail .popupInfo > span {display:block; margin-bottom:10px;}
+.noticeDetail .period {font-size:16px; white-space:nowrap;}
+
+.noticeDetail .tit input {margin:0 0 4px; border:none; font-size:18px; width:100%; font-weight:600;}
+.noticeDetail .tit input::placeholder {font-size:18px;}
+
+.setPeriod {padding:20px 10px; border-top:1px solid #ccc;}
+.setPeriod .datewrap {position:relative; margin-bottom:40px;
+  display:flex; gap:20px; white-space:nowrap; align-items:center;}
+.setPeriod .date {display:flex; justify-content:space-between;
+  width:200px; height:40px; overflow:hidden; border:1px solid #BDBDBD; border-radius:5px; }
+.setPeriod .date > input {padding-left:10px; font-size:16px; border:none; width:140px; height:40px;}
+.setPeriod .date > input::placeholder {font-size:16px;}
+.chk_popup > .chk_pushWrap {margin:0;}
+.setPeriod .datewrap:first-child::after {content:''; position:absolute; top:52px; left:140px;
+  display:block; width:1px; height:20px; background:#ccc;}
+  .setPeriod .datewrap button {width:40px; height:40px;
+    text-indent:-9999em; overflow:hidden; white-space:nowrap; background:url(../images/ic_calen.svg) no-repeat center;}
 
 /* swiwtch style */
 .swichbox {margin:0; padding:1rem 0; display:flex; justify-content:right;}

@@ -61,7 +61,7 @@
                                    <th style="width:60px">팝업 노출</th>
                                    <th style="width:130px">팝업 시작</th>
                                    <th style="width:130px">팝업 종료</th>
-							<th style="width:130px">푸시 발송</th><!-- 결재자 비노출  -->
+							<th style="width:130px">푸시 발송</th><!-- 결재자 '푸시버튼' 비노출  -->
 							<th style="width:60px">결재</th> <!-- 일반관리자 비노출  -->
 						</tr>
 					</thead>
@@ -153,7 +153,21 @@
 		<footer>HANWHA GENERAL INSURANCE CO.,LTD. ALL RIGHTS RESERVED.</footer>
 	</div>
 	<!--//  class="container" -->
+
+<!--    POPUP  : 푸시 발송   -->
+<div class="dimmedlayer hide"></div>
+	<div class="popupContainer hide">
+		<div class="popupWrap">
+			<div class="popbody">
+				<div class="content_box">
+					푸시를 발송하시겠습니까?
+				</div>
+			</div>
+			<div class="btnwrap">
+				<button type="button" class="btn_t_l">취소</button>
+				<button type="button" class="btn_t_f">확인</button>
+			 </div>
+		</div>
+	</div>
 </body>
-
-
 </html>
