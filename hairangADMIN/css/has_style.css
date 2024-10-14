@@ -250,6 +250,27 @@ table.ty_list td select {height:32px; width:100%;}
 .loginList > .pagination {position:absolute; left:0; right:0; bottom:6px;  border-bottom:none;}
 
 
+.noticeDetail {padding:20px 100px 0; display:flex; gap:50px; border-top:1px solid #ccc;}
+.noticeDetail .category {height:50px; line-height:50px; font-size:16px; text-align:center;
+  border-bottom:1px solid #ccc; font-weight:600;}
+.noticeDetail > .noticeInfo {width:240px;}
+
+.noticeDetail > .noticeCont {width:calc(100% - 290px);}
+.noticeDetail .tit {height:50px; border-bottom:1px solid #ccc;}
+.noticeDetail .tit span {display:block; text-align:center; font-weight:600; 
+  font-size:16px; line-height:50px;}
+.noticeDetail .tit > .inputBox {padding:12px 0 0;
+  display:flex; justify-content:space-between; align-items:center;}
+
+
+.noticeDetail .btnwrap_f {margin:30px 0; padding:20px 0; border-top:1px solid #ccc;
+  display:flex; justify-content:space-between;}
+.noticeDetail .btnwrap_f button {height:32px;}
+.noticeDetail .btnwrap_f .btnwrap > button:last-child {width:120px; margin-left:2px;}
+
+.noticeCont > .cont {padding:20px; vertical-align:top; height:340px;}
+
+
 /* swiwtch style */
 .swichbox {margin:0; padding:1rem 0; display:flex; justify-content:right;}
 .switch {position:relative; display:inline-block; width:44px; height:24px; vertical-align:middle;}
@@ -360,7 +381,6 @@ table.ty_list td select {height:32px; width:100%;}
 	background:url('../images/ic_approval_off.svg') no-repeat center; background-size:20px;}
 .checkbox_approval input:checked ~ .checkmark {background:url('../images/ic_approval_on.svg') no-repeat center; background-size:20px;}
 .checkbox_approval input:checked ~ .checktxt {border-color:#FF6600; color:#fff; background:#FF6600;}
-
 
 .checkbox_approval input:disabled ~ .checkmark {background:url('../images/ic_approval_on.svg') no-repeat center; background-size:20px; cursor:default;}
 .checkbox_approval input:disabled ~ .checktxt {border-color:#FF6600; color:#fff; background:#FF6600; cursor:default;}
