@@ -39,18 +39,44 @@
 	<div class="container">
 		<div class="contentWrap">
 			<div class="tit">
-				<h2>알림 등록</h2>
+				<h2>알림 상세</h2>
+				<div class="checkbox_approval">
+					<label for="item01">
+						<input type="checkbox" id="item01" name="" disabled>
+						<span class="checkmark"></span>
+						<span class="checktxt">
+							결재
+						</span>   
+					</label>
+				</div> <!-- 일반관리자 비노출, 확인 팝업 후 'disabled' -->
 			</div>
 <!--  CONTENT   -->
 			<div class="noticeDetail">
 				<section class="noticeInfo">
-					<div class="category"> <!-- case: 템플릿에서 오는 경우 '템플릿'-->
-						시스템
+					<div class="category">
+						템플릿
 					</div>
-                         <div class="chk_popup"> <!-- case: 템플릿일 경우 비노출 -->
+					<div class="writer">
+						<ul>
+							<li><span>등&nbsp; &nbsp; &nbsp; 록 :</span> 
+								<span>6017889<em>2024.12.12 13:13</em></span>
+							</li>
+                                   <li><span>최종수정 :</span> 
+								<span>6018779<em>2024.12.12 13:13</em></span>
+							</li>
+							<li><span>결&nbsp; &nbsp; &nbsp; 재 :</span> 
+								<span>6018779<em>2024.12.12 13:13</em></span>
+							</li>
+						</ul>
+					</div>
+					<div class="popupInfo">
+                              <a href="#a">템플릿 보기</a>
+					</div>
+                         <div class="push">
 						<div class="chk_pushWrap">
-							<div class="chk_push">팝업노출
+							<div class="chk_push">푸시
 								<div class="swichbox">
+                                             <span class="hide">2024.10.10 12:00</span> <!-- 확인 팝업 후 푸시 날짜 노출 -->
 									<label class="switch">
 										<input type="checkbox">
 										<div class="slider"><span>켜기/끄기</span></div>
@@ -58,40 +84,21 @@
 								</div>
 							</div>
 						</div>
-                              <div class="setPeriod"><!-- case: 팝업 노출 활성화시 노출-->
-                                   <div class="datewrap">
-                                        시작
-                                        <div class="date">
-                                             <input type="text" placeholder="2024.12.12 13:20" value="2024.12.12 13:20">
-                                             <button type="button">달력</button>
-                                        </div>
-                                   </div>
-                                   <div class="datewrap">
-                                        종료
-                                        <div class="date">
-                                             <input type="text" placeholder="2024.12.12 13:20">
-                                             <button type="button">달력</button>
-                                        </div>
-                                   </div>
-                              </div><!-- 형식이 달라야 한다면 요청 주세요.-->
 					</div>
 				</section>
 				<section class="noticeCont">
 					<div class="tit">						
-                              <div class="inputBox">
-                                   <input type="text" placeholder="제목을 입력하세요.">
-                              </div>
+                              <span>템플릿이 업로드 되었습니다.</span>
                          </div>
                          <div class="cont">
-                              <textarea placeholder="내용을 입력하세요."></textarea>
+                              내용이 들어갑니다.
                          </div>
 				
-
 					<div class="btnwrap_f">
                               <button type="button" class="btn_t_l">리스트</button>
                               <div class="btnwrap">
-                                   <button type="button" class="btn_t_l">취소</button><!-- 페이지 리셋-->
-                                   <button type="button" class="btn_t_f">저장</button><!-- 저장 후 상세페이지 이동 -->	
+                                   <button type="button" class="btn_t_l">삭제</button> <!-- 결재 전 삭제 가능, 결재 후 비노출, 결재자 비노출-->
+                                   <button type="button" class="btn_t_f">수정</button> <!-- 결재 전 수정 가능, 결재 후 비노출, 결재자 비노출-->
                               </div>
                          </div>
                          <footer>HANWHA GENERAL INSURANCE CO.,LTD. ALL RIGHTS RESERVED.</footer>
@@ -119,6 +126,5 @@
 		</div>
 	</div>
 </body>
-
 
 </html>

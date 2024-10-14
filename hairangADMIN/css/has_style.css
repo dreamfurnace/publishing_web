@@ -243,8 +243,12 @@ table.ty_list td select {height:32px; width:100%;}
 
 .loginList {position:relative; width:400px; height:570px; border:1px solid #ccc; border-radius:20px; overflow: hidden;}
 .loginList h3 {padding:0 20px; height:42px; line-height:42px; font-size:16px; color:#333; background:#f5f5f5;}
-.loginList > .listWrap {padding:10px 20px; overflow:hidden;}
-.loginList > .listWrap li {display:flex; gap:20px; padding:8px 10px; border-bottom:1px solid #e9e9e9;}
+.loginList > .listWrap {position:absolute; top:42px; left:0; right:0; bottom:0;
+  padding:20px; overflow:hidden; overflow-y:auto;}
+.loginList > .listWrap li:first-child {margin-top:10px;}
+.loginList > .listWrap li:last-child {margin-bottom:20px;}
+.loginList > .listWrap li {display:flex; gap:20px; margin:0 20px;
+  padding:8px 10px; border-bottom:1px solid #e9e9e9;}
 .loginList > .listWrap li:hover {background-color:#f9f9f9;}
 
 .loginList > .pagination {position:absolute; left:0; right:0; bottom:6px;  border-bottom:none;}
@@ -267,8 +271,8 @@ table.ty_list td select {height:32px; width:100%;}
 .noticeDetail .btnwrap_f button {height:32px;}
 .noticeDetail .btnwrap_f .btnwrap > button:last-child {width:120px; margin-left:2px;}
 
-.noticeCont > .cont {padding:20px; vertical-align:top; height:340px;}
-.noticeCont > .cont > textarea {height:100%; border:none;}
+.noticeCont > .cont {padding:20px; vertical-align:top; height:340px; font-size:15px;}
+.noticeCont > .cont > textarea {height:100%; border:none; font-size:16px;}
 
 .noticeDetail .writer {padding:20px 10px; border-bottom:1px solid #ccc;}
 .noticeDetail .writer ul {display:flex; flex-direction:column; gap:14px;}
@@ -283,6 +287,8 @@ table.ty_list td select {height:32px; width:100%;}
 .noticeDetail .popupInfo {padding:20px 10px; border-bottom:1px solid #ccc;}
 .noticeDetail .popupInfo > span {display:block; margin-bottom:10px;}
 .noticeDetail .period {font-size:16px; white-space:nowrap;}
+.noticeDetail .popupInfo > a {display:inline-block; font-size:16px; color:#FF6600; border-bottom:1px solid #fff;}
+.noticeDetail .popupInfo > a:hover {border-color:#FF6600;}
 
 .noticeDetail .tit input {margin:0 0 4px; border:none; font-size:18px; width:100%; font-weight:600;}
 .noticeDetail .tit input::placeholder {font-size:18px;}
@@ -297,7 +303,7 @@ table.ty_list td select {height:32px; width:100%;}
 .chk_popup > .chk_pushWrap {margin:0;}
 .setPeriod .datewrap:first-child::after {content:''; position:absolute; top:52px; left:140px;
   display:block; width:1px; height:20px; background:#ccc;}
-  .setPeriod .datewrap button {width:40px; height:40px;
+.setPeriod .datewrap button {width:40px; height:40px;
     text-indent:-9999em; overflow:hidden; white-space:nowrap; background:url(../images/ic_calen.svg) no-repeat center;}
 
 /* swiwtch style */
