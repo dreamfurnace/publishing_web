@@ -95,7 +95,7 @@ footer {text-align:center; font-size:12px; margin:30px 0; color:#666;}
 .mainmenu li:hover > a {background-color:#363454;}
 
 .container {position:fixed; top:102px; left:0; right:0; bottom:0; overflow:auto;}
-.contentWrap {margin:0 auto; min-width:1200px; width:1600px;}
+.contentWrap {margin:0 auto; min-width:1200px; max-width:1600px;}
 .contentWrap > .tit {position:relative; margin:20px 0 10px;}
 .contentWrap > .tit > .checkbox_approval {position:absolute; top:-12px; right:4px; 
   width:160px; height:48px;}
@@ -126,12 +126,11 @@ table.ty_list th, table.ty_statis th {padding:0 10px; height:34px; text-align:ce
     white-space:nowrap; font-size:13px; border-right:1px solid #B4B4B4; background:#e0e0e0;}
 table.ty_list th:first-child,table.ty_list td:first-child {border-left:none;}
 table.ty_list th:last-child,table.ty_list td:last-child {border-right:none;}
-table.ty_list td {padding:2px; text-align:center; height:34px; vertical-align:middle;
+table.ty_list td {padding:2px; text-align:center; white-space:nowrap; height:34px; vertical-align:middle;
   border:1px solid #D9D9D9; border-right:1px solid #D9D9D9;}
 table.ty_list tr:hover td {background-color:#FFF9F1;}
 table.ty_list tr.modify td {background-color:#FFEFEC;}
 
-table tr.total td, table tr.total:hover td {background-color:#EBEBEB; font-weight:700; color:#111;}
 table.ty_list td > img {margin-right:10px; vertical-align:middle; width:38px; height:48px; border-radius:4px; object-fit:contain;}
 table.ty_list td > a {display:inline-block; padding:0 2px 2px; border-bottom:1px #ccc solid;}
 table.ty_list td > a:hover {border-color:#888;}
