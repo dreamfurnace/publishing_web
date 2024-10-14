@@ -362,6 +362,9 @@ table.ty_list td select {height:32px; width:100%;}
 .checkbox_approval input:checked ~ .checktxt {border-color:#FF6600; color:#fff; background:#FF6600;}
 
 
+.checkbox_approval input:disabled ~ .checkmark {background:url('../images/ic_approval_on.svg') no-repeat center; background-size:20px; cursor:default;}
+.checkbox_approval input:disabled ~ .checktxt {border-color:#FF6600; color:#fff; background:#FF6600; cursor:default;}
+
 
 /* common Loading  - ani */
 @keyframes turn {
