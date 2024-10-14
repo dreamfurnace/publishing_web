@@ -65,6 +65,7 @@
 							<th style="width:140px">사번</th>
 							<th>이름</th>
 							<th style="width:50px">성별</th>
+							<th style="width:130px">가입일</th>
 							<th style="width:130px">최종 로그인</th>
 							<th style="width:100px">운영체제</th>
 							<th style="width:50px">푸시수신</th>
@@ -79,6 +80,7 @@
 							<td>6017881</td>
 							<td><a href="">김손애</a></td>
 							<td>여</td>
+							<td>2024.12.12</td>
 							<td>2024.12.12 13:15</td>
 							<td>IOS</td>
 							<td>Y</td>
@@ -101,6 +103,7 @@
 							<td>6017881</td>
 							<td><a href="">박보험</a></td>
 							<td>남</td>
+							<td>2024.12.12</td>
 							<td>2024.12.12 13:15</td>
 							<td>Android</td>
 							<td>Y</td>
@@ -133,13 +136,15 @@
 	</div>
 	<!--//  class="container" -->
 
-<!--    POPUP: 사용자 삭제     -->
+<!--    POPUP    -->
 <div class="dimmedlayer hide"></div>
+<!--    사용자 삭제     -->
 	<div class="popupContainer hide">
 		<div class="popupWrap">
 			<div class="popbody">
 				<div class="content_box">
-					사용자를 삭제하시겠습니까?
+					사용자를 삭제하시겠습니까?<br>
+					삭제하면 취소 되지 않습니다.
 				</div>
 			</div>
 			<div class="btnwrap">
@@ -147,8 +152,23 @@
 				<button type="button" class="btn_t_f">확인</button>
 			 </div>
 		</div>
-		
 	</div>
+<!--    삭제 이유 등록     -->
+	<div class="popupContainer hide">
+		<div class="popupWrap">
+			<div class="popbody">
+				<div class="content_box">
+					등록하시겠습니까? <br>
+					등록되면 취소/수정 되지 않습니다.
+				</div>
+			</div>
+			<div class="btnwrap">
+				<button type="button" class="btn_t_l">취소</button>
+				<button type="button" class="btn_t_f">확인</button>
+			</div>
+		</div>
+	</div>
+
 
 </body>
 

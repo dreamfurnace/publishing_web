@@ -57,6 +57,10 @@
                          <div class="spac">
                               <ul>
                                    <li>
+                                        <span>가입일 :</span>
+                                        <span>2025.12.12</span>
+                                   </li>
+                                   <li>
                                         <span>APP버전 :</span>
                                         <span>v<em>11.03</em></span>
                                    </li>
@@ -77,6 +81,7 @@
                          <div class="delete"><!-- 결재자 비노출-->
                               <div class="switchWrap">
                                    삭제
+                                   <span class="hide">2025.12.12 10:11</span> <!-- case: 삭제 후 popup 확인, 삭제 일시 노출-->
                                    <label class="switch">
                                         <input type="checkbox">
                                         <div class="slider"><span>켜기/끄기</span></div>
@@ -84,7 +89,7 @@
                               </div>
                               <div class="note">
                                    <textarea placeholder="삭제이유"></textarea>
-                                   <button type="submit" class="btn_t_f">등록</button>
+                                   <button type="submit" class="btn_t_f">등록</button> <!-- case: 등록 후 popup 확인, 버튼 삭제-->
                               </div>
                          </div>
                     </section>
@@ -152,6 +157,41 @@
 		<footer>HANWHA GENERAL INSURANCE CO.,LTD. ALL RIGHTS RESERVED.</footer>
 	</div>
 	<!--//  class="container" -->
+
+
+<!--    POPUP    -->
+<div class="dimmedlayer hide"></div>
+<!--    사용자 삭제     -->
+	<div class="popupContainer hide">
+		<div class="popupWrap">
+			<div class="popbody">
+				<div class="content_box">
+					사용자를 삭제하시겠습니까?<br>
+					삭제하면 취소 되지 않습니다.
+				</div>
+			</div>
+			<div class="btnwrap">
+				<button type="button" class="btn_t_l">취소</button>
+				<button type="button" class="btn_t_f">확인</button>
+			 </div>
+		</div>
+	</div>
+<!--    삭제 이유 등록     -->
+	<div class="popupContainer hide">
+		<div class="popupWrap">
+			<div class="popbody">
+				<div class="content_box">
+					등록하시겠습니까? <br>
+					등록되면 취소/수정 되지 않습니다.
+				</div>
+			</div>
+			<div class="btnwrap">
+				<button type="button" class="btn_t_l">취소</button>
+				<button type="button" class="btn_t_f">확인</button>
+			</div>
+		</div>
+	</div>
+     
 </body>
 
 </html>
