@@ -70,7 +70,7 @@ header .head h1 .logo {display:inline-block; width:130px; height:32px;
   background:url(../images/logo_hanhwa.svg) no-repeat 0 center; 
   background-size:auto 100%; text-indent:-999em; overflow:hidden;}
 header .head .b_tit {position:relative; display:inline-block; font-size:18px; vertical-align:top; margin:2px 0 0 14px;
-  font-weight:800;}
+  font-weight:800; color:#1E1D36;}
 header .head .b_tit::before {content:''; position:absolute; top:50%; left:-8px; margin-top:-6px;
   display:block; width:1px; height:16px; background:#bbb;}
 header aside {position:relative; height:50px; text-align:right; padding-right:35px;}
@@ -112,13 +112,6 @@ table td input[type="text"],
 table td textarea,  
 table td select {border:1px solid #ccc; background:#f8f8f8;}
 table td select {width:100%;}
-
-table.ty_write th {padding:0 10px; height:28px; text-align:right; color:#3C3C3C; white-space:nowrap; font-weight:normal;
-	width:10%; border:1px solid #B4B4B4; border-right:1px solid #B4B4B4; background:#E0E0E0; vertical-align:middle;}
-table.ty_write td {padding:2px 10px; border:1px solid #D9D9D9; border-right:1px solid #D9D9D9; vertical-align:middle;}
-table.ty_write td select, 
-table.ty_write td input[type="text"], 
-table.ty_write td input[type="password"] {width:100%;}
 
 table.ty_list thead {position:sticky; top:0; z-index:2; }
 table.ty_list th, table.ty_statis th {padding:0 10px; height:34px; text-align:center; line-height:34px; 
@@ -253,7 +246,6 @@ table.ty_list td select {height:32px; width:100%;}
 
 .loginList > .pagination {position:absolute; left:0; right:0; bottom:6px;  border-bottom:none;}
 
-
 .noticeDetail {padding:20px 100px 0; display:flex; gap:50px; border-top:1px solid #ccc;}
 .noticeDetail .category {height:50px; line-height:50px; font-size:16px; text-align:center;
   border-bottom:1px solid #ccc; font-weight:600;}
@@ -322,7 +314,37 @@ table.ty_list td select {height:32px; width:100%;}
 
 
 /* main */
+.main {background:#f0f0f0;}
+.mainHead {margin:30px 0 20px; display:flex; justify-content:space-between; align-items:center;}
+.mainHead .period {display:flex; gap:10px;}
+.mainTab {display:flex; gap:15px;}
+.mainTab > button {padding:10px 4px; height:44px; font-size:18px; color:#999; border-bottom:2px solid transparent;}
+.mainTab > button.on {color:#1E1D36; font-weight:600; border-bottom:3px solid #1E1D36;}
 
+.mainPanel > .panel {display:none;}
+.mainPanel > .panel.active {display:block;}
+
+.mainPanel .panelWrap {display:flex; gap:16px; justify-content:center;}
+.mainPanel .panelWrap > section {padding:14px; border:1px solid #E1E1E1; background:#fff;}
+.mainPanel .panelWrap h3 {margin-bottom:10px; font-size:15px; font-weight:500; color:#1E1D36;}
+
+.mainPanel table {width:100%;}
+.mainPanel th {height:28px; line-height:28px; color:#fff; font-weight:400; border-right:1px solid #A9B8CE; background:#7F99C0;}
+.mainPanel th:first-child,
+.mainPanel th:last-child  {border-right:none;}
+.mainPanel td {padding:8px 10px; font-weight:500; font-size:16px; color:#333; text-align:right;
+  border-right:1px solid #E0E0E0; border-bottom:1px solid #E0E0E0; white-space:nowrap;}
+.mainPanel td:first-child {text-align:left; font-weight:400; font-size:14px; color:#646464; border-right:none;
+  background:#FAFAFA;}
+.mainPanel td:last-child {border-right:none;}
+.mainPanel tr:hover td {background-color:#FFF9F1; color:#000;}
+
+.period {display:flex; align-items:center;}
+.period .date {display:flex; justify-content:space-between; height:30px; overflow:hidden; border:1px solid #BDBDBD; background-color:#fff;}
+.period .date > input {padding-left:10px; font-size:15px; border:none; width:90px;}
+.period .date > input::placeholder {font-size:16px;}
+.period .date > button {width:30px; height:30px;
+    text-indent:-9999em; overflow:hidden; white-space:nowrap; background:url(../images/ic_calen.svg) no-repeat center;}
 
 
 

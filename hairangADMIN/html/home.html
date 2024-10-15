@@ -1,0 +1,718 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<title>HAS-hirang admin system</title>
+	<link rel="stylesheet" href="../css/has_style.css">
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/scrollbar.min.js"></script>
+	<script src="../js/common.js"></script>
+ </head>
+
+<body class="main">
+	<header>
+		<div class="head">
+			<h1><a href="home.html">
+				<span class="logo">한화손해보험</span>
+				<span class="b_tit">HAS</span>
+				</a>
+			</h1>
+			<aside>
+				<div class="user">김한화(6014778) / 일반관리자</div>
+				<button class="btn_i_logout">로그아웃</button>
+			</aside>
+		</div>
+		<nav class="mainmenu_wrap">
+			<ul class="mainmenu">
+				<li><a href="#a" class="on">템플릿 관리</a></li>
+				<li><a href="#a">사용자 관리</a></li>
+				<li><a href="#a">알림</a></li>
+				<li><a href="#a">관리자 계정</a></li> <!-- 결재자, 일반관리자 비노출-->
+				<li><a href="#a">APP버전 관리</a></li>
+			</ul>
+
+		</nav>
+	</header>
+	<!--//  header -->
+	<div class="container">
+		<div class="contentWrap">
+<!--  CONTENT   -->
+			<div class="mainHead">
+				<div class="mainTab">
+					<button class="on" type="button"  data-toggle-target="#daily">일별</button><!-- default: 오늘 기준 10일 / 기간설정 max 10일기준 -->
+					<button type="button" data-toggle-target="#monthly">월별</button><!-- default: 이달 기준 12달 / 기간설정 max 12달 기준 -->
+				</div>
+				<div class="period"><!--case: 월별일 때 '월' 선택  value="2024.12" -->
+					<div class="date">
+						<input type="text" value="2024.12.2">
+						<button type="button">달력</button>
+					</div> ~
+					<div class="date">
+						<input type="text" value="2024.12.12">
+						<button type="button">달력</button>
+					</div>
+				</div>
+			</div>
+		
+			<div class="mainPanel">
+				<div id="daily" class="panel active">
+					<div class="panelWrap">
+						<section>
+							<h3>전체 통계</h3>
+							<table>
+								<tr>
+									<th></th>
+									<th style="width:90px;">가입</th>
+									<th style="width:90px;">로그인</th>
+									<th style="width:90px;">생성</th>
+									<th style="width:90px;">발송</th>
+								</tr>
+								<tr>
+									<td>2024.12.10</td>
+									<td>10,100</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>
+								</tr>
+								<tr>
+									<td>2024.12.9</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>
+								</tr>
+								<tr>
+									<td>2024.12.8</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>
+								</tr>
+								<tr>
+									<td>2024.12.7</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>
+								</tr>
+								<tr>
+									<td>2024.12.6</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>
+								</tr>
+								<tr>
+									<td>2024.12.5</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>
+								</tr>
+								<tr>
+									<td>2024.12.4</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>
+								</tr>
+								<tr>
+									<td>2024.12.3</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>
+								</tr>
+								<tr>
+									<td>2024.12.2</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>
+								</tr>
+								<tr>
+									<td>2024.12.1</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>
+								</tr>
+							</table>
+						</section><!-- 전체 통계  -->
+						<section>
+							<h3>생성 통계</h3>
+							<table>
+								<tr>
+									<th></th>
+									<th style="width:90px;">명함</th>
+									<th style="width:90px;">업무</th>
+									<th style="width:90px;">안부</th>
+									<th style="width:90px;">생일</th>
+									<th style="width:90px;">명절</th>
+									<th style="width:90px;">연말/연시</th>
+								</tr>
+								<tr>
+									<td>2024.12.10</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+								<tr>
+									<td>2024.12.9</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+								<tr>
+									<td>2024.12.8</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+								<tr>
+									<td>2024.12.7</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+								<tr>
+									<td>2024.12.6</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+								<tr>
+									<td>2024.12.5</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+								<tr>
+									<td>2024.12.4</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+								<tr>
+									<td>2024.12.3</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+								<tr>
+									<td>2024.12.2</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+								<tr>
+									<td>2024.12.1</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+							</table>
+						</section><!-- 생성 통계  -->
+						<section>
+							<h3>발송 통계</h3>
+							<table>
+								<tr>
+									<th></th>
+									<th style="width:90px;">명함</th>
+									<th style="width:90px;">업무</th>
+									<th style="width:90px;">안부</th>
+									<th style="width:90px;">생일</th>
+									<th style="width:90px;">명절</th>
+									<th style="width:90px;">연말/연시</th>
+								</tr>
+								<tr>
+									<td>2024.12.10</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+								<tr>
+									<td>2024.12.9</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+								<tr>
+									<td>2024.12.8</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+								<tr>
+									<td>2024.12.7</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+								<tr>
+									<td>2024.12.6</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+								<tr>
+									<td>2024.12.5</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+								<tr>
+									<td>2024.12.4</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+								<tr>
+									<td>2024.12.3</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+								<tr>
+									<td>2024.12.2</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+								<tr>
+									<td>2024.12.1</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+							</table>
+						</section><!-- 발송 통계  -->
+					</div>
+				</div><!--// 일별 -->
+				<div id="monthly" class="panel">
+					<div class="panelWrap">
+						<section>
+							<h3>전체 통계</h3>
+							<table>
+								<tr>
+									<th></th>
+									<th style="width:90px;">가입</th>
+									<th style="width:90px;">로그인</th>
+									<th style="width:90px;">생성</th>
+									<th style="width:90px;">발송</th>
+								</tr>
+								<tr>
+									<td>2024.12</td>
+									<td>10,100</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>
+								</tr>
+								<tr>
+									<td>2024.11</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>
+								</tr>
+								<tr>
+									<td>2024.10</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>
+								</tr>
+								<tr>
+									<td>2024.9</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>
+								</tr>
+								<tr>
+									<td>2024.8</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>
+								</tr>
+								<tr>
+									<td>2024.7</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>
+								</tr>
+								<tr>
+									<td>2024.6</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>
+								</tr>
+								<tr>
+									<td>2024.5</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>
+								</tr>
+								<tr>
+									<td>2024.4</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>
+								</tr>
+								<tr>
+									<td>2024.3</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>
+								</tr>
+								<tr>
+									<td>2024.2</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>
+								</tr>
+								<tr>
+									<td>2024.1</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>
+								</tr>
+							</table>
+						</section><!-- 전체 통계  -->
+						<section>
+							<h3>생성 통계</h3>
+							<table>
+								<tr>
+									<th></th>
+									<th style="width:90px;">명함</th>
+									<th style="width:90px;">업무</th>
+									<th style="width:90px;">안부</th>
+									<th style="width:90px;">생일</th>
+									<th style="width:90px;">명절</th>
+									<th style="width:90px;">연말/연시</th>
+								</tr>
+								<tr>
+									<td>2024.12</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+								<tr>
+									<td>2024.11</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+								<tr>
+									<td>2024.10</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+								<tr>
+									<td>2024.9</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+								<tr>
+									<td>2024.8</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+								<tr>
+									<td>2024.7</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+								<tr>
+									<td>2024.6</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+								<tr>
+									<td>2024.5</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+								<tr>
+									<td>2024.4</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+								<tr>
+									<td>2024.3</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+								<tr>
+									<td>2024.2</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+								<tr>
+									<td>2024.1</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+							</table>
+						</section><!-- 생성 통계  -->
+						<section>
+							<h3>발송 통계</h3>
+							<table>
+								<tr>
+									<th></th>
+									<th style="width:90px;">명함</th>
+									<th style="width:90px;">업무</th>
+									<th style="width:90px;">안부</th>
+									<th style="width:90px;">생일</th>
+									<th style="width:90px;">명절</th>
+									<th style="width:90px;">연말/연시</th>
+								</tr>
+								<tr>
+									<td>2024.12</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+								<tr>
+									<td>2024.11</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+								<tr>
+									<td>2024.10</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+								<tr>
+									<td>2024.9</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+								<tr>
+									<td>2024.8</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+								<tr>
+									<td>2024.7</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+								<tr>
+									<td>2024.6</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+								<tr>
+									<td>2024.5</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+								<tr>
+									<td>2024.4</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+								<tr>
+									<td>2024.3</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+								<tr>
+									<td>2024.2</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+								<tr>
+									<td>2024.1</td>
+									<td>10,100</td>
+									<td>10,100</td>
+									<td>1,000</td>
+									<td>100</td>
+									<td>100</td>
+									<td>100</td>									
+								</tr>
+							</table>
+						</section><!-- 발송 통계  -->
+					</div>
+				</div><!--// 월별 -->
+			</div>
+			<footer>HANWHA GENERAL INSURANCE CO.,LTD. ALL RIGHTS RESERVED.</footer>
+<!--//  CONTENT   -->
+		</div><!--//  class="contentWrap" -->
+	</div>
+	<!--//  class="container" -->
+
+<script>
+$('.mainTab > button').on('click', function(evt) {
+    evt.preventDefault();
+    $(".mainTab > button").removeClass("on");
+    $(this).addClass('on');
+    var sel = this.getAttribute('data-toggle-target');
+    $('.panel').removeClass('active').filter(sel).addClass('active');
+});
+
+</script>	
+</body>
+
+
+</html>
