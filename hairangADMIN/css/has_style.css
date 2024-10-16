@@ -276,11 +276,13 @@ table.ty_list td select {height:32px; width:100%;}
 .noticeDetail .chk_pushWrap {padding:0 16px; margin-bottom:16px;}
 .noticeDetail .chk_push {display:flex; align-items:center; justify-content:space-between; font-size:16px;}
 
-.noticeDetail .popupInfo {padding:20px 10px; border-bottom:1px solid #ccc;}
+.noticeDetail .popupInfo {padding:20px 4px; border-bottom:1px solid #ccc;}
 .noticeDetail .popupInfo > span {display:block; margin-bottom:10px;}
 .noticeDetail .period {font-size:16px; white-space:nowrap;}
 .noticeDetail .popupInfo > a {display:inline-block; font-size:16px; color:#FF6600; border-bottom:1px solid #fff;}
 .noticeDetail .popupInfo > a:hover {border-color:#FF6600;}
+
+.popupInfo > .period {display:flex; gap:5px;}
 
 .noticeDetail .tit input {margin:0 0 4px; border:none; font-size:18px; width:100%; font-weight:600;}
 .noticeDetail .tit input::placeholder {font-size:18px;}
