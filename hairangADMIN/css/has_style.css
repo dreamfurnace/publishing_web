@@ -39,6 +39,8 @@ button:disabled:hover {opacity:1;}
 .btn_td03 {color:#111; padding:0 30px; height:32px; border-color:#333 !important;}
 .btn_td03:disabled {color:#ccc; border-color:#ddd !important;}
 
+.btn_data {margin:-4px 0; padding:4px 10px; color:#333; font-weight:400; 
+  border:1px solid #ccc; border-radius:6px; background:#fff;}
 
 .btn_t_f {color:#fff; border:1px solid #1E1D36; background:#1E1D36;}
 .btn_t_f:disabled {background:#ccc; border-color:#ccc;}
