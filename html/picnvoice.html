@@ -46,10 +46,10 @@
                     </div>
                </div>
                <div class="btnGroup_edit"> 
-                    <button type="button" class="skip">사진삭제</button> <!-- case : 삭제모드에서 '확인'  -->
-                    <button class="tyOrn" type="button">확인</button> <!-- case : change main pic -->
+                    <button type="button" class="">사진삭제</button> <!-- case : 삭제모드에서 '확인'  -->
+                    <button type="button" class="tyOrn skip">확인</button> <!-- case : change main pic -->
                </div>
-               <div class="picList changePic"> <!-- 메인사진 교체 -->
+               <div class="picList changePic skip"> <!-- 메인사진 교체 'changePic' -->
                     <button class="btn_picUpload" type="button" disabled><span>사진등록</span></button>
                     <div class="item"> <!-- 선택 시, "border:2px solid #FF6600;"" -->
                          <div class="checkbox_img">
@@ -97,8 +97,8 @@
                     </div>
                     <div class="item blank"></div>
                </div>
-               <div class="picList deletePic skip"> <!-- 사진 삭제 'deletePic' -->
-                    <button class="btn_picUpload" type="button"><span>사진등록</span></button><!-- when filled 5pics, 'skip' -->
+               <div class="picList deletePic"> <!-- 사진 삭제 'deletePic' -->
+                    <button class="btn_picUpload" type="button"><span>사진등록</span></button><!-- when filled 5pics, 'disabled' -->
                     <div class="item">
                         <button type="button">
                               <img src="../images/@pic01.jpg" class="">
@@ -119,14 +119,55 @@
                </div>
           </section>
           <section class="myShape">
-               
+               <h2>체형</h2>
+               <div class="tit"><!-- only before check value -->
+                    <strong>체형을 설정하세요.</strong>
+                    <span>실제 모습에 가까운 적용을 위해 체형을 선택해 주세요.</span>
+               </div>
+               <ul>
+                    <li class="checkbox_shape">
+                         <label for="shape01">
+                              <input type="radio" id="shape01" name="selected">
+                              <span class="checkmark"></span>
+                              <span class="checktxt">마름</span>
+                         </label>
+                    </li>
+                    <li class="checkbox_shape">
+                         <label for="shape02">
+                              <input type="radio" id="shape02"  name="selected">
+                              <span class="checkmark"></span>
+                              <span class="checktxt">날씬</span>
+                         </label>
+                    </li>
+                    <li class="checkbox_shape">
+                         <label for="shape03">
+                              <input type="radio" id="shape03"  name="selected">
+                              <span class="checkmark"></span>
+                              <span class="checktxt">보통</span>
+                         </label>
+                    </li>
+                    <li class="checkbox_shape">
+                         <label for="shape04">
+                              <input type="radio" id="shape04"  name="selected">
+                              <span class="checkmark"></span>
+                              <span class="checktxt">통통</span>
+                         </label>
+                    </li>
+                    <li class="checkbox_shape">
+                         <label for="shape05">
+                              <input type="radio" id="shape05"  name="selected">
+                              <span class="checkmark"></span>
+                              <span class="checktxt">뚱뚱</span>
+                         </label>
+                    </li>
+               </ul>
           </section>
           <section class="myVoice">
-               <div class="tit skip"> <!-- only before upload voice -->
+               <div class="tit"> <!-- only before upload voice -->
                     <strong>목소리를 등록하세요.</strong>
                     <span>음성메시지를 말하는 영상 카드에 적용됩니다.</span>
                </div>
-               <div class="voicePlay">
+               <div class="voicePlay skip">
                     <button class="btn_i_play" type="button" id="btn_playRecord">재생/멈춤</button>
                     <div class="timelineWrap">
                          <div class="timeline">
