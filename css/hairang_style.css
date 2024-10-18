@@ -1586,7 +1586,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 
 /* chek box - checkbox   */
 .checkbox_shape {text-align:center;}
-.checkbox_shape > label {display:flex; gap:1rem; flex-direction:column; justify-content:center; }
+.checkbox_shape > label {display:flex; gap:0.6rem; flex-direction:column; justify-content:center; }
 .checkbox_shape input[type="radio"] {opacity:0; display:none;}
 .checkbox_shape .checkmark {display:block; width:3rem; height:3rem; border-radius:50%; border:1px solid #d9d9d9;
 	background:#fff}
