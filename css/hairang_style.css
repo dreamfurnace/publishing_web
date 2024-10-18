@@ -1524,7 +1524,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .picNvoice::before {content:''; position:absolute; top:-9rem; left:0; right:0;
 	height:26rem; background:url(../images/bg_mypic.svg) no-repeat center bottom; background-size:cover;}
 .picNvoice .tit {position:relative; z-index:2; text-align:center;
-	display:flex; flex-direction:column; gap:0.2rem;}
+	display:flex; flex-direction:column;}
 .picNvoice .tit > strong {font-size:1.6rem; font-weight:500; color:#333;}
 .picNvoice .tit > span {font-size:1.4rem; color:#777; white-space:nowrap; text-align:center;}
 .picNvoice .picwrap {position:relative;}
@@ -1550,7 +1550,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .picNvoice .myVoice .tit {margin:0 0 2rem;}
 
 .picNvoice .picList {position: relative; z-index:2;
-	display:grid; gap:1.6rem; grid-template-columns:repeat(3, 1fr);}
+	display:grid; gap:1rem; grid-template-columns:repeat(3, 1fr);}
 .picNvoice .picList > .item {position: relative;}
 .picNvoice .picList > .item > button {position:relative; padding:0; aspect-ratio:1/1; overflow:hidden; border-radius:1rem;}
 .picNvoice .picList.deletePic > .item > button::after {content:''; position:absolute; top:0.2rem; right:0.2rem;
