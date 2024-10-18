@@ -141,7 +141,7 @@ textarea:hover::placeholder {color:transparent !important;}
 .btn_i_albumDownload {background:url(../images/myalbum_i_download.svg) no-repeat center; background-size:3rem;}
 .btn_i_albumSending {background:url(../images/myalbum_i_sending.svg) no-repeat center; background-size:3rem;}
 
-.btn_i_change {position:relative; width:3.8rem; height:3.8rem; border-radius:50%; 
+.btn_i_change {position:relative; z-index:4; width:3.8rem; height:3.8rem; border-radius:50%; 
 	background:#FF9B5C url(../images/ic_change01.svg) no-repeat center; background-size:3rem;
 	box-shadow:0 0.1rem 0.4rem 0 rgba(0, 0, 0, 0.2); }
 .btn_i_change::after {content:''; width:3rem; height:3rem; 
@@ -1545,7 +1545,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .mainPic > img {width:100%; object-fit:cover; z-index:2;}
 
 .picNvoice .myPic .tit {margin:4rem 0 2rem;}
-.picNvoice .myPic {margin-bottom:3rem;}
+.picNvoice .myPic {margin-bottom:4rem;}
 .picNvoice .myShape .tit {margin:0 0 2rem;}
 .picNvoice .myVoice .tit {margin:0 0 2rem;}
 
@@ -1567,7 +1567,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .picList input:checked ~ .checkmark {background-color:#ff6600;}
 .picList input:checked ~ .checkimg {border:1px solid #ff6600;}
 
-.picNvoice .btnGroup_edit {position:relative; z-index:3;
+.picNvoice .btnGroup_edit {position:relative; z-index:2;
 	margin:-1rem -1rem 1rem; padding:0; display:flex; justify-content:right;}
 .picNvoice .btnGroup_edit > button:active, 
 .picNvoice .btnGroup_edit > button:hover {background-color:#eee; border-radius:2.5rem;}
@@ -2036,7 +2036,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	.myalbumDetail .rate34 {margin:0 1rem;}
 	.picNvoice .picList {margin:0 1rem;}
 	.picNvoice .myShape .tit {margin:0 0 1rem;}
-	.picNvoice .myPic {margin-bottom:2rem;}
+	.picNvoice .btnGroup_edit {padding:0 1rem;}
 
 
 }
@@ -2053,9 +2053,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 
 	.mypage .mypic .picwrap {margin:1rem 0 0; height:22rem;}
 	.mypage .mypic {gap:1rem;}
-	.picNvoice {padding:0 1rem;}
-	.picNvoice .picList {margin:0 2rem;}
-	.picNvoice .myPic {margin-bottom:2rem;}
+
 }
 
 
@@ -2185,14 +2183,15 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	.mymenu {bottom:1rem;}
 
 	.mainPic {width:14rem; height:14rem;}
-	.picNvoice .myPic {margin-bottom:2rem;}
-	.picNvoice .picList {padding:0 3rem;}
-	.picNvoice .myVoice {height:6rem;}
-	.picNvoice .myVoice > .tit {bottom:8rem;}
+	.picNvoice .picList {padding:0 1rem;}
+	.picNvoice .myVoice {height:5rem;}
+	.picNvoice .myVoice > .tit {bottom:7rem;}
 	.picNvoice .tit > span {font-size:13px;}
 	.checkbox_shape .checkmark {width:2.4rem; height:2.4rem;}
 	.myShape ul::after {top:1.2rem}
 	.checkbox_shape > label {gap:0.6rem;}
+	.picNvoice .myPic {margin-bottom:3rem;}
+	.picNvoice .btnGroup_edit {padding:0 2rem;}
 
 }
 
@@ -2204,9 +2203,9 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 
 	.mypage .mypic .picwrap {margin:1rem 0 0; }
 	.mypage .mypic {gap:3rem;}
-	.picNvoice .picList {margin:0 4rem;}
-	.picNvoice .myPic {margin-bottom:2rem;}
+	.picNvoice .picList {margin:0 3rem;}
 	.checkbox_shape .checkmark {width:2.6rem; height:2.6rem;}
+	.picNvoice .btnGroup_edit {padding:0 3rem;}
 }
 
 @supports (-webkit-overflow-scrolling: touch) {

@@ -30,7 +30,6 @@
                <h2>내사진</h2>
                <div class="tit skip"><!-- only before upload pic -->
                     <strong>얼굴 사진을 등록하세요.</strong>
-                    <span>이목구비가 분명한 사진일수록 적용률이 높습니다.</span>
                </div>
                <div class="picwrap">
                     <div class="btnwrap">
@@ -45,12 +44,12 @@
                          <img class="" src="../images/@pic05.jpg">
                     </div>
                </div>
-               <div class="btnGroup_edit"> 
+               <div class="btnGroup_edit skip"> 
                     <button type="button" class="">사진삭제</button> <!-- case : 삭제모드에서 '확인'  -->
                     <button type="button" class="tyOrn skip">확인</button> <!-- case : change main pic -->
                </div>
-               <div class="picList changePic skip"> <!-- 메인사진 교체 'changePic' -->
-                    <button class="btn_picUpload" type="button" disabled><span>사진등록</span></button>
+               <div class="picList changePic"> <!-- 메인사진 교체 'changePic' -->
+                    <button class="btn_picUpload" type="button"><span>사진등록</span></button>
                     <div class="item"> <!-- 선택 시, "border:2px solid #FF6600;"" -->
                          <div class="checkbox_img">
                               <label for="item01">
@@ -97,7 +96,7 @@
                     </div>
                     <div class="item blank"></div>
                </div>
-               <div class="picList deletePic"> <!-- 사진 삭제 'deletePic' -->
+               <div class="picList deletePic skip"> <!-- 사진 삭제 'deletePic' -->
                     <button class="btn_picUpload" type="button"><span>사진등록</span></button><!-- when filled 5pics, 'disabled' -->
                     <div class="item">
                         <button type="button">
@@ -122,7 +121,6 @@
                <h2>체형</h2>
                <div class="tit"><!-- only before check value -->
                     <strong>체형을 설정하세요.</strong>
-                    <span>실제 모습에 가까운 적용을 위해 체형을 선택해 주세요.</span>
                </div>
                <ul>
                     <li class="checkbox_shape">
@@ -165,7 +163,6 @@
           <section class="myVoice">
                <div class="tit"> <!-- only before upload voice -->
                     <strong>목소리를 등록하세요.</strong>
-                    <span>음성메시지를 말하는 영상 카드에 적용됩니다.</span>
                </div>
                <div class="voicePlay skip">
                     <button class="btn_i_play" type="button" id="btn_playRecord">재생/멈춤</button>
@@ -182,7 +179,6 @@
                </div>
                <div  class="btnwrap">
                     <button class="btn_i_record" type="button">녹음</button>
-                    <span>다시녹음</span>
                </div>
               
           </section>
