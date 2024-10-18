@@ -1572,8 +1572,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .picNvoice .btnGroup_edit > button:active, 
 .picNvoice .btnGroup_edit > button:hover {background-color:#eee; border-radius:2.5rem;}
 
-.myVoice .voicePlay {padding:0 2rem; 
-	position:fixed; left:0; right:0; bottom:11rem; }
+.myVoice .voicePlay {padding:2rem 2rem 1rem;}
 .myVoice .btn_i_play {box-shadow: 0 0 2rem 0 rgba(112, 144, 176, 0.25);}
 .myVoice .btnwrap {position:absolute; left:50%; margin:-3rem 0 0 -3rem;
 	display:flex; flex-direction:column; gap:0.5rem; align-items:center; font-size:1.4rem;}
@@ -1583,6 +1582,13 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	display:block; height:1px; background:#d9d9d9;}
 .myShape li {position: relative; z-index:2;}
 
+.picNvoice .myVoice.done {height:14rem;}
+.picNvoice .myVoice.done > .btnWrap {padding:1rem 2rem;
+	display:flex; justify-content:right;}
+.picNvoice .myVoice.done .btn_t_g {padding:0 2rem; height:3.8rem;
+	display:flex; align-items:center; gap:0.4rem; 
+	font-weight:500; color:#292752; border-radius:2.5rem; background:#fff;
+	box-shadow:0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.1);}
 
 /* chek box - checkbox   */
 .checkbox_shape {text-align:center;}
