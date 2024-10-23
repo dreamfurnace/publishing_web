@@ -2006,6 +2006,11 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	background:url(../images/loading_logo.svg) no-repeat center; background-size:3rem;}
 .loadingwrap .bar {width:6.4rem; height:6.4rem; background:url(../images/loding_bar.svg) no-repeat center; background-size:6.4rem;}
 
+.loadingwrap .loadingBox {width:19rem; height:19rem;
+	background:url(../images/loading.gif) no-repeat center; background-size:8rem;}
+
+.dimmedLayer_Wh {display:none; position:fixed; top:0; left:0; right:0; bottom:0; z-index:30; 
+	background:rgba(255,255,255,0.5); overflow:hidden; overflow-y:auto;}	
 
 
 /*** to customer card  ***/
@@ -2200,6 +2205,10 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	.checkbox_shape > label {gap:0.6rem;}
 	.picNvoice .myPic {margin-bottom:3rem;}
 	.picNvoice .btnGroup_edit {padding:0 2rem;}
+
+	.picNvoice .myVoice.done {height:13rem;}
+	.myVoice .voicePlay {padding-bottom:0;}
+
 
 }
 
