@@ -801,18 +801,18 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 	display:flex; gap:1rem; justify-content:space-between; align-items:center;}
 .decoCategory > button {display:flex; flex-direction:column; gap:0.4rem; justify-content:center; align-items:center; font-size:1.4rem;}
 .decoCategory > button::before {content:''; display:block; width:2.4rem; height:2.4rem; background-size:2.4rem !important;}
-.decoCategory > button:active, .decoCategory > button:hover {color:#FF6600;}
+
+.decoCategory > button.on {color:#FF6600;}
 
 .decoCategory > .item01::before {background:url(../images/deco_cate01.svg) no-repeat center top;}
 .decoCategory > .item02::before {background:url(../images/deco_cate02.svg) no-repeat center top;}
 .decoCategory > .item03::before {background:url(../images/deco_cate03.svg) no-repeat center top;}
 
-.decoCategory > .item01:active::before,
-.decoCategory > .item01:hover::before {background:url(../images/deco_cate01_on.svg) no-repeat center top;}
-.decoCategory > .item02:active::before,
-.decoCategory > .item02:hover::before {background:url(../images/deco_cate02_on.svg) no-repeat center top;}
-.decoCategory > .item03:active::before,
-.decoCategory > .item03:hover::before {background:url(../images/deco_cate03_on.svg) no-repeat center top;}
+.decoCategory > .item01.on::before {background:url(../images/deco_cate01_on.svg) no-repeat center top;}
+.decoCategory > .item02.on::before {background:url(../images/deco_cate02_on.svg) no-repeat center top;}
+
+/* .decoCategory > .item03:active::before,
+.decoCategory > .item03:hover::before {background:url(../images/deco_cate03_on.svg) no-repeat center top;} */
 
 .decorationArea .footGroup,
 .soundArea .footGroup {position:absolute; left:0; right:0; bottom:0.6rem;

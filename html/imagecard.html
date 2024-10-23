@@ -259,6 +259,9 @@ $("#btn_openTxt").on("click", function () {
     $("#sec_hanwhaGroup").removeClass("active");
     $("header").addClass("skip");
     $(".bgCard").addClass("onWork");
+    $(this).addClass("on");
+    $("#btn_openSticker").removeClass("on");
+
 });
 
 // open stickerArea
@@ -268,6 +271,8 @@ $("#btn_openSticker").on("click", function () {
     $("#sec_hanwhaGroup").removeClass("active");
     $("header").addClass("skip");
     $(".bgCard").addClass("onWork");
+    $(this).addClass("on");
+    $("#btn_openTxt").removeClass("on");
 });
 
 // open stickerArea
