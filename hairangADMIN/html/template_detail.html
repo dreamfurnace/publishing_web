@@ -52,8 +52,9 @@
 				<div class="titWrap">
 					<h3>연말/연시</h3><!-- 카테고리 -->
 					<div class="btnwrap"><!-- 결재자 비노출  -->
-						<button type="button" class="btn_t_l" style="width:100px;">삭제</button> <!-- 결재 전 삭제 가능, 결재 후 비노출, 결재자 비노출-->
-						<button type="button" class="btn_t_f" style="width:120px;">수정</button> <!-- 결재 전 수정 가능, 결재 후 비노출, 결재자 비노출-->
+						<button type="button" class="btn_t_f" style="width:120px;">결재요청 취소</button><!-- 결재요청 취소시 '삭제/수정' 노출-->
+						<button type="button" class="btn_t_l hide" style="width:100px;">삭제</button> <!-- 결재 전 삭제 가능, 결재요정, 결재 후 비노출  -->
+						<button type="button" class="btn_t_f hide" style="width:120px;">수정</button> <!-- 결재 전 수정 가능, 결재요청, 결재 후 비노출  -->
 					</div>
 				</div>
 				<div class="writer">
@@ -172,8 +173,9 @@
 		<div class="btnwrap_ff">
 			<button type="button" class="btn_t_l" style="width:100px;">리스트</button>
 			<div class="btnwrap"><!-- 결재자 비노출 -->
-				<button type="button" class="btn_t_l" style="width:100px;">삭제</button><!-- 결재 전 삭제 가능, 결재 후 비노출, 결재자 비노출-->
-				<button type="button" class="btn_t_f" style="width:120px;">수정</button><!-- 결재 전 수정 가능, 결재 후 비노출, 결재자 비노출-->
+				<button type="button" class="btn_t_f" style="width:120px;">결재요청 취소</button> <!-- 결재요청 취소시 '삭제/수정' 노출-->
+				<button type="button" class="btn_t_l hide" style="width:100px;">삭제</button><!-- 결재 전 삭제 가능, 결재요청,결재 후 비노출  -->
+				<button type="button" class="btn_t_f hide" style="width:120px;">수정</button><!-- 결재 전 수정 가능, 결재요청,결재 후 비노출  -->
 			</div>
 		</div>
 		<footer>HANWHA GENERAL INSURANCE CO.,LTD. ALL RIGHTS RESERVED.</footer>
@@ -193,11 +195,15 @@
 				</div>
 			</div>
 			<div class="btnwrap">
-				<button type="button" class="btn_t_l">취소</button>
-				<button type="button" class="btn_t_f">확인</button>
+				<button type="button" class="btn_t_f" style="width:120px;">결재요청 취소</button> <!-- 결재요청 취소시 '삭제/수정' 노출-->
+				<button type="button" class="btn_t_l hide">취소</button>
+				<button type="button" class="btn_t_f hide">확인</button>
 			 </div>
 		</div>
 	</div>
+<!--    결제요청 취소 : "결재 요청을 취소하시겠습니까?""     -->
+<!--    삭제 : "삭제하시겠습니까?""     -->
+
 </body>
 
 
