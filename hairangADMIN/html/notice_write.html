@@ -32,7 +32,6 @@
 				<li><a href="#a">관리자 계정</a></li> <!-- 결재자, 일반관리자 비노출-->
 				<li><a href="#a">APP버전 관리</a></li>
 			</ul>
-
 		</nav>
 	</header>
 	<!--//  header -->
@@ -44,17 +43,20 @@
 <!--  CONTENT   -->
 			<div class="noticeDetail">
 				<section class="noticeInfo">
-					<div class="category"> <!-- case: 템플릿에서 오는 경우 '템플릿'-->
-						시스템
+					<div class="category">
+						<select>
+							<option>시스템</option>
+							<option>템플릿</option>
+						</select>
 					</div>
-                         <div class="chk_popup"> <!-- case: 템플릿일 경우 비노출 -->
+                         <div class="chk_popup hide"> <!-- case: 시스템 선택시 경우 노출 -->
 						<div class="chk_pushWrap">
 							<div class="chk_push">팝업노출
 								<div class="swichbox">
 									<label class="switch">
 										<input type="checkbox">
 										<div class="slider"><span>켜기/끄기</span></div>
-									</label><!-- 결재자 버튼 비노출-->
+									</label>
 								</div>
 							</div>
 						</div>
@@ -75,6 +77,16 @@
                                    </div>
                               </div><!-- 형식이 달라야 한다면 요청 주세요.-->
 					</div>
+					<div class="attachFile"><!-- 템플릿 선택시 노출-->
+						<div class="file"><!-- 파일 첨부시 노출 -->
+							<a href="">attachedfilename.png</a>
+							<button type="button" class="btn_i_x">삭제</button>
+						</div>
+						<div class="btnwrap">
+							<input type="file" disabled><!-- 파일 첨부시 disabled, 파일 삭제시 해제 -->
+							<button type="button" class="btn_attach" disabled>파일첨부</button>
+						</div>
+					</div>
 				</section>
 				<section class="noticeCont">
 					<div class="tit">						
@@ -86,12 +98,11 @@
                               <textarea placeholder="내용을 입력하세요."></textarea>
                          </div>
 				
-
 					<div class="btnwrap_f">
                               <button type="button" class="btn_t_l">리스트</button>
                               <div class="btnwrap">
                                    <button type="button" class="btn_t_l">취소</button><!-- 페이지 리셋-->
-                                   <button type="button" class="btn_t_f">저장</button><!-- 저장 후 상세페이지 이동 -->	
+                                   <button type="button" class="btn_t_f">결재요청</button><!-- 저장 후 상세페이지 이동 -->	
                               </div>
                          </div>
                          <footer>HANWHA GENERAL INSURANCE CO.,LTD. ALL RIGHTS RESERVED.</footer>
@@ -101,24 +112,6 @@
 		</div><!--//  class="contentWrap" -->
 	</div>
 	<!--//  class="container" -->
-
-<!--    POPUP    -->
-<div class="dimmedlayer hide"></div>
-<!--    결재     -->
-	<div class="popupContainer hide">
-		<div class="popupWrap">
-			<div class="popbody">
-				<div class="content_box">
-					결재 하시겠습니까?
-				</div>
-			</div>
-			<div class="btnwrap">
-				<button type="button" class="btn_t_l">취소</button>
-				<button type="button" class="btn_t_f">확인</button>
-			 </div>
-		</div>
-	</div>
 </body>
-
 
 </html>

@@ -301,7 +301,6 @@ table.ty_list td.thumb > a {border-bottom:none;}
 
 
 .noticeDetail > .noticeInfo {width:260px;}
-
 .noticeDetail > .noticeCont {width:calc(100% - 310px);}
 .noticeDetail .tit {height:50px; border-bottom:1px solid #ccc;}
 .noticeDetail .tit span {display:block; text-align:center; font-weight:600; 
@@ -309,13 +308,17 @@ table.ty_list td.thumb > a {border-bottom:none;}
 .noticeDetail .tit > .inputBox {padding:12px 0 0;
   display:flex; justify-content:space-between; align-items:center;}
 
-.noticeDetail .btnwrap_f {margin:30px 0; padding:20px 0; border-top:1px solid #ccc;
+.noticeDetail .btnwrap_f {padding:20px 0; border-top:1px solid #ccc;
   display:flex; justify-content:space-between;}
 .noticeDetail .btnwrap_f button {height:32px;}
 .noticeDetail .btnwrap_f .btnwrap > button:last-child {width:120px; margin-left:2px;}
 
-.noticeCont > .cont {padding:20px; vertical-align:top; height:340px; font-size:15px;}
+.noticeCont > .cont {padding:20px; vertical-align:top; min-height:340px; font-size:15px;}
 .noticeCont > .cont > textarea {height:100%; border:none; font-size:16px;}
+.noticeCont > .cont.tyAttach {display:flex; gap:60px;}
+.noticeCont > .cont.tyAttach > .attachedFile {width:280px;}
+.noticeCont > .cont.tyAttach > .attachedFile > img {width:100%; border-radius:20px;}
+.noticeCont > .cont.tyAttach > .text {width:calc(100% - 280px);}
 
 .noticeDetail .writer {padding:20px 10px; border-bottom:1px solid #ccc;}
 .noticeDetail .writer ul {display:flex; flex-direction:column; gap:14px;}
@@ -326,6 +329,24 @@ table.ty_list td.thumb > a {border-bottom:none;}
   display:inline-block; color:#ccc; width:10px; text-align:center;}
 .noticeDetail .chk_pushWrap {padding:0 16px; margin-bottom:16px;}
 .noticeDetail .chk_push {display:flex; align-items:center; justify-content:space-between; font-size:16px;}
+
+.noticeDetail .attachFile {padding:20px; display:flex; flex-direction:column; gap:20px;}
+.noticeDetail .attachFile > .btnwrap {position:relative;}
+.noticeDetail .attachFile > .btnwrap > input {position:absolute; top:0; left:0; right:0; z-index:2; 
+  height:36px; opacity:0; cursor: pointer;}
+.noticeDetail .attachFile > .btnwrap > input:disabled {cursor:default;}
+.btn_attach {width:100%; height:36px; line-height:33px; font-size:14px; letter-spacing:-1px;
+  border-radius:6px; 
+  border:1px solid #333; font-weight:600; color:#333; 
+  background:#fff url(../images/ic_file.svg) no-repeat 14px center; box-shadow:0 0 5px rgba(0, 0, 0, 0.2);}
+.btn_attach:hover {box-shadow:none;}
+.btn_attach:disabled {opacity:0.2; box-shadow:none;}
+
+.noticeDetail .attachFile > .file {display:flex; justify-content:space-between;}
+.noticeDetail .attachFile > .file > a {padding:2px 4px; border-bottom:1px solid #999;}
+.noticeDetail .attachFile > .file > button {width:24px; height:24px; 
+  background: url(../images/ic_del02.svg) no-repeat center; background-size:12px;}
+
 
 .noticeDetail .popupInfo {padding:20px 4px; border-bottom:1px solid #ccc;}
 .noticeDetail .popupInfo > span {display:block; margin-bottom:10px;}
