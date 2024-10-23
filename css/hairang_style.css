@@ -2001,7 +2001,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 
 .loadingwrap {position:fixed; top:0; left:0; right:0; bottom:0; z-index:100;
 	display:flex; justify-content:center; align-items:center;
-	background:rgba(255,255,255,0.8);}
+	background:rgba(255,255,255,0.9);}
 /* .loadingwrap span {display:block; margin:0 0.5rem; width:1rem; height:1rem; border-radius:50%;}
 .loadingwrap .logo {width:6.4rem; height:6.4rem;
 	background:url(../images/loading_logo.svg) no-repeat center; background-size:3rem;}
