@@ -319,7 +319,7 @@ a.btn_t_b:disabled {background-color:#ccc; color:#fff;}
 .btn_remake::before {content:''; display:block; width:2rem; height:2rem; background:url(../images/ic_remake.svg) no-repeat center; }
 
 .btn_next {padding:0 1rem 0 2rem; display:flex; gap:2rem; align-items:center; justify-content:center;
-	width:13rem; height:4rem; border-radius:2.5rem; color:#fff; font-weight:500;
+	width:13rem; height:4rem; border-radius:2.5rem; color:#fff; font-weight:500; line-height:3.8rem;
 	background:#FF6600; box-shadow:0 0.4rem 1.2rem 0 rgba(122, 144, 176, 0.25);}
 .btn_next::after {content:''; width:2.4rem; height:2.4rem;  background:url(../images/arrow_r_wh.svg) no-repeat center;}
 .btn_next:active, .btn_next:hover {background-color:#CC5200;}
@@ -350,6 +350,7 @@ a.btn_t_b:disabled {background-color:#ccc; color:#fff;}
 	color:#fff; background:#ff6600;}
 .btn_create::after {content:''; width:2.4rem; height:2.4rem; 
 	background:url(../images/ic_create.svg) no-repeat center;}
+.btn_create:active, .btn_create:hover {background-color:#CC5200;}
 	
 .btn_reCreate {width:8rem; padding-left:1rem; color:#fff;
 	display:flex; gap:0.1rem; align-items:center; border-radius:2rem; text-align:left; background:#712EFF;}
