@@ -32,7 +32,6 @@
 				<li><a href="#a">관리자 계정</a></li> <!-- 결재자, 일반관리자 비노출-->
 				<li><a href="#a">APP버전 관리</a></li>
 			</ul>
-
 		</nav>
 	</header>
 	<!--//  header -->
@@ -44,36 +43,95 @@
 					<label for="item01">
 						<input type="checkbox" id="item01" name="" disabled>
 						<span class="checkmark"></span>
-						<span class="checktxt">
-							결재
-						</span>   
+						<span class="checktxt">결재</span>   
 					</label>
 				</div> <!-- 일반관리자 비노출, 확인 팝업 후 'disabled' -->
 			</div>
 <!--  CONTENT   -->
+			<div class="templateHead">
+				<div class="titWrap">
+					<h3>연말/연시</h3><!-- 카테고리 -->
+					<div class="btnwrap"><!-- 결재자 비노출  -->
+						<button type="button" class="btn_t_l" style="width:100px;">삭제</button> <!-- 결재 전 삭제 가능, 결재 후 비노출, 결재자 비노출-->
+						<button type="button" class="btn_t_f" style="width:120px;">수정</button> <!-- 결재 전 수정 가능, 결재 후 비노출, 결재자 비노출-->
+					</div>
+				</div>
+				<div class="writer">
+					<ul>
+						<li><span>등록 :</span>
+							<span>6018773</span>
+							<span>(<em>2024.12.12 13:10</em>)</span>
+						</li>
+						<li><span>최종수정 :</span>
+							<span>6018773</span>
+							<span>(<em>2024.12.12 13:10</em>)</span>
+						</li>
+						<li><span>결재 :</span>
+							<span>6018773</span>
+							<span>(<em>2024.12.12 13:10</em>)</span>
+						</li>
+					</ul>
+				</div>
+			</div>
 			<div class="templateDetail">
 				<section class="templateInfo">
-					<div class="category">
-						연말/연시
-					</div>
 					<div class="info">
 						<ul>
 							<li><span>모델</span> <span>여</span></li>
+							<li><span>나이</span> <span>20대</span></li>
 							<li><span>비율</span> <span>3:4</span></li>
 							<li><span>유형</span> <span>영상</span></li>
 						</ul>
 					</div>
-					<div class="writer">
+					<div class="use"><!-- 결재자 비노출-->
+						<div class="chk_useWrap">
+							<div class="chk_use">사용
+								<div class="swichbox">
+									<label class="switch">
+										<input type="checkbox" disabled>
+										<div class="slider"><span>켜기/끄기</span></div>
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="templateCont">
+					<div class="fileArea"> <!-- case 1:1 class="fileArea ty11"  -->
+						<div class="itemBox">
+							<div class="item"><img src="../images/@pic01.jpg"></div>
+							<span>마름</span>
+						</div>
+						<div class="itemBox">
+							<div class="item"></div>
+							<span>날씬</span>
+						</div>
+						<div class="itemBox">
+							<div class="item"></div>
+							<span>보통</span>
+						</div>
+						<div class="itemBox">
+							<div class="item"></div>
+							<span>통통</span>
+						</div>
+						<div class="itemBox">
+							<div class="item"></div>
+							<span>뚱뚱</span>
+						</div>
+					</div>
+				</section>
+			</div><!--// line -->
+			<div class="templateDetail">
+				<section class="templateInfo">
+					<div class="info">
 						<ul>
-							<li><span>등록 :</span> 
-								<span>6017889<em>2024.12.12 13:13</em></span>
-							</li>
-							<li><span>결재 :</span> 
-								<span>6018779<em>2024.12.12 13:13</em></span>
-							</li>
+							<li><span>모델</span> <span>여</span></li>
+							<li><span>나이</span> <span>20대</span></li>
+							<li><span>비율</span> <span>3:4</span></li>
+							<li><span>유형</span> <span>영상</span></li>
 						</ul>
 					</div>
-					<div class="use">
+					<div class="use"><!-- 결재자 비노출-->
 						<div class="chk_useWrap">
 							<div class="chk_use">사용
 								<div class="swichbox">
@@ -84,136 +142,43 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- 결재자 비노출-->
-					<button type="button" class="btn_t_l">알림등록</button><!-- 결재자 비노출,  해당 알림 등록 페이지 이동 -->
+					</div>
 				</section>
 				<section class="templateCont">
-					<div class="tit">
-						<div class="inputBox">
-                                   <span>크리스마스 - 앉아있는 - 여자01</span>
-                                   <div class="btnwrap">
-                                        <button type="button" class="btn_t_f">삭제</button> <!-- 결재 전 삭제 가능, 결재 후 비노출, 결재자 비노출-->
-                                   </div>
-                              </div>
-						
-					</div>
 					<div class="fileArea"> <!-- case 1:1 class="fileArea ty11"  -->
 						<div class="itemBox">
 							<div class="item"><img src="../images/@pic01.jpg"></div>
-							<span>20대 마름</span>
+							<span>마름</span>
 						</div>
 						<div class="itemBox">
 							<div class="item"></div>
-							<span>20대 날씬</span>
+							<span>날씬</span>
 						</div>
 						<div class="itemBox">
 							<div class="item"></div>
-							<span>20대 보통</span>
+							<span>보통</span>
 						</div>
 						<div class="itemBox">
 							<div class="item"></div>
-							<span>20대 통통</span>
+							<span>통통</span>
 						</div>
 						<div class="itemBox">
 							<div class="item"></div>
-							<span>20대 뚱뚱</span>
+							<span>뚱뚱</span>
 						</div>
-						<!---// 20 대   -->
-						<div class="itemBox">
-							<div class="item"></div>
-							<span>30대 마름</span>
-						</div>
-						<div class="itemBox">
-							<div class="item"></div>
-							<span>30대 날씬</span>
-						</div>
-						<div class="itemBox">
-							<div class="item"></div>
-							<span>30대 보통</span>
-						</div>
-						<div class="itemBox">
-							<div class="item"></div>
-							<span>30대 통통</span>
-						</div>
-						<div class="itemBox">
-							<div class="item"></div>
-							<span>30대 뚱뚱</span>
-						</div>
-						<!---// 30 대   -->
-						<div class="itemBox">
-							<div class="item"></div>
-							<span>40대 마름</span>
-						</div>
-						<div class="itemBox">
-							<div class="item"></div>
-							<span>40대 날씬</span>
-						</div>
-						<div class="itemBox">
-							<div class="item"></div>
-							<span>40대 보통</span>
-						</div>
-						<div class="itemBox">
-							<div class="item"></div>
-							<span>40대 통통</span>
-						</div>
-						<div class="itemBox">
-							<div class="item"></div>
-							<span>40대 뚱뚱</span>
-						</div>
-						<!---// 40 대   -->
-						<div class="itemBox">
-							<div class="item"></div>
-							<span>50대 마름</span>
-						</div>
-						<div class="itemBox">
-							<div class="item"></div>
-							<span>50대 날씬</span>
-						</div>
-						<div class="itemBox">
-							<div class="item"></div>
-							<span>50대 보통</span>
-						</div>
-						<div class="itemBox">
-							<div class="item"></div>
-							<span>50대 통통</span>
-						</div>
-						<div class="itemBox">
-							<div class="item"></div>
-							<span>50대 뚱뚱</span>
-						</div>
-						<!---// 50 대   -->
-						<div class="itemBox">
-							<div class="item"></div>
-							<span>60대이상 마름</span>
-						</div>
-						<div class="itemBox">
-							<div class="item"></div>
-							<span>60대이상 날씬</span>
-						</div>
-						<div class="itemBox">
-							<div class="item"></div>
-							<span>60대이상 보통</span>
-						</div>
-						<div class="itemBox">
-							<div class="item"></div>
-							<span>60대이상 통통</span>
-						</div>
-						<div class="itemBox">
-							<div class="item"></div>
-							<span>60대이상 뚱뚱</span>
-						</div>
-						<!---// 60대이상 대   -->
 					</div>
-					<div class="btnwrap_f">
-                              <button type="button" class="btn_t_l">리스트</button>
-						<button type="button" class="btn_t_f" style="width:120px;">삭제</button><!-- 결재 전 삭제 가능, 결재 후 비노출, 결재자 비노출-->
-                         </div>
-					<footer>HANWHA GENERAL INSURANCE CO.,LTD. ALL RIGHTS RESERVED.</footer>
 				</section>
+			</div><!--// line -->
+		<div class="btnwrap_ff">
+			<button type="button" class="btn_t_l" style="width:100px;">리스트</button>
+			<div class="btnwrap"><!-- 결재자 비노출 -->
+				<button type="button" class="btn_t_l" style="width:100px;">삭제</button><!-- 결재 전 삭제 가능, 결재 후 비노출, 결재자 비노출-->
+				<button type="button" class="btn_t_f" style="width:120px;">수정</button><!-- 결재 전 수정 가능, 결재 후 비노출, 결재자 비노출-->
 			</div>
+		</div>
+		<footer>HANWHA GENERAL INSURANCE CO.,LTD. ALL RIGHTS RESERVED.</footer>
 <!--//  CONTENT   -->
 		</div><!--//  class="contentWrap" -->
-
 	</div>
 	<!--//  class="container" -->
 
@@ -233,7 +198,6 @@
 			 </div>
 		</div>
 	</div>
-
 </body>
 
 

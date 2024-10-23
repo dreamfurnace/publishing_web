@@ -21,10 +21,11 @@ button:disabled:hover {opacity:1;}
 .btn_i_logout {margin:0; width:50px; height:50px; background:url(../images/ic_logout.svg) no-repeat center; background-size:26px auto;}
 .btn_i_seh {width:40px; height:28px; background:url(../images/ic_seh.svg) no-repeat center 6px;}
 .btn_i_seh:hover {background-color:#efefef;}
+.btn_i_del {width:32px; height:32px; background:url(../images/ic_del.svg) no-repeat center; background-size:20px;}
 
 
 [class^='btn_'] {font-weight:600; vertical-align:middle;}
-[class*='btn_t_'] {display:inline-block; padding:0 12px; height:28px; min-width:80px; line-height:28px; border-radius:6px;}
+[class*='btn_t_'] {display:inline-block; padding:0 12px; height:28px; min-width:80px; border-radius:6px;}
 
 .btn_addTemplate {width:180px; height:36px; line-height:33px; font-size:14px; padding-left:30px; letter-spacing:-1px;
   border-radius:6px; 
@@ -123,10 +124,9 @@ table.ty_list th:first-child,table.ty_list td:first-child {border-left:none;}
 table.ty_list th:last-child,table.ty_list td:last-child {border-right:none;}
 table.ty_list td {padding:2px; text-align:center; white-space:nowrap; height:34px; vertical-align:middle;
   border:1px solid #D9D9D9; border-right:1px solid #D9D9D9;}
-table.ty_list tr:hover td {background-color:#FFF9F1;}
+/* table.ty_list tr:hover td {background-color:#FFF9F1;} */
 table.ty_list tr.modify td {background-color:#FFEFEC;}
 
-table.ty_list td > img {margin-right:10px; vertical-align:middle; width:38px; height:48px; border-radius:4px; object-fit:contain;}
 table.ty_list td > a {display:inline-block; padding:0 2px 2px; border-bottom:1px #ccc solid;}
 table.ty_list td > a:hover {border-color:#888;}
 
@@ -138,6 +138,10 @@ table.ty_list .inputWrap > button:hover {border-color:#666;}
 
 table.ty_list td input,
 table.ty_list td select {height:32px; width:100%;}
+
+table.ty_list td.thumb img,
+table.ty_list td.thumb video {width:38px; height:48px; border-radius:4px; object-fit:contain; vertical-align:middle;}
+table.ty_list td.thumb > a {border-bottom:none;}
 
 .pagination {position:relative;  padding:10px 0 6px; text-align:center; border-bottom:1px solid #d9d9d9;}
 .pagination .total {position:absolute; top:10px; left:0;}
@@ -165,33 +169,47 @@ table.ty_list td select {height:32px; width:100%;}
 .content_box .seh select {appearance:none; border-radius:6px; width:90px; height:30px;
   padding:0 10px; border:1px solid #ccc; background:url(../images/ic_select.svg) no-repeat 64px center;}
 
-.templateDetail {padding:20px 100px 0; display:flex; gap:50px; border-top:1px solid #ccc;}
 
-.templateDetail > .templateInfo {width:240px;}
-.templateDetail .category {height:50px; line-height:50px; font-size:16px; text-align:center;
-  border-bottom:1px solid #ccc; font-weight:600;}
-.templateDetail .category > select {width:230px; height:46px; border:none; appearance:none; 
+.templateHead {margin:24px 0 10px;}
+.templateHead h3 {font-size:20px; font-weight:600;}
+.templateHead > .titWrap {padding:10px 5px 6px; display:flex; justify-content:space-between;}
+.templateHead > .titWrap > select {margin-left:40px; width:230px; height:36px; border:none; appearance:none; 
   font-weight:600; font-size:16px; text-align:center; padding-right:60px;
   background:url(../images/ic_select02.svg) no-repeat 200px center;}
-.templateDetail .info {padding:30px 20px; border-bottom:1px solid #ccc;}
-.templateDetail .info ul {display:flex; flex-direction:column; gap:14px;}
-.templateDetail .info li {display:flex; gap:20px; align-items:center;}
+
+.templateHead > .writer {padding:6px 8px; border-top:1px solid #ccc;}
+.templateHead > .writer ul {display:flex; gap:20px;}
+.templateHead > .writer li {display:flex; gap:4px;}
+.templateHead > .writer li > span:nth-child(3) {color:#999;}
+.templateHead .btnwrap {display:flex; gap:6px;}
+
+.templateHead.write {border-bottom:1px solid #ccc;}
+
+.templateDetail {margin:0 50px; padding:20px; 
+  display:flex; gap:50px; border-bottom:1px solid #ddd; }
+.templateDetail > .templateInfo {width:240px; padding:30px 0 0;}
+.templateDetail .category {height:50px; line-height:50px; font-size:16px; text-align:center;
+  border-bottom:1px solid #ccc; font-weight:600;}
+.templateDetail .info {padding:20px 20px 60px;}
+.templateDetail .info ul {display:flex; flex-direction:column; gap:10px;}
+.templateDetail .info li {display:flex; gap:40px; align-items:center; white-space:nowrap;}
 .templateDetail .info li > span:first-child {font-size:16px; color:#999;}
 .templateDetail .info li > span:last-child {font-size:16px; color:#000;}
 .templateDetail .info li > select {width:154px;}  
 
-.templateDetail .writer {padding:20px 10px; border-bottom:1px solid #ccc;}
-.templateDetail .writer ul {display:flex; flex-direction:column; gap:14px;}
-.templateDetail .writer li {display:flex; gap:12px; white-space:nowrap; align-items:center;}
-.templateDetail .writer li em {color:#999;}
-.templateDetail .writer li em::before {content:"/"; margin-left:4px;
-  display:inline-block; color:#ccc; width:10px; text-align:center;}
-.templateDetail .chk_useWrap {padding:0 16px; margin-bottom:16px; border-bottom:1px solid #ccc;}
-.chk_use {display:flex; align-items:center; justify-content:space-between; font-size:16px;}
+.templateDetail .chk_useWrap {padding:0 16px; margin-bottom:16px; background:#f9f9f9; border-radius:50px;}
+.chk_use {display:flex; align-items:center; justify-content:space-between; font-size:16px; padding-left:10px;}
 .templateDetail > .templateInfo .btn_t_l {width:100%; height:42px; font-size:14px;}
 .templateDetail > .templateInfo .btn_t_l:hover {background-color:#f9f9f9;}
-.templateDetail .btn_fileWrap {margin-top:20px; position:relative;}
-.templateDetail .btn_fileWrap > input {position:absolute; top:0; left:0; z-index:2; height:42px; opacity:0; cursor:pointer;}
+.templateDetail .btn_fileWrap {position:absolute; top:0; left:0; right:0; bottom:0; 
+  display:flex; align-items:center; justify-content:center;}
+.templateDetail .btn_fileWrap > input {position:absolute; top:50%; left:50%; z-index:2; 
+  margin:-35px 0 0 -35px; width:70px; height:70px; 
+  opacity:0; cursor:pointer; }
+.templateDetail .btn_fileWrap > button {position:absolute; top:50%; left:50%; 
+  margin:-35px 0 0 -35px; width:70px; height:70px; 
+  text-indent:-9999em; white-space:nowrap; overflow:hidden;
+  border-radius:50%; background:#efefef url(../images/ic_plus.svg) no-repeat center;}
 
 .templateDetail > .templateCont {width:calc(100% - 290px);}
 .templateDetail .tit {height:50px; border-bottom:1px solid #ccc;}
@@ -203,11 +221,12 @@ table.ty_list td select {height:32px; width:100%;}
 .templateDetail .tit .btnwrap button {height:32px; margin-left:2px;}
 .templateDetail .tit .btnwrap button:last-child {width:120px;}
 
-.templateDetail .fileArea {margin:20px; display:grid; grid-template-columns: repeat(5, 1fr); gap:16px;}
+.templateDetail .fileArea {display:grid; grid-template-columns: repeat(5, 1fr); gap:40px;}
 .templateDetail .fileArea > .itemBox {display:flex; flex-direction:column; gap:6px;}
 .templateDetail .fileArea > .itemBox > span {text-align:center; font-size:16px;}
-.templateDetail .fileArea > .itemBox > .item {border-radius:10px; border:1px solid #efefef; aspect-ratio:3/4; overflow:hidden;}
-.templateDetail .fileArea > .itemBox > .item > img {width:100%; object-fit:cover;}
+.templateDetail .fileArea > .itemBox > .item {position:relative; border-radius:10px; border:1px solid #efefef; aspect-ratio:3/4; overflow:hidden;}
+.templateDetail .fileArea > .itemBox > .item > img {position:relative; z-index:5; width:100%; object-fit:cover;}
+.templateDetail .fileArea > .itemBox > .item > .btn_i_del {position:absolute; top:5px; right:5px; z-index:6;}
 
 .fileArea.ty11 > .itemBox > .item {aspect-ratio: 1/1;}
 .templateDetail .fileArea.write > .itemBox > .item {border:1px dashed #ccc;}
@@ -219,6 +238,21 @@ table.ty_list td select {height:32px; width:100%;}
   display:flex; justify-content:space-between;}
 .templateDetail .btnwrap_f button {height:32px;}
 .templateDetail .btnwrap_f .btnwrap > button:last-child {width:120px; margin-left:2px;}
+.btnwrap_ff {padding:20px 50px 0; display:flex; justify-content:space-between;}
+.btnwrap_ff > .btnwrap {display:flex; gap:6px;}
+
+.templateDetail.write {display:flex; flex-direction:column; gap:20px;}
+.templateDetail.write .templateInfo {border-right:1px dashed #ddd;} 
+.templateDetail.write .info {padding:20px 50px 0 0;}
+.templateDetail.write > .line {display:flex; gap:50px;} 
+.templateDetail.write > .btnwrap {display:flex; justify-content:right; gap:6px;}
+.templateDetail.write > .btnwrap > button {border-radius:50px; border-color:#ccc;}
+.templateDetail.write > .btnwrap > button:hover {background:#f9f9f9;}
+
+.addWrap {padding:20px; text-align:center;}
+.addWrap > button {width:200px; height:40px; font-size:16px; 
+  border-radius:50px; border:1px solid #ccc; background:url(../images/ic_plus.svg) no-repeat 30px center; background-size:14px;}
+.addWrap > button:hover {background-color:#f9f9f9;}
 
 .userDetail {padding:20px 10px; display:flex; justify-content:space-between; border-top:1px solid #ccc;}
 .userDetail .history {display:flex; gap:15px;}
@@ -325,6 +359,7 @@ table.ty_list td select {height:32px; width:100%;}
 .switch input:checked + .slider {background:#FF6600;}
 .switch input:focus + .slider {box-shadow:0 0 3px #ebebeb;}
 .switch input:checked + .slider:before {transform:translateX(20px); background:#fff;}
+.switch input:disabled + .slider {background:#f1f1f1; cursor:default;}
 
 
 /* main */
@@ -337,7 +372,6 @@ table.ty_list td select {height:32px; width:100%;}
 
 .mainPanel > .panel {display:none;}
 .mainPanel > .panel.active {display:block;}
-
 .mainPanel .panelWrap {display:flex; gap:16px; justify-content:center;}
 .mainPanel .panelWrap > section {padding:14px; border:1px solid #E1E1E1; background:#fff;}
 .mainPanel .panelWrap h3 {margin-bottom:10px; font-size:15px; font-weight:500; color:#1E1D36;}
@@ -472,10 +506,10 @@ table.ty_list td select {height:32px; width:100%;}
 .loadingwrap .bar {width:64px; height:64px; background:url(../images/loding_bar.svg) no-repeat center; background-size:64px;}
 
 
-
 /* scrollbox style */
 .scrollbox > .scroll-element .scroll-element_outer, .scrollbox > .scroll-element .scroll-element_track, .scrollbox > .scroll-element .scroll-bar {border-radius:0;}
 .scrollbox > .scroll-element .scroll-bar {background-color:#333;}
+
 
 /* pop up */
 .dimmedlayer {position:fixed; top:0; left:0; right:0; bottom:0; z-index:10; background: rgba(0,0,0,0.7); overflow:hidden;}

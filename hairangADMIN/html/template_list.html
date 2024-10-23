@@ -53,44 +53,41 @@
 							<tr>
 								<th style="width:24px">No</th>
 								<th>카테고리</th>
-								<th>모델</th>
-								<th>비율</th>
-								<th>유형</th>
+								<th style="width:80px">모델</th>
+								<th style="width:80px">나이</th>
+								<th style="width:80px">비율</th>
+								<th style="width:80px">유형</th>
 								<th>템플릿</th>
 								<th style="width:80px">등록자</th>
 								<th style="width:130px">등록일</th>
 								<th style="width:80px">결재자</th>
 								<th style="width:130px">결재일</th>
 								<th style="width:80px">사용</th><!-- 결재자 비노출 -->
-								<th style="width:80px">알림</th><!-- 결재자 비노출 -->
 								<th style="width:80px">결재</th> <!-- 일반관리자 비노출  -->
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td>10</td>
-								<td>연말/연시</td>
+								<td rowspan="3">10</td>
+								<td rowspan="3"><a href="">연말/연시</a></td><!-- 상세 이동 -->
 								<td>여</td>
+								<td>20대</td>
 								<td>3:4</td>
 								<td>이미지</td>
-								<td class="txt_a_l">
-									<img src="../images/@pic01.jpg">
-									<a href="">크리스마스-선물-여자01</a>
+								<td class="thumb">
+									<a href=""><img src="../images/@pic01.jpg"></a><!-- 상세 이동 -->
 								</td>
-								<td>6078991</td>
-								<td>2024.12.12 13:15</td>
-								<td><span class="tag_wait">대기중</span></td>
-								<td>-</td>
+								<td rowspan="3">6078991</td>
+								<td rowspan="3">2024.12.12 13:15</td>
+								<td rowspan="3"><span class="tag_wait">대기중</span></td>
+								<td rowspan="3">-</td>
 								<td>							
 									<label class="switch">
-										<input type="checkbox">
+										<input type="checkbox" disabled><!-- 결재전 'disabled' -->
 										<div class="slider"><span>켜기/끄기</span></div>
 									</label>
 								</td>
-								<td>							
-									<button type="button" class="btn_td03">등록</button><!-- 해당 알림 등록 화면 이동 -->
-								</td>
-								<td class="checkbox">
+								<td rowspan="3" class="checkbox">
 									<label for="item02" onclick = "window.location.href='template_detail.html';">
 										<input type="checkbox" id="item02" disabled>
 										<span class="checkmark"></span>
@@ -98,32 +95,104 @@
 								</td>
 							</tr>
 							<tr>
-								<td>110</td>
-								<td>명절</td>
 								<td>남</td>
+								<td>30대</td>
 								<td>3:4</td>
 								<td>영상</td>
-								<td class="txt_a_l">
-									<img src="../images/@pic01.jpg">
-									<a href="">추석-선물-여자01</a>
+								<td class="thumb">
+									<a href=""><video src="../images/@video01.mp4" muted autoplay playsinline loop></video></a>
 								</td>
-								<td>6078999</td>
-								<td>2024.12.12 13:15</td>
-								<td>6078999</td>
-								<td>2024.12.13 13:15</td>
+								<td>							
+									<label class="switch">
+										<input type="checkbox" disabled>
+										<div class="slider"><span>켜기/끄기</span></div>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<td>남</td>
+								<td>60대 이후</td>
+								<td>1:1</td>
+								<td>영상</td>
+								<td class="thumb">
+									<a href=""><video src="../images/@video01.mp4" muted autoplay playsinline loop></video></a>
+								</td>
+								<td>							
+									<label class="switch">
+										<input type="checkbox" disabled>
+										<div class="slider"><span>켜기/끄기</span></div>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<td rowspan="4">10</td>
+								<td rowspan="4"><a href="">명함</a></td>
+								<td>여</td>
+								<td>50대</td>
+								<td>1:1</td>
+								<td>이미지</td>
+								<td class="thumb">
+									<a href=""><img src="../images/@pic01.jpg"></a>
+								</td>
+								<td rowspan="4">6078991</td>
+								<td rowspan="4">2024.12.12 13:15</td>
+								<td rowspan="4">6015778</td>
+								<td rowspan="4">2024.12.12 16:25</td>
 								<td>							
 									<label class="switch">
 										<input type="checkbox">
 										<div class="slider"><span>켜기/끄기</span></div>
 									</label>
 								</td>
-								<td>							
-									<button type="button" class="btn_td02">보기</button><!-- 해당 알림 상세 화면 이동 -->
-								</td>
-								<td class="checkbox">
-									<label for="item01">
-										<input type="checkbox" id="item01" checked disabled>
+								<td rowspan="4" class="checkbox">
+									<label for="item02" onclick = "window.location.href='template_detail.html';">
+										<input type="checkbox" id="item02" checked disabled>
 										<span class="checkmark"></span>
+									</label> <!-- 결재 여부만 표시, 결재는 상세에서 가능. 상세 링크 -->
+								</td>
+							</tr>
+							<tr>
+								<td>남</td>
+								<td>20대</td>
+								<td>3:4</td>
+								<td>영상</td>
+								<td class="thumb">
+									<a href=""><video src="../images/@video01.mp4" muted autoplay playsinline loop></video></a>
+								</td>
+								<td>							
+									<label class="switch">
+										<input type="checkbox">
+										<div class="slider"><span>켜기/끄기</span></div>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<td>남</td>
+								<td>40대</td>
+								<td>3:4</td>
+								<td>영상</td>
+								<td class="thumb">
+									<a href=""><video src="../images/@video01.mp4" muted autoplay playsinline loop></video></a>
+								</td>
+								<td>							
+									<label class="switch">
+										<input type="checkbox">
+										<div class="slider"><span>켜기/끄기</span></div>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<td>남</td>
+								<td>30대</td>
+								<td>3:4</td>
+								<td>이미지</td>
+								<td class="thumb">
+									<a href=""><img src="../images/@pic01.jpg"></a>
+								</td>
+								<td>							
+									<label class="switch">
+										<input type="checkbox">
+										<div class="slider"><span>켜기/끄기</span></div>
 									</label>
 								</td>
 							</tr>
@@ -134,17 +203,31 @@
 					<div class="total">Total:<em>000</em> 건</div>
 					<div class="page">
 						<button type="button" class="btn_p_first">처음페이지</button>
-						<button type="button" class="btn_p_pre">이전페이지</button>
+						<button type="button" class="btn_p_pre">이전페이지</button><!-- 이전 10pages -->
 						<div class="page_num">
 							<a href="#a" class="current">1</a>
 							<a href="#a">2</a>
 							<a href="#a">3</a>
 							<a href="#a">4</a>
 							<a href="#a">5</a>
+							<a href="#a">6</a>
+							<a href="#a">7</a>
+							<a href="#a">8</a>
+							<a href="#a">9</a>
+							<a href="#a">10</a>
 						</div>
-						<button type="button" class="btn_p_next">다음페이지</button>
+						<button type="button" class="btn_p_next">다음페이지</button><!-- 다음 10pages -->
 						<button type="button" class="btn_p_end">끝페이지</button>
 					</div>
+					<div class="quantity">
+						<select>
+						   <option>5개씩 보기</option>
+						   <option>20개씩 보기</option>
+						   <option>30개씩 보기</option>
+						   <option>50개씩 보기</option>
+						   <option>전체 보기</option>
+						</select>
+					  </div>
 				</div>
 			</section>
 <!--//  CONTENT   -->
@@ -152,7 +235,14 @@
 		<footer>HANWHA GENERAL INSURANCE CO.,LTD. ALL RIGHTS RESERVED.</footer>
 	</div>
 	<!--//  class="container" -->
+
+<!---  POPUP   
+[사용] on 선택   : "사용자 화면에 노출하시겠습니까?" 취소/확인
+[사용] off 선택  : "사용자 화면에서 내리시겠습니까?" 취소/확인
+
+-->
 </body>
+
 
 
 </html>
