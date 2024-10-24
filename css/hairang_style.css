@@ -463,6 +463,8 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .templateWrap {position:fixed; top:10rem; left:0; right:0; bottom:9.1rem; padding-top:1.4rem;
 	 overflow:hidden; overflow-y:auto;} 
 
+.templateWrap > .noList {text-align:center; padding:27vh 0 0;}	 
+
 .templateList {padding:0 2rem 8rem; margin:-1rem 0 0;
 	display:grid; gap:1.6rem; grid-template-columns:repeat(3, 1fr);}
 .templateList > a,
@@ -542,7 +544,6 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .switch input:focus + .slider {box-shadow:0 0 0.3rem #ebebeb;}
 .switch input:checked + .slider:before {transform:translateX(3.4rem); 
 	background:#1E1D36 url(../images/switch_list_on.svg) no-repeat center; background-size:1.6rem;}
-
 
 .greetingCard {position:relative;
 	width:28rem; aspect-ratio: 3/4;
