@@ -552,7 +552,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .greetingTxt01 em {font-size:2rem; color:#333; font-weight:500;}
 .greetingTxt01 span {font-weight:500; color:#ff6600;}
 .greetingTxt01 > p {margin-bottom:1.4rem;}
-.greetingTxt02 {position:absolute; bottom:9.4rem; right:2rem; font-weight:600;
+.greetingTxt02 {position:absolute; bottom:8.4rem; right:2rem; font-weight:600;
 	font-size:1.8rem; color:#4D4B7B;}
 
 .greetingCard.male {position:relative;
