@@ -545,7 +545,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 
 .greetingCard {position:relative;
-	width:28rem; height:38rem; 
+	width:28rem; aspect-ratio: 3/4;
 	background:url(../images/greetingcard_female.png) no-repeat center; background-size:100%;}
 .greetingTxt01 {position:absolute; top:6rem; left:3rem;
 	font-size:1.5rem; color:#505050;}
