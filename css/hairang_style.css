@@ -1004,7 +1004,6 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .voiceBtn_wrap > .btn_myvoice,
 .voiceBtn_wrap > .btn_tts {height:5rem; font-size:1.5rem;}
 
-
 .voicePlay_wrap {display:none; width:calc(100% - 7.8rem);}
 .voicePlay_wrap .voiceBox {text-align:right;}	
 .voicePlay_wrap .voiceBox > button {position:relative; z-index:1;
@@ -1964,6 +1963,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .customerItem .checkbox_tLine .checktxt {display:flex; flex-direction:column; gap:0.6rem;}
 .customerItem .checkbox_tLine:first-child {margin-top:-1.6rem;}
 
+
 /*  popup: sending - customer */
 .sendCustomer .popHeader {background-color:#F8F8F8;}
 .sendCustomer .popupTab {border-bottom:1px solid #E9E9E9; background-color:#F8F8F8;}
@@ -2049,6 +2049,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	.picNvoice .myShape .tit {margin:0 0 1rem;}
 	.picNvoice .btnGroup_edit {padding:0 1rem;}
 
+	.btnGroup_mf {margin-top:2rem;}
 
 }
 
@@ -2161,7 +2162,8 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 
 @media screen and (aspect-ratio:360/740),
 	screen and (aspect-ratio:320/658) {
-	.makeTemplate .rate34 {margin:0 2rem;}
+	.btnGroup_mf {margin-top:1rem;}
+	/* .makeTemplate .rate34 {margin:0 2rem;} */
 	.makeTemplate .stage.rate43 .bgCard::before {top:49%;}
 	.sm_imageCard .rate34, .sm_videoCard .rate34, .videoArea .rate34 {margin:0;}
 
