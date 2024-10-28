@@ -372,6 +372,8 @@ a.btn_t_b:disabled {background-color:#ccc; color:#fff;}
 .btn_faceApply::after {content:''; width:2rem; height:2rem; background:url(../images/ic_create.svg) no-repeat center;;}
 .btn_faceApply:hover, .btn_faceApply:active {background-color:#CC5200;}
 
+.btn_faceApply:disabled {background-color:#ccc; box-shadow:none;}
+
 .btn_makeVideo {width:18rem; height:4.6rem; padding-left:4rem; border-radius:2rem; text-align:left;
 	color:#fff; box-shadow:0 0.4rem 1.2rem 0 rgba(122, 144, 176, 0.25);
 	background:#ff6600 url(../images/ic_makevideo.svg) no-repeat 12rem center; background-size:2.8rem;}
@@ -2065,7 +2067,6 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 
 	.btnGroup_mf {margin-top:2rem;}
 	.popupPreview .stage {padding:0 1rem;}
-
 }
 
 
@@ -2082,7 +2083,6 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	.mypage .mypic {gap:1rem;}
 
 	.decoCategory {padding:0 8rem;}
-
 }
 
 
