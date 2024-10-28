@@ -1901,7 +1901,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .sendingType  {position:relative; margin:2rem;}
 .sendingType > .btn_i_popclose {position:absolute; top:-1rem; right:-1rem;}
 .sendingType > h2 {font-size:1.5rem; color:#333;}
-.sendingType > .btnGroup {margin:4rem 0 3rem; display:flex; gap:1.4rem;}
+.sendingType > .btnGroup {margin:3rem 0; display:flex; gap:1.4rem;}
 .sendingType > .head {display:flex; justify-content:space-between; align-items:center;}
 .sendingType > .guide {margin:2rem 0 0; padding-left:2.8rem; color:#000; font-size:1.4rem; 
 	text-indent:-2.4rem; word-break:keep-all;}
