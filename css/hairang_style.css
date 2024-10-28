@@ -798,7 +798,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 .decorationArea .groupwrap {box-shadow:0 -1.4rem 2rem -1rem rgba(0,0,0,0.2); bottom:5.4rem;}
 
-.decoCategory {margin:1.4rem 0 0; padding:0 8rem;
+.decoCategory {margin:1.4rem 0 0; padding:0 4rem;
 	display:flex; gap:1rem; justify-content:space-between; align-items:center;}
 .decoCategory > button {display:flex; flex-direction:column; gap:0.4rem; justify-content:center; align-items:center; font-size:1.4rem;}
 .decoCategory > button::before {content:''; display:block; width:2.4rem; height:2.4rem; background-size:2.4rem !important;}
@@ -2085,8 +2085,6 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 
 	.mypage .mypic .picwrap {margin:1rem 0 0; height:22rem;}
 	.mypage .mypic {gap:1rem;}
-
-	.decoCategory {padding:0 8rem;}
 }
 
 
@@ -2108,7 +2106,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 }
 
 @media only screen and (min-width:361px) {
-	.decoCategory {padding:0 10rem;}
+	
 }
 
 
@@ -2165,8 +2163,6 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	.sentboxDetail .stage {max-width:36rem;}
 	.sentboxDetail .final_txtArea > .text {margin:2rem auto; padding:0 2rem;}
 
-	.decoCategory {padding:0 14rem;}
-
 	.popupPreview .stage {max-width:36rem;}
 
 
@@ -2185,7 +2181,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 
 @media screen and (aspect-ratio:360/740),
 	screen and (aspect-ratio:320/658) {
-	.btnGroup_mf {margin-top:1rem;}
+	.btnGroup_mf {margin-top:2rem;}
 	/* .makeTemplate .rate34 {margin:0 2rem;} */
 	.makeTemplate .stage.rate43 .bgCard::before {top:49%;}
 	.sm_imageCard .rate34, .sm_videoCard .rate34, .videoArea .rate34 {margin:0;}
@@ -2254,6 +2250,8 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	.picNvoice .picList {margin:0 3rem;}
 	.checkbox_shape .checkmark {width:2.6rem; height:2.6rem;}
 	.picNvoice .btnGroup_edit {padding:0 3rem;}
+
+	.imageDecoration .rate34 {margin:0 3rem;}
 }
 
 @supports (-webkit-overflow-scrolling: touch) {
