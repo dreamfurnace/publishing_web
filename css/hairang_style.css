@@ -1969,11 +1969,25 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .sendCustomer .popupTab {border-bottom:1px solid #E9E9E9; background-color:#F8F8F8;}
 
 
+/* popup - preview  */
+.popupPreview {text-align:center;}
+.popupPreview .bgCard {margin-bottom:2rem;}
+.popupPreview .btn_i_editTemplate {background:#fff url(../images/ic_modify_wh.svg) no-repeat center;}
+.popupPreview .btn_i_editTemplate:hover,
+.popupPreview .btn_i_editTemplate:active {background-color:#CFE0FF;}
+.popupPreview  > .btnwrap {display:flex; justify-content:right; padding:1rem;}
+.popupPreview  > .btnwrap > button {width:4rem; height:4rem; border-radius:50%;
+	background:url(../images/ic_x_wh.svg) no-repeat center; background-size:2.4rem;}
+.popupPreview  > .btnwrap > button:hover,
+.popupPreview  > .btnwrap > button:active {background-color:rgba(255,255,255,0.2);}
+
+
+
+
 
 /***   make Loading    ***/
 .loadingbox {position:relative; z-index:10; margin:30vh auto 0;
 	text-align:center; font-size:1.8rem; font-weight:500; white-space:nowrap; color:#FB6342;}
-
 
 
 /* make Loading  - ani */
