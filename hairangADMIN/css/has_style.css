@@ -27,11 +27,9 @@ button:disabled:hover {opacity:1;}
 [class^='btn_'] {font-weight:600; vertical-align:middle;}
 [class*='btn_t_'] {display:inline-block; padding:0 12px; height:28px; min-width:80px; border-radius:6px;}
 
-.btn_addTemplate {width:180px; height:36px; line-height:33px; font-size:14px; padding-left:30px; letter-spacing:-1px;
-  border-radius:6px; 
-  border:1px solid #3958A8; font-weight:600; color:#3958A8; 
-  background:#fff url(../images/ic_add01.svg) no-repeat 14px center; box-shadow:0 0 5px rgba(0, 0, 0, 0.2);}
-.btn_addTemplate:hover {box-shadow:none;}
+.btn_addTemplate {width:120px; height:36px; line-height:33px; font-size:14px;
+  border-radius:6px; font-weight:500; color:#fff; background:#3958A8;}
+
 
 .btn_td01, .btn_td02, .btn_td03 {color:#333; border:1px solid #ccc; border-radius:6px; background:#fff;}
 .btn_td01 {color:#111; width:180px; height:32px; border:1px solid #333;}
@@ -169,6 +167,11 @@ table.ty_list td.thumb > a {border-bottom:none;}
 .content_box .seh select {appearance:none; border-radius:6px; width:90px; height:30px;
   padding:0 10px; border:1px solid #ccc; background:url(../images/ic_select.svg) no-repeat 64px center;}
 
+.content_box .head > .addTemplate {display:flex; gap:10px; margin-top:-10px; padding:4px; 
+  border:1px solid #3958A8; border-radius:6px;  box-shadow:0 0 5px rgba(0, 0, 0, 0.2);}
+.content_box .head > .addTemplate > select {width:140px; height:36px; border:1px solid #ccc; appearance:none; 
+  font-weight:600; font-size:14px; text-align:center; padding-right:60px;
+  background:url(../images/ic_select02.svg) no-repeat 110px center; background-size:16px;}
 
 .templateHead {margin:24px 0 10px;}
 .templateHead h3 {font-size:20px; font-weight:600;}

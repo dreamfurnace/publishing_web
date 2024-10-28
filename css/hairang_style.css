@@ -800,6 +800,8 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 .decoCategory {margin:1.4rem 0 0; padding:0 4rem;
 	display:flex; gap:1rem; justify-content:space-between; align-items:center;}
+.decoCategory.tyUser {padding:0 8rem;}
+
 .decoCategory > button {display:flex; flex-direction:column; gap:0.4rem; justify-content:center; align-items:center; font-size:1.4rem;}
 .decoCategory > button::before {content:''; display:block; width:2.4rem; height:2.4rem; background-size:2.4rem !important;}
 
@@ -811,9 +813,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 .decoCategory > .item01.on::before {background:url(../images/deco_cate01_on.svg) no-repeat center top;}
 .decoCategory > .item02.on::before {background:url(../images/deco_cate02_on.svg) no-repeat center top;}
-
-/* .decoCategory > .item03:active::before,
-.decoCategory > .item03:hover::before {background:url(../images/deco_cate03_on.svg) no-repeat center top;} */
+.decoCategory > .item03.on::before {background:url(../images/deco_cate03_on.svg) no-repeat center top;}
 
 .decorationArea .footGroup,
 .soundArea .footGroup {position:absolute; left:0; right:0; bottom:0.6rem;
@@ -854,7 +854,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .textGroup {flex-direction:column; gap:0.6rem;}
 .textGroup::after,
 .stickerGroup::after,
-.hanwhaGroup::after {content:''; display:block; margin:-0.6rem 0 1rem; height:1px; width:100%; background:#E4E4E4;}
+.sentenceGroup::after {content:''; display:block; margin:-0.6rem 0 1rem; height:1px; width:100%; background:#E4E4E4;}
 
 
 .textGroup .row {overflow:hidden; overflow-x:auto; padding:0 0 1rem; margin:0 2rem;}
@@ -938,20 +938,22 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 .stickerItems > button > img {width:96%; height:96%; object-fit:contain; }
 
-.hanwhalogo {padding:1rem 2rem;
+.sentence {padding:1rem 2rem;
 	display:grid; grid-template-columns:repeat(2, 1fr); gap:1rem; margin:0 0 1rem;}
-.hanwhalogo > button {height:6rem; border-radius:0.4rem; border:1px solid #EDEDED; border-radius:0.4rem;
+.sentence > button {height:6rem; border-radius:0.4rem; border:1px solid #EDEDED; border-radius:0.4rem;
 	text-indent:-9999em; overflow:hidden; white-space:nowrap; background-size:16rem !important;}
-.hanwhalogo > .on {border:solid 1px #1e1d36; box-shadow:0 0.4rem 1.1rem 0 rgba(0, 0, 0, 0.15);}
+.sentence > .on {border:solid 1px #1e1d36; box-shadow:0 0.4rem 1.1rem 0 rgba(0, 0, 0, 0.15);}
 
-.hanwhalogo > .item01 {background:url(../images/sticker_logo01.png) no-repeat center;}
-.hanwhalogo > .item02 {background:url(../images/sticker_logo02.png) no-repeat center;}
-.hanwhalogo > .item03 {background:url(../images/sticker_logo03.png) no-repeat center;}
-.hanwhalogo > .item04 {background:url(../images/sticker_logo04.png) no-repeat center;}
+.sentence > .item01 {background:url(../images/sticker_logo01.png) no-repeat center;}
+.sentence > .item02 {background:url(../images/sticker_logo02.png) no-repeat center;}
+.sentence > .item03 {background:url(../images/sticker_logo03.png) no-repeat center;}
+.sentence > .item04 {background:url(../images/sticker_logo04.png) no-repeat center;}
 
-#sec_textGroup, #sec_stickerGroup, #sec_hanwhaGroup {display:none;}
+
+
+#sec_textGroup, #sec_stickerGroup, #sec_sentenceGroup {display:none;}
 .textGroup.active, .stickerGroup.active {display:flex !important;}
-.hanwhaGroup.active {display:block !important;}
+.sentenceGroup.active {display:block !important;}
 
 .imagecard_textInput {position:fixed; top:0; left:0; right:0; bottom:0; z-index:20; background:rgba(0, 0, 0, 0.7);}
 .imagecard_textInput > .textbox {margin:10vh 3rem 0;}
@@ -1370,10 +1372,8 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 	box-shadow:0 0 1.5rem 0 rgba(122, 144, 176, 0.25);}
 .customer .list > .item::after {content:''; position:absolute; top:50%; right:1rem; margin-top:-1.2rem;
 		display:block; width:2.4rem; height:2.4rem; background:url(../images/ic_arrow01.svg) no-repeat center;}
-
 .customer .list > .item:active,
 .customer .list > .item:hover {box-shadow:none;}
-
 .customer .list > .item > .btnGroup_edit {display:none; padding:0;}
 .customer .list > .item > .btnGroup_edit > button {font-weight:400; font-size:1.5rem;}
 
@@ -1382,7 +1382,6 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 .groupInfo .groupTit {display:flex; font-size:1.6rem; font-weight:500; align-items:center;}
 .groupInfo .groupTit > em {font-size:1.4rem; color:#FF6600;}
 .groupInfo .groupExp {color:#777; font-size:1.5rem; margin-top:0.4rem;}
-
 
 .customer.edit .item > .btnGroup_edit  {display:block;}
 .customer.edit .personNum {display:none;}
@@ -2106,7 +2105,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 }
 
 @media only screen and (min-width:361px) {
-	
+	.decoCategory.tyUser {padding:0 10rem;}
 }
 
 
@@ -2164,6 +2163,8 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	.sentboxDetail .final_txtArea > .text {margin:2rem auto; padding:0 2rem;}
 
 	.popupPreview .stage {max-width:36rem;}
+
+	.decoCategory.tyUser {padding:0 13rem;}
 
 
 

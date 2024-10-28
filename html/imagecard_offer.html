@@ -225,7 +225,26 @@
                     </div>
                </div>
           </section> 
-          <div class="decoCategory tyUser">
+          <section class="groupwrap sentenceGroup" id="sec_sentenceGroup">
+               <button class="btn_i_slideClose" type="button">슬라이드 닫기</button>
+               <h2>문구 추가</h2>
+               <div class="notice skip">
+                    문구는 <em>1</em>개만 사용가능 합니다.<br>
+                    문구를 지우고, 선택하세요.
+               </div>
+               <div class="sentence">
+                    <button class="item01" type="button">한화로고_가로</button>
+                    <button class="item02" type="button">한화로고_영문가로</button>
+                    <button class="item03" type="button">한화로고_세로</button>
+                    <button class="item04" type="button">한화로고_영문세로</button>
+                    <button class="item01" type="button">한화로고_가로</button>
+                    <button class="item02" type="button">한화로고_영문가로</button>
+                    <button class="item03" type="button">한화로고_세로</button>
+                    <button class="item04" type="button">한화로고_영문세로</button>
+               </div>
+          </section>
+          <div class="decoCategory">
+               <button class="item03" type="button"  id="btn_openSentence">문구</button>
                <button class="item01" type="button" id="btn_openTxt">텍스트</button>
                <button class="item02" type="button" id="btn_openSticker">스티커</button>
           </div>
@@ -257,6 +276,17 @@ $("#btn_openSticker").on("click", function () {
     $("#btn_openSentence").removeClass("on");
 });
 
+// open stickerArea
+$("#btn_openSentence").on("click", function () {
+    $("#sec_sentenceGroup").addClass("active");
+    $("#sec_textGroup").removeClass("active");
+    $("#sec_stickerGroup").removeClass("active");
+    $("header").addClass("skip");
+    $(".bgCard").addClass("onWork");
+    $(this).addClass("on");
+    $("#btn_openTxt").removeClass("on");
+    $("#btn_openSticker").removeClass("on");
+});
 
 // close DECOArea
 $(".stage").on("click", function () {
@@ -302,6 +332,11 @@ $('.stickerTab > button').on('click', function(evt) {
     $('.stickerItems').removeClass('active').filter(sel).addClass('active');
 });
 
+//  image decoration: hanhwa logo btn
+$(".sentence > button").on("click", function () {
+    $(".sentence > button").removeClass("on");
+    $(this).addClass("on");
+});
 </script>
 </body>
 </html>
