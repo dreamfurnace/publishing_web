@@ -14,14 +14,17 @@
 </head>
 
 <body>
-<button type="button" class="btn_popTest" id="test_callpop">call POPUP - uploadPic</button><!-- ref.event -->
-
 <!--  POPUP  AREA -->
      <div class="dimmedLayer"  style="display:block;"></div><!-- end: class="dimmedLayer" -->
      <div class="popup_btm" style="display:block;">
           <div class="popupWrap sendingType">
                <button class="btn_i_popclose" type="button">닫기</button>
                <h2>사진등록 방법을 선택하세요.</h2>
+               <div class="guide">
+                    이목구비가 뚜렷한 사진일 수록 적용률이 높습니다.<br>
+                    되도록 멀리서 어깨가 나오도록 찍어주세요.<br>
+                    혹은 어깨가 포함되고 얼굴 전체가 뚜렷하게 나오느 사진을 등록해주세요.
+               </div>
                <div class="btnGroup">
                     <button type="button" class="btn_camera">사진촬영</button>
                     <button type="button" class="btn_gallery">갤러리</button>
@@ -29,20 +32,5 @@
           </div>
      </div><!-- end: class="popup_btm"  -->
 <!--//  POPUP  AREA -->
-
-
-<script>
-// // popupEvent_closeBtn
-// $('.btn_i_popclose').click(function(){
-//      $('.popup_btm').slideUp(300);
-//      $('.dimmedLayer').fadeOut(200);
-// });
-   
-// // popEvent_testBtn
-// $('#test_callpop').click(function(){
-//      $('.popup_btm').slideDown(300);
-//      $('.dimmedLayer').fadeIn(200);
-// });
-</script>
 </body>
 </html>

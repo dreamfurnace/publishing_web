@@ -225,7 +225,7 @@
                     </div>
                </div>
           </section> 
-          <!-- <section class="groupwrap hanwhaGroup" id="sec_hanwhaGroup">
+          <section class="groupwrap hanwhaGroup" id="sec_hanwhaGroup">
                <button class="btn_i_slideClose" type="button">슬라이드 닫기</button>
                <h2>한화로고 추가</h2>
                <div class="notice skip">
@@ -238,11 +238,11 @@
                     <button class="item03" type="button">한화로고_세로</button>
                     <button class="item04" type="button">한화로고_영문세로</button>
                </div>
-          </section> -->
+          </section>
           <div class="decoCategory">
                <button class="item01" type="button" id="btn_openTxt">텍스트</button>
                <button class="item02" type="button" id="btn_openSticker">스티커</button>
-               <!-- <button class="item03" type="button"  id="btn_openHanwha">한화로고</button> -->
+               <button class="item03" type="button"  id="btn_openHanwha">한화로고</button>
           </div>
      </div>
 
@@ -271,13 +271,13 @@ $("#btn_openSticker").on("click", function () {
 });
 
 // open stickerArea
-// $("#btn_openHanwha").on("click", function () {
-//     $("#sec_hanwhaGroup").addClass("active");
-//     $("#sec_textGroup").removeClass("active");
-//     $("#sec_stickerGroup").removeClass("active");
-//     $("header").addClass("skip");
-//     $(".bgCard").addClass("onWork");
-// });
+$("#btn_openHanwha").on("click", function () {
+    $("#sec_hanwhaGroup").addClass("active");
+    $("#sec_textGroup").removeClass("active");
+    $("#sec_stickerGroup").removeClass("active");
+    $("header").addClass("skip");
+    $(".bgCard").addClass("onWork");
+});
 
 // close DECOArea
 $(".stage").on("click", function () {
@@ -324,10 +324,10 @@ $('.stickerTab > button').on('click', function(evt) {
 });
 
 //  image decoration: hanhwa logo btn
-// $(".hanwhalogo > button").on("click", function () {
-//     $(".hanwhalogo > button").removeClass("on");
-//     $(this).addClass("on");
-// });
+$(".hanwhalogo > button").on("click", function () {
+    $(".hanwhalogo > button").removeClass("on");
+    $(this).addClass("on");
+});
 </script>
 </body>
 </html>
