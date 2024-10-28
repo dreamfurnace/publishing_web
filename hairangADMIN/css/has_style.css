@@ -248,14 +248,16 @@ table.ty_list td.thumb > a {border-bottom:none;}
 .templateDetail.write .templateInfo {border-right:1px dashed #ddd;} 
 .templateDetail.write .info {padding:20px 50px 0 0;}
 .templateDetail.write > .line {display:flex; gap:50px;} 
-.templateDetail.write > .btnwrap {display:flex; justify-content:right; gap:6px;}
-.templateDetail.write > .btnwrap > button {border-radius:50px; border-color:#ccc;}
+.templateDetail.write > .btnwrap {display:flex; justify-content:right; gap:6px; margin-bottom:-10px;}
+.templateDetail.write > .btnwrap > button {border-radius:50px; border-color:#ccc; color:#333; font-weight:400;}
 .templateDetail.write > .btnwrap > button:hover {background:#f9f9f9;}
 
 .addWrap {padding:20px; text-align:center;}
 .addWrap > button {width:200px; height:40px; font-size:16px; 
   border-radius:50px; border:1px solid #ccc; background:url(../images/ic_plus.svg) no-repeat 30px center; background-size:14px;}
 .addWrap > button:hover {background-color:#f9f9f9;}
+.addWrap > button:disabled,
+.addWrap > button:disabled:hover {opacity:0.4; background-color:#fff;}
 
 .userDetail {padding:20px 10px; display:flex; justify-content:space-between; border-top:1px solid #ccc;}
 .userDetail .history {display:flex; gap:15px;}
