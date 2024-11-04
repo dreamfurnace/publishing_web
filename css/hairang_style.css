@@ -828,7 +828,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .decoItem_sticker > img,
 .decoItem_sentence > img {width:100%; object-fit:contain;}
 
-.place_ex01 {position:absolute; z-index:2; top:9rem; left:2rem; font:400 2.4rem/1 'NanumHaNaSon';}
+.place_ex01 {position:absolute; z-index:2; top:2rem; left:2rem; font:400 2.4rem/1 'NanumHaNaSon';}
 .place_ex02 {position:absolute; z-index:2; top:10rem; right:2rem;}
 .place_ex03 {position:absolute; z-index:2; bottom:2rem; left:2rem;}
 .place_ex04 {position:absolute; z-index:2; bottom:2rem; left:2rem; font-size:2rem;}
