@@ -828,7 +828,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .decoItem_sticker > img,
 .decoItem_sentence > img {width:100%; object-fit:contain;}
 
-.place_ex01 {position:absolute; z-index:2; top:2rem; left:2rem; font:400 2.4rem/1 'NanumHaNaSon';}
+.place_ex01 {position:absolute; z-index:2; top:2rem; left:2rem;}
 .place_ex02 {position:absolute; z-index:2; top:10rem; right:2rem;}
 .place_ex03 {position:absolute; z-index:2; bottom:2rem; left:2rem;}
 .place_ex04 {position:absolute; z-index:2; bottom:2rem; left:2rem; font-size:2rem;}
@@ -862,11 +862,11 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .item_font > button {padding:0 0.8rem; height:4rem; line-height:4rem; letter-spacing:0;
 	 border-radius:0.4rem; border:1px solid #f6f6f6; background:#f6f6f6;}
 
-.fontfamily01 {font:400 1.4rem/1 'NanumBarunGothic';}
-.fontfamily02 {font:400 1.4rem/1 'NanumMyeongjo';}
-.fontfamily03 {font:400 1.8rem/1 'NanumPen';}
-.fontfamily04 {font:400 1.8rem/1 'NanumHaNaSon';}
-.fontfamily05 {font:400 1.8rem/1 'NanumGgocNaeEum';}
+.fontfamily01 {font:600 1.4rem/1 'NanumBarunGothic';}
+.fontfamily02 {font:600 1.4rem/1 'NanumMyeongjo';}
+.fontfamily03 {font:600 1.8rem/1 'NanumPen';}
+.fontfamily04 {font:600 1.8rem/1 'NanumHaNaSon';}
+.fontfamily05 {font:600 1.8rem/1 'NanumDaHaengCe';}
 
 .btn_addText {width:100%; text-align:center; font-size:1.5rem; 
 	height:4rem; border-radius:0.4rem; border:1px solid #000; 

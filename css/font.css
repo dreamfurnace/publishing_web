@@ -59,11 +59,11 @@
 }
 
 @font-face {
-	font-family: 'NanumGgocNaeEum';
+	font-family: 'NanumDaHaengCe';
 	font-weight: 400;
 	font-style: normal;
-	src: url('../fonts/NanumGgocNaeEum.woff2') format('woff2'),
-		url('../fonts/NanumGgocNaeEum.woff') format('woff');
+	src: url('../fonts/NanumDaHaengCe.woff2') format('woff2'),
+		url('../fonts/NanumDaHaengCe.woff') format('woff');
 }
 
 @font-face {
