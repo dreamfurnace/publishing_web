@@ -864,9 +864,9 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 .fontfamily01 {font:400 1.4rem/1 'NanumBarunGothic';}
 .fontfamily02 {font:400 1.4rem/1 'NanumMyeongjo';}
-.fontfamily03 {font:400 1.4rem/1 'NanumSquare';}
-.fontfamily04 {font:400 1.8rem/1 'NanumPen';}
-.fontfamily05 {font:400 1.8rem/1 'NanumHaNaSon';}
+.fontfamily03 {font:400 1.8rem/1 'NanumPen';}
+.fontfamily04 {font:400 1.8rem/1 'NanumHaNaSon';}
+.fontfamily05 {font:400 1.8rem/1 'NanumDaHaengCe';}
 
 .btn_addText {width:100%; text-align:center; font-size:1.5rem; 
 	height:4rem; border-radius:0.4rem; border:1px solid #000; 
