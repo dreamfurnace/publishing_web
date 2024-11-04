@@ -859,7 +859,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 .textGroup .row {overflow:hidden; overflow-x:auto; padding:0 0 1rem; margin:0 2rem;}
 .item_font {display:flex; gap:1rem; flex-wrap:nowrap; padding:0 0 0.6rem;}
-.item_font > button {padding:0 0.8rem; height:4rem; line-height:4rem; letter-spacing:0;
+.item_font > button {padding:0 0.8rem; height:4rem; line-height:4rem; letter-spacing:0; font-weight:400 !important;
 	 border-radius:0.4rem; border:1px solid #f6f6f6; background:#f6f6f6;}
 
 .fontfamily01 {font:600 1.4rem/1 'NanumBarunGothic';}
