@@ -1712,8 +1712,8 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .dimmedLayer {display:none; position:fixed; top:0; left:0; right:0; bottom:0; z-index:30; 
 	background:rgba(0,0,0,0.7); overflow:hidden; overflow-y:auto;}
 
-.btn_i_popclose {width:4rem; height:4rem; 
-	background:url(../images/btn_i_close01.svg) no-repeat center; background-size:2rem;}
+.btn_i_popclose {width:4.2rem; height:4.2rem; 
+	background:url(../images/btn_i_close01.svg) no-repeat center; background-size:2.2rem;}
 .btn_i_popclose:active,.btn_i_popclose:hover {border-radius:50%; background-color:#f8f8f8;}
 
 .popup_btnGroup {margin:0 2rem 2.4rem;}
@@ -1898,7 +1898,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 
 /*  popup - sending type */
 .sendingType  {position:relative; margin:2rem;}
-.sendingType > .btn_i_popclose {position:absolute; top:-1rem; right:-1rem;}
+.sendingType > .btn_i_popclose {position:absolute; top:-1.4rem; right:-1rem;}
 .sendingType > h2 {font-size:1.5rem; color:#333;}
 .sendingType > .btnGroup {margin:3rem 0; display:flex; gap:1.4rem;}
 .sendingType > .head {display:flex; justify-content:space-between; align-items:center;}
