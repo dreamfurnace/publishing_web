@@ -940,7 +940,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 .sentence {padding:1rem 2rem;
 	display:grid; grid-template-columns:repeat(2, 1fr); gap:1rem; margin:0 0 1rem;}
-.sentence > button {height:16.4rem; text-align:center; border:1px solid #EDEDED; border-radius:0.4rem;}
+.sentence > button {height:17rem; text-align:center; border:1px solid #EDEDED; border-radius:0.4rem; overflow:hidden;}
 .sentence > .on {border:solid 1px #1e1d36; box-shadow:0 0.4rem 1.1rem 0 rgba(0, 0, 0, 0.15);}
 .sentence > button > img {width:96%; object-fit:contain;}
 
@@ -2165,7 +2165,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	.popupPreview .stage {max-width:36rem;}
 
 	.decoCategory.tyUser {padding:0 13rem;}
-
+	.sentence > button > img {width:70%;}
 
 
 } /* for Duo  */
