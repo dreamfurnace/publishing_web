@@ -824,7 +824,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 /*   deco Items   */
 [class^="decoItem_"] {width:6em;
-	border:1px solid #fff; padding:1rem; word-break:keep-all;}
+	border:1px solid #fff; padding:0.6rem; word-break:keep-all;}
 
 .decoItem_sticker > img,
 .decoItem_sentence > img {width:100%; object-fit:contain;}
