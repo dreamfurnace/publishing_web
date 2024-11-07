@@ -27,48 +27,47 @@
                          메시지를 선택하면 바로 적용됩니다.
                     </div>
                     <h3>메시지 리스트</h3>
-                    <div class="item"> 
-                         <div class="checkbox_tbox"> 
+                    <div class="itemTxt"> 
+                         <div class="checkbox_img"> 
                               <label for="item01">
                                    <input type="radio" id="item01" name="selected">
                                    <span class="checkmark"></span>
-                                   <span class="checktxt">
-                                        가을의 정취 속에서 가족과 함께하는 이 특별한 날, 
-                                        모두에게 행복과 안락함이 함께하기를 기원합니다.
-                                        건강과 행복이 늘 함께하길 바라며, 추석의 은은한 정을
-                                        만끽하시길 바랍니다. 
+                                   <span class="checkimg">
+                                        <img src="../images/sentence/cate06_1.svg">
                                    </span>   
                               </label>
-                         </div><!-- end:class="checkbox_tbox"  -->
-                    
+                         </div><!-- end:class="checkbox_img"  -->
+                         <div class="checkbox_img"> 
+                              <label for="item02">
+                                   <input type="radio" id="item02" name="selected">
+                                   <span class="checkmark"></span>
+                                   <span class="checkimg">
+                                        <img src="../images/sentence/cate06_2.svg">
+                                   </span>   
+                              </label>
+                         </div><!-- end:class="checkbox_img"  -->
+                         <div class="checkbox_img"> 
+                              <label for="item03">
+                                   <input type="radio" id="item03" name="selected">
+                                   <span class="checkmark"></span>
+                                   <span class="checkimg">
+                                        <img src="../images/sentence/cate06_3.svg">
+                                   </span>   
+                              </label>
+                         </div><!-- end:class="checkbox_img"  -->
+                         <div class="checkbox_img"> 
+                              <label for="item04">
+                                   <input type="radio" id="item04" name="selected">
+                                   <span class="checkmark"></span>
+                                   <span class="checkimg">
+                                        <img src="../images/sentence/cate06_4.svg">
+                                   </span>   
+                              </label>
+                         </div><!-- end:class="checkbox_img"  -->
                     </div>
                </section>
           </div>
      </div<><!-- end: class="popup_full"  -->
 <!-- //  POPUP  AREA -->
-
-<script>
-// popupEvent_closeBtn
-// $('#btn_popClose').click(function(){
-//      $('.popup_full').fadeOut(100);
-// });
-   
-// // popEvent_testBtn
-// $('#test_callpop').click(function(){
-//      $('.popup_full').fadeIn(100);
-// });
-
-//  remove radio check
-var beforeChecked = -1;  
-$(function(){
-     $(document).on("click", "input[type=radio]", function(e) {
-          var index = $(this).parent().index("label");
-          if(beforeChecked == index) {
-          beforeChecked = -1;
-          $(this).prop("checked", false);} 
-          else{beforeChecked = index;}
-     });
-});
-</script>
 </body>
 </html>

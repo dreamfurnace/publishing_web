@@ -1215,8 +1215,6 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 .checkbox_img label {display:block;}
 .checkbox_img input[type="checkbox"],
 .checkbox_img input[type="radio"] {opacity:0; display:none;}
-.checkbox_img input[type="checkbox"] + label, 
-.checkbox_img input[type="radio"] + label {position:relative;}
 .checkbox_img .checkmark {position:absolute; top:0.4rem; right:0.4rem;
 	display:block; width:2.6rem; height:2.6rem; border-radius:50%;
 	background:rgba(0, 0, 0, 0.2) url('../images/check_i_on.svg') no-repeat center; background-size:1.6rem;}
@@ -1681,7 +1679,6 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .noticeList .txtWrap {word-break:keep-all;}
 
 
-
 /***   error    ***/
 .errorPage {margin:20vh 0 0; display:flex; flex-direction:column; gap:2.6rem; text-align:center; align-items:center;}
 .errorPage::before {content:''; width:14rem; height:14rem; background:url(../images/bg_error.svg) no-repeat center; background-size:100%;}
@@ -1831,7 +1828,6 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .musicItem .tit > span {font-size:1.6rem; font-weight:600;}
 .musicItem .tit > em {font-size:1.5rem; color:#777;}
 
-
 .musicItem .palyElements {display:flex; gap:1rem; align-items:center; padding-right:5rem;}
 .musicItem .palyElements > .playSec {display:none; color:#383494;}
 .musicItem.playOn .playSec {display:block;}
@@ -1894,7 +1890,17 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 /* popup - simplemake > message list */
 .sm_messageList {padding:0 2rem 8rem;}
 .sm_messageList > .item {margin-top:1rem; display:flex; gap:1.4rem; flex-direction:column;}
-	
+.sm_messageList > .itemTxt {margin-top:1rem; display:grid; grid-template-columns:repeat(2, 1fr); gap:1.4rem; flex-direction:column;}
+
+.sm_messageList .checkbox_img {position:relative;}
+.sm_messageList .checkimg {display:flex; align-items:center; padding:1.2rem; aspect-ratio: 3/4; border:1px solid #dfdfdf; border-radius:2rem;}
+.sm_messageList .checkbox_img input:checked ~ .checkmark {background:#3958A8 url('../images/check_i_on.svg') no-repeat center; background-size:1.6rem;}
+.sm_messageList .checkbox_img .checkimg > img {width:100%; object-fit:cover;}
+.sm_messageList .checkbox_img input:checked ~ .checkimg {border:1px solid #EBEBEB;
+	box-shadow: 0 0 2rem 0 rgba(112, 144, 176, 0.25); background-color:#fff;}
+
+
+
 /*  popup - sending type */
 .sendingType  {position:relative; margin:2rem;}
 .sendingType > .btn_i_popclose {position:absolute; top:-1.4rem; right:-1rem;}
