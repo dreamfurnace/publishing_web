@@ -696,9 +696,6 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .promptItem_bg03::before {background:url(../images/prompt_bg03.png) no-repeat;}
 .promptItem_bg04::before {background:url(../images/prompt_bg04.png) no-repeat;}
 .promptItem_bg05::before {background:url(../images/prompt_bg05.png) no-repeat;}
-/* .promptItem_bg06::before {background:url(../images/prompt_bg06.png) no-repeat;}
-.promptItem_bg07::before {background:url(../images/prompt_bg07.png) no-repeat;}
-.promptItem_bg08::before {background:url(../images/prompt_bg08.png) no-repeat;} */
 
 [class^="promptItem_hcolor0"]::before {content:''; width:4.2rem; height:4.8rem; background-size:4.2rem !important;}
 .promptItem_hcolor01::before {background:url(../images/prompt_hcolor01.svg) no-repeat center;}
@@ -706,7 +703,6 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .promptItem_hcolor03::before {background:url(../images/prompt_hcolor03.svg) no-repeat center;}
 .promptItem_hcolor04::before {background:url(../images/prompt_hcolor04.svg) no-repeat center;}
 .promptItem_hcolor05::before {background:url(../images/prompt_hcolor05.svg) no-repeat center;}
-.promptItem_hcolor06::before {background:url(../images/prompt_hcolor06.svg) no-repeat center;}
 
 [class^="promptItem_f_wear0"]::before,
 [class^="promptItem_m_wear0"]::before {content:''; width:4.2rem; height:4.8rem; background-size:4.2rem !important;}
