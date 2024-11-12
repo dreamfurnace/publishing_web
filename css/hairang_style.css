@@ -691,14 +691,14 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 
 [class^="promptItem_bg0"]::before {content:''; width:100%; height:4.8rem;}
-.promptItem_bg01::before {background:url(../images/prompt_bg01.png) no-repeat;}
+.promptItem_bg01::before {background-color:#eee;}
 .promptItem_bg02::before {background:url(../images/prompt_bg02.png) no-repeat;}
 .promptItem_bg03::before {background:url(../images/prompt_bg03.png) no-repeat;}
 .promptItem_bg04::before {background:url(../images/prompt_bg04.png) no-repeat;}
 .promptItem_bg05::before {background:url(../images/prompt_bg05.png) no-repeat;}
-.promptItem_bg06::before {background:url(../images/prompt_bg06.png) no-repeat;}
+/* .promptItem_bg06::before {background:url(../images/prompt_bg06.png) no-repeat;}
 .promptItem_bg07::before {background:url(../images/prompt_bg07.png) no-repeat;}
-.promptItem_bg08::before {background:url(../images/prompt_bg08.png) no-repeat;}
+.promptItem_bg08::before {background:url(../images/prompt_bg08.png) no-repeat;} */
 
 [class^="promptItem_hcolor0"]::before {content:''; width:4.2rem; height:4.8rem; background-size:4.2rem !important;}
 .promptItem_hcolor01::before {background:url(../images/prompt_hcolor01.svg) no-repeat center;}
@@ -737,6 +737,8 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .promptItem_m_hair02::before {background:url(../images/prompt_m_hair02.svg) no-repeat center;}
 .promptItem_m_hair03::before {background:url(../images/prompt_m_hair03.svg) no-repeat center;}
 .promptItem_m_hair04::before {background:url(../images/prompt_m_hair04.svg) no-repeat center;}
+.promptItem_m_hair05::before {background:url(../images/prompt_m_hair05.svg) no-repeat center;}
+
 
 [class^="promptItem_posture0"]::before {content:''; width:4.2rem; height:4.8rem; background-size:4.2rem !important;}
 .promptItem_posture01::before {background:url(../images/prompt_posture01.svg) no-repeat center;}
@@ -2082,10 +2084,10 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 @media only screen and (max-width:320px) {
 	html, body {font-size:9.5px;}
 	.valuegroup {gap:0.2rem;}
-	.valuegroup > .checkbox_t .checkbox_txt {padding:0 0.3rem; font-size:1.45rem;}
-	.btnwrap_rate > button {height:2.8rem; }
+	/* .valuegroup > .checkbox_t .checkbox_txt {padding:0 0.3rem; font-size:1.45rem;}
+	.btnwrap_rate > button {height:2.8rem; } */
 
-	.makeTemplate .rate34 {margin:0 1rem;}
+	.makeTemplate .rate34 {margin:0 1.8rem;}
 	.makeTemplate .stage.rate34 .bgCard::before {top:37%;}
 
 	.mypage .mypic .picwrap {margin:1rem 0 0; height:22rem;}
@@ -2094,8 +2096,9 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 
 
 @media only screen and (max-width:344px) {
-	.valuegroup {gap:0.4rem;}
-	.valuegroup > .checkbox_t .checkbox_txt {padding:0 0.6rem;}
+	.valueWrap {margin:1.2rem 1.6rem;}
+	.valuegroup {gap:0.6rem;}
+	.valuegroup > .checkbox_t .checkbox_txt {padding:0 0.8rem;}
 
 	.makeTemplate .stage.rate34 .bgCard::before {top:37%;}
 	.makeTemplate .stage.rate11 .bgCard::before {top:40%;}
@@ -2105,8 +2108,8 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 
 
 @media (min-width:345px) and (max-width:360px) {
-	.valuegroup {gap:0.6rem;}
-	.valuegroup > .checkbox_t .checkbox_txt {padding:0 0.8rem;}
+	/* .valuegroup {gap:0.6rem;}
+	.valuegroup > .checkbox_t .checkbox_txt {padding:0 0.8rem;} */
 
 }
 
@@ -2179,7 +2182,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 
 @media screen and (device-aspect-ratio:18/37) {
 	.imageDecoration .rate34 {margin:0 0.4rem;}
-	.makeTemplate .rate34 {margin:0 1rem;}
+	.makeTemplate .rate34 {margin:0 1.4rem;}
 	.sm_imageCard .rate34, .sm_videoCard .rate34, .videoArea .rate34 {margin:0;}
 	.makeTemplate .stage.rate34 .bgCard::before {top:37%;}
 
