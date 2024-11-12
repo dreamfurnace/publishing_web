@@ -806,6 +806,8 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 .decoCategory > button.on {color:#FF6600;}
 
+.decoCategory > button:disabled {opacity:0.2;}
+
 .decoCategory > .item01::before {background:url(../images/deco_cate01.svg) no-repeat center top; background-size:2.4rem;}
 .decoCategory > .item02::before {background:url(../images/deco_cate02.svg) no-repeat center top; background-size:2.4rem;}
 .decoCategory > .item03::before {background:url(../images/deco_cate03.svg) no-repeat center top; background-size:2.5rem;}
