@@ -749,7 +749,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 .appliedValue {position:absolute; height:15.8rem; left:0; right:0; bottom:10.4rem; border-radius:4.4rem 4.4rem 0 0; 
 	background:#292752; box-shadow:0 0.4rem 2rem 0 rgba(112, 144, 176, 0.2);}
-.valueWrap {position:relative; z-index:2; margin:1.2rem 1.6rem;
+.valueWrap {position:relative; z-index:2; margin:1.2rem 2.2rem;
 	display:flex; gap:1rem; flex-wrap:nowrap; justify-content:space-between;}
 .valuegroup {display:inline-flex; flex-wrap:wrap; gap:0.8rem; align-items:center;}
 .valuegroup > button {padding:0.4rem 1rem; color:#fff; font-weight:300; white-space:nowrap; height:3rem;
@@ -2112,6 +2112,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 @media (min-width:345px) and (max-width:360px) {
 	/* .valuegroup {gap:0.6rem;}
 	.valuegroup > .checkbox_t .checkbox_txt {padding:0 0.8rem;} */
+	.valueWrap {margin:1.2rem 1.6rem;}
 
 }
 
