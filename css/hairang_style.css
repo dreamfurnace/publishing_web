@@ -991,7 +991,8 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .soundArea .footGroup {bottom:1.8rem;}
 
 .btn_bgm {display:flex; flex-direction:column; gap:0.4rem; justify-content:center; align-items:center;
-	width:6.8rem; height:6.8rem; font-weight:500; font-size:1.4rem; color:#383494; border-radius:1.8rem; border:1px solid #383494;; background-color:#fff;}
+	width:6.8rem; height:6.8rem; font-weight:500; font-size:1.6rem; color:#383494; 
+	border-radius:1.8rem; border:1px solid #383494;; background-color:#fff; letter-spacing:-0.1rem;}
 .btn_bgm::before {content:''; width:3rem; height:3rem; 
 	background:url(../images/ic_bgm_bk.svg) no-repeat center; background-size:2.6rem;}
 .btn_bgm.on {color:#fff; background-color:#383494;}
@@ -1031,7 +1032,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 .btn_voiceRec, .btn_voiceMake {height:5.4rem;
 	display:flex; gap:1rem; justify-content:center; align-items:center;
-	font-size:1.5rem; color:#231F84; font-weight:500;}
+	font-size:1.6rem; color:#231F84; font-weight:500;}
 .btn_voiceRec::before {content:''; width:2.4rem; height:2.4rem; background-size:2.4rem; 
 	background:url(../images/ic_recordvoice_fill.svg) no-repeat center;}
 .btn_voiceMake::after {content:''; width:2.4rem; height:2.4rem; background-size:2.4rem; 
