@@ -111,7 +111,7 @@ textarea:hover::placeholder {color:transparent !important;}
 .btn_i_sound.on {background:#231F84 url(../images/ic_sound_on.svg) no-repeat center; background-size:2rem;}
 
 .btn_i_menuClose {background:url(../images/ic_mypage_x.svg) no-repeat center;}
-.btn_i_home {background:url(../images/ic_mypage_home.svg) no-repeat center;}
+.btn_i_home {background:url(../images/ic_mypage_home.svg) no-repeat center; background-size:2.4rem;}
 .btn_i_myVoice {width:6rem; height:6rem; border-radius:50%; border:1px solid #E7ECF3;
 	background:#fff url(../images/ic_mypage_voice01.svg) no-repeat center; background-size:3rem;
 	box-shadow: 0 1.6rem 4rem 0 rgba(112, 144, 176, 0.2);}
@@ -172,7 +172,7 @@ textarea:hover::placeholder {color:transparent !important;}
 .btn_i_sending:active, .btn_i_sending:hover {background-color:#CC5200;}
 	
 
-[class^="btn_t_"] {font-weight:500; height:4rem; line-height:4rem; 
+[class^="btn_t_"] {font-weight:500; height:4.2rem; line-height:4.2rem; 
 	font-size:1.6rem; text-align:center; border-radius:2.5rem;}
 [class^="btn_t_"]:disabled {color:#aaa; background-color:#e1e1e1;}
 
