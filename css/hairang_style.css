@@ -406,7 +406,7 @@ a.btn_t_b:disabled {background-color:#ccc; color:#fff;}
 .show {display:block !important;}
 
 .tooltip {display:flex; flex-direction:column; align-items: end;
-	position:relative; z-index:4; letter-spacing:-0.05rem;
+	position:relative; z-index:4; letter-spacing:-0.1rem;
 	padding:1.2rem 1rem 0; min-width:14rem;
 	color:#333; font-size:1.6rem; line-height:1.2;
 	text-indent:0 !important; white-space:wrap !important; text-align:left !important;
@@ -1188,7 +1188,7 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 .checkbox_chk .checkmark {display:block; width:2.5rem; height:2.5rem; border-radius:50%;
 	background:#f6f6f6 url('../images/check_i_off.svg') no-repeat center; background-size:1.4rem;}
 .checkbox_chk input:checked ~ .checkmark {background:#3958A8 url('../images/check_i_on.svg') no-repeat center; background-size:1.4rem;}
-.checkbox_chk .checktxt {font-size:1.5rem;}
+.checkbox_chk .checktxt {font-size:1.6rem;}
 
 /* chek box - textbox   */
 .checkbox_tbox > label {display:block; position:relative;}
@@ -1413,7 +1413,7 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 .customer_seh > .inputwrap > input::placeholder {font-size:1.6rem; letter-spacing:-0.1rem;}
 .customer_seh .btnGroup {display:flex; flex-direction:row; align-items:center; margin-top:-0.8rem; }
 
-.customerList .item {position:relative; margin:0 2rem;  padding:1.4rem 1.2rem;
+.customerList .item {position:relative; margin:0 2rem; padding:1.4rem 1.2rem;
 	display:flex; flex-direction:column; gap:0.6rem;
 	border-bottom:1px solid #ebebeb;}
 
@@ -1608,7 +1608,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	background:#fff}
 .checkbox_shape input:checked ~ .checkmark {border-color:#FF6600;
   background:#fff url('../images/chk_shape_on.svg') no-repeat center; background-size:14px;}
-.checkbox_shape .checktxt {color:#777; font-size:15px;}
+.checkbox_shape .checktxt {color:#777; font-size:1.6rem;}
 .checkbox_shape input:checked ~ .checktxt {color:#FF6600; font-weight:600;}
 
 
@@ -1663,7 +1663,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .noticeList .item > .tit {position:relative; display:flex; flex-direction:column; gap:0.4rem;}
 .noticeList .item > .tit::after {content:''; position:absolute; top:50%; right:0; margin-top:-1.2rem; 
 	display:block; width:2.4rem; height:2.4rem; background:url(../images/arrow_notice.svg) no-repeat center;  transition:0.1s;}
-.noticeList .item > .tit > span {font-size:1.4rem; color:#777;}
+.noticeList .item > .tit > span {font-size:1.6rem; color:#777;}
 .noticeList .item > .tit > strong {position:relative; font-size:1.6rem; font-weight:400; color:#333;}
 .noticeList .item > .cont {display:none; padding-top:2rem; 
 	font-size:1.6rem; color:#333; line-height:2.1rem; border-top:solid 1px #ebebeb;}
@@ -1736,7 +1736,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .popup_btnGroup .btn_t_r:disabled {color:#fff; background:#ccc; border:none;}
 
 .popupWrap {margin:3em 2rem;}
-.popMessage {text-align:center; line-height:1.4; color:#333; font-size:1.7rem; word-break:keep-all;}
+.popMessage {text-align:center; line-height:1.4; color:#333; font-size:1.7rem; word-break:keep-all; letter-spacing:-0.1rem;}
 .popMessage > p {margin-bottom:2rem;}
 
 .popup_btm {display:none; 
@@ -1917,9 +1917,10 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .sendingType > h2 {font-size:1.6rem; color:#333;}
 .sendingType > .btnGroup {margin:3rem 0; display:flex; gap:1.4rem;}
 .sendingType > .head {display:flex; justify-content:space-between; align-items:center;}
-.sendingType > .guide {margin:2rem 0 0; padding-left:2.8rem; color:#000; font-size:1.4rem; 
-	text-indent:-2.4rem; word-break:keep-all;}
-.sendingType > .guide::before {content:"!"; display:inline-block; width:1.8rem; height:1.8rem; 
+.sendingType > .guide {margin:2rem 0 0; padding-left:2.8rem; color:#000; font-size:1.6rem; letter-spacing:-0.1rem;
+	text-indent:-1.8rem; word-break:keep-all;}
+.sendingType > .guide::before {content:"!"; display:inline-block; margin-left:-0.8rem;
+	width:1.8rem; height:1.8rem; 
 	color:#ff6600; font-size:1.5rem; font-weight:600; text-align:center; line-height:1.8rem;
    	border-radius:50%; border:1px solid #ff6600; text-indent:0;}
 
@@ -1933,7 +1934,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .popContainer.sending {padding:5.4rem 0 10rem;}
 .popContainer.sending .c_list {counter-reset: colorcircle 0;}
 .popContainer.sending .c_list .c_info::before {counter-increment:colorcircle 1; content: counter(colorcircle);
-	font-size:1.4rem; color:#fff; font-weight:600;
+	font-size:1.5rem; color:#fff; font-weight:600;
 	width:3rem; height:3rem; border:1px solid #fff; text-align:center; line-height:2.8rem;
 	border-radius:50%; background:rgba(255, 102, 0, 0.35); box-shadow:0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.1);}
 
