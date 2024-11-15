@@ -1208,7 +1208,7 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 .checkbox_tLine {position:relative;}
 .checkbox_tLine > label {display:block;}
 .checkbox_tLine .checktxt {position:relative; 
-	display:block; padding:0 1.6rem 1.4rem; padding-right:4.5rem; font-size:1.4rem;
+	display:block; padding:0 1.2rem 1.4rem; padding-right:4.5rem; font-size:1.4rem;
 	border-bottom:1px solid #EBEBEB; background:#fff;}
 .checkbox_tLine input[type="radio"], .checkbox_tbox input[type="checkbox"] {opacity:0; display:none;}
 .checkbox_tLine .checkmark {position:absolute; top:50%; right:1rem; z-index:2; margin-top:-1.3rem;
