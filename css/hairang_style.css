@@ -13,7 +13,7 @@ input[type="checkbox"], input[type="radio"] {height:auto; vertical-align:middle;
 label {vertical-align:middle; cursor:pointer; display:inline-block;}
 textarea {width:100%; letter-spacing:-0.05rem; font-weight:400; font-family:'Noto Sans KR', sans-serif;}
 textarea:disabled {color:#ccc;}
-button {letter-spacing:-0.05rem; font-size:1.5rem; font-weight:400; line-height:1.2; white-space:nowrap; font-family:'Noto Sans KR', sans-serif;} 
+button {letter-spacing:-0.05rem; font-size:1.6rem; font-weight:400; line-height:1.2; white-space:nowrap; font-family:'Noto Sans KR', sans-serif;} 
 a {display:inline-block;}
 button:disabled, a:disabled {cursor:not-allowed !important;}
 
@@ -173,7 +173,7 @@ textarea:hover::placeholder {color:transparent !important;}
 	
 
 [class^="btn_t_"] {font-weight:500; height:4rem; line-height:4rem; 
-	font-size:1.5rem; text-align:center; border-radius:2.5rem;}
+	font-size:1.6rem; text-align:center; border-radius:2.5rem;}
 [class^="btn_t_"]:disabled {color:#aaa; background-color:#e1e1e1;}
 
 .btn_t_wh {border:solid 1px #fff;
@@ -804,7 +804,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 	display:flex; gap:1rem; justify-content:space-between; align-items:center;}
 .decoCategory.tyUser {padding:0 8rem;}
 
-.decoCategory > button {display:flex; flex-direction:column; gap:0.4rem; justify-content:center; align-items:center; font-size:1.4rem;}
+.decoCategory > button {display:flex; flex-direction:column; gap:0.4rem; justify-content:center; align-items:center; font-size:1.5rem;}
 .decoCategory > button::before {content:''; display:block; width:2.4rem; height:2.4rem; background-size:2.4rem;}
 
 .decoCategory > button.on {color:#FF6600;}
@@ -868,11 +868,11 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 .fontfamily01 {font:600 1.4rem/1 'NanumBarunGothic';}
 .fontfamily02 {font:600 1.4rem/1 'NanumMyeongjo';}
-.fontfamily03 {font:600 1.8rem/1 'NanumPen';}
-.fontfamily04 {font:600 1.8rem/1 'NanumHaNaSon';}
-.fontfamily05 {font:600 1.8rem/1 'NanumDaHaengCe';}
+.fontfamily03 {font:600 1.7rem/1 'NanumPen';}
+.fontfamily04 {font:600 1.7rem/1 'NanumHaNaSon';}
+.fontfamily05 {font:600 1.7rem/1 'NanumDaHaengCe';}
 
-.btn_addText {width:100%; text-align:center; font-size:1.5rem; 
+.btn_addText {width:100%; text-align:center; font-size:1.6rem; 
 	height:4rem; border-radius:0.4rem; border:1px solid #000; 
 	background:#fff url(../images/ic_addtext.svg) 2rem center no-repeat; background-size:2rem;
 	box-shadow:0 0.4rem 1.1rem 0 rgba(0, 0, 0, 0.15);}
