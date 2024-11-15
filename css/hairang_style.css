@@ -661,7 +661,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 	display:flex; flex-direction:row; align-items:center; justify-content:space-between;
 	border-bottom:1px solid #e9e9e9;}
 .promptTab > [class^="item0"] {display:flex; flex-direction:column; gap:0.4rem; align-items:center; 
-	width:6rem; white-space:nowrap; font-size:1.4rem; color:#333;}
+	width:6rem; white-space:nowrap; font-size:1.5rem; color:#333;}
 .promptTab > [class^="item0"]::before {content:''; width:2.4rem; height:2.4rem; background-size:2.4rem !important;}
 .promptTab > .item01::before {background:url(../images/prompt_ca1.svg) no-repeat center;}
 .promptTab > .item02::before {background:url(../images/prompt_ca2.svg) no-repeat center;}
@@ -749,7 +749,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 .appliedValue {position:absolute; height:15.8rem; left:0; right:0; bottom:10.4rem; border-radius:4.4rem 4.4rem 0 0; 
 	background:#292752; box-shadow:0 0.4rem 2rem 0 rgba(112, 144, 176, 0.2);}
-.valueWrap {position:relative; z-index:2; margin:1.2rem 2rem;
+.valueWrap {position:relative; z-index:2; margin:1.2rem 1.6rem;
 	display:flex; gap:1rem; flex-wrap:nowrap; justify-content:space-between;}
 .valuegroup {display:inline-flex; flex-wrap:wrap; gap:0.8rem; align-items:center;}
 .valuegroup > button {padding:0.4rem 1rem; color:#fff; font-weight:300; white-space:nowrap; height:3rem;
@@ -767,7 +767,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .valuegroup > .checkbox_t {height:2.8rem; margin:0 0 0.6rem;}
 .valuegroup > .checkbox_t > input[type="checkbox"] {display:none;}
 .valuegroup > .checkbox_t .checkbox_txt {display:block; padding:0 1rem; height:3rem; line-height:3rem;
-	border:1px solid rgba(255,255,255,0.6); color:#fff; border-radius:2.5rem; font-size:1.5rem; white-space:nowrap; letter-spacing:-0.05rem;
+	border:1px solid rgba(255,255,255,0.6); color:#fff; border-radius:2.5rem; font-size:1.6rem; white-space:nowrap; letter-spacing:-0.1rem;
 	background:rgba(255, 255, 255, 0.2); user-select:none;}
 .valuegroup > .checkbox_t > input[type="checkbox"]:checked ~ .checkbox_txt {color:#292752; border:1px solid #fff; background-color:#fff;}
 .valuegroup > .checkbox_t > input[type="checkbox"]:disabled ~ .checkbox_txt {border:1px solid rgba(242, 242, 242, 0);}
@@ -1287,6 +1287,7 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 
 .mypage .head {position:relative; z-index:4; padding:0 1.1rem; height:5rem; 
 	display:flex; justify-content:space-between; align-items:center;}
+	.mypage .head > .btnGroup_r {display:flex; gap:0.4rem;}
 .mypage .head .btn_i_notice.new::after {border-color:#fff;}
 .mypage .mypic {position:relative; display:flex; flex-direction:column; gap:2rem;}
 .mypage .mypic .picwrap {position:relative; margin:4rem 0 2rem; height:23rem;}
@@ -2098,7 +2099,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 
 @media only screen and (max-width:344px) {
 	.valueWrap {margin:1.2rem 1.6rem;}
-	.valuegroup {gap:0.6rem;}
+	.valuegroup {gap:0.4rem;}
 	.valuegroup > .checkbox_t .checkbox_txt {padding:0 0.8rem;}
 
 	.makeTemplate .stage.rate34 .bgCard::before {top:37%;}
