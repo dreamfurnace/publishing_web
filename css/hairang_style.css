@@ -1410,7 +1410,7 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 	border-bottom:1px solid #e1e1e1;}
 .customer_seh > .inputwrap > input {padding-left:2rem; font-size:1.6rem;
 	width:calc(100% - 8rem); border:none;}
-.customer_seh > .inputwrap > input::placeholder {font-size:1.8rem;}
+.customer_seh > .inputwrap > input::placeholder {font-size:1.6rem; letter-spacing:-0.1rem;}
 .customer_seh .btnGroup {display:flex; flex-direction:row; align-items:center; margin-top:-0.8rem; }
 
 .customerList .item {position:relative; margin:0 2rem;  padding:1.4rem 1.2rem;
