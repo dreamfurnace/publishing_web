@@ -1298,7 +1298,7 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 	background: #fff url(../images/bg_pic.svg) no-repeat center 6rem; background-size:7.2rem;}
 .mypage .mypic .pic > img {position:relative; z-index:3; width:100%; object-fit:cover;}
 .mypage .mypic .pic::before {content:"사진등록"; position:absolute; left:0; right:0; bottom:6rem; text-align:center;
-	 color:#D78043; font-size:1.5rem; }
+	 color:#D78043; font-size:1.6rem; }
 
 .mypage .mypic .user {position:relative; z-index:3;
 	display:flex; gap:0.4rem; color:#333; font-size:1.8rem; font-weight:500; justify-content:center;}
@@ -1309,7 +1309,7 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 .mymenu {position:absolute; left:0; bottom:2rem; right:0; padding:2rem;}
 .mymenu ul {display:flex; flex-direction:column; gap:1.2rem}
 .mymenu li {height:5rem; border-radius:2.5rem; border:1px solid #e4e4e4;}
-.mymenu li > a {line-height:5rem; display:flex; gap:1.2rem; align-items:center; color:#333; font-weight:500; font-size:1.5rem;}
+.mymenu li > a {line-height:5rem; display:flex; gap:1.2rem; align-items:center; color:#333; font-weight:500; font-size:1.7rem;}
 .mymenu li > a::before {content:''; margin-left:0.4rem; border-radius:50%; width:4.4rem; height:4.4rem;}
 .mymenu li:active, .mymenu li:hover {background-color:#f9f9f9;}
 
