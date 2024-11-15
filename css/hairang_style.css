@@ -223,9 +223,8 @@ a.btn_t_b:disabled {background-color:#ccc; color:#fff;}
 .btn_tts:disabled::before {content:'';background:url(../images/ic_tts_gry.svg) no-repeat center;}
 
 
-.btn_messagePop  {padding:0 2rem; height:4rem;
-	display:flex; align-items:center; gap:0.4rem; 
-	font-weight:500; color:#292752; border-radius:2.5rem; background:#fff;
+.btn_messagePop  {padding:0 2rem; height:4rem; display:flex; align-items:center; gap:0.6rem; 
+	color:#292752; border-radius:2.5rem; background:#fff; letter-spacing:-0.1rem; font-size:1.5rem;
 	box-shadow:0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.1);}
 .btn_messagePop::before {content:''; width:1.6rem; height:1.6rem; background:url(../images/ic_message.svg) no-repeat center; background-size:contain;}
 .btn_messagePop.tyNoicon {padding:0 2.8rem;}
@@ -1011,7 +1010,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .voiceBtn_wrap button:active, .voiceWrap button:hover {background-color:#f8f8f8;}
 
 .voiceBtn_wrap > .btn_myvoice,
-.voiceBtn_wrap > .btn_tts {height:5rem; font-size:1.5rem;}
+.voiceBtn_wrap > .btn_tts {height:5rem; font-size:1.6rem;}
 
 .voicePlay_wrap {display:none; width:calc(100% - 7.8rem);}
 .voicePlay_wrap .voiceBox {text-align:right;}	
@@ -1107,7 +1106,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 }
 
 .voicePlay .timeTxt {display:flex; justify-content:space-between; padding-right:0.4rem;}
-.voicePlay .timeTxt > span {font-size:1.4rem; color:#231F84;}
+.voicePlay .timeTxt > span {font-size:1.5rem; color:#231F84;}
 
 .voiceMaking {display:none; padding:1rem 2rem; height:28rem;}
 .voiceMaking > .btn_messagePop {position:absolute; top:2rem; right:2rem;}
@@ -1120,7 +1119,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .messageBox textarea:focus   {border-color:#000;}
 .messageBox .charNum {display:flex; justify-content:space-between; font-size:1.4rem;}
 .messageBox .charNum > .noti > span {display:none; color:#DB0909;}
-.messageBox .charNum > .num {text-align:right; color:#777; font-size:1.4rem;}
+.messageBox .charNum > .num {text-align:right; color:#777; font-size:1.5rem;}
 
 .messageBox.error .noti > span {display:block;}
 .messageBox.error textarea  {border-color:#DB0909;}
@@ -1720,7 +1719,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .btn_i_popclose:active,.btn_i_popclose:hover {border-radius:50%; background-color:#f8f8f8;}
 
 .popup_btnGroup {margin:0 2rem 2.4rem;}
-.popup_btnGroup > button {width:100%; height:4.6rem; font-size:1.5rem;  border-radius:1rem;}
+.popup_btnGroup > button {width:100%; height:4.6rem; font-size:1.6rem;  border-radius:1rem;}
 .popup_btnGroup.col > button {width:50%;}
 .popup_btnGroup.col {display:flex; gap:1.4rem;}
 .popup_btnGroup .btn_t_l {color:#878787; border:1px solid #d6d6d6; background:#fff;}
@@ -1831,7 +1830,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 
 .musicItem .tit {margin-left:2rem; display:flex; flex-direction:column; gap:0;}
 .musicItem .tit > span {font-size:1.6rem; font-weight:600;}
-.musicItem .tit > em {font-size:1.5rem; color:#777;}
+.musicItem .tit > em {color:#777;}
 
 .musicItem .palyElements {display:flex; gap:1rem; align-items:center; padding-right:5rem;}
 .musicItem .palyElements > .playSec {display:none; color:#383494;}
