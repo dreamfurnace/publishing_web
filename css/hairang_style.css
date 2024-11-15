@@ -923,7 +923,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .stickerTab {padding:0 2rem; display:flex; justify-content:space-between;}
 .stickerTab > button {width:4rem; height:4rem; border-radius:0.4rem;
 	text-indent:-9999em; overflow:hidden; white-space:nowrap;}
-.stickerTab > button.on {background-color:#fff; border:1px solid #999; box-shadow:0 0.4rem 1.1rem 0 rgba(0, 0, 0, 0.15);}
+.stickerTab > button.on {background-color:#fff; border:1px solid #ddd; box-shadow:0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.1);}
 .stickerTab > .item01 {background:url(../images/sticker_cate01.svg) no-repeat center; background-size:3rem;}
 .stickerTab > .item02 {background:url(../images/sticker_cate02.svg) no-repeat center; background-size:2.4rem;}
 .stickerTab > .item03 {background:url(../images/sticker_cate03.svg) no-repeat center; background-size:3rem;}
