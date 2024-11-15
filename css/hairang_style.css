@@ -529,7 +529,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 
 /* swiwtch */
-.swichbox {margin:0 0 2rem; padding:1rem 2rem; display:flex; justify-content:center;}
+.swichbox {margin:0 0 2rem; padding:0.6rem 2rem 1rem; display:flex; justify-content:center;}
 .swichbox .btnbox {display:flex; justify-content:center; gap:0;}
 .swichbox .btnbox > span {display:block; width:4rem; height:2.6rem; text-indent:-9999em; overflow:hidden;}
 .swichbox .ic_swipe {background:url(../images/switch_swipe.svg) no-repeat center; background-size:1.6rem;}
