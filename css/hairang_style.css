@@ -547,19 +547,23 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .switch input:checked + .slider:before {left:0.4rem; transform:translateX(3.4rem); 
 	background:#1E1D36 url(../images/switch_list_on.svg) no-repeat center; background-size:2rem;}
 
-.greetingCard {position:relative;
-	width:28rem; aspect-ratio: 3/4;
-	background:url(../images/greetingcard_female.png) no-repeat center; background-size:100%;}
-.greetingTxt01 {position:absolute; top:6rem; left:3rem;
-	font-size:1.5rem; color:#505050;}
+.greetingCard {position:relative; aspect-ratio:3/4;
+	background:url(../images/greetingcard_female.png) no-repeat center 0; background-size:100%;}
+.greetingTxt01 {position:absolute; top:4rem; left:3rem;
+	font-size:1.8rem; color:#505050;}
 .greetingTxt01 em {font-size:2rem; color:#333; font-weight:500;}
 .greetingTxt01 span {font-weight:500; color:#ff6600;}
 .greetingTxt01 > p {margin-bottom:1.4rem;}
-.greetingTxt02 {position:absolute; bottom:8.4rem; right:2rem; font-weight:600;
+.greetingTxt02 {position:absolute; bottom:12rem; right:2rem; font-weight:600;
 	font-size:1.8rem; color:#4D4B7B;}
 
-.greetingCard.male {background:url(../images/greetingcard_male.png) no-repeat center; background-size:100%;}
+.greetingCard.male {background:url(../images/greetingcard_male.png) no-repeat center 0; background-size:100%;}
 
+.greetingCard > button {position:absolute; right:1.4rem; bottom:1.4rem; text-align:left; padding-left:2.4rem;
+	width:15.4rem; height:4.2rem; line-height:4rem; border-radius:2.5rem;
+	color:#fff; background:#292752 url(../images/arrow_r_wh.svg) no-repeat 11.5rem center;}
+.greetingCard > button:hover,
+.greetingCard > button:active {opacity:0.8;}
 
 /***   MAKE TEMPLATE  ***/
 .btnwrap_rate { margin:0 0 1.2rem; position: relative; z-index:2;
@@ -1693,6 +1697,13 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .errorPage::before {content:''; width:14rem; height:14rem; background:url(../images/bg_error.svg) no-repeat center; background-size:100%;}
 .errorPage > strong {font-size:2.2rem; color:#333; font-weight:500; line-height:1.2;}
 .errorPage > a {margin-top:1.4rem; width:12rem; height:4rem; line-height:4rem; color:#333; font-size:1.4rem; font-weight:500; border:1px solid #999;}
+
+
+/** intro  **/
+.intro {width:30rem; height:40rem; margin:4rem auto 0; border-radius:3rem; overflow:hidden;
+	background-color:#fff; box-shadow:0 0 2.5rem 0 rgba(112, 144, 176, 0.1);}
+
+
 
 
 /***  splash  ***/
