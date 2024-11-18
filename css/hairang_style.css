@@ -59,7 +59,7 @@ textarea:hover::placeholder {color:transparent !important;}
 	vertical-align:middle; white-space:nowrap; box-sizing:border-box;}
 [class^="btn_i_"]:disabled {color:#aaa;}
 
-.btn_i_notice {display:none; position:relative; background:url(../images/ic_notice.svg) no-repeat center; background-size:2.2rem;}
+.btn_i_notice {position:relative; background:url(../images/ic_notice.svg) no-repeat center; background-size:2.2rem;}
 .btn_i_notice.new::after {content:''; position:absolute; top:0.7rem; right:0.8rem;
 	display:block; width:0.6rem; height:0.6rem; 
 	border-radius:50%; border:0.2rem solid #f2f2f2; background:#FF6600;}
