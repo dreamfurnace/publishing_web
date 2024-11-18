@@ -351,18 +351,14 @@ a.btn_t_b:disabled {background-color:#ccc; color:#fff;}
 .btn_create::after {content:''; width:2.4rem; height:2.4rem; 
 	background:url(../images/ic_create.svg) no-repeat center;}
 .btn_create:active, .btn_create:hover {background-color:#CC5200;}
-	
 .btn_reCreate {width:8rem; padding-left:1rem; color:#fff;
 	display:flex; gap:0.1rem; align-items:center; border-radius:2rem; text-align:left; background:#712EFF;}
 .btn_reCreate::after {content:''; width:2.4rem; height:2.4rem; 
 	background:url(../images/ic_recreate.svg) no-repeat center; background-size:2.6rem;}
-
 .btn_create:disabled, 
 .btn_reCreate:disabled {color:#292752; background-color:#fff; opacity:0.2 !important;}
-
 .btn_create:disabled:after {background:url(../images/ic_create_bk.svg) no-repeat center;}
 .btn_reCreate:disabled:after {background:url(../images/ic_recreate_bk.svg) no-repeat center; background-size:2.6rem;}
-
 
 
 .btn_faceApply {width:20rem; height:4.6rem; padding-left:1.4rem; 
@@ -379,8 +375,6 @@ a.btn_t_b:disabled {background-color:#ccc; color:#fff;}
 	background:#ff6600 url(../images/ic_makevideo.svg) no-repeat 12rem center; background-size:2.8rem;}
 .btn_makeVideo:active, .btn_makeVideo:hover {background-color:#CC5200;}
 .btn_makeVideo:disabled {background-color:#ccc; color:#fff; box-shadow:none;}
-
-
 .btn_makeVoice {width:18rem; height:4.6rem; padding-left:4rem; line-height:4.6rem; border-radius:2rem; text-align:left;
 	color:#fff; box-shadow:0 0.4rem 1.2rem 0 rgba(122, 144, 176, 0.25);
 	background:#ff6600 url(../images/ic_makevoice_wh.svg) no-repeat 12rem center; background-size:1.68rem;}
@@ -564,6 +558,21 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 	color:#fff; background:#292752 url(../images/arrow_r_wh.svg) no-repeat 11.5rem center;}
 .greetingCard > button:hover,
 .greetingCard > button:active {opacity:0.8;}
+
+
+.mainNew {padding:15vh 3rem 0; display:flex; flex-direction:column; gap:4rem; align-items:center;}
+.mainNew > a {display:flex; gap:1rem; justify-content:center; align-items:center;
+	width:100%; height:12rem; border-radius:25rem; font-size:2rem; font-weight:500;
+	background:#fff; box-shadow:0 0 2rem 0 rgba(112, 144, 176, 0.25);}
+.mainNew > a > i {width:5rem; height:5rem;}
+.mainNew > a:first-child > i {background:url(../images/ic_auto.svg) no-repeat center;}
+.mainNew > a:last-child {color:#fff; background-color:#292752;}
+.mainNew > a:last-child > i {background:url(../images/ic_direct.svg) no-repeat center;}
+.mainNew > a:first-child:hover,
+.mainNew > a:first-child:active {background-color:#f9f9f9;}
+.mainNew > a:last-child:hover,
+.mainNew > a:last-child:active {background-color:#1E1C43;}
+
 
 /***   MAKE TEMPLATE  ***/
 .btnwrap_rate { margin:0 0 1.2rem; position: relative; z-index:2;
