@@ -311,7 +311,6 @@ a.btn_t_b:disabled {background-color:#ccc; color:#fff;}
 .btn_picUpload:disabled {box-shadow:none; background:#fff url(../images/ic_upload_gry.svg) no-repeat center;}
 .btn_picUpload:active, .btn_picUpload:hover {box-shadow:none;}
 
-
 .btn_remake {padding:0 1.6rem; display:flex; gap:1rem; align-items:center; justify-content:center;
 	width:12rem; height:3.6rem; font-weight:500; color:#110B89; border-radius:2.5rem;
 	background:#fff; box-shadow:0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.1);}

@@ -21,17 +21,17 @@
                <h1>내 정보등록</h1>
           </div>
           <div class="asideMenu">
-			<button type="button" class="btn_done" disabled>완료</button><!-- 사진등록 전 disabled -->
+			<button type="button" class="btn_done" disabled>완료</button><!-- 사진등록 전 disabled, 삭제&주사용사진 교체 모드에서 비노출 'skip' -->
 		</div>
 	</header>
 
      <main class="picNvoice">
           <section class="myPic">
                <h2>내사진</h2>
-               <div class="tit"><!-- only before upload pic -->
+               <div class="tit skip"><!-- only before upload pic -->
                     <strong>얼굴 사진을 등록하세요.</strong>
                </div>
-               <div class="picwrap skip">
+               <div class="picwrap">
                     <div class="btnwrap">
                          <button class="btn_i_change" type="button">주사용사진교체</button>
                          <div class="tooltip tyR skip"> <!-- 사진 등록 후 -->
