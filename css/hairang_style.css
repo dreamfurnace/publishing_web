@@ -47,7 +47,6 @@ textarea:hover::placeholder {color:transparent !important;}
 
 .btnGroup_f.single > button {width:100%;}
 
-
 .btnwrap_f {position:fixed; left:0; right:0; bottom:3rem; z-index:4;
 	display:flex; justify-content:center;}
 .btnwrap_f > button, .btnwrap_f > a {width:18rem; height:4.6rem; line-height:4.6rem;}
@@ -447,7 +446,11 @@ header > .btn_group_l > h1 {font-size:1.8rem;}
 header.tyB h1 {color:#fff;} 
 header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center;}
 
-
+.asideMenu .btn_done {padding:0.6rem 2rem; font-size:1.6rem;  font-weight:500; color:#fff; 
+	border-radius:2.5rem; background:#FF6600; box-shadow:0 0 0.4rem 0 rgba(0, 0, 0, 0.1);}
+.asideMenu .btn_done:active, 
+.asideMenu .btn_done:hover {border-radius:2.5rem; background:#CC5200;}
+.asideMenu .btn_done:disabled {background:#E9C6AC; color:#fff; box-shadow:none; opacity:0.7;}
 
 
 /*** MAIN swiper & list ***/
@@ -796,7 +799,8 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .imageDecoration .btn_done {position:absolute; top:1.2rem; right:1.2rem; z-index:10;
 	padding:0.6rem 1.4rem; font-size:1.5rem;  font-weight:500; color:#000; 
 	border-radius:2.5rem; background-color:rgba(255,255,255,0.6); box-shadow:0 0 0.4rem 0 rgba(0, 0, 0, 0.1);}
-.btn_done:active, .btn_done:hover {opacity:0.7;}
+.imageDecoration .btn_done:active, 
+.imageDecoration .btn_done:hover {opacity:0.7;}
 
 .decorationArea, .simple_btnArea,
 .picNvoice .myVoice {position:fixed; left:0; right:0; bottom:0; z-index:10;
