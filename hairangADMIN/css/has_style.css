@@ -227,7 +227,7 @@ table.ty_list td.thumb > a {border-bottom:none;}
 .templateDetail .fileArea {display:grid; grid-template-columns: repeat(5, 1fr); gap:40px;}
 .templateDetail .fileArea > .itemBox {display:flex; flex-direction:column; gap:6px;}
 .templateDetail .fileArea > .itemBox > span {text-align:center; font-size:16px;}
-.templateDetail .fileArea > .itemBox > .item {position:relative; border-radius:10px; border:1px solid #efefef; aspect-ratio:3/4; overflow:hidden;}
+.templateDetail .fileArea > .itemBox > .item {position:relative; width:196px; aspect-ratio:3/4; border-radius:10px; border:1px solid #efefef; overflow:hidden;}
 .templateDetail .fileArea > .itemBox > .item > img {position:relative; z-index:5; width:100%; object-fit:cover;}
 .templateDetail .fileArea > .itemBox > .item > .btn_i_del {position:absolute; top:5px; right:5px; z-index:6;}
 
