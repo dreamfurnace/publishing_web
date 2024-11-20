@@ -1711,7 +1711,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 
 
 /** intro  **/
-.intro {width:30rem; height:40rem; margin:4rem auto 0; border-radius:3rem; overflow:hidden;
+.introBefore {width:30rem; height:40rem; margin:4rem auto 0; border-radius:3rem; overflow:hidden;
 	background-color:#fff; box-shadow:0 0 2.5rem 0 rgba(112, 144, 176, 0.1);}
 
 
@@ -1864,7 +1864,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .musicItem.playOn .playSec {display:block;}
 
 .bgmList > .intro,
-.sm_messageList > .intro {margin:1rem auto 3rem; text-align:center; font-size:1.6rem; width:auto; height:auto; background:none; box-shadow:none;}
+.sm_messageList > .intro {margin:1rem auto 3rem; text-align:center; font-size:1.6rem;}
 
 
 /* bgm playbar  */
