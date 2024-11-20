@@ -591,7 +591,8 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 
 .stage {position:relative;}
 .bgCard {position:relative; overflow:hidden; border-radius:4rem; 
-	background:#FFF url(../images/bg_hirang01.svg) no-repeat center 15%; background-size:15rem;
+	background:#FFF;
+	/* background:#FFF url(../images/bg_hirang01.svg) no-repeat center 15%; background-size:15rem; */
 	box-shadow:0 1.6rem 2rem 0 rgba(112, 144, 176, 0.2);}
 .bgCard > img {position:relative; width:100%; object-fit:cover;}
 .bgCard > .intro {position:absolute; left:2rem; right:2rem; top:64%; counter-reset: colorcircle 0;}
@@ -619,8 +620,8 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 	font-size:1.8rem; text-align:center; display:block; color: rgba(54,52,104, 0.6);
 	white-space:nowrap; position:absolute; top:33%; left:0; right:0;}
 
-.makeTemplate .stage.rate11 .bgCard::before {top:40%;}
-.makeTemplate .stage.rate43 .bgCard::before {top:46%;}
+/* .makeTemplate .stage.rate11 .bgCard::before {top:40%;}
+.makeTemplate .stage.rate43 .bgCard::before {top:46%;} */
 
 .rate34 .bgCard, 
 .emtyRate34 .bgCard {aspect-ratio:3/4;}
