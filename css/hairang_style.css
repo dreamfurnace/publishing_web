@@ -1207,6 +1207,7 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 .checkbox_chk .checktxt {font-size:1.6rem;}
 
 /* chek box - textbox   */
+.checkbox_tbox {position: relative;}
 .checkbox_tbox > label {display:block; position:relative;}
 .checkbox_tbox .checktxt {position:relative; 
 	display:block; padding:1.8rem; padding-right:4.5rem; font-size:1.6rem; line-height:1.4;  word-break:keep-all;
@@ -1866,6 +1867,10 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 
 .bgmList > .intro,
 .sm_messageList > .intro {margin:1rem auto 3rem; text-align:center; font-size:1.6rem;}
+/* .sm_messageList .checkbox_tbox {margin-right:2rem;} */
+.sm_messageList .checkbox_tbox .playbar {position:absolute; bottom:0.4rem; right:0.4rem; }
+.sm_messageList .checkbox_tbox .btn_i_play {position:absolute; top:50%; left:50%; z-index:10; margin:-2rem 0 0 -2rem;}
+.sm_messageList .checkbox_tbox .checktxt {border-radius:2rem 2rem 2.8rem 2rem;}
 
 
 /* bgm playbar  */
@@ -1882,7 +1887,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	-moz-animation:left 3s linear;
 	animation:left 3s linear both;}
 
-@keyframes left {
+/* @keyframes left {
 	0% {-webkit-transform:rotate(0deg);}
 	100% {transform:rotate(180deg);}
 }
@@ -1909,7 +1914,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 @-webkit-keyframes right {
 	0% {transform: rotate(0deg);}
 	100% {transform: rotate(180deg);}
-}
+} */
 
 
 /* popup - message list */

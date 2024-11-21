@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+     <meta name="format-detection" content="telephone=no, address=no, email=no">
+     <meta name="apple-mobile-web-app-capable" content="yes">
+     <meta name="mobile-web-app-capable" content="yes">
+     <title>한화손해보험_AIcard</title>
+	<link rel="stylesheet" href="../css/hairang_style.css">
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body>
+<button type="button" class="btn_popTest" id="test_callpop">call POPUP - sample message</button><!-- ref.event -->
+<!--  POPUP  AREA -->
+     <div class="popup_full" style="display:block;">
+          <div class="popHeader">
+               <h2>음성 메시지</h2>
+               <button class="btn_i_popclose" type="button" id="btn_popClose">닫기</button>
+          </div>
+          <div class="popContainer">
+               <section class="sm_messageList">
+                    <div class="intro">
+                         메시지를 선택하면 음성으로 등록됩니다.
+                    </div>
+                    <h3>메시지 리스트</h3>
+                    <div class="item"> 
+                         <div class="checkbox_tbox"> 
+                              <label for="item01">
+                                   <input type="radio" id="item01" name="selected">
+                                   <span class="checkmark"></span>
+                                   <span class="checktxt">
+                                        가을의 정취 속에서 가족과 함께하는 이 특별한 날, 
+                                        모두에게 행복과 안락함이 함께하기를 기원합니다.
+                                        건강과 행복이 늘 함께하길 바라며, 추석의 은은한 정을
+                                        만끽하시길 바랍니다. 
+                                   </span>
+                              </label>
+                              <div class="playbar">
+                                   <button class="btn_i_play" type="button">미리듣기/멈춤</button>
+                                   <div class="hold left">
+                                     <div class="fill"></div>
+                                   </div>
+                                   <div class="hold right">
+                                     <div class="fill"></div>
+                                   </div>
+                              </div>
+                         </div><!-- end:class="checkbox_tbox"  -->
+                         <div class="checkbox_tbox"> 
+                              <label for="item02">
+                                   <input type="radio" id="item02" name="selected">
+                                   <span class="checkmark"></span>
+                                   <span class="checktxt">
+                                        가을의 정취 속에서 가족과 함께하는 이 특별한 날, 
+                                        모두에게 행복과 안락함이 함께하기를 기원합니다.
+                                   </span>   
+                              </label>
+                              <div class="playbar">
+                                   <button class="btn_i_play" type="button">미리듣기/멈춤</button>
+                                   <div class="hold left">
+                                     <div class="fill"></div>
+                                   </div>
+                                   <div class="hold right">
+                                     <div class="fill"></div>
+                                   </div>
+                              </div>
+                         </div><!-- end:class="checkbox_tbox"  -->
+                         <div class="checkbox_tbox"> 
+                              <label for="item03">
+                                   <input type="radio" id="item03" name="selected">
+                                   <span class="checkmark"></span>
+                                   <span class="checktxt">
+                                        가을의 정취 속에서 가족과 함께하는 이 특별한 날, 
+                                        모두에게 행복과 안락함이 함께하기를 기원합니다.
+                                        건강과 행복이 늘 함께하길 바라며, 추석의 은은한 정을
+                                        만끽하시길 바랍니다. 
+                                   </span>   
+                              </label>
+                              <div class="playbar">
+                                   <button class="btn_i_play" type="button">미리듣기/멈춤</button>
+                                   <div class="hold left">
+                                     <div class="fill"></div>
+                                   </div>
+                                   <div class="hold right">
+                                     <div class="fill"></div>
+                                   </div>
+                              </div>
+                         </div><!-- end:class="checkbox_tbox"  -->
+                         <div class="checkbox_tbox"> 
+                              <label for="item04">
+                                   <input type="radio" id="item04" name="selected">
+                                   <span class="checkmark"></span>
+                                   <span class="checktxt">
+                                        가을의 정취 속에서 가족과 함께하는 이 특별한 날, 
+                                        모두에게 행복과 안락함이 함께하기를 기원합니다.
+                                        건강과 행복이 늘 함께하길 바라며, 추석의 은은한 정을
+                                        만끽하시길 바랍니다. 
+                                   </span>   
+                              </label>
+                              <div class="playbar">
+                                   <button class="btn_i_play" type="button">미리듣기/멈춤</button>
+                                   <div class="hold left">
+                                     <div class="fill"></div>
+                                   </div>
+                                   <div class="hold right">
+                                     <div class="fill"></div>
+                                   </div>
+                              </div>
+                         </div><!-- end:class="checkbox_tbox"  -->                         
+                    </div>
+               </section>
+          </div>
+     </div<><!-- end: class="popup_full"  -->
+<!-- //  POPUP  AREA -->
+
+<script>
+// popupEvent_closeBtn
+// $('#btn_popClose').click(function(){
+//      $('.popup_full').fadeOut(100);
+// });
+   
+// // popEvent_testBtn
+// $('#test_callpop').click(function(){
+//      $('.popup_full').fadeIn(100);
+// });
+
+//  remove radio check
+var beforeChecked = -1;  
+$(function(){
+     $(document).on("click", "input[type=radio]", function(e) {
+          var index = $(this).parent().index("label");
+          if(beforeChecked == index) {
+          beforeChecked = -1;
+          $(this).prop("checked", false);} 
+          else{beforeChecked = index;}
+     });
+});
+</script>
+</body>
+</html>
