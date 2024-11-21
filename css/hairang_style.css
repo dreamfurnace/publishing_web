@@ -461,7 +461,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .templateWrap {position:fixed; top:10rem; left:0; right:0; bottom:9.1rem; padding-top:1.4rem;
 	 overflow:hidden; overflow-y:auto;} 
 
-.templateWrap > .noList {text-align:center; padding:27vh 0 0;}	 
+.templateWrap > .noList, .noTemplate {text-align:center; padding:27vh 0 0; font-size:1.8rem;} 	 
 
 .templateList {padding:0 2rem 8rem; margin:-1rem 0 0;
 	display:grid; gap:1.6rem; grid-template-columns:repeat(3, 1fr);}
