@@ -373,9 +373,9 @@ a.btn_t_b:disabled {background-color:#ccc; color:#fff;}
 	background:#ff6600 url(../images/ic_makevideo.svg) no-repeat 12rem center; background-size:2.8rem;}
 .btn_makeVideo:active, .btn_makeVideo:hover {background-color:#CC5200;}
 .btn_makeVideo:disabled {background-color:#ccc; color:#fff; box-shadow:none;}
-.btn_makeVoice {width:18rem; height:4.6rem; padding-right:2.5rem; line-height:4.6rem; border-radius:2rem; text-align:center;
+.btn_makeVoice {width:18rem; height:4.6rem; padding-left:4rem; line-height:4.6rem; border-radius:2rem; text-align:left;
 	color:#fff; box-shadow:0 0.4rem 1.2rem 0 rgba(122, 144, 176, 0.25);
-	background:#ff6600 url(../images/ic_makevoice_wh.svg) no-repeat 11.5rem center; background-size:1.68rem;}
+	background:#ff6600 url(../images/ic_makevoice_wh.svg) no-repeat 12.4rem center; background-size:1.68rem;}
 .btn_makeVoice:active, .btn_makeVoice:hover {background-color:#CC5200;}
 
 
