@@ -2069,9 +2069,6 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .star {animation:star .8s ease infinite;}
 
 
-
-
-
 /* common Loading  - ani */
 @keyframes turn {
 	0%   {transform:rotate(360deg);}
