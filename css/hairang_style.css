@@ -2058,8 +2058,8 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	display:flex; align-items:center; gap:0.8rem; color:#F04E2A; border-radius:2.5rem; border:1px solid #E2E2E2;}
 .starwrap {position:relative; width:2.2rem; height:2.2rem;}
 .starwrap > span {position:absolute; background:url(../images/ic_creating.svg) no-repeat center; background-size:100%;}
-.starwrap .pnt01 {top:0.3rem; left:0rem; width:1.6rem; height:1.6rem; animation-delay:0.3s; }
-.starwrap .pnt02 {top:0.2rem; left:1.2rem; width:1.2rem; height:1.2rem; animation-delay:0.15s;}
+.starwrap .pnt01 {top:0.3rem; left:0rem; width:1.6rem; height:1.6rem; animation-delay:0.4s; }
+.starwrap .pnt02 {top:0.2rem; left:1.2rem; width:1.2rem; height:1.2rem; animation-delay:0.2s;}
 .starwrap .pnt03 {top:1.2rem; left:1rem; width:1rem; height:1rem; animation-delay:0;}
 
 @keyframes star {
