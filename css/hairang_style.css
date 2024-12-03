@@ -428,7 +428,7 @@ section > h2, section > h3 {display:none;}
 header {position:relative; padding:0 2rem 0 1rem; height:5rem;
 	display:flex; justify-content:space-between; align-items:center;}
 header > h1 {margin-left:1rem;}
-header > .asideMenu {position:relative; z-index:3; display:flex; gap:0.4rem; margin-right:-0.9rem; align-items:center;}
+header > .asideMenu {position:relative; z-index:3; display:flex; gap:0.8rem; margin-right:-0.9rem; align-items:center;}
 header > .asideMenu > button:active,
 header > .asideMenu > a:active
 header > .asideMenu > button:hover,
