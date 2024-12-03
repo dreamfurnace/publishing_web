@@ -475,8 +475,11 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .templateList > .item img,
 .templateList > .item video {width:100%; height:100%; object-fit:cover;} 
 .templateList .itemVideo > em {position:absolute; right:0.5rem; bottom:0.5rem;
-	display:block; padding:0 0.5rem; height:1.8rem; line-height:1.8rem; font-size:1.4rem; color:#fff;
-	border-radius:0.3rem; background:rgba(0,0,0,0.6);}
+	display:block; width:2.4rem; height:2.4rem; text-indent:-9999em; overflow:hidden; white-space:nowrap;
+	border-radius:50%; background:rgba(0,0,0,0.6);}
+.templateList .itemVideo > em::after {content:''; position:absolute; top:50%; left:50%; margin:-0.4rem 0 0 -0.3rem; 
+	display:block; width:0.8rem; height:0.8rem;
+	background:url(../images/ic_play.svg) no-repeat center; background-size:100%;}
 
 .templateList > a > .btnGroup {display:none; gap:1rem; justify-content:center; align-items:center;
 	position:absolute; z-index:2; left:0; right:0; bottom:0; height:4rem; background:rgba(0,0,0,0.7);}
