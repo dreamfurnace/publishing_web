@@ -1329,7 +1329,7 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 .mypage .mypic .user {position:relative; z-index:3;
 	display:flex; gap:0.4rem; color:#333; font-size:1.8rem; font-weight:500; justify-content:center;}
 .mypage .mypic .btn_i_myVoice,
-.mypage .mypic .btn_i_voiceStop {position:absolute; left:50%; margin-left:4rem; bottom:0; z-index:4;}
+.mypage .mypic .btn_i_voiceStop {position:absolute; left:50%; margin-left:6rem; bottom:2rem; z-index:4;}
 
 
 .mymenu {position:absolute; left:0; bottom:2rem; right:0; padding:2rem;}
