@@ -1492,6 +1492,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	height:auto; border-radius:1.6rem; overflow:hidden;}
 .myalbum input:checked ~ .checkimg {border:0.14rem solid #231F84;}
 
+.myalbum .templateList .noTemplate {position:fixed; top:50vh; left:0; right:0; padding:0;}
 
 /*** sent box   ***/
 .sentbox::before {content:''; position:fixed; top:0; left:0; right:0; height:28rem; z-index:0;
