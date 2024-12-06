@@ -283,7 +283,7 @@ a.btn_t_b:disabled {background-color:#ccc; color:#fff;}
 	box-shadow:0 0 1.2rem 0 rgba(0, 0, 0, 0.1);}
 .btn_addItem::before {content:''; width:1.4rem; height:1.4rem;
 	background:url(../images/ic_additem.svg) no-repeat center; background-size:100%;}
-.btn_addItem:active, .btn_makeGroup:hover {border-color:#333;}
+.btn_addItem:active, .btn_makeGroup:hover {border-color:#333; background-color:#f8f8f8;}
 .btn_addItem:disabled {border-color:#C1B8AE; color:#A5A19A; box-shadow:none;}
 .btn_addItem:disabled::before {background:url(../images/ic_additem_gry.svg) no-repeat center;}
 
@@ -1425,6 +1425,7 @@ header.complete > button {position:relative; z-index:3; background-color:#f2f2f2
 .customerList .customer_seh {margin-bottom:0.6rem;}
 .customerList .btnGroup {display:flex;}
 .customerList .btnGroup > .btn_addItem {margin-right:0;}
+.customerList .btnGroup .btnGroup_edit {padding-top:0.2rem;}
 .customer_seh {margin:1rem 0 1.4rem;}
 .customer_seh > .inputwrap {padding-right:2rem; display:flex; justify-content:space-between;
 	border-bottom:1px solid #e1e1e1;}
@@ -1558,7 +1559,8 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .picNvoice .tit > span {font-size:1.4rem; color:#777; white-space:nowrap; text-align:center;}
 .picNvoice .picwrap {position:relative;}
 .picNvoice .picwrap .btnwrap {position:absolute; bottom:2rem; left:50%; margin-left:5rem; z-index:3;}
-.picNvoice .picwrap .tooltip {position:absolute; top:5rem; right:2rem; width:21rem;}
+.picNvoice .picwrap .tooltip {position:absolute; top:5rem; right:1rem; width:22rem;}
+.picNvoice .picwrap .tooltip > span {letter-spacing:-0.15rem;}
 
 .picNvoice .voicePlay progress::-webkit-progress-bar {background:#DBDBDB;}
 .picNvoice .voicePlay progress::-moz-progress-bar {background:#DBDBDB;}
