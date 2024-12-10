@@ -38,8 +38,8 @@ textarea:hover::placeholder {color:transparent !important;}
 .btnGroup_mf > .inputwrap > label {padding:0 1rem; height:4rem; line-height:4rem; white-space:nowrap; font-size:1.6rem; color:#110B89; border-right:1px solid #DBDBDB;}
 .btnGroup_mf > .inputwrap > input {padding:0 1rem; width:80%; border:none; font-size:1.6rem; font-weight:500;}
 .btnGroup_mf > .inputwrap > input::placeholder {font-size:1.6rem;}
-.btnGroup_mf > .inputwrap.disable {opacity:0.3;}
-
+.btnGroup_mf > .inputwrap.disable {opacity:0.4;}
+.btnGroup_mf > .inputwrap.disable > label {color:#999;}
 
 .btnGroup_f {padding:2rem;
 	position:fixed; left:0; right:0; bottom:0; z-index:21;
