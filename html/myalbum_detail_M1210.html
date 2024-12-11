@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+     <meta name="format-detection" content="telephone=no, address=no, email=no">
+     <meta name="apple-mobile-web-app-capable" content="yes">
+     <meta name="mobile-web-app-capable" content="yes">
+     <title>한화손해보험_AIcard</title>
+	<link rel="stylesheet" href="../css/hairang_style.css">
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body>
+     <header>
+          <button type="button" class="btn_i_back" onclick = "window.location.href='myalbum_list.html';">뒤로가기</button>
+          <div class="asideMenu">
+			<button type="button" class="btn_i_nav">메뉴</button>
+		</div>
+     </header>
+     <main class="myalbumDetail">
+          <div class="headwrap">
+               <div class="creation">
+                    <span class="date"><em>2024</em>.<em>12</em>.<em>12</em> </span>
+                    <span class="time"><em>14</em>:<em>30</em></span>
+               </div>
+               <div class="btnGroup_edit">
+                    <button type="button">삭제</button>
+               </div>
+          </div>
+          <section class="stage rate34"><!-- rate34(3:4) / rate11(1:1) / rate43(4:3)  -->
+               <h2>카드영역</h2>
+               <div class="bgCard">
+                    <div class="videoElements"><!--  영상 카드일 경우 노출 'skip' 추가 및 제거  -->
+                         <div class="voicePlay">
+                              <button class="btn_i_play" type="button" id="btn_playRecord">재생/멈춤</button>
+                              <div class="timelineWrap">
+                                   <div class="timeline">
+                                        <input type="range" value="50" min="0" max="100" step="0.1">
+                                        <progress value="50" max="100" step="1">
+                                   </div>
+                                   <div class="timeTxt">
+                                        <span>0:<em>18</em></span>
+                                        <span>0:<em>30</em></span>
+                                   </div>
+                              </div>
+                         </div>
+                         <button class="btn_i_sound" type="button">사운드 켜기/끄기</button>
+                    </div>
+                    <img src="../images/@pic_new03.png">                   
+               </div>
+          </section>
+          <div class="btnwrap_m">
+               <button type="button" class="btn_download">다운로드</button>
+          </div>
+     </main>
+     <div class="btnGroup_f single">
+		<button type="button" class="btn_sending" onclick="window.location.href='';">보내기</button>
+	</div>
+<script>
+$(document.body).css("background","#fff");
+
+// btn play toggle 
+$('.btn_i_play').click(function(){
+     $(this).toggleClass('stop');
+});
+
+// btn sound toggle 
+$('.btn_i_sound').click(function(){
+     $(this).toggleClass('on');
+});
+</script>
+</body>
+</html>

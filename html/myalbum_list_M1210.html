@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+     <meta name="format-detection" content="telephone=no, address=no, email=no">
+     <meta name="apple-mobile-web-app-capable" content="yes">
+     <meta name="mobile-web-app-capable" content="yes">
+     <title>한화손해보험_AIcard</title>
+	<link rel="stylesheet" href="../css/hairang_style.css">
+
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body>
+	<header>
+          <div class="btn_group_l">
+               <button type="button" class="btn_i_back" onclick = "window.location.href='main.html';">뒤로가기</button>
+               <h1>마이앨범 관리</h1>
+          </div>
+          <div class="asideMenu">
+			<button type="button" class="btn_i_nav">메뉴</button>
+		</div>
+	</header>
+
+     <main class="myalbum">
+          <div class="cateTab ty02">
+               <button class="on" type="button" data-toggle-target="#cateTab01">전체</button>
+               <button type="button" data-toggle-target="#cateTab02">명함</button>
+               <button class="new" type="button" data-toggle-target="#cateTab03">안부</button><!-- 새로운 템플릿 저장된 카테고리 'new' -->
+               <button type="button" data-toggle-target="#cateTab04">명절</button>
+               <button type="button" data-toggle-target="#cateTab05">연말/연시</button>
+          </div>
+          <div class="btnGroup_edit">
+               <div class="btn_group_l">
+               </div>
+               <div class="btn_group_r">
+                    <button type="button" id="btnDelete" onclick = "window.location.href='myalbum_list_delete.html';">삭제</button>
+               </div>
+          </div>
+          <div class="tabPanel">
+               <section id="cateTab01" class="templateList active">
+                    <h2>전체템플릿</h2>
+                    <div class="item new"><!-- new item -->
+                         <div class="btnGroup tyB">
+                              <button type="button" class="btn_i_albumModify">수정</button>
+                              <button type="button" class="btn_i_albumDownload">다운로드</button>
+                              <button type="button" class="btn_i_albumSending">보내기</button>
+                         </div>
+                         <a onclick = "window.location.href='sm_imagecard.html';">
+                              <img src="../images/@pic_new01.png">
+                         </a> 
+                    </div>
+                    <div class="item" >
+                         <div class="btnGroup tyB">
+                              <button type="button" class="btn_i_albumModify">수정</button>
+                              <button type="button" class="btn_i_albumDownload">다운로드</button>
+                              <button type="button" class="btn_i_albumSending">보내기</button>
+                         </div>
+                         <a class="itemVideo" onclick = "window.location.href='myalbum_detail.html';" >
+                              <em>playIcon</em>
+                              <img src="../images/@pic_new02.png">
+                         </a>
+                    </div>
+                    <div class="item" >
+                         <div class="btnGroup tyB">
+                              <button type="button" class="btn_i_albumModify">수정</button>
+                              <button type="button" class="btn_i_albumDownload">다운로드</button>
+                              <button type="button" class="btn_i_albumSending">보내기</button>
+                         </div>
+                         <a onclick = "window.location.href='sm_imagecard.html';">
+                              <img src="../images/@pic_new02.png">
+                         </a> 
+                    </div>
+                    <div class="item" >
+                         <div class="btnGroup tyB">
+                              <button type="button" class="btn_i_albumModify">수정</button>
+                              <button type="button" class="btn_i_albumDownload">다운로드</button>
+                              <button type="button" class="btn_i_albumSending">보내기</button>
+                         </div>
+                         <a onclick = "window.location.href='sm_imagecard.html';">
+                              <img src="../images/@pic_new03.png">
+                         </a> 
+                    </div>
+                    <div class="item" >
+                         <div class="btnGroup tyB">
+                              <button type="button" class="btn_i_albumModify">수정</button>
+                              <button type="button" class="btn_i_albumDownload">다운로드</button>
+                              <button type="button" class="btn_i_albumSending">보내기</button>
+                         </div>
+                         <a onclick = "window.location.href='sm_imagecard.html';">
+                              <img src="../images/@pic_new04.png">
+                         </a> 
+                    </div>
+                    <div class="item" >
+                         <div class="btnGroup tyB">
+                              <button type="button" class="btn_i_albumModify">수정</button>
+                              <button type="button" class="btn_i_albumDownload">다운로드</button>
+                              <button type="button" class="btn_i_albumSending">보내기</button>
+                         </div>
+                         <a onclick = "window.location.href='sm_imagecard.html';">
+                              <img src="../images/@pic_new05.png">
+                         </a> 
+                    </div>
+                    <div class="item" >
+                         <div class="btnGroup tyB">
+                              <button type="button" class="btn_i_albumModify">수정</button>
+                              <button type="button" class="btn_i_albumDownload">다운로드</button>
+                              <button type="button" class="btn_i_albumSending">보내기</button>
+                         </div>
+                         <a onclick = "window.location.href='sm_imagecard.html';">
+                              <img src="../images/@pic_new06.png">
+                         </a> 
+                    </div>
+               </section>
+               <section id="cateTab02" class="templateList">
+                    <h2>명함 템플릿</h2>
+                    <div class="noTemplate"><!-- case: no data '삭제' 비활성-->
+                         내역이 없습니다.
+                    </div>
+               </section>
+               <section id="cateTab03" class="templateList">
+                    <h2>안부 템플릿</h2>
+                    333
+               </section>
+               <section id="cateTab04" class="templateList">
+                    <h2>명절 템플릿</h2>
+                   444
+               </section>
+               <section id="cateTab05" class="templateList">
+                    <h2>연말연시 템플릿</h2>
+                    555
+               </section>
+          </div>
+	</main>
+
+
+<script>
+$(document.body).css("background","#fff");
+// header Tab
+$('.cateTab > button').on('click', function(evt) {
+    evt.preventDefault();
+    $(".cateTab > button").removeClass("on");
+    $(this).addClass('on');
+    var sel = this.getAttribute('data-toggle-target');
+    $('.templateList').removeClass('active').filter(sel).addClass('active');
+});
+</script>
+
+</body>
+</html>
