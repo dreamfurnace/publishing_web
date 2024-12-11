@@ -805,7 +805,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .imageDecoration .btn_i_reswap > .tooltip {position:absolute; top:5.4rem; left:1.8rem;}
 .imageDecoration .btn_t_name > .tooltip {position:absolute; top:3.6rem; right:-0.5rem; z-index:4;}
 .imageDecoration > .btnwrap_f {position:fixed; left:0; right:0; bottom:8.6rem;}
-.imageDecoration > .btnwrap_f.new1211 {bottom:5rem;}
+.imageDecoration > .btnwrap_f.new1211 {bottom:3rem;}
 
 .imageDecoration .tooltipWrap {display:none; position:absolute; top:1.2rem; left:1.2rem; z-index:4;}
 .imageDecoration .tooltip {margin:1.2rem 0 0 1.8rem;}
