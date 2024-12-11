@@ -1646,7 +1646,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .uploadGuide {position:fixed; top:3rem; left:1rem; right:1rem; bottom:23rem;  z-index:31;
 	display:flex; align-items:center; justify-content:center;}
 .uploadGuide > .contwrap::before {content:''; display:block; margin:0 auto;
-	width:18rem; height:33rem;
+	width:17.4rem; height:32rem;
 	background:url(../images/@model.png) no-repeat center; background-size:100%;}
 .uploadGuide > .contwrap > span {display:block; padding:2rem; border-top:0.1rem solid #fff;
 	color:#fff; font-size:1.6rem; text-align:center; }
