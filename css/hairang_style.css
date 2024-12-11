@@ -28,7 +28,8 @@ textarea:focus::placeholder,
 textarea:hover::placeholder {color:transparent !important;}
 
 /* buttons */
-.btnGroup_mf {margin:3rem 2rem 2rem; display:flex; justify-content:center; gap:1.2rem;}
+.btnGroup_mf,
+.btnGroup_mf.new1211  {margin:3rem 2rem 2rem; display:flex; justify-content:center; gap:1.2rem;}
 .btnGroup_mf > .btn_group {display:flex; gap:0; align-content:center;}
 .btnGroup_mf > .btn_group > button:first-child {border-radius:2.5rem 0 0 2.5rem; border-right:1px solid #ececec;}
 .btnGroup_mf > .btn_group > button:last-child {border-radius:0 2.5rem 2.5rem 0;}
@@ -804,6 +805,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .imageDecoration .btn_i_reswap > .tooltip {position:absolute; top:5.4rem; left:1.8rem;}
 .imageDecoration .btn_t_name > .tooltip {position:absolute; top:3.6rem; right:-0.5rem; z-index:4;}
 .imageDecoration > .btnwrap_f {position:fixed; left:0; right:0; bottom:8.6rem;}
+.imageDecoration > .btnwrap_f.new1211 {bottom:5rem;}
 
 .imageDecoration .tooltipWrap {display:none; position:absolute; top:1.2rem; left:1.2rem; z-index:4;}
 .imageDecoration .tooltip {margin:1.2rem 0 0 1.8rem;}
@@ -2222,7 +2224,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	.imageDecoration .rate43 .bgCard {margin-top:0; margin:0 auto;}
 
 	.makeTemplate .btnGroup_mf,
-	.imageDecoration .btnGroup_mf {margin-top:2rem;}
+	.imageDecoration .btnGroup_mf {margin:2rem auto; width:34rem;}
 
 	.videoArea .rate34 {width:36rem; margin:0 auto;}
 	.videoArea .rate11 {width:48rem; margin:0 auto;}
