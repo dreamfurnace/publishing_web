@@ -1628,7 +1628,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 .myVoice .btnwrap {position:absolute; left:50%; margin:-3rem 0 0 -3rem;
 	display:flex; flex-direction:column; gap:0.5rem; align-items:center; font-size:1.4rem;}
 
-.myShape ul {position:relative; display:flex; justify-content:space-between; }
+.myShape ul {position:relative; display:flex; justify-content:space-between;}
 .myShape ul::after {content:''; position:absolute; top:1.5rem; left:0; right:0;
 	display:block; height:1px; background:#d9d9d9;}
 .myShape li {position: relative; z-index:2;}
@@ -1649,7 +1649,7 @@ height:4.6rem; border-radius:0 0 1.6rem 1.6rem; background:rgba(0,0,0,0.7);}
 	width:18rem; height:33rem;
 	background:url(../images/@model.png) no-repeat center; background-size:100%;}
 .uploadGuide > .contwrap > span {display:block; padding:2rem 4rem; border-top:0.1rem solid #fff;
-	color:#fff; font-size:1.6rem; text-align:center; }
+	color:#fff; font-size:1.6rem; text-align:center;}
 
 
 /* chek box - checkbox   */
