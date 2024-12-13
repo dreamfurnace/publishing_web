@@ -16,35 +16,37 @@
 
 <body>
 	<header>
-          <button type="button" class="btn_i_back" onclick = "window.location.href='sm_template.html';">뒤로가기</button>
+          <button type="button" class="btn_i_back" onclick = "window.location.href='sm_imagecard.html';">뒤로가기</button>
 	</header>
 
-     <main class="sm_imageCard">
+     <main class="sm_videoCard">
           <div class="sm_intro">
-               사진을 이동하고 직급을 수정할 수 있습니다.
+               음성메시지와 배경음악을 선택할 수 있습니다.
           </div>
           <section class="stage rate34"><!-- rate34(3:4) / rate11(1:1) / rate43(4:3)  -->
-               <h2>이미지꾸미기영역</h2>
+               <h2>카드영역</h2>
+               <div class="soundSticker">
+                    <span class="ic_voice done">음성등록됨</span><!-- 등록되면 'done' 추가-->
+                    <span class="ic_bgm">배경음악등록됨</span>
+               </div>
                <div class="bgCard">
-                    <!-- <div class="modelBox" style="width:50%;">
+                    <!-- <div class="modelBox hidden" style="width:50%;">
                         <button class="decoBtn_move" type="button">이동</button>
                         <img src="../images/@model.png">
                     </div> -->
-                    <img src="../images/@ex01.png">                   
+                    <img src="../images/@template_new04.png">                   
                </div>
           </section>
-          
           <div class="btnGroup_mf">
-               <div class="inputwrap"><!-- 직급 없는 경우 class="inputwrap disable"-->
-                    <label>직급</label>
-                    <input type="text" placeholder="과장" disabled>
-               </div>
-               <button type="button" class="btn_next">보내기</button>
+               <button type="button" class="btn_makeVideo" onclick = "window.location.href='sm_complete.html';">영상 만들기</button>
           </div>
      </main>
 
-     <div class="btnwrap_f">
-          <button class="btn_t_b" type="button" onclick = "window.location.href='sm_videocard.html';">영상으로 만들기</button>
+     <div class="simple_btnArea">
+          <div class="simple_btnGroup">
+               <button class="btn_simpleBgm done" type="button">배경음악</button><!-- 선택시 'done' 추가-->
+               <button class="btn_simpleVoice" type="button">음성메시지</button>
+          </div>
      </div>
 </body>
 </html>

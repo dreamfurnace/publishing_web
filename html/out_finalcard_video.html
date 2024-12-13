@@ -109,11 +109,11 @@ section > h2, section > h3 {display:none;}
 .container {position:fixed; top:0; left:0; right:0; bottom:0; overflow: hidden; overflow-y:auto;}
 .container > header {position:fixed; top:0; left:0; right:0; z-index:3; height:5rem; background:#f8f8f8;}
 .container > header > h1 {margin:0 auto;}
-.container > .cardWrap {margin:5rem auto;}
+.container > .cardWrap {margin:2rem auto;}
 .container .rate34 .bgCard {max-width:40rem; margin:0 auto;}
 
-.videoElements {display:flex; gap:1.4rem; height:4.2rem; align-items:center;
-	position:absolute; left:1.4rem; right:1.4rem; bottom:1.2rem; z-index:2;
+.videoElements {margin:1rem;
+     display:flex; gap:1.4rem; height:4.2rem; align-items:center;
 	border-radius:2.5rem; border:1px solid #fff;
 	background:rgba(255,255,255,0.7);}
 .videoElements > .btn_i_sound {width:4rem; height:4rem;}
@@ -185,29 +185,29 @@ progress::-moz-progress-value {background:#231F84;}
 
 <body>
      <div class="container">
-          <header><h1 class="logo_hanhwa">한화손해보험</h1></header>
+          <!-- <header><h1 class="logo_hanhwa">한화손해보험</h1></header> -->
           <div class="cardWrap">
                <section class="stage rate34"><!-- rate34(3:4) / rate11(1:1) / rate43(4:3)  -->
                     <h2>카드영역</h2>
                     <div class="bgCard">
-                         <div class="videoElements">
-                              <div class="voicePlay">
-                                   <button class="btn_i_play" type="button" id="btn_playRecord">재생/멈춤</button>
-                                   <div class="timelineWrap">
-                                        <div class="timeline">
-                                             <input type="range" value="50" min="0" max="100" step="0.1">
-                                             <progress value="50" max="100" step="1">
-                                        </div>
-                                        <div class="timeTxt">
-                                             <span>0:<em>18</em></span>
-                                             <span>0:<em>30</em></span>
-                                        </div>
+                         <!-- <video src="../images/@video02.mp4" muted autoplay playsinline loop></video>    -->
+                         <img src="../images/@template_new02.png">  
+                    </div>
+                    <div class="videoElements">
+                         <div class="voicePlay">
+                              <button class="btn_i_play" type="button" id="btn_playRecord">재생/멈춤</button>
+                              <div class="timelineWrap">
+                                   <div class="timeline">
+                                        <input type="range" value="50" min="0" max="100" step="0.1">
+                                        <progress value="50" max="100" step="1">
+                                   </div>
+                                   <div class="timeTxt">
+                                        <span>0:<em>18</em></span>
+                                        <span>0:<em>30</em></span>
                                    </div>
                               </div>
-                              <button class="btn_i_sound" type="button">사운드 켜기/끄기</button><!-- 'btn_i_sound on'-->
                          </div>
-                         <!-- <video src="../images/@video02.mp4" muted autoplay playsinline loop></video>    -->
-                         <img src="../images/@pic_new02.png">  
+                         <button class="btn_i_sound" type="button">사운드 켜기/끄기</button><!-- 'btn_i_sound on'-->
                     </div>
                </section>
                <section class="final_txtArea">
