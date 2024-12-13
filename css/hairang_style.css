@@ -603,7 +603,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .btnwrap_rate > .on::before {border-color:#231F84;}
 
 .stage {position:relative;}
-.bgCard {position:relative; overflow:hidden; border-radius:4rem; 
+.bgCard {position:relative; overflow:hidden; border-radius:3rem; 
 	background:#FFF;
 	/* background:#FFF url(../images/bg_hirang01.svg) no-repeat center 15%; background-size:15rem; */
 	box-shadow:0 1.6rem 2rem 0 rgba(112, 144, 176, 0.2);}
