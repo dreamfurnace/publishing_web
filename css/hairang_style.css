@@ -621,7 +621,7 @@ header.tyB .btn_i_back {background:url(../images/ic_backWh.svg) no-repeat center
 .emtyRate11 .bgCard > img,
 .emtyRate43 .bgCard > img {display:none;}
 
-.videoElements {position:relative; z-index:10;
+.videoElements {position:relative; z-index:10; max-width:40rem;
 	display:flex; gap:1.4rem; height:4.2rem; align-items:center;
 	margin:1rem; border-radius:2.5rem; border:1px solid #fff;
 	background:rgba(255,255,255,0.7);}
